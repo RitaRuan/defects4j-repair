@@ -1,0 +1,32 @@
+1 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/45b/src/main/java/org/jsoup/parser/HtmlTreeBuilder.java 398
+Faulty:
+transition(HtmlTreeBuilderState.InRow);
+Seed:
+state=HtmlTreeBuilderState.Initial;
+**************************************************
+2 Delete /home/ubuntu/rtx/d4j/Jsoup/45b/src/main/java/org/jsoup/parser/HtmlTreeBuilder.java 398
+Faulty:
+transition(HtmlTreeBuilderState.InRow);
+Seed:
+characterReferenceError("missing semicolon");
+**************************************************
+3 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/45b/src/main/java/org/jsoup/parser/HtmlTreeBuilder.java 398
+Faulty:
+transition(HtmlTreeBuilderState.InRow);
+Seed:
+reader.mark();
+**************************************************
+4 Delete /home/ubuntu/rtx/d4j/Jsoup/45b/src/main/java/org/jsoup/parser/HtmlTreeBuilder.java 398
+Faulty:
+transition(HtmlTreeBuilderState.InRow);
+Seed:
+characterReferenceError("missing semicolon");
+**************************************************
+5 Delete /home/ubuntu/rtx/d4j/Jsoup/45b/src/main/java/org/jsoup/parser/HtmlTreeBuilder.java 398
+Faulty:
+transition(HtmlTreeBuilderState.InRow);
+Seed:
+characterReferenceError("missing semicolon");
+**************************************************
+Evaluations: 439
+EstimatedTime: 503011

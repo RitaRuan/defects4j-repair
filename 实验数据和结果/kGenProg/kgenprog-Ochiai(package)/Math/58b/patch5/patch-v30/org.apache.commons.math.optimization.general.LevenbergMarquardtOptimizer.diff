@@ -1,0 +1,18 @@
+--- org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer
++++ org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer
+@@ -387,7 +387,6 @@
+                             tmp = 0.1;
+                         }
+                         delta = tmp * FastMath.min(delta, 10.0 * lmNorm);
+-                        lmPar /= tmp;
+                 } else if ((lmPar == 0) || (ratio >= 0.75)) {
+                     delta = 2 * lmNorm;
+                     lmPar *= 0.5;
+@@ -592,7 +591,6 @@
+             // compute the Newton correction
+             for (int j = 0; j < solvedCols; ++j) {
+                 int pj = permutation[j];
+-                work1[pj] = work3[pj] * diag[pj] / dxNorm;
+             }
+             for (int j = 0; j < solvedCols; ++j) {
+                 int pj = permutation[j];

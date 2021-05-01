@@ -1,0 +1,12 @@
+--- /home/rtx/repair/d4j/Jsoup/45b/src/main/java/org/jsoup/parser/HtmlTreeBuilderState.java
++++ /home/rtx/repair/d4j/Jsoup/45b/src/main/java/org/jsoup/parser/HtmlTreeBuilderState.java
+@@ -797,3 +797,5 @@
+-					if (processed)
+-						return tb.process(t);
+-
++					if (!tb.inTableScope(name)) {
++						tb.error(this);
++						tb.transition(org.jsoup.parser.HtmlTreeBuilderState.InRow);
++						return false;
++					}
+

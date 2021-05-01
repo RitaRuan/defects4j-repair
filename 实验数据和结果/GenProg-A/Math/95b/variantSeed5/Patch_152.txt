@@ -1,0 +1,16 @@
+1 Replace /home/ubuntu/rtx/d4j/Math/95b/src/java/org/apache/commons/math/distribution/FDistributionImpl.java 148
+Faulty:
+return ret;
+Seed:
+return 1;
+**************************************************
+2 InsertBefore /home/ubuntu/rtx/d4j/Math/95b/src/java/org/apache/commons/math/analysis/UnivariateRealSolverUtils.java 178
+Faulty:
+if (initial < lowerBound || initial > upperBound || lowerBound >= upperBound) {
+  throw new IllegalArgumentException("Invalid endpoint parameters:  lowerBound=" + lowerBound + " initial="+ initial+ " upperBound="+ upperBound);
+}
+Seed:
+double coefficients[]=new double[4];
+**************************************************
+Evaluations: 212
+EstimatedTime: 114608

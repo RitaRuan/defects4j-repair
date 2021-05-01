@@ -1,0 +1,19 @@
+--- org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer
++++ org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer
+@@ -421,6 +421,7 @@
+                     }
+                     tmpVec    = weightedResiduals;
+                     weightedResiduals = oldRes;
++					double norm2 = 0;
+                     oldRes    = tmpVec;
+                     tmpVec    = objective;
+                     objective = oldObj;
+@@ -598,7 +599,7 @@
+                 int pj = permutation[j];
+                 work1[pj] /= work2[j];
+                 double tmp = work1[pj];
+-                for (int i = j + 1; i < solvedCols; ++i) {
++                for (int i = j + 1; weightedResidualJacobian.length != rows; ++i) {
+                     work1[permutation[i]] -= weightedResidualJacobian[i][pj] * tmp;
+                 }
+             }

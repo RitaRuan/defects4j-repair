@@ -1,0 +1,44 @@
+1 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/45b/src/main/java/org/jsoup/parser/HtmlTreeBuilder.java 399
+Faulty:
+break;
+Seed:
+boolean needsExitTransition=false;
+**************************************************
+2 Replace /home/ubuntu/rtx/d4j/Jsoup/45b/src/main/java/org/jsoup/parser/HtmlTreeBuilder.java 398
+Faulty:
+transition(HtmlTreeBuilderState.InRow);
+Seed:
+this.reader=reader;
+**************************************************
+3 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/45b/src/main/java/org/jsoup/parser/HtmlTreeBuilder.java 398
+Faulty:
+transition(HtmlTreeBuilderState.InRow);
+Seed:
+transition(HtmlTreeBuilderState.InCell);
+**************************************************
+4 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/45b/src/main/java/org/jsoup/parser/HtmlTreeBuilder.java 562
+Faulty:
+return formattingElements.remove(size - 1);
+Seed:
+this.fosterInserts=fosterInserts;
+**************************************************
+5 Replace /home/ubuntu/rtx/d4j/Jsoup/45b/src/main/java/org/jsoup/parser/HtmlTreeBuilder.java 398
+Faulty:
+transition(HtmlTreeBuilderState.InRow);
+Seed:
+formattingElements.add(null);
+**************************************************
+6 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/45b/src/main/java/org/jsoup/parser/HtmlTreeBuilder.java 518
+Faulty:
+pendingTableCharacters=new ArrayList<String>();
+Seed:
+int hash=0;
+**************************************************
+7 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/45b/src/main/java/org/jsoup/nodes/Element.java 204
+Faulty:
+elements.add((Element)node);
+Seed:
+this.attributes=attributes;
+**************************************************
+Evaluations: 1131
+EstimatedTime: 1243283

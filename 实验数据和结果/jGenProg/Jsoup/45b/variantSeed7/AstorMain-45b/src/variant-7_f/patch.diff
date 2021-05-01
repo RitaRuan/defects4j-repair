@@ -1,0 +1,16 @@
+--- /home/rtx/repair/d4j/Jsoup/45b/src/main/java/org/jsoup/parser/HtmlTreeBuilderState.java
++++ /home/rtx/repair/d4j/Jsoup/45b/src/main/java/org/jsoup/parser/HtmlTreeBuilderState.java
+@@ -794,0 +795,12 @@
++					if ((t.isStartTag() && org.jsoup.helper.StringUtil.in(t.asStartTag().name(), "caption", "col", "colgroup", "tbody", "td", "tfoot", "th", "thead", "tr")) || (t.isEndTag() && t.asEndTag().name().equals("table"))) {
++						tb.error(this);
++						boolean processed = tb.processEndTag("caption");
++						if (processed) {
++							return tb.process(t);
++						}
++					} else if (t.isEndTag() && org.jsoup.helper.StringUtil.in(t.asEndTag().name(), "body", "col", "colgroup", "html", "tbody", "td", "tfoot", "th", "thead", "tr")) {
++						tb.error(this);
++						return false;
++					} else {
++						return tb.process(t, org.jsoup.parser.HtmlTreeBuilderState.InBody);
++					}
+

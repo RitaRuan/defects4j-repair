@@ -1,0 +1,56 @@
+1 Replace /home/ubuntu/rtx/d4j/Math/95b/src/java/org/apache/commons/math/distribution/FDistributionImpl.java 148
+Faulty:
+return ret;
+Seed:
+return 1;
+**************************************************
+2 Replace /home/ubuntu/rtx/d4j/Math/95b/src/java/org/apache/commons/math/distribution/FDistributionImpl.java 148
+Faulty:
+return ret;
+Seed:
+return 1;
+**************************************************
+3 InsertBefore /home/ubuntu/rtx/d4j/Math/95b/src/java/org/apache/commons/math/distribution/FDistributionImpl.java 132
+Faulty:
+return Double.MAX_VALUE;
+Seed:
+if (p == 0) {
+  return 0d;
+}
+**************************************************
+4 Delete /home/ubuntu/rtx/d4j/Math/95b/src/java/org/apache/commons/math/distribution/FDistributionImpl.java 147
+Faulty:
+ret=d / (d - 2.0);
+Seed:
+if (p == 0) {
+  return 0;
+}
+ else if (p == 1) {
+  return 1;
+}
+ else {
+  return super.inverseCumulativeProbability(p);
+}
+**************************************************
+5 Replace /home/ubuntu/rtx/d4j/Math/95b/src/java/org/apache/commons/math/distribution/FDistributionImpl.java 148
+Faulty:
+return ret;
+Seed:
+return 1;
+**************************************************
+6 InsertBefore /home/ubuntu/rtx/d4j/Math/95b/src/java/org/apache/commons/math/distribution/FDistributionImpl.java 132
+Faulty:
+return Double.MAX_VALUE;
+Seed:
+if (p == 0) {
+  return 0d;
+}
+**************************************************
+7 InsertBefore /home/ubuntu/rtx/d4j/Math/95b/src/java/org/apache/commons/math/distribution/FDistributionImpl.java 170
+Faulty:
+return numeratorDegreesOfFreedom;
+Seed:
+double d=getDenominatorDegreesOfFreedom();
+**************************************************
+Evaluations: 1198
+EstimatedTime: 583735

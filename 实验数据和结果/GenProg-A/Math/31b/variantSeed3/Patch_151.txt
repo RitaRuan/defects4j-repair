@@ -1,0 +1,26 @@
+1 Replace /home/rtx/d4j/Math/31b/src/main/java/org/apache/commons/math3/util/ContinuedFraction.java 177
+Faulty:
+throw new ConvergenceException(LocalizedFormats.CONTINUED_FRACTION_NAN_DIVERGENCE,x);
+Seed:
+return 1.0;
+**************************************************
+2 InsertBefore /home/rtx/d4j/Math/31b/src/main/java/org/apache/commons/math3/exception/MathIllegalStateException.java 86
+Faulty:
+return context.getLocalizedMessage();
+Seed:
+context.addMessage(LocalizedFormats.ARITHMETIC_EXCEPTION);
+**************************************************
+3 InsertBefore /home/rtx/d4j/Math/31b/src/main/java/org/apache/commons/math3/exception/util/ExceptionContext.java 177
+Faulty:
+final MessageFormat fmt=new MessageFormat(pat.getLocalizedString(locale),locale);
+Seed:
+context=new HashMap<String,Object>();
+**************************************************
+4 InsertBefore /home/rtx/d4j/Math/31b/src/main/java/org/apache/commons/math3/distribution/FDistribution.java 260
+Faulty:
+return Double.POSITIVE_INFINITY;
+Seed:
+double res=1;
+**************************************************
+Evaluations: 273
+EstimatedTime: 547775

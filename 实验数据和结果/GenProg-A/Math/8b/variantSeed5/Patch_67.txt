@@ -1,0 +1,16 @@
+1 Replace /home/rtx/repair/d4j/Math/8b/src/main/java/org/apache/commons/math3/distribution/DiscreteDistribution.java 189
+Faulty:
+for (int i=0; i < sampleSize; i++) {
+  out[i]=sample();
+}
+Seed:
+int i=1;
+**************************************************
+2 InsertBefore /home/rtx/repair/d4j/Math/8b/src/main/java/org/apache/commons/math3/util/MathArrays.java 1256
+Faulty:
+final int len=values.length;
+Seed:
+long result=1l;
+**************************************************
+Evaluations: 107
+EstimatedTime: 21536

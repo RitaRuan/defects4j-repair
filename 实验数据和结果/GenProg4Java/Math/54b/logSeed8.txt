@@ -1,0 +1,3437 @@
+0 [main] DEBUG clegoues.genprog4java.fitness.Fitness  - parsing granularity, value: class
+21 [main] DEBUG clegoues.genprog4java.fitness.Fitness  - parsing granularity, value: class
+#Thu Mar 11 16:39:13 CST 2021
+negativeTestWeight=2.0
+classSourceFolder=/home/rtx/repair/d4j/Math/54b/target/classes
+model=default
+sampleStrategy=variant
+srcClassPath=/home/rtx/repair/d4j/Math/54b/target/classes
+sourceVersion=1.8
+popsize=40
+regenPaths=false
+posCoverageFile=coverage.path.pos
+continue=false
+edits=APPEND;DELETE;REPLACE
+negCoverageFile=coverage.path.neg
+workingDir=/home/rtx/repair/d4j/Math/54b/
+clearTestCache=false
+skipFailedSanity=false
+sample=0.1 
+oracleGenome=
+testGranularity=class
+justTestingFaultLoc=false
+faultLocStrategy=standardPathFile
+crossp=0.5
+pMutation=1
+generations=10
+positiveTests=/home/rtx/repair/d4j/Math/54b/pos.tests
+javaVM=/home/rtx/java/jdk1.8.0_271/jre/bin/java
+seed=8
+negativePathWeight=0.35
+compileCommand=
+fixStrategy=classScope
+allowCoverageFail=false
+targetClassName=/home/rtx/repair/d4j/Math/54b/bugfiles.txt
+javaRuntime=java.lang.Runtime@6576fe71
+classTestFolder=
+modelPath=OVERALLModel.txt
+sanity=yes
+positivePathWeight=0.65
+jacocoPath=/home/rtx/eclipse-workspace/genprog4java/lib/jacocoagent.jar
+negativeTests=/home/rtx/repair/d4j/Math/54b/neg.tests
+pathToFileHumanInjectedFaultLoc=fileHumanInjectedFaultLoc.txt
+outputDir=/home/rtx/repair/d4j/Math/54b/genprog4java/variantSeed8/
+testClassPath=/home/rtx/repair/d4j/Math/54b/target/classes\:/home/rtx/repair/d4j/Math/54b/target/test-classes\:/home/rtx/repair/defects4j/framework/projects/lib/junit-4.11.jar\:/home/rtx/repair/d4j/Math/54b/lib/junit-4.8.2.jar
+faultStrategy=classScope
+sourceDir=src/main/java
+checkSpace=false
+search=gp
+globalExtension=.java
+faultSpaceSubSet=1/5
+maxVariants=50
+libs=/home/rtx/eclipse-workspace/genprog4java/lib/junittestrunner.jar\:/home/rtx/eclipse-workspace/genprog4java/lib/commons-cli-20040117.000000.jar\:/home/rtx/eclipse-workspace/genprog4java/lib/junit-4.12.jar\:/home/rtx/eclipse-workspace/genprog4java/lib/hamcrest-core-1.3.jar\:/home/rtx/eclipse-workspace/genprog4java/lib/log4j-1.2.17.jar\:/home/rtx/repair/d4j/Math/54b/target/classes\:/home/rtx/repair/d4j/Math/54b/target/test-classes\:/home/rtx/repair/defects4j/framework/projects/lib/junit-4.11.jar\:/home/rtx/repair/d4j/Math/54b/lib/junit-4.8.2.jar\:/home/rtx/repair/d4j/Math/54b/target/classes
+crossover=onepoint
+92 [main] INFO clegoues.genprog4java.main.Main  - Configuration file loaded
+Deserialized fitnessCache HashMap
+8915 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - loaded from source clegoues.genprog4java.java.ClassInfo@d3b7186b
+8915 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - sanity checking begins
+9924 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 1 out of 3
+10284 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+10284 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 2 out of 3
+10646 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+10646 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 3 out of 3
+17737 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+17737 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - 	n1: 
+18286 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - false (0)
+
+18287 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - sanity checking completed (time taken = 9372)
+18287 [main] INFO clegoues.genprog4java.localization.DefaultLocalization  - Start Fault Localization
+18352 [main] INFO clegoues.genprog4java.localization.DefaultLocalization  - Finish Fault Localization
+18353 [main] INFO clegoues.genprog4java.Search.Search  - search: genetic algorithm begins
+
+18805 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 original (stored at: )
+115082 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtDelete(945) (stored at: variant0)
+115197 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:1927: error: cannot find symbol
+            dx = newInstance(x);
+            ^
+  symbol:   variable dx
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1928: error: cannot find symbol
+            dx.sign = -1;
+            ^
+  symbol:   variable dx
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1929: error: cannot find symbol
+            dx = dx.add(this.divide(x));
+            ^
+  symbol:   variable dx
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1929: error: cannot find symbol
+            dx = dx.add(this.divide(x));
+                 ^
+  symbol:   variable dx
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1930: error: cannot find symbol
+            dx = dx.divide(2);
+            ^
+  symbol:   variable dx
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1930: error: cannot find symbol
+            dx = dx.divide(2);
+                 ^
+  symbol:   variable dx
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1933: error: cannot find symbol
+            x = x.add(dx);
+                      ^
+  symbol:   variable dx
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1942: error: cannot find symbol
+            if (dx.mant[mant.length-1] == 0) {
+                ^
+  symbol:   variable dx
+  location: class Dfp
+8 errors
+
+115197 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(1052) at variant1 fails to compile
+
+115197 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtDelete(1052) (stored at: variant1)
+116879 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtDelete(19) (stored at: variant2)
+116985 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:2161: error: unreachable statement
+                if (nans == INFINITE || nans == QNAN) {
+                ^
+1 error
+
+116985 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(1206,1065) at variant3 fails to compile
+
+116986 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtAppend(1206,1065) (stored at: variant3)
+117734 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtReplace(436,237) (stored at: variant4)
+118539 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtDelete(553) (stored at: variant5)
+118620 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:483: error: break outside switch or loop
+				break;
+				^
+1 error
+
+118620 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(201,195) at variant6 fails to compile
+
+118620 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtReplace(201,195) (stored at: variant6)
+118709 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:261: error: unreachable statement
+        sign = 1;
+        ^
+org/apache/commons/math/dfp/Dfp.java:259: error: variable field might not have been initialized
+			return;
+			^
+2 errors
+
+118709 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(41,52) at variant7 fails to compile
+
+118709 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtReplace(41,52) (stored at: variant7)
+118791 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:734: error: incompatible types: boolean cannot be converted to int
+					return false;
+					       ^
+1 error
+
+118791 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(308,354) at variant8 fails to compile
+
+118792 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtAppend(308,354) (stored at: variant8)
+118867 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:320: error: variable field might not have been initialized
+        mant = new int[field.getRadixDigits()];
+                       ^
+1 error
+
+118867 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(85,91) at variant9 fails to compile
+
+118867 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtReplace(85,91) (stored at: variant9)
+214978 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtDelete(183) (stored at: variant10)
+215036 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:896: error: non-static variable mant cannot be referenced from a static context
+				if (mant[mant.length - 1] > 10) {
+				    ^
+org/apache/commons/math/dfp/Dfp.java:896: error: non-static variable mant cannot be referenced from a static context
+				if (mant[mant.length - 1] > 10) {
+				         ^
+org/apache/commons/math/dfp/Dfp.java:897: error: non-static variable exp cannot be referenced from a static context
+					return exp * 4 - 3;
+					       ^
+3 errors
+
+215036 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(389,501) at variant11 fails to compile
+
+215036 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtAppend(389,501) (stored at: variant11)
+227002 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtDelete(393) (stored at: variant12)
+236900 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtDelete(940) (stored at: variant13)
+236948 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:1972: error: incompatible types: Dfp cannot be converted to String
+				return result;
+				       ^
+1 error
+
+236948 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(1079,425) at variant14 fails to compile
+
+236948 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtAppend(1079,425) (stored at: variant14)
+237014 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:826: error: incompatible types: Dfp cannot be converted to boolean
+					return this;
+					       ^
+org/apache/commons/math/dfp/Dfp.java:829: error: incompatible types: Dfp cannot be converted to boolean
+					return newInstance(this);
+					                  ^
+2 errors
+
+237014 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(355,966) at variant15 fails to compile
+
+237015 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtReplace(355,966) (stored at: variant15)
+237524 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtDelete(620) (stored at: variant16)
+238235 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtAppend(302,2) (stored at: variant17)
+238283 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:879: error: break outside switch or loop
+				break;
+				^
+1 error
+
+238283 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(376,157) at variant18 fails to compile
+
+238283 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtAppend(376,157) (stored at: variant18)
+238977 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtReplace(432,548) (stored at: variant19)
+239756 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtDelete(908) (stored at: variant20)
+240551 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtDelete(93) (stored at: variant21)
+240596 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:1205: error: unreachable statement
+                Dfp result = newInstance(getZero());
+                    ^
+1 error
+
+240596 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(563,562) at variant22 fails to compile
+
+240596 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtReplace(563,562) (stored at: variant22)
+240671 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:1396: error: incompatible types: Dfp cannot be converted to int
+				return this;
+				       ^
+1 error
+
+240671 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(689,708) at variant23 fails to compile
+
+240671 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtAppend(689,708) (stored at: variant23)
+240743 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:1455: error: incompatible types: int cannot be converted to Dfp
+				return 0;
+				       ^
+1 error
+
+240744 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(705,1328) at variant24 fails to compile
+
+240744 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtAppend(705,1328) (stored at: variant24)
+240747 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtDelete(85) (stored at: )
+241520 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtAppend(1032,976) (stored at: variant25)
+241532 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:416: error: orphaned default
+            if (fpdecimal.charAt(p) == '.'){{decimalFound=true;}default:}
+                                                                ^
+1 error
+
+241532 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(153,1234) at variant26 fails to compile
+
+241532 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtAppend(153,1234) (stored at: variant26)
+242230 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtAppend(232,274) (stored at: variant27)
+243918 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtAppend(1159,1199) (stored at: variant28)
+243950 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:499: error: incompatible types: unexpected return value
+					return this;
+					       ^
+1 error
+
+243951 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(212,707) at variant29 fails to compile
+
+243951 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtAppend(212,707) (stored at: variant29)
+243986 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:1503: error: variable excp might not have been initialized
+        if (excp != 0) {
+            ^
+1 error
+
+243986 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(763) at variant30 fails to compile
+
+243986 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtDelete(763) (stored at: variant30)
+244027 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:1711: error: incompatible types: missing return value
+							return;
+							^
+1 error
+
+244028 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(910,101) at variant31 fails to compile
+
+244028 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtAppend(910,101) (stored at: variant31)
+244069 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:2270: error: incompatible types: bad type in conditional expression
+				return (sign < 0) ? NEG_INFINITY_STRING : POS_INFINITY_STRING;
+				                    ^
+    String cannot be converted to Dfp
+org/apache/commons/math/dfp/Dfp.java:2270: error: incompatible types: bad type in conditional expression
+				return (sign < 0) ? NEG_INFINITY_STRING : POS_INFINITY_STRING;
+				                                          ^
+    String cannot be converted to Dfp
+org/apache/commons/math/dfp/Dfp.java:2272: error: incompatible types: String cannot be converted to Dfp
+				return NAN_STRING;
+				       ^
+3 errors
+
+244069 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(1276,1074) at variant32 fails to compile
+
+244070 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtReplace(1276,1074) (stored at: variant32)
+244760 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtDelete(1202) (stored at: variant33)
+244792 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:2103: error: incompatible types: Dfp cannot be converted to String
+				return this;
+				       ^
+1 error
+
+244792 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(1175,776) at variant34 fails to compile
+
+244792 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtAppend(1175,776) (stored at: variant34)
+244829 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:962: error: incompatible types: boolean cannot be converted to Dfp
+            return false;
+                   ^
+1 error
+
+244829 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(417,354) at variant35 fails to compile
+
+244829 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtReplace(417,354) (stored at: variant35)
+245453 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtReplace(1352,495) (stored at: variant36)
+246094 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtDelete(139) (stored at: variant37)
+246094 [main] INFO clegoues.genprog4java.Search.Search  - search: generation1
+247558 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:2375: error: continue outside of loop
+			continue;
+			^
+org/apache/commons/math/dfp/Dfp.java:2377: error: cannot find symbol
+        double x = Double.longBitsToDouble(bits);
+                                           ^
+  symbol:   variable bits
+  location: class Dfp
+2 errors
+
+247558 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(908) StmtAppend(1348,911) at variant38 fails to compile
+
+247559 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(908) StmtAppend(1348,911) (stored at: variant38)
+247606 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:873: error: non-static variable nans cannot be referenced from a static context
+        nans = FINITE;
+        ^
+1 error
+
+247606 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(1352,495) StmtReplace(375,94) at variant39 fails to compile
+
+247606 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(1352,495) StmtReplace(375,94) (stored at: variant39)
+249378 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(93) StmtDelete(756) (stored at: variant40)
+345416 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(945) StmtDelete(944) (stored at: variant41)
+345737 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(1352,495) StmtDelete(742) (stored at: variant42)
+345769 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:1952: error: missing return statement
+    }
+    ^
+1 error
+
+345770 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(1032,976) StmtDelete(1070) at variant43 fails to compile
+
+345770 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(1032,976) StmtDelete(1070) (stored at: variant43)
+345809 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:1152: error: cannot find symbol
+            rh = r / RADIX;
+                 ^
+  symbol:   variable r
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1153: error: cannot find symbol
+            mant[i] = r - rh * RADIX;
+                      ^
+  symbol:   variable r
+  location: class Dfp
+2 errors
+
+345809 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(19) StmtAppend(533,1069) at variant44 fails to compile
+
+345809 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(19) StmtAppend(533,1069) (stored at: variant44)
+346043 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(85) StmtReplace(981,610) (stored at: variant45)
+346081 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:1963: error: incompatible types: int cannot be converted to String
+                return 1;
+                       ^
+1 error
+
+346081 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(1032,976) StmtReplace(1078,374) at variant46 fails to compile
+
+346081 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(1032,976) StmtReplace(1078,374) (stored at: variant46)
+346137 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:2114: error: incompatible types: int cannot be converted to String
+					return DfpField.FLAG_OVERFLOW;
+					               ^
+1 error
+
+346137 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(85) StmtAppend(1184,689) at variant47 fails to compile
+
+346137 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(85) StmtAppend(1184,689) (stored at: variant47)
+346832 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(1032,976) StmtReplace(4,1289) (stored at: variant48)
+442878 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(945) StmtDelete(81) (stored at: variant49)
+538925 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(302,2) StmtDelete(616) (stored at: variant50)
+538958 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:1927: error: cannot find symbol
+        while (x.unequal(px)) {
+                         ^
+  symbol:   variable px
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1932: error: cannot find symbol
+            ppx = px;
+                  ^
+  symbol:   variable px
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1933: error: cannot find symbol
+            px = x;
+            ^
+  symbol:   variable px
+  location: class Dfp
+3 errors
+
+538958 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(41,52) StmtDelete(1053) at variant51 fails to compile
+
+538958 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(41,52) StmtDelete(1053) (stored at: variant51)
+538993 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:788: error: incompatible types: int cannot be converted to boolean
+				return DfpField.FLAG_INEXACT;
+				               ^
+1 error
+
+538993 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(1032,976) StmtAppend(331,693) at variant52 fails to compile
+
+538993 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(1032,976) StmtAppend(331,693) (stored at: variant52)
+549744 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(393) StmtAppend(583,844) (stored at: variant53)
+549772 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:962: error: incompatible types: boolean cannot be converted to Dfp
+            return false;
+                   ^
+1 error
+
+549772 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(417,354) StmtAppend(1203,844) at variant54 fails to compile
+
+549772 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(417,354) StmtAppend(1203,844) (stored at: variant54)
+549799 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:1201: error: cannot find symbol
+                result.nans = QNAN;
+                ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1202: error: cannot find symbol
+                result = dotrap(DfpField.FLAG_INVALID, ADD_TRAP, x, result);
+                ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1202: error: cannot find symbol
+                result = dotrap(DfpField.FLAG_INVALID, ADD_TRAP, x, result);
+                                                                    ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1203: error: cannot find symbol
+                return result;
+                       ^
+  symbol:   variable result
+  location: class Dfp
+4 errors
+
+549799 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(564) at variant55 fails to compile
+
+549799 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(564) (stored at: variant55)
+549830 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:320: error: variable field might not have been initialized
+        mant = new int[field.getRadixDigits()];
+                       ^
+1 error
+
+549831 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(85,91) StmtDelete(963) at variant56 fails to compile
+
+549831 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(85,91) StmtDelete(963) (stored at: variant56)
+550426 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(908) StmtDelete(539) (stored at: variant57)
+550470 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:2169: error: unreachable statement
+                break;
+                ^
+1 error
+
+550470 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(393) StmtReplace(1226,172) at variant58 fails to compile
+
+550470 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(393) StmtReplace(1226,172) (stored at: variant58)
+550513 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:2183: error: incompatible types: int cannot be converted to Dfp
+				return -2147483648;
+				       ^
+1 error
+
+550513 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(302,2) StmtReplace(1236,479) at variant59 fails to compile
+
+550513 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(302,2) StmtReplace(1236,479) (stored at: variant59)
+550553 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:1997: error: variable q might not have been initialized
+        q++;
+        ^
+org/apache/commons/math/dfp/Dfp.java:2026: error: variable shf might not have been initialized
+        e = exp * 4 - shf - 1;
+                      ^
+2 errors
+
+550553 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(945) StmtReplace(1103,1181) at variant60 fails to compile
+
+550553 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(945) StmtReplace(1103,1181) (stored at: variant60)
+551190 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(139) StmtDelete(911) (stored at: variant61)
+551747 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(553) StmtAppend(961,631) (stored at: variant62)
+647804 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(183) StmtReplace(685,41) (stored at: variant63)
+647853 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:2247: error: cannot find symbol
+            up = true;
+            ^
+  symbol:   variable up
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:2255: error: cannot find symbol
+            up = !up;
+            ^
+  symbol:   variable up
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:2255: error: cannot find symbol
+            up = !up;
+                  ^
+  symbol:   variable up
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:2260: error: cannot find symbol
+        if (up) {
+            ^
+  symbol:   variable up
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:2260: error: illegal start of type
+        if (up) {
+           ^
+5 errors
+
+647854 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(1032,976) StmtDelete(1253) at variant64 fails to compile
+
+647854 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(1032,976) StmtDelete(1253) (stored at: variant64)
+743945 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(945) StmtDelete(133) (stored at: variant65)
+744003 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:240: error: long cannot be dereferenced
+			x.mant[mant.length - 1] = 2200;
+			 ^
+1 error
+
+744003 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(432,548) StmtAppend(26,1048) at variant66 fails to compile
+
+744003 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(432,548) StmtAppend(26,1048) (stored at: variant66)
+744044 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:896: error: non-static variable mant cannot be referenced from a static context
+				if (mant[mant.length - 1] > 100) {
+				    ^
+org/apache/commons/math/dfp/Dfp.java:896: error: non-static variable mant cannot be referenced from a static context
+				if (mant[mant.length - 1] > 100) {
+				         ^
+org/apache/commons/math/dfp/Dfp.java:897: error: non-static variable exp cannot be referenced from a static context
+					return exp * 4 - 2;
+					       ^
+3 errors
+
+744044 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(945) StmtAppend(389,498) at variant67 fails to compile
+
+744044 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(945) StmtAppend(389,498) (stored at: variant67)
+744087 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:1397: error: incompatible types: Dfp cannot be converted to int
+				return this;
+				       ^
+1 error
+
+744087 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(689,708) StmtDelete(160) at variant68 fails to compile
+
+744087 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(689,708) StmtDelete(160) (stored at: variant68)
+744126 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:962: error: incompatible types: boolean cannot be converted to Dfp
+            return false;
+                   ^
+org/apache/commons/math/dfp/Dfp.java:2330: error: incompatible types: boolean cannot be converted to double
+				return false;
+				       ^
+2 errors
+
+744126 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(417,354) StmtAppend(1316,328) at variant69 fails to compile
+
+744126 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(417,354) StmtAppend(1316,328) (stored at: variant69)
+744175 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:1119: error: unreachable statement
+        switch ((e % 4 + 4) % 4) {
+        ^
+1 error
+
+744175 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(553) StmtReplace(507,431) at variant70 fails to compile
+
+744175 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(553) StmtReplace(507,431) (stored at: variant70)
+744225 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:454: error: unreachable statement
+            if (fpdecimal.charAt(p) < '0' || fpdecimal.charAt(p) > '9') {
+            ^
+1 error
+
+744225 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(393) StmtAppend(173,649) at variant71 fails to compile
+
+744225 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(393) StmtAppend(173,649) (stored at: variant71)
+744275 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:1562: error: int cannot be dereferenced
+        if (x.nans == INFINITE && nans == FINITE) {
+             ^
+org/apache/commons/math/dfp/Dfp.java:1563: error: incompatible types: int cannot be converted to Dfp
+			return x;
+			       ^
+2 errors
+
+744276 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(763) StmtReplace(808,555) at variant72 fails to compile
+
+744276 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(763) StmtReplace(808,555) (stored at: variant72)
+744327 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:960: error: incompatible types: int cannot be converted to Dfp
+			return DfpField.FLAG_UNDERFLOW;
+			               ^
+1 error
+
+744327 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(393) StmtReplace(418,684) at variant73 fails to compile
+
+744327 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(393) StmtReplace(418,684) (stored at: variant73)
+744381 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:1864: error: incompatible types: boolean cannot be converted to Dfp
+				return false;
+				       ^
+1 error
+
+744381 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(763) StmtAppend(1011,361) at variant74 fails to compile
+
+744381 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(763) StmtAppend(1011,361) (stored at: variant74)
+744442 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:1152: error: cannot find symbol
+        extra = extra - rh * RADIX;
+                        ^
+  symbol:   variable rh
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1154: error: cannot find symbol
+            final int r = mant[i] + rh;
+                                    ^
+  symbol:   variable rh
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1155: error: cannot find symbol
+            rh = r / RADIX;
+            ^
+  symbol:   variable rh
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1156: error: cannot find symbol
+            mant[i] = r - rh * RADIX;
+                          ^
+  symbol:   variable rh
+  location: class Dfp
+4 errors
+
+744442 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(553) StmtDelete(529) at variant75 fails to compile
+
+744442 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(553) StmtDelete(529) (stored at: variant75)
+745107 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(436,237) StmtReplace(200,175) (stored at: variant76)
+745144 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:826: error: incompatible types: Dfp cannot be converted to boolean
+					return this;
+					       ^
+org/apache/commons/math/dfp/Dfp.java:829: error: incompatible types: Dfp cannot be converted to boolean
+					return newInstance(this);
+					                  ^
+2 errors
+
+745144 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(355,966) StmtAppend(742,707) at variant77 fails to compile
+
+745144 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(355,966) StmtAppend(742,707) (stored at: variant77)
+745792 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(565) (stored at: variant78)
+746415 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(1305) (stored at: variant79)
+747055 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(435,93) (stored at: variant80)
+747092 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:1870: error: unreachable statement
+				{
+				^
+1 error
+
+747093 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(1016,983) at variant81 fails to compile
+
+747093 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(1016,983) (stored at: variant81)
+747724 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(1320) (stored at: variant82)
+843780 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(573) (stored at: variant83)
+844342 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(277,563) (stored at: variant84)
+844727 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(184,686) (stored at: variant85)
+844755 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:2343: error: incompatible types: Dfp cannot be converted to double
+				return this;
+				       ^
+1 error
+
+844756 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(1325,546) at variant86 fails to compile
+
+844756 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(1325,546) (stored at: variant86)
+844899 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:711: error: break outside switch or loop
+				break;
+				^
+1 error
+
+844899 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(295,212) at variant87 fails to compile
+
+844899 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(295,212) (stored at: variant87)
+845498 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(845) (stored at: variant88)
+847087 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(1159) (stored at: variant89)
+847677 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(767) (stored at: variant90)
+847679 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(1305) (stored at: )
+847706 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:1276: error: cannot find symbol
+            if (excp != 0) {
+                ^
+  symbol:   variable excp
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1277: error: cannot find symbol
+                result = dotrap(excp, ADD_TRAP, x, result);
+                                ^
+  symbol:   variable excp
+  location: class Dfp
+2 errors
+
+847706 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(612,598) at variant91 fails to compile
+
+847706 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(612,598) (stored at: variant91)
+851583 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(646,280) (stored at: variant92)
+851607 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:1034: error: unreachable statement
+                        result = result.add(a);
+                        ^
+1 error
+
+851607 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(464,194) at variant93 fails to compile
+
+851607 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(464,194) (stored at: variant93)
+853209 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(1165,619) (stored at: variant94)
+853209 [main] INFO clegoues.genprog4java.Search.Search  - search: generation2
+853270 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:873: error: non-static variable nans cannot be referenced from a static context
+        nans = FINITE;
+        ^
+1 error
+
+853306 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:873: error: non-static variable nans cannot be referenced from a static context
+        nans = FINITE;
+        ^
+1 error
+
+853350 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:873: error: non-static variable nans cannot be referenced from a static context
+        nans = FINITE;
+        ^
+1 error
+
+853383 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:873: error: non-static variable nans cannot be referenced from a static context
+        nans = FINITE;
+        ^
+1 error
+
+853416 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:873: error: non-static variable nans cannot be referenced from a static context
+        nans = FINITE;
+        ^
+1 error
+
+853458 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:873: error: non-static variable nans cannot be referenced from a static context
+        nans = FINITE;
+        ^
+1 error
+
+853493 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:873: error: non-static variable nans cannot be referenced from a static context
+        nans = FINITE;
+        ^
+1 error
+
+853534 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:873: error: non-static variable nans cannot be referenced from a static context
+        nans = FINITE;
+        ^
+1 error
+
+853580 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:873: error: non-static variable nans cannot be referenced from a static context
+        nans = FINITE;
+        ^
+1 error
+
+853633 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:873: error: non-static variable nans cannot be referenced from a static context
+        nans = FINITE;
+        ^
+1 error
+
+853676 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:873: error: non-static variable nans cannot be referenced from a static context
+        nans = FINITE;
+        ^
+1 error
+
+853714 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:873: error: non-static variable nans cannot be referenced from a static context
+        nans = FINITE;
+        ^
+1 error
+
+853767 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:873: error: non-static variable nans cannot be referenced from a static context
+        nans = FINITE;
+        ^
+1 error
+
+853806 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:873: error: non-static variable nans cannot be referenced from a static context
+        nans = FINITE;
+        ^
+1 error
+
+853839 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:873: error: non-static variable nans cannot be referenced from a static context
+        nans = FINITE;
+        ^
+1 error
+
+853877 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:873: error: non-static variable nans cannot be referenced from a static context
+        nans = FINITE;
+        ^
+1 error
+
+853921 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:873: error: non-static variable nans cannot be referenced from a static context
+        nans = FINITE;
+        ^
+1 error
+
+853968 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:873: error: non-static variable nans cannot be referenced from a static context
+        nans = FINITE;
+        ^
+1 error
+
+854008 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:873: error: non-static variable nans cannot be referenced from a static context
+        nans = FINITE;
+        ^
+1 error
+
+854669 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:896: error: non-static variable mant cannot be referenced from a static context
+				if (mant[mant.length - 1] > 100) {
+				    ^
+org/apache/commons/math/dfp/Dfp.java:896: error: non-static variable mant cannot be referenced from a static context
+				if (mant[mant.length - 1] > 100) {
+				         ^
+org/apache/commons/math/dfp/Dfp.java:897: error: non-static variable exp cannot be referenced from a static context
+					return exp * 4 - 2;
+					       ^
+3 errors
+
+854669 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(945) StmtAppend(389,498) StmtDelete(416) at variant95 fails to compile
+
+854669 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(945) StmtAppend(389,498) StmtDelete(416) (stored at: variant95)
+856535 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(93) StmtDelete(756) StmtAppend(273,157) (stored at: variant96)
+857156 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(908) StmtDelete(539) StmtReplace(1226,1205) (stored at: variant97)
+857206 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:439: error: cannot find symbol
+            if (q == mant.length*rsize+offset+1) {
+                ^
+  symbol:   variable q
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:455: error: cannot find symbol
+            striped[q] = fpdecimal.charAt(p);
+                    ^
+  symbol:   variable q
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:456: error: cannot find symbol
+            q++;
+            ^
+  symbol:   variable q
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:463: error: cannot find symbol
+        if (decimalFound && q != offset) {
+                            ^
+  symbol:   variable q
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:465: error: cannot find symbol
+                q--;
+                ^
+  symbol:   variable q
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:466: error: cannot find symbol
+                if (q == offset) {
+                    ^
+  symbol:   variable q
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:469: error: cannot find symbol
+                if (striped[q] == '0') {
+                            ^
+  symbol:   variable q
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:484: error: cannot find symbol
+            decimalPos = q-offset;
+                         ^
+  symbol:   variable q
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:488: error: cannot find symbol
+        q = offset;  // set q to point to first sig digit
+        ^
+  symbol:   variable q
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:492: error: cannot find symbol
+        while (p > q) {
+                   ^
+  symbol:   variable q
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:502: error: cannot find symbol
+        q -= i;
+        ^
+  symbol:   variable q
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:506: error: cannot find symbol
+        while ((p - q) < (mant.length * rsize)) {
+                    ^
+  symbol:   variable q
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:515: error: cannot find symbol
+            mant[i] = (striped[q]   - '0') * 1000 +
+                               ^
+  symbol:   variable q
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:516: error: cannot find symbol
+                      (striped[q+1] - '0') * 100  +
+                               ^
+  symbol:   variable q
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:517: error: cannot find symbol
+                      (striped[q+2] - '0') * 10   +
+                               ^
+  symbol:   variable q
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:518: error: cannot find symbol
+                      (striped[q+3] - '0');
+                               ^
+  symbol:   variable q
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:519: error: cannot find symbol
+            q += 4;
+            ^
+  symbol:   variable q
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:525: error: cannot find symbol
+        if (q < striped.length) {
+            ^
+  symbol:   variable q
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:527: error: cannot find symbol
+            round((striped[q] - '0')*1000);
+                           ^
+  symbol:   variable q
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1151: error: cannot find symbol
+        extra = extra - rh * RADIX;
+                        ^
+  symbol:   variable rh
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1153: error: cannot find symbol
+            final int r = mant[i] + rh;
+                                    ^
+  symbol:   variable rh
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1154: error: cannot find symbol
+            rh = r / RADIX;
+            ^
+  symbol:   variable rh
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1155: error: cannot find symbol
+            mant[i] = r - rh * RADIX;
+                          ^
+  symbol:   variable rh
+  location: class Dfp
+23 errors
+
+857206 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(553) StmtDelete(529) StmtReplace(159,136) at variant98 fails to compile
+
+857206 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(553) StmtDelete(529) StmtReplace(159,136) (stored at: variant98)
+857264 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:711: error: break outside switch or loop
+				break;
+				^
+org/apache/commons/math/dfp/Dfp.java:1102: error: incompatible types: Dfp cannot be converted to int
+				return newInstance(this);
+				                  ^
+2 errors
+
+857264 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(295,212) StmtReplace(500,415) at variant99 fails to compile
+
+857264 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(295,212) StmtReplace(500,415) (stored at: variant99)
+857315 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:896: error: non-static variable mant cannot be referenced from a static context
+				if (mant[mant.length - 1] > 100) {
+				    ^
+org/apache/commons/math/dfp/Dfp.java:896: error: non-static variable mant cannot be referenced from a static context
+				if (mant[mant.length - 1] > 100) {
+				         ^
+org/apache/commons/math/dfp/Dfp.java:897: error: non-static variable exp cannot be referenced from a static context
+					return exp * 4 - 2;
+					       ^
+3 errors
+
+857315 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(945) StmtAppend(389,498) StmtDelete(511) at variant100 fails to compile
+
+857315 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(945) StmtAppend(389,498) StmtDelete(511) (stored at: variant100)
+953379 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(573) StmtAppend(591,596) (stored at: variant101)
+953927 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(767) StmtDelete(415) (stored at: variant102)
+955707 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(1320) StmtDelete(349) (stored at: variant103)
+1051760 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(573) StmtReplace(900,314) (stored at: variant104)
+1051787 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:1153: error: cannot find symbol
+        extra = extra - rh * RADIX;
+                        ^
+  symbol:   variable rh
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1155: error: cannot find symbol
+            final int r = mant[i] + rh;
+                                    ^
+  symbol:   variable rh
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1156: error: cannot find symbol
+            rh = r / RADIX;
+            ^
+  symbol:   variable rh
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1157: error: cannot find symbol
+            mant[i] = r - rh * RADIX;
+                          ^
+  symbol:   variable rh
+  location: class Dfp
+4 errors
+
+1051787 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(553) StmtDelete(529) StmtDelete(474) at variant105 fails to compile
+
+1051787 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(553) StmtDelete(529) StmtDelete(474) (stored at: variant105)
+1051815 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:960: error: incompatible types: int cannot be converted to Dfp
+			return DfpField.FLAG_UNDERFLOW;
+			               ^
+1 error
+
+1051815 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(393) StmtReplace(418,684) StmtAppend(912,629) at variant106 fails to compile
+
+1051815 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(393) StmtReplace(418,684) StmtAppend(912,629) (stored at: variant106)
+1051846 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:1789: error: missing return statement
+    }
+    ^
+1 error
+
+1051846 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(1352,495) StmtDelete(742) StmtDelete(964) at variant107 fails to compile
+
+1051846 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(1352,495) StmtDelete(742) StmtDelete(964) (stored at: variant107)
+1053314 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(565) StmtDelete(1161) (stored at: variant108)
+1053340 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:741: error: incompatible types: Dfp cannot be converted to int
+				return newInstance(this);
+				                  ^
+1 error
+
+1053340 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(1305) StmtReplace(314,430) at variant109 fails to compile
+
+1053340 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(1305) StmtReplace(314,430) (stored at: variant109)
+1053672 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(1352,495) StmtDelete(742) StmtDelete(835) (stored at: variant110)
+1053710 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:1152: error: cannot find symbol
+            rh = r / RADIX;
+                 ^
+  symbol:   variable r
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1153: error: cannot find symbol
+            mant[i] = r - rh * RADIX;
+                      ^
+  symbol:   variable r
+  location: class Dfp
+2 errors
+
+1053710 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(19) StmtAppend(533,1069) StmtDelete(11) at variant111 fails to compile
+
+1053710 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(19) StmtAppend(533,1069) StmtDelete(11) (stored at: variant111)
+1053760 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:1437: error: cannot find symbol
+                result = newInstance(this);
+                ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1438: error: cannot find symbol
+                result.sign = (byte) (sign * x.sign);
+                ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1439: error: cannot find symbol
+                return result;
+                       ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1443: error: cannot find symbol
+                result = newInstance(x);
+                ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1444: error: cannot find symbol
+                result.sign = (byte) (sign * x.sign);
+                ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1445: error: cannot find symbol
+                return result;
+                       ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1449: error: cannot find symbol
+                result = newInstance(this);
+                ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1450: error: cannot find symbol
+                result.sign = (byte) (sign * x.sign);
+                ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1451: error: cannot find symbol
+                return result;
+                       ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1457: error: cannot find symbol
+                result = newInstance(getZero());
+                ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1458: error: cannot find symbol
+                result.nans = QNAN;
+                ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1459: error: cannot find symbol
+                result = dotrap(DfpField.FLAG_INVALID, MULTIPLY_TRAP, x, result);
+                ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1459: error: cannot find symbol
+                result = dotrap(DfpField.FLAG_INVALID, MULTIPLY_TRAP, x, result);
+                                                                         ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1460: error: cannot find symbol
+                return result;
+                       ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1489: error: cannot find symbol
+            result.mant[mant.length - i - 1] = product[md - i];
+            ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1494: error: cannot find symbol
+        result.sign = (byte)((sign == x.sign)?1:-1);
+        ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1496: error: cannot find symbol
+        if (result.mant[mant.length-1] == 0) {
+            ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1498: error: cannot find symbol
+            result.exp = 0;
+            ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1503: error: cannot find symbol
+            excp = result.round(product[md-mant.length]);
+                   ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1505: error: cannot find symbol
+            excp = result.round(0); // has no effect except to check status
+                   ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1509: error: cannot find symbol
+            result = dotrap(excp, MULTIPLY_TRAP, x, result);
+            ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1509: error: cannot find symbol
+            result = dotrap(excp, MULTIPLY_TRAP, x, result);
+                                                    ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1512: error: cannot find symbol
+        return result;
+               ^
+  symbol:   variable result
+  location: class Dfp
+23 errors
+
+1053760 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(93) StmtDelete(756) StmtAppend(704,1048) at variant112 fails to compile
+
+1053760 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(93) StmtDelete(756) StmtAppend(704,1048) (stored at: variant112)
+1053805 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:1152: error: cannot find symbol
+        extra = extra - rh * RADIX;
+                        ^
+  symbol:   variable rh
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1154: error: cannot find symbol
+            final int r = mant[i] + rh;
+                                    ^
+  symbol:   variable rh
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1155: error: cannot find symbol
+            rh = r / RADIX;
+            ^
+  symbol:   variable rh
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1156: error: cannot find symbol
+            mant[i] = r - rh * RADIX;
+                          ^
+  symbol:   variable rh
+  location: class Dfp
+4 errors
+
+1053805 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(553) StmtDelete(529) StmtReplace(566,1289) at variant113 fails to compile
+
+1053805 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(553) StmtDelete(529) StmtReplace(566,1289) (stored at: variant113)
+1149865 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtAppend(302,2) StmtDelete(616) StmtDelete(1094) (stored at: variant114)
+1149898 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:2041: error: incompatible types: Dfp cannot be converted to String
+				return newInstance(this);
+				                  ^
+1 error
+
+1149898 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(436,237) StmtReplace(200,175) StmtAppend(1130,418) at variant115 fails to compile
+
+1149898 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(436,237) StmtReplace(200,175) StmtAppend(1130,418) (stored at: variant115)
+1149936 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:896: error: non-static variable mant cannot be referenced from a static context
+				if (mant[mant.length - 1] > 100) {
+				    ^
+org/apache/commons/math/dfp/Dfp.java:896: error: non-static variable mant cannot be referenced from a static context
+				if (mant[mant.length - 1] > 100) {
+				         ^
+org/apache/commons/math/dfp/Dfp.java:897: error: non-static variable exp cannot be referenced from a static context
+					return exp * 4 - 2;
+					       ^
+org/apache/commons/math/dfp/Dfp.java:958: error: cannot find symbol
+        if (result.mant[mant.length-1] == 0) {
+            ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:959: error: cannot find symbol
+            result.sign = sign;
+            ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:962: error: cannot find symbol
+        return result;
+               ^
+  symbol:   variable result
+  location: class Dfp
+6 errors
+
+1149936 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(945) StmtAppend(389,498) StmtReplace(408,975) at variant116 fails to compile
+
+1149936 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(945) StmtAppend(389,498) StmtReplace(408,975) (stored at: variant116)
+1149968 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:518: error: incompatible types: unexpected return value
+				return this;
+				       ^
+1 error
+
+1149968 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(93) StmtDelete(756) StmtReplace(225,836) at variant117 fails to compile
+
+1149968 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(93) StmtDelete(756) StmtReplace(225,836) (stored at: variant117)
+1150005 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:2181: error: incompatible types: int cannot be converted to Dfp
+				return -2147483648;
+				       ^
+1 error
+
+1150005 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(302,2) StmtReplace(1236,479) StmtDelete(934) at variant118 fails to compile
+
+1150005 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtAppend(302,2) StmtReplace(1236,479) StmtDelete(934) (stored at: variant118)
+1150037 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:2355: error: cannot find symbol
+        str = str.substring(0, str.length()-1);
+        ^
+  symbol:   variable str
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:2355: error: cannot find symbol
+        str = str.substring(0, str.length()-1);
+                               ^
+  symbol:   variable str
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:2355: error: cannot find symbol
+        str = str.substring(0, str.length()-1);
+              ^
+  symbol:   variable str
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:2356: error: cannot find symbol
+        long mantissa = Long.parseLong(str);
+                                       ^
+  symbol:   variable str
+  location: class Dfp
+4 errors
+
+1150037 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(183) StmtReplace(685,41) StmtDelete(1334) at variant119 fails to compile
+
+1150037 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(183) StmtReplace(685,41) StmtDelete(1334) (stored at: variant119)
+1150069 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:1155: error: cannot find symbol
+            rh = r / RADIX;
+                 ^
+  symbol:   variable r
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1156: error: cannot find symbol
+            mant[i] = r - rh * RADIX;
+                      ^
+  symbol:   variable r
+  location: class Dfp
+2 errors
+
+1150069 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(19) StmtAppend(533,1069) StmtAppend(525,11) at variant120 fails to compile
+
+1150070 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(19) StmtAppend(533,1069) StmtAppend(525,11) (stored at: variant120)
+1150105 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:788: error: incompatible types: int cannot be converted to boolean
+				return DfpField.FLAG_INEXACT;
+				               ^
+org/apache/commons/math/dfp/Dfp.java:1483: error: cannot find symbol
+                md = i;
+                ^
+  symbol:   variable md
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1490: error: cannot find symbol
+            result.mant[mant.length - i - 1] = product[md - i];
+                                                       ^
+  symbol:   variable md
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1494: error: cannot find symbol
+        result.exp = exp + x.exp + md - 2 * mant.length + 1;
+                                   ^
+  symbol:   variable md
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1503: error: cannot find symbol
+        if (md > (mant.length-1)) {
+            ^
+  symbol:   variable md
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1504: error: cannot find symbol
+            excp = result.round(product[md-mant.length]);
+                                        ^
+  symbol:   variable md
+  location: class Dfp
+6 errors
+
+1150105 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(1032,976) StmtAppend(331,693) StmtDelete(746) at variant121 fails to compile
+
+1150105 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtAppend(1032,976) StmtAppend(331,693) StmtDelete(746) (stored at: variant121)
+1150774 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(436,237) StmtReplace(200,175) StmtReplace(635,235) (stored at: variant122)
+1150813 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:1769: error: incompatible types: int cannot be converted to Dfp
+			return DfpField.FLAG_UNDERFLOW;
+			               ^
+org/apache/commons/math/dfp/Dfp.java:2186: error: incompatible types: int cannot be converted to Dfp
+				return -2147483648;
+				       ^
+2 errors
+
+1150813 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(302,2) StmtReplace(1236,479) StmtReplace(952,684) at variant123 fails to compile
+
+1150813 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtAppend(302,2) StmtReplace(1236,479) StmtReplace(952,684) (stored at: variant123)
+1151456 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(553) StmtAppend(961,631) StmtReplace(610,1289) (stored at: variant124)
+1152124 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(1320) StmtReplace(82,1129) (stored at: variant125)
+1152156 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:1152: error: cannot find symbol
+        extra = extra - rh * RADIX;
+                        ^
+  symbol:   variable rh
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1154: error: cannot find symbol
+            final int r = mant[i] + rh;
+                                    ^
+  symbol:   variable rh
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1155: error: cannot find symbol
+            rh = r / RADIX;
+            ^
+  symbol:   variable rh
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1156: error: cannot find symbol
+            mant[i] = r - rh * RADIX;
+                          ^
+  symbol:   variable rh
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:2121: error: continue outside of loop
+			continue;
+			^
+5 errors
+
+1152157 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(553) StmtDelete(529) StmtAppend(1188,131) at variant126 fails to compile
+
+1152157 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(553) StmtDelete(529) StmtAppend(1188,131) (stored at: variant126)
+1152162 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(553) StmtAppend(961,631) StmtAppend(963,382) (stored at: )
+1152212 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:2170: error: incompatible types: int cannot be converted to Dfp
+				return -2147483648;
+				       ^
+1 error
+
+1152212 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(302,2) StmtReplace(1236,479) StmtAppend(887,814) at variant127 fails to compile
+
+1152212 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtAppend(302,2) StmtReplace(1236,479) StmtAppend(887,814) (stored at: variant127)
+1152259 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:960: error: incompatible types: int cannot be converted to Dfp
+			return DfpField.FLAG_UNDERFLOW;
+			               ^
+org/apache/commons/math/dfp/Dfp.java:1351: error: incompatible types: Dfp cannot be converted to int
+				return newInstance(this);
+				                  ^
+2 errors
+
+1152259 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(393) StmtReplace(418,684) StmtReplace(664,1015) at variant128 fails to compile
+
+1152259 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(393) StmtReplace(418,684) StmtReplace(664,1015) (stored at: variant128)
+1248309 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(945) StmtDelete(133) StmtReplace(492,509) (stored at: variant129)
+1248544 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(85) StmtReplace(981,610) StmtDelete(907) (stored at: variant130)
+1248582 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:1531: error: incompatible types: int cannot be converted to Dfp
+            return 1;
+                   ^
+1 error
+
+1248582 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(1032,976) StmtReplace(4,1289) StmtReplace(782,374) at variant131 fails to compile
+
+1248582 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtAppend(1032,976) StmtReplace(4,1289) StmtReplace(782,374) (stored at: variant131)
+1248631 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:962: error: incompatible types: boolean cannot be converted to Dfp
+            return false;
+                   ^
+org/apache/commons/math/dfp/Dfp.java:2329: error: incompatible types: boolean cannot be converted to double
+				return false;
+				       ^
+2 errors
+
+1248631 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(417,354) StmtAppend(1316,328) StmtDelete(553) at variant132 fails to compile
+
+1248631 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(417,354) StmtAppend(1316,328) StmtDelete(553) (stored at: variant132)
+1248674 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:714: error: break outside switch or loop
+				break;
+				^
+1 error
+
+1248675 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(295,212) StmtAppend(130,1031) at variant133 fails to compile
+
+1248675 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(295,212) StmtAppend(130,1031) (stored at: variant133)
+1248723 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:1362: error: unreachable statement
+                break;
+                ^
+1 error
+
+1248723 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(945) StmtReplace(200,175) StmtReplace(670,661) at variant134 fails to compile
+
+1248723 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(945) StmtReplace(200,175) StmtReplace(670,661) (stored at: variant134)
+1248771 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:1613: error: cannot find symbol
+                result = newInstance(this);
+                ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1614: error: cannot find symbol
+                result.sign = (byte) (sign * divisor.sign);
+                ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1615: error: cannot find symbol
+                return result;
+                       ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1619: error: cannot find symbol
+                result = newInstance(getZero());
+                ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1620: error: cannot find symbol
+                result.sign = (byte) (sign * divisor.sign);
+                ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1621: error: cannot find symbol
+                return result;
+                       ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1626: error: cannot find symbol
+                result = newInstance(getZero());
+                ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1627: error: cannot find symbol
+                result.nans = QNAN;
+                ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1628: error: cannot find symbol
+                result = dotrap(DfpField.FLAG_INVALID, DIVIDE_TRAP, divisor, result);
+                ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1628: error: cannot find symbol
+                result = dotrap(DfpField.FLAG_INVALID, DIVIDE_TRAP, divisor, result);
+                                                                             ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1629: error: cannot find symbol
+                return result;
+                       ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1636: error: cannot find symbol
+            result = newInstance(getZero());
+            ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1637: error: cannot find symbol
+            result.sign = (byte) (sign * divisor.sign);
+            ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1638: error: cannot find symbol
+            result.nans = INFINITE;
+            ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1639: error: cannot find symbol
+            result = dotrap(DfpField.FLAG_DIV_ZERO, DIVIDE_TRAP, divisor, result);
+            ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1639: error: cannot find symbol
+            result = dotrap(DfpField.FLAG_DIV_ZERO, DIVIDE_TRAP, divisor, result);
+                                                                          ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1640: error: cannot find symbol
+            return result;
+                   ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1766: error: cannot find symbol
+            result.mant[mant.length-i-1] = quotient[md-i];
+            ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1770: error: cannot find symbol
+        result.exp = exp - divisor.exp + md - mant.length;
+        ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1771: error: cannot find symbol
+        result.sign = (byte) ((sign == divisor.sign) ? 1 : -1);
+        ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1773: error: cannot find symbol
+        if (result.mant[mant.length-1] == 0) { // if result is zero, set exp to zero
+            ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1774: error: cannot find symbol
+            result.exp = 0;
+            ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1778: error: cannot find symbol
+            excp = result.round(quotient[md-mant.length]);
+                   ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1780: error: cannot find symbol
+            excp = result.round(0);
+                   ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1784: error: cannot find symbol
+            result = dotrap(excp, DIVIDE_TRAP, divisor, result);
+            ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1784: error: cannot find symbol
+            result = dotrap(excp, DIVIDE_TRAP, divisor, result);
+                                                        ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1787: error: cannot find symbol
+        return result;
+               ^
+  symbol:   variable result
+  location: class Dfp
+27 errors
+
+1248771 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(833) at variant135 fails to compile
+
+1248771 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(833) (stored at: variant135)
+1248817 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:2297: error: missing return statement
+    }
+    ^
+1 error
+
+1248817 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(553) StmtDelete(1295) at variant136 fails to compile
+
+1248817 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(553) StmtDelete(1295) (stored at: variant136)
+1248870 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:210: error: variable field might not have been initialized
+	}
+	^
+1 error
+
+1248870 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(302,2) StmtDelete(10) at variant137 fails to compile
+
+1248870 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtAppend(302,2) StmtDelete(10) (stored at: variant137)
+1249574 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(1069) (stored at: variant138)
+1250275 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(436,237) StmtDelete(966) (stored at: variant139)
+1250599 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtAppend(961,631) StmtReplace(744,298) (stored at: variant140)
+1250629 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:451: error: unreachable statement
+				significantDigits--;
+				^
+1 error
+
+1250629 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(174,197) at variant141 fails to compile
+
+1250629 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtAppend(174,197) (stored at: variant141)
+1250669 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:2187: error: incompatible types: int cannot be converted to Dfp
+				return -2147483648;
+				       ^
+1 error
+
+1250669 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(1236,479) StmtDelete(1232) at variant142 fails to compile
+
+1250669 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(1236,479) StmtDelete(1232) (stored at: variant142)
+1251386 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(293) (stored at: variant143)
+1252083 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(1215) (stored at: variant144)
+1252133 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:1914: error: unreachable statement
+				if (nans == INFINITE && x.nans == FINITE) {
+				^
+1 error
+
+1252133 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(945) StmtDelete(742) StmtAppend(1049,552) at variant145 fails to compile
+
+1252133 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(945) StmtDelete(742) StmtAppend(1049,552) (stored at: variant145)
+1252133 [main] INFO clegoues.genprog4java.Search.Search  - search: generation3
+1253926 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:711: error: break outside switch or loop
+				break;
+				^
+org/apache/commons/math/dfp/Dfp.java:1102: error: incompatible types: Dfp cannot be converted to int
+				return newInstance(this);
+				                  ^
+2 errors
+
+1253926 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(295,212) StmtReplace(500,415) StmtReplace(838,406) at variant146 fails to compile
+
+1253926 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(295,212) StmtReplace(500,415) StmtReplace(838,406) (stored at: variant146)
+1253965 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:470: error: unreachable statement
+						exp = 0;
+						^
+org/apache/commons/math/dfp/Dfp.java:2300: error: missing return statement
+    }
+    ^
+2 errors
+
+1253965 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(553) StmtDelete(1295) StmtAppend(194,25) at variant147 fails to compile
+
+1253965 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(553) StmtDelete(1295) StmtAppend(194,25) (stored at: variant147)
+1350006 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(573) StmtAppend(591,596) StmtReplace(576,578) (stored at: variant148)
+1350654 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(908) StmtDelete(539) StmtReplace(1226,1205) StmtDelete(100) (stored at: variant149)
+1351235 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(1320) StmtReplace(82,1129) StmtDelete(1232) (stored at: variant150)
+1351278 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:2012: error: variable e might not have been initialized
+				exp = e;
+				      ^
+1 error
+
+1351278 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(1215) StmtAppend(1111,296) at variant151 fails to compile
+
+1351278 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(1215) StmtAppend(1111,296) (stored at: variant151)
+1351329 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:320: error: variable field might not have been initialized
+	}
+	^
+1 error
+
+1351329 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(961,631) StmtReplace(744,298) StmtDelete(84) at variant152 fails to compile
+
+1351329 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtAppend(961,631) StmtReplace(744,298) StmtDelete(84) (stored at: variant152)
+1351385 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:1155: error: cannot find symbol
+            rh = r / RADIX;
+                 ^
+  symbol:   variable r
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1156: error: cannot find symbol
+            mant[i] = r - rh * RADIX;
+                      ^
+  symbol:   variable r
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1615: error: incompatible types: missing return value
+					return;
+					^
+3 errors
+
+1351385 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(19) StmtAppend(533,1069) StmtAppend(525,11) StmtAppend(840,106) at variant153 fails to compile
+
+1351385 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(19) StmtAppend(533,1069) StmtAppend(525,11) StmtAppend(840,106) (stored at: variant153)
+1351430 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:1467: error: cannot find symbol
+                r = r + product[i+j] + rh;  // add to the product digit with carry in
+                                       ^
+  symbol:   variable rh
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1469: error: cannot find symbol
+                rh = r / RADIX;
+                ^
+  symbol:   variable rh
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1470: error: cannot find symbol
+                product[i+j] = r - rh * RADIX;
+                                   ^
+  symbol:   variable rh
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1472: error: cannot find symbol
+            product[i+mant.length] = rh;
+                                     ^
+  symbol:   variable rh
+  location: class Dfp
+4 errors
+
+1351430 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(565) StmtDelete(1161) StmtReplace(738,158) at variant154 fails to compile
+
+1351430 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(565) StmtDelete(1161) StmtReplace(738,158) (stored at: variant154)
+1352089 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(553) StmtAppend(961,631) StmtAppend(963,382) StmtDelete(1333) (stored at: variant155)
+1352412 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtAppend(961,631) StmtReplace(744,298) StmtReplace(1342,33) (stored at: variant156)
+1448475 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(945) StmtDelete(133) StmtReplace(492,509) StmtAppend(949,730) (stored at: variant157)
+1448506 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:1155: error: cannot find symbol
+            rh = r / RADIX;
+                 ^
+  symbol:   variable r
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1156: error: cannot find symbol
+            mant[i] = r - rh * RADIX;
+                      ^
+  symbol:   variable r
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1638: error: incompatible types: boolean cannot be converted to Dfp
+					return false;
+					       ^
+3 errors
+
+1448506 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(19) StmtAppend(533,1069) StmtAppend(525,11) StmtAppend(861,353) at variant158 fails to compile
+
+1448506 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(19) StmtAppend(533,1069) StmtAppend(525,11) StmtAppend(861,353) (stored at: variant158)
+1448541 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:896: error: non-static variable mant cannot be referenced from a static context
+				if (mant[mant.length - 1] > 100) {
+				    ^
+org/apache/commons/math/dfp/Dfp.java:896: error: non-static variable mant cannot be referenced from a static context
+				if (mant[mant.length - 1] > 100) {
+				         ^
+org/apache/commons/math/dfp/Dfp.java:897: error: non-static variable exp cannot be referenced from a static context
+					return exp * 4 - 2;
+					       ^
+org/apache/commons/math/dfp/Dfp.java:958: error: cannot find symbol
+        if (result.mant[mant.length-1] == 0) {
+            ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:959: error: cannot find symbol
+            result.sign = sign;
+            ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:962: error: cannot find symbol
+        return result;
+               ^
+  symbol:   variable result
+  location: class Dfp
+6 errors
+
+1448541 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(945) StmtAppend(389,498) StmtReplace(408,975) StmtAppend(1182,312) at variant159 fails to compile
+
+1448541 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(945) StmtAppend(389,498) StmtReplace(408,975) StmtAppend(1182,312) (stored at: variant159)
+1448911 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(1215) StmtReplace(163,1187) (stored at: variant160)
+1449199 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(908) StmtDelete(539) StmtReplace(1226,1205) StmtDelete(744) (stored at: variant161)
+1449231 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:2182: error: incompatible types: int cannot be converted to Dfp
+				return -2147483648;
+				       ^
+1 error
+
+1449231 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(302,2) StmtReplace(1236,479) StmtDelete(934) StmtDelete(1063) at variant162 fails to compile
+
+1449231 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtAppend(302,2) StmtReplace(1236,479) StmtDelete(934) StmtDelete(1063) (stored at: variant162)
+1449271 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:960: error: incompatible types: int cannot be converted to Dfp
+			return DfpField.FLAG_UNDERFLOW;
+			               ^
+org/apache/commons/math/dfp/Dfp.java:2176: error: incompatible types: String cannot be converted to Dfp
+				return dfp2sci();
+				              ^
+2 errors
+
+1449271 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(393) StmtReplace(418,684) StmtAppend(912,629) StmtReplace(1230,1079) at variant163 fails to compile
+
+1449271 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(393) StmtReplace(418,684) StmtAppend(912,629) StmtReplace(1230,1079) (stored at: variant163)
+1449306 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:2187: error: incompatible types: int cannot be converted to Dfp
+				return -2147483648;
+				       ^
+1 error
+
+1449306 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(1236,479) StmtDelete(1232) StmtReplace(1315,298) at variant164 fails to compile
+
+1449306 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(1236,479) StmtDelete(1232) StmtReplace(1315,298) (stored at: variant164)
+1449345 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:1889: error: continue outside of loop
+			continue;
+			^
+1 error
+
+1449345 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(302,2) StmtDelete(616) StmtDelete(1094) StmtAppend(1037,905) at variant165 fails to compile
+
+1449345 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtAppend(302,2) StmtDelete(616) StmtDelete(1094) StmtAppend(1037,905) (stored at: variant165)
+1449386 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:896: error: non-static variable mant cannot be referenced from a static context
+				if (mant[mant.length - 1] > 100) {
+				    ^
+org/apache/commons/math/dfp/Dfp.java:896: error: non-static variable mant cannot be referenced from a static context
+				if (mant[mant.length - 1] > 100) {
+				         ^
+org/apache/commons/math/dfp/Dfp.java:897: error: non-static variable exp cannot be referenced from a static context
+					return exp * 4 - 2;
+					       ^
+org/apache/commons/math/dfp/Dfp.java:958: error: cannot find symbol
+        if (result.mant[mant.length-1] == 0) {
+            ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:959: error: cannot find symbol
+            result.sign = sign;
+            ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:962: error: cannot find symbol
+        return result;
+               ^
+  symbol:   variable result
+  location: class Dfp
+6 errors
+
+1449386 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(945) StmtAppend(389,498) StmtReplace(408,975) StmtDelete(783) at variant166 fails to compile
+
+1449386 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(945) StmtAppend(389,498) StmtReplace(408,975) StmtDelete(783) (stored at: variant166)
+1460470 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(93) StmtDelete(756) StmtAppend(273,157) StmtReplace(277,1293) (stored at: variant167)
+1460518 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:970: error: unreachable statement
+			field.setIEEEFlagsBits(DfpField.FLAG_INVALID);
+			^
+1 error
+
+1460518 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(302,2) StmtDelete(616) StmtDelete(1094) StmtAppend(422,340) at variant168 fails to compile
+
+1460518 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtAppend(302,2) StmtDelete(616) StmtDelete(1094) StmtAppend(422,340) (stored at: variant168)
+1460563 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:960: error: incompatible types: int cannot be converted to Dfp
+			return DfpField.FLAG_UNDERFLOW;
+			               ^
+org/apache/commons/math/dfp/Dfp.java:1351: error: incompatible types: Dfp cannot be converted to int
+				return newInstance(this);
+				                  ^
+2 errors
+
+1460563 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(393) StmtReplace(418,684) StmtReplace(664,1015) StmtDelete(710) at variant169 fails to compile
+
+1460563 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(393) StmtReplace(418,684) StmtReplace(664,1015) StmtDelete(710) (stored at: variant169)
+1461158 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(293) StmtDelete(1164) (stored at: variant170)
+1557208 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtAppend(302,2) StmtDelete(616) StmtDelete(1094) StmtDelete(1198) (stored at: variant171)
+1557238 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:1953: error: incompatible types: Dfp cannot be converted to String
+				return newInstance(this);
+				                  ^
+1 error
+
+1557238 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(945) StmtReplace(200,175) StmtReplace(670,661) StmtReplace(1075,431) at variant172 fails to compile
+
+1557238 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(945) StmtReplace(200,175) StmtReplace(670,661) StmtReplace(1075,431) (stored at: variant172)
+1653289 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(573) StmtReplace(900,314) StmtDelete(3) (stored at: variant173)
+1653327 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:381: error: unreachable statement
+                if (fpexp.charAt(i) >= '0' && fpexp.charAt(i) <= '9')
+                ^
+1 error
+
+1653327 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(908) StmtDelete(539) StmtReplace(1226,1205) StmtReplace(128,936) at variant174 fails to compile
+
+1653327 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(908) StmtDelete(539) StmtReplace(1226,1205) StmtReplace(128,936) (stored at: variant174)
+1653366 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:1255: error: cannot find symbol
+            rsign = asign;
+            ^
+  symbol:   variable rsign
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1280: error: cannot find symbol
+            if (asign == rsign) {
+                         ^
+  symbol:   variable rsign
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1295: error: cannot find symbol
+        result.sign = rsign;
+                      ^
+  symbol:   variable rsign
+  location: class Dfp
+3 errors
+
+1653366 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(945) StmtDelete(133) StmtReplace(492,509) StmtAppend(575,706) at variant175 fails to compile
+
+1653366 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(945) StmtDelete(133) StmtReplace(492,509) StmtAppend(575,706) (stored at: variant175)
+1653408 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:1466: error: incompatible types: missing return value
+				return;
+				^
+org/apache/commons/math/dfp/Dfp.java:1474: error: cannot find symbol
+                r = r + product[i+j] + rh;  // add to the product digit with carry in
+                        ^
+  symbol:   variable product
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1477: error: cannot find symbol
+                product[i+j] = r - rh * RADIX;
+                ^
+  symbol:   variable product
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1479: error: cannot find symbol
+            product[i+mant.length] = rh;
+            ^
+  symbol:   variable product
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1485: error: cannot find symbol
+            if (product[i] != 0) {
+                ^
+  symbol:   variable product
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1493: error: cannot find symbol
+            result.mant[mant.length - i - 1] = product[md - i];
+                                               ^
+  symbol:   variable product
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1507: error: cannot find symbol
+            excp = result.round(product[md-mant.length]);
+                                ^
+  symbol:   variable product
+  location: class Dfp
+7 errors
+
+1653408 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(565) StmtDelete(1161) StmtAppend(735,111) at variant176 fails to compile
+
+1653419 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(565) StmtDelete(1161) StmtAppend(735,111) (stored at: variant176)
+1655238 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(93) StmtDelete(756) StmtAppend(273,157) StmtDelete(1226) (stored at: variant177)
+1655277 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:440: error: incompatible types: unexpected return value
+					return newInstance(this);
+					                  ^
+1 error
+
+1655277 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(1320) StmtDelete(349) StmtAppend(167,418) at variant178 fails to compile
+
+1655277 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(1320) StmtDelete(349) StmtAppend(167,418) (stored at: variant178)
+1655315 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:710: error: break outside switch or loop
+				break;
+				^
+org/apache/commons/math/dfp/Dfp.java:1101: error: incompatible types: Dfp cannot be converted to int
+				return newInstance(this);
+				                  ^
+2 errors
+
+1655315 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(295,212) StmtReplace(500,415) StmtReplace(272,178) at variant179 fails to compile
+
+1655315 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(295,212) StmtReplace(500,415) StmtReplace(272,178) (stored at: variant179)
+1655353 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:310: error: cannot find symbol
+        xdfp = xdfp.divide(new Dfp(field, 4503599627370496l)).add(field.getOne());  // Divide by 2^52, then add one
+        ^
+  symbol:   variable xdfp
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:310: error: cannot find symbol
+        xdfp = xdfp.divide(new Dfp(field, 4503599627370496l)).add(field.getOne());  // Divide by 2^52, then add one
+               ^
+  symbol:   variable xdfp
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:311: error: cannot find symbol
+        xdfp = xdfp.multiply(DfpMath.pow(field.getTwo(), exponent));
+        ^
+  symbol:   variable xdfp
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:311: error: cannot find symbol
+        xdfp = xdfp.multiply(DfpMath.pow(field.getTwo(), exponent));
+               ^
+  symbol:   variable xdfp
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:314: error: cannot find symbol
+            xdfp = xdfp.negate();
+            ^
+  symbol:   variable xdfp
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:314: error: cannot find symbol
+            xdfp = xdfp.negate();
+                   ^
+  symbol:   variable xdfp
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:317: error: cannot find symbol
+        System.arraycopy(xdfp.mant, 0, mant, 0, mant.length);
+                         ^
+  symbol:   variable xdfp
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:318: error: cannot find symbol
+        sign = xdfp.sign;
+               ^
+  symbol:   variable xdfp
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:319: error: cannot find symbol
+        exp  = xdfp.exp;
+               ^
+  symbol:   variable xdfp
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:320: error: cannot find symbol
+        nans = xdfp.nans;
+               ^
+  symbol:   variable xdfp
+  location: class Dfp
+10 errors
+
+1655353 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(436,237) StmtDelete(966) StmtAppend(74,27) at variant180 fails to compile
+
+1655353 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(436,237) StmtDelete(966) StmtAppend(74,27) (stored at: variant180)
+1655385 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:962: error: incompatible types: boolean cannot be converted to Dfp
+            return false;
+                   ^
+org/apache/commons/math/dfp/Dfp.java:1273: error: cannot find symbol
+            final int excp = result.round(lostdigit);
+                                          ^
+  symbol:   variable lostdigit
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:2331: error: incompatible types: boolean cannot be converted to double
+				return false;
+				       ^
+3 errors
+
+1655385 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(417,354) StmtAppend(1316,328) StmtDelete(553) StmtReplace(609,711) at variant181 fails to compile
+
+1655385 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(417,354) StmtAppend(1316,328) StmtDelete(553) StmtReplace(609,711) (stored at: variant181)
+1751428 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(573) StmtReplace(900,314) StmtDelete(1328) (stored at: variant182)
+1753375 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(93) StmtDelete(756) StmtAppend(273,157) StmtDelete(295) (stored at: variant183)
+1753413 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:1064: error: cannot find symbol
+            result = result * RADIX + rounded.mant[i];
+            ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1064: error: cannot find symbol
+            result = result * RADIX + rounded.mant[i];
+                     ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1068: error: cannot find symbol
+            result = -result;
+            ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1068: error: cannot find symbol
+            result = -result;
+                      ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1071: error: cannot find symbol
+        return result;
+               ^
+  symbol:   variable result
+  location: class Dfp
+5 errors
+
+1753414 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(961,631) StmtReplace(744,298) StmtDelete(473) at variant184 fails to compile
+
+1753414 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtAppend(961,631) StmtReplace(744,298) StmtDelete(473) (stored at: variant184)
+1753452 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:1437: error: cannot find symbol
+                result = newInstance(this);
+                ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1438: error: cannot find symbol
+                result.sign = (byte) (sign * x.sign);
+                ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1439: error: cannot find symbol
+                return result;
+                       ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1443: error: cannot find symbol
+                result = newInstance(x);
+                ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1444: error: cannot find symbol
+                result.sign = (byte) (sign * x.sign);
+                ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1445: error: cannot find symbol
+                return result;
+                       ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1449: error: cannot find symbol
+                result = newInstance(this);
+                ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1450: error: cannot find symbol
+                result.sign = (byte) (sign * x.sign);
+                ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1451: error: cannot find symbol
+                return result;
+                       ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1457: error: cannot find symbol
+                result = newInstance(getZero());
+                ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1458: error: cannot find symbol
+                result.nans = QNAN;
+                ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1459: error: cannot find symbol
+                result = dotrap(DfpField.FLAG_INVALID, MULTIPLY_TRAP, x, result);
+                ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1459: error: cannot find symbol
+                result = dotrap(DfpField.FLAG_INVALID, MULTIPLY_TRAP, x, result);
+                                                                         ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1460: error: cannot find symbol
+                return result;
+                       ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1489: error: cannot find symbol
+            result.mant[mant.length - i - 1] = product[md - i];
+            ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1494: error: cannot find symbol
+        result.sign = (byte)((sign == x.sign)?1:-1);
+        ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1496: error: cannot find symbol
+        if (result.mant[mant.length-1] == 0) {
+            ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1498: error: cannot find symbol
+            result.exp = 0;
+            ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1503: error: cannot find symbol
+            excp = result.round(product[md-mant.length]);
+                   ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1505: error: cannot find symbol
+            excp = result.round(0); // has no effect except to check status
+                   ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1509: error: cannot find symbol
+            result = dotrap(excp, MULTIPLY_TRAP, x, result);
+            ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1509: error: cannot find symbol
+            result = dotrap(excp, MULTIPLY_TRAP, x, result);
+                                                    ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1512: error: cannot find symbol
+        return result;
+               ^
+  symbol:   variable result
+  location: class Dfp
+23 errors
+
+1753452 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(93) StmtDelete(756) StmtAppend(704,1048) StmtAppend(1327,1320) at variant185 fails to compile
+
+1753452 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(93) StmtDelete(756) StmtAppend(704,1048) StmtAppend(1327,1320) (stored at: variant185)
+1753499 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:712: error: break outside switch or loop
+				break;
+				^
+org/apache/commons/math/dfp/Dfp.java:898: error: non-static variable mant cannot be referenced from a static context
+				if (mant[mant.length - 1] > 100) {
+				    ^
+org/apache/commons/math/dfp/Dfp.java:898: error: non-static variable mant cannot be referenced from a static context
+				if (mant[mant.length - 1] > 100) {
+				         ^
+org/apache/commons/math/dfp/Dfp.java:899: error: non-static variable exp cannot be referenced from a static context
+					return exp * 4 - 2;
+					       ^
+org/apache/commons/math/dfp/Dfp.java:960: error: cannot find symbol
+        if (result.mant[mant.length-1] == 0) {
+            ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:961: error: cannot find symbol
+            result.sign = sign;
+            ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:964: error: cannot find symbol
+        return result;
+               ^
+  symbol:   variable result
+  location: class Dfp
+7 errors
+
+1753499 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(295,212) StmtAppend(389,498) StmtReplace(408,975) StmtDelete(118) at variant186 fails to compile
+
+1753499 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(295,212) StmtAppend(389,498) StmtReplace(408,975) StmtDelete(118) (stored at: variant186)
+1753539 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:1230: error: incompatible types: bad type in conditional expression
+            return (sign < 0) ? NEG_INFINITY_STRING : POS_INFINITY_STRING;
+                                ^
+    String cannot be converted to Dfp
+org/apache/commons/math/dfp/Dfp.java:1230: error: incompatible types: bad type in conditional expression
+            return (sign < 0) ? NEG_INFINITY_STRING : POS_INFINITY_STRING;
+                                                      ^
+    String cannot be converted to Dfp
+2 errors
+
+1753539 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(581,1076) at variant187 fails to compile
+
+1753539 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(581,1076) (stored at: variant187)
+1754214 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtAppend(273,157) StmtDelete(734) (stored at: variant188)
+1754248 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:1342: error: unreachable statement
+                break;
+                ^
+org/apache/commons/math/dfp/Dfp.java:2304: error: missing return statement
+    }
+    ^
+2 errors
+
+1754248 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(93) StmtDelete(1295) StmtAppend(648,476) at variant189 fails to compile
+
+1754248 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(93) StmtDelete(1295) StmtAppend(648,476) (stored at: variant189)
+1754290 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:1338: error: incompatible types: Dfp cannot be converted to int
+					return newInstance(this);
+					                  ^
+1 error
+
+1754290 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(908) StmtDelete(539) StmtAppend(651,415) at variant190 fails to compile
+
+1754290 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(908) StmtDelete(539) StmtAppend(651,415) (stored at: variant190)
+1754325 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:960: error: incompatible types: int cannot be converted to Dfp
+			return DfpField.FLAG_UNDERFLOW;
+			               ^
+1 error
+
+1754325 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(393) StmtReplace(418,684) StmtReplace(1285,277) at variant191 fails to compile
+
+1754325 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(393) StmtReplace(418,684) StmtReplace(1285,277) (stored at: variant191)
+1754367 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:1359: error: unreachable statement
+                break;
+                ^
+1 error
+
+1754367 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(200,175) StmtReplace(670,661) StmtDelete(462) at variant192 fails to compile
+
+1754367 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(200,175) StmtReplace(670,661) StmtDelete(462) (stored at: variant192)
+1754661 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(744,298) StmtAppend(782,526) (stored at: variant193)
+1755328 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(553) StmtAppend(961,631) StmtDelete(980) (stored at: variant194)
+1851375 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(945) StmtDelete(133) StmtDelete(1043) (stored at: variant195)
+1851410 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:2018: error: incompatible types: missing return value
+						return;
+						^
+1 error
+
+1851410 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(1114,106) at variant196 fails to compile
+
+1851410 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtAppend(1114,106) (stored at: variant196)
+1851454 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:1611: error: unreachable statement
+				field.setIEEEFlagsBits(DfpField.FLAG_INVALID);
+				^
+1 error
+
+1851454 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(436,237) StmtAppend(840,563) at variant197 fails to compile
+
+1851454 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(436,237) StmtAppend(840,563) (stored at: variant197)
+1851500 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:1646: error: incompatible types: boolean cannot be converted to Dfp
+				return false;
+				       ^
+org/apache/commons/math/dfp/Dfp.java:2328: error: incompatible types: boolean cannot be converted to double
+				return false;
+				       ^
+2 errors
+
+1851501 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(908) StmtDelete(539) StmtAppend(1316,328) StmtDelete(553) StmtAppend(870,361) at variant198 fails to compile
+
+1851501 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(908) StmtDelete(539) StmtAppend(1316,328) StmtDelete(553) StmtAppend(870,361) (stored at: variant198)
+1852224 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(663) (stored at: variant199)
+1852224 [main] INFO clegoues.genprog4java.Search.Search  - search: generation4
+1852259 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:470: error: unreachable statement
+						exp = 0;
+						^
+org/apache/commons/math/dfp/Dfp.java:2300: error: missing return statement
+    }
+    ^
+2 errors
+
+1852317 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:470: error: unreachable statement
+						exp = 0;
+						^
+org/apache/commons/math/dfp/Dfp.java:2300: error: missing return statement
+    }
+    ^
+2 errors
+
+1852367 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:470: error: unreachable statement
+						exp = 0;
+						^
+org/apache/commons/math/dfp/Dfp.java:2300: error: missing return statement
+    }
+    ^
+2 errors
+
+1852422 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:470: error: unreachable statement
+						exp = 0;
+						^
+org/apache/commons/math/dfp/Dfp.java:2300: error: missing return statement
+    }
+    ^
+2 errors
+
+1852468 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:470: error: unreachable statement
+						exp = 0;
+						^
+org/apache/commons/math/dfp/Dfp.java:2300: error: missing return statement
+    }
+    ^
+2 errors
+
+1852508 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:470: error: unreachable statement
+						exp = 0;
+						^
+org/apache/commons/math/dfp/Dfp.java:2300: error: missing return statement
+    }
+    ^
+2 errors
+
+1852554 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:470: error: unreachable statement
+						exp = 0;
+						^
+org/apache/commons/math/dfp/Dfp.java:2300: error: missing return statement
+    }
+    ^
+2 errors
+
+1852608 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:470: error: unreachable statement
+						exp = 0;
+						^
+org/apache/commons/math/dfp/Dfp.java:2300: error: missing return statement
+    }
+    ^
+2 errors
+
+1852654 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:470: error: unreachable statement
+						exp = 0;
+						^
+org/apache/commons/math/dfp/Dfp.java:2300: error: missing return statement
+    }
+    ^
+2 errors
+
+1852696 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:470: error: unreachable statement
+						exp = 0;
+						^
+org/apache/commons/math/dfp/Dfp.java:2300: error: missing return statement
+    }
+    ^
+2 errors
+
+1852740 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:470: error: unreachable statement
+						exp = 0;
+						^
+org/apache/commons/math/dfp/Dfp.java:2300: error: missing return statement
+    }
+    ^
+2 errors
+
+1852784 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:470: error: unreachable statement
+						exp = 0;
+						^
+org/apache/commons/math/dfp/Dfp.java:2300: error: missing return statement
+    }
+    ^
+2 errors
+
+1852822 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:470: error: unreachable statement
+						exp = 0;
+						^
+org/apache/commons/math/dfp/Dfp.java:2300: error: missing return statement
+    }
+    ^
+2 errors
+
+1852862 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:470: error: unreachable statement
+						exp = 0;
+						^
+org/apache/commons/math/dfp/Dfp.java:2300: error: missing return statement
+    }
+    ^
+2 errors
+
+1852904 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:470: error: unreachable statement
+						exp = 0;
+						^
+org/apache/commons/math/dfp/Dfp.java:2300: error: missing return statement
+    }
+    ^
+2 errors
+
+1852954 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:470: error: unreachable statement
+						exp = 0;
+						^
+org/apache/commons/math/dfp/Dfp.java:2300: error: missing return statement
+    }
+    ^
+2 errors
+
+1853003 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:470: error: unreachable statement
+						exp = 0;
+						^
+org/apache/commons/math/dfp/Dfp.java:2300: error: missing return statement
+    }
+    ^
+2 errors
+
+1853046 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:470: error: unreachable statement
+						exp = 0;
+						^
+org/apache/commons/math/dfp/Dfp.java:2300: error: missing return statement
+    }
+    ^
+2 errors
+
+1853085 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:470: error: unreachable statement
+						exp = 0;
+						^
+org/apache/commons/math/dfp/Dfp.java:2300: error: missing return statement
+    }
+    ^
+2 errors
+
+1853802 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:896: error: non-static variable mant cannot be referenced from a static context
+				if (mant[mant.length - 1] > 100) {
+				    ^
+org/apache/commons/math/dfp/Dfp.java:896: error: non-static variable mant cannot be referenced from a static context
+				if (mant[mant.length - 1] > 100) {
+				         ^
+org/apache/commons/math/dfp/Dfp.java:897: error: non-static variable exp cannot be referenced from a static context
+					return exp * 4 - 2;
+					       ^
+org/apache/commons/math/dfp/Dfp.java:958: error: cannot find symbol
+        if (result.mant[mant.length-1] == 0) {
+            ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:959: error: cannot find symbol
+            result.sign = sign;
+            ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:962: error: cannot find symbol
+        return result;
+               ^
+  symbol:   variable result
+  location: class Dfp
+6 errors
+
+1853802 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(945) StmtAppend(389,498) StmtReplace(408,975) StmtAppend(1182,312) StmtReplace(646,984) at variant200 fails to compile
+
+1853802 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(945) StmtAppend(389,498) StmtReplace(408,975) StmtAppend(1182,312) StmtReplace(646,984) (stored at: variant200)
+1949851 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(573) StmtReplace(900,314) StmtDelete(1328) StmtDelete(614) (stored at: variant201)
+1950461 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(293) StmtDelete(1164) StmtReplace(667,11) (stored at: variant202)
+1950494 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:1711: error: unreachable statement
+						{
+						^
+1 error
+
+1950494 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(573) StmtAppend(591,596) StmtReplace(576,578) StmtAppend(911,837) at variant203 fails to compile
+
+1950494 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(573) StmtAppend(591,596) StmtReplace(576,578) StmtAppend(911,837) (stored at: variant203)
+1950530 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:825: error: incompatible types: int cannot be converted to boolean
+					return -2147483648;
+					       ^
+1 error
+
+1950530 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(573) StmtAppend(591,596) StmtReplace(576,578) StmtAppend(352,479) at variant204 fails to compile
+
+1950530 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(573) StmtAppend(591,596) StmtReplace(576,578) StmtAppend(352,479) (stored at: variant204)
+1950570 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:1891: error: continue outside of loop
+			continue;
+			^
+1 error
+
+1950570 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(302,2) StmtDelete(616) StmtDelete(1094) StmtAppend(1037,905) StmtReplace(963,954) at variant205 fails to compile
+
+1950570 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtAppend(302,2) StmtDelete(616) StmtDelete(1094) StmtAppend(1037,905) StmtReplace(963,954) (stored at: variant205)
+1951216 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(293) StmtDelete(1164) StmtDelete(482) (stored at: variant206)
+1951251 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:1230: error: incompatible types: bad type in conditional expression
+            return (sign < 0) ? NEG_INFINITY_STRING : POS_INFINITY_STRING;
+                                ^
+    String cannot be converted to Dfp
+org/apache/commons/math/dfp/Dfp.java:1230: error: incompatible types: bad type in conditional expression
+            return (sign < 0) ? NEG_INFINITY_STRING : POS_INFINITY_STRING;
+                                                      ^
+    String cannot be converted to Dfp
+2 errors
+
+1951251 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(581,1076) StmtDelete(744) at variant207 fails to compile
+
+1951251 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(581,1076) StmtDelete(744) (stored at: variant207)
+1951287 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:962: error: incompatible types: boolean cannot be converted to Dfp
+            return false;
+                   ^
+org/apache/commons/math/dfp/Dfp.java:1247: error: cannot find symbol
+            final int excp = result.round(lostdigit);
+                                          ^
+  symbol:   variable lostdigit
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:2305: error: incompatible types: boolean cannot be converted to double
+				return false;
+				       ^
+3 errors
+
+1951287 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(417,354) StmtAppend(1316,328) StmtDelete(553) StmtReplace(609,711) StmtDelete(545) at variant208 fails to compile
+
+1951287 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(417,354) StmtAppend(1316,328) StmtDelete(553) StmtReplace(609,711) StmtDelete(545) (stored at: variant208)
+1951684 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(1215) StmtReplace(163,1187) StmtDelete(651) (stored at: variant209)
+1951729 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:963: error: incompatible types: boolean cannot be converted to Dfp
+            return false;
+                   ^
+org/apache/commons/math/dfp/Dfp.java:1274: error: cannot find symbol
+            final int excp = result.round(lostdigit);
+                                          ^
+  symbol:   variable lostdigit
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:2332: error: incompatible types: boolean cannot be converted to double
+				return false;
+				       ^
+3 errors
+
+1951729 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(417,354) StmtAppend(1316,328) StmtDelete(553) StmtReplace(609,711) StmtDelete(81) at variant210 fails to compile
+
+1951729 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(417,354) StmtAppend(1316,328) StmtDelete(553) StmtReplace(609,711) StmtDelete(81) (stored at: variant210)
+1951777 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:895: error: non-static variable field cannot be referenced from a static context
+			field.setIEEEFlagsBits(DfpField.FLAG_INVALID);
+			^
+1 error
+
+1951777 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(1215) StmtReplace(163,1187) StmtAppend(384,791) at variant211 fails to compile
+
+1951777 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(1215) StmtReplace(163,1187) StmtAppend(384,791) (stored at: variant211)
+1951818 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:470: error: unreachable statement
+						exp = 0;
+						^
+org/apache/commons/math/dfp/Dfp.java:2303: error: missing return statement
+    }
+    ^
+2 errors
+
+1951818 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(553) StmtDelete(1295) StmtAppend(194,25) StmtAppend(1006,43) at variant212 fails to compile
+
+1951818 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(553) StmtDelete(1295) StmtAppend(194,25) StmtAppend(1006,43) (stored at: variant212)
+1951861 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:962: error: incompatible types: boolean cannot be converted to Dfp
+            return false;
+                   ^
+org/apache/commons/math/dfp/Dfp.java:1273: error: cannot find symbol
+            final int excp = result.round(lostdigit);
+                                          ^
+  symbol:   variable lostdigit
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:2334: error: incompatible types: boolean cannot be converted to double
+				return false;
+				       ^
+3 errors
+
+1951861 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(417,354) StmtAppend(1316,328) StmtDelete(553) StmtReplace(609,711) StmtAppend(763,326) at variant213 fails to compile
+
+1951861 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(417,354) StmtAppend(1316,328) StmtDelete(553) StmtReplace(609,711) StmtAppend(763,326) (stored at: variant213)
+1951901 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:1466: error: cannot find symbol
+                r = r + product[i+j] + rh;  // add to the product digit with carry in
+                                       ^
+  symbol:   variable rh
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1468: error: cannot find symbol
+                rh = r / RADIX;
+                ^
+  symbol:   variable rh
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1469: error: cannot find symbol
+                product[i+j] = r - rh * RADIX;
+                                   ^
+  symbol:   variable rh
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1471: error: cannot find symbol
+            product[i+mant.length] = rh;
+                                     ^
+  symbol:   variable rh
+  location: class Dfp
+4 errors
+
+1951902 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(565) StmtDelete(1161) StmtReplace(738,158) StmtDelete(222) at variant214 fails to compile
+
+1951902 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(565) StmtDelete(1161) StmtReplace(738,158) StmtDelete(222) (stored at: variant214)
+2047955 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtAppend(302,2) StmtDelete(616) StmtDelete(1094) StmtDelete(1198) StmtDelete(439) (stored at: variant215)
+2049848 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(93) StmtDelete(756) StmtAppend(273,157) StmtDelete(295) StmtAppend(1152,1068) (stored at: variant216)
+2145901 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtAppend(302,2) StmtDelete(616) StmtDelete(1094) StmtDelete(1198) StmtReplace(56,141) (stored at: variant217)
+2157290 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(93) StmtDelete(756) StmtAppend(273,157) StmtReplace(277,1293) StmtDelete(170) (stored at: variant218)
+2158349 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(908) StmtDelete(539) StmtReplace(1226,1205) StmtDelete(100) StmtDelete(277) (stored at: variant219)
+2158376 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:2320: error: cannot find symbol
+            y = negate();
+            ^
+  symbol:   variable y
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:2326: error: cannot find symbol
+        int exponent = (int)(y.log10() * 3.32);
+                             ^
+  symbol:   variable y
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:2332: error: cannot find symbol
+        while (tempDfp.lessThan(y) || tempDfp.equals(y)) {
+                                ^
+  symbol:   variable y
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:2332: error: cannot find symbol
+        while (tempDfp.lessThan(y) || tempDfp.equals(y)) {
+                                                     ^
+  symbol:   variable y
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:2340: error: cannot find symbol
+        y = y.divide(DfpMath.pow(getTwo(), exponent));
+        ^
+  symbol:   variable y
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:2340: error: cannot find symbol
+        y = y.divide(DfpMath.pow(getTwo(), exponent));
+            ^
+  symbol:   variable y
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:2342: error: cannot find symbol
+            y = y.subtract(getOne());
+            ^
+  symbol:   variable y
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:2342: error: cannot find symbol
+            y = y.subtract(getOne());
+                ^
+  symbol:   variable y
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:2354: error: cannot find symbol
+        y = y.multiply(newInstance(4503599627370496l)).rint();
+        ^
+  symbol:   variable y
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:2354: error: cannot find symbol
+        y = y.multiply(newInstance(4503599627370496l)).rint();
+            ^
+  symbol:   variable y
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:2355: error: cannot find symbol
+        String str = y.toString();
+                     ^
+  symbol:   variable y
+  location: class Dfp
+11 errors
+
+2158376 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(1215) StmtReplace(163,1187) StmtReplace(1307,140) at variant220 fails to compile
+
+2158376 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(1215) StmtReplace(163,1187) StmtReplace(1307,140) (stored at: variant220)
+2158406 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:1357: error: unreachable statement
+                break;
+                ^
+1 error
+
+2158406 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(200,175) StmtReplace(670,661) StmtDelete(462) StmtReplace(156,1236) at variant221 fails to compile
+
+2158406 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(200,175) StmtReplace(670,661) StmtDelete(462) StmtReplace(156,1236) (stored at: variant221)
+2254447 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(573) StmtReplace(900,314) StmtDelete(3) StmtDelete(1007) (stored at: variant222)
+2254473 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:1230: error: incompatible types: bad type in conditional expression
+            return (sign < 0) ? NEG_INFINITY_STRING : POS_INFINITY_STRING;
+                                ^
+    String cannot be converted to Dfp
+org/apache/commons/math/dfp/Dfp.java:1230: error: incompatible types: bad type in conditional expression
+            return (sign < 0) ? NEG_INFINITY_STRING : POS_INFINITY_STRING;
+                                                      ^
+    String cannot be converted to Dfp
+2 errors
+
+2254474 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(581,1076) StmtReplace(527,371) at variant223 fails to compile
+
+2254474 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(581,1076) StmtReplace(527,371) (stored at: variant223)
+2254505 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:2086: error: incompatible types: missing return value
+				return;
+				^
+1 error
+
+2254505 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(1215) StmtReplace(163,1187) StmtReplace(1163,106) at variant224 fails to compile
+
+2254505 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(1215) StmtReplace(163,1187) StmtReplace(1163,106) (stored at: variant224)
+2350556 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(744,298) StmtAppend(782,526) StmtDelete(527) (stored at: variant225)
+2350581 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:378: error: cannot find symbol
+                    negative = true;
+                    ^
+  symbol:   variable negative
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:385: error: cannot find symbol
+            if (negative) {
+                ^
+  symbol:   variable negative
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:385: error: illegal start of type
+            if (negative) {
+               ^
+3 errors
+
+2350581 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(961,631) StmtReplace(744,298) StmtDelete(84) StmtDelete(125) at variant226 fails to compile
+
+2350581 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtAppend(961,631) StmtReplace(744,298) StmtDelete(84) StmtDelete(125) (stored at: variant226)
+2350608 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:1610: error: unreachable statement
+				field.setIEEEFlagsBits(DfpField.FLAG_INVALID);
+				^
+1 error
+
+2350609 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(436,237) StmtAppend(840,563) StmtDelete(576) at variant227 fails to compile
+
+2350609 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(436,237) StmtAppend(840,563) StmtDelete(576) (stored at: variant227)
+2446645 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(573) StmtReplace(900,314) StmtDelete(3) StmtDelete(947) (stored at: variant228)
+2446678 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:896: error: non-static variable mant cannot be referenced from a static context
+				if (mant[mant.length - 1] > 100) {
+				    ^
+org/apache/commons/math/dfp/Dfp.java:896: error: non-static variable mant cannot be referenced from a static context
+				if (mant[mant.length - 1] > 100) {
+				         ^
+org/apache/commons/math/dfp/Dfp.java:897: error: non-static variable exp cannot be referenced from a static context
+					return exp * 4 - 2;
+					       ^
+org/apache/commons/math/dfp/Dfp.java:958: error: cannot find symbol
+        if (result.mant[mant.length-1] == 0) {
+            ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:959: error: cannot find symbol
+            result.sign = sign;
+            ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:962: error: cannot find symbol
+        return result;
+               ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:2130: error: cannot find symbol
+            remainder[mant.length] = 0;
+            ^
+  symbol:   variable remainder
+  location: class Dfp
+7 errors
+
+2446679 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(945) StmtAppend(389,498) StmtReplace(408,975) StmtAppend(1182,312) StmtReplace(1187,873) at variant229 fails to compile
+
+2446679 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(945) StmtAppend(389,498) StmtReplace(408,975) StmtAppend(1182,312) StmtReplace(1187,873) (stored at: variant229)
+2458937 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(93) StmtDelete(756) StmtAppend(273,157) StmtReplace(277,1293) StmtDelete(477) (stored at: variant230)
+2458964 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:1230: error: incompatible types: bad type in conditional expression
+            return (sign < 0) ? NEG_INFINITY_STRING : POS_INFINITY_STRING;
+                                ^
+    String cannot be converted to Dfp
+org/apache/commons/math/dfp/Dfp.java:1230: error: incompatible types: bad type in conditional expression
+            return (sign < 0) ? NEG_INFINITY_STRING : POS_INFINITY_STRING;
+                                                      ^
+    String cannot be converted to Dfp
+2 errors
+
+2458965 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(581,1076) StmtAppend(1215,661) at variant231 fails to compile
+
+2458965 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(581,1076) StmtAppend(1215,661) (stored at: variant231)
+2458979 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:1395: error: variable declaration not allowed here
+        if (n != 0)boolean negate = false;
+                           ^
+1 error
+
+2458979 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(553) StmtAppend(961,631) StmtAppend(963,382) StmtDelete(1333) StmtReplace(693,1308) at variant232 fails to compile
+
+2458979 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(553) StmtAppend(961,631) StmtAppend(963,382) StmtDelete(1333) StmtReplace(693,1308) (stored at: variant232)
+2459015 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:895: error: non-static variable mant cannot be referenced from a static context
+				if (mant[mant.length - 1] > 100) {
+				    ^
+org/apache/commons/math/dfp/Dfp.java:895: error: non-static variable mant cannot be referenced from a static context
+				if (mant[mant.length - 1] > 100) {
+				         ^
+org/apache/commons/math/dfp/Dfp.java:896: error: non-static variable exp cannot be referenced from a static context
+					return exp * 4 - 2;
+					       ^
+org/apache/commons/math/dfp/Dfp.java:957: error: cannot find symbol
+        if (result.mant[mant.length-1] == 0) {
+            ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:958: error: cannot find symbol
+            result.sign = sign;
+            ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:961: error: cannot find symbol
+        return result;
+               ^
+  symbol:   variable result
+  location: class Dfp
+6 errors
+
+2459015 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(945) StmtAppend(389,498) StmtReplace(408,975) StmtAppend(1182,312) StmtDelete(147) at variant233 fails to compile
+
+2459015 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(945) StmtAppend(389,498) StmtReplace(408,975) StmtAppend(1182,312) StmtDelete(147) (stored at: variant233)
+2459047 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:1611: error: unreachable statement
+				field.setIEEEFlagsBits(DfpField.FLAG_INVALID);
+				^
+1 error
+
+2459048 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(436,237) StmtAppend(840,563) StmtDelete(1262) at variant234 fails to compile
+
+2459048 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(436,237) StmtAppend(840,563) StmtDelete(1262) (stored at: variant234)
+2459077 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:320: error: variable field might not have been initialized
+	}
+	^
+1 error
+
+2459077 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(961,631) StmtReplace(744,298) StmtDelete(84) StmtDelete(687) at variant235 fails to compile
+
+2459077 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtAppend(961,631) StmtReplace(744,298) StmtDelete(84) StmtDelete(687) (stored at: variant235)
+2459107 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:700: error: incompatible types: Dfp cannot be converted to int
+			return newInstance(this);
+			                  ^
+org/apache/commons/math/dfp/Dfp.java:732: error: cannot find symbol
+                if (lostdigit != 0) {
+                    ^
+  symbol:   variable lostdigit
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:736: error: cannot find symbol
+                lostdigit = mant[0];
+                ^
+  symbol:   variable lostdigit
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:749: error: cannot find symbol
+        return lostdigit;
+               ^
+  symbol:   variable lostdigit
+  location: class Dfp
+4 errors
+
+2459108 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(93) StmtDelete(756) StmtAppend(273,157) StmtReplace(277,1293) StmtReplace(283,419) at variant236 fails to compile
+
+2459108 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(93) StmtDelete(756) StmtAppend(273,157) StmtReplace(277,1293) StmtReplace(283,419) (stored at: variant236)
+2555154 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(945) StmtDelete(133) StmtDelete(1043) StmtDelete(15) (stored at: variant237)
+2555217 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:397: error: incompatible types: unexpected return value
+				return this;
+				       ^
+1 error
+
+2555217 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(553) StmtAppend(961,631) StmtAppend(963,382) StmtDelete(1333) StmtAppend(137,776) at variant238 fails to compile
+
+2555217 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(553) StmtAppend(961,631) StmtAppend(963,382) StmtDelete(1333) StmtAppend(137,776) (stored at: variant238)
+2555260 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:320: error: variable field might not have been initialized
+	}
+	^
+1 error
+
+2555260 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(961,631) StmtReplace(744,298) StmtDelete(84) StmtAppend(605,809) at variant239 fails to compile
+
+2555260 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtAppend(961,631) StmtReplace(744,298) StmtDelete(84) StmtAppend(605,809) (stored at: variant239)
+2555291 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:1039: error: missing return statement
+    }
+    ^
+1 error
+
+2555291 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(462) StmtReplace(470,275) at variant240 fails to compile
+
+2555291 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(462) StmtReplace(470,275) (stored at: variant240)
+2555328 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:698: error: incompatible types: boolean cannot be converted to int
+			return false;
+			       ^
+org/apache/commons/math/dfp/Dfp.java:700: error: cannot find symbol
+        if (adiff < 0) {
+            ^
+  symbol:   variable adiff
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:701: error: cannot find symbol
+            adiff = -adiff;
+            ^
+  symbol:   variable adiff
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:701: error: cannot find symbol
+            adiff = -adiff;
+                     ^
+  symbol:   variable adiff
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:708: error: cannot find symbol
+        if (adiff > (mant.length + 1)) {
+            ^
+  symbol:   variable adiff
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:719: error: cannot find symbol
+        for (int i = 0; i < adiff; i++) {
+                            ^
+  symbol:   variable adiff
+  location: class Dfp
+6 errors
+
+2555328 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(200,175) StmtReplace(900,314) StmtDelete(1328) StmtReplace(286,361) at variant241 fails to compile
+
+2555328 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(200,175) StmtReplace(900,314) StmtDelete(1328) StmtReplace(286,361) (stored at: variant241)
+2555360 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:1552: error: incompatible types: int cannot be converted to Dfp
+				return 0;
+				       ^
+1 error
+
+2555360 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(293) StmtReplace(900,314) StmtDelete(3) StmtReplace(805,382) at variant242 fails to compile
+
+2555360 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(293) StmtReplace(900,314) StmtDelete(3) StmtReplace(805,382) (stored at: variant242)
+2555392 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:1400: error: unreachable statement
+        return 0;
+        ^
+1 error
+
+2555392 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(692,496) at variant243 fails to compile
+
+2555392 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(692,496) (stored at: variant243)
+2556053 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(409,274) (stored at: variant244)
+2652093 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtAppend(591,596) StmtReplace(576,578) StmtReplace(417,854) (stored at: variant245)
+2748130 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(573) StmtAppend(591,596) StmtReplace(1345,31) (stored at: variant246)
+2748160 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:762: error: unreachable statement
+			{
+			^
+1 error
+
+2748160 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(1215) StmtAppend(318,312) at variant247 fails to compile
+
+2748160 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(1215) StmtAppend(318,312) (stored at: variant247)
+2748190 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:1203: error: incompatible types: boolean cannot be converted to Dfp
+				return false;
+				       ^
+1 error
+
+2748190 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(302,2) StmtAppend(545,332) at variant248 fails to compile
+
+2748190 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtAppend(302,2) StmtAppend(545,332) (stored at: variant248)
+2748222 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:1898: error: continue outside of loop
+			continue;
+			^
+1 error
+
+2748223 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(744,298) StmtDelete(1094) StmtAppend(1037,905) StmtDelete(425) at variant249 fails to compile
+
+2748223 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(744,298) StmtDelete(1094) StmtAppend(1037,905) StmtDelete(425) (stored at: variant249)
+2748259 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:322: error: variable field might not have been initialized
+	}
+	^
+1 error
+
+2748259 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(744,298) StmtDelete(84) StmtReplace(59,271) at variant250 fails to compile
+
+2748259 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(744,298) StmtDelete(84) StmtReplace(59,271) (stored at: variant250)
+2748289 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:280: error: cannot find symbol
+            while ( (mantissa & 0x0010000000000000L) == 0) {
+                     ^
+  symbol:   variable mantissa
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:282: error: cannot find symbol
+                mantissa <<= 1;
+                ^
+  symbol:   variable mantissa
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:284: error: cannot find symbol
+            mantissa &= 0x000fffffffffffffL;
+            ^
+  symbol:   variable mantissa
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:302: error: cannot find symbol
+        Dfp xdfp = new Dfp(field, mantissa);
+                                  ^
+  symbol:   variable mantissa
+  location: class Dfp
+4 errors
+
+2748290 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(1164) StmtDelete(47) at variant251 fails to compile
+
+2748290 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(1164) StmtDelete(47) (stored at: variant251)
+2748318 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:963: error: incompatible types: boolean cannot be converted to Dfp
+            return false;
+                   ^
+org/apache/commons/math/dfp/Dfp.java:2331: error: incompatible types: boolean cannot be converted to double
+				return false;
+				       ^
+2 errors
+
+2748318 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(417,354) StmtAppend(1316,328) StmtDelete(130) at variant252 fails to compile
+
+2748318 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(417,354) StmtAppend(1316,328) StmtDelete(130) (stored at: variant252)
+2748352 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:896: error: non-static variable mant cannot be referenced from a static context
+				if (mant[mant.length - 1] > 100) {
+				    ^
+org/apache/commons/math/dfp/Dfp.java:896: error: non-static variable mant cannot be referenced from a static context
+				if (mant[mant.length - 1] > 100) {
+				         ^
+org/apache/commons/math/dfp/Dfp.java:897: error: non-static variable exp cannot be referenced from a static context
+					return exp * 4 - 2;
+					       ^
+org/apache/commons/math/dfp/Dfp.java:958: error: cannot find symbol
+        if (result.mant[mant.length-1] == 0) {
+            ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:959: error: cannot find symbol
+            result.sign = sign;
+            ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:962: error: cannot find symbol
+        return result;
+               ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1286: error: cannot find symbol
+            final int excp = result.round(lostdigit);
+                                          ^
+  symbol:   variable lostdigit
+  location: class Dfp
+7 errors
+
+2748352 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(945) StmtAppend(389,498) StmtReplace(408,975) StmtReplace(609,711) StmtReplace(624,936) at variant253 fails to compile
+
+2748352 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(945) StmtAppend(389,498) StmtReplace(408,975) StmtReplace(609,711) StmtReplace(624,936) (stored at: variant253)
+2748386 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:1765: error: incompatible types: int cannot be converted to Dfp
+					return 0;
+					       ^
+1 error
+
+2748386 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(93) StmtDelete(756) StmtAppend(273,157) StmtAppend(963,382) StmtDelete(1333) StmtReplace(544,558) at variant254 fails to compile
+
+2748386 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(93) StmtDelete(756) StmtAppend(273,157) StmtAppend(963,382) StmtDelete(1333) StmtReplace(544,558) (stored at: variant254)
+2749110 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(553) StmtReplace(458,954) (stored at: variant255)
+2749899 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(908) StmtDelete(539) StmtDelete(56) (stored at: variant256)
+2845984 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtAppend(961,631) StmtReplace(744,298) StmtDelete(100) StmtReplace(902,313) (stored at: variant257)
+2845984 [main] INFO clegoues.genprog4java.Search.Search  - search: generation5
+2943653 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtAppend(961,631) StmtReplace(744,298) StmtDelete(100) StmtReplace(902,313) StmtDelete(416) (stored at: variant258)
+2943679 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:1203: error: incompatible types: boolean cannot be converted to Dfp
+				return false;
+				       ^
+1 error
+
+2943679 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(302,2) StmtAppend(545,332) StmtDelete(1070) at variant259 fails to compile
+
+2943679 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtAppend(302,2) StmtAppend(545,332) StmtDelete(1070) (stored at: variant259)
+2955348 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(93) StmtDelete(756) StmtAppend(273,157) StmtReplace(277,1293) StmtDelete(170) StmtDelete(313) (stored at: variant260)
+2955979 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(553) StmtReplace(458,954) StmtDelete(649) (stored at: variant261)
+2956010 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:698: error: incompatible types: boolean cannot be converted to int
+			return false;
+			       ^
+org/apache/commons/math/dfp/Dfp.java:700: error: cannot find symbol
+        if (adiff < 0) {
+            ^
+  symbol:   variable adiff
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:701: error: cannot find symbol
+            adiff = -adiff;
+            ^
+  symbol:   variable adiff
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:701: error: cannot find symbol
+            adiff = -adiff;
+                     ^
+  symbol:   variable adiff
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:708: error: cannot find symbol
+        if (adiff > (mant.length + 1)) {
+            ^
+  symbol:   variable adiff
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:719: error: cannot find symbol
+        for (int i = 0; i < adiff; i++) {
+                            ^
+  symbol:   variable adiff
+  location: class Dfp
+6 errors
+
+2956010 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(200,175) StmtReplace(900,314) StmtDelete(1328) StmtReplace(286,361) StmtDelete(390) at variant262 fails to compile
+
+2956010 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtReplace(200,175) StmtReplace(900,314) StmtDelete(1328) StmtReplace(286,361) StmtDelete(390) (stored at: variant262)
+2967932 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(93) StmtDelete(756) StmtAppend(273,157) StmtReplace(277,1293) StmtDelete(477) StmtDelete(851) (stored at: variant263)
+2967942 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:503: error: orphaned default
+        default:
+        ^
+org/apache/commons/math/dfp/Dfp.java:1395: error: variable declaration not allowed here
+        if (n != 0)boolean negate = false;
+                           ^
+2 errors
+
+2967942 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(553) StmtAppend(961,631) StmtAppend(963,382) StmtDelete(1333) StmtReplace(693,1308) StmtReplace(217,1234) at variant264 fails to compile
+
+2967942 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(553) StmtAppend(961,631) StmtAppend(963,382) StmtDelete(1333) StmtReplace(693,1308) StmtReplace(217,1234) (stored at: variant264)
+2967978 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:287: error: incompatible types: unexpected return value
+			return false;
+			       ^
+org/apache/commons/math/dfp/Dfp.java:952: error: incompatible types: boolean cannot be converted to Dfp
+            return false;
+                   ^
+org/apache/commons/math/dfp/Dfp.java:2320: error: incompatible types: boolean cannot be converted to double
+				return false;
+				       ^
+3 errors
+
+2967978 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(417,354) StmtAppend(1316,328) StmtDelete(130) StmtReplace(61,361) at variant265 fails to compile
+
+2967978 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtReplace(417,354) StmtAppend(1316,328) StmtDelete(130) StmtReplace(61,361) (stored at: variant265)
+2968008 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:1761: error: incompatible types: missing return value
+				return;
+				^
+1 error
+
+2968008 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(553) StmtReplace(458,954) StmtReplace(945,111) at variant266 fails to compile
+
+2968008 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(553) StmtReplace(458,954) StmtReplace(945,111) (stored at: variant266)
+2968037 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:698: error: incompatible types: boolean cannot be converted to int
+			return false;
+			       ^
+org/apache/commons/math/dfp/Dfp.java:700: error: cannot find symbol
+        if (adiff < 0) {
+            ^
+  symbol:   variable adiff
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:701: error: cannot find symbol
+            adiff = -adiff;
+            ^
+  symbol:   variable adiff
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:701: error: cannot find symbol
+            adiff = -adiff;
+                     ^
+  symbol:   variable adiff
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:708: error: cannot find symbol
+        if (adiff > (mant.length + 1)) {
+            ^
+  symbol:   variable adiff
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:719: error: cannot find symbol
+        for (int i = 0; i < adiff; i++) {
+                            ^
+  symbol:   variable adiff
+  location: class Dfp
+6 errors
+
+2968037 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(200,175) StmtReplace(900,314) StmtDelete(1328) StmtReplace(286,361) StmtReplace(943,1229) at variant267 fails to compile
+
+2968037 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtReplace(200,175) StmtReplace(900,314) StmtDelete(1328) StmtReplace(286,361) StmtReplace(943,1229) (stored at: variant267)
+2968068 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:415: error: incompatible types: unexpected return value
+						return newInstance(this);
+						                  ^
+org/apache/commons/math/dfp/Dfp.java:418: error: incompatible types: unexpected return value
+						return newInstance(this);
+						                  ^
+org/apache/commons/math/dfp/Dfp.java:425: error: incompatible types: unexpected return value
+						return result;
+						       ^
+3 errors
+
+2968068 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(409,274) StmtReplace(150,1013) at variant268 fails to compile
+
+2968068 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtReplace(409,274) StmtReplace(150,1013) (stored at: variant268)
+2968098 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:320: error: variable field might not have been initialized
+	}
+	^
+1 error
+
+2968098 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(961,631) StmtReplace(744,298) StmtDelete(84) StmtAppend(605,809) StmtDelete(388) at variant269 fails to compile
+
+2968098 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtAppend(961,631) StmtReplace(744,298) StmtDelete(84) StmtAppend(605,809) StmtDelete(388) (stored at: variant269)
+3064149 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(573) StmtReplace(900,314) StmtDelete(3) StmtDelete(1007) StmtDelete(710) (stored at: variant270)
+3064191 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:1847: error: missing return statement
+    }
+    ^
+1 error
+
+3064192 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(945) StmtDelete(133) StmtDelete(1043) StmtDelete(15) StmtDelete(1008) at variant271 fails to compile
+
+3064192 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(945) StmtDelete(133) StmtDelete(1043) StmtDelete(15) StmtDelete(1008) (stored at: variant271)
+3075478 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(93) StmtDelete(756) StmtAppend(273,157) StmtReplace(277,1293) StmtDelete(477) StmtDelete(582) (stored at: variant272)
+3075518 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:1203: error: incompatible types: boolean cannot be converted to Dfp
+				return false;
+				       ^
+org/apache/commons/math/dfp/Dfp.java:1305: error: incompatible types: int cannot be converted to Dfp
+            return 0;
+                   ^
+2 errors
+
+3075518 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(302,2) StmtAppend(545,332) StmtReplace(636,383) at variant273 fails to compile
+
+3075518 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtAppend(302,2) StmtAppend(545,332) StmtReplace(636,383) (stored at: variant273)
+3075533 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:1407: error: variable declaration not allowed here
+        if (n != 0)boolean negate = false;
+                           ^
+1 error
+
+3075533 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(553) StmtAppend(961,631) StmtAppend(963,382) StmtDelete(1333) StmtReplace(693,1308) StmtReplace(76,61) at variant274 fails to compile
+
+3075533 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(553) StmtAppend(961,631) StmtAppend(963,382) StmtDelete(1333) StmtReplace(693,1308) StmtReplace(76,61) (stored at: variant274)
+3075575 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:1373: error: boolean cannot be dereferenced
+				inc.sign = this.sign;
+				   ^
+1 error
+
+3075575 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(908) StmtDelete(539) StmtReplace(1226,1205) StmtDelete(100) StmtDelete(277) StmtAppend(681,1269) at variant275 fails to compile
+
+3075575 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(908) StmtDelete(539) StmtReplace(1226,1205) StmtDelete(100) StmtDelete(277) StmtAppend(681,1269) (stored at: variant275)
+3076181 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtReplace(409,274) StmtReplace(196,136) (stored at: variant276)
+3076212 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:2087: error: unreachable statement
+                pointInserted = true;
+                ^
+1 error
+
+3076212 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(1215) StmtReplace(163,1187) StmtDelete(651) StmtReplace(1166,1049) at variant277 fails to compile
+
+3076212 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(1215) StmtReplace(163,1187) StmtDelete(651) StmtReplace(1166,1049) (stored at: variant277)
+3172254 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtAppend(961,631) StmtReplace(744,298) StmtDelete(100) StmtReplace(902,313) StmtReplace(795,759) (stored at: variant278)
+3172288 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:1527: error: cannot find symbol
+                result = newInstance(this);
+                ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1528: error: cannot find symbol
+                return result;
+                       ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1533: error: cannot find symbol
+                result = newInstance(getZero());
+                ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1534: error: cannot find symbol
+                result.nans = QNAN;
+                ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1535: error: cannot find symbol
+                result = dotrap(DfpField.FLAG_INVALID, MULTIPLY_TRAP, newInstance(getZero()), result);
+                ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1535: error: cannot find symbol
+                result = dotrap(DfpField.FLAG_INVALID, MULTIPLY_TRAP, newInstance(getZero()), result);
+                                                                                              ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1536: error: cannot find symbol
+                return result;
+                       ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1543: error: cannot find symbol
+            result = newInstance(getZero());
+            ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1544: error: cannot find symbol
+            result.nans = QNAN;
+            ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1545: error: cannot find symbol
+            result = dotrap(DfpField.FLAG_INVALID, MULTIPLY_TRAP, result, result);
+            ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1545: error: cannot find symbol
+            result = dotrap(DfpField.FLAG_INVALID, MULTIPLY_TRAP, result, result);
+                                                                  ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1545: error: cannot find symbol
+            result = dotrap(DfpField.FLAG_INVALID, MULTIPLY_TRAP, result, result);
+                                                                          ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1546: error: cannot find symbol
+            return result;
+                   ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1553: error: cannot find symbol
+            result.mant[i] = r - rh * RADIX;
+            ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1558: error: cannot find symbol
+            lostdigit = result.mant[0];
+                        ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1559: error: cannot find symbol
+            result.shiftRight();
+            ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1560: error: cannot find symbol
+            result.mant[mant.length-1] = rh;
+            ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1563: error: cannot find symbol
+        if (result.mant[mant.length-1] == 0) { // if result is zero, set exp to zero
+            ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1564: error: cannot find symbol
+            result.exp = 0;
+            ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1567: error: cannot find symbol
+        final int excp = result.round(lostdigit);
+                         ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1569: error: cannot find symbol
+            result = dotrap(excp, MULTIPLY_TRAP, result, result);
+            ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1569: error: cannot find symbol
+            result = dotrap(excp, MULTIPLY_TRAP, result, result);
+                                                 ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1569: error: cannot find symbol
+            result = dotrap(excp, MULTIPLY_TRAP, result, result);
+                                                         ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1572: error: cannot find symbol
+        return result;
+               ^
+  symbol:   variable result
+  location: class Dfp
+24 errors
+
+3172289 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(692,496) StmtReplace(772,836) at variant279 fails to compile
+
+3172289 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtReplace(692,496) StmtReplace(772,836) (stored at: variant279)
+3172325 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:723: error: incompatible types: possible lossy conversion from double to int
+					return Double.NaN;
+					             ^
+1 error
+
+3172325 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(945) StmtDelete(133) StmtDelete(1043) StmtDelete(15) StmtReplace(305,1305) at variant280 fails to compile
+
+3172325 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(945) StmtDelete(133) StmtDelete(1043) StmtDelete(15) StmtReplace(305,1305) (stored at: variant280)
+3184424 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(93) StmtDelete(756) StmtAppend(273,157) StmtReplace(277,1293) StmtDelete(477) StmtReplace(1079,140) (stored at: variant281)
+3186043 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(93) StmtDelete(756) StmtAppend(273,157) StmtDelete(295) StmtAppend(1152,1068) StmtAppend(593,558) (stored at: variant282)
+3186070 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:962: error: incompatible types: boolean cannot be converted to Dfp
+            return false;
+                   ^
+org/apache/commons/math/dfp/Dfp.java:1250: error: cannot find symbol
+            final int excp = result.round(lostdigit);
+                                          ^
+  symbol:   variable lostdigit
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:2308: error: incompatible types: boolean cannot be converted to double
+				return false;
+				       ^
+3 errors
+
+3186070 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(417,354) StmtAppend(1316,328) StmtDelete(553) StmtReplace(609,711) StmtDelete(545) StmtReplace(420,312) at variant283 fails to compile
+
+3186070 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtReplace(417,354) StmtAppend(1316,328) StmtDelete(553) StmtReplace(609,711) StmtDelete(545) StmtReplace(420,312) (stored at: variant283)
+3186104 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:821: error: incompatible types: double cannot be converted to boolean
+				return Double.NEGATIVE_INFINITY;
+				             ^
+org/apache/commons/math/dfp/Dfp.java:823: error: incompatible types: double cannot be converted to boolean
+				return Double.POSITIVE_INFINITY;
+				             ^
+org/apache/commons/math/dfp/Dfp.java:962: error: incompatible types: boolean cannot be converted to Dfp
+            return false;
+                   ^
+org/apache/commons/math/dfp/Dfp.java:2330: error: incompatible types: boolean cannot be converted to double
+				return false;
+				       ^
+4 errors
+
+3186104 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(417,354) StmtAppend(1316,328) StmtDelete(130) StmtReplace(349,1298) at variant284 fails to compile
+
+3186104 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtReplace(417,354) StmtAppend(1316,328) StmtDelete(130) StmtReplace(349,1298) (stored at: variant284)
+3186136 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:976: error: cannot find symbol
+            result = dotrap(DfpField.FLAG_INEXACT, TRUNC_TRAP, this, result);
+            ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:976: error: cannot find symbol
+            result = dotrap(DfpField.FLAG_INEXACT, TRUNC_TRAP, this, result);
+                                                                     ^
+  symbol:   variable result
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:977: error: cannot find symbol
+            return result;
+                   ^
+  symbol:   variable result
+  location: class Dfp
+3 errors
+
+3186136 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(945) StmtDelete(133) StmtDelete(1043) StmtDelete(15) StmtDelete(427) at variant285 fails to compile
+
+3186136 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(945) StmtDelete(133) StmtDelete(1043) StmtDelete(15) StmtDelete(427) (stored at: variant285)
+3186167 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:900: error: non-static variable sign cannot be referenced from a static context
+                sign = -1;
+                ^
+1 error
+
+3186167 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(744,298) StmtAppend(782,526) StmtDelete(527) StmtReplace(396,141) at variant286 fails to compile
+
+3186167 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtReplace(744,298) StmtAppend(782,526) StmtDelete(527) StmtReplace(396,141) (stored at: variant286)
+3282210 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(945) StmtDelete(133) StmtDelete(1043) StmtDelete(15) StmtReplace(1061,1062) (stored at: variant287)
+3282243 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:962: error: incompatible types: boolean cannot be converted to Dfp
+            return false;
+                   ^
+org/apache/commons/math/dfp/Dfp.java:1273: error: cannot find symbol
+            final int excp = result.round(lostdigit);
+                                          ^
+  symbol:   variable lostdigit
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:2335: error: incompatible types: boolean cannot be converted to double
+				return false;
+				       ^
+3 errors
+
+3282244 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(417,354) StmtAppend(1316,328) StmtDelete(553) StmtReplace(609,711) StmtAppend(763,326) StmtDelete(1048) at variant288 fails to compile
+
+3282244 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtReplace(417,354) StmtAppend(1316,328) StmtDelete(553) StmtReplace(609,711) StmtAppend(763,326) StmtDelete(1048) (stored at: variant288)
+3378287 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(573) StmtAppend(591,596) StmtReplace(1345,31) StmtDelete(1165) (stored at: variant289)
+3378321 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:1878: error: incompatible types: boolean cannot be converted to Dfp
+					return false;
+					       ^
+1 error
+
+3378321 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(93) StmtDelete(756) StmtAppend(273,157) StmtReplace(277,1293) StmtDelete(170) StmtAppend(1019,353) at variant290 fails to compile
+
+3378322 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(93) StmtDelete(756) StmtAppend(273,157) StmtReplace(277,1293) StmtDelete(170) StmtAppend(1019,353) (stored at: variant290)
+3400818 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(93) StmtDelete(756) StmtAppend(273,157) StmtReplace(277,1293) StmtDelete(170) StmtReplace(552,710) (stored at: variant291)
+3497106 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtAppend(302,2) StmtDelete(616) StmtDelete(1094) StmtDelete(1198) StmtReplace(56,141) StmtDelete(1015) (stored at: variant292)
+3497133 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:698: error: incompatible types: boolean cannot be converted to int
+			return false;
+			       ^
+org/apache/commons/math/dfp/Dfp.java:700: error: cannot find symbol
+        if (adiff < 0) {
+            ^
+  symbol:   variable adiff
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:701: error: cannot find symbol
+            adiff = -adiff;
+            ^
+  symbol:   variable adiff
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:701: error: cannot find symbol
+            adiff = -adiff;
+                     ^
+  symbol:   variable adiff
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:708: error: cannot find symbol
+        if (adiff > (mant.length + 1)) {
+            ^
+  symbol:   variable adiff
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:719: error: cannot find symbol
+        for (int i = 0; i < adiff; i++) {
+                            ^
+  symbol:   variable adiff
+  location: class Dfp
+org/apache/commons/math/dfp/Dfp.java:1783: error: incompatible types: int cannot be converted to Dfp
+				return exp * 4 - 1;
+				               ^
+7 errors
+
+3497133 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(200,175) StmtReplace(900,314) StmtDelete(1328) StmtReplace(286,361) StmtReplace(963,495) at variant293 fails to compile
+
+3497133 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtReplace(200,175) StmtReplace(900,314) StmtDelete(1328) StmtReplace(286,361) StmtReplace(963,495) (stored at: variant293)
+3497162 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:1202: error: incompatible types: boolean cannot be converted to Dfp
+				return false;
+				       ^
+1 error
+
+3497162 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(302,2) StmtAppend(545,332) StmtDelete(508) at variant294 fails to compile
+
+3497162 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtAppend(302,2) StmtAppend(545,332) StmtDelete(508) (stored at: variant294)
+3593201 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(293) StmtDelete(1164) StmtReplace(667,11) StmtReplace(916,312) (stored at: variant295)
+3593761 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(908) StmtDelete(539) StmtDelete(56) StmtReplace(1166,12) (stored at: variant296)
+3593773 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/dfp/Dfp.java:2186: error: orphaned default
+            {default:if (result.sign == -1){result=result.add(newInstance(-1));}} def = result; break;
+             ^
+1 error
+
+3593773 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(591,596) StmtReplace(576,578) StmtReplace(417,854) StmtAppend(1234,442) at variant297 fails to compile
+
+3593773 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtAppend(591,596) StmtReplace(576,578) StmtReplace(417,854) StmtAppend(1234,442) (stored at: variant297)

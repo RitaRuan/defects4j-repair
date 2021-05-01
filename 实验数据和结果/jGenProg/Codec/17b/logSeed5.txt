@@ -1,0 +1,59 @@
+Astor Output:
+
+General stats:
+EXECUTION_IDENTIFIER=
+TOTAL_TIME=20.067
+NR_GENERATIONS=41
+NR_RIGHT_COMPILATIONS=2
+NR_FAILLING_COMPILATIONS=2
+NR_ERRONEOUS_VARIANCES=null
+NR_FAILING_VALIDATION_PROCESS=null
+OUTPUT_STATUS=STOP_BY_PATCH_FOUND
+
+Patch stats:
+
+Patch 1
+VARIANT_ID=82
+TIME=20
+VALIDATION=|true|0|849|[]|
+GENERATION=41
+FOLDER_SOLUTION_CODE=/home/rtx/repair/d4j/Codec/17b/jgenprog/variantSeed5/AstorMain-17b//src//variant-82
+--Patch Hunk #1
+OPERATOR=InsertBeforeOp
+
+LOCATION=org.apache.commons.codec.binary.StringUtils
+
+PATH=/home/rtx/repair/d4j/Codec/17b/src/main/java/org/apache/commons/codec/binary/StringUtils.java
+
+MODIFIED_FILE_PATH=/home/rtx/repair/d4j/Codec/17b/jgenprog/variantSeed5/AstorMain-17b//src//variant-82/org/apache/commons/codec/binary/StringUtils.java
+
+LINE=339
+
+SUSPICIOUNESS=0.707
+
+MP_RANKING=0
+
+ORIGINAL_CODE=return new java.lang.String(bytes, org.apache.commons.codec.Charsets.ISO_8859_1)
+
+BUGGY_CODE_TYPE=CtReturnImpl|CtBlockImpl
+
+PATCH_HUNK_CODE=if (bytes == null) {
+	return null;
+}
+
+PATCH_HUNK_TYPE=CtIfImpl|CtBlockImpl
+
+INGREDIENT_SCOPE=LOCAL
+
+INGREDIENT_PARENT=if (bytes == null) {
+	return null;
+}
+
+PATCH_DIFF_ORIG=--- /home/rtx/repair/d4j/Codec/17b/src/main/java/org/apache/commons/codec/binary/StringUtils.java
++++ /home/rtx/repair/d4j/Codec/17b/src/main/java/org/apache/commons/codec/binary/StringUtils.java
+@@ -338 +338 @@
+-	public static java.lang.String newStringIso8859_1(final byte[] bytes) {
++	public static java.lang.String newStringIso8859_1(final byte[] bytes) { 		if (bytes == null) { 			return null;}
+
+
+

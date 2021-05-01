@@ -1,0 +1,62 @@
+1 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/45b/src/main/java/org/jsoup/parser/HtmlTreeBuilder.java 351
+Faulty:
+stack.remove(pos);
+Seed:
+if (errors.canAddError()) errors.add(new ParseError(reader.pos(),"Unexpected token [%s] when in state [%s]",currentToken.tokenType(),state));
+**************************************************
+2 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/45b/src/main/java/org/jsoup/parser/HtmlTreeBuilder.java 399
+Faulty:
+break;
+Seed:
+boolean needsExitTransition=false;
+**************************************************
+3 Replace /home/ubuntu/rtx/d4j/Jsoup/45b/src/main/java/org/jsoup/parser/HtmlTreeBuilder.java 398
+Faulty:
+transition(HtmlTreeBuilderState.InRow);
+Seed:
+this.reader=reader;
+**************************************************
+4 Replace /home/ubuntu/rtx/d4j/Jsoup/45b/src/main/java/org/jsoup/parser/HtmlTreeBuilder.java 398
+Faulty:
+transition(HtmlTreeBuilderState.InRow);
+Seed:
+this.reader=reader;
+**************************************************
+5 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/45b/src/main/java/org/jsoup/parser/TreeBuilder.java 78
+Faulty:
+return process(new Token.EndTag().name(name));
+Seed:
+StringBuilder out=new StringBuilder();
+**************************************************
+6 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/45b/src/main/java/org/jsoup/parser/HtmlTreeBuilder.java 398
+Faulty:
+transition(HtmlTreeBuilderState.InRow);
+Seed:
+tokeniser=new Tokeniser(reader,errors);
+**************************************************
+7 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/45b/src/main/java/org/jsoup/parser/HtmlTreeBuilder.java 351
+Faulty:
+stack.remove(pos);
+Seed:
+if (errors.canAddError()) errors.add(new ParseError(reader.pos(),"Unexpected token [%s] when in state [%s]",currentToken.tokenType(),state));
+**************************************************
+8 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/45b/src/main/java/org/jsoup/parser/HtmlTreeBuilder.java 398
+Faulty:
+transition(HtmlTreeBuilderState.InRow);
+Seed:
+transition(HtmlTreeBuilderState.InCell);
+**************************************************
+9 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/45b/src/main/java/org/jsoup/parser/HtmlTreeBuilder.java 562
+Faulty:
+return formattingElements.remove(size - 1);
+Seed:
+this.fosterInserts=fosterInserts;
+**************************************************
+10 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/45b/src/main/java/org/jsoup/parser/HtmlTreeBuilder.java 562
+Faulty:
+return formattingElements.remove(size - 1);
+Seed:
+this.fosterInserts=fosterInserts;
+**************************************************
+Evaluations: 998
+EstimatedTime: 1106415

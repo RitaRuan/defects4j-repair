@@ -1,0 +1,26 @@
+--- org.apache.commons.math.linear.EigenDecompositionImpl
++++ org.apache.commons.math.linear.EigenDecompositionImpl
+@@ -1304,6 +1304,7 @@
+         work[j4] = work[j4p2 + 2] * (work[j4p2] / work[j4 - 2]);
+         dN1 = work[j4p2 + 2] * (dN2 / work[j4 - 2]) - tau;
+         dMin = Math.min(dMin, dN1);
++		int outIndex = 0;
+ 
+         dMin1 = dMin;
+         j4 = j4 + 4;
+@@ -1481,7 +1482,6 @@
+                         if (work[nn - 5]  >  work[nn - 7]) {
+                             return;
+                         }
+-                        b2 = work[nn - 5] / work[nn - 7];
+                         np = nn - 9;
+                     } else {
+                         np = nn - 2 * pingPong;
+@@ -1509,7 +1509,6 @@
+                             return;
+                         }
+                         b2 = b2 * (work[i4] / work[i4 - 2]);
+-                        a2 = a2 + b2;
+                         if (100 * Math.max(b2, b1) < a2 || cnst1 < a2) {
+                             break;
+                         }

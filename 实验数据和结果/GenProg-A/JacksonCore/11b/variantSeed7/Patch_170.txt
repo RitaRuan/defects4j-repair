@@ -1,0 +1,46 @@
+1 InsertBefore /home/rtx/d4j/JacksonCore/11b/src/main/java/com/fasterxml/jackson/core/sym/ByteQuadsCanonicalizer.java 646
+Faulty:
+return null;
+Seed:
+long now=System.currentTimeMillis();
+**************************************************
+2 Delete /home/rtx/d4j/JacksonCore/11b/src/main/java/com/fasterxml/jackson/core/sym/ByteQuadsCanonicalizer.java 642
+Faulty:
+if ((q1 == hashArea[offset]) && (1 == hashArea[offset + 3])) {
+  return _names[offset >> 2];
+}
+Seed:
+_hashShared=false;
+**************************************************
+3 InsertBefore /home/rtx/d4j/JacksonCore/11b/src/main/java/com/fasterxml/jackson/core/sym/ByteQuadsCanonicalizer.java 492
+Faulty:
+if (len == 0) {
+  return null;
+}
+Seed:
+int total=totalCount();
+**************************************************
+4 InsertBefore /home/rtx/d4j/JacksonCore/11b/src/main/java/com/fasterxml/jackson/core/sym/ByteQuadsCanonicalizer.java 646
+Faulty:
+return null;
+Seed:
+_verifyNeedForRehash();
+**************************************************
+5 Delete /home/rtx/d4j/JacksonCore/11b/src/main/java/com/fasterxml/jackson/core/sym/ByteQuadsCanonicalizer.java 634
+Faulty:
+if (len == 0) {
+  return null;
+}
+Seed:
+final int[] oldHashArea=_hashArea;
+**************************************************
+6 Delete /home/rtx/d4j/JacksonCore/11b/src/main/java/com/fasterxml/jackson/core/sym/ByteQuadsCanonicalizer.java 631
+Faulty:
+if ((q1 == hashArea[offset]) && (1 == len)) {
+  return _names[offset >> 2];
+}
+Seed:
+int minAdd=Math.min(4096,_hashSize);
+**************************************************
+Evaluations: 290
+EstimatedTime: 950099

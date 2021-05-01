@@ -1,0 +1,10 @@
+--- com.fasterxml.jackson.core.sym.ByteQuadsCanonicalizer
++++ com.fasterxml.jackson.core.sym.ByteQuadsCanonicalizer
+@@ -1127,7 +1127,6 @@
+                 // #0 is hash, #1 offset
+                 int qoff = oldHashArea[offset+1];
+                 System.arraycopy(oldHashArea, qoff, q, 0, len);
+-                addName(name, q, len);
+                 break;
+             }
+         }

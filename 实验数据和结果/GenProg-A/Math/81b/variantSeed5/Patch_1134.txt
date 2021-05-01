@@ -1,0 +1,37 @@
+1 Delete /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1517
+Faulty:
+a2=cnst3 * a2;
+Seed:
+imagEigenvalues=new double[main.length];
+**************************************************
+2 Delete /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1622
+Faulty:
+if (dMin1 == dN1) {
+  tau=0.5 * dMin1;
+}
+Seed:
+int begin=0;
+**************************************************
+3 Delete /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1517
+Faulty:
+a2=cnst3 * a2;
+Seed:
+tType-=11;
+**************************************************
+4 Delete /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1480
+Faulty:
+a2=0.0;
+Seed:
+for (int i4=4 * end - 9 + pingPong; i4 >= 4 * start + 2 + pingPong; i4-=4) {
+  if (work[i4] > work[i4 - 2]) {
+    return;
+  }
+  b1*=work[i4] / work[i4 - 2];
+  b2+=b1;
+  if (100 * b1 < b2) {
+    break;
+  }
+}
+**************************************************
+Evaluations: 1290
+EstimatedTime: 459933

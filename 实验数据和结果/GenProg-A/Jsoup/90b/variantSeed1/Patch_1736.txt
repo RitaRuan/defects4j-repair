@@ -1,0 +1,531 @@
+1 Delete /home/ubuntu/rtx/d4j/Jsoup/90b/src/main/java/org/jsoup/helper/HttpConnection.java 407
+Faulty:
+for (int j=input.length; i < j; ++i) {
+  int o=input[i];
+  if ((o & 0x80) == 0) {
+    continue;
+  }
+  if ((o & 0xE0) == 0xC0) {
+    end=i + 1;
+  }
+ else   if ((o & 0xF0) == 0xE0) {
+    end=i + 2;
+  }
+ else   if ((o & 0xF8) == 0xF0) {
+    end=i + 3;
+  }
+ else {
+    return false;
+  }
+  while (i < end) {
+    i++;
+    o=input[i];
+    if ((o & 0xC0) != 0x80) {
+      return false;
+    }
+  }
+}
+Seed:
+final StringBuilder mime=StringUtil.borrowBuilder();
+**************************************************
+2 Delete /home/ubuntu/rtx/d4j/Jsoup/90b/src/main/java/org/jsoup/helper/HttpConnection.java 407
+Faulty:
+for (int j=input.length; i < j; ++i) {
+  int o=input[i];
+  if ((o & 0x80) == 0) {
+    continue;
+  }
+  if ((o & 0xE0) == 0xC0) {
+    end=i + 1;
+  }
+ else   if ((o & 0xF0) == 0xE0) {
+    end=i + 2;
+  }
+ else   if ((o & 0xF8) == 0xF0) {
+    end=i + 3;
+  }
+ else {
+    return false;
+  }
+  while (i < end) {
+    i++;
+    o=input[i];
+    if ((o & 0xC0) != 0x80) {
+      return false;
+    }
+  }
+}
+Seed:
+final StringBuilder mime=StringUtil.borrowBuilder();
+**************************************************
+3 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/90b/src/main/java/org/jsoup/helper/HttpConnection.java 425
+Faulty:
+while (i < end) {
+  i++;
+  o=input[i];
+  if ((o & 0xC0) != 0x80) {
+    return false;
+  }
+}
+Seed:
+int i=0;
+**************************************************
+4 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/90b/src/main/java/org/jsoup/helper/HttpConnection.java 425
+Faulty:
+while (i < end) {
+  i++;
+  o=input[i];
+  if ((o & 0xC0) != 0x80) {
+    return false;
+  }
+}
+Seed:
+int i=0;
+**************************************************
+5 Delete /home/ubuntu/rtx/d4j/Jsoup/90b/src/main/java/org/jsoup/helper/HttpConnection.java 407
+Faulty:
+for (int j=input.length; i < j; ++i) {
+  int o=input[i];
+  if ((o & 0x80) == 0) {
+    continue;
+  }
+  if ((o & 0xE0) == 0xC0) {
+    end=i + 1;
+  }
+ else   if ((o & 0xF0) == 0xE0) {
+    end=i + 2;
+  }
+ else   if ((o & 0xF8) == 0xF0) {
+    end=i + 3;
+  }
+ else {
+    return false;
+  }
+  while (i < end) {
+    i++;
+    o=input[i];
+    if ((o & 0xC0) != 0x80) {
+      return false;
+    }
+  }
+}
+Seed:
+final StringBuilder mime=StringUtil.borrowBuilder();
+**************************************************
+6 Replace /home/ubuntu/rtx/d4j/Jsoup/90b/src/main/java/org/jsoup/helper/HttpConnection.java 388
+Faulty:
+byte[] bytes=val.getBytes("ISO-8859-1");
+Seed:
+byte[] bytes=val.getBytes("ISO-8859-1");
+**************************************************
+7 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/90b/src/main/java/org/jsoup/helper/HttpConnection.java 425
+Faulty:
+while (i < end) {
+  i++;
+  o=input[i];
+  if ((o & 0xC0) != 0x80) {
+    return false;
+  }
+}
+Seed:
+end=i + 2;
+**************************************************
+8 Delete /home/ubuntu/rtx/d4j/Jsoup/90b/src/main/java/org/jsoup/helper/HttpConnection.java 407
+Faulty:
+for (int j=input.length; i < j; ++i) {
+  int o=input[i];
+  if ((o & 0x80) == 0) {
+    continue;
+  }
+  if ((o & 0xE0) == 0xC0) {
+    end=i + 1;
+  }
+ else   if ((o & 0xF0) == 0xE0) {
+    end=i + 2;
+  }
+ else   if ((o & 0xF8) == 0xF0) {
+    end=i + 3;
+  }
+ else {
+    return false;
+  }
+  while (i < end) {
+    i++;
+    o=input[i];
+    if ((o & 0xC0) != 0x80) {
+      return false;
+    }
+  }
+}
+Seed:
+final StringBuilder mime=StringUtil.borrowBuilder();
+**************************************************
+9 Delete /home/ubuntu/rtx/d4j/Jsoup/90b/src/main/java/org/jsoup/helper/HttpConnection.java 416
+Faulty:
+if ((o & 0xF0) == 0xE0) {
+  end=i + 2;
+}
+ else if ((o & 0xF8) == 0xF0) {
+  end=i + 3;
+}
+ else {
+  return false;
+}
+Seed:
+String foundCharset=null;
+**************************************************
+10 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/90b/src/main/java/org/jsoup/helper/HttpConnection.java 414
+Faulty:
+if ((o & 0xE0) == 0xC0) {
+  end=i + 1;
+}
+ else if ((o & 0xF0) == 0xE0) {
+  end=i + 2;
+}
+ else if ((o & 0xF8) == 0xF0) {
+  end=i + 3;
+}
+ else {
+  return false;
+}
+Seed:
+throw new IllegalArgumentException("Object must not be null");
+**************************************************
+11 Delete /home/ubuntu/rtx/d4j/Jsoup/90b/src/main/java/org/jsoup/helper/HttpConnection.java 414
+Faulty:
+if ((o & 0xE0) == 0xC0) {
+  end=i + 1;
+}
+ else if ((o & 0xF0) == 0xE0) {
+  end=i + 2;
+}
+ else if ((o & 0xF8) == 0xF0) {
+  end=i + 3;
+}
+ else {
+  return false;
+}
+Seed:
+return null;
+**************************************************
+12 Delete /home/ubuntu/rtx/d4j/Jsoup/90b/src/main/java/org/jsoup/helper/HttpConnection.java 416
+Faulty:
+if ((o & 0xF0) == 0xE0) {
+  end=i + 2;
+}
+ else if ((o & 0xF8) == 0xF0) {
+  end=i + 3;
+}
+ else {
+  return false;
+}
+Seed:
+String foundCharset=null;
+**************************************************
+13 Delete /home/ubuntu/rtx/d4j/Jsoup/90b/src/main/java/org/jsoup/helper/HttpConnection.java 416
+Faulty:
+if ((o & 0xF0) == 0xE0) {
+  end=i + 2;
+}
+ else if ((o & 0xF8) == 0xF0) {
+  end=i + 3;
+}
+ else {
+  return false;
+}
+Seed:
+String foundCharset=null;
+**************************************************
+14 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/90b/src/main/java/org/jsoup/helper/HttpConnection.java 425
+Faulty:
+while (i < end) {
+  i++;
+  o=input[i];
+  if ((o & 0xC0) != 0x80) {
+    return false;
+  }
+}
+Seed:
+int i=0;
+**************************************************
+15 Delete /home/ubuntu/rtx/d4j/Jsoup/90b/src/main/java/org/jsoup/helper/HttpConnection.java 407
+Faulty:
+for (int j=input.length; i < j; ++i) {
+  int o=input[i];
+  if ((o & 0x80) == 0) {
+    continue;
+  }
+  if ((o & 0xE0) == 0xC0) {
+    end=i + 1;
+  }
+ else   if ((o & 0xF0) == 0xE0) {
+    end=i + 2;
+  }
+ else   if ((o & 0xF8) == 0xF0) {
+    end=i + 3;
+  }
+ else {
+    return false;
+  }
+  while (i < end) {
+    i++;
+    o=input[i];
+    if ((o & 0xC0) != 0x80) {
+      return false;
+    }
+  }
+}
+Seed:
+final StringBuilder mime=StringUtil.borrowBuilder();
+**************************************************
+16 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/90b/src/main/java/org/jsoup/helper/HttpConnection.java 425
+Faulty:
+while (i < end) {
+  i++;
+  o=input[i];
+  if ((o & 0xC0) != 0x80) {
+    return false;
+  }
+}
+Seed:
+int i=0;
+**************************************************
+17 Replace /home/ubuntu/rtx/d4j/Jsoup/90b/src/main/java/org/jsoup/helper/HttpConnection.java 388
+Faulty:
+byte[] bytes=val.getBytes("ISO-8859-1");
+Seed:
+byte[] bytes=val.getBytes("ISO-8859-1");
+**************************************************
+18 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/90b/src/main/java/org/jsoup/helper/HttpConnection.java 425
+Faulty:
+while (i < end) {
+  i++;
+  o=input[i];
+  if ((o & 0xC0) != 0x80) {
+    return false;
+  }
+}
+Seed:
+end=i + 2;
+**************************************************
+19 Replace /home/ubuntu/rtx/d4j/Jsoup/90b/src/main/java/org/jsoup/helper/HttpConnection.java 388
+Faulty:
+byte[] bytes=val.getBytes("ISO-8859-1");
+Seed:
+byte[] bytes=val.getBytes("ISO-8859-1");
+**************************************************
+20 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/90b/src/main/java/org/jsoup/helper/HttpConnection.java 425
+Faulty:
+while (i < end) {
+  i++;
+  o=input[i];
+  if ((o & 0xC0) != 0x80) {
+    return false;
+  }
+}
+Seed:
+end=i + 2;
+**************************************************
+21 Delete /home/ubuntu/rtx/d4j/Jsoup/90b/src/main/java/org/jsoup/helper/HttpConnection.java 407
+Faulty:
+for (int j=input.length; i < j; ++i) {
+  int o=input[i];
+  if ((o & 0x80) == 0) {
+    continue;
+  }
+  if ((o & 0xE0) == 0xC0) {
+    end=i + 1;
+  }
+ else   if ((o & 0xF0) == 0xE0) {
+    end=i + 2;
+  }
+ else   if ((o & 0xF8) == 0xF0) {
+    end=i + 3;
+  }
+ else {
+    return false;
+  }
+  while (i < end) {
+    i++;
+    o=input[i];
+    if ((o & 0xC0) != 0x80) {
+      return false;
+    }
+  }
+}
+Seed:
+final StringBuilder mime=StringUtil.borrowBuilder();
+**************************************************
+22 Delete /home/ubuntu/rtx/d4j/Jsoup/90b/src/main/java/org/jsoup/helper/HttpConnection.java 407
+Faulty:
+for (int j=input.length; i < j; ++i) {
+  int o=input[i];
+  if ((o & 0x80) == 0) {
+    continue;
+  }
+  if ((o & 0xE0) == 0xC0) {
+    end=i + 1;
+  }
+ else   if ((o & 0xF0) == 0xE0) {
+    end=i + 2;
+  }
+ else   if ((o & 0xF8) == 0xF0) {
+    end=i + 3;
+  }
+ else {
+    return false;
+  }
+  while (i < end) {
+    i++;
+    o=input[i];
+    if ((o & 0xC0) != 0x80) {
+      return false;
+    }
+  }
+}
+Seed:
+final StringBuilder mime=StringUtil.borrowBuilder();
+**************************************************
+23 Replace /home/ubuntu/rtx/d4j/Jsoup/90b/src/main/java/org/jsoup/helper/HttpConnection.java 388
+Faulty:
+byte[] bytes=val.getBytes("ISO-8859-1");
+Seed:
+byte[] bytes=val.getBytes("ISO-8859-1");
+**************************************************
+24 Delete /home/ubuntu/rtx/d4j/Jsoup/90b/src/main/java/org/jsoup/helper/HttpConnection.java 407
+Faulty:
+for (int j=input.length; i < j; ++i) {
+  int o=input[i];
+  if ((o & 0x80) == 0) {
+    continue;
+  }
+  if ((o & 0xE0) == 0xC0) {
+    end=i + 1;
+  }
+ else   if ((o & 0xF0) == 0xE0) {
+    end=i + 2;
+  }
+ else   if ((o & 0xF8) == 0xF0) {
+    end=i + 3;
+  }
+ else {
+    return false;
+  }
+  while (i < end) {
+    i++;
+    o=input[i];
+    if ((o & 0xC0) != 0x80) {
+      return false;
+    }
+  }
+}
+Seed:
+final StringBuilder mime=StringUtil.borrowBuilder();
+**************************************************
+25 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/90b/src/main/java/org/jsoup/helper/HttpConnection.java 426
+Faulty:
+i++;
+Seed:
+final StringBuilder mime=StringUtil.borrowBuilder();
+**************************************************
+26 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/90b/src/main/java/org/jsoup/helper/HttpConnection.java 426
+Faulty:
+i++;
+Seed:
+final StringBuilder mime=StringUtil.borrowBuilder();
+**************************************************
+27 Delete /home/ubuntu/rtx/d4j/Jsoup/90b/src/main/java/org/jsoup/helper/HttpConnection.java 414
+Faulty:
+if ((o & 0xE0) == 0xC0) {
+  end=i + 1;
+}
+ else if ((o & 0xF0) == 0xE0) {
+  end=i + 2;
+}
+ else if ((o & 0xF8) == 0xF0) {
+  end=i + 3;
+}
+ else {
+  return false;
+}
+Seed:
+return null;
+**************************************************
+28 Delete /home/ubuntu/rtx/d4j/Jsoup/90b/src/main/java/org/jsoup/helper/HttpConnection.java 416
+Faulty:
+if ((o & 0xF0) == 0xE0) {
+  end=i + 2;
+}
+ else if ((o & 0xF8) == 0xF0) {
+  end=i + 3;
+}
+ else {
+  return false;
+}
+Seed:
+String foundCharset=null;
+**************************************************
+29 Delete /home/ubuntu/rtx/d4j/Jsoup/90b/src/main/java/org/jsoup/helper/HttpConnection.java 425
+Faulty:
+while (i < end) {
+  i++;
+  o=input[i];
+  if ((o & 0xC0) != 0x80) {
+    return false;
+  }
+}
+Seed:
+onContentsChanged();
+**************************************************
+30 Replace /home/ubuntu/rtx/d4j/Jsoup/90b/src/main/java/org/jsoup/helper/HttpConnection.java 417
+Faulty:
+end=i + 2;
+Seed:
+return false;
+**************************************************
+31 Replace /home/ubuntu/rtx/d4j/Jsoup/90b/src/main/java/org/jsoup/helper/HttpConnection.java 427
+Faulty:
+o=input[i];
+Seed:
+onContentsChanged();
+**************************************************
+32 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/90b/src/main/java/org/jsoup/helper/HttpConnection.java 416
+Faulty:
+if ((o & 0xF0) == 0xE0) {
+  end=i + 2;
+}
+ else if ((o & 0xF8) == 0xF0) {
+  end=i + 3;
+}
+ else {
+  return false;
+}
+Seed:
+boolean fullyRead=false;
+**************************************************
+33 Replace /home/ubuntu/rtx/d4j/Jsoup/90b/src/main/java/org/jsoup/helper/HttpConnection.java 425
+Faulty:
+while (i < end) {
+  i++;
+  o=input[i];
+  if ((o & 0xC0) != 0x80) {
+    return false;
+  }
+}
+Seed:
+int i=0;
+**************************************************
+34 Delete /home/ubuntu/rtx/d4j/Jsoup/90b/src/main/java/org/jsoup/helper/HttpConnection.java 425
+Faulty:
+while (i < end) {
+  i++;
+  o=input[i];
+  if ((o & 0xC0) != 0x80) {
+    return false;
+  }
+}
+Seed:
+continue;
+**************************************************
+Evaluations: 1463
+EstimatedTime: 1571694

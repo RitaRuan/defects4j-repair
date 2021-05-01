@@ -1,0 +1,26 @@
+1 Replace /home/ubuntu/rtx/d4j/Math/95b/src/java/org/apache/commons/math/distribution/FDistributionImpl.java 147
+Faulty:
+ret=d / (d - 2.0);
+Seed:
+ret=1.0;
+**************************************************
+2 Delete /home/ubuntu/rtx/d4j/Math/95b/src/java/org/apache/commons/math/distribution/FDistributionImpl.java 100
+Faulty:
+if (p == 0) {
+  return 0d;
+}
+Seed:
+if (p == 1) {
+  return Double.POSITIVE_INFINITY;
+}
+**************************************************
+3 InsertBefore /home/ubuntu/rtx/d4j/Math/95b/src/java/org/apache/commons/math/distribution/FDistributionImpl.java 100
+Faulty:
+if (p == 0) {
+  return 0d;
+}
+Seed:
+double[] bracket=null;
+**************************************************
+Evaluations: 1323
+EstimatedTime: 652729

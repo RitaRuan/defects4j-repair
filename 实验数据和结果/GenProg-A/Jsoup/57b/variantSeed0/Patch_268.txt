@@ -1,0 +1,38 @@
+1 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/57b/src/main/java/org/jsoup/nodes/Node.java 127
+Faulty:
+Validate.notNull(attributeKey);
+Seed:
+final String classAttr=attributes.get("class");
+**************************************************
+2 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/57b/src/main/java/org/jsoup/nodes/Node.java 128
+Faulty:
+attributes.removeIgnoreCase(attributeKey);
+Seed:
+ensureChildNodes();
+**************************************************
+3 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/57b/src/main/java/org/jsoup/nodes/Attributes.java 120
+Faulty:
+if (attributes == null) return;
+Seed:
+Attribute attr=attributes.get(key);
+**************************************************
+4 Delete /home/ubuntu/rtx/d4j/Jsoup/57b/src/main/java/org/jsoup/nodes/Node.java 128
+Faulty:
+attributes.removeIgnoreCase(attributeKey);
+Seed:
+return super.html();
+**************************************************
+5 Replace /home/ubuntu/rtx/d4j/Jsoup/57b/src/main/java/org/jsoup/nodes/Node.java 127
+Faulty:
+Validate.notNull(attributeKey);
+Seed:
+attributes=new Attributes();
+**************************************************
+6 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/57b/src/main/java/org/jsoup/nodes/Attributes.java 120
+Faulty:
+if (attributes == null) return;
+Seed:
+boolean inClass=false;
+**************************************************
+Evaluations: 369
+EstimatedTime: 331815

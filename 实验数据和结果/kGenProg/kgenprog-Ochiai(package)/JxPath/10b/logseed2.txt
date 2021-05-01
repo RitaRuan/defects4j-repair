@@ -1,0 +1,81 @@
+RUNNING THE BUG: JxPath 10, WITH THE SEED: 2
+2021-01-21 21:19:56 [main] [INFO]  KGenProgMain - 
+==================== kGenProg Configuration ====================
+configPath = kgenprog.toml
+rootDir = . (set by command line)
+productPaths = [src/java] (set by command line)
+testPaths = [src/test] (set by command line)
+classPaths = [/home/rtx/repair/defects4j/framework/projects/lib/junit-4.11.jar, /home/rtx/repair/d4j/JxPath/1b/target/lib/ant-1.5.jar, /home/rtx/repair/d4j/JxPath/1b/target/lib/ant-optional-1.5.1.jar, /home/rtx/repair/d4j/JxPath/1b/target/lib/ant-optional-1.5.jar, /home/rtx/repair/d4j/JxPath/1b/target/lib/commons-beanutils-1.4.jar, /home/rtx/repair/d4j/JxPath/1b/target/lib/commons-collections-2.0.jar, /home/rtx/repair/d4j/JxPath/1b/target/lib/commons-logging-1.0.4.jar, /home/rtx/repair/d4j/JxPath/1b/target/lib/jdom-1.0.jar, /home/rtx/repair/d4j/JxPath/1b/target/lib/junit-3.8.1.jar, /home/rtx/repair/d4j/JxPath/1b/target/lib/junit-3.8.jar, /home/rtx/repair/d4j/JxPath/1b/target/lib/mockrunner-0.4.1.jar, /home/rtx/repair/d4j/JxPath/1b/target/lib/servletapi-2.2.jar, /home/rtx/repair/d4j/JxPath/1b/target/lib/xerces-1.2.3.jar, /home/rtx/repair/d4j/JxPath/1b/target/lib/xml-apis-2.0.2.jar] (set by command line)
+executionTests = [org.apache.commons.jxpath.ri.compiler.CoreOperationTest] (set by command line)
+outDir = ./patch2 (set by command line)
+logLevel = INFO
+mutationGeneratingCount = 10
+crossoverGeneratingCount = 10
+headcount = 10
+maxGeneration = 10
+timeLimit = PT1M
+testTimeLimit = PT10S
+requiredSolutionsCount = 1
+randomSeed = 2 (set by command line)
+scope = PACKAGE
+faultLocalization = Ochiai
+mutationType = Simple
+crossoverType = Random
+firstVariantSelectionStrategy = Random
+secondVariantSelectionStrategy = Random
+isPatchOutput = true
+isHistoryRecord = false
+currentDirectory = /home/rtx/repair/d4j/JxPath/10b
+version = 1.8.0
+================================================================
+2021-01-21 21:20:01 [main] [INFO]  KGenProgMain - initial failed tests (1/4)
+org.apache.commons.jxpath.ri.compiler.CoreOperationTest.testEmptyNodeSetOperations: null
+2021-01-21 21:20:01 [main] [INFO]  KGenProgMain - GA started
+2021-01-21 21:20:01 [main] [INFO]  KGenProgMain - entered the era of 1st generation.
+2021-01-21 21:20:04 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 2 seconds
+Variants: generated 10, build-succeeded 3, build-failed 4, syntax-invalid 1, redundant 2
+Fitness: max 0.75(3), min 0.75(3), ave 0.75
+----------------------------------------------------------------
+
+2021-01-21 21:20:04 [main] [INFO]  KGenProgMain - entered the era of 2nd generation.
+2021-01-21 21:20:18 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 16 seconds
+Variants: generated 10, build-succeeded 3, build-failed 4, syntax-invalid 1, redundant 2
+Fitness: max 0.75(3), min 0.75(3), ave 0.75
+----------------------------------------------------------------
+
+2021-01-21 21:20:18 [main] [INFO]  KGenProgMain - entered the era of 3rd generation.
+2021-01-21 21:20:33 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 31 seconds
+Variants: generated 20, build-succeeded 2, build-failed 3, syntax-invalid 4, redundant 11
+Fitness: max 0.75(2), min 0.75(2), ave 0.75
+----------------------------------------------------------------
+
+2021-01-21 21:20:33 [main] [INFO]  KGenProgMain - entered the era of 4th generation.
+2021-01-21 21:20:46 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 44 seconds
+Variants: generated 20, build-succeeded 2, build-failed 3, syntax-invalid 5, redundant 10
+Fitness: max 0.75(2), min 0.75(2), ave 0.75
+----------------------------------------------------------------
+
+2021-01-21 21:20:46 [main] [INFO]  KGenProgMain - entered the era of 5th generation.
+2021-01-21 21:21:24 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 1 minutes 22 seconds
+Variants: generated 20, build-succeeded 7, build-failed 6, syntax-invalid 2, redundant 5
+Fitness: max 0.75(6), min 0.25(1), ave 0.679
+----------------------------------------------------------------
+
+2021-01-21 21:21:24 [main] [INFO]  KGenProgMain - GA stopped
+2021-01-21 21:21:24 [main] [INFO]  KGenProgMain - Summary
+Reached generation = 5
+Generated variants = 80
+Syntax valid variants = 67
+Build succeeded variants = 17
+Time elapsed = 1 minutes 22 seconds
+Exit status = FAILURE (time limit)

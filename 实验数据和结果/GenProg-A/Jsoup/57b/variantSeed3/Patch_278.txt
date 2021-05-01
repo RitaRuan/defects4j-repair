@@ -1,0 +1,17 @@
+1 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/57b/src/main/java/org/jsoup/nodes/Attributes.java 122
+Faulty:
+for (Iterator<String> it=attributes.keySet().iterator(); it.hasNext(); ) {
+  String attrKey=it.next();
+  if (attrKey.equalsIgnoreCase(key))   attributes.remove(attrKey);
+}
+Seed:
+attributes.remove(key);
+**************************************************
+2 Delete /home/ubuntu/rtx/d4j/Jsoup/57b/src/main/java/org/jsoup/nodes/Attributes.java 119
+Faulty:
+Validate.notEmpty(key);
+Seed:
+boolean set=false;
+**************************************************
+Evaluations: 380
+EstimatedTime: 339272

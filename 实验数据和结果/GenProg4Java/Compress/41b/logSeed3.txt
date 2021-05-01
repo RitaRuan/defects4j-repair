@@ -1,0 +1,2373 @@
+0 [main] DEBUG clegoues.genprog4java.fitness.Fitness  - parsing granularity, value: class
+26 [main] DEBUG clegoues.genprog4java.fitness.Fitness  - parsing granularity, value: class
+#Tue Feb 23 05:41:51 CST 2021
+negativeTestWeight=2.0
+classSourceFolder=/home/rtx/repair/d4j/Compress/41b/target/classes
+model=default
+sampleStrategy=variant
+srcClassPath=/home/rtx/repair/d4j/Compress/41b/target/classes\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/tukaani/xz/1.6/xz-1.6.jar
+sourceVersion=1.8
+popsize=40
+regenPaths=false
+posCoverageFile=coverage.path.pos
+continue=false
+edits=APPEND;DELETE;REPLACE
+negCoverageFile=coverage.path.neg
+workingDir=/home/rtx/repair/d4j/Compress/41b/
+clearTestCache=false
+skipFailedSanity=false
+sample=0.1 
+oracleGenome=
+testGranularity=class
+justTestingFaultLoc=false
+faultLocStrategy=standardPathFile
+crossp=0.5
+pMutation=1
+generations=10
+positiveTests=/home/rtx/repair/d4j/Compress/41b/pos.tests
+javaVM=/home/rtx/java/jdk1.8.0_271/jre/bin/java
+seed=3
+negativePathWeight=0.35
+compileCommand=
+fixStrategy=classScope
+allowCoverageFail=false
+targetClassName=/home/rtx/repair/d4j/Compress/41b/bugfiles.txt
+javaRuntime=java.lang.Runtime@6576fe71
+classTestFolder=
+modelPath=OVERALLModel.txt
+sanity=yes
+positivePathWeight=0.65
+jacocoPath=/home/rtx/eclipse-workspace/genprog4java/lib/jacocoagent.jar
+negativeTests=/home/rtx/repair/d4j/Compress/41b/neg.tests
+pathToFileHumanInjectedFaultLoc=fileHumanInjectedFaultLoc.txt
+outputDir=/home/rtx/repair/d4j/Compress/41b/genprog4java/variantSeed3/
+testClassPath=/home/rtx/repair/defects4j/framework/projects/Compress/lib/junit/junit/4.12/junit-4.12.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/tukaani/xz/1.6/xz-1.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-module-junit4/1.6.4/powermock-module-junit4-1.6.4.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-module-junit4-common/1.6.4/powermock-module-junit4-common-1.6.4.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-core/1.6.4/powermock-core-1.6.4.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/javassist/javassist/3.20.0-GA/javassist-3.20.0-GA.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-reflect/1.6.4/powermock-reflect-1.6.4.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-api-mockito/1.6.4/powermock-api-mockito-1.6.4.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/mockito/mockito-core/1.10.19/mockito-core-1.10.19.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/objenesis/objenesis/2.1/objenesis-2.1.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-api-support/1.6.4/powermock-api-support-1.6.4.jar\:/home/rtx/repair/d4j/Compress/41b/target/classes\:/home/rtx/repair/d4j/Compress/41b/target/test-classes\:/home/rtx/repair/defects4j/framework/projects/lib/junit-4.11.jar\:/home/rtx/repair/d4j/Compress/41b/${dependency.jar}\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/com/github/luben/zstd-jni/1.3.1-1/zstd-jni-1.3.1-1.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/com/github/luben/zstd-jni/1.3.3-1/zstd-jni-1.3.3-1.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/junit/junit/3.8.2/junit-3.8.2.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/junit/junit/4.10/junit-4.10.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/junit/junit/4.11/junit-4.11.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/junit/junit/4.8.2/junit-4.8.2.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/com/github/luben/zstd-jni/1.3.1-1/zstd-jni-1.3.1-1.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/com/github/luben/zstd-jni/1.3.3-1/zstd-jni-1.3.3-1.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/junit/junit/3.8.2/junit-3.8.2.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/junit/junit/4.10/junit-4.10.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/junit/junit/4.11/junit-4.11.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/junit/junit/4.12/junit-4.12.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/junit/junit/4.8.2/junit-4.8.2.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/brotli/dec/0.1.1/dec-0.1.1.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/brotli/dec/0.1.2/dec-0.1.2.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/javassist/javassist/3.20.0-GA/javassist-3.20.0-GA.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/javassist/javassist/3.21.0-GA/javassist-3.21.0-GA.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/mockito/mockito-core/1.10.19/mockito-core-1.10.19.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/objenesis/objenesis/2.1/objenesis-2.1.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/objenesis/objenesis/2.6/objenesis-2.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-api-mockito-common/1.6.6/powermock-api-mockito-common-1.6.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-api-mockito-common/1.7.0/powermock-api-mockito-common-1.7.0.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-api-mockito-common/1.7.3/powermock-api-mockito-common-1.7.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-api-mockito/1.6.4/powermock-api-mockito-1.6.4.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-api-mockito/1.6.6/powermock-api-mockito-1.6.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-api-mockito/1.7.0/powermock-api-mockito-1.7.0.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-api-mockito/1.7.3/powermock-api-mockito-1.7.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-api-support/1.6.4/powermock-api-support-1.6.4.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-api-support/1.6.6/powermock-api-support-1.6.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-api-support/1.7.0/powermock-api-support-1.7.0.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-api-support/1.7.3/powermock-api-support-1.7.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-core/1.6.4/powermock-core-1.6.4.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-core/1.6.6/powermock-core-1.6.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-core/1.7.0/powermock-core-1.7.0.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-core/1.7.3/powermock-core-1.7.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-module-junit4-common/1.6.4/powermock-module-junit4-common-1.6.4.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-module-junit4-common/1.6.6/powermock-module-junit4-common-1.6.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-module-junit4-common/1.7.0/powermock-module-junit4-common-1.7.0.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-module-junit4-common/1.7.3/powermock-module-junit4-common-1.7.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-module-junit4/1.6.4/powermock-module-junit4-1.6.4.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-module-junit4/1.6.6/powermock-module-junit4-1.6.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-module-junit4/1.7.0/powermock-module-junit4-1.7.0.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-module-junit4/1.7.3/powermock-module-junit4-1.7.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-reflect/1.6.4/powermock-reflect-1.6.4.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-reflect/1.6.6/powermock-reflect-1.6.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-reflect/1.7.0/powermock-reflect-1.7.0.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-reflect/1.7.3/powermock-reflect-1.7.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/tukaani/xz/1.0/xz-1.0.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/tukaani/xz/1.2/xz-1.2.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/tukaani/xz/1.3/xz-1.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/tukaani/xz/1.4/xz-1.4.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/tukaani/xz/1.5/xz-1.5.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/tukaani/xz/1.6/xz-1.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/tukaani/xz/1.8/xz-1.8.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/zstd-jni-1.3.4-3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/brotli/dec/0.1.1/dec-0.1.1.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/brotli/dec/0.1.2/dec-0.1.2.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/javassist/javassist/3.21.0-GA/javassist-3.21.0-GA.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/objenesis/objenesis/2.6/objenesis-2.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-api-mockito-common/1.6.6/powermock-api-mockito-common-1.6.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-api-mockito-common/1.7.0/powermock-api-mockito-common-1.7.0.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-api-mockito-common/1.7.3/powermock-api-mockito-common-1.7.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-api-mockito/1.6.6/powermock-api-mockito-1.6.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-api-mockito/1.7.0/powermock-api-mockito-1.7.0.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-api-mockito/1.7.3/powermock-api-mockito-1.7.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-api-support/1.6.6/powermock-api-support-1.6.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-api-support/1.7.0/powermock-api-support-1.7.0.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-api-support/1.7.3/powermock-api-support-1.7.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-core/1.6.6/powermock-core-1.6.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-core/1.7.0/powermock-core-1.7.0.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-core/1.7.3/powermock-core-1.7.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-module-junit4-common/1.6.6/powermock-module-junit4-common-1.6.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-module-junit4-common/1.7.0/powermock-module-junit4-common-1.7.0.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-module-junit4-common/1.7.3/powermock-module-junit4-common-1.7.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-module-junit4/1.6.6/powermock-module-junit4-1.6.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-module-junit4/1.7.0/powermock-module-junit4-1.7.0.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-module-junit4/1.7.3/powermock-module-junit4-1.7.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-reflect/1.6.6/powermock-reflect-1.6.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-reflect/1.7.0/powermock-reflect-1.7.0.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-reflect/1.7.3/powermock-reflect-1.7.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/tukaani/xz/1.0/xz-1.0.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/tukaani/xz/1.2/xz-1.2.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/tukaani/xz/1.3/xz-1.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/tukaani/xz/1.4/xz-1.4.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/tukaani/xz/1.5/xz-1.5.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/tukaani/xz/1.8/xz-1.8.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/zstd-jni-1.3.4-3.jar
+faultStrategy=classScope
+sourceDir=src/main/java
+checkSpace=false
+search=gp
+globalExtension=.java
+faultSpaceSubSet=1/5
+maxVariants=50
+libs=/home/rtx/eclipse-workspace/genprog4java/lib/junittestrunner.jar\:/home/rtx/eclipse-workspace/genprog4java/lib/commons-cli-20040117.000000.jar\:/home/rtx/eclipse-workspace/genprog4java/lib/junit-4.12.jar\:/home/rtx/eclipse-workspace/genprog4java/lib/hamcrest-core-1.3.jar\:/home/rtx/eclipse-workspace/genprog4java/lib/log4j-1.2.17.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/junit/junit/4.12/junit-4.12.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/tukaani/xz/1.6/xz-1.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-module-junit4/1.6.4/powermock-module-junit4-1.6.4.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-module-junit4-common/1.6.4/powermock-module-junit4-common-1.6.4.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-core/1.6.4/powermock-core-1.6.4.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/javassist/javassist/3.20.0-GA/javassist-3.20.0-GA.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-reflect/1.6.4/powermock-reflect-1.6.4.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-api-mockito/1.6.4/powermock-api-mockito-1.6.4.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/mockito/mockito-core/1.10.19/mockito-core-1.10.19.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/objenesis/objenesis/2.1/objenesis-2.1.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-api-support/1.6.4/powermock-api-support-1.6.4.jar\:/home/rtx/repair/d4j/Compress/41b/target/classes\:/home/rtx/repair/d4j/Compress/41b/target/test-classes\:/home/rtx/repair/defects4j/framework/projects/lib/junit-4.11.jar\:/home/rtx/repair/d4j/Compress/41b/${dependency.jar}\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/com/github/luben/zstd-jni/1.3.1-1/zstd-jni-1.3.1-1.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/com/github/luben/zstd-jni/1.3.3-1/zstd-jni-1.3.3-1.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/junit/junit/3.8.2/junit-3.8.2.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/junit/junit/4.10/junit-4.10.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/junit/junit/4.11/junit-4.11.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/junit/junit/4.8.2/junit-4.8.2.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/com/github/luben/zstd-jni/1.3.1-1/zstd-jni-1.3.1-1.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/com/github/luben/zstd-jni/1.3.3-1/zstd-jni-1.3.3-1.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/junit/junit/3.8.2/junit-3.8.2.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/junit/junit/4.10/junit-4.10.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/junit/junit/4.11/junit-4.11.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/junit/junit/4.12/junit-4.12.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/junit/junit/4.8.2/junit-4.8.2.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/brotli/dec/0.1.1/dec-0.1.1.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/brotli/dec/0.1.2/dec-0.1.2.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/javassist/javassist/3.20.0-GA/javassist-3.20.0-GA.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/javassist/javassist/3.21.0-GA/javassist-3.21.0-GA.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/mockito/mockito-core/1.10.19/mockito-core-1.10.19.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/objenesis/objenesis/2.1/objenesis-2.1.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/objenesis/objenesis/2.6/objenesis-2.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-api-mockito-common/1.6.6/powermock-api-mockito-common-1.6.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-api-mockito-common/1.7.0/powermock-api-mockito-common-1.7.0.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-api-mockito-common/1.7.3/powermock-api-mockito-common-1.7.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-api-mockito/1.6.4/powermock-api-mockito-1.6.4.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-api-mockito/1.6.6/powermock-api-mockito-1.6.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-api-mockito/1.7.0/powermock-api-mockito-1.7.0.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-api-mockito/1.7.3/powermock-api-mockito-1.7.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-api-support/1.6.4/powermock-api-support-1.6.4.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-api-support/1.6.6/powermock-api-support-1.6.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-api-support/1.7.0/powermock-api-support-1.7.0.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-api-support/1.7.3/powermock-api-support-1.7.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-core/1.6.4/powermock-core-1.6.4.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-core/1.6.6/powermock-core-1.6.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-core/1.7.0/powermock-core-1.7.0.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-core/1.7.3/powermock-core-1.7.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-module-junit4-common/1.6.4/powermock-module-junit4-common-1.6.4.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-module-junit4-common/1.6.6/powermock-module-junit4-common-1.6.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-module-junit4-common/1.7.0/powermock-module-junit4-common-1.7.0.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-module-junit4-common/1.7.3/powermock-module-junit4-common-1.7.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-module-junit4/1.6.4/powermock-module-junit4-1.6.4.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-module-junit4/1.6.6/powermock-module-junit4-1.6.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-module-junit4/1.7.0/powermock-module-junit4-1.7.0.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-module-junit4/1.7.3/powermock-module-junit4-1.7.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-reflect/1.6.4/powermock-reflect-1.6.4.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-reflect/1.6.6/powermock-reflect-1.6.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-reflect/1.7.0/powermock-reflect-1.7.0.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-reflect/1.7.3/powermock-reflect-1.7.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/tukaani/xz/1.0/xz-1.0.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/tukaani/xz/1.2/xz-1.2.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/tukaani/xz/1.3/xz-1.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/tukaani/xz/1.4/xz-1.4.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/tukaani/xz/1.5/xz-1.5.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/tukaani/xz/1.6/xz-1.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/tukaani/xz/1.8/xz-1.8.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/zstd-jni-1.3.4-3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/brotli/dec/0.1.1/dec-0.1.1.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/brotli/dec/0.1.2/dec-0.1.2.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/javassist/javassist/3.21.0-GA/javassist-3.21.0-GA.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/objenesis/objenesis/2.6/objenesis-2.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-api-mockito-common/1.6.6/powermock-api-mockito-common-1.6.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-api-mockito-common/1.7.0/powermock-api-mockito-common-1.7.0.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-api-mockito-common/1.7.3/powermock-api-mockito-common-1.7.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-api-mockito/1.6.6/powermock-api-mockito-1.6.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-api-mockito/1.7.0/powermock-api-mockito-1.7.0.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-api-mockito/1.7.3/powermock-api-mockito-1.7.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-api-support/1.6.6/powermock-api-support-1.6.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-api-support/1.7.0/powermock-api-support-1.7.0.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-api-support/1.7.3/powermock-api-support-1.7.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-core/1.6.6/powermock-core-1.6.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-core/1.7.0/powermock-core-1.7.0.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-core/1.7.3/powermock-core-1.7.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-module-junit4-common/1.6.6/powermock-module-junit4-common-1.6.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-module-junit4-common/1.7.0/powermock-module-junit4-common-1.7.0.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-module-junit4-common/1.7.3/powermock-module-junit4-common-1.7.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-module-junit4/1.6.6/powermock-module-junit4-1.6.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-module-junit4/1.7.0/powermock-module-junit4-1.7.0.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-module-junit4/1.7.3/powermock-module-junit4-1.7.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-reflect/1.6.6/powermock-reflect-1.6.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-reflect/1.7.0/powermock-reflect-1.7.0.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-reflect/1.7.3/powermock-reflect-1.7.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/tukaani/xz/1.0/xz-1.0.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/tukaani/xz/1.2/xz-1.2.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/tukaani/xz/1.3/xz-1.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/tukaani/xz/1.4/xz-1.4.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/tukaani/xz/1.5/xz-1.5.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/tukaani/xz/1.8/xz-1.8.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/zstd-jni-1.3.4-3.jar\:/home/rtx/repair/d4j/Compress/41b/target/classes\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/tukaani/xz/1.6/xz-1.6.jar
+crossover=onepoint
+103 [main] INFO clegoues.genprog4java.main.Main  - Configuration file loaded
+33942 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - loaded from source clegoues.genprog4java.java.ClassInfo@be11126b
+33943 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - sanity checking begins
+34700 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 1 out of 41
+35036 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+35036 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 2 out of 41
+35274 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+35274 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 3 out of 41
+35507 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+35507 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 4 out of 41
+35762 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+35762 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 5 out of 41
+36027 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+36027 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 6 out of 41
+36251 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+36251 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 7 out of 41
+36499 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+36499 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 8 out of 41
+36756 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+36757 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 9 out of 41
+36973 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+36974 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 10 out of 41
+37217 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+37217 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 11 out of 41
+37411 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+37411 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 12 out of 41
+37650 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+37650 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 13 out of 41
+37886 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+37886 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 14 out of 41
+38121 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+38121 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 15 out of 41
+38472 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+38472 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 16 out of 41
+38691 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+38691 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 17 out of 41
+38887 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+38887 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 18 out of 41
+39093 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+39093 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 19 out of 41
+39324 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+39324 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 20 out of 41
+39543 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+39543 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 21 out of 41
+39758 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+39758 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 22 out of 41
+39979 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+39980 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 23 out of 41
+41212 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+41212 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 24 out of 41
+42616 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+42616 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 25 out of 41
+43306 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+43306 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 26 out of 41
+45577 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+45577 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 27 out of 41
+45749 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+45749 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 28 out of 41
+45996 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+45996 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 29 out of 41
+46313 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+46314 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 30 out of 41
+46622 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+46622 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 31 out of 41
+47043 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+47043 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 32 out of 41
+47277 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+47277 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 33 out of 41
+47509 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+47509 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 34 out of 41
+47736 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+47737 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 35 out of 41
+47966 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+47966 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 36 out of 41
+48238 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+48238 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 37 out of 41
+48550 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+48550 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 38 out of 41
+48824 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+48824 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 39 out of 41
+49063 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+49063 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 40 out of 41
+49346 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+49346 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 41 out of 41
+49666 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+49667 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - 	n1: 
+49946 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - false (0)
+
+49947 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - 	n2: 
+50201 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - false (0)
+
+50201 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - sanity checking completed (time taken = 16258)
+50201 [main] INFO clegoues.genprog4java.localization.DefaultLocalization  - Start Fault Localization
+50229 [main] INFO clegoues.genprog4java.localization.DefaultLocalization  - Finish Fault Localization
+50229 [main] INFO clegoues.genprog4java.Search.Search  - search: genetic algorithm begins
+
+52158 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 4.0 original (stored at: variant0)
+53841 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 4.0 StmtAppend(288,80) (stored at: variant1)
+55497 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 4.0 StmtAppend(306,166) (stored at: variant2)
+55596 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:734: error: cannot find symbol
+        if (ZipLong.DD_SIG.equals(val)) {
+                                  ^
+  symbol:   variable val
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:737: error: cannot find symbol
+            val = new ZipLong(WORD_BUF);
+            ^
+  symbol:   variable val
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:739: error: cannot find symbol
+        current.entry.setCrc(val.getValue());
+                             ^
+  symbol:   variable val
+  location: class ZipArchiveInputStream
+3 errors
+
+55597 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(320,264) at variant3 fails to compile
+
+55597 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtAppend(320,264) (stored at: variant3)
+55704 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:985: error: unreachable statement
+			readFully(WORD_BUF);
+			^
+1 error
+
+55704 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(431,323) at variant4 fails to compile
+
+55704 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtAppend(431,323) (stored at: variant4)
+57314 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 4.0 StmtReplace(207,145) (stored at: variant5)
+58921 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 3.0 StmtAppend(214,394) (stored at: variant6)
+58992 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:449: error: cannot find symbol
+			current.crc.update(buffer, offset, read);
+			                                   ^
+  symbol:   variable read
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:451: error: cannot find symbol
+        if (current.bytesRead >= csize) {
+                                 ^
+  symbol:   variable csize
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:468: error: cannot find symbol
+        if ((csize - current.bytesRead) < toRead) {
+             ^
+  symbol:   variable csize
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:470: error: cannot find symbol
+            toRead = (int) (csize - current.bytesRead);
+                            ^
+  symbol:   variable csize
+  location: class ZipArchiveInputStream
+4 errors
+
+58992 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(162,153) at variant7 fails to compile
+
+58992 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtAppend(162,153) (stored at: variant7)
+60699 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 3.0 StmtReplace(187,303) (stored at: variant8)
+62528 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 3.0 StmtDelete(206) (stored at: variant9)
+64336 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 2.0 StmtReplace(274,276) (stored at: variant10)
+66110 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 4.0 StmtDelete(90) (stored at: variant11)
+66171 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:701: error: cannot find symbol
+            while (inB + TWO_EXP_32 <= current.bytesReadFromStream) {
+                   ^
+  symbol:   variable inB
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:702: error: cannot find symbol
+                inB += TWO_EXP_32;
+                ^
+  symbol:   variable inB
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:705: error: cannot find symbol
+        return inB;
+               ^
+  symbol:   variable inB
+  location: class ZipArchiveInputStream
+3 errors
+
+66171 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(294) at variant12 fails to compile
+
+66171 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtDelete(294) (stored at: variant12)
+67749 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 3.0 StmtAppend(175,12) (stored at: variant13)
+69510 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 4.0 StmtDelete(195) (stored at: variant14)
+69557 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:366: error: incompatible types: unexpected return value
+					return null;
+					       ^
+1 error
+
+69557 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(116,37) at variant15 fails to compile
+
+69558 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtReplace(116,37) (stored at: variant15)
+71369 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 3.0 StmtReplace(407,81) (stored at: variant16)
+72814 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 4.0 StmtAppend(76,82) (stored at: variant17)
+76869 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 4.0 StmtDelete(219) (stored at: variant18)
+78364 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 4.0 StmtReplace(279,83) (stored at: variant19)
+80777 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 4.0 StmtReplace(89,448) (stored at: variant20)
+83315 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 3.0 StmtDelete(51) (stored at: variant21)
+83368 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:633: error: incompatible types: unexpected return value
+				return -1;
+				       ^
+1 error
+
+83369 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(268,164) at variant22 fails to compile
+
+83369 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtReplace(268,164) (stored at: variant22)
+85193 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 4.0 StmtDelete(174) (stored at: variant23)
+85241 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:191: error: cannot find symbol
+        buf.limit(length);
+                  ^
+  symbol:   variable length
+  location: class ZipArchiveInputStream
+1 error
+
+85241 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(5,308) at variant24 fails to compile
+
+85241 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtReplace(5,308) (stored at: variant24)
+86679 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 4.0 StmtReplace(97,396) (stored at: variant25)
+88838 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 3.0 StmtReplace(62,276) (stored at: variant26)
+90401 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 4.0 StmtDelete(398) (stored at: variant27)
+90441 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:939: error: unreachable statement
+				this.allowStoredEntriesWithDataDescriptor = allowStoredEntriesWithDataDescriptor;
+				^
+1 error
+
+90441 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(406,11) at variant28 fails to compile
+
+90441 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtAppend(406,11) (stored at: variant28)
+93024 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 4.0 StmtAppend(174,25) (stored at: variant29)
+94547 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 4.0 StmtDelete(178) (stored at: variant30)
+97159 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 4.0 StmtAppend(167,195) (stored at: variant31)
+97207 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:672: error: cannot find symbol
+        while (remaining > 0) {
+               ^
+  symbol:   variable remaining
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:673: error: cannot find symbol
+            final long n = in.read(buf.array(), 0, (int) Math.min(buf.capacity(), remaining));
+                                                                                  ^
+  symbol:   variable remaining
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:679: error: cannot find symbol
+            remaining -= n;
+            ^
+  symbol:   variable remaining
+  location: class ZipArchiveInputStream
+3 errors
+
+97207 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(284) at variant32 fails to compile
+
+97207 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtDelete(284) (stored at: variant32)
+98733 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 4.0 StmtReplace(153,397) (stored at: variant33)
+100369 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 4.0 StmtReplace(21,264) (stored at: variant34)
+101935 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 4.0 StmtReplace(315,261) (stored at: variant35)
+101973 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:297: error: cannot find symbol
+        readFully(fileName);
+                  ^
+  symbol:   variable fileName
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:298: error: cannot find symbol
+        current.entry.setName(entryEncoding.decode(fileName), fileName);
+                                                   ^
+  symbol:   variable fileName
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:298: error: cannot find symbol
+        current.entry.setName(entryEncoding.decode(fileName), fileName);
+                                                              ^
+  symbol:   variable fileName
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:305: error: cannot find symbol
+            ZipUtil.setNameAndCommentFromExtraFields(current.entry, fileName, null);
+                                                                    ^
+  symbol:   variable fileName
+  location: class ZipArchiveInputStream
+4 errors
+
+101973 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(70) at variant36 fails to compile
+
+101973 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtDelete(70) (stored at: variant36)
+103486 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 4.0 StmtDelete(133) (stored at: variant37)
+105092 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 4.0 StmtDelete(97) (stored at: variant38)
+105127 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:267: error: continue outside of loop
+        continue;
+        ^
+1 error
+
+105127 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(50,407) at variant39 fails to compile
+
+105127 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtReplace(50,407) (stored at: variant39)
+105127 [main] INFO clegoues.genprog4java.Search.Search  - search: generation1
+106239 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:502: error: cannot find symbol
+			} else if (read == -1) {
+			           ^
+  symbol:   variable read
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:518: error: cannot find symbol
+                read = inf.inflate(buffer, offset, length);
+                ^
+  symbol:   variable read
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:522: error: cannot find symbol
+        } while (read == 0 && inf.needsInput());
+                 ^
+  symbol:   variable read
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:523: error: cannot find symbol
+        return read;
+               ^
+  symbol:   variable read
+  location: class ZipArchiveInputStream
+4 errors
+
+106239 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(178) StmtReplace(198,186) at variant40 fails to compile
+
+106239 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(178) StmtReplace(198,186) (stored at: variant40)
+107860 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 4.0 StmtDelete(195) StmtDelete(126) (stored at: variant41)
+109395 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 4.0 StmtDelete(398) StmtAppend(416,257) (stored at: variant42)
+110993 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 3.0 StmtAppend(288,80) StmtDelete(330) (stored at: variant43)
+112542 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 4.0 StmtAppend(306,166) StmtDelete(440) (stored at: variant44)
+114060 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 4.0 StmtDelete(97) StmtDelete(448) (stored at: variant45)
+116124 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 4.0 StmtAppend(174,25) StmtReplace(425,91) (stored at: variant46)
+117600 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 4.0 StmtAppend(288,80) StmtReplace(129,332) (stored at: variant47)
+117641 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:455: error: cannot find symbol
+				read = inf.inflate(buffer, offset, length);
+				^
+  symbol:   variable read
+  location: class ZipArchiveInputStream
+1 error
+
+117641 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(279,83) StmtAppend(168,214) at variant48 fails to compile
+
+117642 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(279,83) StmtAppend(168,214) (stored at: variant48)
+121093 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 4.0 StmtDelete(133) StmtDelete(102) (stored at: variant49)
+124416 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 4.0 StmtAppend(167,195) StmtDelete(316) (stored at: variant50)
+127428 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 4.0 StmtDelete(133) StmtReplace(272,81) (stored at: variant51)
+127475 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:385: error: unreported exception IOException; must be caught or declared to be thrown
+			readFully(WORD_BUF);
+			         ^
+1 error
+
+127476 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(219) StmtReplace(121,323) at variant52 fails to compile
+
+127476 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(219) StmtReplace(121,323) (stored at: variant52)
+130664 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 4.0 StmtDelete(440) (stored at: variant53)
+133586 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 4.0 StmtReplace(97,396) StmtDelete(18) (stored at: variant54)
+133636 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:193: error: variable zipEncoding might not have been initialized
+    }
+    ^
+1 error
+
+133636 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(167,195) StmtDelete(5) at variant55 fails to compile
+
+133636 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(167,195) StmtDelete(5) (stored at: variant55)
+135682 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 4.0 StmtAppend(306,166) StmtReplace(147,171) (stored at: variant56)
+135721 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:526: error: cannot find symbol
+                pushedBackBytes(length);
+                                ^
+  symbol:   variable length
+  location: class ZipArchiveInputStream
+1 error
+
+135722 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(279,83) StmtReplace(226,392) at variant57 fails to compile
+
+135722 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(279,83) StmtReplace(226,392) (stored at: variant57)
+137794 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 4.0 StmtAppend(76,82) StmtDelete(91) (stored at: variant58)
+139325 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 4.0 StmtDelete(195) StmtDelete(243) (stored at: variant59)
+140790 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 4.0 StmtDelete(104) (stored at: variant60)
+142215 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 4.0 StmtReplace(151,272) (stored at: variant61)
+142257 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:219: error: variable encoding might not have been initialized
+    }
+    ^
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:210: error: variable zipEncoding might not have been initialized
+			return;
+			^
+2 errors
+
+142257 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(174) StmtReplace(7,257) at variant62 fails to compile
+
+142257 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(174) StmtReplace(7,257) (stored at: variant62)
+146187 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 3.0 StmtReplace(315,261) StmtDelete(268) (stored at: variant63)
+146220 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:426: error: variable read might not have been initialized
+        if (read >= 0) {
+            ^
+1 error
+
+146220 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(97) StmtDelete(147) at variant64 fails to compile
+
+146220 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(97) StmtDelete(147) (stored at: variant64)
+146270 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:245: error: cannot find symbol
+			if (read <= 0) {
+			    ^
+  symbol:   variable read
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:247: error: incompatible types: int cannot be converted to ZipArchiveEntry
+					return -1;
+					       ^
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:251: error: cannot find symbol
+				} else if (read == -1) {
+				           ^
+  symbol:   variable read
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:256: error: cannot find symbol
+        if (sig.equals(ZipLong.CFH_SIG) || sig.equals(ZipLong.AED_SIG)) {
+            ^
+  symbol:   variable sig
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:256: error: cannot find symbol
+        if (sig.equals(ZipLong.CFH_SIG) || sig.equals(ZipLong.AED_SIG)) {
+                                           ^
+  symbol:   variable sig
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:260: error: cannot find symbol
+        if (!sig.equals(ZipLong.LFH_SIG)) {
+             ^
+  symbol:   variable sig
+  location: class ZipArchiveInputStream
+6 errors
+
+146270 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(288,80) StmtAppend(31,185) at variant65 fails to compile
+
+146270 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(288,80) StmtAppend(31,185) (stored at: variant65)
+148310 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 4.0 StmtAppend(288,80) StmtDelete(437) (stored at: variant66)
+149782 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 4.0 StmtReplace(153,397) StmtDelete(273) (stored at: variant67)
+152387 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 4.0 StmtReplace(207,145) StmtReplace(392,323) (stored at: variant68)
+152428 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:403: error: incompatible types: <null> cannot be converted to int
+				return null;
+				       ^
+1 error
+
+152428 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(89,448) StmtAppend(130,37) at variant69 fails to compile
+
+152428 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(89,448) StmtAppend(130,37) (stored at: variant69)
+250014 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 4.0 StmtReplace(153,397) StmtReplace(289,88) (stored at: variant70)
+253857 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 4.0 StmtReplace(207,145) StmtReplace(174,273) (stored at: variant71)
+255407 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 4.0 StmtAppend(288,80) StmtDelete(174) (stored at: variant72)
+257196 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 4.0 StmtDelete(97) StmtReplace(193,326) (stored at: variant73)
+258823 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 4.0 StmtReplace(97,396) StmtDelete(419) (stored at: variant74)
+262320 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 3.0 StmtReplace(315,261) StmtAppend(257,85) (stored at: variant75)
+262352 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:679: error: cannot find symbol
+				buf.limit(length);
+				          ^
+  symbol:   variable length
+  location: class ZipArchiveInputStream
+1 error
+
+262352 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(97,396) StmtAppend(292,308) at variant76 fails to compile
+
+262353 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(97,396) StmtAppend(292,308) (stored at: variant76)
+262387 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:399: error: unreachable statement
+			if (closed) {
+			^
+1 error
+
+262387 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(306,166) StmtAppend(127,302) at variant77 fails to compile
+
+262387 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(306,166) StmtAppend(127,302) (stored at: variant77)
+265235 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 4.0 StmtAppend(288,80) StmtReplace(296,87) (stored at: variant78)
+265284 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:653: error: incompatible types: unexpected return value
+				return -1;
+				       ^
+1 error
+
+265284 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(153,397) StmtAppend(280,130) at variant79 fails to compile
+
+265284 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(153,397) StmtAppend(280,130) (stored at: variant79)
+266997 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 2.0 StmtReplace(404,397) (stored at: variant80)
+267030 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:934: error: cannot find symbol
+        while (skipReadCall || (currentByte = readOneByte()) > -1) {
+                                ^
+  symbol:   variable currentByte
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:936: error: cannot find symbol
+            if (!isFirstByteOfEocdSig(currentByte)) {
+                                      ^
+  symbol:   variable currentByte
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:939: error: cannot find symbol
+            currentByte = readOneByte();
+            ^
+  symbol:   variable currentByte
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:940: error: cannot find symbol
+            if (currentByte != ZipArchiveOutputStream.EOCD_SIG[1]) {
+                ^
+  symbol:   variable currentByte
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:941: error: cannot find symbol
+                if (currentByte == -1) {
+                    ^
+  symbol:   variable currentByte
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:944: error: cannot find symbol
+                skipReadCall = isFirstByteOfEocdSig(currentByte);
+                                                    ^
+  symbol:   variable currentByte
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:947: error: cannot find symbol
+            currentByte = readOneByte();
+            ^
+  symbol:   variable currentByte
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:948: error: cannot find symbol
+            if (currentByte != ZipArchiveOutputStream.EOCD_SIG[2]) {
+                ^
+  symbol:   variable currentByte
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:949: error: cannot find symbol
+                if (currentByte == -1) {
+                    ^
+  symbol:   variable currentByte
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:952: error: cannot find symbol
+                skipReadCall = isFirstByteOfEocdSig(currentByte);
+                                                    ^
+  symbol:   variable currentByte
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:955: error: cannot find symbol
+            currentByte = readOneByte();
+            ^
+  symbol:   variable currentByte
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:956: error: cannot find symbol
+            if (currentByte == -1
+                ^
+  symbol:   variable currentByte
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:957: error: cannot find symbol
+                || currentByte == ZipArchiveOutputStream.EOCD_SIG[3]) {
+                   ^
+  symbol:   variable currentByte
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:960: error: cannot find symbol
+            skipReadCall = isFirstByteOfEocdSig(currentByte);
+                                                ^
+  symbol:   variable currentByte
+  location: class ZipArchiveInputStream
+14 errors
+
+267031 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(400) at variant81 fails to compile
+
+267031 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(400) (stored at: variant81)
+269820 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 2.0 StmtDelete(308) (stored at: variant82)
+271357 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 3.0 StmtDelete(80) (stored at: variant83)
+271388 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:725: error: cannot find symbol
+        count(count);
+              ^
+  symbol:   variable count
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:726: error: cannot find symbol
+        if (count < b.length) {
+            ^
+  symbol:   variable count
+  location: class ZipArchiveInputStream
+2 errors
+
+271388 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(313,137) at variant84 fails to compile
+
+271388 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(313,137) (stored at: variant84)
+271424 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:628: error: cannot find symbol
+            final int diff = (int) (current.bytesReadFromStream - inB);
+                                                                  ^
+  symbol:   variable inB
+  location: class ZipArchiveInputStream
+1 error
+
+271424 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(265,332) at variant85 fails to compile
+
+271424 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(265,332) (stored at: variant85)
+271463 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:218: error: unreported exception IOException; must be caught or declared to be thrown
+				throw new IOException("The stream is closed");
+				^
+1 error
+
+271463 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(12,127) at variant86 fails to compile
+
+271463 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(12,127) (stored at: variant86)
+271498 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:262: error: cannot find symbol
+        if (length > 0) {
+            ^
+  symbol:   variable length
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:263: error: cannot find symbol
+			buf.limit(length);
+			          ^
+  symbol:   variable length
+  location: class ZipArchiveInputStream
+2 errors
+
+271498 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(47,306) at variant87 fails to compile
+
+271498 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(47,306) (stored at: variant87)
+273813 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 4.0 StmtReplace(86,135) (stored at: variant88)
+273843 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:951: error: unreachable statement
+            currentByte = readOneByte();
+            ^
+1 error
+
+273843 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(409,438) at variant89 fails to compile
+
+273844 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(409,438) (stored at: variant89)
+273892 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:738: error: cannot find symbol
+			if (length < ZipArchiveOutputStream.LFH_SIG.length) {
+			    ^
+  symbol:   variable length
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:739: error: incompatible types: unexpected return value
+				return false;
+				       ^
+2 errors
+
+273892 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(325,242) at variant90 fails to compile
+
+273892 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(325,242) (stored at: variant90)
+275394 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 4.0 StmtDelete(391) (stored at: variant91)
+276905 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 4.0 StmtAppend(262,84) (stored at: variant92)
+276936 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:467: error: cannot find symbol
+        if ((csize - current.bytesRead) < toRead) {
+                                          ^
+  symbol:   variable toRead
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:469: error: cannot find symbol
+            toRead = (int) (csize - current.bytesRead);
+            ^
+  symbol:   variable toRead
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:471: error: cannot find symbol
+        buf.get(buffer, offset, toRead);
+                                ^
+  symbol:   variable toRead
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:472: error: cannot find symbol
+        current.bytesRead += toRead;
+                             ^
+  symbol:   variable toRead
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:473: error: cannot find symbol
+        return toRead;
+               ^
+  symbol:   variable toRead
+  location: class ZipArchiveInputStream
+5 errors
+
+276936 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(176,88) at variant93 fails to compile
+
+276936 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(176,88) (stored at: variant93)
+276973 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:170: error: variable zipEncoding might not have been initialized
+    }
+    ^
+1 error
+
+276973 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(1) at variant94 fails to compile
+
+276973 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(1) (stored at: variant94)
+279030 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 4.0 StmtAppend(36,332) (stored at: variant95)
+280609 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 4.0 StmtDelete(302) (stored at: variant96)
+280642 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:405: error: cannot find symbol
+			while (remaining > 0) {
+			       ^
+  symbol:   variable remaining
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:406: error: cannot find symbol
+				final long n = in.read(buf.array(), 0, (int) Math.min(buf.capacity(), remaining));
+				                                                                      ^
+  symbol:   variable remaining
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:411: error: cannot find symbol
+				remaining -= n;
+				^
+  symbol:   variable remaining
+  location: class ZipArchiveInputStream
+3 errors
+
+280643 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(133,285) at variant97 fails to compile
+
+280643 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(133,285) (stored at: variant97)
+280675 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:403: error: unreachable statement
+			final int read = readFromInflater(buffer, offset, length);
+			          ^
+1 error
+
+280675 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(130,184) at variant98 fails to compile
+
+280675 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(130,184) (stored at: variant98)
+280714 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:984: error: incompatible types: unexpected return value
+					return false;
+					       ^
+1 error
+
+280714 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(434,243) at variant99 fails to compile
+
+280714 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(434,243) (stored at: variant99)
+282504 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 3.0 StmtReplace(201,146) (stored at: variant100)
+284177 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 3.0 StmtDelete(36) (stored at: variant101)
+286516 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 4.0 StmtDelete(267) (stored at: variant102)
+289622 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 3.0 StmtReplace(441,88) (stored at: variant103)
+289662 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:700: error: unreported exception IOException; must be caught or declared to be thrown
+			throw new IOException("The stream is closed");
+			^
+1 error
+
+289662 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(296,303) at variant104 fails to compile
+
+289662 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(296,303) (stored at: variant104)
+292875 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 3.0 StmtReplace(195,12) (stored at: variant105)
+292876 [main] INFO clegoues.genprog4java.Search.Search  - search: generation2
+294068 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:629: error: cannot find symbol
+            if (diff > 0) {
+                ^
+  symbol:   variable diff
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:630: error: cannot find symbol
+                pushback(buf.array(), buf.limit() - diff, diff);
+                                                    ^
+  symbol:   variable diff
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:630: error: cannot find symbol
+                pushback(buf.array(), buf.limit() - diff, diff);
+                                                          ^
+  symbol:   variable diff
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:631: error: cannot find symbol
+                current.bytesReadFromStream -= diff;
+                                               ^
+  symbol:   variable diff
+  location: class ZipArchiveInputStream
+4 errors
+
+294068 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(288,80) StmtReplace(129,332) StmtDelete(266) at variant106 fails to compile
+
+294068 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtAppend(288,80) StmtReplace(129,332) StmtDelete(266) (stored at: variant106)
+297496 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 4.0 StmtReplace(97,396) StmtDelete(18) StmtDelete(76) (stored at: variant107)
+297532 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:978: error: incompatible types: unexpected return value
+					return -1;
+					       ^
+1 error
+
+297532 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(207,145) StmtReplace(392,323) StmtReplace(441,164) at variant108 fails to compile
+
+297532 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(207,145) StmtReplace(392,323) StmtReplace(441,164) (stored at: variant108)
+299373 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 4.0 StmtAppend(167,195) StmtDelete(316) StmtDelete(314) (stored at: variant109)
+303156 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 4.0 StmtDelete(391) StmtReplace(278,254) (stored at: variant110)
+303184 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:218: error: variable zipEncoding might not have been initialized
+    }
+    ^
+1 error
+
+303184 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(97,396) StmtDelete(419) StmtDelete(8) at variant111 fails to compile
+
+303184 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(97,396) StmtDelete(419) StmtDelete(8) (stored at: variant111)
+304697 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 3.0 StmtDelete(391) StmtReplace(269,86) (stored at: variant112)
+304714 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:462: error: variable declaration not allowed here
+        if ((csize - current.bytesRead) < toRead)final int read = readFromInflater(buffer, offset, length);
+                                                           ^
+1 error
+
+304714 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(86,135) StmtReplace(178,184) at variant113 fails to compile
+
+304714 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(86,135) StmtReplace(178,184) (stored at: variant113)
+306308 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 2.0 StmtAppend(288,80) StmtReplace(129,332) StmtReplace(88,290) (stored at: variant114)
+306352 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:938: error: incompatible types: unexpected return value
+					return -1;
+					       ^
+1 error
+
+306352 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(104) StmtAppend(404,188) at variant115 fails to compile
+
+306352 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(104) StmtAppend(404,188) (stored at: variant115)
+307953 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 4.0 StmtAppend(174,25) StmtReplace(425,91) StmtDelete(137) (stored at: variant116)
+310863 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 3.0 StmtDelete(391) StmtReplace(277,168) (stored at: variant117)
+310901 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:240: error: cannot find symbol
+            firstEntry = false;
+            ^
+  symbol:   variable firstEntry
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:244: error: cannot find symbol
+            if (firstEntry) {
+                ^
+  symbol:   variable firstEntry
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:244: error: illegal start of type
+            if (firstEntry) {
+               ^
+3 errors
+
+310901 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(207,145) StmtReplace(392,323) StmtReplace(14,260) at variant118 fails to compile
+
+310901 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(207,145) StmtReplace(392,323) StmtReplace(14,260) (stored at: variant118)
+314343 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 4.0 StmtAppend(167,195) StmtDelete(316) StmtDelete(82) (stored at: variant119)
+316433 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 3.0 StmtReplace(201,146) StmtReplace(36,277) (stored at: variant120)
+316465 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:335: error: incompatible types: unexpected return value
+			return -1;
+			       ^
+1 error
+
+316465 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(167,195) StmtDelete(316) StmtReplace(97,130) at variant121 fails to compile
+
+316465 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtAppend(167,195) StmtDelete(316) StmtReplace(97,130) (stored at: variant121)
+316500 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:492: error: missing return statement
+    }
+    ^
+1 error
+
+316500 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(315,261) StmtDelete(268) StmtDelete(196) at variant122 fails to compile
+
+316500 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(315,261) StmtDelete(268) StmtDelete(196) (stored at: variant122)
+318040 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 3.0 StmtReplace(153,397) StmtDelete(273) StmtDelete(250) (stored at: variant123)
+320702 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 4.0 StmtAppend(36,332) StmtDelete(232) (stored at: variant124)
+320738 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:505: error: cannot find symbol
+                if (l > 0) {
+                    ^
+  symbol:   variable l
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:507: error: cannot find symbol
+                } else if (l == -1) {
+                           ^
+  symbol:   variable l
+  location: class ZipArchiveInputStream
+2 errors
+
+320738 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(167,195) StmtDelete(316) StmtDelete(203) at variant125 fails to compile
+
+320738 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtAppend(167,195) StmtDelete(316) StmtDelete(203) (stored at: variant125)
+705356 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 1.0 StmtReplace(207,145) StmtReplace(174,273) StmtDelete(188) (stored at: variant126)
+705415 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:458: error: cannot find symbol
+			} else if (read == -1) {
+			           ^
+  symbol:   variable read
+  location: class ZipArchiveInputStream
+1 error
+
+705415 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(195) StmtDelete(243) StmtReplace(166,186) at variant127 fails to compile
+
+705415 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(195) StmtDelete(243) StmtReplace(166,186) (stored at: variant127)
+707289 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 3.0 StmtDelete(195) StmtDelete(243) StmtDelete(60) (stored at: variant128)
+710312 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 2.0 StmtDelete(133) StmtReplace(272,81) StmtDelete(25) (stored at: variant129)
+712143 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 3.0 StmtDelete(391) StmtAppend(419,271) (stored at: variant130)
+712184 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:586: error: non-static variable current cannot be referenced from a static context
+                if (current == null) {
+                    ^
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:587: error: incompatible types: missing return value
+					return;
+					^
+2 errors
+
+712184 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(306,166) StmtDelete(440) StmtReplace(251,257) at variant131 fails to compile
+
+712184 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtAppend(306,166) StmtDelete(440) StmtReplace(251,257) (stored at: variant131)
+713995 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 4.0 StmtDelete(302) StmtAppend(285,255) (stored at: variant132)
+714045 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:258: error: cannot find symbol
+        current.entry.setPlatform((versionMadeBy >> ZipFile.BYTE_SHIFT) & ZipFile.NIBLET_MASK);
+                                   ^
+  symbol:   variable versionMadeBy
+  location: class ZipArchiveInputStream
+1 error
+
+714045 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(398) StmtAppend(416,257) StmtDelete(41) at variant133 fails to compile
+
+714045 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(398) StmtAppend(416,257) StmtDelete(41) (stored at: variant133)
+714583 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:360: error: cannot find symbol
+				buf.limit(length);
+				          ^
+  symbol:   variable length
+  location: class ZipArchiveInputStream
+1 error
+
+714583 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(288,80) StmtDelete(437) StmtAppend(107,307) at variant134 fails to compile
+
+714583 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtAppend(288,80) StmtDelete(437) StmtAppend(107,307) (stored at: variant134)
+716283 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 4.0 StmtAppend(262,84) StmtDelete(295) (stored at: variant135)
+718119 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 4.0 StmtReplace(153,397) StmtDelete(273) StmtAppend(90,198) (stored at: variant136)
+719757 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 4.0 StmtAppend(174,25) StmtReplace(425,91) StmtAppend(404,403) (stored at: variant137)
+721738 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 3.0 StmtDelete(133) StmtDelete(102) StmtAppend(419,275) (stored at: variant138)
+721786 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:284: error: cannot find symbol
+            cSize = new ZipLong(LFH_BUF, off);
+            ^
+  symbol:   variable cSize
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:287: error: cannot find symbol
+            size = new ZipLong(LFH_BUF, off);
+            ^
+  symbol:   variable size
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:312: error: cannot find symbol
+        processZip64Extra(size, cSize);
+                          ^
+  symbol:   variable size
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:312: error: cannot find symbol
+        processZip64Extra(size, cSize);
+                                ^
+  symbol:   variable cSize
+  location: class ZipArchiveInputStream
+4 errors
+
+721786 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(306,166) StmtReplace(147,171) StmtAppend(55,302) at variant139 fails to compile
+
+721786 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtAppend(306,166) StmtReplace(147,171) StmtAppend(55,302) (stored at: variant139)
+723390 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 3.0 StmtDelete(195) StmtDelete(243) StmtDelete(80) (stored at: variant140)
+723417 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:677: error: cannot find symbol
+				if (read == -1) {
+				    ^
+  symbol:   variable read
+  location: class ZipArchiveInputStream
+1 error
+
+723417 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(391) StmtAppend(289,193) at variant141 fails to compile
+
+723417 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(391) StmtAppend(289,193) (stored at: variant141)
+723446 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:554: error: incompatible types: missing return value
+						return;
+						^
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:559: error: incompatible types: missing return value
+				return;
+				^
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:561: error: cannot find symbol
+            while (skipped < value) {
+                   ^
+  symbol:   variable skipped
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:562: error: cannot find symbol
+                final long rem = value - skipped;
+                                         ^
+  symbol:   variable skipped
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:565: error: cannot find symbol
+                    return skipped;
+                           ^
+  symbol:   variable skipped
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:567: error: cannot find symbol
+                skipped += x;
+                ^
+  symbol:   variable skipped
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:569: error: cannot find symbol
+            return skipped;
+                   ^
+  symbol:   variable skipped
+  location: class ZipArchiveInputStream
+7 errors
+
+723446 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(97,396) StmtDelete(419) StmtReplace(230,431) at variant142 fails to compile
+
+723446 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(97,396) StmtDelete(419) StmtReplace(230,431) (stored at: variant142)
+725419 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 3.0 StmtAppend(262,84) StmtReplace(202,145) (stored at: variant143)
+727242 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 4.0 StmtDelete(267) StmtAppend(202,264) (stored at: variant144)
+729134 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 4.0 StmtReplace(207,145) StmtReplace(392,323) StmtDelete(447) (stored at: variant145)
+731831 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 4.0 StmtAppend(288,80) StmtAppend(42,224) (stored at: variant146)
+733579 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 4.0 StmtReplace(207,145) StmtAppend(285,11) (stored at: variant147)
+733609 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:502: error: cannot find symbol
+                if (l > 0) {
+                    ^
+  symbol:   variable l
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:504: error: cannot find symbol
+                } else if (l == -1) {
+                           ^
+  symbol:   variable l
+  location: class ZipArchiveInputStream
+2 errors
+
+733610 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(97,396) StmtDelete(203) at variant148 fails to compile
+
+733610 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(97,396) StmtDelete(203) (stored at: variant148)
+735320 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 3.0 StmtDelete(195) StmtReplace(129,156) (stored at: variant149)
+737693 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 4.0 StmtDelete(151) (stored at: variant150)
+739391 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 2.0 StmtDelete(133) StmtDelete(316) StmtDelete(250) (stored at: variant151)
+741958 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 4.0 StmtDelete(242) (stored at: variant152)
+741987 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:645: error: incompatible types: unexpected return value
+						return -1;
+						       ^
+1 error
+
+741987 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(271,167) at variant153 fails to compile
+
+741988 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtAppend(271,167) (stored at: variant153)
+745929 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 2.0 StmtDelete(425) (stored at: variant154)
+748701 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 4.0 StmtAppend(174,25) StmtAppend(419,11) (stored at: variant155)
+748748 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:180: error: call to this must be first statement in constructor
+			this(inputStream, encoding, true);
+			    ^
+1 error
+
+748748 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(147,171) StmtAppend(3,12) at variant156 fails to compile
+
+748748 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(147,171) StmtAppend(3,12) (stored at: variant156)
+753590 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 4.0 StmtDelete(316) StmtDelete(323) (stored at: variant157)
+755133 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 4.0 StmtReplace(261,323) (stored at: variant158)
+755176 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:590: error: non-static method drainCurrentEntryData() cannot be referenced from a static context
+			drainCurrentEntryData();
+			^
+1 error
+
+755177 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(316) StmtReplace(252,272) at variant159 fails to compile
+
+755177 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(316) StmtReplace(252,272) (stored at: variant159)
+755217 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:361: error: cannot find symbol
+        current.usesZip64 = z64 != null;
+                            ^
+  symbol:   variable z64
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:363: error: cannot find symbol
+            if (z64 != null // same as current.usesZip64 but avoids NPE warning
+                ^
+  symbol:   variable z64
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:365: error: cannot find symbol
+                current.entry.setCompressedSize(z64.getCompressedSize().getLongValue());
+                                                ^
+  symbol:   variable z64
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:366: error: cannot find symbol
+                current.entry.setSize(z64.getSize().getLongValue());
+                                      ^
+  symbol:   variable z64
+  location: class ZipArchiveInputStream
+4 errors
+
+755217 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(106,274) at variant160 fails to compile
+
+755217 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtAppend(106,274) (stored at: variant160)
+756831 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 4.0 StmtDelete(231) (stored at: variant161)
+756831 [main] INFO clegoues.genprog4java.Search.Search  - search: generation3
+759346 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 3.0 StmtDelete(151) StmtDelete(251) (stored at: variant162)
+759375 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:418: error: incompatible types: <null> cannot be converted to int
+            return null;
+                   ^
+1 error
+
+759375 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(391) StmtReplace(278,254) StmtReplace(145,38) at variant163 fails to compile
+
+759375 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(391) StmtReplace(278,254) StmtReplace(145,38) (stored at: variant163)
+759407 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:299: error: cannot find symbol
+        current.entry.setName(entryEncoding.decode(fileName), fileName);
+                              ^
+  symbol:   variable entryEncoding
+  location: class ZipArchiveInputStream
+1 error
+
+759407 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(267) StmtAppend(202,264) StmtReplace(46,255) at variant164 fails to compile
+
+759407 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(267) StmtAppend(202,264) StmtReplace(46,255) (stored at: variant164)
+761156 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 3.0 StmtDelete(231) StmtAppend(43,395) (stored at: variant165)
+761189 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:709: error: cannot find symbol
+            return read;
+                   ^
+  symbol:   variable read
+  location: class ZipArchiveInputStream
+1 error
+
+761189 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(167,195) StmtDelete(316) StmtDelete(82) StmtReplace(310,196) at variant166 fails to compile
+
+761190 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtAppend(167,195) StmtDelete(316) StmtDelete(82) StmtReplace(310,196) (stored at: variant166)
+761225 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:453: error: cannot find symbol
+        if (current.bytesRead >= csize) {
+                                 ^
+  symbol:   variable csize
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:470: error: cannot find symbol
+        if ((csize - current.bytesRead) < toRead) {
+             ^
+  symbol:   variable csize
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:472: error: cannot find symbol
+            toRead = (int) (csize - current.bytesRead);
+                            ^
+  symbol:   variable csize
+  location: class ZipArchiveInputStream
+3 errors
+
+761225 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(302) StmtAppend(285,255) StmtAppend(162,274) at variant167 fails to compile
+
+761225 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(302) StmtAppend(285,255) StmtAppend(162,274) (stored at: variant167)
+761260 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:285: error: cannot find symbol
+            cSize = new ZipLong(LFH_BUF, off);
+            ^
+  symbol:   variable cSize
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:288: error: cannot find symbol
+            size = new ZipLong(LFH_BUF, off);
+            ^
+  symbol:   variable size
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:313: error: cannot find symbol
+        processZip64Extra(size, cSize);
+                          ^
+  symbol:   variable size
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:313: error: cannot find symbol
+        processZip64Extra(size, cSize);
+                                ^
+  symbol:   variable cSize
+  location: class ZipArchiveInputStream
+4 errors
+
+761260 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(231) StmtReplace(55,85) at variant168 fails to compile
+
+761261 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(231) StmtReplace(55,85) (stored at: variant168)
+761297 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:295: error: cannot find symbol
+			buf.limit(length);
+			          ^
+  symbol:   variable length
+  location: class ZipArchiveInputStream
+1 error
+
+761297 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(262,84) StmtDelete(295) StmtAppend(69,308) at variant169 fails to compile
+
+761297 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtAppend(262,84) StmtDelete(295) StmtAppend(69,308) (stored at: variant169)
+761337 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:218: error: variable useUnicodeExtraFields might not have been initialized
+    }
+    ^
+1 error
+
+761337 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(207,145) StmtReplace(392,323) StmtDelete(447) StmtDelete(9) at variant170 fails to compile
+
+761337 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(207,145) StmtReplace(392,323) StmtDelete(447) StmtDelete(9) (stored at: variant170)
+761383 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:642: error: unreachable statement
+                current.bytesReadFromStream -= diff;
+                ^
+1 error
+
+761383 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(174,25) StmtAppend(419,11) StmtAppend(269,195) at variant171 fails to compile
+
+761383 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtAppend(174,25) StmtAppend(419,11) StmtAppend(269,195) (stored at: variant171)
+763773 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 4.0 StmtDelete(231) StmtDelete(278) (stored at: variant172)
+766462 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 2.0 StmtAppend(288,80) StmtAppend(42,224) StmtReplace(151,279) (stored at: variant173)
+766494 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:369: error: unreported exception IOException; must be caught or declared to be thrown
+				readFirstLocalFileHeader(LFH_BUF);
+				                        ^
+1 error
+
+766494 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(261,323) StmtAppend(108,25) at variant174 fails to compile
+
+766494 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(261,323) StmtAppend(108,25) (stored at: variant174)
+766529 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:632: error: unreachable statement
+                current.bytesReadFromStream -= diff;
+                ^
+1 error
+
+766529 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(97,396) StmtDelete(18) StmtDelete(76) StmtReplace(269,97) at variant175 fails to compile
+
+766529 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(97,396) StmtDelete(18) StmtDelete(76) StmtReplace(269,97) (stored at: variant175)
+766564 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:557: error: unreachable statement
+					throw new IOException("Truncated ZIP file");
+					^
+1 error
+
+766564 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(391) StmtReplace(278,254) StmtAppend(236,195) at variant176 fails to compile
+
+766565 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(391) StmtReplace(278,254) StmtAppend(236,195) (stored at: variant176)
+766608 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:467: error: cannot find symbol
+        if ((csize - current.bytesRead) < toRead) {
+                                          ^
+  symbol:   variable toRead
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:469: error: cannot find symbol
+            toRead = (int) (csize - current.bytesRead);
+            ^
+  symbol:   variable toRead
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:471: error: cannot find symbol
+        buf.get(buffer, offset, toRead);
+                                ^
+  symbol:   variable toRead
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:472: error: cannot find symbol
+        current.bytesRead += toRead;
+                             ^
+  symbol:   variable toRead
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:473: error: cannot find symbol
+        return toRead;
+               ^
+  symbol:   variable toRead
+  location: class ZipArchiveInputStream
+5 errors
+
+766608 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(262,84) StmtDelete(295) StmtReplace(176,316) at variant177 fails to compile
+
+766608 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtAppend(262,84) StmtDelete(295) StmtReplace(176,316) (stored at: variant177)
+766651 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:209: error: variable zipEncoding might not have been initialized
+								}
+								^
+1 error
+
+766652 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(174,25) StmtReplace(425,91) StmtDelete(137) StmtDelete(6) at variant178 fails to compile
+
+766652 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtAppend(174,25) StmtReplace(425,91) StmtDelete(137) StmtDelete(6) (stored at: variant178)
+768260 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 4.0 StmtDelete(316) StmtDelete(323) StmtDelete(258) (stored at: variant179)
+768293 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:418: error: incompatible types: <null> cannot be converted to int
+			return null;
+			       ^
+1 error
+
+768293 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(174,25) StmtAppend(419,11) StmtReplace(143,29) at variant180 fails to compile
+
+768293 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtAppend(174,25) StmtAppend(419,11) StmtReplace(143,29) (stored at: variant180)
+769765 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 4.0 StmtAppend(174,25) StmtReplace(425,91) StmtDelete(137) StmtAppend(232,86) (stored at: variant181)
+769805 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:580: error: non-static variable LFH_BUF cannot be referenced from a static context
+			readFully(LFH_BUF);
+			          ^
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:580: error: non-static method readFully(byte[]) cannot be referenced from a static context
+			readFully(LFH_BUF);
+			^
+2 errors
+
+769805 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(267) StmtAppend(202,264) StmtAppend(242,28) at variant182 fails to compile
+
+769805 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(267) StmtAppend(202,264) StmtAppend(242,28) (stored at: variant182)
+771417 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 4.0 StmtAppend(167,195) StmtDelete(316) StmtDelete(314) StmtDelete(87) (stored at: variant183)
+772992 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 3.0 StmtDelete(267) StmtAppend(202,264) StmtDelete(423) (stored at: variant184)
+773022 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:742: error: incompatible types: unexpected return value
+				return -1;
+				       ^
+1 error
+
+773022 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(174,25) StmtReplace(425,91) StmtDelete(137) StmtAppend(325,171) at variant185 fails to compile
+
+773023 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtAppend(174,25) StmtReplace(425,91) StmtDelete(137) StmtAppend(325,171) (stored at: variant185)
+773065 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:367: error: unreported exception IOException; must be caught or declared to be thrown
+					pushback(TWO_DWORD_BUF, DWORD, DWORD);
+					        ^
+1 error
+
+773065 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(391) StmtReplace(278,254) StmtAppend(116,330) at variant186 fails to compile
+
+773065 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(391) StmtReplace(278,254) StmtAppend(116,330) (stored at: variant186)
+773108 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:432: error: incompatible types: missing return value
+					return;
+					^
+1 error
+
+773108 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(207,145) StmtAppend(285,11) StmtAppend(153,258) at variant187 fails to compile
+
+773108 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(207,145) StmtAppend(285,11) StmtAppend(153,258) (stored at: variant187)
+776649 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 4.0 StmtAppend(174,25) StmtReplace(425,91) StmtAppend(404,403) StmtReplace(394,448) (stored at: variant188)
+776676 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:642: error: continue outside of loop
+				continue;
+				^
+1 error
+
+776677 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(302) StmtAppend(285,255) StmtAppend(272,407) at variant189 fails to compile
+
+776677 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(302) StmtAppend(285,255) StmtAppend(272,407) (stored at: variant189)
+776705 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:314: error: unreachable statement
+        if (current.entry.getCompressedSize() != ArchiveEntry.SIZE_UNKNOWN) {
+        ^
+1 error
+
+776705 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(151) StmtAppend(79,194) at variant190 fails to compile
+
+776705 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(151) StmtAppend(79,194) (stored at: variant190)
+776744 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:387: error: unreachable statement
+        return false;
+        ^
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:385: error: unreported exception IOException; must be caught or declared to be thrown
+			throw new IOException("The stream is closed");
+			^
+2 errors
+
+776744 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(167,195) StmtDelete(316) StmtDelete(314) StmtReplace(120,127) at variant191 fails to compile
+
+776744 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtAppend(167,195) StmtDelete(316) StmtDelete(314) StmtReplace(120,127) (stored at: variant191)
+778272 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 3.0 StmtReplace(97,396) StmtDelete(18) StmtDelete(76) StmtAppend(103,326) (stored at: variant192)
+781861 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 4.0 StmtDelete(302) StmtAppend(285,255) StmtAppend(315,302) (stored at: variant193)
+783458 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 4.0 StmtAppend(174,25) StmtReplace(425,91) StmtAppend(404,403) StmtReplace(178,83) (stored at: variant194)
+783491 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:554: error: cannot find symbol
+                if (length > 0) {
+                    ^
+  symbol:   variable length
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:555: error: cannot find symbol
+					buf.limit(length);
+					          ^
+  symbol:   variable length
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:559: error: cannot find symbol
+                final int x = read(SKIP_BUF, 0, (int) (SKIP_BUF.length > rem ? rem : SKIP_BUF.length));
+                                                                         ^
+  symbol:   variable rem
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:559: error: cannot find symbol
+                final int x = read(SKIP_BUF, 0, (int) (SKIP_BUF.length > rem ? rem : SKIP_BUF.length));
+                                                                               ^
+  symbol:   variable rem
+  location: class ZipArchiveInputStream
+4 errors
+
+783491 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(288,80) StmtAppend(42,224) StmtReplace(233,306) at variant195 fails to compile
+
+783491 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtAppend(288,80) StmtAppend(42,224) StmtReplace(233,306) (stored at: variant195)
+785813 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 3.0 StmtAppend(36,332) StmtDelete(232) StmtAppend(49,254) (stored at: variant196)
+785844 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:275: error: continue outside of loop
+			continue;
+			^
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:281: error: cannot find symbol
+            cSize = new ZipLong(LFH_BUF, off);
+            ^
+  symbol:   variable cSize
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:284: error: cannot find symbol
+            size = new ZipLong(LFH_BUF, off);
+            ^
+  symbol:   variable size
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:309: error: cannot find symbol
+        processZip64Extra(size, cSize);
+                          ^
+  symbol:   variable size
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:309: error: cannot find symbol
+        processZip64Extra(size, cSize);
+                                ^
+  symbol:   variable cSize
+  location: class ZipArchiveInputStream
+5 errors
+
+785844 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(153,397) StmtDelete(273) StmtAppend(90,198) StmtReplace(55,406) at variant197 fails to compile
+
+785844 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(153,397) StmtDelete(273) StmtAppend(90,198) StmtReplace(55,406) (stored at: variant197)
+788242 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 4.0 StmtAppend(288,80) StmtAppend(42,224) StmtAppend(286,397) (stored at: variant198)
+789740 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 3.0 StmtDelete(302) StmtAppend(285,255) StmtDelete(306) (stored at: variant199)
+793235 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 2.0 StmtAppend(174,25) StmtAppend(419,11) StmtReplace(96,262) (stored at: variant200)
+793263 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:685: error: cannot find symbol
+					buf.limit(length);
+					          ^
+  symbol:   variable length
+  location: class ZipArchiveInputStream
+1 error
+
+793263 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(153,397) StmtDelete(273) StmtAppend(90,198) StmtAppend(291,307) at variant201 fails to compile
+
+793263 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(153,397) StmtDelete(273) StmtAppend(90,198) StmtAppend(291,307) (stored at: variant201)
+795937 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 3.0 StmtDelete(267) StmtAppend(202,264) StmtDelete(104) (stored at: variant202)
+799335 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 4.0 StmtDelete(410) (stored at: variant203)
+799365 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:296: error: cannot find symbol
+        final byte[] fileName = new byte[fileNameLen];
+                                         ^
+  symbol:   variable fileNameLen
+  location: class ZipArchiveInputStream
+1 error
+
+799365 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(302) StmtDelete(66) at variant204 fails to compile
+
+799365 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(302) StmtDelete(66) (stored at: variant204)
+801543 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 4.0 StmtReplace(207,145) StmtReplace(402,12) (stored at: variant205)
+801574 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:212: error: unreachable statement
+        zipEncoding = ZipEncodingHelper.getZipEncoding(encoding);
+        ^
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:210: error: unreported exception EOFException; must be caught or declared to be thrown
+			throw new EOFException();
+			^
+2 errors
+
+801574 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(207,145) StmtReplace(7,316) at variant206 fails to compile
+
+801574 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(207,145) StmtReplace(7,316) (stored at: variant206)
+803075 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 4.0 StmtDelete(447) StmtAppend(10,168) (stored at: variant207)
+803118 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:277: error: incompatible types: int cannot be converted to ZipArchiveEntry
+				return -1;
+				       ^
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:281: error: cannot find symbol
+			} else if (read == -1) {
+			           ^
+  symbol:   variable read
+  location: class ZipArchiveInputStream
+2 errors
+
+803118 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(316) StmtDelete(314) StmtReplace(56,186) at variant208 fails to compile
+
+803118 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(316) StmtDelete(314) StmtReplace(56,186) (stored at: variant208)
+803163 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:359: error: unreported exception IOException; must be caught or declared to be thrown
+            throw new IOException("Truncated ZIP file");
+            ^
+1 error
+
+803163 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(419,11) StmtReplace(110,195) at variant209 fails to compile
+
+803163 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtAppend(419,11) StmtReplace(110,195) (stored at: variant209)
+805336 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 3.0 StmtDelete(76) StmtDelete(416) (stored at: variant210)
+902710 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 4.0 StmtReplace(97,396) StmtDelete(167) (stored at: variant211)
+902745 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:459: error: unreachable statement
+				throw new EOFException("Truncated ZIP entry: " + ArchiveUtils.sanitize(current.entry.getName()));
+				^
+1 error
+
+902745 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(288,80) StmtAppend(171,290) at variant212 fails to compile
+
+902745 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtAppend(288,80) StmtAppend(171,290) (stored at: variant212)
+904692 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 3.0 StmtDelete(302) StmtDelete(61) (stored at: variant213)
+906239 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 4.0 StmtReplace(425,91) StmtAppend(404,403) StmtAppend(80,395) (stored at: variant214)
+906267 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:236: error: incompatible types: int cannot be converted to ZipArchiveEntry
+						return -1;
+						       ^
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:238: error: break outside switch or loop
+						break;
+						^
+2 errors
+
+906267 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(26,202) at variant215 fails to compile
+
+906267 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(26,202) (stored at: variant215)
+907778 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 4.0 StmtReplace(100,33) (stored at: variant216)
+907822 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:449: error: cannot find symbol
+        count(count);
+              ^
+  symbol:   variable count
+  location: class ZipArchiveInputStream
+1 error
+
+907822 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(288,80) StmtDelete(18) StmtDelete(76) StmtReplace(166,314) at variant217 fails to compile
+
+907822 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtAppend(288,80) StmtDelete(18) StmtDelete(76) StmtReplace(166,314) (stored at: variant217)
+907854 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:998: error: unreachable statement
+        return b;
+        ^
+1 error
+
+907854 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(391) StmtDelete(232) StmtAppend(446,130) at variant218 fails to compile
+
+907854 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(391) StmtDelete(232) StmtAppend(446,130) (stored at: variant218)
+909498 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 4.0 StmtDelete(270) (stored at: variant219)
+910905 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 4.0 StmtAppend(262,84) StmtAppend(28,277) (stored at: variant220)
+910936 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:523: error: cannot find symbol
+                read = inf.inflate(buffer, offset, length);
+                ^
+  symbol:   variable read
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:527: error: cannot find symbol
+        } while (read == 0 && inf.needsInput());
+                 ^
+  symbol:   variable read
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:528: error: cannot find symbol
+        return read;
+               ^
+  symbol:   variable read
+  location: class ZipArchiveInputStream
+3 errors
+
+910936 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(153,397) StmtDelete(273) StmtAppend(198,167) at variant221 fails to compile
+
+910936 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(153,397) StmtDelete(273) StmtAppend(198,167) (stored at: variant221)
+910967 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:743: error: unreachable statement
+        ZipLong val = new ZipLong(WORD_BUF);
+                ^
+1 error
+
+910967 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(174,25) StmtAppend(42,224) StmtAppend(319,316) at variant222 fails to compile
+
+910967 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtAppend(174,25) StmtAppend(42,224) StmtAppend(319,316) (stored at: variant222)
+911012 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:457: error: unreachable statement
+				if (current.entry.getMethod() == ZipMethod.UNSHRINKING.getCode()) {
+				^
+1 error
+
+911012 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(137) StmtAppend(171,82) at variant223 fails to compile
+
+911012 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(137) StmtAppend(171,82) (stored at: variant223)
+911012 [main] INFO clegoues.genprog4java.Search.Search  - search: generation4
+912145 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:591: error: non-static variable entriesRead cannot be referenced from a static context
+                realSkip(entriesRead * CFH_LEN - LFH_LEN);
+                         ^
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:591: error: non-static method realSkip(long) cannot be referenced from a static context
+                realSkip(entriesRead * CFH_LEN - LFH_LEN);
+                ^
+2 errors
+
+912146 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(425,91) StmtAppend(404,403) StmtAppend(80,395) StmtReplace(251,394) at variant224 fails to compile
+
+912146 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(425,91) StmtAppend(404,403) StmtAppend(80,395) StmtReplace(251,394) (stored at: variant224)
+913727 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 4.0 StmtDelete(410) StmtDelete(35) (stored at: variant225)
+915346 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 4.0 StmtDelete(316) StmtDelete(323) StmtDelete(258) StmtDelete(403) (stored at: variant226)
+915376 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:283: error: cannot find symbol
+            cSize = new ZipLong(LFH_BUF, off);
+            ^
+  symbol:   variable cSize
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:286: error: cannot find symbol
+            size = new ZipLong(LFH_BUF, off);
+            ^
+  symbol:   variable size
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:311: error: cannot find symbol
+        processZip64Extra(size, cSize);
+                          ^
+  symbol:   variable size
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:311: error: cannot find symbol
+        processZip64Extra(size, cSize);
+                                ^
+  symbol:   variable cSize
+  location: class ZipArchiveInputStream
+4 errors
+
+915376 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(231) StmtAppend(43,395) StmtDelete(55) at variant227 fails to compile
+
+915376 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(231) StmtAppend(43,395) StmtDelete(55) (stored at: variant227)
+915413 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:272: error: cannot find symbol
+        current.entry.setTime(time);
+                              ^
+  symbol:   variable time
+  location: class ZipArchiveInputStream
+1 error
+
+915413 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(174,25) StmtReplace(425,91) StmtAppend(404,403) StmtReplace(394,448) StmtDelete(52) at variant228 fails to compile
+
+915413 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtAppend(174,25) StmtReplace(425,91) StmtAppend(404,403) StmtReplace(394,448) StmtDelete(52) (stored at: variant228)
+915454 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:472: error: cannot find symbol
+        if ((csize - current.bytesRead) < toRead) {
+                                          ^
+  symbol:   variable toRead
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:475: error: cannot find symbol
+        buf.get(buffer, offset, toRead);
+                                ^
+  symbol:   variable toRead
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:476: error: cannot find symbol
+        current.bytesRead += toRead;
+                             ^
+  symbol:   variable toRead
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:477: error: cannot find symbol
+        return toRead;
+               ^
+  symbol:   variable toRead
+  location: class ZipArchiveInputStream
+4 errors
+
+915454 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(174,25) StmtReplace(425,91) StmtAppend(404,403) StmtReplace(178,83) StmtReplace(176,83) at variant229 fails to compile
+
+915454 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtAppend(174,25) StmtReplace(425,91) StmtAppend(404,403) StmtReplace(178,83) StmtReplace(176,83) (stored at: variant229)
+916968 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 4.0 StmtAppend(174,25) StmtReplace(425,91) StmtAppend(404,403) StmtReplace(394,448) StmtAppend(329,86) (stored at: variant230)
+916998 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:944: error: cannot find symbol
+				buf.limit(length);
+				          ^
+  symbol:   variable length
+  location: class ZipArchiveInputStream
+1 error
+
+916998 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(207,145) StmtReplace(402,12) StmtReplace(434,308) at variant231 fails to compile
+
+916998 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(207,145) StmtReplace(402,12) StmtReplace(434,308) (stored at: variant231)
+917035 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:517: error: missing return statement
+    }
+    ^
+1 error
+
+917035 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(76) StmtDelete(416) StmtDelete(217) at variant232 fails to compile
+
+917036 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(76) StmtDelete(416) StmtDelete(217) (stored at: variant232)
+918505 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 3.0 StmtDelete(302) StmtDelete(61) StmtDelete(317) (stored at: variant233)
+920210 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 4.0 StmtDelete(447) StmtAppend(10,168) StmtDelete(33) (stored at: variant234)
+920242 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:404: error: continue outside of loop
+			continue;
+			^
+1 error
+
+920242 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(97,396) StmtDelete(167) StmtReplace(133,423) at variant235 fails to compile
+
+920242 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(97,396) StmtDelete(167) StmtReplace(133,423) (stored at: variant235)
+923922 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 4.0 StmtAppend(174,25) StmtReplace(425,91) StmtAppend(404,403) StmtReplace(178,83) StmtDelete(85) (stored at: variant236)
+925476 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 4.0 StmtAppend(174,25) StmtReplace(425,91) StmtAppend(404,403) StmtReplace(394,448) StmtAppend(19,302) (stored at: variant237)
+925519 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:530: error: incompatible types: unexpected return value
+					return -1;
+					       ^
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:534: error: cannot find symbol
+				} else if (read == -1) {
+				           ^
+  symbol:   variable read
+  location: class ZipArchiveInputStream
+2 errors
+
+925519 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(174,25) StmtReplace(425,91) StmtAppend(404,403) StmtReplace(394,448) StmtAppend(221,187) at variant238 fails to compile
+
+925519 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtAppend(174,25) StmtReplace(425,91) StmtAppend(404,403) StmtReplace(394,448) StmtAppend(221,187) (stored at: variant238)
+926931 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 4.0 StmtDelete(151) StmtDelete(251) StmtAppend(322,206) (stored at: variant239)
+929405 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 4.0 StmtDelete(447) StmtAppend(10,168) StmtReplace(177,135) (stored at: variant240)
+929438 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:413: error: unreachable statement
+        int read;
+            ^
+1 error
+
+929438 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(174,25) StmtReplace(425,91) StmtAppend(404,403) StmtReplace(394,448) StmtReplace(136,171) at variant241 fails to compile
+
+929438 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtAppend(174,25) StmtReplace(425,91) StmtAppend(404,403) StmtReplace(394,448) StmtReplace(136,171) (stored at: variant241)
+931075 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 4.0 StmtDelete(302) StmtAppend(285,255) StmtAppend(315,302) StmtReplace(404,87) (stored at: variant242)
+933071 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 3.0 StmtAppend(288,80) StmtAppend(42,224) StmtAppend(286,397) StmtDelete(316) (stored at: variant243)
+1126077 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 4.0 StmtAppend(174,25) StmtReplace(425,91) StmtAppend(404,403) StmtReplace(394,448) StmtReplace(286,406) (stored at: variant244)
+1127732 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 3.0 StmtReplace(100,33) StmtReplace(302,276) (stored at: variant245)
+1127769 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:939: error: incompatible types: unexpected return value
+				return -1;
+				       ^
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:942: error: cannot find symbol
+        while (skipReadCall || (currentByte = readOneByte()) > -1) {
+               ^
+  symbol:   variable skipReadCall
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:944: error: cannot find symbol
+				skipReadCall = false;
+				^
+  symbol:   variable skipReadCall
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:946: error: cannot find symbol
+					skipReadCall = false;
+					^
+  symbol:   variable skipReadCall
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:955: error: cannot find symbol
+						skipReadCall = isFirstByteOfEocdSig(currentByte);
+						^
+  symbol:   variable skipReadCall
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:963: error: cannot find symbol
+						skipReadCall = isFirstByteOfEocdSig(currentByte);
+						^
+  symbol:   variable skipReadCall
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:970: error: cannot find symbol
+					skipReadCall = isFirstByteOfEocdSig(currentByte);
+					^
+  symbol:   variable skipReadCall
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:981: error: cannot find symbol
+                skipReadCall = isFirstByteOfEocdSig(currentByte);
+                ^
+  symbol:   variable skipReadCall
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:989: error: cannot find symbol
+                skipReadCall = isFirstByteOfEocdSig(currentByte);
+                ^
+  symbol:   variable skipReadCall
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:994: error: cannot find symbol
+            skipReadCall = isFirstByteOfEocdSig(currentByte);
+            ^
+  symbol:   variable skipReadCall
+  location: class ZipArchiveInputStream
+10 errors
+
+1127769 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(174,25) StmtReplace(425,91) StmtAppend(404,403) StmtReplace(178,83) StmtAppend(401,129) at variant246 fails to compile
+
+1127769 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtAppend(174,25) StmtReplace(425,91) StmtAppend(404,403) StmtReplace(178,83) StmtAppend(401,129) (stored at: variant246)
+1127802 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:183: error: variable zipEncoding might not have been initialized
+    }
+    ^
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:181: error: unreported exception IOException; must be caught or declared to be thrown
+			skipRemainderOfArchive();
+			                      ^
+2 errors
+
+1127802 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(270) StmtReplace(3,33) at variant247 fails to compile
+
+1127802 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(270) StmtReplace(3,33) (stored at: variant247)
+1127838 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:952: error: cannot find symbol
+					} else if (read == -1) {
+					           ^
+  symbol:   variable read
+  location: class ZipArchiveInputStream
+1 error
+
+1127838 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(267) StmtAppend(202,264) StmtDelete(423) StmtReplace(420,190) at variant248 fails to compile
+
+1127838 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(267) StmtAppend(202,264) StmtDelete(423) StmtReplace(420,190) (stored at: variant248)
+1130044 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 4.0 StmtReplace(425,91) StmtAppend(404,403) StmtAppend(80,395) StmtAppend(144,303) (stored at: variant249)
+1130083 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:765: error: break outside switch or loop
+					break;
+					^
+1 error
+
+1130083 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(302) StmtAppend(285,255) StmtAppend(315,302) StmtAppend(332,420) at variant250 fails to compile
+
+1130083 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(302) StmtAppend(285,255) StmtAppend(315,302) StmtAppend(332,420) (stored at: variant250)
+1132227 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 3.0 StmtAppend(262,84) StmtAppend(28,277) StmtReplace(78,59) (stored at: variant251)
+1133997 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 4.0 StmtReplace(100,33) StmtDelete(262) (stored at: variant252)
+1135668 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 4.0 StmtDelete(316) StmtDelete(323) StmtDelete(258) StmtAppend(280,206) (stored at: variant253)
+1135699 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:670: error: cannot find symbol
+            if (n < 0) {
+                ^
+  symbol:   variable n
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:674: error: cannot find symbol
+            count(n);
+                  ^
+  symbol:   variable n
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:675: error: cannot find symbol
+            remaining -= n;
+                         ^
+  symbol:   variable n
+  location: class ZipArchiveInputStream
+3 errors
+
+1135699 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(100,33) StmtDelete(287) at variant254 fails to compile
+
+1135699 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(100,33) StmtDelete(287) (stored at: variant254)
+1137335 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 4.0 StmtDelete(231) StmtAppend(43,395) StmtDelete(190) (stored at: variant255)
+1235871 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 4.0 StmtReplace(97,396) StmtDelete(167) StmtDelete(193) (stored at: variant256)
+1235929 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:584: error: non-static variable buf cannot be referenced from a static context
+        count(buf.limit());
+              ^
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:584: error: non-static method count(int) cannot be referenced from a static context
+        count(buf.limit());
+        ^
+2 errors
+
+1235929 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(174,25) StmtReplace(425,91) StmtDelete(137) StmtAppend(232,86) StmtReplace(242,309) at variant257 fails to compile
+
+1235929 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtAppend(174,25) StmtReplace(425,91) StmtDelete(137) StmtAppend(232,86) StmtReplace(242,309) (stored at: variant257)
+1237544 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 2.0 StmtReplace(100,33) StmtReplace(62,329) (stored at: variant258)
+1431465 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 4.0 StmtDelete(410) StmtReplace(202,278) (stored at: variant259)
+1431506 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:180: error: continue outside of loop
+			continue;
+			^
+1 error
+
+1431506 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(97,396) StmtDelete(18) StmtDelete(76) StmtReplace(269,97) StmtReplace(3,406) at variant260 fails to compile
+
+1431506 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(97,396) StmtDelete(18) StmtDelete(76) StmtReplace(269,97) StmtReplace(3,406) (stored at: variant260)
+1431549 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:418: error: variable read might not have been initialized
+        if (read >= 0) {
+            ^
+1 error
+
+1431549 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(410) StmtDelete(140) at variant261 fails to compile
+
+1431550 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(410) StmtDelete(140) (stored at: variant261)
+1432871 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 4.0 StmtReplace(207,145) StmtReplace(402,12) StmtDelete(257) (stored at: variant262)
+1434375 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 3.0 StmtAppend(288,80) StmtAppend(42,224) StmtAppend(286,397) StmtAppend(33,290) (stored at: variant263)
+1434411 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:308: error: incompatible types: boolean cannot be converted to ZipArchiveEntry
+			return false;
+			       ^
+1 error
+
+1434411 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(79,250) at variant264 fails to compile
+
+1434411 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(79,250) (stored at: variant264)
+1435929 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 4.0 StmtAppend(143,448) (stored at: variant265)
+1437322 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 4.0 StmtDelete(76) StmtAppend(295,206) (stored at: variant266)
+1438786 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 3.0 StmtDelete(94) (stored at: variant267)
+1440515 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 4.0 StmtAppend(116,86) (stored at: variant268)
+1440545 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:169: error: variable in might not have been initialized
+			current.in = new BZip2CompressorInputStream(new BoundedInputStream(in, current.entry.getCompressedSize()));
+			                                                                   ^
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:171: error: variable zipEncoding might not have been initialized
+    }
+    ^
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:169: error: unreported exception IOException; must be caught or declared to be thrown
+			current.in = new BZip2CompressorInputStream(new BoundedInputStream(in, current.entry.getCompressedSize()));
+			             ^
+3 errors
+
+1440545 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(316) StmtDelete(323) StmtDelete(61) StmtReplace(1,89) at variant269 fails to compile
+
+1440545 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(316) StmtDelete(323) StmtDelete(61) StmtReplace(1,89) (stored at: variant269)
+1440587 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:430: error: variable read might not have been initialized
+        if (read >= 0) {
+            ^
+1 error
+
+1440587 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(43,395) StmtDelete(141) at variant270 fails to compile
+
+1440587 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtAppend(43,395) StmtDelete(141) (stored at: variant270)
+1537809 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 4.0 StmtDelete(167) StmtDelete(273) (stored at: variant271)
+1537841 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:630: error: unreachable statement
+                current.bytesReadFromStream -= diff;
+                ^
+1 error
+
+1537841 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(447) StmtReplace(269,97) StmtDelete(232) at variant272 fails to compile
+
+1537841 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(447) StmtReplace(269,97) StmtDelete(232) (stored at: variant272)
+1541463 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 2.0 StmtReplace(97,396) StmtDelete(18) StmtAppend(94,26) (stored at: variant273)
+1541493 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:315: error: cannot find symbol
+				if (length > 0) {
+				    ^
+  symbol:   variable length
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:316: error: cannot find symbol
+					buf.limit(length);
+					          ^
+  symbol:   variable length
+  location: class ZipArchiveInputStream
+2 errors
+
+1541494 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(83,306) at variant274 fails to compile
+
+1541494 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtAppend(83,306) (stored at: variant274)
+1541543 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:591: error: missing return statement
+    }
+    ^
+1 error
+
+1541543 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(425,91) StmtAppend(404,403) StmtReplace(394,448) StmtDelete(252) at variant275 fails to compile
+
+1541543 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(425,91) StmtAppend(404,403) StmtReplace(394,448) StmtDelete(252) (stored at: variant275)
+1541579 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:451: error: cannot find symbol
+        if (current.bytesRead >= csize) {
+                                 ^
+  symbol:   variable csize
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:468: error: cannot find symbol
+        if ((csize - current.bytesRead) < toRead) {
+             ^
+  symbol:   variable csize
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:470: error: cannot find symbol
+            toRead = (int) (csize - current.bytesRead);
+                            ^
+  symbol:   variable csize
+  location: class ZipArchiveInputStream
+3 errors
+
+1541579 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(402,12) StmtReplace(162,33) at variant276 fails to compile
+
+1541579 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(402,12) StmtReplace(162,33) (stored at: variant276)
+1541625 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:719: error: unreachable statement
+        return length;
+        ^
+1 error
+
+1541625 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(285,255) StmtAppend(315,302) StmtReplace(306,171) at variant277 fails to compile
+
+1541625 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtAppend(285,255) StmtAppend(315,302) StmtReplace(306,171) (stored at: variant277)
+1541625 [main] INFO clegoues.genprog4java.Search.Search  - search: generation5
+1544182 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 4.0 StmtDelete(94) StmtAppend(260,396) (stored at: variant278)
+1545971 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 2.0 StmtDelete(231) StmtAppend(43,395) StmtDelete(190) StmtReplace(217,137) (stored at: variant279)
+1547592 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 4.0 StmtDelete(447) StmtAppend(10,168) StmtDelete(33) StmtDelete(194) (stored at: variant280)
+1644853 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 3.0 StmtDelete(167) StmtDelete(273) StmtReplace(403,273) (stored at: variant281)
+1648361 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 4.0 StmtReplace(207,145) StmtReplace(402,12) StmtDelete(257) StmtDelete(195) (stored at: variant282)
+1651145 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 3.0 StmtDelete(76) StmtAppend(295,206) StmtDelete(228) (stored at: variant283)
+1651187 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:912: error: incompatible types: unexpected return value
+				return -1;
+				       ^
+1 error
+
+1651187 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(97,396) StmtDelete(167) StmtDelete(193) StmtAppend(396,188) at variant284 fails to compile
+
+1651187 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtReplace(97,396) StmtDelete(167) StmtDelete(193) StmtAppend(396,188) (stored at: variant284)
+1651226 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:249: error: incompatible types: int cannot be converted to ZipArchiveEntry
+			return -1;
+			       ^
+1 error
+
+1651226 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(174,25) StmtReplace(425,91) StmtAppend(404,403) StmtReplace(394,448) StmtAppend(329,86) StmtReplace(37,188) at variant285 fails to compile
+
+1651226 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtAppend(174,25) StmtReplace(425,91) StmtAppend(404,403) StmtReplace(394,448) StmtAppend(329,86) StmtReplace(37,188) (stored at: variant285)
+1652784 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 4.0 StmtReplace(425,91) StmtAppend(404,403) StmtAppend(80,395) StmtAppend(144,303) StmtDelete(237) (stored at: variant286)
+1846904 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 4.0 StmtDelete(410) StmtReplace(202,278) StmtDelete(280) (stored at: variant287)
+1846941 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:970: error: cannot find symbol
+            while (skipped < value) {
+                   ^
+  symbol:   variable skipped
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:971: error: cannot find symbol
+                final long rem = value - skipped;
+                                         ^
+  symbol:   variable skipped
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:977: error: cannot find symbol
+                skipped += x;
+                ^
+  symbol:   variable skipped
+  location: class ZipArchiveInputStream
+3 errors
+
+1846941 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(410) StmtDelete(35) StmtDelete(432) at variant288 fails to compile
+
+1846941 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(410) StmtDelete(35) StmtDelete(432) (stored at: variant288)
+1848565 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 4.0 StmtAppend(174,25) StmtReplace(425,91) StmtAppend(404,403) StmtReplace(394,448) StmtAppend(19,302) StmtDelete(109) (stored at: variant289)
+1850224 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 3.0 StmtAppend(174,25) StmtReplace(425,91) StmtAppend(404,403) StmtReplace(394,448) StmtAppend(329,86) StmtDelete(79) (stored at: variant290)
+1850256 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:648: error: incompatible types: unexpected return value
+				return -1;
+				       ^
+1 error
+
+1850256 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(207,145) StmtReplace(402,12) StmtDelete(257) StmtAppend(279,188) at variant291 fails to compile
+
+1850256 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtReplace(207,145) StmtReplace(402,12) StmtDelete(257) StmtAppend(279,188) (stored at: variant291)
+1850298 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:687: error: unreachable statement
+				if (currentEntryHasOutstandingBytes()) {
+				^
+1 error
+
+1850298 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(174,25) StmtReplace(425,91) StmtAppend(404,403) StmtReplace(394,448) StmtAppend(19,302) StmtAppend(289,271) at variant292 fails to compile
+
+1850298 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtAppend(174,25) StmtReplace(425,91) StmtAppend(404,403) StmtReplace(394,448) StmtAppend(19,302) StmtAppend(289,271) (stored at: variant292)
+1850330 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:580: error: non-static variable TWO_DWORD_BUF cannot be referenced from a static context
+        current.entry.setCompressedSize(ZipLong.getValue(TWO_DWORD_BUF));
+                                                         ^
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:580: error: non-static variable current cannot be referenced from a static context
+        current.entry.setCompressedSize(ZipLong.getValue(TWO_DWORD_BUF));
+        ^
+2 errors
+
+1850330 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(143,448) StmtReplace(245,331) at variant293 fails to compile
+
+1850330 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtAppend(143,448) StmtReplace(245,331) (stored at: variant293)
+1851942 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 3.0 StmtDelete(151) StmtDelete(251) StmtAppend(322,206) StmtDelete(416) (stored at: variant294)
+1851994 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:734: error: incompatible types: unexpected return value
+			return false;
+			       ^
+1 error
+
+1851994 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(174,25) StmtReplace(425,91) StmtAppend(404,403) StmtReplace(394,448) StmtAppend(19,302) StmtReplace(316,243) at variant295 fails to compile
+
+1851994 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtAppend(174,25) StmtReplace(425,91) StmtAppend(404,403) StmtReplace(394,448) StmtAppend(19,302) StmtReplace(316,243) (stored at: variant295)
+1853564 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 4.0 StmtDelete(410) StmtDelete(35) StmtDelete(109) (stored at: variant296)
+1856185 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 4.0 StmtDelete(316) StmtDelete(323) StmtDelete(258) StmtDelete(403) StmtAppend(321,396) (stored at: variant297)
+1856217 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:313: error: cannot find symbol
+            if (length < ZipArchiveOutputStream.LFH_SIG.length) {
+                ^
+  symbol:   variable length
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:314: error: incompatible types: boolean cannot be converted to ZipArchiveEntry
+				return false;
+				       ^
+2 errors
+
+1856217 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(231) StmtAppend(43,395) StmtDelete(190) StmtReplace(82,242) at variant298 fails to compile
+
+1856217 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(231) StmtAppend(43,395) StmtDelete(190) StmtReplace(82,242) (stored at: variant298)
+1856253 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:578: error: non-static variable LFH_BUF cannot be referenced from a static context
+			readFirstLocalFileHeader(LFH_BUF);
+			                         ^
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:578: error: non-static method readFirstLocalFileHeader(byte[]) cannot be referenced from a static context
+			readFirstLocalFileHeader(LFH_BUF);
+			^
+2 errors
+
+1856253 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(410) StmtDelete(35) StmtAppend(243,26) at variant299 fails to compile
+
+1856253 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(410) StmtDelete(35) StmtAppend(243,26) (stored at: variant299)
+1857851 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 3.0 StmtAppend(174,25) StmtReplace(425,91) StmtAppend(404,403) StmtReplace(394,448) StmtAppend(329,86) StmtReplace(195,87) (stored at: variant300)
+1857884 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:365: error: cannot find symbol
+				if (length > 0) {
+				    ^
+  symbol:   variable length
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:366: error: cannot find symbol
+					buf.limit(length);
+					          ^
+  symbol:   variable length
+  location: class ZipArchiveInputStream
+2 errors
+
+1857884 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(207,145) StmtReplace(402,12) StmtDelete(257) StmtAppend(111,306) at variant301 fails to compile
+
+1857884 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtReplace(207,145) StmtReplace(402,12) StmtDelete(257) StmtAppend(111,306) (stored at: variant301)
+1859475 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 4.0 StmtDelete(447) StmtAppend(10,168) StmtDelete(33) StmtReplace(96,254) (stored at: variant302)
+1859525 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:736: error: cannot find symbol
+            buf.limit(length);
+                      ^
+  symbol:   variable length
+  location: class ZipArchiveInputStream
+1 error
+
+1859525 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(76) StmtAppend(295,206) StmtReplace(324,308) at variant303 fails to compile
+
+1859525 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(76) StmtAppend(295,206) StmtReplace(324,308) (stored at: variant303)
+2148307 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 3.0 StmtDelete(447) StmtAppend(10,168) StmtDelete(33) StmtDelete(201) (stored at: variant304)
+2245694 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 3.0 StmtDelete(231) StmtAppend(43,395) StmtDelete(190) StmtDelete(290) (stored at: variant305)
+2247623 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 4.0 StmtReplace(425,91) StmtAppend(404,403) StmtAppend(80,395) StmtAppend(144,303) StmtReplace(194,86) (stored at: variant306)
+2247669 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:448: error: cannot find symbol
+        if (current.bytesRead >= csize) {
+                                 ^
+  symbol:   variable csize
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:465: error: cannot find symbol
+        if ((csize - current.bytesRead) < toRead) {
+             ^
+  symbol:   variable csize
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:467: error: cannot find symbol
+            toRead = (int) (csize - current.bytesRead);
+                            ^
+  symbol:   variable csize
+  location: class ZipArchiveInputStream
+3 errors
+
+2247669 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(302) StmtAppend(285,255) StmtAppend(315,302) StmtReplace(404,87) StmtReplace(162,224) at variant307 fails to compile
+
+2247669 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(302) StmtAppend(285,255) StmtAppend(315,302) StmtReplace(404,87) StmtReplace(162,224) (stored at: variant307)
+2249392 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 4.0 StmtDelete(316) StmtDelete(323) StmtDelete(258) StmtDelete(403) StmtAppend(277,310) (stored at: variant308)
+2249439 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:252: error: continue outside of loop
+			continue;
+			^
+1 error
+
+2249439 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(100,33) StmtDelete(262) StmtAppend(37,423) at variant309 fails to compile
+
+2249439 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtReplace(100,33) StmtDelete(262) StmtAppend(37,423) (stored at: variant309)
+2249505 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:945: error: cannot find symbol
+        while (skipReadCall || (currentByte = readOneByte()) > -1) {
+               ^
+  symbol:   variable skipReadCall
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:946: error: cannot find symbol
+            skipReadCall = false;
+            ^
+  symbol:   variable skipReadCall
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:955: error: cannot find symbol
+                skipReadCall = isFirstByteOfEocdSig(currentByte);
+                ^
+  symbol:   variable skipReadCall
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:963: error: cannot find symbol
+                skipReadCall = isFirstByteOfEocdSig(currentByte);
+                ^
+  symbol:   variable skipReadCall
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:971: error: cannot find symbol
+            skipReadCall = isFirstByteOfEocdSig(currentByte);
+            ^
+  symbol:   variable skipReadCall
+  location: class ZipArchiveInputStream
+5 errors
+
+2249505 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(76) StmtAppend(295,206) StmtAppend(401,220) at variant310 fails to compile
+
+2249505 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(76) StmtAppend(295,206) StmtAppend(401,220) (stored at: variant310)
+2347018 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 4.0 StmtDelete(167) StmtDelete(273) StmtReplace(423,277) (stored at: variant311)
+2350566 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 3.0 StmtReplace(425,91) StmtAppend(404,403) StmtAppend(80,395) StmtAppend(144,303) StmtDelete(36) (stored at: variant312)
+2350599 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:461: error: cannot find symbol
+            read = readStored(buffer, offset, length);
+            ^
+  symbol:   variable read
+  location: class ZipArchiveInputStream
+1 error
+
+2350599 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(447) StmtAppend(10,168) StmtDelete(33) StmtReplace(174,142) at variant313 fails to compile
+
+2350599 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(447) StmtAppend(10,168) StmtDelete(33) StmtReplace(174,142) (stored at: variant313)
+2352226 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 3.0 StmtDelete(151) StmtDelete(251) StmtAppend(322,206) StmtDelete(427) (stored at: variant314)
+2353233 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 3.0 StmtDelete(302) StmtAppend(285,255) StmtAppend(315,302) StmtReplace(404,87) StmtDelete(290) (stored at: variant315)
+2354741 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 4.0 StmtAppend(174,25) StmtReplace(425,91) StmtAppend(404,403) StmtReplace(394,448) StmtAppend(19,302) StmtReplace(306,302) (stored at: variant316)
+2354772 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:429: error: variable read might not have been initialized
+        if (read >= 0) {
+            ^
+1 error
+
+2354772 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(167) StmtDelete(273) StmtDelete(142) at variant317 fails to compile
+
+2354772 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(167) StmtDelete(273) StmtDelete(142) (stored at: variant317)
+2354809 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:265: error: cannot find symbol
+        final ZipEncoding entryEncoding = hasUTF8Flag ? ZipEncodingHelper.UTF8_ZIP_ENCODING : zipEncoding;
+                                          ^
+  symbol:   variable hasUTF8Flag
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:307: error: cannot find symbol
+        if (!hasUTF8Flag && useUnicodeExtraFields) {
+             ^
+  symbol:   variable hasUTF8Flag
+  location: class ZipArchiveInputStream
+2 errors
+
+2354810 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(43,395) StmtDelete(190) StmtDelete(45) at variant318 fails to compile
+
+2354810 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtAppend(43,395) StmtDelete(190) StmtDelete(45) (stored at: variant318)
+2354847 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:706: error: cannot find symbol
+				final long n = in.read(buf.array(), 0, (int) Math.min(buf.capacity(), remaining));
+				                                                                      ^
+  symbol:   variable remaining
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:711: error: cannot find symbol
+				remaining -= n;
+				^
+  symbol:   variable remaining
+  location: class ZipArchiveInputStream
+2 errors
+
+2354847 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(296,286) at variant319 fails to compile
+
+2354847 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtAppend(296,286) (stored at: variant319)
+2356662 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 3.0 StmtDelete(231) StmtAppend(43,395) StmtDelete(35) StmtAppend(257,323) (stored at: variant320)
+2356691 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:618: error: unreachable statement
+			{
+			^
+1 error
+
+2356691 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(258,303) at variant321 fails to compile
+
+2356691 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtAppend(258,303) (stored at: variant321)
+2358354 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 4.0 StmtDelete(257) StmtDelete(448) (stored at: variant322)
+2359993 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 3.0 StmtReplace(207,145) StmtDelete(273) StmtAppend(83,168) (stored at: variant323)
+2361488 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 3.0 StmtDelete(72) (stored at: variant324)
+2363123 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 4.0 StmtDelete(76) StmtAppend(295,206) StmtAppend(28,168) (stored at: variant325)
+2461798 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 4.0 StmtReplace(97,396) StmtDelete(167) StmtAppend(10,168) StmtDelete(33) StmtDelete(321) (stored at: variant326)
+2463488 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 4.0 StmtReplace(21,83) (stored at: variant327)
+2463549 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:452: error: cannot find symbol
+        if (read <= 0) {
+            ^
+  symbol:   variable read
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:458: error: cannot find symbol
+			} else if (read == -1) {
+			           ^
+  symbol:   variable read
+  location: class ZipArchiveInputStream
+2 errors
+
+2463549 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(174,25) StmtReplace(425,91) StmtDelete(190) StmtReplace(166,185) at variant328 fails to compile
+
+2463549 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtAppend(174,25) StmtReplace(425,91) StmtDelete(190) StmtReplace(166,185) (stored at: variant328)
+2463588 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:257: error: unreachable statement
+        final int versionMadeBy = ZipShort.getValue(LFH_BUF, off);
+                  ^
+1 error
+
+2463588 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(231) StmtReplace(394,448) StmtAppend(329,86) StmtReplace(40,37) at variant329 fails to compile
+
+2463588 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(231) StmtReplace(394,448) StmtAppend(329,86) StmtReplace(40,37) (stored at: variant329)
+2463624 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:566: error: cannot find symbol
+			if (length > 0) {
+			    ^
+  symbol:   variable length
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:567: error: cannot find symbol
+				buf.limit(length);
+				          ^
+  symbol:   variable length
+  location: class ZipArchiveInputStream
+2 errors
+
+2463624 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(144,303) StmtAppend(229,306) at variant330 fails to compile
+
+2463624 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtAppend(144,303) StmtAppend(229,306) (stored at: variant330)
+2463659 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:629: error: incompatible types: unexpected return value
+				return null;
+				       ^
+1 error
+
+2463659 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(425,91) StmtAppend(404,403) StmtAppend(404,403) StmtAppend(80,395) StmtAppend(144,303) StmtAppend(257,16) at variant331 fails to compile
+
+2463659 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtReplace(425,91) StmtAppend(404,403) StmtAppend(404,403) StmtAppend(80,395) StmtAppend(144,303) StmtAppend(257,16) (stored at: variant331)
+2464935 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 4.0 StmtAppend(174,25) StmtReplace(425,91) StmtDelete(262) StmtDelete(62) (stored at: variant332)
+2466334 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 4.0 StmtReplace(394,448) StmtAppend(19,302) StmtReplace(276,272) (stored at: variant333)
+2466370 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:686: error: cannot find symbol
+        while (remaining > 0) {
+               ^
+  symbol:   variable remaining
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:687: error: cannot find symbol
+            final long n = in.read(buf.array(), 0, (int) Math.min(buf.capacity(), remaining));
+                                                                                  ^
+  symbol:   variable remaining
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:693: error: cannot find symbol
+            remaining -= n;
+            ^
+  symbol:   variable remaining
+  location: class ZipArchiveInputStream
+3 errors
+
+2466370 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(174,25) StmtAppend(144,303) StmtAppend(284,126) at variant334 fails to compile
+
+2466371 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtAppend(174,25) StmtAppend(144,303) StmtAppend(284,126) (stored at: variant334)
+2466430 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:413: error: break outside switch or loop
+				break;
+				^
+1 error
+
+2466430 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(425,91) StmtAppend(404,403) StmtAppend(404,403) StmtReplace(394,448) StmtAppend(19,302) StmtAppend(132,420) at variant335 fails to compile
+
+2466430 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtReplace(425,91) StmtAppend(404,403) StmtAppend(404,403) StmtReplace(394,448) StmtAppend(19,302) StmtAppend(132,420) (stored at: variant335)
+2468201 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 4.0 StmtAppend(174,25) StmtReplace(404,87) StmtReplace(86,261) (stored at: variant336)
+2470016 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 4.0 StmtDelete(302) StmtAppend(285,255) StmtAppend(404,403) StmtReplace(394,448) StmtAppend(19,302) StmtReplace(268,126) (stored at: variant337)
+2470066 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:371: error: unreported exception IOException; must be caught or declared to be thrown
+					current.in = new BZip2CompressorInputStream(
+					             ^
+1 error
+
+2470066 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(316) StmtDelete(323) StmtDelete(258) StmtDelete(273) StmtAppend(111,85) at variant338 fails to compile
+
+2470066 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(316) StmtDelete(323) StmtDelete(258) StmtDelete(273) StmtAppend(111,85) (stored at: variant338)
+2472213 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 4.0 StmtDelete(395) (stored at: variant339)
+2472213 [main] INFO clegoues.genprog4java.Search.Search  - search: generation6
+2474697 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 4.0 StmtDelete(395) StmtReplace(319,448) (stored at: variant340)
+2667868 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 2.0 StmtDelete(410) StmtDelete(35) StmtDelete(109) StmtDelete(188) (stored at: variant341)
+2667919 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:170: error: variable zipEncoding might not have been initialized
+    }
+    ^
+1 error
+
+2667919 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(410) StmtReplace(202,278) StmtDelete(280) StmtDelete(1) at variant342 fails to compile
+
+2667919 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtDelete(410) StmtReplace(202,278) StmtDelete(280) StmtDelete(1) (stored at: variant342)
+2956814 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 3.0 StmtDelete(410) StmtDelete(35) StmtDelete(109) StmtDelete(202) (stored at: variant343)
+3053946 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 4.0 StmtDelete(167) StmtDelete(273) StmtReplace(423,277) StmtAppend(324,394) (stored at: variant344)
+3054001 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:334: error: cannot find symbol
+        while (remaining > 0) {
+               ^
+  symbol:   variable remaining
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:335: error: cannot find symbol
+			final long n = in.read(buf.array(), 0, (int) Math.min(buf.capacity(), remaining));
+			                                                                      ^
+  symbol:   variable remaining
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:340: error: cannot find symbol
+			remaining -= n;
+			^
+  symbol:   variable remaining
+  location: class ZipArchiveInputStream
+3 errors
+
+3054002 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(207,145) StmtReplace(402,12) StmtDelete(257) StmtDelete(195) StmtReplace(96,285) at variant345 fails to compile
+
+3054002 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtReplace(207,145) StmtReplace(402,12) StmtDelete(257) StmtDelete(195) StmtReplace(96,285) (stored at: variant345)
+3055549 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 4.0 StmtReplace(394,448) StmtAppend(19,302) StmtReplace(276,272) StmtAppend(254,448) (stored at: variant346)
+3058186 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 4.0 StmtAppend(174,25) StmtReplace(404,87) StmtReplace(86,261) StmtDelete(33) (stored at: variant347)
+3059012 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 3.0 StmtDelete(316) StmtDelete(323) StmtDelete(258) StmtDelete(403) StmtAppend(277,310) StmtAppend(407,307) (stored at: variant348)
+3347647 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 3.0 StmtDelete(410) StmtReplace(202,278) StmtDelete(280) StmtDelete(221) (stored at: variant349)
+3347679 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:450: error: cannot find symbol
+				current.crc.update(buffer, offset, read);
+				                                   ^
+  symbol:   variable read
+  location: class ZipArchiveInputStream
+1 error
+
+3347679 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(76) StmtAppend(295,206) StmtAppend(28,168) StmtAppend(157,152) at variant350 fails to compile
+
+3347679 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtDelete(76) StmtAppend(295,206) StmtAppend(28,168) StmtAppend(157,152) (stored at: variant350)
+3349380 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 3.0 StmtReplace(394,448) StmtAppend(19,302) StmtReplace(276,272) StmtAppend(314,276) (stored at: variant351)
+3351464 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 4.0 StmtAppend(174,25) StmtReplace(425,91) StmtAppend(404,403) StmtReplace(394,448) StmtAppend(19,302) StmtReplace(306,302) StmtDelete(76) (stored at: variant352)
+3351511 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:267: error: incompatible types: int cannot be converted to ZipArchiveEntry
+					return -1;
+					       ^
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:274: error: cannot find symbol
+        final ZipEncoding entryEncoding = hasUTF8Flag ? ZipEncodingHelper.UTF8_ZIP_ENCODING : zipEncoding;
+                                          ^
+  symbol:   variable hasUTF8Flag
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:316: error: cannot find symbol
+        if (!hasUTF8Flag && useUnicodeExtraFields) {
+             ^
+  symbol:   variable hasUTF8Flag
+  location: class ZipArchiveInputStream
+3 errors
+
+3351511 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(410) StmtDelete(35) StmtDelete(109) StmtAppend(45,166) at variant353 fails to compile
+
+3351511 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtDelete(410) StmtDelete(35) StmtDelete(109) StmtAppend(45,166) (stored at: variant353)
+3354058 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 4.0 StmtAppend(174,25) StmtReplace(425,91) StmtAppend(404,403) StmtReplace(394,448) StmtAppend(19,302) StmtReplace(306,302) StmtDelete(392) (stored at: variant354)
+3354094 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:619: error: incompatible types: unexpected return value
+			return null;
+			       ^
+1 error
+
+3354094 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(447) StmtAppend(10,168) StmtDelete(33) StmtDelete(194) StmtReplace(260,16) at variant355 fails to compile
+
+3354094 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtDelete(447) StmtAppend(10,168) StmtDelete(33) StmtDelete(194) StmtReplace(260,16) (stored at: variant355)
+3357385 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 4.0 StmtDelete(410) StmtDelete(35) StmtDelete(109) StmtDelete(89) (stored at: variant356)
+3359621 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 4.0 StmtAppend(174,25) StmtReplace(425,91) StmtAppend(404,403) StmtReplace(394,448) StmtAppend(19,302) StmtReplace(306,302) StmtAppend(280,280) (stored at: variant357)
+3552598 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 4.0 StmtDelete(410) StmtReplace(202,278) StmtDelete(280) StmtReplace(417,275) (stored at: variant358)
+3557494 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 4.0 StmtDelete(447) StmtAppend(10,168) StmtDelete(33) StmtReplace(96,254) StmtReplace(191,84) (stored at: variant359)
+3560280 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 4.0 StmtAppend(174,25) StmtReplace(404,87) StmtReplace(86,261) StmtDelete(431) (stored at: variant360)
+3563441 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 3.0 StmtDelete(316) StmtDelete(323) StmtDelete(258) StmtDelete(403) StmtAppend(277,310) StmtReplace(181,20) (stored at: variant361)
+3563487 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:507: error: cannot find symbol
+                if (l > 0) {
+                    ^
+  symbol:   variable l
+  location: class ZipArchiveInputStream
+org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:509: error: cannot find symbol
+                } else if (l == -1) {
+                           ^
+  symbol:   variable l
+  location: class ZipArchiveInputStream
+2 errors
+
+3563487 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(257) StmtDelete(448) StmtAppend(203,25) at variant362 fails to compile
+
+3563487 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtDelete(257) StmtDelete(448) StmtAppend(203,25) (stored at: variant362)
+3563540 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java:426: error: break outside switch or loop
+					break;
+					^
+1 error
+
+3563540 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(425,91) StmtAppend(404,403) StmtAppend(80,395) StmtAppend(144,303) StmtReplace(194,86) StmtAppend(137,202) at variant363 fails to compile
+
+3563540 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtReplace(425,91) StmtAppend(404,403) StmtAppend(80,395) StmtAppend(144,303) StmtReplace(194,86) StmtAppend(137,202) (stored at: variant363)

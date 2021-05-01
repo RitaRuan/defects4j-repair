@@ -1,0 +1,24 @@
+1 Replace /home/ubuntu/rtx/d4j/Jsoup/90b/src/main/java/org/jsoup/helper/HttpConnection.java 426
+Faulty:
+i++;
+Seed:
+if ((o & 0x80) == 0) {
+  continue;
+}
+**************************************************
+2 Delete /home/ubuntu/rtx/d4j/Jsoup/90b/src/main/java/org/jsoup/helper/HttpConnection.java 409
+Faulty:
+if ((o & 0x80) == 0) {
+  continue;
+}
+Seed:
+addHeader("Accept-Encoding","gzip");
+**************************************************
+3 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/90b/src/main/java/org/jsoup/helper/HttpConnection.java 426
+Faulty:
+i++;
+Seed:
+boolean fullyRead=false;
+**************************************************
+Evaluations: 955
+EstimatedTime: 860590

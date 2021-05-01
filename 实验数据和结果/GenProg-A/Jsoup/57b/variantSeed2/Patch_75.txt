@@ -1,0 +1,14 @@
+1 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/57b/src/main/java/org/jsoup/nodes/Attributes.java 124
+Faulty:
+if (attrKey.equalsIgnoreCase(key)) attributes.remove(attrKey);
+Seed:
+attributes=new LinkedHashMap<String,Attribute>(2);
+**************************************************
+2 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/57b/src/main/java/org/jsoup/nodes/Node.java 127
+Faulty:
+Validate.notNull(attributeKey);
+Seed:
+List<TextNode> textNodes=new ArrayList<TextNode>();
+**************************************************
+Evaluations: 103
+EstimatedTime: 89077

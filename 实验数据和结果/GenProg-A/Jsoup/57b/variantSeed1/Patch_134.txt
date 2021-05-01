@@ -1,0 +1,21 @@
+1 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/57b/src/main/java/org/jsoup/parser/Token.java 109
+Faulty:
+if (hasEmptyAttributeValue) attribute=new Attribute(pendingAttributeName,"");
+ else attribute=new BooleanAttribute(pendingAttributeName);
+Seed:
+int depth=0;
+**************************************************
+2 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/57b/src/main/java/org/jsoup/nodes/Attributes.java 123
+Faulty:
+String attrKey=it.next();
+Seed:
+attributes=new LinkedHashMap<String,Attribute>(2);
+**************************************************
+3 Delete /home/ubuntu/rtx/d4j/Jsoup/57b/src/main/java/org/jsoup/nodes/Node.java 127
+Faulty:
+Validate.notNull(attributeKey);
+Seed:
+attributes.removeIgnoreCase(attributeKey);
+**************************************************
+Evaluations: 200
+EstimatedTime: 164135

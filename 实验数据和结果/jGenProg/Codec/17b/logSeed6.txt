@@ -1,0 +1,90 @@
+Astor Output:
+
+General stats:
+EXECUTION_IDENTIFIER=
+TOTAL_TIME=21.016
+NR_GENERATIONS=98
+NR_RIGHT_COMPILATIONS=3
+NR_FAILLING_COMPILATIONS=5
+NR_ERRONEOUS_VARIANCES=null
+NR_FAILING_VALIDATION_PROCESS=null
+OUTPUT_STATUS=STOP_BY_PATCH_FOUND
+
+Patch stats:
+
+Patch 1
+VARIANT_ID=196
+TIME=21
+VALIDATION=|true|0|849|[]|
+GENERATION=98
+FOLDER_SOLUTION_CODE=/home/rtx/repair/d4j/Codec/17b/jgenprog/variantSeed6/AstorMain-17b//src//variant-196
+--Patch Hunk #1
+OPERATOR=ReplaceOp
+
+LOCATION=org.apache.commons.codec.binary.StringUtils
+
+PATH=/home/rtx/repair/d4j/Codec/17b/src/main/java/org/apache/commons/codec/binary/StringUtils.java
+
+MODIFIED_FILE_PATH=/home/rtx/repair/d4j/Codec/17b/jgenprog/variantSeed6/AstorMain-17b//src//variant-196/org/apache/commons/codec/binary/StringUtils.java
+
+LINE=339
+
+SUSPICIOUNESS=0.707
+
+MP_RANKING=0
+
+ORIGINAL_CODE=return new java.lang.String(bytes, org.apache.commons.codec.Charsets.ISO_8859_1)
+
+BUGGY_CODE_TYPE=CtReturnImpl|CtBlockImpl
+
+PATCH_HUNK_CODE=return org.apache.commons.codec.binary.StringUtils.newString(bytes, org.apache.commons.codec.Charsets.UTF_8)
+
+PATCH_HUNK_TYPE=CtReturnImpl|CtBlockImpl
+
+INGREDIENT_SCOPE=LOCAL
+
+INGREDIENT_PARENT=return org.apache.commons.codec.binary.StringUtils.newString(bytes, org.apache.commons.codec.Charsets.UTF_8)
+
+PATCH_DIFF_ORIG=--- /home/rtx/repair/d4j/Codec/17b/src/main/java/org/apache/commons/codec/binary/StringUtils.java
++++ /home/rtx/repair/d4j/Codec/17b/src/main/java/org/apache/commons/codec/binary/StringUtils.java
+@@ -339,2 +338,0 @@
+-		return new java.lang.String(bytes, org.apache.commons.codec.Charsets.ISO_8859_1);
+-	}
+@@ -354,3 +351,0 @@
+-	public static java.lang.String newStringUsAscii(final byte[] bytes) {
+-		return org.apache.commons.codec.binary.StringUtils.newString(bytes, org.apache.commons.codec.Charsets.US_ASCII);
+-	}
+@@ -370,3 +364,0 @@
+-	public static java.lang.String newStringUtf16(final byte[] bytes) {
+-		return org.apache.commons.codec.binary.StringUtils.newString(bytes, org.apache.commons.codec.Charsets.UTF_16);
+-	}
+@@ -386,3 +377,0 @@
+-	public static java.lang.String newStringUtf16Be(final byte[] bytes) {
+-		return org.apache.commons.codec.binary.StringUtils.newString(bytes, org.apache.commons.codec.Charsets.UTF_16BE);
+-	}
+@@ -402,3 +390,0 @@
+-	public static java.lang.String newStringUtf16Le(final byte[] bytes) {
+-		return org.apache.commons.codec.binary.StringUtils.newString(bytes, org.apache.commons.codec.Charsets.UTF_16LE);
+-	}
+@@ -418,2 +404,16 @@
+-	public static java.lang.String newStringUtf8(final byte[] bytes) {
+-		return org.apache.commons.codec.binary.StringUtils.newString(bytes, org.apache.commons.codec.Charsets.UTF_8);
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++		return org.apache.commons.codec.binary.StringUtils.newString(bytes, org.apache.commons.codec.Charsets.UTF_8);} 	public static java.lang.String newStringUsAscii(final byte[] bytes) { 		return org.apache.commons.codec.binary.StringUtils.newString(bytes, org.apache.commons.codec.Charsets.US_ASCII);} 	public static java.lang.String newStringUtf16(final byte[] bytes) { 		return org.apache.commons.codec.binary.StringUtils.newString(bytes, org.apache.commons.codec.Charsets.UTF_16);} 	public static java.lang.String newStringUtf16Be(final byte[] bytes) { 		return org.apache.commons.codec.binary.StringUtils.newString(bytes, org.apache.commons.codec.Charsets.UTF_16BE);} 	public static java.lang.String newStringUtf16Le(final byte[] bytes) { 		return org.apache.commons.codec.binary.StringUtils.newString(bytes, org.apache.commons.codec.Charsets.UTF_16LE);} 	public static java.lang.String newStringUtf8(final byte[] bytes) { 		return org.apache.commons.codec.binary.StringUtils.newString(bytes, org.apache.commons.codec.Charsets.UTF_8);
+
+
+

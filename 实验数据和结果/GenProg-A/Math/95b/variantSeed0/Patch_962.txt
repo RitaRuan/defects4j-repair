@@ -1,0 +1,22 @@
+1 Replace /home/ubuntu/rtx/d4j/Math/95b/src/java/org/apache/commons/math/distribution/FDistributionImpl.java 148
+Faulty:
+return ret;
+Seed:
+return 0;
+**************************************************
+2 InsertBefore /home/ubuntu/rtx/d4j/Math/95b/src/java/org/apache/commons/math/distribution/AbstractContinuousDistribution.java 81
+Faulty:
+double upperBound=getDomainUpperBound(p);
+Seed:
+if (p == 1) {
+  return Integer.MAX_VALUE;
+}
+**************************************************
+3 InsertBefore /home/ubuntu/rtx/d4j/Math/95b/src/java/org/apache/commons/math/distribution/FDistributionImpl.java 76
+Faulty:
+double m=getDenominatorDegreesOfFreedom();
+Seed:
+ret=0.0;
+**************************************************
+Evaluations: 1291
+EstimatedTime: 579553

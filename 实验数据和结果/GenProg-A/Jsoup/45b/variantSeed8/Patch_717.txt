@@ -1,0 +1,67 @@
+1 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/45b/src/main/java/org/jsoup/parser/HtmlTreeBuilder.java 421
+Faulty:
+if ("html".equals(name)) {
+  transition(HtmlTreeBuilderState.BeforeHead);
+  break;
+}
+ else if (last) {
+  transition(HtmlTreeBuilderState.InBody);
+  break;
+}
+Seed:
+boolean looksLegit=reader.matches(';');
+**************************************************
+2 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/45b/src/main/java/org/jsoup/parser/HtmlTreeBuilder.java 424
+Faulty:
+if (last) {
+  transition(HtmlTreeBuilderState.InBody);
+  break;
+}
+Seed:
+int start=pos;
+**************************************************
+3 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/45b/src/main/java/org/jsoup/parser/HtmlTreeBuilder.java 421
+Faulty:
+if ("html".equals(name)) {
+  transition(HtmlTreeBuilderState.BeforeHead);
+  break;
+}
+ else if (last) {
+  transition(HtmlTreeBuilderState.InBody);
+  break;
+}
+Seed:
+int size=stack.size();
+**************************************************
+4 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/45b/src/main/java/org/jsoup/parser/HtmlTreeBuilder.java 131
+Faulty:
+return originalState;
+Seed:
+int end=-1;
+**************************************************
+5 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/45b/src/main/java/org/jsoup/parser/HtmlTreeBuilder.java 634
+Faulty:
+Element el=removeLastFormattingElement();
+Seed:
+this.baseUri=baseUri;
+**************************************************
+6 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/45b/src/main/java/org/jsoup/parser/HtmlTreeBuilder.java 562
+Faulty:
+return formattingElements.remove(size - 1);
+Seed:
+this.formElement=formElement;
+**************************************************
+7 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/45b/src/main/java/org/jsoup/nodes/Element.java 201
+Faulty:
+List<Element> elements=new ArrayList<Element>(childNodes.size());
+Seed:
+boolean lastWasWhite=false;
+**************************************************
+8 Replace /home/ubuntu/rtx/d4j/Jsoup/45b/src/main/java/org/jsoup/parser/HtmlTreeBuilder.java 398
+Faulty:
+transition(HtmlTreeBuilderState.InRow);
+Seed:
+state=HtmlTreeBuilderState.Initial;
+**************************************************
+Evaluations: 987
+EstimatedTime: 1139498

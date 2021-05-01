@@ -1,0 +1,77 @@
+1 Delete /home/ubuntu/rtx/d4j/Jsoup/57b/src/main/java/org/jsoup/nodes/Attributes.java 119
+Faulty:
+Validate.notEmpty(key);
+Seed:
+empty();
+**************************************************
+2 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/57b/src/main/java/org/jsoup/nodes/Attributes.java 119
+Faulty:
+Validate.notEmpty(key);
+Seed:
+boolean inClass=false;
+**************************************************
+3 Replace /home/ubuntu/rtx/d4j/Jsoup/57b/src/main/java/org/jsoup/nodes/Attributes.java 123
+Faulty:
+String attrKey=it.next();
+Seed:
+Node node=childNodes().get(0);
+**************************************************
+4 Replace /home/ubuntu/rtx/d4j/Jsoup/57b/src/main/java/org/jsoup/nodes/Attributes.java 122
+Faulty:
+for (Iterator<String> it=attributes.keySet().iterator(); it.hasNext(); ) {
+  String attrKey=it.next();
+  if (attrKey.equalsIgnoreCase(key))   attributes.remove(attrKey);
+}
+Seed:
+remove(key);
+**************************************************
+5 Delete /home/ubuntu/rtx/d4j/Jsoup/57b/src/main/java/org/jsoup/nodes/Attributes.java 119
+Faulty:
+Validate.notEmpty(key);
+Seed:
+empty();
+**************************************************
+6 Delete /home/ubuntu/rtx/d4j/Jsoup/57b/src/main/java/org/jsoup/nodes/Node.java 127
+Faulty:
+Validate.notNull(attributeKey);
+Seed:
+parentNode.removeChild(this);
+**************************************************
+7 Replace /home/ubuntu/rtx/d4j/Jsoup/57b/src/main/java/org/jsoup/nodes/Attributes.java 122
+Faulty:
+for (Iterator<String> it=attributes.keySet().iterator(); it.hasNext(); ) {
+  String attrKey=it.next();
+  if (attrKey.equalsIgnoreCase(key))   attributes.remove(attrKey);
+}
+Seed:
+remove(key);
+**************************************************
+8 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/57b/src/main/java/org/jsoup/nodes/Node.java 128
+Faulty:
+attributes.removeIgnoreCase(attributeKey);
+Seed:
+int i=0;
+**************************************************
+9 Replace /home/ubuntu/rtx/d4j/Jsoup/57b/src/main/java/org/jsoup/nodes/Attributes.java 122
+Faulty:
+for (Iterator<String> it=attributes.keySet().iterator(); it.hasNext(); ) {
+  String attrKey=it.next();
+  if (attrKey.equalsIgnoreCase(key))   attributes.remove(attrKey);
+}
+Seed:
+remove(key);
+**************************************************
+10 Delete /home/ubuntu/rtx/d4j/Jsoup/57b/src/main/java/org/jsoup/nodes/Attributes.java 120
+Faulty:
+if (attributes == null) return;
+Seed:
+return "#document";
+**************************************************
+11 Replace /home/ubuntu/rtx/d4j/Jsoup/57b/src/main/java/org/jsoup/nodes/Attributes.java 123
+Faulty:
+String attrKey=it.next();
+Seed:
+OutputSettings.Syntax syntax=outputSettings().syntax();
+**************************************************
+Evaluations: 391
+EstimatedTime: 346066

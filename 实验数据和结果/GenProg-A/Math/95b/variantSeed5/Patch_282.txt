@@ -1,0 +1,14 @@
+1 Replace /home/ubuntu/rtx/d4j/Math/95b/src/java/org/apache/commons/math/distribution/FDistributionImpl.java 148
+Faulty:
+return ret;
+Seed:
+return 1;
+**************************************************
+2 InsertBefore /home/ubuntu/rtx/d4j/Math/95b/src/java/org/apache/commons/math/distribution/FDistributionImpl.java 78
+Faulty:
+ret=Beta.regularizedBeta((n * x) / (m + n * x),0.5 * n,0.5 * m);
+Seed:
+ret=-Double.MAX_VALUE;
+**************************************************
+Evaluations: 378
+EstimatedTime: 211831

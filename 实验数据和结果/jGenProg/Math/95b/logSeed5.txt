@@ -1,0 +1,72 @@
+Astor Output:
+
+General stats:
+EXECUTION_IDENTIFIER=
+TOTAL_TIME=220.476
+NR_GENERATIONS=30
+NR_RIGHT_COMPILATIONS=16
+NR_FAILLING_COMPILATIONS=14
+NR_ERRONEOUS_VARIANCES=null
+NR_FAILING_VALIDATION_PROCESS=null
+OUTPUT_STATUS=STOP_BY_PATCH_FOUND
+
+Patch stats:
+
+Patch 1
+VARIANT_ID=60
+TIME=220
+VALIDATION=|true|0|1304|[]|
+GENERATION=30
+FOLDER_SOLUTION_CODE=/home/rtx/repair/d4j/Math/95b/jgenprog/variantSeed5/AstorMain-95b//src//variant-60
+--Patch Hunk #1
+OPERATOR=ReplaceOp
+
+LOCATION=org.apache.commons.math.distribution.FDistributionImpl
+
+PATH=/home/rtx/repair/d4j/Math/95b/src/java/org/apache/commons/math/distribution/FDistributionImpl.java
+
+MODIFIED_FILE_PATH=/home/rtx/repair/d4j/Math/95b/jgenprog/variantSeed5/AstorMain-95b//src//variant-60/org/apache/commons/math/distribution/FDistributionImpl.java
+
+LINE=148
+
+SUSPICIOUNESS=0.258
+
+MP_RANKING=5
+
+ORIGINAL_CODE=return ret
+
+BUGGY_CODE_TYPE=CtReturnImpl|CtBlockImpl
+
+PATCH_HUNK_CODE=return p
+
+PATCH_HUNK_TYPE=CtReturnImpl|CtBlockImpl
+
+INGREDIENT_SCOPE=PACKAGE
+
+INGREDIENT_PARENT=return p
+
+PATCH_DIFF_ORIG=--- /home/rtx/repair/d4j/Math/95b/src/java/org/apache/commons/math/distribution/FDistributionImpl.java
++++ /home/rtx/repair/d4j/Math/95b/src/java/org/apache/commons/math/distribution/FDistributionImpl.java
+@@ -148,2 +147,0 @@
+-		return ret;
+-	}
+@@ -157,7 +155,9 @@
+-	public void setNumeratorDegreesOfFreedom(double degreesOfFreedom) {
+-		if (degreesOfFreedom <= 0.0) {
+-			throw new java.lang.IllegalArgumentException(
+-			"degrees of freedom must be positive.");
+-		}
+-		this.numeratorDegreesOfFreedom = degreesOfFreedom;
+-	}
++
++
++
++
++
++
++
++
++		return p;} 	public void setNumeratorDegreesOfFreedom(double degreesOfFreedom) { 		if (degreesOfFreedom <= 0.0) { 			throw new java.lang.IllegalArgumentException("degrees of freedom must be positive.");} 		this.numeratorDegreesOfFreedom = degreesOfFreedom;}
+
+
+

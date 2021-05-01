@@ -1,0 +1,20 @@
+1 Replace /home/ubuntu/rtx/d4j/Math/103b/src/java/org/apache/commons/math/special/Gamma.java 180
+Faulty:
+throw new MaxIterationsExceededException(maxIterations);
+Seed:
+ret=1.0;
+**************************************************
+2 InsertBefore /home/ubuntu/rtx/d4j/Math/103b/src/java/org/apache/commons/math/special/Erf.java 56
+Faulty:
+double ret=Gamma.regularizedGammaP(0.5,x * x,1.0e-15,10000);
+Seed:
+double g=607.0 / 128.0;
+**************************************************
+3 InsertBefore /home/ubuntu/rtx/d4j/Math/103b/src/java/org/apache/commons/math/special/Erf.java 60
+Faulty:
+return ret;
+Seed:
+double sum=0.0;
+**************************************************
+Evaluations: 934
+EstimatedTime: 540860

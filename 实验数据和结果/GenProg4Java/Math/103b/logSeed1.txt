@@ -1,0 +1,2314 @@
+1 [main] DEBUG clegoues.genprog4java.fitness.Fitness  - parsing granularity, value: class
+31 [main] DEBUG clegoues.genprog4java.fitness.Fitness  - parsing granularity, value: class
+#Sat Mar 13 08:20:30 CST 2021
+negativeTestWeight=2.0
+classSourceFolder=/home/rtx/repair/d4j/Math/103b/target/classes
+model=default
+sampleStrategy=variant
+srcClassPath=/home/rtx/repair/d4j/Math/103b/target/classes
+sourceVersion=1.8
+popsize=40
+regenPaths=false
+posCoverageFile=coverage.path.pos
+continue=false
+edits=APPEND;DELETE;REPLACE
+negCoverageFile=coverage.path.neg
+workingDir=/home/rtx/repair/d4j/Math/103b/
+clearTestCache=false
+skipFailedSanity=false
+sample=0.1 
+oracleGenome=
+testGranularity=class
+justTestingFaultLoc=false
+faultLocStrategy=standardPathFile
+crossp=0.5
+pMutation=1
+generations=10
+positiveTests=/home/rtx/repair/d4j/Math/103b/pos.tests
+javaVM=/home/rtx/java/jdk1.8.0_271/jre/bin/java
+seed=1
+negativePathWeight=0.35
+compileCommand=
+fixStrategy=classScope
+allowCoverageFail=false
+targetClassName=/home/rtx/repair/d4j/Math/103b/bugfiles.txt
+javaRuntime=java.lang.Runtime@6576fe71
+classTestFolder=
+modelPath=OVERALLModel.txt
+sanity=yes
+positivePathWeight=0.65
+jacocoPath=/home/rtx/eclipse-workspace/genprog4java/lib/jacocoagent.jar
+negativeTests=/home/rtx/repair/d4j/Math/103b/neg.tests
+pathToFileHumanInjectedFaultLoc=fileHumanInjectedFaultLoc.txt
+outputDir=/home/rtx/repair/d4j/Math/103b/genprog4java/variantSeed1/
+testClassPath=/home/rtx/repair/d4j/Math/103b/target/test-classes\:/home/rtx/repair/d4j/Math/103b/target/classes\:/home/rtx/repair/defects4j/framework/projects/lib/junit-4.11.jar
+faultStrategy=classScope
+sourceDir=src/java
+checkSpace=false
+search=gp
+globalExtension=.java
+faultSpaceSubSet=1/5
+maxVariants=50
+libs=/home/rtx/eclipse-workspace/genprog4java/lib/junittestrunner.jar\:/home/rtx/eclipse-workspace/genprog4java/lib/commons-cli-20040117.000000.jar\:/home/rtx/eclipse-workspace/genprog4java/lib/junit-4.12.jar\:/home/rtx/eclipse-workspace/genprog4java/lib/hamcrest-core-1.3.jar\:/home/rtx/eclipse-workspace/genprog4java/lib/log4j-1.2.17.jar\:/home/rtx/repair/d4j/Math/103b/target/test-classes\:/home/rtx/repair/d4j/Math/103b/target/classes\:/home/rtx/repair/defects4j/framework/projects/lib/junit-4.11.jar\:/home/rtx/repair/d4j/Math/103b/target/classes
+crossover=onepoint
+135 [main] INFO clegoues.genprog4java.main.Main  - Configuration file loaded
+Deserialized fitnessCache HashMap
+4986 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - loaded from source clegoues.genprog4java.java.ClassInfo@123326da
+4986 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - sanity checking begins
+5461 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 1 out of 1
+5720 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+5721 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - 	n1: 
+5966 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - false (0)
+
+5967 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - sanity checking completed (time taken = 981)
+5967 [main] INFO clegoues.genprog4java.localization.DefaultLocalization  - Start Fault Localization
+5977 [main] INFO clegoues.genprog4java.localization.DefaultLocalization  - Finish Fault Localization
+5978 [main] INFO clegoues.genprog4java.Search.Search  - search: genetic algorithm begins
+
+6003 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 original (stored at: )
+6125 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtDelete(37) (stored at: )
+6375 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtReplace(14,2) (stored at: variant0)
+6600 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtReplace(50,49) (stored at: variant1)
+6648 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:198: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+6649 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(49) at variant2 fails to compile
+
+6649 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtDelete(49) (stored at: variant2)
+6651 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtDelete(13) (stored at: )
+6685 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:176: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+6685 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(38) at variant3 fails to compile
+
+6685 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtDelete(38) (stored at: variant3)
+6913 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtAppend(16,14) (stored at: variant4)
+7124 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtAppend(41,25) (stored at: variant5)
+7161 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:182: error: unreachable statement
+        return ret;
+        ^
+1 error
+
+7161 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(37,24) at variant6 fails to compile
+
+7161 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtAppend(37,24) (stored at: variant6)
+7164 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtDelete(24) (stored at: )
+7167 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtAppend(29,2) (stored at: )
+7169 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtAppend(5,9) (stored at: )
+7380 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtAppend(50,21) (stored at: variant7)
+7672 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtDelete(9) (stored at: variant8)
+7711 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:194: error: unreported exception MathException; must be caught or declared to be thrown
+				return super.inverseCumulativeProbability(p);
+				                                         ^
+1 error
+
+7712 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(47,26) at variant9 fails to compile
+
+7712 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtAppend(47,26) (stored at: variant9)
+7991 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtAppend(30,38) (stored at: variant10)
+7993 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtDelete(9) (stored at: )
+8311 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtDelete(14) (stored at: variant11)
+8639 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtReplace(29,30) (stored at: variant12)
+8924 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtDelete(21) (stored at: variant13)
+9214 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtAppend(50,7) (stored at: variant14)
+9222 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtDelete(24) (stored at: )
+9226 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtReplace(39,9) (stored at: )
+9465 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtAppend(39,50) (stored at: variant15)
+9685 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtReplace(41,7) (stored at: variant16)
+9906 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtAppend(30,33) (stored at: variant17)
+10075 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtReplace(9,15) (stored at: variant18)
+10258 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtReplace(22,14) (stored at: variant19)
+10500 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtDelete(3) (stored at: variant20)
+10502 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtDelete(3) (stored at: )
+10522 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:137: error: missing return statement
+    }
+    ^
+1 error
+
+10522 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(26) at variant21 fails to compile
+
+10522 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtDelete(26) (stored at: variant21)
+10801 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtAppend(33,30) (stored at: variant22)
+10803 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtDelete(45) (stored at: )
+10825 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:94: error: unreachable statement
+        standardDeviation = sd;
+        ^
+1 error
+
+10825 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(13,15) at variant23 fails to compile
+
+10825 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtReplace(13,15) (stored at: variant23)
+10827 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtAppend(16,14) (stored at: )
+11108 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtAppend(47,23) (stored at: variant24)
+11128 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:193: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+11128 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(45,9) at variant25 fails to compile
+
+11128 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtReplace(45,9) (stored at: variant25)
+11131 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtDelete(38) (stored at: )
+11133 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtDelete(2) (stored at: )
+11133 [main] INFO clegoues.genprog4java.Search.Search  - search: generation1
+11178 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:174: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+11221 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:61: error: call to this must be first statement in constructor
+			this(0.0, 1.0);
+			    ^
+1 error
+
+11314 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:177: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+11357 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:194: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+12029 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(9) StmtAppend(39,41) (stored at: variant26)
+12303 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(3) StmtReplace(50,11) (stored at: variant27)
+12343 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:61: error: call to this must be first statement in constructor
+			this(0.0, 1.0);
+			    ^
+1 error
+
+12343 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(5,14) at variant28 fails to compile
+
+12343 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(5,14) (stored at: variant28)
+12634 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(41,25) StmtReplace(25,2) (stored at: variant29)
+12654 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:94: error: unreachable statement
+        standardDeviation = sd;
+        ^
+1 error
+
+12655 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(13,15) StmtReplace(48,46) at variant30 fails to compile
+
+12655 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(13,15) StmtReplace(48,46) (stored at: variant30)
+12916 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(50,7) StmtReplace(26,7) (stored at: variant31)
+13179 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(22,14) StmtReplace(2,13) (stored at: variant32)
+13181 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(9) StmtAppend(9,2) (stored at: )
+13201 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:196: error: unreachable statement
+        return ret;
+        ^
+1 error
+
+13201 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(9) StmtReplace(45,21) at variant33 fails to compile
+
+13201 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(9) StmtReplace(45,21) (stored at: variant33)
+13224 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:101: error: unreachable statement
+        standardDeviation = sd;
+        ^
+org/apache/commons/math/distribution/NormalDistributionImpl.java:180: error: variable ret might not have been initialized
+        return ret;
+               ^
+2 errors
+
+13224 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(38) StmtAppend(13,14) at variant34 fails to compile
+
+13225 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(38) StmtAppend(13,14) (stored at: variant34)
+13515 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(22,14) StmtDelete(2) (stored at: variant35)
+13534 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:53: error: unreachable statement
+        setMean(mean);
+        ^
+1 error
+
+13534 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(50,7) StmtReplace(1,14) at variant36 fails to compile
+
+13534 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(50,7) StmtReplace(1,14) (stored at: variant36)
+13875 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(24) StmtReplace(3,16) (stored at: variant37)
+14124 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(16,14) StmtAppend(9,14) (stored at: variant38)
+14142 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:178: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+14142 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(47,23) StmtDelete(41) at variant39 fails to compile
+
+14143 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(47,23) StmtDelete(41) (stored at: variant39)
+14419 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(41,7) StmtDelete(2) (stored at: variant40)
+14693 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(30,33) StmtDelete(25) (stored at: variant41)
+14952 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(3) StmtAppend(33,23) (stored at: variant42)
+15236 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(13) StmtDelete(1) (stored at: variant43)
+15252 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:181: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+15252 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(38) StmtAppend(41,23) at variant44 fails to compile
+
+15252 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(38) StmtAppend(41,23) (stored at: variant44)
+15552 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(50,49) StmtDelete(14) (stored at: variant45)
+15838 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(29,30) StmtReplace(14,3) (stored at: variant46)
+16073 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(9,15) StmtAppend(50,2) (stored at: variant47)
+16334 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(21) StmtAppend(2,3) (stored at: variant48)
+16382 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:198: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+16382 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(14,2) StmtDelete(50) at variant49 fails to compile
+
+16382 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(14,2) StmtDelete(50) (stored at: variant49)
+16649 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(14) StmtReplace(1,3) (stored at: variant50)
+16667 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:172: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+16668 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(14,2) StmtDelete(37) at variant51 fails to compile
+
+16668 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(14,2) StmtDelete(37) (stored at: variant51)
+16946 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(38,49) (stored at: variant52)
+17259 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(14,2) StmtReplace(1,13) (stored at: variant53)
+17276 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:94: error: unreachable statement
+        standardDeviation = sd;
+        ^
+1 error
+
+17276 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(13,15) StmtAppend(49,50) at variant54 fails to compile
+
+17276 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(13,15) StmtAppend(49,50) (stored at: variant54)
+17545 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(3) StmtReplace(9,14) (stored at: variant55)
+17818 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(14) StmtReplace(30,46) (stored at: variant56)
+17832 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:135: error: unreachable statement
+        if (p == 1) {
+        ^
+1 error
+
+17833 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(13) StmtAppend(20,14) at variant57 fails to compile
+
+17833 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(13) StmtAppend(20,14) (stored at: variant57)
+18065 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(29,2) StmtAppend(37,31) (stored at: variant58)
+18083 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:98: error: incompatible types: unexpected return value
+			return Double.NEGATIVE_INFINITY;
+			             ^
+1 error
+
+18083 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(24) StmtReplace(16,21) at variant59 fails to compile
+
+18083 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(24) StmtReplace(16,21) (stored at: variant59)
+18333 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(16,14) StmtAppend(2,13) (stored at: variant60)
+18594 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(41,7) StmtDelete(9) (stored at: variant61)
+18628 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:203: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+18629 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(50,21) StmtDelete(46) at variant62 fails to compile
+
+18629 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(50,21) StmtDelete(46) (stored at: variant62)
+18915 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(16,14) StmtDelete(15) (stored at: variant63)
+18932 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:179: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+18932 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(50,21) StmtReplace(41,23) at variant64 fails to compile
+
+18932 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(50,21) StmtReplace(41,23) (stored at: variant64)
+19207 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(41,23) (stored at: variant65)
+19493 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(50,23) (stored at: variant66)
+19512 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:133: error: unreachable statement
+			this.mean = mean;
+			^
+1 error
+
+19512 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(21,9) at variant67 fails to compile
+
+19512 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(21,9) (stored at: variant67)
+19769 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(47,41) (stored at: variant68)
+19770 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(15) (stored at: )
+20000 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(5,9) (stored at: variant69)
+20227 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(24,9) (stored at: variant70)
+20228 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(5) (stored at: )
+20229 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(23) (stored at: )
+20480 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(45,48) (stored at: variant71)
+20482 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(1) (stored at: )
+20777 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(2,16) (stored at: variant72)
+20780 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(26) (stored at: )
+20783 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(46) (stored at: )
+20786 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(2) (stored at: )
+20804 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:135: error: unreachable statement
+        return super.inverseCumulativeProbability(p);
+        ^
+1 error
+
+20804 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(23,24) at variant73 fails to compile
+
+20804 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(23,24) (stored at: variant73)
+21091 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(49,2) (stored at: variant74)
+21321 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(48,41) (stored at: variant75)
+21322 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(25) (stored at: )
+21558 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(20,2) (stored at: variant76)
+21805 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(47,38) (stored at: variant77)
+21815 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:135: error: unreachable statement
+        return super.inverseCumulativeProbability(p);
+        ^
+1 error
+
+21815 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(23,21) at variant78 fails to compile
+
+21815 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(23,21) (stored at: variant78)
+21815 [main] INFO clegoues.genprog4java.Search.Search  - search: generation2
+21926 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:137: error: missing return statement
+    }
+    ^
+1 error
+
+22639 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(2,16) StmtReplace(29,49) (stored at: variant79)
+22659 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:196: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+22660 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(20,2) StmtDelete(49) at variant80 fails to compile
+
+22660 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(20,2) StmtDelete(49) (stored at: variant80)
+22921 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(3) StmtReplace(9,14) StmtDelete(14) (stored at: variant81)
+23178 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtAppend(50,23) StmtDelete(21) (stored at: variant82)
+23437 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtAppend(41,25) StmtReplace(25,2) StmtDelete(5) (stored at: variant83)
+23698 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(41,7) StmtDelete(2) StmtDelete(13) (stored at: variant84)
+23938 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(25) StmtReplace(16,15) (stored at: variant85)
+24213 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(15) StmtDelete(2) (stored at: variant86)
+24449 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(3) StmtReplace(9,14) StmtReplace(29,48) (stored at: variant87)
+24463 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:175: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+24463 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(41,7) StmtDelete(9) StmtDelete(37) at variant88 fails to compile
+
+24463 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(41,7) StmtDelete(9) StmtDelete(37) (stored at: variant88)
+24480 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:101: error: unreachable statement
+        standardDeviation = sd;
+        ^
+org/apache/commons/math/distribution/NormalDistributionImpl.java:180: error: variable ret might not have been initialized
+        return ret;
+               ^
+org/apache/commons/math/distribution/NormalDistributionImpl.java:199: error: variable ret might not have been initialized
+        return ret;
+               ^
+3 errors
+
+24480 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(38) StmtAppend(13,14) StmtDelete(48) at variant89 fails to compile
+
+24481 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(38) StmtAppend(13,14) StmtDelete(48) (stored at: variant89)
+24756 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtAppend(45,48) StmtDelete(3) (stored at: variant90)
+25005 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtAppend(16,14) StmtAppend(9,14) StmtReplace(15,3) (stored at: variant91)
+25270 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(3) StmtReplace(50,11) StmtAppend(48,21) (stored at: variant92)
+25544 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(41,7) StmtDelete(2) StmtDelete(14) (stored at: variant93)
+25851 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(14) StmtReplace(30,46) StmtReplace(22,7) (stored at: variant94)
+25857 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(24) StmtReplace(3,16) StmtReplace(25,26) (stored at: )
+25872 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:137: error: missing return statement
+    }
+    ^
+1 error
+
+25872 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(47,38) StmtDelete(26) at variant95 fails to compile
+
+25872 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(47,38) StmtDelete(26) (stored at: variant95)
+25891 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:61: error: call to this must be first statement in constructor
+			this(0.0, 1.0);
+			    ^
+1 error
+
+25891 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(15) StmtAppend(5,2) at variant96 fails to compile
+
+25891 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(15) StmtAppend(5,2) (stored at: variant96)
+26146 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(3) StmtAppend(33,23) StmtReplace(23,9) (stored at: variant97)
+26161 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:199: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+26161 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(46) StmtDelete(1) at variant98 fails to compile
+
+26161 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(46) StmtDelete(1) (stored at: variant98)
+26419 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtAppend(41,25) StmtReplace(25,2) StmtReplace(2,16) (stored at: variant99)
+26657 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtAppend(49,2) StmtAppend(38,20) (stored at: variant100)
+26672 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:165: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+26672 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(16,14) StmtAppend(9,14) StmtDelete(30) at variant101 fails to compile
+
+26672 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtAppend(16,14) StmtAppend(9,14) StmtDelete(30) (stored at: variant101)
+26944 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(1) StmtReplace(5,9) (stored at: variant102)
+27487 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(9) StmtAppend(9,2) StmtReplace(46,47) (stored at: variant103)
+27504 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:197: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+27505 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(5) StmtReplace(48,9) at variant104 fails to compile
+
+27505 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(5) StmtReplace(48,9) (stored at: variant104)
+27523 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:103: error: unreachable statement
+        standardDeviation = sd;
+        ^
+org/apache/commons/math/distribution/NormalDistributionImpl.java:182: error: variable ret might not have been initialized
+        return ret;
+               ^
+2 errors
+
+27523 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(38) StmtAppend(13,14) StmtReplace(1,13) at variant105 fails to compile
+
+27523 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(38) StmtAppend(13,14) StmtReplace(1,13) (stored at: variant105)
+27538 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:136: error: unreachable statement
+        if (p == 1) {
+        ^
+1 error
+
+27538 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(22,14) StmtDelete(2) StmtAppend(20,15) at variant106 fails to compile
+
+27538 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(22,14) StmtDelete(2) StmtAppend(20,15) (stored at: variant106)
+27554 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:196: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+27554 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(5,9) StmtReplace(48,9) at variant107 fails to compile
+
+27554 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(5,9) StmtReplace(48,9) (stored at: variant107)
+27832 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(14) StmtReplace(30,46) StmtReplace(2,9) (stored at: variant108)
+27847 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:203: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+27847 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(3) StmtReplace(9,14) StmtDelete(47) at variant109 fails to compile
+
+27847 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(3) StmtReplace(9,14) StmtDelete(47) (stored at: variant109)
+28078 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtAppend(50,23) StmtDelete(5) (stored at: variant110)
+28092 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:55: error: incompatible types: unexpected return value
+				return Double.POSITIVE_INFINITY;
+				             ^
+1 error
+
+28092 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(15) StmtAppend(3,24) at variant111 fails to compile
+
+28092 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(15) StmtAppend(3,24) (stored at: variant111)
+28308 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(3) StmtReplace(9,14) StmtReplace(1,9) (stored at: variant112)
+28539 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(1) StmtAppend(3,2) (stored at: variant113)
+28543 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtAppend(41,23) StmtReplace(2,2) (stored at: )
+28875 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(2) StmtAppend(37,31) (stored at: variant114)
+29171 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtAppend(41,25) StmtReplace(25,2) StmtReplace(1,16) (stored at: variant115)
+29185 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:203: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+29185 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(9) StmtAppend(9,2) StmtDelete(47) at variant116 fails to compile
+
+29186 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(9) StmtAppend(9,2) StmtDelete(47) (stored at: variant116)
+29201 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:203: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+29201 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(41,25) StmtDelete(47) at variant117 fails to compile
+
+29201 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtAppend(41,25) StmtDelete(47) (stored at: variant117)
+29203 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(16) (stored at: )
+29219 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:179: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+29219 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(2) StmtDelete(41) at variant118 fails to compile
+
+29220 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(2) StmtDelete(41) (stored at: variant118)
+29236 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:61: error: call to this must be first statement in constructor
+			this(0.0, 1.0);
+			    ^
+org/apache/commons/math/distribution/NormalDistributionImpl.java:63: error: incompatible types: unexpected return value
+				return Double.POSITIVE_INFINITY;
+				             ^
+2 errors
+
+29237 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(9,14) StmtAppend(5,24) at variant119 fails to compile
+
+29237 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(9,14) StmtAppend(5,24) (stored at: variant119)
+29498 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(30,46) StmtAppend(9,9) (stored at: variant120)
+29513 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:51: error: incompatible types: unexpected return value
+			return Double.NEGATIVE_INFINITY;
+			             ^
+1 error
+
+29513 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(13,14) StmtReplace(1,21) at variant121 fails to compile
+
+29513 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtAppend(13,14) StmtReplace(1,21) (stored at: variant121)
+29515 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(45) (stored at: )
+29811 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(3) StmtAppend(16,3) (stored at: variant122)
+29813 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(24) (stored at: )
+30072 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtAppend(9,14) StmtAppend(47,25) (stored at: variant123)
+30359 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtAppend(30,20) (stored at: variant124)
+30371 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:174: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+30371 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(50,11) StmtDelete(37) at variant125 fails to compile
+
+30371 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(50,11) StmtDelete(37) (stored at: variant125)
+30371 [main] INFO clegoues.genprog4java.Search.Search  - search: generation3
+30671 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:51: error: call to super must be first statement in constructor
+			super();
+			     ^
+1 error
+
+30671 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(5,9) StmtReplace(48,9) StmtAppend(1,15) at variant126 fails to compile
+
+30671 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(5,9) StmtReplace(48,9) StmtAppend(1,15) (stored at: variant126)
+30946 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(15) StmtDelete(2) StmtReplace(30,48) (stored at: variant127)
+30953 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(38) StmtAppend(13,14) StmtDelete(48) StmtAppend(49,14) (stored at: )
+31208 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtAppend(50,23) StmtDelete(5) StmtDelete(15) (stored at: variant128)
+31224 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:137: error: missing return statement
+    }
+    ^
+1 error
+
+31224 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(2,16) StmtReplace(29,49) StmtDelete(26) at variant129 fails to compile
+
+31224 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(2,16) StmtReplace(29,49) StmtDelete(26) (stored at: variant129)
+31495 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtAppend(45,48) StmtDelete(3) StmtAppend(39,20) (stored at: variant130)
+31514 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:179: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+31514 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(9) StmtAppend(9,2) StmtReplace(46,47) StmtDelete(38) at variant131 fails to compile
+
+31514 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(9) StmtAppend(9,2) StmtReplace(46,47) StmtDelete(38) (stored at: variant131)
+31822 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(3) StmtReplace(50,11) StmtAppend(48,21) StmtAppend(37,2) (stored at: variant132)
+31839 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:176: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+31839 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(2,16) StmtReplace(29,49) StmtDelete(39) at variant133 fails to compile
+
+31839 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(2,16) StmtReplace(29,49) StmtDelete(39) (stored at: variant133)
+32100 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtAppend(9,14) StmtAppend(47,25) StmtDelete(14) (stored at: variant134)
+32347 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(25) StmtReplace(16,15) StmtAppend(29,2) (stored at: variant135)
+32363 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:203: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+32363 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(41,25) StmtDelete(47) StmtReplace(30,14) at variant136 fails to compile
+
+32363 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtAppend(41,25) StmtDelete(47) StmtReplace(30,14) (stored at: variant136)
+32379 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:192: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+32379 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(24) StmtReplace(3,16) StmtReplace(25,26) StmtReplace(45,9) at variant137 fails to compile
+
+32379 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(24) StmtReplace(3,16) StmtReplace(25,26) StmtReplace(45,9) (stored at: variant137)
+32390 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:192: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+32390 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(45) StmtDelete(13) at variant138 fails to compile
+
+32390 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(45) StmtDelete(13) (stored at: variant138)
+32614 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(1) StmtAppend(3,2) StmtReplace(16,14) (stored at: variant139)
+32864 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(14) StmtReplace(30,46) StmtReplace(2,9) StmtAppend(45,38) (stored at: variant140)
+32879 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:182: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+32879 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(41,23) StmtReplace(2,2) StmtReplace(39,9) at variant141 fails to compile
+
+32879 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtAppend(41,23) StmtReplace(2,2) StmtReplace(39,9) (stored at: variant141)
+32898 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:158: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+32898 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(30,46) StmtAppend(9,9) StmtDelete(30) at variant142 fails to compile
+
+32898 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(30,46) StmtAppend(9,9) StmtDelete(30) (stored at: variant142)
+32919 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:155: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+32919 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(14) StmtReplace(30,46) StmtReplace(22,7) StmtDelete(33) at variant143 fails to compile
+
+32919 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(14) StmtReplace(30,46) StmtReplace(22,7) StmtDelete(33) (stored at: variant143)
+33232 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtAppend(30,20) StmtReplace(47,21) (stored at: variant144)
+33568 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(14) StmtReplace(30,46) StmtReplace(2,9) StmtDelete(22) (stored at: variant145)
+33922 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(3) StmtAppend(16,3) StmtDelete(2) (stored at: variant146)
+33925 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(9,14) StmtAppend(5,24) StmtReplace(33,33) (stored at: )
+34184 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(24) StmtAppend(48,47) (stored at: variant147)
+34412 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtAppend(9,14) StmtAppend(47,25) StmtReplace(5,2) (stored at: variant148)
+34625 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(30,46) StmtAppend(9,9) StmtReplace(13,2) (stored at: variant149)
+34636 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:199: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+34636 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(41,7) StmtDelete(2) StmtDelete(13) StmtDelete(47) at variant150 fails to compile
+
+34636 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(41,7) StmtDelete(2) StmtDelete(13) StmtDelete(47) (stored at: variant150)
+34861 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(25) StmtReplace(16,15) StmtDelete(1) (stored at: variant151)
+34878 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:61: error: call to this must be first statement in constructor
+			this(0.0, 1.0);
+			    ^
+1 error
+
+34878 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(30,46) StmtAppend(9,9) StmtAppend(5,14) at variant152 fails to compile
+
+34878 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(30,46) StmtAppend(9,9) StmtAppend(5,14) (stored at: variant152)
+34883 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(38) StmtAppend(13,14) StmtDelete(48) StmtDelete(49) (stored at: )
+34886 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(41,7) StmtDelete(2) StmtDelete(13) StmtDelete(15) (stored at: )
+34907 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:51: error: call to super must be first statement in constructor
+			super();
+			     ^
+1 error
+
+34907 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(41,7) StmtDelete(2) StmtDelete(13) StmtAppend(1,13) at variant153 fails to compile
+
+34907 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(41,7) StmtDelete(2) StmtDelete(13) StmtAppend(1,13) (stored at: variant153)
+35278 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(24) StmtReplace(41,14) (stored at: variant154)
+35282 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(3) StmtAppend(16,3) StmtDelete(2) (stored at: )
+35596 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(25) StmtReplace(16,15) StmtReplace(14,14) (stored at: variant155)
+35614 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:181: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+35615 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(30,46) StmtAppend(9,9) StmtDelete(39) at variant156 fails to compile
+
+35615 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(30,46) StmtAppend(9,9) StmtDelete(39) (stored at: variant156)
+35885 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(3) StmtReplace(9,14) StmtReplace(29,48) StmtDelete(5) (stored at: variant157)
+35900 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:100: error: incompatible types: unexpected return value
+				return Double.POSITIVE_INFINITY;
+				             ^
+1 error
+
+35901 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(16) StmtAppend(16,24) at variant158 fails to compile
+
+35901 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(16) StmtAppend(16,24) (stored at: variant158)
+35905 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(3) StmtReplace(9,14) StmtReplace(29,48) StmtAppend(30,30) (stored at: )
+35920 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:61: error: call to this must be first statement in constructor
+			this(0.0, 1.0);
+			    ^
+1 error
+
+35920 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(15) StmtAppend(5,2) StmtAppend(31,2) at variant159 fails to compile
+
+35920 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(15) StmtAppend(5,2) StmtAppend(31,2) (stored at: variant159)
+36337 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(33,38) (stored at: variant160)
+36353 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:158: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+36353 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(5) StmtDelete(31) at variant161 fails to compile
+
+36353 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(5) StmtDelete(31) (stored at: variant161)
+36355 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(2,2) (stored at: )
+36656 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtAppend(9,14) StmtReplace(29,49) StmtAppend(31,46) (stored at: variant162)
+36658 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(21) (stored at: )
+36925 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(41,7) StmtDelete(2) StmtAppend(9,2) StmtReplace(46,47) StmtReplace(3,15) (stored at: variant163)
+37191 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(3) StmtReplace(50,11) StmtReplace(16,15) StmtReplace(16,14) (stored at: variant164)
+37193 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtAppend(13,9) (stored at: )
+37442 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(25) StmtDelete(2) StmtDelete(13) StmtAppend(20,9) (stored at: variant165)
+37453 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:200: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+37453 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(47) at variant166 fails to compile
+
+37453 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(47) (stored at: variant166)
+37465 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:80: error: incompatible types: unexpected return value
+				return Double.POSITIVE_INFINITY;
+				             ^
+1 error
+
+37465 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(2) StmtDelete(13) StmtAppend(9,24) at variant167 fails to compile
+
+37465 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(2) StmtDelete(13) StmtAppend(9,24) (stored at: variant167)
+37478 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:200: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+37478 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(47) StmtReplace(50,11) at variant168 fails to compile
+
+37478 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(47) StmtReplace(50,11) (stored at: variant168)
+37490 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:201: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+37490 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(47,20) at variant169 fails to compile
+
+37490 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(47,20) (stored at: variant169)
+37502 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:137: error: missing return statement
+    }
+    ^
+1 error
+
+37502 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(3) StmtReplace(26,2) at variant170 fails to compile
+
+37502 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(3) StmtReplace(26,2) (stored at: variant170)
+37518 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:199: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+37518 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(14) StmtAppend(9,9) StmtDelete(46) at variant171 fails to compile
+
+37519 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(14) StmtAppend(9,9) StmtDelete(46) (stored at: variant171)
+37752 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(2,9) StmtReplace(23,20) (stored at: variant172)
+37764 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:61: error: call to this must be first statement in constructor
+			this(0.0, 1.0);
+			    ^
+1 error
+
+37764 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(5,2) StmtAppend(46,9) at variant173 fails to compile
+
+37764 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtAppend(5,2) StmtAppend(46,9) (stored at: variant173)
+37765 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtAppend(1,3) (stored at: )
+37765 [main] INFO clegoues.genprog4java.Search.Search  - search: generation4
+37774 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:101: error: unreachable statement
+        standardDeviation = sd;
+        ^
+org/apache/commons/math/distribution/NormalDistributionImpl.java:180: error: variable ret might not have been initialized
+        return ret;
+               ^
+org/apache/commons/math/distribution/NormalDistributionImpl.java:199: error: variable ret might not have been initialized
+        return ret;
+               ^
+3 errors
+
+37786 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:61: error: call to this must be first statement in constructor
+			this(0.0, 1.0);
+			    ^
+org/apache/commons/math/distribution/NormalDistributionImpl.java:63: error: incompatible types: unexpected return value
+				return Double.POSITIVE_INFINITY;
+				             ^
+2 errors
+
+38266 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:156: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+38266 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(30,46) StmtAppend(9,9) StmtDelete(30) StmtDelete(9) at variant174 fails to compile
+
+38266 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(30,46) StmtAppend(9,9) StmtDelete(30) StmtDelete(9) (stored at: variant174)
+38538 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(14) StmtReplace(30,46) StmtReplace(2,9) StmtAppend(45,38) StmtReplace(13,9) (stored at: variant175)
+38801 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(14) StmtReplace(30,46) StmtReplace(2,9) StmtDelete(22) StmtReplace(9,14) (stored at: variant176)
+38822 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:80: error: incompatible types: unexpected return value
+				return Double.POSITIVE_INFINITY;
+				             ^
+1 error
+
+38822 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(2) StmtDelete(13) StmtAppend(9,24) StmtAppend(45,14) at variant177 fails to compile
+
+38822 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(2) StmtDelete(13) StmtAppend(9,24) StmtAppend(45,14) (stored at: variant177)
+39057 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(3) StmtReplace(9,14) StmtReplace(29,48) StmtDelete(5) StmtDelete(22) (stored at: variant178)
+39347 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(3) StmtAppend(16,3) StmtDelete(2) StmtReplace(47,11) (stored at: variant179)
+39595 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(3) StmtReplace(9,14) StmtReplace(29,48) StmtDelete(5) StmtReplace(1,2) (stored at: variant180)
+39849 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(3) StmtReplace(50,11) StmtReplace(16,15) StmtReplace(16,14) StmtAppend(16,9) (stored at: variant181)
+40140 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(3) StmtAppend(16,3) StmtDelete(2) StmtAppend(16,15) (stored at: variant182)
+40157 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:61: error: incompatible types: unexpected return value
+			return Double.POSITIVE_INFINITY;
+			             ^
+1 error
+
+40157 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(24) StmtReplace(41,14) StmtReplace(5,24) at variant183 fails to compile
+
+40158 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(24) StmtReplace(41,14) StmtReplace(5,24) (stored at: variant183)
+40448 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(14) StmtReplace(30,46) StmtReplace(2,9) StmtDelete(22) StmtReplace(5,9) (stored at: variant184)
+40463 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:163: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+40463 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(1) StmtAppend(3,2) StmtReplace(16,14) StmtDelete(33) at variant185 fails to compile
+
+40463 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(1) StmtAppend(3,2) StmtReplace(16,14) StmtDelete(33) (stored at: variant185)
+40714 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(15) StmtDelete(2) StmtReplace(30,48) StmtReplace(49,24) (stored at: variant186)
+40946 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtAppend(30,20) StmtReplace(47,21) StmtDelete(16) (stored at: variant187)
+41142 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(25) StmtReplace(16,15) StmtReplace(14,14) StmtAppend(3,13) (stored at: variant188)
+41152 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:97: error: incompatible types: unexpected return value
+			return Double.NEGATIVE_INFINITY;
+			             ^
+1 error
+
+41152 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(30,46) StmtAppend(9,9) StmtDelete(30) StmtReplace(13,21) at variant189 fails to compile
+
+41152 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(30,46) StmtAppend(9,9) StmtDelete(30) StmtReplace(13,21) (stored at: variant189)
+41203 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:163: error: unreachable statement
+        return ret;
+        ^
+1 error
+
+41203 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(13,9) StmtAppend(29,21) at variant190 fails to compile
+
+41203 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtAppend(13,9) StmtAppend(29,21) (stored at: variant190)
+41206 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(3) StmtReplace(9,14) StmtReplace(29,48) StmtAppend(30,30) StmtAppend(31,15) (stored at: )
+41439 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(24) StmtReplace(41,14) StmtDelete(16) (stored at: variant191)
+41453 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:202: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+41453 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(14) StmtAppend(9,9) StmtDelete(46) StmtAppend(29,31) at variant192 fails to compile
+
+41453 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(14) StmtAppend(9,9) StmtDelete(46) StmtAppend(29,31) (stored at: variant192)
+41467 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:186: error: unreachable statement
+        return ret;
+        ^
+1 error
+
+41467 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(25) StmtReplace(16,15) StmtAppend(29,2) StmtAppend(37,14) at variant193 fails to compile
+
+41467 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(25) StmtReplace(16,15) StmtAppend(29,2) StmtAppend(37,14) (stored at: variant193)
+41718 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(25) StmtReplace(16,15) StmtAppend(29,2) StmtReplace(2,16) (stored at: variant194)
+42014 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(3) StmtAppend(16,3) StmtDelete(2) StmtReplace(1,16) (stored at: variant195)
+42030 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:172: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+42031 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(24) StmtReplace(41,14) StmtReplace(37,2) at variant196 fails to compile
+
+42031 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(24) StmtReplace(41,14) StmtReplace(37,2) (stored at: variant196)
+42048 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:196: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+42048 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(14) StmtAppend(9,9) StmtDelete(46) StmtDelete(48) at variant197 fails to compile
+
+42048 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(14) StmtAppend(9,9) StmtDelete(46) StmtDelete(48) (stored at: variant197)
+42304 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(41,7) StmtDelete(2) StmtDelete(13) StmtDelete(15) StmtReplace(2,13) (stored at: variant198)
+42317 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:201: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+42317 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(3) StmtReplace(9,14) StmtReplace(29,48) StmtAppend(30,30) StmtDelete(49) at variant199 fails to compile
+
+42317 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(3) StmtReplace(9,14) StmtReplace(29,48) StmtAppend(30,30) StmtDelete(49) (stored at: variant199)
+42564 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(3) StmtReplace(9,14) StmtReplace(29,48) StmtDelete(5) StmtReplace(48,50) (stored at: variant200)
+42823 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(30,46) StmtAppend(9,9) StmtReplace(13,2) StmtReplace(20,9) (stored at: variant201)
+43067 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(25) StmtDelete(2) StmtDelete(13) StmtAppend(20,9) StmtReplace(2,13) (stored at: variant202)
+43079 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:178: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+43079 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(2,2) StmtReplace(38,23) at variant203 fails to compile
+
+43079 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(2,2) StmtReplace(38,23) (stored at: variant203)
+43366 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(21) StmtAppend(20,20) (stored at: variant204)
+43667 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(41,7) StmtDelete(2) StmtAppend(9,2) StmtReplace(46,47) StmtReplace(3,15) StmtAppend(16,15) (stored at: variant205)
+43958 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(21) StmtReplace(1,13) (stored at: variant206)
+43975 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:80: error: incompatible types: unexpected return value
+				return Double.POSITIVE_INFINITY;
+				             ^
+1 error
+
+43975 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(2) StmtDelete(13) StmtAppend(9,24) StmtReplace(47,38) at variant207 fails to compile
+
+43975 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(2) StmtDelete(13) StmtAppend(9,24) StmtReplace(47,38) (stored at: variant207)
+44232 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtAppend(50,23) StmtDelete(5) StmtDelete(15) StmtAppend(39,47) (stored at: variant208)
+44249 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:202: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+44249 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(3) StmtReplace(9,14) StmtReplace(29,48) StmtDelete(5) StmtDelete(46) at variant209 fails to compile
+
+44249 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(3) StmtReplace(9,14) StmtReplace(29,48) StmtDelete(5) StmtDelete(46) (stored at: variant209)
+44264 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:61: error: incompatible types: unexpected return value
+			return Double.POSITIVE_INFINITY;
+			             ^
+1 error
+
+44264 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(9,14) StmtReplace(29,49) StmtAppend(31,46) StmtReplace(5,24) at variant210 fails to compile
+
+44265 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtAppend(9,14) StmtReplace(29,49) StmtAppend(31,46) StmtReplace(5,24) (stored at: variant210)
+44539 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(41,7) StmtDelete(2) StmtAppend(9,2) StmtReplace(46,47) StmtReplace(3,15) StmtAppend(16,3) (stored at: variant211)
+44812 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(3) StmtAppend(16,3) StmtDelete(2) StmtReplace(33,38) (stored at: variant212)
+45104 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(30,46) StmtReplace(16,15) StmtAppend(29,2) StmtReplace(31,20) (stored at: variant213)
+45116 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:153: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+45116 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(30) StmtDelete(13) at variant214 fails to compile
+
+45116 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(30) StmtDelete(13) (stored at: variant214)
+45129 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:139: error: unreachable statement
+        return super.inverseCumulativeProbability(p);
+        ^
+1 error
+
+45129 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(14) StmtReplace(30,46) StmtReplace(2,9) StmtDelete(2) StmtAppend(23,21) at variant215 fails to compile
+
+45129 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(14) StmtReplace(30,46) StmtReplace(2,9) StmtDelete(2) StmtAppend(23,21) (stored at: variant215)
+45141 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:158: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+45141 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(3) StmtDelete(31) at variant216 fails to compile
+
+45141 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(3) StmtDelete(31) (stored at: variant216)
+45397 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(3) StmtDelete(13) StmtDelete(15) StmtDelete(2) (stored at: variant217)
+45409 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:158: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+45409 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(41,7) StmtDelete(2) StmtDelete(33) at variant218 fails to compile
+
+45409 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(41,7) StmtDelete(2) StmtDelete(33) (stored at: variant218)
+45425 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:101: error: unreachable statement
+			this.mean = mean;
+			^
+1 error
+
+45425 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(3) StmtReplace(9,14) StmtReplace(29,48) StmtDelete(5) StmtAppend(14,9) at variant219 fails to compile
+
+45425 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(3) StmtReplace(9,14) StmtReplace(29,48) StmtDelete(5) StmtAppend(14,9) (stored at: variant219)
+45669 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(16,15) StmtReplace(16,14) StmtReplace(48,14) (stored at: variant220)
+45671 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(3) StmtReplace(50,50) (stored at: )
+45929 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(30,46) StmtAppend(9,9) StmtDelete(2) StmtAppend(23,2) (stored at: variant221)
+45941 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:199: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+45941 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(49,2) at variant222 fails to compile
+
+45941 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(49,2) (stored at: variant222)
+46213 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(47,21) StmtReplace(16,16) (stored at: variant223)
+46231 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:79: error: incompatible types: unexpected return value
+				return Double.POSITIVE_INFINITY;
+				             ^
+1 error
+
+46231 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(25) StmtReplace(16,15) StmtAppend(9,24) StmtDelete(39) at variant224 fails to compile
+
+46231 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(25) StmtReplace(16,15) StmtAppend(9,24) StmtDelete(39) (stored at: variant224)
+46525 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(2) StmtAppend(49,20) (stored at: variant225)
+46872 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(29,49) StmtAppend(31,46) StmtReplace(9,2) (stored at: variant226)
+47092 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(9,14) StmtReplace(29,48) StmtAppend(30,30) StmtReplace(14,14) (stored at: variant227)
+47092 [main] INFO clegoues.genprog4java.Search.Search  - search: generation5
+47325 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:158: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+47326 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(21) StmtReplace(1,13) StmtDelete(33) at variant228 fails to compile
+
+47326 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(21) StmtReplace(1,13) StmtDelete(33) (stored at: variant228)
+47339 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:196: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+47339 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(3) StmtDelete(13) StmtDelete(15) StmtDelete(2) StmtDelete(48) at variant229 fails to compile
+
+47339 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(3) StmtDelete(13) StmtDelete(15) StmtDelete(2) StmtDelete(48) (stored at: variant229)
+47589 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(3) StmtAppend(16,3) StmtDelete(2) StmtReplace(33,38) StmtReplace(47,11) (stored at: variant230)
+47851 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(3) StmtReplace(9,14) StmtReplace(29,48) StmtAppend(30,30) StmtAppend(31,15) StmtAppend(16,15) (stored at: variant231)
+48220 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtReplace(29,49) StmtAppend(31,46) StmtReplace(9,2) StmtAppend(45,20) (stored at: variant232)
+48576 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtReplace(41,7) StmtDelete(2) StmtAppend(9,2) StmtReplace(46,47) StmtReplace(3,15) StmtAppend(16,15) StmtReplace(2,2) (stored at: variant233)
+48829 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtAppend(30,20) StmtReplace(47,21) StmtDelete(16) StmtReplace(49,14) (stored at: variant234)
+48846 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:201: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+48846 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(21) StmtAppend(20,20) StmtDelete(48) at variant235 fails to compile
+
+48846 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(21) StmtAppend(20,20) StmtDelete(48) (stored at: variant235)
+48859 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:102: error: incompatible types: unexpected return value
+			return Double.NEGATIVE_INFINITY;
+			             ^
+1 error
+
+48859 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(3) StmtReplace(9,14) StmtReplace(29,48) StmtDelete(5) StmtDelete(22) StmtReplace(16,21) at variant236 fails to compile
+
+48859 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(3) StmtReplace(9,14) StmtReplace(29,48) StmtDelete(5) StmtDelete(22) StmtReplace(16,21) (stored at: variant236)
+48864 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(3) StmtReplace(9,14) StmtReplace(29,48) StmtDelete(5) StmtAppend(14,9) StmtDelete(5) (stored at: )
+48881 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:185: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+48882 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(3) StmtAppend(16,3) StmtDelete(2) StmtReplace(33,38) StmtDelete(39) at variant237 fails to compile
+
+48882 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(3) StmtAppend(16,3) StmtDelete(2) StmtReplace(33,38) StmtDelete(39) (stored at: variant237)
+48896 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:139: error: unreachable statement
+        return super.inverseCumulativeProbability(p);
+        ^
+1 error
+
+48896 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(14) StmtReplace(30,46) StmtReplace(2,9) StmtDelete(2) StmtAppend(23,21) StmtReplace(38,33) at variant238 fails to compile
+
+48896 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(14) StmtReplace(30,46) StmtReplace(2,9) StmtDelete(2) StmtAppend(23,21) StmtReplace(38,33) (stored at: variant238)
+49156 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(3) StmtAppend(16,3) StmtDelete(2) StmtReplace(1,16) StmtReplace(21,14) (stored at: variant239)
+49435 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtReplace(41,7) StmtDelete(2) StmtDelete(13) StmtDelete(15) StmtReplace(2,13) StmtDelete(5) (stored at: variant240)
+49447 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:140: error: unreachable statement
+        return super.inverseCumulativeProbability(p);
+        ^
+1 error
+
+49447 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(14) StmtReplace(30,46) StmtReplace(2,9) StmtDelete(2) StmtAppend(23,21) StmtDelete(5) at variant241 fails to compile
+
+49447 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(14) StmtReplace(30,46) StmtReplace(2,9) StmtDelete(2) StmtAppend(23,21) StmtDelete(5) (stored at: variant241)
+49459 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:62: error: call to this must be first statement in constructor
+			this(0.0, 1.0);
+			    ^
+1 error
+
+49459 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(3) StmtReplace(9,14) StmtReplace(29,48) StmtDelete(5) StmtReplace(48,50) StmtAppend(5,9) at variant242 fails to compile
+
+49459 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(3) StmtReplace(9,14) StmtReplace(29,48) StmtDelete(5) StmtReplace(48,50) StmtAppend(5,9) (stored at: variant242)
+49702 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(3) StmtReplace(9,14) StmtReplace(29,48) StmtDelete(5) StmtDelete(22) StmtDelete(24) (stored at: variant243)
+49947 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(3) StmtDelete(13) StmtDelete(15) StmtDelete(2) StmtAppend(3,3) (stored at: variant244)
+50203 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(24) StmtReplace(41,14) StmtDelete(16) StmtDelete(13) (stored at: variant245)
+50455 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(3) StmtAppend(16,3) StmtDelete(2) StmtReplace(33,38) StmtAppend(41,48) (stored at: variant246)
+50748 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(14) StmtReplace(30,46) StmtReplace(2,9) StmtDelete(22) StmtReplace(9,14) StmtReplace(25,9) (stored at: variant247)
+50762 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:98: error: unreachable statement
+			{
+			^
+1 error
+
+50762 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(3) StmtReplace(50,50) StmtAppend(14,14) at variant248 fails to compile
+
+50762 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(3) StmtReplace(50,50) StmtAppend(14,14) (stored at: variant248)
+50764 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(3) StmtAppend(16,3) StmtDelete(2) StmtReplace(47,11) StmtAppend(16,3) (stored at: )
+50779 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:201: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+50779 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(3) StmtReplace(9,14) StmtReplace(29,48) StmtAppend(30,30) StmtAppend(31,15) StmtDelete(46) at variant249 fails to compile
+
+50779 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(3) StmtReplace(9,14) StmtReplace(29,48) StmtAppend(30,30) StmtAppend(31,15) StmtDelete(46) (stored at: variant249)
+51010 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtReplace(16,15) StmtReplace(16,14) StmtReplace(48,14) StmtAppend(16,14) (stored at: variant250)
+51014 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtReplace(30,46) StmtReplace(16,15) StmtAppend(29,2) StmtReplace(31,20) StmtReplace(9,9) (stored at: )
+51025 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:139: error: unreachable statement
+        return super.inverseCumulativeProbability(p);
+        ^
+1 error
+
+51025 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(14) StmtReplace(30,46) StmtReplace(2,9) StmtDelete(2) StmtAppend(23,21) StmtReplace(39,21) at variant251 fails to compile
+
+51025 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(14) StmtReplace(30,46) StmtReplace(2,9) StmtDelete(2) StmtAppend(23,21) StmtReplace(39,21) (stored at: variant251)
+51285 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(3) StmtReplace(9,14) StmtReplace(29,48) StmtDelete(5) StmtReplace(48,50) StmtAppend(41,31) (stored at: variant252)
+51522 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtReplace(30,46) StmtReplace(16,15) StmtAppend(29,2) StmtReplace(31,20) StmtReplace(14,13) (stored at: variant253)
+51524 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtAppend(13,9) StmtAppend(29,21) StmtReplace(33,11) (stored at: )
+51774 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(15) StmtDelete(2) StmtReplace(30,48) StmtReplace(49,24) StmtReplace(15,13) (stored at: variant254)
+51785 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:140: error: missing return statement
+    }
+    ^
+1 error
+
+51785 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(16,15) StmtReplace(16,14) StmtReplace(48,14) StmtReplace(26,20) at variant255 fails to compile
+
+51785 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtReplace(16,15) StmtReplace(16,14) StmtReplace(48,14) StmtReplace(26,20) (stored at: variant255)
+52005 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(14) StmtReplace(30,46) StmtReplace(2,9) StmtDelete(22) StmtReplace(9,14) StmtAppend(2,9) (stored at: variant256)
+52228 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtReplace(30,46) StmtAppend(9,9) StmtDelete(2) StmtAppend(23,2) StmtAppend(9,15) (stored at: variant257)
+52231 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(3) StmtReplace(9,14) StmtReplace(29,48) StmtDelete(5) StmtDelete(22) StmtDelete(5) (stored at: )
+52504 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(3) StmtDelete(13) StmtDelete(15) StmtDelete(2) StmtAppend(3,15) (stored at: variant258)
+52804 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(3) StmtAppend(16,3) StmtDelete(2) StmtReplace(33,38) StmtAppend(33,41) (stored at: variant259)
+53035 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(25) StmtReplace(16,15) StmtAppend(29,2) StmtReplace(2,16) StmtReplace(26,24) (stored at: variant260)
+53046 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:186: error: unreachable statement
+        return ret;
+        ^
+org/apache/commons/math/distribution/NormalDistributionImpl.java:203: error: variable ret might not have been initialized
+        return ret;
+               ^
+2 errors
+
+53046 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(25) StmtReplace(16,15) StmtAppend(29,2) StmtAppend(37,14) StmtDelete(45) at variant261 fails to compile
+
+53046 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(25) StmtReplace(16,15) StmtAppend(29,2) StmtAppend(37,14) StmtDelete(45) (stored at: variant261)
+53275 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtAppend(30,20) StmtReplace(47,21) StmtDelete(16) StmtReplace(30,21) (stored at: variant262)
+53287 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:157: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+53287 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(3) StmtReplace(33,9) at variant263 fails to compile
+
+53287 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(3) StmtReplace(33,9) (stored at: variant263)
+53301 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:137: error: unreachable statement
+        return super.inverseCumulativeProbability(p);
+        ^
+1 error
+
+53301 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(3) StmtDelete(15) StmtDelete(2) StmtReplace(23,21) at variant264 fails to compile
+
+53301 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(3) StmtDelete(15) StmtDelete(2) StmtReplace(23,21) (stored at: variant264)
+53312 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:199: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+53312 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(3) StmtAppend(16,3) StmtDelete(2) StmtReplace(47,11) StmtDelete(45) at variant265 fails to compile
+
+53312 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(3) StmtAppend(16,3) StmtDelete(2) StmtReplace(47,11) StmtDelete(45) (stored at: variant265)
+53556 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(3) StmtAppend(16,3) StmtAppend(29,47) (stored at: variant266)
+53755 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtReplace(16,14) StmtReplace(48,14) StmtAppend(2,13) (stored at: variant267)
+54109 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtAppend(31,46) StmtReplace(9,2) StmtAppend(46,2) (stored at: variant268)
+54120 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:140: error: unreachable statement
+        return super.inverseCumulativeProbability(p);
+        ^
+1 error
+
+54120 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(23,21) StmtReplace(9,9) at variant269 fails to compile
+
+54120 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtAppend(23,21) StmtReplace(9,9) (stored at: variant269)
+54405 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(14) StmtReplace(30,46) StmtReplace(2,9) StmtReplace(47,21) StmtDelete(16) StmtDelete(22) (stored at: variant270)
+54419 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:57: error: unreachable statement
+        setStandardDeviation(sd);
+        ^
+1 error
+
+54419 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(16,15) StmtAppend(29,2) StmtReplace(31,20) StmtAppend(2,14) at variant271 fails to compile
+
+54419 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtReplace(16,15) StmtAppend(29,2) StmtReplace(31,20) StmtAppend(2,14) (stored at: variant271)
+54660 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtReplace(9,14) StmtReplace(29,48) StmtDelete(5) StmtDelete(22) StmtAppend(48,24) (stored at: variant272)
+54885 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(14) StmtReplace(48,14) StmtReplace(37,31) (stored at: variant273)
+54899 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:141: error: unreachable statement
+        return super.inverseCumulativeProbability(p);
+        ^
+1 error
+
+54899 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(16,15) StmtReplace(2,9) StmtDelete(2) StmtAppend(23,21) StmtReplace(41,14) at variant274 fails to compile
+
+54899 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtReplace(16,15) StmtReplace(2,9) StmtDelete(2) StmtAppend(23,21) StmtReplace(41,14) (stored at: variant274)
+55134 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtReplace(41,7) StmtDelete(2) StmtAppend(23,2) StmtAppend(45,46) (stored at: variant275)
+55398 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtReplace(30,46) StmtDelete(13) StmtDelete(15) StmtReplace(2,13) StmtReplace(33,21) (stored at: variant276)
+55410 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:138: error: unreachable statement
+        return super.inverseCumulativeProbability(p);
+        ^
+1 error
+
+55410 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(23,15) at variant277 fails to compile
+
+55410 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtAppend(23,15) (stored at: variant277)
+55429 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:53: error: incompatible types: unexpected return value
+			return Double.NEGATIVE_INFINITY;
+			             ^
+1 error
+
+55430 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(3) StmtDelete(13) StmtDelete(15) StmtReplace(9,14) StmtReplace(29,48) StmtDelete(5) StmtReplace(48,50) StmtReplace(3,21) at variant278 fails to compile
+
+55430 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(3) StmtDelete(13) StmtDelete(15) StmtReplace(9,14) StmtReplace(29,48) StmtDelete(5) StmtReplace(48,50) StmtReplace(3,21) (stored at: variant278)
+55704 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtReplace(46,30) (stored at: variant279)
+55723 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:209: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+55723 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(3) StmtAppend(16,3) StmtDelete(2) StmtReplace(9,14) StmtReplace(29,48) StmtDelete(5) StmtDelete(22) StmtReplace(49,20) at variant280 fails to compile
+
+55723 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(3) StmtAppend(16,3) StmtDelete(2) StmtReplace(9,14) StmtReplace(29,48) StmtDelete(5) StmtDelete(22) StmtReplace(49,20) (stored at: variant280)
+55960 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(3) StmtReplace(16,15) StmtAppend(29,2) StmtReplace(2,16) StmtDelete(13) (stored at: variant281)
+55970 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:51: error: incompatible types: unexpected return value
+			return Double.NEGATIVE_INFINITY;
+			             ^
+1 error
+
+55970 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(15) StmtDelete(2) StmtReplace(1,21) at variant282 fails to compile
+
+55970 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(15) StmtDelete(2) StmtReplace(1,21) (stored at: variant282)
+55970 [main] INFO clegoues.genprog4java.Search.Search  - search: generation6
+55979 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:101: error: unreachable statement
+			this.mean = mean;
+			^
+1 error
+
+55997 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:163: error: unreachable statement
+        return ret;
+        ^
+1 error
+
+56056 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:196: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+56072 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:196: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+56087 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:196: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+56102 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:196: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+56119 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:196: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+56134 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:196: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+56150 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:196: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+56164 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:196: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+56177 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:196: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+56192 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:196: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+56207 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:196: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+56224 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:196: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+56242 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:196: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+56255 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:196: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+56270 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:196: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+56283 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:196: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+56296 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:196: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+56306 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:196: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+56323 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:96: error: incompatible types: unexpected return value
+			return Double.NEGATIVE_INFINITY;
+			             ^
+1 error
+
+56323 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(14) StmtReplace(48,14) StmtReplace(37,31) StmtReplace(16,21) at variant283 fails to compile
+
+56323 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtDelete(14) StmtReplace(48,14) StmtReplace(37,31) StmtReplace(16,21) (stored at: variant283)
+56340 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:62: error: call to this must be first statement in constructor
+			this(0.0, 1.0);
+			    ^
+1 error
+
+56340 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(3) StmtReplace(9,14) StmtReplace(29,48) StmtDelete(5) StmtReplace(48,50) StmtAppend(5,9) StmtAppend(37,23) at variant284 fails to compile
+
+56340 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtDelete(3) StmtReplace(9,14) StmtReplace(29,48) StmtDelete(5) StmtReplace(48,50) StmtAppend(5,9) StmtAppend(37,23) (stored at: variant284)
+56359 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:200: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+56359 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(15) StmtDelete(2) StmtReplace(30,48) StmtReplace(49,24) StmtReplace(15,13) StmtDelete(45) at variant285 fails to compile
+
+56359 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtDelete(15) StmtDelete(2) StmtReplace(30,48) StmtReplace(49,24) StmtReplace(15,13) StmtDelete(45) (stored at: variant285)
+56719 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtReplace(29,49) StmtAppend(31,46) StmtReplace(9,2) StmtAppend(45,20) StmtAppend(23,2) (stored at: variant286)
+56988 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtReplace(41,7) StmtDelete(2) StmtAppend(23,2) StmtAppend(45,46) StmtReplace(2,16) (stored at: variant287)
+56992 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtDelete(14) StmtReplace(48,14) StmtReplace(37,31) StmtDelete(41) (stored at: )
+57262 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtDelete(3) StmtAppend(16,3) StmtDelete(2) StmtReplace(1,16) StmtReplace(21,14) StmtAppend(20,9) (stored at: variant288)
+57273 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:96: error: incompatible types: unexpected return value
+			return Double.NEGATIVE_INFINITY;
+			             ^
+1 error
+
+57273 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(3) StmtAppend(16,3) StmtDelete(2) StmtReplace(33,38) StmtAppend(33,41) StmtReplace(13,21) at variant289 fails to compile
+
+57273 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtDelete(3) StmtAppend(16,3) StmtDelete(2) StmtReplace(33,38) StmtAppend(33,41) StmtReplace(13,21) (stored at: variant289)
+57280 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtDelete(3) StmtDelete(13) StmtDelete(15) StmtReplace(9,14) StmtReplace(29,48) StmtDelete(5) StmtReplace(48,50) StmtReplace(3,21) StmtReplace(50,46) (stored at: )
+57543 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtDelete(14) StmtReplace(30,46) StmtReplace(2,9) StmtDelete(22) StmtReplace(9,14) StmtReplace(25,9) StmtAppend(29,2) (stored at: variant290)
+57545 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtDelete(3) StmtAppend(16,3) StmtDelete(2) StmtReplace(33,38) StmtAppend(33,41) StmtAppend(16,3) (stored at: )
+57796 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtDelete(15) StmtDelete(2) StmtReplace(30,48) StmtReplace(49,24) StmtReplace(15,13) StmtDelete(14) (stored at: variant291)
+58024 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtDelete(3) StmtDelete(13) StmtDelete(15) StmtDelete(2) StmtAppend(3,15) StmtAppend(31,21) (stored at: variant292)
+58276 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtReplace(41,7) StmtDelete(2) StmtDelete(13) StmtDelete(15) StmtReplace(2,13) StmtDelete(5) StmtReplace(45,49) (stored at: variant293)
+58560 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtDelete(3) StmtAppend(16,3) StmtDelete(2) StmtReplace(33,38) StmtReplace(47,11) StmtReplace(30,41) (stored at: variant294)
+58573 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:206: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+58573 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(25) StmtReplace(16,15) StmtAppend(29,2) StmtReplace(2,16) StmtReplace(26,24) StmtDelete(50) at variant295 fails to compile
+
+58573 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtDelete(25) StmtReplace(16,15) StmtAppend(29,2) StmtReplace(2,16) StmtReplace(26,24) StmtDelete(50) (stored at: variant295)
+58867 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtDelete(3) StmtAppend(16,3) StmtDelete(2) StmtReplace(33,38) StmtAppend(41,48) StmtAppend(30,48) (stored at: variant296)
+59079 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtDelete(3) StmtReplace(9,14) StmtReplace(29,48) StmtDelete(5) StmtReplace(48,50) StmtAppend(41,31) StmtDelete(1) (stored at: variant297)
+59082 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtDelete(25) StmtReplace(16,15) StmtAppend(29,2) StmtReplace(2,16) StmtReplace(26,24) StmtReplace(33,14) (stored at: )
+59085 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtDelete(3) StmtAppend(16,3) StmtDelete(2) StmtReplace(33,38) StmtDelete(39) StmtReplace(39,39) (stored at: )
+59097 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:102: error: incompatible types: unexpected return value
+			return Double.NEGATIVE_INFINITY;
+			             ^
+1 error
+
+59097 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(3) StmtReplace(9,14) StmtReplace(29,48) StmtDelete(5) StmtDelete(22) StmtReplace(16,21) StmtDelete(26) at variant298 fails to compile
+
+59097 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtDelete(3) StmtReplace(9,14) StmtReplace(29,48) StmtDelete(5) StmtDelete(22) StmtReplace(16,21) StmtDelete(26) (stored at: variant298)
+59300 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtReplace(16,15) StmtReplace(16,14) StmtReplace(48,14) StmtAppend(16,14) StmtReplace(41,15) (stored at: variant299)
+59485 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtReplace(30,46) StmtReplace(16,15) StmtAppend(29,2) StmtReplace(31,20) StmtReplace(14,13) StmtDelete(9) (stored at: variant300)
+59700 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtDelete(14) StmtReplace(48,14) StmtReplace(37,31) StmtDelete(22) (stored at: variant301)
+59717 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:53: error: incompatible types: unexpected return value
+			return Double.NEGATIVE_INFINITY;
+			             ^
+1 error
+
+59717 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(3) StmtDelete(13) StmtDelete(15) StmtReplace(9,14) StmtReplace(29,48) StmtDelete(5) StmtReplace(48,50) StmtReplace(3,21) StmtDelete(47) at variant302 fails to compile
+
+59717 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtDelete(3) StmtDelete(13) StmtDelete(15) StmtReplace(9,14) StmtReplace(29,48) StmtDelete(5) StmtReplace(48,50) StmtReplace(3,21) StmtDelete(47) (stored at: variant302)
+59731 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:99: error: unreachable statement
+			setMean(mean);
+			^
+1 error
+
+59732 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(3) StmtAppend(16,3) StmtDelete(2) StmtReplace(47,11) StmtAppend(16,3) StmtAppend(14,2) at variant303 fails to compile
+
+59732 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtDelete(3) StmtAppend(16,3) StmtDelete(2) StmtReplace(47,11) StmtAppend(16,3) StmtAppend(14,2) (stored at: variant303)
+59749 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:61: error: call to this must be first statement in constructor
+			this(0.0, 1.0);
+			    ^
+1 error
+
+59749 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(25) StmtReplace(16,15) StmtAppend(29,2) StmtReplace(2,16) StmtReplace(26,24) StmtAppend(5,9) at variant304 fails to compile
+
+59749 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtDelete(25) StmtReplace(16,15) StmtAppend(29,2) StmtReplace(2,16) StmtReplace(26,24) StmtAppend(5,9) (stored at: variant304)
+59765 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:102: error: incompatible types: unexpected return value
+			return Double.NEGATIVE_INFINITY;
+			             ^
+1 error
+
+59765 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(3) StmtReplace(9,14) StmtReplace(29,48) StmtDelete(5) StmtDelete(22) StmtReplace(16,21) StmtReplace(39,50) at variant305 fails to compile
+
+59766 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtDelete(3) StmtReplace(9,14) StmtReplace(29,48) StmtDelete(5) StmtDelete(22) StmtReplace(16,21) StmtReplace(39,50) (stored at: variant305)
+60056 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtDelete(3) StmtAppend(16,3) StmtDelete(2) StmtReplace(33,38) StmtAppend(41,48) StmtAppend(9,15) (stored at: variant306)
+60356 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtDelete(3) StmtAppend(16,3) StmtDelete(2) StmtReplace(33,38) StmtAppend(41,48) StmtDelete(15) (stored at: variant307)
+60758 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtReplace(16,15) StmtReplace(16,14) StmtReplace(48,14) StmtAppend(16,14) StmtReplace(25,23) (stored at: variant308)
+60770 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:206: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+60771 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(15) StmtDelete(2) StmtReplace(30,48) StmtReplace(49,24) StmtReplace(15,13) StmtDelete(47) at variant309 fails to compile
+
+60771 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtDelete(15) StmtDelete(2) StmtReplace(30,48) StmtReplace(49,24) StmtReplace(15,13) StmtDelete(47) (stored at: variant309)
+60784 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:79: error: incompatible types: unexpected return value
+			return Double.NEGATIVE_INFINITY;
+			             ^
+1 error
+
+60785 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(3) StmtAppend(16,3) StmtDelete(2) StmtReplace(47,11) StmtAppend(16,3) StmtReplace(9,21) at variant310 fails to compile
+
+60785 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtDelete(3) StmtAppend(16,3) StmtDelete(2) StmtReplace(47,11) StmtAppend(16,3) StmtReplace(9,21) (stored at: variant310)
+61037 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtDelete(14) StmtReplace(30,46) StmtReplace(2,9) StmtReplace(47,21) StmtDelete(16) StmtDelete(22) StmtAppend(48,39) (stored at: variant311)
+61051 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:102: error: incompatible types: unexpected return value
+			return Double.NEGATIVE_INFINITY;
+			             ^
+1 error
+
+61051 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(3) StmtReplace(9,14) StmtReplace(29,48) StmtDelete(5) StmtDelete(22) StmtReplace(16,21) StmtAppend(29,14) at variant312 fails to compile
+
+61051 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtDelete(3) StmtReplace(9,14) StmtReplace(29,48) StmtDelete(5) StmtDelete(22) StmtReplace(16,21) StmtAppend(29,14) (stored at: variant312)
+61058 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtDelete(14) StmtReplace(30,46) StmtReplace(2,9) StmtReplace(47,21) StmtDelete(16) StmtDelete(22) StmtDelete(16) (stored at: )
+61378 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtAppend(31,46) StmtReplace(9,2) StmtAppend(46,2) StmtAppend(30,9) (stored at: variant313)
+61390 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:152: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+61391 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(14) StmtReplace(48,14) StmtReplace(37,31) StmtReplace(29,20) at variant314 fails to compile
+
+61391 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtDelete(14) StmtReplace(48,14) StmtReplace(37,31) StmtReplace(29,20) (stored at: variant314)
+61403 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:51: error: call to super must be first statement in constructor
+			super();
+			     ^
+1 error
+
+61403 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(9,14) StmtReplace(29,48) StmtDelete(5) StmtDelete(22) StmtAppend(48,24) StmtAppend(1,3) at variant315 fails to compile
+
+61403 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtReplace(9,14) StmtReplace(29,48) StmtDelete(5) StmtDelete(22) StmtAppend(48,24) StmtAppend(1,3) (stored at: variant315)
+61662 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtAppend(30,20) StmtReplace(47,21) StmtDelete(16) StmtReplace(49,14) StmtDelete(5) (stored at: variant316)
+61899 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtDelete(15) StmtDelete(2) StmtReplace(30,48) StmtReplace(49,24) StmtAppend(29,2) StmtReplace(31,20) StmtReplace(14,13) StmtReplace(16,14) (stored at: variant317)
+61909 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:178: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+61909 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(30,46) StmtDelete(39) at variant318 fails to compile
+
+61909 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtReplace(30,46) StmtDelete(39) (stored at: variant318)
+62148 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtReplace(29,49) StmtAppend(31,46) StmtDelete(31) (stored at: variant319)
+62161 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:171: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+62161 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(14) StmtReplace(48,14) StmtAppend(45,20) StmtReplace(37,9) at variant320 fails to compile
+
+62161 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtDelete(14) StmtReplace(48,14) StmtAppend(45,20) StmtReplace(37,9) (stored at: variant320)
+62421 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtDelete(14) StmtReplace(47,11) StmtAppend(16,3) StmtDelete(16) (stored at: variant321)
+62667 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtDelete(3) StmtAppend(16,3) StmtReplace(37,31) StmtAppend(45,20) (stored at: variant322)
+62681 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:137: error: unreachable statement
+			{
+			^
+1 error
+
+62681 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(3) StmtAppend(16,3) StmtDelete(2) StmtAppend(29,2) StmtReplace(2,16) StmtReplace(26,24) StmtAppend(21,14) at variant323 fails to compile
+
+62681 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtDelete(3) StmtAppend(16,3) StmtDelete(2) StmtAppend(29,2) StmtReplace(2,16) StmtReplace(26,24) StmtAppend(21,14) (stored at: variant323)
+62960 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtDelete(25) StmtReplace(21,14) StmtReplace(16,2) (stored at: variant324)
+63260 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtDelete(14) StmtReplace(30,46) StmtReplace(2,9) StmtDelete(22) StmtReplace(33,38) StmtAppend(41,48) StmtDelete(15) (stored at: variant325)
+63530 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtDelete(3) StmtAppend(16,3) StmtReplace(25,9) StmtDelete(13) (stored at: variant326)
+63541 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:160: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+63541 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(3) StmtAppend(16,3) StmtDelete(2) StmtAppend(16,14) StmtDelete(29) at variant327 fails to compile
+
+63541 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtDelete(3) StmtAppend(16,3) StmtDelete(2) StmtAppend(16,14) StmtDelete(29) (stored at: variant327)
+63766 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtReplace(16,15) StmtReplace(16,14) StmtAppend(33,41) StmtAppend(9,9) (stored at: variant328)
+63989 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtDelete(15) StmtReplace(37,46) (stored at: variant329)
+64238 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtDelete(15) StmtDelete(2) StmtReplace(30,48) StmtReplace(49,24) StmtReplace(30,48) StmtReplace(49,24) StmtReplace(15,13) StmtDelete(13) (stored at: variant330)
+64249 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:51: error: call to super must be first statement in constructor
+			super();
+			     ^
+1 error
+
+64249 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(41,7) StmtDelete(22) StmtAppend(1,16) at variant331 fails to compile
+
+64249 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtReplace(41,7) StmtDelete(22) StmtAppend(1,16) (stored at: variant331)
+64537 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtDelete(14) StmtReplace(30,46) StmtReplace(2,9) StmtReplace(47,21) StmtDelete(13) StmtDelete(15) StmtReplace(2,13) StmtDelete(5) StmtReplace(21,20) (stored at: variant332)
+64548 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:99: error: incompatible types: unexpected return value
+			return Double.NEGATIVE_INFINITY;
+			             ^
+1 error
+
+64548 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(5) StmtDelete(22) StmtReplace(16,21) StmtDelete(38) at variant333 fails to compile
+
+64548 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtDelete(5) StmtDelete(22) StmtReplace(16,21) StmtDelete(38) (stored at: variant333)
+64788 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtDelete(3) StmtReplace(9,14) StmtAppend(16,3) StmtDelete(2) StmtReplace(33,38) StmtReplace(47,11) StmtReplace(3,2) (stored at: variant334)
+65023 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtDelete(3) StmtAppend(16,3) StmtDelete(2) StmtReplace(33,38) StmtReplace(9,2) StmtAppend(46,2) StmtReplace(15,14) (stored at: variant335)
+65222 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtReplace(26,24) (stored at: variant336)
+65437 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtDelete(22) StmtAppend(48,24) StmtDelete(23) (stored at: variant337)
+65675 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtReplace(9,14) StmtReplace(29,48) StmtReplace(16,15) StmtAppend(29,2) StmtReplace(2,16) StmtReplace(26,24) StmtDelete(16) (stored at: variant338)
+65675 [main] INFO clegoues.genprog4java.Search.Search  - search: generation7
+65732 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:62: error: call to this must be first statement in constructor
+			this(0.0, 1.0);
+			    ^
+1 error
+
+65751 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:62: error: call to this must be first statement in constructor
+			this(0.0, 1.0);
+			    ^
+1 error
+
+65769 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:62: error: call to this must be first statement in constructor
+			this(0.0, 1.0);
+			    ^
+1 error
+
+65791 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:62: error: call to this must be first statement in constructor
+			this(0.0, 1.0);
+			    ^
+1 error
+
+65810 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:62: error: call to this must be first statement in constructor
+			this(0.0, 1.0);
+			    ^
+1 error
+
+65834 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:62: error: call to this must be first statement in constructor
+			this(0.0, 1.0);
+			    ^
+1 error
+
+65854 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:62: error: call to this must be first statement in constructor
+			this(0.0, 1.0);
+			    ^
+1 error
+
+65874 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:62: error: call to this must be first statement in constructor
+			this(0.0, 1.0);
+			    ^
+1 error
+
+65889 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:62: error: call to this must be first statement in constructor
+			this(0.0, 1.0);
+			    ^
+1 error
+
+65903 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:62: error: call to this must be first statement in constructor
+			this(0.0, 1.0);
+			    ^
+1 error
+
+65921 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:62: error: call to this must be first statement in constructor
+			this(0.0, 1.0);
+			    ^
+1 error
+
+65936 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:62: error: call to this must be first statement in constructor
+			this(0.0, 1.0);
+			    ^
+1 error
+
+65952 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:62: error: call to this must be first statement in constructor
+			this(0.0, 1.0);
+			    ^
+1 error
+
+65971 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:62: error: call to this must be first statement in constructor
+			this(0.0, 1.0);
+			    ^
+1 error
+
+65991 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:62: error: call to this must be first statement in constructor
+			this(0.0, 1.0);
+			    ^
+1 error
+
+66008 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:62: error: call to this must be first statement in constructor
+			this(0.0, 1.0);
+			    ^
+1 error
+
+66028 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:139: error: unreachable statement
+        return super.inverseCumulativeProbability(p);
+        ^
+1 error
+
+66028 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(30,46) StmtReplace(16,15) StmtAppend(29,2) StmtReplace(31,20) StmtReplace(14,13) StmtDelete(9) StmtAppend(23,15) at variant339 fails to compile
+
+66028 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtReplace(30,46) StmtReplace(16,15) StmtAppend(29,2) StmtReplace(31,20) StmtReplace(14,13) StmtDelete(9) StmtAppend(23,15) (stored at: variant339)
+66385 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtDelete(14) StmtReplace(47,11) StmtAppend(16,3) StmtDelete(16) StmtAppend(37,31) (stored at: variant340)
+66468 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:62: error: call to this must be first statement in constructor
+			this(0.0, 1.0);
+			    ^
+1 error
+
+66468 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(3) StmtReplace(9,14) StmtReplace(29,48) StmtDelete(5) StmtReplace(48,50) StmtAppend(5,9) StmtAppend(37,23) StmtDelete(24) at variant341 fails to compile
+
+66469 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtDelete(3) StmtReplace(9,14) StmtReplace(29,48) StmtDelete(5) StmtReplace(48,50) StmtAppend(5,9) StmtAppend(37,23) StmtDelete(24) (stored at: variant341)
+66485 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:175: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+66485 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(22) StmtAppend(48,24) StmtDelete(23) StmtReplace(37,20) at variant342 fails to compile
+
+66485 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtDelete(22) StmtAppend(48,24) StmtDelete(23) StmtReplace(37,20) (stored at: variant342)
+66505 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:53: error: incompatible types: unexpected return value
+			return Double.NEGATIVE_INFINITY;
+			             ^
+1 error
+
+66505 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(3) StmtDelete(13) StmtDelete(15) StmtReplace(9,14) StmtReplace(29,48) StmtDelete(5) StmtReplace(48,50) StmtReplace(3,21) StmtReplace(50,46) StmtDelete(45) at variant343 fails to compile
+
+66505 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtDelete(3) StmtDelete(13) StmtDelete(15) StmtReplace(9,14) StmtReplace(29,48) StmtDelete(5) StmtReplace(48,50) StmtReplace(3,21) StmtReplace(50,46) StmtDelete(45) (stored at: variant343)
+66768 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtDelete(3) StmtAppend(16,3) StmtDelete(2) StmtReplace(1,16) StmtReplace(21,14) StmtAppend(20,9) StmtReplace(13,9) (stored at: variant344)
+66778 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:192: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+66778 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(29,49) StmtAppend(31,46) StmtDelete(31) StmtDelete(45) at variant345 fails to compile
+
+66778 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtReplace(29,49) StmtAppend(31,46) StmtDelete(31) StmtDelete(45) (stored at: variant345)
+67027 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtDelete(14) StmtReplace(30,46) StmtReplace(2,9) StmtDelete(22) StmtReplace(9,14) StmtReplace(25,9) StmtAppend(29,2) StmtAppend(23,20) (stored at: variant346)
+67252 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtReplace(41,7) StmtDelete(2) StmtDelete(13) StmtDelete(15) StmtReplace(2,13) StmtDelete(5) StmtReplace(45,49) StmtDelete(2) (stored at: variant347)
+67493 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtDelete(3) StmtReplace(9,14) StmtReplace(29,48) StmtDelete(5) StmtReplace(48,50) StmtAppend(41,31) StmtDelete(1) StmtDelete(16) (stored at: variant348)
+67751 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtDelete(3) StmtAppend(16,3) StmtDelete(2) StmtReplace(33,38) StmtAppend(41,48) StmtAppend(30,48) StmtReplace(46,48) (stored at: variant349)
+67984 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtDelete(25) StmtReplace(16,15) StmtAppend(29,2) StmtReplace(2,16) StmtReplace(26,24) StmtReplace(33,14) StmtDelete(3) (stored at: variant350)
+68249 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtDelete(3) StmtAppend(16,3) StmtDelete(2) StmtReplace(33,38) StmtAppend(41,48) StmtDelete(15) StmtDelete(13) (stored at: variant351)
+68253 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtReplace(29,49) StmtAppend(31,46) StmtReplace(9,2) StmtAppend(45,20) StmtAppend(23,2) StmtReplace(48,46) (stored at: )
+68506 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtReplace(16,15) StmtReplace(16,14) StmtReplace(48,14) StmtAppend(16,14) StmtReplace(25,23) StmtDelete(16) (stored at: variant352)
+68749 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtDelete(14) StmtReplace(30,46) StmtReplace(2,9) StmtDelete(22) StmtReplace(9,14) StmtReplace(25,9) StmtAppend(29,2) StmtReplace(20,9) (stored at: variant353)
+68992 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtDelete(14) StmtReplace(30,46) StmtReplace(2,9) StmtDelete(22) StmtReplace(9,14) StmtReplace(25,9) StmtAppend(29,2) StmtReplace(5,9) (stored at: variant354)
+69263 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtDelete(14) StmtReplace(30,46) StmtReplace(2,9) StmtReplace(47,21) StmtDelete(16) StmtDelete(22) StmtAppend(48,39) StmtAppend(16,9) (stored at: variant355)
+69275 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:51: error: call to super must be first statement in constructor
+			super();
+			     ^
+1 error
+
+69276 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(14) StmtReplace(30,46) StmtReplace(2,9) StmtReplace(47,21) StmtDelete(16) StmtDelete(22) StmtDelete(16) StmtAppend(1,13) at variant356 fails to compile
+
+69276 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtDelete(14) StmtReplace(30,46) StmtReplace(2,9) StmtReplace(47,21) StmtDelete(16) StmtDelete(22) StmtDelete(16) StmtAppend(1,13) (stored at: variant356)
+69524 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtDelete(14) StmtReplace(30,46) StmtReplace(2,9) StmtReplace(47,21) StmtDelete(16) StmtDelete(22) StmtDelete(16) StmtReplace(47,48) (stored at: variant357)
+69797 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtDelete(3) StmtAppend(16,3) StmtDelete(2) StmtReplace(33,38) StmtReplace(47,11) StmtReplace(30,41) StmtDelete(20) (stored at: variant358)
+69812 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:99: error: unreachable statement
+			setMean(mean);
+			^
+1 error
+
+69812 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(3) StmtAppend(16,3) StmtDelete(2) StmtReplace(47,11) StmtAppend(16,3) StmtAppend(14,2) StmtAppend(38,38) at variant359 fails to compile
+
+69812 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtDelete(3) StmtAppend(16,3) StmtDelete(2) StmtReplace(47,11) StmtAppend(16,3) StmtAppend(14,2) StmtAppend(38,38) (stored at: variant359)
+69825 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:203: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+69825 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(14) StmtReplace(30,46) StmtReplace(2,9) StmtReplace(47,21) StmtDelete(13) StmtDelete(15) StmtReplace(2,13) StmtDelete(5) StmtReplace(21,20) StmtReplace(50,2) at variant360 fails to compile
+
+69825 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtDelete(14) StmtReplace(30,46) StmtReplace(2,9) StmtReplace(47,21) StmtDelete(13) StmtDelete(15) StmtReplace(2,13) StmtDelete(5) StmtReplace(21,20) StmtReplace(50,2) (stored at: variant360)
+69829 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtReplace(9,14) StmtReplace(29,48) StmtReplace(16,15) StmtAppend(29,2) StmtReplace(2,16) StmtReplace(26,24) StmtDelete(16) StmtReplace(33,11) (stored at: )
+69842 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:57: error: unreachable statement
+        {
+        ^
+1 error
+
+69842 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(3) StmtAppend(16,3) StmtDelete(2) StmtReplace(33,38) StmtAppend(41,48) StmtAppend(9,15) StmtAppend(2,14) at variant361 fails to compile
+
+69842 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtDelete(3) StmtAppend(16,3) StmtDelete(2) StmtReplace(33,38) StmtAppend(41,48) StmtAppend(9,15) StmtAppend(2,14) (stored at: variant361)
+70104 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtReplace(41,7) StmtDelete(2) StmtAppend(23,2) StmtAppend(45,46) StmtReplace(2,16) StmtReplace(13,9) (stored at: variant362)
+70444 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtAppend(31,46) StmtReplace(9,2) StmtAppend(46,2) StmtAppend(30,9) StmtDelete(1) (stored at: variant363)
+70722 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtDelete(25) StmtReplace(21,14) StmtReplace(16,2) StmtReplace(25,21) (stored at: variant364)
+70733 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:182: error: unreachable statement
+        return ret;
+        ^
+1 error
+
+70733 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(16,15) StmtReplace(16,14) StmtReplace(48,14) StmtAppend(16,14) StmtReplace(41,15) StmtReplace(39,15) at variant365 fails to compile
+
+70733 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtReplace(16,15) StmtReplace(16,14) StmtReplace(48,14) StmtAppend(16,14) StmtReplace(41,15) StmtReplace(39,15) (stored at: variant365)
+71037 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtDelete(3) StmtAppend(16,3) StmtDelete(2) StmtReplace(33,38) StmtAppend(33,41) StmtAppend(16,3) StmtAppend(3,2) (stored at: variant366)
+71050 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:102: error: incompatible types: unexpected return value
+			return Double.NEGATIVE_INFINITY;
+			             ^
+1 error
+
+71050 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(3) StmtReplace(9,14) StmtReplace(29,48) StmtDelete(5) StmtDelete(22) StmtReplace(16,21) StmtReplace(39,50) StmtDelete(49) at variant367 fails to compile
+
+71050 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtDelete(3) StmtReplace(9,14) StmtReplace(29,48) StmtDelete(5) StmtDelete(22) StmtReplace(16,21) StmtReplace(39,50) StmtDelete(49) (stored at: variant367)
+71055 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtReplace(16,15) StmtReplace(16,14) StmtReplace(48,14) StmtAppend(16,14) StmtReplace(25,23) StmtReplace(2,2) (stored at: )
+71287 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtDelete(14) StmtReplace(30,46) StmtReplace(2,9) StmtReplace(47,21) StmtDelete(16) StmtDelete(22) StmtDelete(16) StmtAppend(47,25) (stored at: variant368)
+71297 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:177: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+71297 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(31,46) StmtReplace(9,2) StmtAppend(46,2) StmtAppend(30,9) StmtDelete(37) at variant369 fails to compile
+
+71297 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtAppend(31,46) StmtReplace(9,2) StmtAppend(46,2) StmtAppend(30,9) StmtDelete(37) (stored at: variant369)
+71307 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:99: error: unreachable statement
+			setMean(mean);
+			^
+1 error
+
+71307 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(3) StmtAppend(16,3) StmtDelete(2) StmtReplace(47,11) StmtAppend(16,3) StmtAppend(14,2) StmtReplace(20,2) at variant370 fails to compile
+
+71308 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtDelete(3) StmtAppend(16,3) StmtDelete(2) StmtReplace(47,11) StmtAppend(16,3) StmtAppend(14,2) StmtReplace(20,2) (stored at: variant370)
+71318 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:105: error: incompatible types: unexpected return value
+			return Double.NEGATIVE_INFINITY;
+			             ^
+1 error
+
+71318 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(3) StmtReplace(9,14) StmtReplace(29,48) StmtDelete(5) StmtDelete(22) StmtReplace(16,21) StmtReplace(39,50) StmtAppend(2,16) at variant371 fails to compile
+
+71319 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtDelete(3) StmtReplace(9,14) StmtReplace(29,48) StmtDelete(5) StmtDelete(22) StmtReplace(16,21) StmtReplace(39,50) StmtAppend(2,16) (stored at: variant371)
+71538 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtDelete(3) StmtAppend(16,3) StmtDelete(2) StmtReplace(33,38) StmtReplace(9,2) StmtAppend(46,2) StmtReplace(15,14) StmtAppend(9,9) (stored at: variant372)
+71548 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:135: error: unreachable statement
+        return super.inverseCumulativeProbability(p);
+        ^
+1 error
+
+71548 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(14) StmtReplace(30,46) StmtReplace(2,9) StmtReplace(47,21) StmtDelete(16) StmtDelete(22) StmtDelete(16) StmtReplace(23,21) at variant373 fails to compile
+
+71548 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtDelete(14) StmtReplace(30,46) StmtReplace(2,9) StmtReplace(47,21) StmtDelete(16) StmtDelete(22) StmtDelete(16) StmtReplace(23,21) (stored at: variant373)
+71816 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtReplace(9,14) StmtReplace(29,48) StmtReplace(16,15) StmtAppend(29,2) StmtReplace(2,16) StmtReplace(26,24) StmtDelete(16) StmtDelete(23) (stored at: variant374)
+71832 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:51: error: call to super must be first statement in constructor
+			super();
+			     ^
+1 error
+
+71832 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(9,14) StmtReplace(29,48) StmtDelete(5) StmtDelete(22) StmtAppend(48,24) StmtAppend(1,3) StmtAppend(48,39) at variant375 fails to compile
+
+71832 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtReplace(9,14) StmtReplace(29,48) StmtDelete(5) StmtDelete(22) StmtAppend(48,24) StmtAppend(1,3) StmtAppend(48,39) (stored at: variant375)
+71847 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:51: error: call to super must be first statement in constructor
+			super();
+			     ^
+org/apache/commons/math/distribution/NormalDistributionImpl.java:53: error: incompatible types: unexpected return value
+				return Double.POSITIVE_INFINITY;
+				             ^
+2 errors
+
+71847 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(30,46) StmtReplace(16,15) StmtAppend(29,2) StmtAppend(16,3) StmtDelete(2) StmtReplace(33,38) StmtReplace(47,11) StmtReplace(30,41) StmtAppend(1,24) at variant376 fails to compile
+
+71847 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtReplace(30,46) StmtReplace(16,15) StmtAppend(29,2) StmtAppend(16,3) StmtDelete(2) StmtReplace(33,38) StmtReplace(47,11) StmtReplace(30,41) StmtAppend(1,24) (stored at: variant376)
+72143 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtReplace(14,13) StmtDelete(9) StmtReplace(37,33) (stored at: variant377)
+72412 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtDelete(3) StmtDelete(2) StmtAppend(23,2) StmtAppend(45,46) StmtReplace(2,16) StmtAppend(46,48) (stored at: variant378)
+72424 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:140: error: missing return statement
+    }
+    ^
+1 error
+
+72424 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(2) StmtReplace(1,16) StmtReplace(21,14) StmtAppend(20,9) StmtReplace(26,9) at variant379 fails to compile
+
+72424 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtDelete(2) StmtReplace(1,16) StmtReplace(21,14) StmtAppend(20,9) StmtReplace(26,9) (stored at: variant379)
+72435 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:54: error: incompatible types: unexpected return value
+				return Double.POSITIVE_INFINITY;
+				             ^
+1 error
+
+72435 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(29,49) StmtAppend(2,24) at variant380 fails to compile
+
+72435 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtReplace(29,49) StmtAppend(2,24) (stored at: variant380)
+72450 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:160: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+72450 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(31,46) StmtReplace(9,2) StmtAppend(46,2) StmtDelete(31) StmtAppend(2,9) at variant381 fails to compile
+
+72450 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtAppend(31,46) StmtReplace(9,2) StmtAppend(46,2) StmtDelete(31) StmtAppend(2,9) (stored at: variant381)
+72686 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtReplace(41,7) StmtReplace(16,14) StmtReplace(48,14) StmtAppend(16,14) StmtReplace(41,15) StmtReplace(22,21) (stored at: variant382)
+72940 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtDelete(13) StmtDelete(15) StmtReplace(2,13) StmtDelete(5) StmtReplace(45,49) StmtDelete(20) (stored at: variant383)
+73177 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtDelete(3) StmtReplace(33,38) StmtAppend(33,41) StmtAppend(16,3) StmtReplace(25,9) (stored at: variant384)
+73192 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:63: error: call to this must be first statement in constructor
+			this(0.0, 1.0);
+			    ^
+1 error
+
+73192 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(3) StmtAppend(16,3) StmtReplace(29,48) StmtDelete(5) StmtReplace(48,50) StmtAppend(41,31) StmtDelete(1) StmtAppend(5,9) at variant385 fails to compile
+
+73192 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtDelete(3) StmtAppend(16,3) StmtReplace(29,48) StmtDelete(5) StmtReplace(48,50) StmtAppend(41,31) StmtDelete(1) StmtAppend(5,9) (stored at: variant385)
+73403 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtAppend(16,14) StmtReplace(25,23) StmtDelete(13) (stored at: variant386)
+73413 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:199: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+73413 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(16,15) StmtReplace(16,14) StmtReplace(16,15) StmtAppend(29,2) StmtReplace(2,16) StmtReplace(26,24) StmtReplace(33,14) StmtDelete(45) at variant387 fails to compile
+
+73413 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtReplace(16,15) StmtReplace(16,14) StmtReplace(16,15) StmtAppend(29,2) StmtReplace(2,16) StmtReplace(26,24) StmtReplace(33,14) StmtDelete(45) (stored at: variant387)
+73426 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:199: error: unreachable statement
+        return ret;
+        ^
+1 error
+
+73427 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(16,15) StmtReplace(16,14) StmtReplace(48,14) StmtAppend(16,3) StmtDelete(2) StmtReplace(47,11) StmtAppend(16,3) StmtAppend(14,2) StmtDelete(13) at variant388 fails to compile
+
+73427 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtReplace(16,15) StmtReplace(16,14) StmtReplace(48,14) StmtAppend(16,3) StmtDelete(2) StmtReplace(47,11) StmtAppend(16,3) StmtAppend(14,2) StmtDelete(13) (stored at: variant388)
+73701 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtReplace(25,23) StmtAppend(16,13) (stored at: variant389)
+74011 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtDelete(14) StmtReplace(30,46) StmtAppend(16,3) StmtDelete(2) StmtReplace(33,38) StmtReplace(9,2) StmtAppend(46,2) StmtReplace(15,14) StmtDelete(9) (stored at: variant390)
+74234 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtDelete(22) StmtReplace(9,14) StmtReplace(25,9) StmtAppend(29,2) StmtAppend(48,39) (stored at: variant391)
+74468 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtDelete(16) StmtDelete(22) StmtDelete(16) StmtReplace(5,15) (stored at: variant392)
+74748 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtDelete(14) StmtReplace(30,46) StmtReplace(2,9) StmtReplace(30,46) StmtReplace(2,9) StmtReplace(47,21) StmtDelete(16) StmtDelete(22) StmtAppend(48,39) StmtReplace(2,2) (stored at: variant393)
+74987 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtDelete(14) StmtReplace(30,46) StmtReplace(2,9) StmtReplace(47,21) StmtDelete(16) StmtReplace(41,49) (stored at: variant394)
+75244 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtReplace(9,14) StmtReplace(29,48) StmtReplace(16,15) StmtAppend(29,2) StmtReplace(2,16) StmtReplace(26,24) StmtDelete(16) StmtAppend(38,21) (stored at: variant395)
+75258 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:51: error: call to super must be first statement in constructor
+			super();
+			     ^
+org/apache/commons/math/distribution/NormalDistributionImpl.java:101: error: incompatible types: unexpected return value
+				return Double.NEGATIVE_INFINITY;
+				             ^
+2 errors
+
+75258 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(14) StmtReplace(30,46) StmtReplace(2,9) StmtReplace(47,21) StmtDelete(16) StmtAppend(1,3) StmtAppend(14,21) at variant396 fails to compile
+
+75258 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtDelete(14) StmtReplace(30,46) StmtReplace(2,9) StmtReplace(47,21) StmtDelete(16) StmtAppend(1,3) StmtAppend(14,21) (stored at: variant396)
+75274 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:55: error: incompatible types: unexpected return value
+				return Double.NEGATIVE_INFINITY;
+				             ^
+1 error
+
+75274 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(9,14) StmtReplace(29,48) StmtDelete(5) StmtDelete(22) StmtDelete(16) StmtAppend(3,21) at variant397 fails to compile
+
+75274 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtReplace(9,14) StmtReplace(29,48) StmtDelete(5) StmtDelete(22) StmtDelete(16) StmtAppend(3,21) (stored at: variant397)
+75274 [main] INFO clegoues.genprog4java.Search.Search  - search: generation8
+75778 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtDelete(14) StmtReplace(30,46) StmtReplace(2,9) StmtReplace(47,21) StmtDelete(16) StmtReplace(41,49) StmtDelete(1) (stored at: variant398)
+76011 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtDelete(13) StmtDelete(15) StmtReplace(2,13) StmtDelete(5) StmtReplace(45,49) StmtDelete(20) StmtAppend(16,14) (stored at: variant399)
+76022 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:97: error: unreachable statement
+			standardDeviation = sd;
+			^
+1 error
+
+76022 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(14) StmtReplace(30,46) StmtReplace(2,9) StmtReplace(47,21) StmtDelete(16) StmtReplace(41,49) StmtAppend(14,16) at variant400 fails to compile
+
+76022 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtDelete(14) StmtReplace(30,46) StmtReplace(2,9) StmtReplace(47,21) StmtDelete(16) StmtReplace(41,49) StmtAppend(14,16) (stored at: variant400)
+76029 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtDelete(14) StmtReplace(30,46) StmtReplace(2,9) StmtReplace(47,21) StmtDelete(16) StmtDelete(22) StmtAppend(48,39) StmtAppend(16,9) StmtAppend(31,46) (stored at: )
+76051 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:195: error: unreachable statement
+        return ret;
+        ^
+org/apache/commons/math/distribution/NormalDistributionImpl.java:175: error: variable ret might not have been initialized
+        return ret;
+               ^
+2 errors
+
+76052 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(16,15) StmtReplace(16,14) StmtReplace(48,14) StmtAppend(16,3) StmtDelete(2) StmtReplace(47,11) StmtAppend(16,3) StmtAppend(14,2) StmtDelete(13) StmtReplace(37,2) at variant401 fails to compile
+
+76052 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtReplace(16,15) StmtReplace(16,14) StmtReplace(48,14) StmtAppend(16,3) StmtDelete(2) StmtReplace(47,11) StmtAppend(16,3) StmtAppend(14,2) StmtDelete(13) StmtReplace(37,2) (stored at: variant401)
+76406 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtReplace(29,49) StmtAppend(31,46) StmtReplace(9,2) StmtAppend(45,20) StmtAppend(23,2) StmtReplace(48,46) StmtReplace(38,30) (stored at: variant402)
+76410 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtDelete(3) StmtAppend(16,3) StmtDelete(2) StmtReplace(33,38) StmtAppend(41,48) StmtAppend(30,48) StmtReplace(46,48) StmtReplace(47,21) (stored at: )
+76426 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:99: error: unreachable statement
+			setMean(mean);
+			^
+1 error
+
+76426 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(3) StmtAppend(16,3) StmtDelete(2) StmtReplace(47,11) StmtAppend(16,3) StmtAppend(14,2) StmtReplace(20,2) StmtReplace(25,14) at variant403 fails to compile
+
+76426 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtDelete(3) StmtAppend(16,3) StmtDelete(2) StmtReplace(47,11) StmtAppend(16,3) StmtAppend(14,2) StmtReplace(20,2) StmtReplace(25,14) (stored at: variant403)
+76440 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:177: error: unreported exception MathException; must be caught or declared to be thrown
+				return super.inverseCumulativeProbability(p);
+				                                         ^
+1 error
+
+76440 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(29,49) StmtAppend(31,46) StmtReplace(9,2) StmtAppend(45,20) StmtAppend(23,2) StmtReplace(48,46) StmtAppend(41,26) at variant404 fails to compile
+
+76440 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtReplace(29,49) StmtAppend(31,46) StmtReplace(9,2) StmtAppend(45,20) StmtAppend(23,2) StmtReplace(48,46) StmtAppend(41,26) (stored at: variant404)
+76719 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtDelete(14) StmtReplace(30,46) StmtReplace(2,9) StmtReplace(47,21) StmtDelete(13) StmtDelete(15) StmtReplace(2,13) StmtDelete(5) StmtReplace(21,20) StmtReplace(50,2) StmtAppend(45,39) (stored at: variant405)
+76730 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:162: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+76730 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(16,14) StmtReplace(25,23) StmtDelete(13) StmtReplace(30,20) at variant406 fails to compile
+
+76730 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtAppend(16,14) StmtReplace(25,23) StmtDelete(13) StmtReplace(30,20) (stored at: variant406)
+76973 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtReplace(9,14) StmtReplace(29,48) StmtReplace(16,15) StmtAppend(29,2) StmtReplace(2,16) StmtReplace(26,24) StmtDelete(16) StmtReplace(33,11) StmtReplace(24,20) (stored at: variant407)
+76984 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:136: error: unreachable statement
+			if (p == 1) {
+			^
+1 error
+
+76984 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(16,14) StmtReplace(25,23) StmtDelete(13) StmtAppend(21,23) at variant408 fails to compile
+
+76984 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtAppend(16,14) StmtReplace(25,23) StmtDelete(13) StmtAppend(21,23) (stored at: variant408)
+77230 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtDelete(14) StmtReplace(30,46) StmtReplace(2,9) StmtDelete(22) StmtReplace(9,14) StmtReplace(25,9) StmtAppend(29,2) StmtReplace(5,9) StmtAppend(3,15) (stored at: variant409)
+77245 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:137: error: unreachable statement
+			{
+			^
+1 error
+
+77245 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(14) StmtReplace(30,46) StmtReplace(2,9) StmtDelete(22) StmtReplace(9,14) StmtReplace(25,9) StmtAppend(29,2) StmtReplace(5,9) StmtAppend(24,14) at variant410 fails to compile
+
+77245 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtDelete(14) StmtReplace(30,46) StmtReplace(2,9) StmtDelete(22) StmtReplace(9,14) StmtReplace(25,9) StmtAppend(29,2) StmtReplace(5,9) StmtAppend(24,14) (stored at: variant410)
+77524 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtAppend(31,46) StmtReplace(9,2) StmtAppend(46,2) StmtAppend(30,9) StmtDelete(1) StmtReplace(39,31) (stored at: variant411)
+77788 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtDelete(14) StmtReplace(30,46) StmtReplace(2,9) StmtReplace(47,21) StmtDelete(16) StmtDelete(22) StmtDelete(16) StmtReplace(47,48) StmtReplace(25,20) (stored at: variant412)
+78066 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtReplace(9,14) StmtReplace(29,48) StmtReplace(16,15) StmtAppend(29,2) StmtReplace(2,16) StmtReplace(26,24) StmtDelete(16) StmtReplace(33,11) StmtAppend(9,15) (stored at: variant413)
+78365 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtDelete(3) StmtAppend(16,3) StmtDelete(2) StmtReplace(33,38) StmtAppend(41,48) StmtAppend(30,48) StmtReplace(46,48) StmtDelete(22) (stored at: variant414)
+78635 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtDelete(3) StmtAppend(16,3) StmtDelete(2) StmtReplace(33,38) StmtAppend(33,41) StmtAppend(16,3) StmtAppend(3,2) StmtReplace(3,16) (stored at: variant415)
+78876 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtDelete(14) StmtReplace(30,46) StmtReplace(2,9) StmtReplace(47,21) StmtDelete(16) StmtReplace(41,49) StmtReplace(21,14) (stored at: variant416)
+79117 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtReplace(25,23) StmtAppend(16,13) StmtAppend(13,9) (stored at: variant417)
+79120 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtDelete(3) StmtDelete(2) StmtAppend(23,2) StmtAppend(45,46) StmtReplace(2,16) StmtAppend(46,48) StmtDelete(50) (stored at: )
+79342 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtDelete(14) StmtReplace(30,46) StmtReplace(2,9) StmtDelete(22) StmtReplace(9,14) StmtReplace(25,9) StmtAppend(29,2) StmtAppend(23,20) StmtAppend(46,24) (stored at: variant418)
+79353 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:173: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+79353 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(22) StmtAppend(48,24) StmtDelete(23) StmtReplace(37,20) StmtReplace(14,3) at variant419 fails to compile
+
+79353 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtDelete(22) StmtAppend(48,24) StmtDelete(23) StmtReplace(37,20) StmtReplace(14,3) (stored at: variant419)
+79366 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:135: error: unreachable statement
+			{
+			^
+1 error
+
+79366 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(14) StmtReplace(30,46) StmtReplace(2,9) StmtReplace(47,21) StmtDelete(16) StmtReplace(41,49) StmtAppend(24,14) at variant420 fails to compile
+
+79367 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtDelete(14) StmtReplace(30,46) StmtReplace(2,9) StmtReplace(47,21) StmtDelete(16) StmtReplace(41,49) StmtAppend(24,14) (stored at: variant420)
+79383 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:139: error: missing return statement
+    }
+    ^
+1 error
+
+79383 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(25) StmtReplace(16,15) StmtAppend(29,2) StmtReplace(2,16) StmtReplace(26,24) StmtReplace(33,14) StmtDelete(3) StmtDelete(26) at variant421 fails to compile
+
+79383 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtDelete(25) StmtReplace(16,15) StmtAppend(29,2) StmtReplace(2,16) StmtReplace(26,24) StmtReplace(33,14) StmtDelete(3) StmtDelete(26) (stored at: variant421)
+79397 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:181: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+79397 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(16,15) StmtReplace(16,14) StmtReplace(48,14) StmtAppend(16,14) StmtReplace(25,23) StmtDelete(16) StmtDelete(41) at variant422 fails to compile
+
+79397 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtReplace(16,15) StmtReplace(16,14) StmtReplace(48,14) StmtAppend(16,14) StmtReplace(25,23) StmtDelete(16) StmtDelete(41) (stored at: variant422)
+79636 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtReplace(9,14) StmtReplace(29,48) StmtReplace(16,15) StmtAppend(29,2) StmtReplace(2,16) StmtReplace(26,24) StmtDelete(16) StmtAppend(38,21) StmtAppend(45,9) (stored at: variant423)
+79649 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:138: error: unreachable statement
+        if (p == 1) {
+        ^
+1 error
+
+79649 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(31,46) StmtReplace(9,2) StmtAppend(46,2) StmtAppend(30,9) StmtDelete(1) StmtAppend(20,24) at variant424 fails to compile
+
+79649 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtAppend(31,46) StmtReplace(9,2) StmtAppend(46,2) StmtAppend(30,9) StmtDelete(1) StmtAppend(20,24) (stored at: variant424)
+79855 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtReplace(9,14) StmtReplace(29,48) StmtReplace(16,15) StmtAppend(29,2) StmtReplace(2,16) StmtReplace(26,24) StmtDelete(16) StmtReplace(33,11) StmtAppend(3,13) (stored at: variant425)
+80074 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtDelete(3) StmtAppend(16,3) StmtDelete(2) StmtReplace(33,38) StmtAppend(41,48) StmtAppend(30,48) StmtReplace(46,48) StmtAppend(29,9) (stored at: variant426)
+80103 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:51: error: call to super must be first statement in constructor
+			super();
+			     ^
+org/apache/commons/math/distribution/NormalDistributionImpl.java:53: error: incompatible types: unexpected return value
+				return Double.POSITIVE_INFINITY;
+				             ^
+2 errors
+
+80104 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(30,46) StmtReplace(16,15) StmtAppend(29,2) StmtAppend(16,3) StmtDelete(2) StmtReplace(33,38) StmtReplace(47,11) StmtReplace(30,41) StmtAppend(1,24) StmtAppend(37,23) at variant427 fails to compile
+
+80104 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtReplace(30,46) StmtReplace(16,15) StmtAppend(29,2) StmtAppend(16,3) StmtDelete(2) StmtReplace(33,38) StmtReplace(47,11) StmtReplace(30,41) StmtAppend(1,24) StmtAppend(37,23) (stored at: variant427)
+80298 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtDelete(3) StmtAppend(16,3) StmtDelete(2) StmtReplace(33,38) StmtAppend(41,48) StmtAppend(30,48) StmtReplace(46,48) StmtAppend(48,41) (stored at: variant428)
+80313 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:101: error: unreachable statement
+        standardDeviation = sd;
+        ^
+org/apache/commons/math/distribution/NormalDistributionImpl.java:179: error: variable ret might not have been initialized
+        return ret;
+               ^
+2 errors
+
+80313 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(22) StmtAppend(48,24) StmtDelete(23) StmtReplace(37,20) StmtAppend(13,14) at variant429 fails to compile
+
+80313 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtDelete(22) StmtAppend(48,24) StmtDelete(23) StmtReplace(37,20) StmtAppend(13,14) (stored at: variant429)
+80324 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:196: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+80324 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(14) StmtReplace(30,46) StmtReplace(2,9) StmtReplace(47,21) StmtDelete(13) StmtDelete(15) StmtReplace(2,13) StmtDelete(5) StmtReplace(21,20) StmtReplace(50,2) StmtDelete(45) at variant430 fails to compile
+
+80324 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtDelete(14) StmtReplace(30,46) StmtReplace(2,9) StmtReplace(47,21) StmtDelete(13) StmtDelete(15) StmtReplace(2,13) StmtDelete(5) StmtReplace(21,20) StmtReplace(50,2) StmtDelete(45) (stored at: variant430)
+80494 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtReplace(25,23) StmtAppend(16,13) StmtAppend(3,13) (stored at: variant431)
+80498 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtDelete(14) StmtReplace(30,46) StmtReplace(2,9) StmtReplace(47,21) StmtDelete(13) StmtDelete(15) StmtReplace(2,13) StmtDelete(5) StmtReplace(21,20) StmtReplace(50,2) StmtReplace(9,9) (stored at: )
+80682 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtReplace(41,7) StmtDelete(2) StmtDelete(13) StmtDelete(15) StmtReplace(2,13) StmtDelete(5) StmtReplace(45,49) StmtDelete(2) StmtDelete(23) (stored at: variant432)
+80691 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:97: error: unreachable statement
+			{
+			^
+1 error
+
+80691 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(16) StmtDelete(22) StmtDelete(16) StmtReplace(5,15) StmtAppend(14,14) at variant433 fails to compile
+
+80691 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtDelete(16) StmtDelete(22) StmtDelete(16) StmtReplace(5,15) StmtAppend(14,14) (stored at: variant433)
+80868 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtDelete(13) StmtDelete(15) StmtReplace(2,13) StmtDelete(5) StmtDelete(21) (stored at: variant434)
+81025 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtReplace(25,23) StmtDelete(20) StmtReplace(39,24) (stored at: variant435)
+81034 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:205: error: unreachable statement
+        return ret;
+        ^
+org/apache/commons/math/distribution/NormalDistributionImpl.java:178: error: variable ret might not have been initialized
+        return ret;
+               ^
+2 errors
+
+81034 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(16,15) StmtReplace(16,14) StmtReplace(48,14) StmtAppend(16,3) StmtDelete(2) StmtReplace(47,11) StmtAppend(16,3) StmtAppend(48,24) StmtDelete(23) StmtReplace(37,20) StmtDelete(15) at variant436 fails to compile
+
+81034 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtReplace(16,15) StmtReplace(16,14) StmtReplace(48,14) StmtAppend(16,3) StmtDelete(2) StmtReplace(47,11) StmtAppend(16,3) StmtAppend(48,24) StmtDelete(23) StmtReplace(37,20) StmtDelete(15) (stored at: variant436)
+81035 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtDelete(13) StmtDelete(15) (stored at: )
+81268 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtReplace(29,49) StmtAppend(31,46) StmtReplace(9,2) StmtReplace(47,21) StmtDelete(16) StmtReplace(41,49) StmtDelete(16) (stored at: variant437)
+81439 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtDelete(14) StmtReplace(30,46) StmtAppend(23,2) StmtReplace(48,46) StmtReplace(14,9) (stored at: variant438)
+81610 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtReplace(29,49) StmtReplace(2,16) StmtReplace(26,24) StmtDelete(16) StmtAppend(38,21) StmtAppend(23,2) (stored at: variant439)
+81844 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtReplace(9,14) StmtReplace(29,48) StmtReplace(16,15) StmtReplace(9,2) StmtAppend(45,20) StmtAppend(23,2) StmtReplace(48,46) StmtDelete(50) (stored at: variant440)
+81998 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtAppend(39,14) (stored at: variant441)
+82188 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtAppend(31,46) StmtReplace(9,2) StmtAppend(46,2) StmtAppend(30,9) StmtReplace(30,46) StmtReplace(2,9) StmtReplace(47,21) StmtDelete(13) StmtDelete(15) StmtReplace(2,13) StmtDelete(5) StmtReplace(21,20) StmtReplace(50,2) StmtAppend(50,14) (stored at: variant442)
+82345 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtAppend(16,14) StmtReplace(33,11) StmtDelete(13) (stored at: variant443)
+82499 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtReplace(9,14) StmtReplace(29,48) StmtReplace(16,15) StmtAppend(29,2) StmtReplace(2,16) StmtReplace(26,24) StmtDelete(13) StmtReplace(1,13) (stored at: variant444)
+82511 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:172: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+82511 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(14) StmtReplace(30,46) StmtDelete(23) StmtReplace(37,20) StmtDelete(41) at variant445 fails to compile
+
+82511 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtDelete(14) StmtReplace(30,46) StmtDelete(23) StmtReplace(37,20) StmtDelete(41) (stored at: variant445)
+82520 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:61: error: call to this must be first statement in constructor
+			this(0.0, 1.0);
+			    ^
+1 error
+
+82520 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(22) StmtDelete(22) StmtReplace(9,14) StmtReplace(25,9) StmtAppend(29,2) StmtReplace(5,9) StmtAppend(5,14) at variant446 fails to compile
+
+82520 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtDelete(22) StmtDelete(22) StmtReplace(9,14) StmtReplace(25,9) StmtAppend(29,2) StmtReplace(5,9) StmtAppend(5,14) (stored at: variant446)
+82684 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtDelete(14) StmtReplace(30,46) StmtAppend(16,13) StmtDelete(23) (stored at: variant447)
+82853 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtReplace(47,21) StmtDelete(16) StmtDelete(22) StmtDelete(16) StmtReplace(47,48) StmtDelete(24) (stored at: variant448)
+83050 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtDelete(16) StmtReplace(5,15) StmtReplace(14,14) (stored at: variant449)
+83059 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:165: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+83059 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(16) StmtAppend(16,3) StmtDelete(2) StmtReplace(33,38) StmtAppend(33,41) StmtAppend(16,3) StmtAppend(3,2) StmtDelete(30) at variant450 fails to compile
+
+83059 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtDelete(16) StmtAppend(16,3) StmtDelete(2) StmtReplace(33,38) StmtAppend(33,41) StmtAppend(16,3) StmtAppend(3,2) StmtDelete(30) (stored at: variant450)
+83059 [main] INFO clegoues.genprog4java.Search.Search  - search: generation9
+83079 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:203: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+83444 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtDelete(14) StmtReplace(30,46) StmtReplace(2,9) StmtReplace(47,21) StmtDelete(16) StmtReplace(41,49) StmtDelete(1) StmtReplace(22,9) (stored at: variant451)
+83659 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtDelete(14) StmtReplace(30,46) StmtAppend(23,2) StmtReplace(48,46) StmtReplace(14,9) StmtDelete(1) (stored at: variant452)
+83851 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtDelete(3) StmtDelete(2) StmtAppend(23,2) StmtAppend(45,46) StmtReplace(2,16) StmtAppend(46,48) StmtDelete(50) StmtDelete(9) (stored at: variant453)
+84041 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtDelete(3) StmtAppend(16,3) StmtDelete(2) StmtReplace(33,38) StmtAppend(41,48) StmtAppend(30,48) StmtReplace(46,48) StmtAppend(48,41) StmtReplace(16,13) (stored at: variant454)
+84052 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:155: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+84053 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(14) StmtReplace(30,46) StmtAppend(16,13) StmtDelete(23) StmtDelete(29) at variant455 fails to compile
+
+84053 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtDelete(14) StmtReplace(30,46) StmtAppend(16,13) StmtDelete(23) StmtDelete(29) (stored at: variant455)
+84062 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:135: error: missing return statement
+    }
+    ^
+1 error
+
+84062 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(13) StmtDelete(15) StmtDelete(26) at variant456 fails to compile
+
+84062 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtDelete(13) StmtDelete(15) StmtDelete(26) (stored at: variant456)
+84065 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtDelete(14) StmtReplace(30,46) StmtReplace(2,9) StmtReplace(47,21) StmtDelete(16) StmtReplace(41,49) StmtAppend(24,14) StmtReplace(2,9) (stored at: )
+84314 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtReplace(29,49) StmtAppend(31,46) StmtReplace(9,2) StmtReplace(47,21) StmtDelete(16) StmtReplace(41,49) StmtDelete(16) StmtDelete(25) (stored at: variant457)
+84324 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:51: error: unreachable statement
+        setMean(mean);
+        ^
+1 error
+
+84324 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(14) StmtReplace(30,46) StmtAppend(16,13) StmtDelete(23) StmtReplace(1,15) at variant458 fails to compile
+
+84324 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtDelete(14) StmtReplace(30,46) StmtAppend(16,13) StmtDelete(23) StmtReplace(1,15) (stored at: variant458)
+84530 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtDelete(3) StmtAppend(16,3) StmtDelete(2) StmtReplace(33,38) StmtAppend(41,48) StmtAppend(30,48) StmtReplace(46,48) StmtDelete(22) StmtReplace(21,9) (stored at: variant459)
+84703 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtReplace(9,14) StmtReplace(29,48) StmtReplace(16,15) StmtAppend(29,2) StmtReplace(2,16) StmtReplace(26,24) StmtDelete(16) StmtAppend(38,21) StmtAppend(45,9) StmtAppend(16,2) (stored at: variant460)
+84908 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtDelete(3) StmtAppend(16,3) StmtDelete(2) StmtReplace(33,38) StmtAppend(33,41) StmtAppend(16,3) StmtAppend(3,2) StmtReplace(3,16) StmtDelete(21) (stored at: variant461)
+84916 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:139: error: missing return statement
+    }
+    ^
+1 error
+
+84916 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(16,14) StmtReplace(33,11) StmtDelete(13) StmtReplace(26,9) at variant462 fails to compile
+
+84916 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtAppend(16,14) StmtReplace(33,11) StmtDelete(13) StmtReplace(26,9) (stored at: variant462)
+84921 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtDelete(14) StmtReplace(30,46) StmtReplace(2,9) StmtReplace(47,21) StmtDelete(13) StmtDelete(15) StmtReplace(2,13) StmtDelete(5) StmtReplace(21,20) StmtReplace(50,2) StmtAppend(45,39) StmtReplace(33,33) (stored at: )
+85098 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtAppend(39,14) StmtDelete(2) (stored at: variant463)
+85314 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtAppend(31,46) StmtReplace(9,2) StmtAppend(46,2) StmtAppend(30,9) StmtReplace(30,46) StmtReplace(2,9) StmtReplace(47,21) StmtDelete(13) StmtDelete(15) StmtReplace(2,13) StmtDelete(5) StmtReplace(21,20) StmtReplace(50,2) StmtAppend(50,14) StmtDelete(1) (stored at: variant464)
+85501 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtDelete(3) StmtAppend(16,3) StmtDelete(2) StmtReplace(33,38) StmtAppend(41,48) StmtAppend(30,48) StmtReplace(46,48) StmtDelete(22) StmtDelete(15) (stored at: variant465)
+85504 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtDelete(13) StmtDelete(15) StmtReplace(2,13) StmtDelete(5) StmtReplace(45,49) StmtDelete(20) StmtAppend(16,14) StmtDelete(49) (stored at: )
+85516 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:196: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+85516 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(14) StmtReplace(30,46) StmtReplace(2,9) StmtReplace(47,21) StmtDelete(13) StmtDelete(15) StmtReplace(2,13) StmtDelete(5) StmtReplace(21,20) StmtReplace(50,2) StmtDelete(45) StmtReplace(16,3) at variant466 fails to compile
+
+85516 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtDelete(14) StmtReplace(30,46) StmtReplace(2,9) StmtReplace(47,21) StmtDelete(13) StmtDelete(15) StmtReplace(2,13) StmtDelete(5) StmtReplace(21,20) StmtReplace(50,2) StmtDelete(45) StmtReplace(16,3) (stored at: variant466)
+85518 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtReplace(25,23) StmtDelete(20) StmtReplace(39,24) StmtReplace(22,24) (stored at: )
+85705 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtReplace(25,23) StmtAppend(16,13) StmtAppend(3,13) StmtReplace(21,15) (stored at: variant467)
+85713 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:137: error: missing return statement
+    }
+    ^
+1 error
+
+85713 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(39,14) StmtDelete(26) at variant468 fails to compile
+
+85713 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtAppend(39,14) StmtDelete(26) (stored at: variant468)
+85724 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:139: error: unreachable statement
+        return super.inverseCumulativeProbability(p);
+        ^
+1 error
+
+85724 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(14) StmtReplace(30,46) StmtReplace(2,9) StmtDelete(22) StmtReplace(9,14) StmtReplace(25,9) StmtAppend(29,2) StmtReplace(5,9) StmtAppend(3,15) StmtReplace(23,14) at variant469 fails to compile
+
+85724 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtDelete(14) StmtReplace(30,46) StmtReplace(2,9) StmtDelete(22) StmtReplace(9,14) StmtReplace(25,9) StmtAppend(29,2) StmtReplace(5,9) StmtAppend(3,15) StmtReplace(23,14) (stored at: variant469)
+85734 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:61: error: call to this must be first statement in constructor
+			this(0.0, 1.0);
+			    ^
+org/apache/commons/math/distribution/NormalDistributionImpl.java:63: error: incompatible types: unexpected return value
+				return Double.POSITIVE_INFINITY;
+				             ^
+2 errors
+
+85734 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(39,14) StmtAppend(5,24) at variant470 fails to compile
+
+85734 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtAppend(39,14) StmtAppend(5,24) (stored at: variant470)
+85935 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtDelete(16) StmtReplace(5,15) StmtReplace(14,14) StmtReplace(5,2) (stored at: variant471)
+86121 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtReplace(25,23) StmtDelete(20) StmtReplace(39,24) StmtReplace(1,9) (stored at: variant472)
+86316 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtDelete(14) StmtReplace(30,46) StmtReplace(2,9) StmtReplace(47,21) StmtDelete(16) StmtReplace(41,49) StmtDelete(1) StmtReplace(25,2) (stored at: variant473)
+86321 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtDelete(14) StmtReplace(30,46) StmtReplace(2,9) StmtReplace(47,21) StmtDelete(13) StmtDelete(15) StmtReplace(2,13) StmtDelete(5) StmtReplace(21,20) StmtReplace(50,2) StmtDelete(45) StmtAppend(46,47) (stored at: )
+86571 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtReplace(9,14) StmtReplace(29,48) StmtReplace(16,15) StmtReplace(9,2) StmtAppend(45,20) StmtAppend(23,2) StmtReplace(48,46) StmtDelete(50) StmtDelete(20) (stored at: variant474)
+86592 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:203: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+86592 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(9,14) StmtReplace(29,48) StmtReplace(16,15) StmtAppend(29,2) StmtReplace(2,16) StmtReplace(26,24) StmtDelete(16) StmtReplace(33,11) StmtReplace(24,20) StmtDelete(45) at variant475 fails to compile
+
+86592 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtReplace(9,14) StmtReplace(29,48) StmtReplace(16,15) StmtAppend(29,2) StmtReplace(2,16) StmtReplace(26,24) StmtDelete(16) StmtReplace(33,11) StmtReplace(24,20) StmtDelete(45) (stored at: variant475)
+86607 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:61: error: call to this must be first statement in constructor
+			this(0.0, 1.0);
+			    ^
+1 error
+
+86607 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(22) StmtDelete(22) StmtReplace(9,14) StmtReplace(25,9) StmtAppend(29,2) StmtReplace(5,9) StmtAppend(5,14) StmtAppend(48,50) at variant476 fails to compile
+
+86607 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtDelete(22) StmtDelete(22) StmtReplace(9,14) StmtReplace(25,9) StmtAppend(29,2) StmtReplace(5,9) StmtAppend(5,14) StmtAppend(48,50) (stored at: variant476)
+86812 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtDelete(14) StmtReplace(30,46) StmtReplace(2,9) StmtReplace(47,21) StmtDelete(16) StmtReplace(41,49) StmtDelete(1) StmtDelete(25) (stored at: variant477)
+86831 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:195: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+86831 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(14) StmtReplace(30,46) StmtAppend(23,2) StmtReplace(48,46) StmtReplace(14,9) StmtDelete(45) at variant478 fails to compile
+
+86831 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtDelete(14) StmtReplace(30,46) StmtAppend(23,2) StmtReplace(48,46) StmtReplace(14,9) StmtDelete(45) (stored at: variant478)
+86842 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:154: error: unreachable statement
+        return ret;
+        ^
+1 error
+
+86842 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(14) StmtReplace(30,46) StmtReplace(2,9) StmtReplace(47,21) StmtDelete(16) StmtReplace(41,49) StmtDelete(1) StmtReplace(29,14) at variant479 fails to compile
+
+86842 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtDelete(14) StmtReplace(30,46) StmtReplace(2,9) StmtReplace(47,21) StmtDelete(16) StmtReplace(41,49) StmtDelete(1) StmtReplace(29,14) (stored at: variant479)
+87046 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtReplace(29,49) StmtAppend(31,46) StmtReplace(9,2) StmtAppend(45,20) StmtAppend(23,2) StmtReplace(48,46) StmtReplace(38,30) StmtAppend(3,13) (stored at: variant480)
+87210 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtAppend(39,14) StmtReplace(2,13) (stored at: variant481)
+87210 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtDelete(13) StmtDelete(15) StmtDelete(13) (stored at: )
+87382 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtDelete(14) StmtReplace(30,46) StmtReplace(2,9) StmtReplace(47,21) StmtDelete(16) StmtReplace(41,49) StmtDelete(1) StmtDelete(22) (stored at: variant482)
+87386 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtDelete(3) StmtAppend(16,3) StmtDelete(2) StmtReplace(33,38) StmtAppend(41,48) StmtAppend(30,48) StmtReplace(46,48) StmtAppend(29,9) StmtReplace(47,49) (stored at: )
+87388 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtDelete(3) StmtDelete(2) StmtAppend(23,2) StmtAppend(45,46) StmtReplace(2,16) StmtAppend(46,48) StmtDelete(50) StmtDelete(9) (stored at: )
+87552 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtDelete(14) StmtAppend(16,13) StmtAppend(3,13) StmtDelete(13) (stored at: variant483)
+87560 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:176: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+87560 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(2,9) StmtReplace(47,21) StmtDelete(16) StmtReplace(41,49) StmtDelete(1) StmtDelete(37) at variant484 fails to compile
+
+87560 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtReplace(2,9) StmtReplace(47,21) StmtDelete(16) StmtReplace(41,49) StmtDelete(1) StmtDelete(37) (stored at: variant484)
+87568 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:133: error: unreachable statement
+			{
+			^
+1 error
+
+87568 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(21,14) at variant485 fails to compile
+
+87568 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtAppend(21,14) (stored at: variant485)
+87735 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtReplace(30,46) StmtAppend(23,2) StmtReplace(48,46) StmtReplace(14,9) StmtReplace(26,7) (stored at: variant486)
+87900 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtDelete(3) StmtReplace(33,24) (stored at: variant487)
+88062 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtDelete(14) StmtReplace(30,46) StmtReplace(2,9) StmtDelete(22) StmtReplace(9,14) StmtReplace(25,9) StmtAppend(29,2) StmtReplace(5,9) StmtAppend(23,2) StmtAppend(45,46) StmtReplace(2,16) StmtAppend(46,48) StmtDelete(50) StmtDelete(22) (stored at: variant488)
+88217 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtDelete(13) StmtReplace(39,24) StmtReplace(21,14) (stored at: variant489)
+88373 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtReplace(25,23) StmtAppend(9,15) (stored at: variant490)
+88540 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtDelete(14) StmtReplace(30,46) StmtReplace(2,9) StmtReplace(47,21) StmtReplace(47,22) (stored at: variant491)
+88550 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:135: error: unreachable statement
+			{
+			^
+1 error
+
+88550 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(14) StmtReplace(30,46) StmtReplace(2,9) StmtReplace(47,21) StmtDelete(16) StmtReplace(41,49) StmtReplace(41,49) StmtAppend(24,14) StmtReplace(41,39) at variant492 fails to compile
+
+88550 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtDelete(14) StmtReplace(30,46) StmtReplace(2,9) StmtReplace(47,21) StmtDelete(16) StmtReplace(41,49) StmtReplace(41,49) StmtAppend(24,14) StmtReplace(41,39) (stored at: variant492)
+88558 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:51: error: call to super must be first statement in constructor
+			super();
+			     ^
+1 error
+
+88558 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(3) StmtAppend(16,3) StmtDelete(16) StmtReplace(33,11) StmtReplace(24,20) StmtAppend(1,13) at variant493 fails to compile
+
+88558 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtDelete(3) StmtAppend(16,3) StmtDelete(16) StmtReplace(33,11) StmtReplace(24,20) StmtAppend(1,13) (stored at: variant493)
+88716 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtReplace(9,14) StmtReplace(29,48) StmtReplace(16,15) StmtAppend(29,2) StmtReplace(2,16) StmtReplace(33,38) StmtAppend(41,48) StmtAppend(30,48) StmtReplace(46,48) StmtDelete(22) StmtDelete(22) (stored at: variant494)
+88885 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtDelete(3) StmtAppend(16,3) StmtDelete(2) StmtReplace(33,38) StmtAppend(33,41) StmtDelete(16) StmtReplace(41,49) StmtDelete(1) StmtDelete(22) (stored at: variant495)
+88899 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:174: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+88899 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(14) StmtReplace(30,46) StmtReplace(2,9) StmtAppend(3,2) StmtReplace(3,16) StmtDelete(38) at variant496 fails to compile
+
+88899 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtDelete(14) StmtReplace(30,46) StmtReplace(2,9) StmtAppend(3,2) StmtReplace(3,16) StmtDelete(38) (stored at: variant496)
+88910 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:203: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+88911 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(14) StmtReplace(30,46) StmtReplace(2,9) StmtReplace(47,21) StmtDelete(13) StmtDelete(15) StmtReplace(2,13) StmtDelete(5) StmtReplace(21,20) StmtReplace(41,49) StmtDelete(1) StmtDelete(48) at variant497 fails to compile
+
+88911 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtDelete(14) StmtReplace(30,46) StmtReplace(2,9) StmtReplace(47,21) StmtDelete(13) StmtDelete(15) StmtReplace(2,13) StmtDelete(5) StmtReplace(21,20) StmtReplace(41,49) StmtDelete(1) StmtDelete(48) (stored at: variant497)
+89067 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtDelete(14) StmtReplace(30,46) StmtReplace(2,9) StmtReplace(47,21) StmtAppend(45,39) StmtReplace(13,13) (stored at: variant498)
+89078 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:180: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+89078 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(31,46) StmtReplace(9,2) StmtAppend(46,2) StmtAppend(30,9) StmtReplace(30,46) StmtReplace(2,9) StmtReplace(47,21) StmtDelete(13) StmtDelete(15) StmtReplace(2,13) StmtDelete(5) StmtReplace(21,20) StmtDelete(39) at variant499 fails to compile
+
+89078 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtAppend(31,46) StmtReplace(9,2) StmtAppend(46,2) StmtAppend(30,9) StmtReplace(30,46) StmtReplace(2,9) StmtReplace(47,21) StmtDelete(13) StmtDelete(15) StmtReplace(2,13) StmtDelete(5) StmtReplace(21,20) StmtDelete(39) (stored at: variant499)
+89240 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtAppend(50,14) StmtAppend(46,2) (stored at: variant500)
+89410 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtDelete(13) StmtDelete(15) StmtReplace(2,13) StmtDelete(5) StmtReplace(30,46) StmtReplace(2,9) StmtReplace(47,21) StmtDelete(16) StmtReplace(41,49) StmtDelete(1) StmtReplace(47,21) (stored at: variant501)
+89418 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:200: error: variable ret might not have been initialized
+        return ret;
+               ^
+1 error
+
+89418 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(20) StmtAppend(16,14) StmtDelete(48) at variant502 fails to compile
+
+89418 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtDelete(20) StmtAppend(16,14) StmtDelete(48) (stored at: variant502)
+89428 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/math/distribution/NormalDistributionImpl.java:79: error: incompatible types: unexpected return value
+				return Double.POSITIVE_INFINITY;
+				             ^
+1 error
+
+89428 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(25,23) StmtReplace(2,16) StmtAppend(46,48) StmtDelete(50) StmtAppend(9,24) at variant503 fails to compile
+
+89428 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtReplace(25,23) StmtReplace(2,16) StmtAppend(46,48) StmtDelete(50) StmtAppend(9,24) (stored at: variant503)
+89646 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtDelete(3) StmtDelete(2) StmtAppend(23,2) StmtReplace(39,24) StmtReplace(50,33) (stored at: variant504)
+89675 [main] INFO clegoues.genprog4java.fitness.Fitness  - Serialized test cache to file testcache.ser
+89675 [main] INFO clegoues.genprog4java.main.Main  - 
+Total elapsed time: 89
+

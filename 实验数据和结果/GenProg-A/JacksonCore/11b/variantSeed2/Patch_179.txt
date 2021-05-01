@@ -1,0 +1,70 @@
+1 Replace /home/rtx/d4j/JacksonCore/11b/src/main/java/com/fasterxml/jackson/core/sym/ByteQuadsCanonicalizer.java 635
+Faulty:
+return null;
+Seed:
+int pri=primaryCount();
+**************************************************
+2 InsertBefore /home/rtx/d4j/JacksonCore/11b/src/main/java/com/fasterxml/jackson/core/sym/ByteQuadsCanonicalizer.java 631
+Faulty:
+if ((q1 == hashArea[offset]) && (1 == len)) {
+  return _names[offset >> 2];
+}
+Seed:
+nukeSymbols(false);
+**************************************************
+3 Replace /home/rtx/d4j/JacksonCore/11b/src/main/java/com/fasterxml/jackson/core/sym/ByteQuadsCanonicalizer.java 932
+Faulty:
+_reportTooManyCollisions();
+Seed:
+hash*=MULT2;
+**************************************************
+4 InsertBefore /home/rtx/d4j/JacksonCore/11b/src/main/java/com/fasterxml/jackson/core/sym/ByteQuadsCanonicalizer.java 930
+Faulty:
+if (_spilloverEnd >= end) {
+  if (_failOnDoS) {
+    _reportTooManyCollisions();
+  }
+  _needRehash=true;
+}
+Seed:
+hash+=(hash >>> 16);
+**************************************************
+5 Delete /home/rtx/d4j/JacksonCore/11b/src/main/java/com/fasterxml/jackson/core/sym/ByteQuadsCanonicalizer.java 932
+Faulty:
+_reportTooManyCollisions();
+Seed:
+hash^=_seed;
+**************************************************
+6 Replace /home/rtx/d4j/JacksonCore/11b/src/main/java/com/fasterxml/jackson/core/sym/ByteQuadsCanonicalizer.java 930
+Faulty:
+if (_spilloverEnd >= end) {
+  if (_failOnDoS) {
+    _reportTooManyCollisions();
+  }
+  _needRehash=true;
+}
+Seed:
+hash+=(hash >>> 12);
+**************************************************
+7 Delete /home/rtx/d4j/JacksonCore/11b/src/main/java/com/fasterxml/jackson/core/sym/ByteQuadsCanonicalizer.java 931
+Faulty:
+if (_failOnDoS) {
+  _reportTooManyCollisions();
+}
+Seed:
+_longNameOffset=_hashSize << 3;
+**************************************************
+8 InsertBefore /home/rtx/d4j/JacksonCore/11b/src/main/java/com/fasterxml/jackson/core/sym/ByteQuadsCanonicalizer.java 936
+Faulty:
+_needRehash=true;
+Seed:
+hash+=(hash >>> 19);
+**************************************************
+9 InsertBefore /home/rtx/d4j/JacksonCore/11b/src/main/java/com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java 2509
+Faulty:
+final int[] codes=_icUTF8;
+Seed:
+int space=_inputBuffer.length;
+**************************************************
+Evaluations: 371
+EstimatedTime: 1071043

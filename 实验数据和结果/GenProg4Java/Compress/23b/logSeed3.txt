@@ -1,0 +1,806 @@
+0 [main] DEBUG clegoues.genprog4java.fitness.Fitness  - parsing granularity, value: class
+26 [main] DEBUG clegoues.genprog4java.fitness.Fitness  - parsing granularity, value: class
+#Sun Feb 21 23:30:42 CST 2021
+negativeTestWeight=2.0
+classSourceFolder=/home/rtx/repair/d4j/Compress/23b/target/classes
+model=default
+sampleStrategy=variant
+srcClassPath=/home/rtx/repair/d4j/Compress/23b/target/classes\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/tukaani/xz/1.4/xz-1.4.jar
+sourceVersion=1.8
+popsize=40
+regenPaths=false
+posCoverageFile=coverage.path.pos
+continue=false
+edits=APPEND;DELETE;REPLACE
+negCoverageFile=coverage.path.neg
+workingDir=/home/rtx/repair/d4j/Compress/23b/
+clearTestCache=false
+skipFailedSanity=false
+sample=0.1 
+oracleGenome=
+testGranularity=class
+justTestingFaultLoc=false
+faultLocStrategy=standardPathFile
+crossp=0.5
+pMutation=1
+generations=10
+positiveTests=/home/rtx/repair/d4j/Compress/23b/pos.tests
+javaVM=/home/rtx/java/jdk1.8.0_271/jre/bin/java
+seed=3
+negativePathWeight=0.35
+compileCommand=
+fixStrategy=classScope
+allowCoverageFail=false
+targetClassName=/home/rtx/repair/d4j/Compress/23b/bugfiles.txt
+javaRuntime=java.lang.Runtime@6576fe71
+classTestFolder=
+modelPath=OVERALLModel.txt
+sanity=yes
+positivePathWeight=0.65
+jacocoPath=/home/rtx/eclipse-workspace/genprog4java/lib/jacocoagent.jar
+negativeTests=/home/rtx/repair/d4j/Compress/23b/neg.tests
+pathToFileHumanInjectedFaultLoc=fileHumanInjectedFaultLoc.txt
+outputDir=/home/rtx/repair/d4j/Compress/23b/genprog4java/variantSeed3/
+testClassPath=/home/rtx/repair/defects4j/framework/projects/Compress/lib/junit/junit/4.11/junit-4.11.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/tukaani/xz/1.4/xz-1.4.jar\:/home/rtx/repair/d4j/Compress/23b/target/classes\:/home/rtx/repair/d4j/Compress/23b/target/test-classes\:/home/rtx/repair/defects4j/framework/projects/lib/junit-4.11.jar\:/home/rtx/repair/d4j/Compress/23b/${dependency.jar}\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/com/github/luben/zstd-jni/1.3.1-1/zstd-jni-1.3.1-1.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/com/github/luben/zstd-jni/1.3.3-1/zstd-jni-1.3.3-1.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/junit/junit/3.8.2/junit-3.8.2.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/junit/junit/4.10/junit-4.10.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/junit/junit/4.12/junit-4.12.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/junit/junit/4.8.2/junit-4.8.2.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/com/github/luben/zstd-jni/1.3.1-1/zstd-jni-1.3.1-1.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/com/github/luben/zstd-jni/1.3.3-1/zstd-jni-1.3.3-1.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/junit/junit/3.8.2/junit-3.8.2.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/junit/junit/4.10/junit-4.10.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/junit/junit/4.11/junit-4.11.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/junit/junit/4.12/junit-4.12.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/junit/junit/4.8.2/junit-4.8.2.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/brotli/dec/0.1.1/dec-0.1.1.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/brotli/dec/0.1.2/dec-0.1.2.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/javassist/javassist/3.20.0-GA/javassist-3.20.0-GA.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/javassist/javassist/3.21.0-GA/javassist-3.21.0-GA.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/mockito/mockito-core/1.10.19/mockito-core-1.10.19.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/objenesis/objenesis/2.1/objenesis-2.1.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/objenesis/objenesis/2.6/objenesis-2.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-api-mockito-common/1.6.6/powermock-api-mockito-common-1.6.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-api-mockito-common/1.7.0/powermock-api-mockito-common-1.7.0.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-api-mockito-common/1.7.3/powermock-api-mockito-common-1.7.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-api-mockito/1.6.4/powermock-api-mockito-1.6.4.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-api-mockito/1.6.6/powermock-api-mockito-1.6.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-api-mockito/1.7.0/powermock-api-mockito-1.7.0.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-api-mockito/1.7.3/powermock-api-mockito-1.7.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-api-support/1.6.4/powermock-api-support-1.6.4.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-api-support/1.6.6/powermock-api-support-1.6.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-api-support/1.7.0/powermock-api-support-1.7.0.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-api-support/1.7.3/powermock-api-support-1.7.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-core/1.6.4/powermock-core-1.6.4.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-core/1.6.6/powermock-core-1.6.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-core/1.7.0/powermock-core-1.7.0.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-core/1.7.3/powermock-core-1.7.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-module-junit4-common/1.6.4/powermock-module-junit4-common-1.6.4.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-module-junit4-common/1.6.6/powermock-module-junit4-common-1.6.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-module-junit4-common/1.7.0/powermock-module-junit4-common-1.7.0.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-module-junit4-common/1.7.3/powermock-module-junit4-common-1.7.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-module-junit4/1.6.4/powermock-module-junit4-1.6.4.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-module-junit4/1.6.6/powermock-module-junit4-1.6.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-module-junit4/1.7.0/powermock-module-junit4-1.7.0.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-module-junit4/1.7.3/powermock-module-junit4-1.7.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-reflect/1.6.4/powermock-reflect-1.6.4.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-reflect/1.6.6/powermock-reflect-1.6.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-reflect/1.7.0/powermock-reflect-1.7.0.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-reflect/1.7.3/powermock-reflect-1.7.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/tukaani/xz/1.0/xz-1.0.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/tukaani/xz/1.2/xz-1.2.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/tukaani/xz/1.3/xz-1.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/tukaani/xz/1.4/xz-1.4.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/tukaani/xz/1.5/xz-1.5.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/tukaani/xz/1.6/xz-1.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/tukaani/xz/1.8/xz-1.8.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/zstd-jni-1.3.4-3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/brotli/dec/0.1.1/dec-0.1.1.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/brotli/dec/0.1.2/dec-0.1.2.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/javassist/javassist/3.20.0-GA/javassist-3.20.0-GA.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/javassist/javassist/3.21.0-GA/javassist-3.21.0-GA.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/mockito/mockito-core/1.10.19/mockito-core-1.10.19.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/objenesis/objenesis/2.1/objenesis-2.1.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/objenesis/objenesis/2.6/objenesis-2.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-api-mockito-common/1.6.6/powermock-api-mockito-common-1.6.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-api-mockito-common/1.7.0/powermock-api-mockito-common-1.7.0.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-api-mockito-common/1.7.3/powermock-api-mockito-common-1.7.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-api-mockito/1.6.4/powermock-api-mockito-1.6.4.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-api-mockito/1.6.6/powermock-api-mockito-1.6.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-api-mockito/1.7.0/powermock-api-mockito-1.7.0.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-api-mockito/1.7.3/powermock-api-mockito-1.7.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-api-support/1.6.4/powermock-api-support-1.6.4.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-api-support/1.6.6/powermock-api-support-1.6.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-api-support/1.7.0/powermock-api-support-1.7.0.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-api-support/1.7.3/powermock-api-support-1.7.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-core/1.6.4/powermock-core-1.6.4.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-core/1.6.6/powermock-core-1.6.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-core/1.7.0/powermock-core-1.7.0.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-core/1.7.3/powermock-core-1.7.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-module-junit4-common/1.6.4/powermock-module-junit4-common-1.6.4.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-module-junit4-common/1.6.6/powermock-module-junit4-common-1.6.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-module-junit4-common/1.7.0/powermock-module-junit4-common-1.7.0.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-module-junit4-common/1.7.3/powermock-module-junit4-common-1.7.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-module-junit4/1.6.4/powermock-module-junit4-1.6.4.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-module-junit4/1.6.6/powermock-module-junit4-1.6.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-module-junit4/1.7.0/powermock-module-junit4-1.7.0.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-module-junit4/1.7.3/powermock-module-junit4-1.7.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-reflect/1.6.4/powermock-reflect-1.6.4.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-reflect/1.6.6/powermock-reflect-1.6.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-reflect/1.7.0/powermock-reflect-1.7.0.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-reflect/1.7.3/powermock-reflect-1.7.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/tukaani/xz/1.0/xz-1.0.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/tukaani/xz/1.2/xz-1.2.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/tukaani/xz/1.3/xz-1.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/tukaani/xz/1.5/xz-1.5.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/tukaani/xz/1.6/xz-1.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/tukaani/xz/1.8/xz-1.8.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/zstd-jni-1.3.4-3.jar
+faultStrategy=classScope
+sourceDir=src/main/java
+checkSpace=false
+search=gp
+globalExtension=.java
+faultSpaceSubSet=1/5
+maxVariants=50
+libs=/home/rtx/eclipse-workspace/genprog4java/lib/junittestrunner.jar\:/home/rtx/eclipse-workspace/genprog4java/lib/commons-cli-20040117.000000.jar\:/home/rtx/eclipse-workspace/genprog4java/lib/junit-4.12.jar\:/home/rtx/eclipse-workspace/genprog4java/lib/hamcrest-core-1.3.jar\:/home/rtx/eclipse-workspace/genprog4java/lib/log4j-1.2.17.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/junit/junit/4.11/junit-4.11.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/tukaani/xz/1.4/xz-1.4.jar\:/home/rtx/repair/d4j/Compress/23b/target/classes\:/home/rtx/repair/d4j/Compress/23b/target/test-classes\:/home/rtx/repair/defects4j/framework/projects/lib/junit-4.11.jar\:/home/rtx/repair/d4j/Compress/23b/${dependency.jar}\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/com/github/luben/zstd-jni/1.3.1-1/zstd-jni-1.3.1-1.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/com/github/luben/zstd-jni/1.3.3-1/zstd-jni-1.3.3-1.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/junit/junit/3.8.2/junit-3.8.2.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/junit/junit/4.10/junit-4.10.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/junit/junit/4.12/junit-4.12.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/junit/junit/4.8.2/junit-4.8.2.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/com/github/luben/zstd-jni/1.3.1-1/zstd-jni-1.3.1-1.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/com/github/luben/zstd-jni/1.3.3-1/zstd-jni-1.3.3-1.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/junit/junit/3.8.2/junit-3.8.2.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/junit/junit/4.10/junit-4.10.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/junit/junit/4.11/junit-4.11.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/junit/junit/4.12/junit-4.12.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/junit/junit/4.8.2/junit-4.8.2.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/brotli/dec/0.1.1/dec-0.1.1.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/brotli/dec/0.1.2/dec-0.1.2.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/javassist/javassist/3.20.0-GA/javassist-3.20.0-GA.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/javassist/javassist/3.21.0-GA/javassist-3.21.0-GA.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/mockito/mockito-core/1.10.19/mockito-core-1.10.19.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/objenesis/objenesis/2.1/objenesis-2.1.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/objenesis/objenesis/2.6/objenesis-2.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-api-mockito-common/1.6.6/powermock-api-mockito-common-1.6.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-api-mockito-common/1.7.0/powermock-api-mockito-common-1.7.0.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-api-mockito-common/1.7.3/powermock-api-mockito-common-1.7.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-api-mockito/1.6.4/powermock-api-mockito-1.6.4.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-api-mockito/1.6.6/powermock-api-mockito-1.6.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-api-mockito/1.7.0/powermock-api-mockito-1.7.0.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-api-mockito/1.7.3/powermock-api-mockito-1.7.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-api-support/1.6.4/powermock-api-support-1.6.4.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-api-support/1.6.6/powermock-api-support-1.6.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-api-support/1.7.0/powermock-api-support-1.7.0.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-api-support/1.7.3/powermock-api-support-1.7.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-core/1.6.4/powermock-core-1.6.4.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-core/1.6.6/powermock-core-1.6.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-core/1.7.0/powermock-core-1.7.0.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-core/1.7.3/powermock-core-1.7.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-module-junit4-common/1.6.4/powermock-module-junit4-common-1.6.4.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-module-junit4-common/1.6.6/powermock-module-junit4-common-1.6.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-module-junit4-common/1.7.0/powermock-module-junit4-common-1.7.0.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-module-junit4-common/1.7.3/powermock-module-junit4-common-1.7.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-module-junit4/1.6.4/powermock-module-junit4-1.6.4.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-module-junit4/1.6.6/powermock-module-junit4-1.6.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-module-junit4/1.7.0/powermock-module-junit4-1.7.0.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-module-junit4/1.7.3/powermock-module-junit4-1.7.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-reflect/1.6.4/powermock-reflect-1.6.4.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-reflect/1.6.6/powermock-reflect-1.6.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-reflect/1.7.0/powermock-reflect-1.7.0.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-reflect/1.7.3/powermock-reflect-1.7.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/tukaani/xz/1.0/xz-1.0.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/tukaani/xz/1.2/xz-1.2.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/tukaani/xz/1.3/xz-1.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/tukaani/xz/1.4/xz-1.4.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/tukaani/xz/1.5/xz-1.5.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/tukaani/xz/1.6/xz-1.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/tukaani/xz/1.8/xz-1.8.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/zstd-jni-1.3.4-3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/brotli/dec/0.1.1/dec-0.1.1.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/brotli/dec/0.1.2/dec-0.1.2.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/javassist/javassist/3.20.0-GA/javassist-3.20.0-GA.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/javassist/javassist/3.21.0-GA/javassist-3.21.0-GA.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/mockito/mockito-core/1.10.19/mockito-core-1.10.19.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/objenesis/objenesis/2.1/objenesis-2.1.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/objenesis/objenesis/2.6/objenesis-2.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-api-mockito-common/1.6.6/powermock-api-mockito-common-1.6.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-api-mockito-common/1.7.0/powermock-api-mockito-common-1.7.0.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-api-mockito-common/1.7.3/powermock-api-mockito-common-1.7.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-api-mockito/1.6.4/powermock-api-mockito-1.6.4.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-api-mockito/1.6.6/powermock-api-mockito-1.6.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-api-mockito/1.7.0/powermock-api-mockito-1.7.0.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-api-mockito/1.7.3/powermock-api-mockito-1.7.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-api-support/1.6.4/powermock-api-support-1.6.4.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-api-support/1.6.6/powermock-api-support-1.6.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-api-support/1.7.0/powermock-api-support-1.7.0.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-api-support/1.7.3/powermock-api-support-1.7.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-core/1.6.4/powermock-core-1.6.4.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-core/1.6.6/powermock-core-1.6.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-core/1.7.0/powermock-core-1.7.0.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-core/1.7.3/powermock-core-1.7.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-module-junit4-common/1.6.4/powermock-module-junit4-common-1.6.4.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-module-junit4-common/1.6.6/powermock-module-junit4-common-1.6.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-module-junit4-common/1.7.0/powermock-module-junit4-common-1.7.0.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-module-junit4-common/1.7.3/powermock-module-junit4-common-1.7.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-module-junit4/1.6.4/powermock-module-junit4-1.6.4.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-module-junit4/1.6.6/powermock-module-junit4-1.6.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-module-junit4/1.7.0/powermock-module-junit4-1.7.0.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-module-junit4/1.7.3/powermock-module-junit4-1.7.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-reflect/1.6.4/powermock-reflect-1.6.4.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-reflect/1.6.6/powermock-reflect-1.6.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-reflect/1.7.0/powermock-reflect-1.7.0.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-reflect/1.7.3/powermock-reflect-1.7.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/tukaani/xz/1.0/xz-1.0.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/tukaani/xz/1.2/xz-1.2.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/tukaani/xz/1.3/xz-1.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/tukaani/xz/1.5/xz-1.5.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/tukaani/xz/1.6/xz-1.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/tukaani/xz/1.8/xz-1.8.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/zstd-jni-1.3.4-3.jar\:/home/rtx/repair/d4j/Compress/23b/target/classes\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/tukaani/xz/1.4/xz-1.4.jar
+crossover=onepoint
+100 [main] INFO clegoues.genprog4java.main.Main  - Configuration file loaded
+Deserialized fitnessCache HashMap
+26698 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - loaded from source clegoues.genprog4java.java.ClassInfo@4cdc8a44
+26698 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - sanity checking begins
+27256 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 1 out of 2
+27541 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+27541 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 2 out of 2
+27985 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+27985 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - 	n1: 
+28615 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - false (0)
+
+28615 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - sanity checking completed (time taken = 1917)
+28615 [main] INFO clegoues.genprog4java.localization.DefaultLocalization  - Start Fault Localization
+28622 [main] INFO clegoues.genprog4java.localization.DefaultLocalization  - Finish Fault Localization
+28622 [main] INFO clegoues.genprog4java.Search.Search  - search: genetic algorithm begins
+
+28636 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 original (stored at: )
+28678 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtAppend(10,10) (stored at: )
+28682 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtAppend(10,10) (stored at: )
+28687 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtAppend(11,11) (stored at: )
+28690 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtReplace(2,4) (stored at: )
+28694 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtReplace(8,8) (stored at: )
+28699 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtAppend(8,8) (stored at: )
+28703 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtAppend(3,5) (stored at: )
+28706 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtDelete(11) (stored at: )
+28708 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtReplace(3,5) (stored at: )
+28712 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtAppend(4,4) (stored at: )
+28716 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtReplace(2,4) (stored at: )
+28718 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtDelete(2) (stored at: )
+28720 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtDelete(8) (stored at: )
+28724 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtAppend(4,4) (stored at: )
+28727 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtReplace(1,1) (stored at: )
+28729 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtAppend(8,8) (stored at: )
+28732 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtDelete(2) (stored at: )
+28733 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtReplace(3,5) (stored at: )
+28736 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtAppend(1,1) (stored at: )
+28739 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtDelete(2) (stored at: )
+28745 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtReplace(9,10) (stored at: )
+28749 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtAppend(4,3) (stored at: )
+28752 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtReplace(11,11) (stored at: )
+28753 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtReplace(10,11) (stored at: )
+28756 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtReplace(9,11) (stored at: )
+28760 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtAppend(9,11) (stored at: )
+28765 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtAppend(2,4) (stored at: )
+28770 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtAppend(2,4) (stored at: )
+28774 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtAppend(4,4) (stored at: )
+28778 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtReplace(2,3) (stored at: )
+28780 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtDelete(3) (stored at: )
+28782 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtReplace(1,1) (stored at: )
+28784 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtReplace(10,11) (stored at: )
+28786 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtDelete(2) (stored at: )
+28787 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtDelete(4) (stored at: )
+28789 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtDelete(3) (stored at: )
+28792 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtReplace(2,4) (stored at: )
+28794 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtReplace(10,12) (stored at: )
+28797 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtDelete(10) (stored at: )
+28797 [main] INFO clegoues.genprog4java.Search.Search  - search: generation1
+29286 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/sevenz/Coders.java:62: error: unreachable statement
+				{
+				^
+1 error
+
+29771 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/sevenz/Coders.java:51: error: unreachable statement
+				{
+				^
+1 error
+
+29966 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/sevenz/Coders.java:51: error: unreachable statement
+				{
+				^
+1 error
+
+30461 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/sevenz/Coders.java:51: error: unreachable statement
+				if (Arrays.equals(coderId.method.getId(), coder.decompressionMethodId)) {
+				^
+1 error
+
+30819 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/sevenz/Coders.java:51: error: unreachable statement
+				{
+				^
+1 error
+
+32391 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(1,1) StmtAppend(10,12) (stored at: variant0)
+32394 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(10) StmtAppend(8,8) (stored at: )
+32400 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(2,3) StmtAppend(8,8) (stored at: )
+32404 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(2,3) StmtAppend(3,5) (stored at: )
+33125 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(1,1) StmtReplace(11,10) (stored at: variant1)
+33130 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(1,1) StmtDelete(8) (stored at: )
+33134 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(10) StmtReplace(2,3) (stored at: )
+33138 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(2,4) StmtReplace(4,4) (stored at: )
+33141 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(10,10) StmtDelete(8) (stored at: )
+33529 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(3,5) StmtReplace(10,11) (stored at: variant2)
+33534 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(2,4) StmtAppend(11,10) (stored at: )
+33535 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(1,1) (stored at: )
+33540 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(1,1) StmtAppend(9,11) (stored at: )
+33544 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(1,1) StmtDelete(8) (stored at: )
+33546 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(10,12) StmtReplace(10,12) (stored at: )
+33548 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(9,11) StmtDelete(9) (stored at: )
+33941 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(10,10) StmtReplace(3,5) (stored at: variant3)
+33947 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(8,8) StmtAppend(1,1) (stored at: )
+33948 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(10) StmtReplace(10,12) (stored at: )
+33952 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(1,1) StmtReplace(11,10) (stored at: )
+33955 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(2) StmtReplace(1,1) (stored at: )
+33958 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(2,4) StmtDelete(4) (stored at: )
+33963 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(11) StmtReplace(1,1) (stored at: )
+33965 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(2,4) StmtDelete(2) (stored at: )
+33969 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(2,4) StmtAppend(11,10) (stored at: )
+34412 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(10) StmtAppend(3,4) (stored at: variant4)
+34415 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(10,12) StmtDelete(8) (stored at: )
+34419 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(11) StmtAppend(9,10) (stored at: )
+34423 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(3) StmtReplace(11,11) (stored at: )
+34425 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(8,8) StmtAppend(8,8) (stored at: )
+34430 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(1,1) StmtAppend(9,10) (stored at: )
+34434 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(10) StmtAppend(11,11) (stored at: )
+34440 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(2,4) StmtReplace(8,8) (stored at: )
+34442 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(2) (stored at: )
+34446 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(9,10) StmtDelete(10) (stored at: )
+34448 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(1,1) StmtAppend(1,1) (stored at: )
+34451 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(1,1) StmtAppend(4,3) (stored at: )
+34452 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(10) StmtAppend(10,11) (stored at: )
+34454 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(11,11) (stored at: )
+34458 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(2,4) StmtAppend(1,1) (stored at: )
+34460 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(11,11) (stored at: )
+34462 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(10,10) (stored at: )
+34463 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(3) (stored at: )
+34465 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(3,4) (stored at: )
+34467 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(11) (stored at: )
+34469 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(1,1) (stored at: )
+34472 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(9) (stored at: )
+34474 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(9) (stored at: )
+34476 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(2) (stored at: )
+34479 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(4,3) (stored at: )
+34481 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(1) (stored at: )
+34482 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(1,1) (stored at: )
+34484 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(3,4) (stored at: )
+34487 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(11,11) (stored at: )
+34490 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(8,8) (stored at: )
+34491 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(10) (stored at: )
+34493 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(8) (stored at: )
+34494 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(3) (stored at: )
+34495 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(1,1) (stored at: )
+34497 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(1,1) (stored at: )
+34499 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(8,8) (stored at: )
+34502 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(11) (stored at: )
+34502 [main] INFO clegoues.genprog4java.Search.Search  - search: generation2
+34872 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/sevenz/Coders.java:60: error: unreachable statement
+				if (coderId.method.equals(method)) {
+				^
+1 error
+
+35447 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/sevenz/Coders.java:60: error: unreachable statement
+				if (coderId.method.equals(method)) {
+				^
+1 error
+
+36720 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/sevenz/Coders.java:62: error: unreachable statement
+				{
+				^
+1 error
+
+37171 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(4,3) StmtAppend(4,4) (stored at: )
+37179 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(2,4) StmtDelete(4) StmtAppend(9,10) (stored at: )
+37182 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(2) StmtReplace(2,4) (stored at: )
+37186 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(2,4) StmtReplace(4,4) StmtDelete(1) (stored at: )
+37190 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(11) StmtReplace(1,1) StmtAppend(11,11) (stored at: )
+37194 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(11) StmtReplace(1,1) StmtDelete(3) (stored at: )
+37197 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(1,1) StmtAppend(10,12) (stored at: )
+37202 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(2,4) StmtDelete(4) StmtAppend(9,10) (stored at: )
+37206 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtAppend(1,1) StmtReplace(8,8) (stored at: )
+37211 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(2,3) StmtAppend(8,8) StmtReplace(4,3) (stored at: )
+37214 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(2) StmtAppend(2,4) (stored at: )
+37218 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(2) StmtAppend(9,10) (stored at: )
+37220 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(2) StmtDelete(1) (stored at: )
+37226 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(11,11) StmtAppend(4,4) (stored at: )
+37232 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(2,3) StmtAppend(3,5) StmtDelete(10) (stored at: )
+37237 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtAppend(1,1) StmtAppend(1,1) StmtAppend(9,10) (stored at: )
+38317 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(10,12) StmtReplace(10,12) StmtReplace(4,4) (stored at: variant5)
+38320 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtAppend(10,10) StmtDelete(8) StmtDelete(2) (stored at: )
+38324 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(10) StmtAppend(3,4) StmtAppend(11,11) (stored at: )
+38327 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtAppend(1,1) StmtAppend(9,10) (stored at: )
+38331 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(11) StmtDelete(4) (stored at: )
+38334 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(3) StmtReplace(2,4) (stored at: )
+38373 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/sevenz/Coders.java:61: error: unreachable statement
+				if (coderId.method.equals(method)) {
+				^
+1 error
+
+38373 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(3) StmtAppend(11,10) at variant6 fails to compile
+
+38373 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(3) StmtAppend(11,10) (stored at: variant6)
+38377 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(9,10) StmtDelete(10) StmtAppend(8,8) (stored at: )
+38380 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(1,1) StmtReplace(8,8) (stored at: )
+38385 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(4,3) StmtReplace(1,1) (stored at: )
+38387 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtAppend(1,1) StmtAppend(3,5) (stored at: )
+38393 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(1,1) StmtAppend(9,10) StmtAppend(8,8) (stored at: )
+38399 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtAppend(2,4) StmtReplace(8,8) StmtDelete(11) (stored at: )
+38403 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(3) StmtAppend(8,8) (stored at: )
+38411 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(1,1) StmtAppend(4,3) StmtAppend(2,3) (stored at: )
+39276 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(4,3) StmtDelete(10) (stored at: variant7)
+39279 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(1) StmtAppend(8,8) (stored at: )
+39282 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(1,1) StmtReplace(11,10) StmtDelete(11) (stored at: )
+39284 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(11) StmtAppend(3,3) (stored at: )
+39287 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtAppend(10,10) StmtReplace(3,5) StmtReplace(3,3) (stored at: )
+40024 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(1,1) StmtReplace(11,10) StmtReplace(10,11) (stored at: variant8)
+40025 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(3) StmtAppend(3,4) (stored at: )
+40028 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(8,8) StmtAppend(11,11) (stored at: )
+40032 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtAppend(10,10) StmtReplace(3,5) StmtDelete(2) (stored at: )
+40034 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtAppend(2,3) (stored at: )
+40036 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(8,8) (stored at: )
+40039 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(11) StmtReplace(9,11) (stored at: )
+40041 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtAppend(3,5) (stored at: )
+40043 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(4) (stored at: )
+40045 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(1,1) StmtAppend(4,4) (stored at: )
+40046 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(1) (stored at: )
+40049 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtAppend(2,4) StmtReplace(11,11) (stored at: )
+40052 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(2,3) StmtDelete(3) (stored at: )
+40053 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(3) (stored at: )
+40054 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(9) (stored at: )
+40056 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtAppend(1,1) (stored at: )
+40058 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtAppend(1,1) StmtDelete(1) (stored at: )
+40060 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtAppend(10,10) StmtAppend(9,11) (stored at: )
+40066 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(10,12) StmtReplace(11,10) StmtAppend(2,4) (stored at: )
+40066 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(10) (stored at: )
+40068 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(3,5) StmtDelete(4) (stored at: )
+40069 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtAppend(3,3) (stored at: )
+40069 [main] INFO clegoues.genprog4java.Search.Search  - search: generation3
+40093 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/sevenz/Coders.java:51: error: unreachable statement
+				{
+				^
+1 error
+
+40180 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/sevenz/Coders.java:58: error: unreachable statement
+				{
+				^
+1 error
+
+40435 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/sevenz/Coders.java:51: error: unreachable statement
+				{
+				^
+1 error
+
+41663 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(3) StmtAppend(3,3) (stored at: )
+41670 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(2,4) StmtDelete(4) StmtAppend(9,10) StmtAppend(8,8) (stored at: )
+41673 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(8,8) StmtAppend(4,4) (stored at: )
+41677 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtAppend(1,1) StmtAppend(1,1) StmtAppend(9,10) StmtAppend(4,4) (stored at: )
+41682 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(10) StmtAppend(3,4) StmtAppend(11,11) StmtDelete(2) (stored at: )
+41684 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(4) StmtReplace(1,1) (stored at: )
+41687 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(11) StmtReplace(1,1) StmtDelete(3) StmtAppend(9,10) (stored at: )
+41690 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(11) StmtAppend(3,3) StmtDelete(1) (stored at: )
+41692 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(1) StmtAppend(8,8) StmtReplace(10,10) (stored at: )
+41697 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(10) StmtAppend(3,4) StmtAppend(11,11) StmtAppend(1,1) (stored at: )
+41701 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtAppend(2,4) StmtReplace(11,11) StmtReplace(1,1) (stored at: )
+41703 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(3) StmtAppend(8,8) StmtDelete(3) (stored at: )
+41708 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(2,3) StmtAppend(8,8) StmtReplace(4,3) StmtReplace(10,12) (stored at: )
+41712 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtAppend(1,1) StmtReplace(8,8) StmtReplace(2,4) (stored at: )
+41758 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(2,4) StmtDelete(4) StmtAppend(9,10) StmtReplace(1,1) (stored at: )
+41762 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(2,3) StmtDelete(3) StmtAppend(10,11) (stored at: )
+41766 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtAppend(10,10) StmtAppend(9,11) StmtReplace(1,1) (stored at: )
+41772 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(2) StmtAppend(9,10) StmtReplace(1,1) (stored at: )
+41775 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(2,4) StmtReplace(4,4) StmtDelete(1) StmtAppend(10,11) (stored at: )
+41778 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(2,4) StmtReplace(4,4) StmtDelete(1) StmtReplace(1,1) (stored at: )
+41782 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(1,1) StmtAppend(4,4) StmtAppend(9,10) (stored at: )
+41786 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(11) StmtAppend(3,3) StmtDelete(1) (stored at: )
+41791 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(2,4) StmtReplace(4,4) StmtDelete(1) StmtAppend(1,1) (stored at: )
+41795 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(1) StmtAppend(8,8) StmtReplace(1,1) (stored at: )
+41804 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(1,1) StmtAppend(4,3) StmtAppend(2,3) StmtReplace(8,8) (stored at: )
+41808 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(11) StmtReplace(9,11) StmtReplace(8,8) (stored at: )
+41813 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(11) StmtReplace(9,11) StmtDelete(10) (stored at: )
+41821 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(2,4) StmtDelete(4) StmtAppend(9,10) StmtDelete(1) (stored at: )
+41823 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(8,8) StmtAppend(11,11) StmtDelete(11) (stored at: )
+41826 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtAppend(3,3) StmtAppend(4,3) (stored at: )
+41833 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(2,4) StmtDelete(4) StmtAppend(9,10) StmtAppend(9,10) (stored at: )
+41840 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(2,4) StmtReplace(4,4) StmtDelete(1) StmtReplace(11,10) (stored at: )
+41844 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(2,3) StmtAppend(3,5) StmtDelete(10) StmtReplace(3,5) (stored at: )
+41848 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtAppend(2,3) StmtAppend(1,1) (stored at: )
+41851 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtAppend(10,10) StmtReplace(3,5) StmtReplace(3,3) StmtDelete(10) (stored at: )
+41853 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(4) StmtAppend(4,4) (stored at: )
+41857 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(8,8) StmtAppend(11,11) StmtAppend(1,1) (stored at: )
+41862 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtAppend(10,10) StmtDelete(8) StmtDelete(2) StmtAppend(1,1) (stored at: )
+41867 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(2,3) StmtAppend(8,8) StmtReplace(4,3) StmtDelete(4) (stored at: )
+41870 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(3) StmtAppend(3,4) StmtReplace(1,1) (stored at: )
+41874 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtAppend(4,4) StmtReplace(11,11) (stored at: )
+41876 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtAppend(11,11) (stored at: )
+41880 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(4,4) StmtDelete(1) StmtDelete(10) (stored at: )
+41881 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(11) (stored at: )
+41888 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtAppend(1,1) StmtAppend(1,1) StmtAppend(8,8) StmtAppend(2,3) (stored at: )
+41889 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtAppend(4,3) (stored at: )
+42594 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(11) StmtReplace(4,3) (stored at: variant9)
+42597 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(11) StmtDelete(3) StmtReplace(4,3) (stored at: )
+42599 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(11) StmtDelete(8) (stored at: )
+42601 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(2,4) StmtDelete(4) StmtAppend(10,11) (stored at: )
+42603 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(1) StmtAppend(11,10) (stored at: )
+42604 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(8,8) StmtDelete(8) (stored at: )
+42608 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtAppend(2,4) StmtAppend(9,10) StmtReplace(3,4) (stored at: )
+42611 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(2,4) StmtAppend(8,8) (stored at: )
+42614 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(3) StmtReplace(11,11) (stored at: )
+42616 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(2,4) StmtReplace(4,4) StmtAppend(4,3) (stored at: )
+42620 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(2,3) StmtAppend(8,8) StmtAppend(3,5) StmtDelete(10) StmtAppend(9,10) (stored at: )
+42621 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(10) (stored at: )
+42624 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(2,3) StmtReplace(1,1) (stored at: )
+42625 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(1) (stored at: )
+42628 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtAppend(10,10) StmtAppend(11,11) StmtAppend(10,11) (stored at: )
+42630 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(11) (stored at: )
+42633 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(2) StmtDelete(2) StmtAppend(4,4) (stored at: )
+42636 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtAppend(10,10) StmtReplace(1,1) (stored at: )
+42637 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(3,5) (stored at: )
+42641 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(2,3) StmtAppend(8,8) StmtReplace(4,4) StmtDelete(1) StmtDelete(10) (stored at: )
+42643 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(11,10) (stored at: )
+42646 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(3) StmtReplace(4,4) StmtDelete(1) StmtDelete(1) (stored at: )
+42646 [main] INFO clegoues.genprog4java.Search.Search  - search: generation4
+42720 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/sevenz/Coders.java:51: error: unreachable statement
+				{
+				^
+1 error
+
+43569 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/sevenz/Coders.java:51: error: unreachable statement
+				{
+				^
+1 error
+
+43689 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/sevenz/Coders.java:51: error: unreachable statement
+				{
+				^
+1 error
+
+43825 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/sevenz/Coders.java:51: error: unreachable statement
+				if (Arrays.equals(coderId.method.getId(), coder.decompressionMethodId)) {
+				^
+1 error
+
+43934 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/sevenz/Coders.java:59: error: unreachable statement
+				if (coderId.method.equals(method)) {
+				^
+1 error
+
+44610 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtAppend(1,1) StmtReplace(8,8) StmtReplace(2,4) StmtAppend(2,3) (stored at: )
+44612 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(11,10) StmtReplace(10,11) (stored at: )
+44614 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(1) StmtAppend(8,8) StmtReplace(10,10) StmtDelete(8) (stored at: )
+44616 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(1) StmtReplace(10,10) (stored at: )
+44620 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(2,3) StmtDelete(3) StmtAppend(10,11) StmtAppend(11,11) (stored at: )
+44623 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(2,4) StmtReplace(4,4) StmtDelete(1) StmtAppend(10,11) StmtDelete(4) (stored at: )
+44626 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(1) StmtAppend(8,8) StmtReplace(10,10) StmtDelete(4) (stored at: )
+44629 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(11) StmtDelete(8) StmtReplace(1,1) (stored at: )
+44633 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(2,3) StmtAppend(8,8) StmtReplace(4,3) StmtReplace(10,12) StmtDelete(11) (stored at: )
+44636 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(11) StmtDelete(8) StmtDelete(8) (stored at: )
+44639 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(11) StmtAppend(3,3) StmtDelete(1) StmtDelete(1) (stored at: )
+44644 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(2,4) StmtReplace(4,4) StmtDelete(1) StmtAppend(1,1) StmtAppend(1,1) (stored at: )
+44649 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(3) StmtReplace(11,11) StmtDelete(4) (stored at: )
+44655 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(10) StmtAppend(3,4) StmtAppend(11,11) StmtDelete(2) StmtAppend(10,10) (stored at: )
+44661 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(2,4) StmtReplace(4,4) StmtDelete(1) StmtAppend(1,1) StmtAppend(2,3) (stored at: )
+44665 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(2,3) StmtDelete(3) StmtAppend(10,11) StmtDelete(3) (stored at: )
+45093 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(2,4) StmtReplace(4,4) StmtAppend(4,3) StmtAppend(10,10) (stored at: variant10)
+45096 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(3) StmtReplace(11,11) StmtAppend(8,8) (stored at: )
+45100 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(2,4) StmtReplace(4,4) StmtDelete(1) StmtReplace(11,10) StmtDelete(8) (stored at: )
+45105 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(1,1) StmtAppend(4,3) StmtAppend(2,3) StmtReplace(8,8) StmtReplace(11,10) (stored at: )
+45108 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtAppend(10,10) StmtAppend(9,11) StmtReplace(1,1) StmtReplace(11,10) (stored at: )
+45113 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(2,3) StmtAppend(8,8) StmtReplace(4,3) StmtReplace(10,12) StmtReplace(10,12) (stored at: )
+45119 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(2,3) StmtAppend(8,8) StmtReplace(4,4) StmtDelete(1) StmtDelete(10) StmtReplace(3,3) (stored at: )
+45120 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(1) StmtDelete(3) (stored at: )
+45121 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(3,5) StmtAppend(1,1) (stored at: )
+45126 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtAppend(2,4) StmtAppend(9,10) StmtReplace(3,4) StmtAppend(10,10) (stored at: )
+45127 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(3,5) StmtDelete(3) (stored at: )
+45133 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtAppend(10,10) StmtDelete(8) StmtDelete(2) StmtAppend(1,1) StmtAppend(10,10) (stored at: )
+45137 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(2,3) StmtAppend(3,5) StmtDelete(10) StmtReplace(3,5) StmtDelete(1) (stored at: )
+45141 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(11) StmtAppend(3,3) StmtDelete(1) StmtReplace(8,8) (stored at: )
+45146 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(2,3) StmtAppend(8,8) StmtReplace(4,3) StmtDelete(4) StmtReplace(3,5) (stored at: )
+45150 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(11) StmtDelete(3) StmtReplace(4,3) StmtDelete(10) (stored at: )
+45157 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(1,1) StmtAppend(4,3) StmtAppend(2,3) StmtReplace(8,8) StmtReplace(9,11) (stored at: )
+45163 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(2,4) StmtDelete(4) StmtAppend(9,10) StmtDelete(1) StmtAppend(8,8) (stored at: )
+45167 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(2,4) StmtReplace(4,4) StmtAppend(4,3) StmtDelete(1) (stored at: )
+45171 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(11) StmtAppend(3,3) StmtDelete(1) StmtDelete(11) (stored at: )
+45176 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(2,4) StmtReplace(4,4) StmtAppend(4,3) StmtDelete(8) (stored at: )
+45181 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(8,8) StmtAppend(11,11) StmtAppend(1,1) StmtReplace(8,8) (stored at: )
+45183 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(3) StmtReplace(11,11) StmtAppend(11,10) (stored at: )
+45530 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(11) StmtReplace(9,11) StmtReplace(8,8) StmtAppend(3,4) (stored at: variant11)
+45533 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(1) StmtAppend(8,8) StmtReplace(4,4) StmtDelete(1) StmtDelete(10) StmtReplace(4,3) (stored at: )
+45534 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(2,3) StmtAppend(2,3) (stored at: )
+45535 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(11) (stored at: )
+45536 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtAppend(1,1) (stored at: )
+45537 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtAppend(10,12) (stored at: )
+45539 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(3) StmtAppend(10,11) StmtReplace(2,4) (stored at: )
+45542 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(2,4) StmtReplace(4,4) StmtDelete(1) StmtReplace(3,4) StmtAppend(2,4) (stored at: )
+45544 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtAppend(2,4) StmtReplace(1,1) (stored at: )
+45545 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(9) (stored at: )
+45548 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(11) StmtAppend(3,3) StmtDelete(8) StmtReplace(2,4) (stored at: )
+45550 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(11) StmtAppend(3,3) StmtReplace(4,3) StmtDelete(4) StmtAppend(4,3) (stored at: )
+45552 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(2,3) StmtDelete(10) (stored at: )
+45556 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(2,4) StmtReplace(4,4) StmtDelete(1) StmtDelete(3) StmtReplace(4,3) StmtDelete(9) (stored at: )
+45557 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(11) (stored at: )
+45560 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(3) StmtAppend(4,3) StmtAppend(2,3) StmtReplace(8,8) StmtReplace(10,10) (stored at: )
+45561 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(10) (stored at: )
+45565 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(10) StmtAppend(3,4) StmtDelete(4) StmtAppend(9,10) StmtDelete(1) StmtAppend(10,12) (stored at: )
+45567 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(2) StmtAppend(4,3) (stored at: )
+45570 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(2,4) StmtReplace(4,4) StmtDelete(1) StmtReplace(4,4) StmtAppend(4,3) StmtAppend(10,12) (stored at: )
+45571 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtAppend(11,11) (stored at: )
+45574 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtAppend(4,3) StmtReplace(9,11) (stored at: )
+45579 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(2,4) StmtReplace(4,4) StmtAppend(4,3) StmtAppend(11,11) (stored at: )
+45581 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(1,1) StmtAppend(10,10) (stored at: )
+45586 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(11) StmtReplace(9,11) StmtAppend(2,3) StmtReplace(8,8) StmtReplace(2,3) (stored at: )
+45586 [main] INFO clegoues.genprog4java.Search.Search  - search: generation5
+47032 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/sevenz/Coders.java:61: error: unreachable statement
+				if (coderId.method.equals(method)) {
+				^
+1 error
+
+47563 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/sevenz/Coders.java:62: error: unreachable statement
+				{
+				^
+1 error
+
+47583 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/sevenz/Coders.java:60: error: unreachable statement
+				{
+				^
+1 error
+
+47708 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(1) StmtAppend(8,8) StmtReplace(10,10) StmtDelete(4) StmtDelete(8) (stored at: )
+47711 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtReplace(2,4) StmtReplace(4,4) StmtDelete(1) StmtAppend(1,1) StmtAppend(1,1) StmtAppend(1,1) (stored at: )
+47713 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(11) StmtAppend(3,3) StmtDelete(1) StmtDelete(11) StmtDelete(9) (stored at: )
+47717 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtReplace(2,4) StmtReplace(4,4) StmtDelete(1) StmtReplace(11,10) StmtDelete(8) StmtAppend(8,8) (stored at: )
+47720 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtReplace(2,4) StmtReplace(4,4) StmtDelete(1) StmtAppend(10,11) StmtDelete(4) StmtReplace(2,3) (stored at: )
+47723 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtAppend(1,1) StmtAppend(3,3) (stored at: )
+47728 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(11) StmtAppend(3,3) StmtReplace(4,3) StmtDelete(4) StmtAppend(4,3) StmtReplace(1,1) (stored at: )
+47730 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtReplace(3,5) StmtDelete(3) StmtDelete(10) (stored at: )
+47735 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtReplace(2,4) StmtReplace(4,4) StmtDelete(1) StmtDelete(3) StmtReplace(4,3) StmtDelete(9) StmtDelete(8) (stored at: )
+47741 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(10) StmtAppend(3,4) StmtDelete(4) StmtAppend(9,10) StmtDelete(1) StmtAppend(10,12) StmtDelete(1) (stored at: )
+47745 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(3) StmtAppend(10,11) StmtReplace(2,4) StmtDelete(8) (stored at: )
+47749 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtReplace(2,4) StmtReplace(4,4) StmtDelete(1) StmtDelete(3) StmtReplace(4,3) StmtDelete(9) StmtAppend(9,10) (stored at: )
+47752 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtAppend(2,4) StmtAppend(9,10) StmtReplace(3,4) StmtAppend(10,10) StmtReplace(2,3) (stored at: )
+47755 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(11) StmtDelete(3) StmtReplace(4,3) StmtDelete(10) StmtReplace(3,4) (stored at: )
+47759 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtAppend(10,10) StmtAppend(9,11) StmtReplace(1,1) StmtReplace(11,10) StmtReplace(9,10) (stored at: )
+47762 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(11) StmtDelete(8) StmtReplace(1,1) StmtReplace(1,1) (stored at: )
+47767 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtReplace(2,3) StmtAppend(8,8) StmtReplace(4,4) StmtDelete(1) StmtDelete(10) StmtReplace(3,3) StmtReplace(9,11) (stored at: )
+47770 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(10) StmtAppend(3,4) StmtAppend(11,11) StmtDelete(2) StmtAppend(10,10) StmtAppend(11,10) (stored at: )
+47773 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(3) StmtAppend(10,11) StmtReplace(2,4) StmtReplace(2,4) (stored at: )
+47776 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtAppend(1,1) StmtReplace(8,8) StmtReplace(2,4) StmtAppend(2,3) StmtDelete(11) (stored at: )
+47781 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtReplace(2,4) StmtReplace(4,4) StmtDelete(1) StmtReplace(11,10) StmtDelete(8) StmtAppend(3,5) (stored at: )
+47784 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtAppend(1,1) StmtReplace(8,8) StmtReplace(2,4) StmtAppend(2,3) StmtAppend(3,4) (stored at: )
+47787 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtAppend(10,10) StmtDelete(8) StmtDelete(2) StmtAppend(1,1) StmtAppend(10,10) StmtReplace(2,4) (stored at: )
+47791 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(11) StmtAppend(3,3) StmtDelete(1) StmtReplace(8,8) StmtReplace(9,11) (stored at: )
+47795 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtAppend(10,10) StmtDelete(8) StmtDelete(2) StmtAppend(1,1) StmtAppend(10,10) StmtDelete(11) (stored at: )
+47797 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtAppend(2,4) StmtReplace(1,1) StmtAppend(2,3) (stored at: )
+47801 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtReplace(2,4) StmtReplace(4,4) StmtDelete(1) StmtAppend(1,1) StmtAppend(2,3) StmtReplace(3,4) (stored at: )
+47803 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(3) StmtReplace(11,11) StmtAppend(8,8) StmtAppend(8,8) (stored at: )
+47810 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtReplace(2,4) StmtReplace(4,4) StmtDelete(1) StmtDelete(3) StmtReplace(4,3) StmtDelete(9) StmtDelete(11) (stored at: )
+47816 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtReplace(2,4) StmtReplace(4,4) StmtDelete(1) StmtAppend(1,1) StmtAppend(1,1) StmtDelete(10) (stored at: )
+47821 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtReplace(1,1) StmtAppend(4,3) StmtAppend(2,3) StmtReplace(8,8) StmtReplace(9,11) StmtAppend(4,3) (stored at: )
+47823 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtAppend(4,3) StmtReplace(9,11) StmtReplace(10,10) (stored at: )
+47828 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtReplace(2,4) StmtReplace(4,4) StmtDelete(1) StmtReplace(4,4) StmtAppend(4,3) StmtAppend(10,12) StmtReplace(10,10) (stored at: )
+47830 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtAppend(10,12) StmtReplace(10,10) (stored at: )
+47834 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtReplace(2,4) StmtReplace(4,4) StmtDelete(1) StmtAppend(10,11) StmtDelete(4) StmtReplace(8,8) (stored at: )
+47838 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(3) StmtReplace(11,11) StmtAppend(8,8) StmtDelete(2) (stored at: )
+47841 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtReplace(1,1) StmtAppend(10,10) StmtDelete(4) (stored at: )
+47843 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(1) StmtReplace(10,10) StmtReplace(4,4) (stored at: )
+47846 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(11) StmtDelete(4) (stored at: )
+47852 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtReplace(2,4) StmtReplace(4,4) StmtDelete(1) StmtReplace(4,4) StmtAppend(4,3) StmtAppend(10,12) StmtDelete(1) (stored at: )
+47857 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtReplace(2,4) StmtReplace(4,4) StmtReplace(8,8) StmtReplace(2,4) StmtAppend(2,3) StmtAppend(11,10) (stored at: )
+47860 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtAppend(1,1) StmtAppend(1,1) StmtReplace(4,4) (stored at: )
+47864 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtReplace(1,1) StmtAppend(2,4) (stored at: )
+47865 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtReplace(1,1) (stored at: )
+47868 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtReplace(2,4) StmtReplace(4,4) StmtDelete(1) StmtDelete(3) StmtReplace(4,3) StmtDelete(2) (stored at: )
+47871 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtReplace(2,4) StmtReplace(4,4) StmtDelete(1) StmtDelete(3) StmtReplace(4,3) StmtReplace(2,3) (stored at: )
+47874 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(3) StmtAppend(10,11) StmtAppend(2,3) StmtReplace(8,8) StmtReplace(9,11) StmtDelete(10) (stored at: )
+47876 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtReplace(1,1) StmtAppend(4,3) (stored at: )
+47881 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtAppend(2,4) StmtAppend(9,10) StmtReplace(3,4) StmtDelete(1) StmtReplace(4,4) StmtAppend(4,3) StmtAppend(10,12) StmtDelete(10) (stored at: )
+47883 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtReplace(2,4) StmtDelete(10) (stored at: )
+47885 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(11) StmtDelete(3) StmtDelete(2) (stored at: )
+47887 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(10) StmtDelete(4) (stored at: )
+47891 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtReplace(2,3) StmtAppend(8,8) StmtReplace(4,4) StmtReplace(11,10) (stored at: )
+47894 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtReplace(1,1) StmtDelete(10) StmtReplace(3,3) StmtAppend(3,3) (stored at: )
+47897 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(10) StmtAppend(3,4) StmtReplace(10,10) StmtAppend(3,3) (stored at: )
+47901 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(2) StmtAppend(10,10) StmtReplace(2,3) (stored at: )
+47905 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtAppend(1,1) StmtReplace(8,8) StmtReplace(2,4) StmtAppend(10,12) StmtAppend(8,8) (stored at: )
+47911 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtReplace(2,4) StmtReplace(4,4) StmtDelete(1) StmtReplace(4,4) StmtDelete(11) (stored at: )
+47911 [main] INFO clegoues.genprog4java.Search.Search  - search: generation6
+48700 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/sevenz/Coders.java:51: error: unreachable statement
+				if (Arrays.equals(coderId.method.getId(), coder.decompressionMethodId)) {
+				^
+1 error
+
+49460 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtReplace(2,4) StmtReplace(4,4) StmtDelete(1) StmtAppend(1,1) StmtAppend(1,1) StmtDelete(10) StmtAppend(4,4) (stored at: )
+49463 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtDelete(3) StmtReplace(11,11) StmtAppend(8,8) StmtDelete(2) StmtDelete(3) (stored at: )
+49466 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtDelete(10) StmtAppend(3,4) StmtDelete(4) StmtAppend(9,10) StmtDelete(1) StmtAppend(10,12) StmtDelete(1) StmtDelete(11) (stored at: )
+49469 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtReplace(2,4) StmtReplace(4,4) StmtDelete(1) StmtReplace(4,4) StmtAppend(4,3) StmtAppend(10,12) StmtDelete(1) StmtReplace(8,8) (stored at: )
+49473 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtReplace(2,4) StmtReplace(4,4) StmtDelete(1) StmtReplace(4,4) StmtAppend(4,3) StmtAppend(10,12) StmtReplace(10,10) StmtReplace(2,3) (stored at: )
+50129 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtDelete(2) StmtAppend(10,10) StmtReplace(2,3) StmtReplace(10,12) (stored at: variant12)
+50132 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtDelete(3) StmtReplace(11,11) StmtAppend(8,8) StmtDelete(2) StmtReplace(9,11) (stored at: )
+50135 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtAppend(10,10) StmtAppend(9,11) StmtReplace(1,1) StmtReplace(11,10) StmtReplace(9,10) StmtDelete(8) (stored at: )
+50137 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtDelete(11) StmtDelete(3) StmtReplace(4,3) StmtDelete(10) StmtReplace(3,4) StmtDelete(3) (stored at: )
+50140 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtDelete(3) StmtReplace(11,11) StmtAppend(8,8) StmtDelete(2) StmtAppend(10,11) (stored at: )
+50143 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtAppend(2,4) StmtAppend(9,10) StmtReplace(3,4) StmtAppend(10,10) StmtReplace(2,3) StmtDelete(1) (stored at: )
+50147 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtReplace(2,3) StmtAppend(8,8) StmtReplace(4,4) StmtReplace(11,10) StmtAppend(9,10) (stored at: )
+50151 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtReplace(2,4) StmtReplace(4,4) StmtDelete(1) StmtReplace(11,10) StmtDelete(8) StmtAppend(3,5) StmtAppend(1,1) (stored at: )
+50154 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtAppend(10,10) StmtDelete(8) StmtDelete(2) StmtAppend(1,1) StmtAppend(10,10) StmtReplace(2,4) StmtAppend(8,8) (stored at: )
+50156 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtDelete(3) StmtAppend(10,11) StmtReplace(2,4) StmtReplace(2,4) StmtDelete(10) (stored at: )
+50158 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtAppend(10,12) StmtReplace(10,10) StmtAppend(9,11) (stored at: )
+50162 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtReplace(2,4) StmtReplace(4,4) StmtReplace(8,8) StmtReplace(2,4) StmtAppend(2,3) StmtAppend(11,10) StmtAppend(3,3) (stored at: )
+50165 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtReplace(1,1) StmtAppend(4,3) StmtReplace(3,4) (stored at: )
+50172 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtReplace(2,4) StmtReplace(4,4) StmtDelete(1) StmtDelete(3) StmtReplace(4,3) StmtDelete(9) StmtDelete(11) StmtDelete(10) (stored at: )
+50175 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtDelete(3) StmtAppend(10,11) StmtReplace(2,4) StmtReplace(2,4) StmtAppend(10,11) (stored at: )
+50180 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtDelete(11) StmtAppend(3,3) StmtReplace(4,3) StmtDelete(4) StmtAppend(4,3) StmtReplace(1,1) StmtDelete(8) (stored at: )
+50182 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtDelete(1) StmtReplace(10,10) StmtReplace(4,4) StmtDelete(3) (stored at: )
+50185 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtDelete(3) StmtAppend(10,11) StmtReplace(2,4) StmtReplace(2,4) StmtReplace(8,8) (stored at: )
+50188 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtDelete(3) StmtReplace(11,11) StmtAppend(8,8) StmtDelete(2) StmtAppend(8,8) (stored at: )
+50194 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtReplace(2,3) StmtAppend(8,8) StmtReplace(4,4) StmtDelete(1) StmtDelete(10) StmtReplace(3,3) StmtReplace(9,11) StmtDelete(3) (stored at: )
+50198 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtDelete(11) StmtDelete(3) StmtReplace(4,3) StmtDelete(10) StmtReplace(3,4) StmtAppend(4,4) (stored at: )
+50201 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtDelete(11) StmtDelete(3) StmtDelete(2) StmtDelete(3) (stored at: )
+50207 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtDelete(3) StmtAppend(10,11) StmtAppend(2,3) StmtReplace(8,8) StmtReplace(9,11) StmtDelete(10) StmtReplace(1,1) (stored at: )
+50213 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtReplace(2,4) StmtReplace(4,4) StmtDelete(1) StmtDelete(3) StmtReplace(4,3) StmtDelete(9) StmtDelete(11) StmtAppend(9,10) (stored at: )
+50217 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtDelete(10) StmtAppend(3,4) StmtAppend(11,11) StmtDelete(2) StmtAppend(10,10) StmtAppend(11,10) StmtDelete(11) (stored at: )
+50221 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtReplace(2,4) StmtReplace(4,4) StmtDelete(1) StmtReplace(4,4) StmtAppend(4,3) StmtAppend(10,12) StmtReplace(10,10) StmtAppend(2,3) (stored at: )
+50226 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtReplace(2,4) StmtReplace(4,4) StmtDelete(1) StmtDelete(3) StmtReplace(4,3) StmtReplace(2,3) StmtDelete(11) (stored at: )
+50230 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtReplace(1,1) StmtDelete(10) StmtReplace(3,3) StmtAppend(3,3) StmtReplace(9,11) (stored at: )
+50235 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtReplace(1,1) StmtAppend(10,10) StmtDelete(4) StmtDelete(11) (stored at: )
+50239 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtReplace(2,4) StmtReplace(4,4) StmtDelete(1) StmtReplace(4,4) StmtAppend(4,3) StmtAppend(10,12) StmtReplace(10,10) StmtAppend(4,4) (stored at: )
+50243 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtDelete(11) StmtAppend(3,3) StmtDelete(1) StmtDelete(11) StmtDelete(9) StmtDelete(4) (stored at: )
+50246 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtDelete(10) StmtAppend(3,4) StmtReplace(10,10) StmtAppend(3,3) StmtDelete(11) (stored at: )
+50249 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtReplace(2,4) StmtReplace(4,4) StmtDelete(1) StmtAppend(1,1) StmtAppend(1,1) StmtDelete(10) StmtAppend(10,10) (stored at: )
+50252 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtDelete(3) StmtAppend(10,11) StmtReplace(2,4) StmtDelete(8) StmtReplace(10,10) (stored at: )
+50254 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtAppend(1,1) StmtAppend(3,3) StmtDelete(11) (stored at: )
+50255 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtAppend(8,8) (stored at: )
+50259 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtDelete(11) StmtAppend(3,3) StmtReplace(4,3) StmtDelete(4) StmtAppend(4,3) StmtReplace(4,4) StmtDelete(1) StmtAppend(1,1) StmtAppend(1,1) StmtDelete(10) StmtDelete(11) (stored at: )
+50262 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtReplace(10,10) StmtReplace(4,4) StmtAppend(9,10) (stored at: )
+50266 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtReplace(11,11) StmtAppend(8,8) StmtDelete(2) StmtDelete(2) (stored at: )
+50268 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtReplace(2,4) StmtReplace(2,4) StmtAppend(9,10) (stored at: )
+50272 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtDelete(3) StmtAppend(3,4) StmtDelete(4) StmtAppend(9,10) StmtDelete(1) StmtAppend(10,12) StmtDelete(1) StmtAppend(11,11) (stored at: )
+50277 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtReplace(4,4) StmtDelete(1) StmtDelete(10) StmtReplace(3,3) StmtReplace(9,11) StmtAppend(3,4) (stored at: )
+50281 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtReplace(2,3) StmtReplace(4,4) StmtDelete(1) StmtReplace(4,4) StmtAppend(4,3) StmtAppend(10,12) StmtReplace(10,10) StmtReplace(11,10) (stored at: )
+50284 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtDelete(2) StmtReplace(3,4) StmtReplace(11,11) (stored at: )
+50949 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtDelete(11) StmtDelete(3) StmtReplace(4,3) StmtReplace(2,3) StmtAppend(3,5) (stored at: variant13)
+50951 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtAppend(2,4) StmtAppend(9,10) StmtAppend(10,12) StmtReplace(10,10) StmtAppend(10,12) (stored at: )
+50954 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtReplace(2,4) StmtReplace(4,4) StmtDelete(1) StmtReplace(4,4) StmtAppend(10,10) StmtReplace(2,3) StmtDelete(1) (stored at: )
+50956 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtAppend(10,10) StmtDelete(8) StmtDelete(2) StmtAppend(1,1) StmtAppend(10,10) StmtDelete(4) StmtDelete(1) (stored at: )
+50957 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtReplace(2,4) StmtAppend(3,4) (stored at: )
+50960 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtDelete(3) StmtAppend(10,11) StmtReplace(2,4) StmtReplace(10,10) StmtReplace(4,3) (stored at: )
+50961 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtReplace(2,4) StmtReplace(4,4) StmtDelete(1) StmtReplace(4,4) StmtAppend(4,3) StmtReplace(2,4) (stored at: )
+50963 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtAppend(3,3) StmtReplace(8,8) (stored at: )
+50965 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtAppend(10,11) StmtReplace(2,4) StmtReplace(2,4) StmtDelete(8) (stored at: )
+50965 [main] INFO clegoues.genprog4java.Search.Search  - search: generation7
+52224 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtReplace(10,10) StmtReplace(4,4) StmtAppend(9,10) StmtAppend(1,1) (stored at: )
+52225 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtDelete(11) StmtDelete(3) StmtDelete(2) StmtDelete(3) StmtDelete(2) (stored at: )
+52228 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtAppend(2,4) StmtAppend(9,10) StmtAppend(10,12) StmtReplace(10,10) StmtAppend(10,12) StmtDelete(1) (stored at: )
+52230 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtDelete(3) StmtReplace(11,11) StmtAppend(8,8) StmtDelete(2) StmtAppend(8,8) StmtDelete(4) (stored at: )
+52233 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtDelete(3) StmtReplace(11,11) StmtAppend(8,8) StmtDelete(2) StmtReplace(9,11) StmtReplace(11,10) (stored at: )
+52236 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtAppend(10,10) StmtDelete(8) StmtDelete(2) StmtAppend(1,1) StmtAppend(10,10) StmtDelete(4) StmtDelete(1) StmtAppend(3,3) (stored at: )
+52238 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtDelete(3) StmtReplace(11,11) StmtAppend(8,8) StmtDelete(2) StmtReplace(9,11) StmtDelete(8) (stored at: )
+52240 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtAppend(8,8) StmtAppend(9,10) (stored at: )
+52243 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtReplace(2,4) StmtReplace(2,4) StmtAppend(9,10) StmtReplace(11,10) (stored at: )
+52247 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtReplace(2,4) StmtReplace(4,4) StmtDelete(1) StmtAppend(1,1) StmtAppend(1,1) StmtDelete(10) StmtAppend(4,4) StmtAppend(4,4) (stored at: )
+52250 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtAppend(2,4) StmtAppend(9,10) StmtAppend(10,12) StmtReplace(10,10) StmtAppend(10,12) StmtDelete(11) (stored at: )
+52253 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtDelete(11) StmtDelete(3) StmtDelete(2) StmtDelete(3) StmtDelete(2) (stored at: )
+52255 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtAppend(8,8) StmtReplace(11,10) (stored at: )
+53317 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtReplace(2,4) StmtReplace(4,4) StmtDelete(1) StmtAppend(1,1) StmtAppend(1,1) StmtDelete(10) StmtAppend(4,4) StmtReplace(10,12) (stored at: variant14)
+53320 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtDelete(10) StmtAppend(3,4) StmtReplace(10,10) StmtAppend(3,3) StmtDelete(11) StmtDelete(8) (stored at: )
+53323 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtReplace(2,4) StmtReplace(4,4) StmtDelete(1) StmtDelete(3) StmtReplace(4,3) StmtDelete(9) StmtDelete(11) StmtAppend(9,10) StmtAppend(4,4) (stored at: )
+53326 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtReplace(2,4) StmtReplace(4,4) StmtDelete(1) StmtAppend(1,1) StmtAppend(1,1) StmtDelete(10) StmtAppend(10,10) StmtDelete(8) (stored at: )
+53329 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtAppend(2,4) StmtAppend(9,10) StmtReplace(3,4) StmtAppend(10,10) StmtReplace(2,3) StmtDelete(1) StmtDelete(9) (stored at: )
+53333 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtDelete(3) StmtAppend(3,4) StmtDelete(4) StmtAppend(9,10) StmtDelete(1) StmtAppend(10,12) StmtDelete(1) StmtAppend(11,11) StmtReplace(2,3) (stored at: )
+53336 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtDelete(3) StmtAppend(10,11) StmtReplace(2,4) StmtReplace(2,4) StmtReplace(8,8) StmtAppend(11,11) (stored at: )
+53339 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtDelete(11) StmtDelete(3) StmtReplace(4,3) StmtDelete(10) StmtReplace(3,4) StmtDelete(3) StmtAppend(2,4) (stored at: )
+53341 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtDelete(3) StmtAppend(10,11) StmtReplace(2,4) StmtReplace(2,4) StmtReplace(8,8) StmtDelete(11) (stored at: )
+53344 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtReplace(2,4) StmtReplace(4,4) StmtDelete(1) StmtReplace(4,4) StmtAppend(4,3) StmtAppend(10,12) StmtReplace(10,10) StmtAppend(2,3) StmtAppend(1,1) (stored at: )
+53347 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtReplace(2,3) StmtReplace(4,4) StmtDelete(1) StmtReplace(4,4) StmtAppend(4,3) StmtAppend(10,12) StmtReplace(10,10) StmtReplace(11,10) StmtAppend(1,1) (stored at: )
+53349 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtReplace(1,1) StmtAppend(4,3) StmtReplace(3,4) StmtAppend(1,1) (stored at: )
+53352 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtReplace(1,1) StmtDelete(10) StmtReplace(3,3) StmtAppend(3,3) StmtReplace(9,11) StmtDelete(2) (stored at: )
+53354 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtDelete(1) StmtReplace(10,10) StmtReplace(4,4) StmtDelete(3) StmtDelete(4) (stored at: )
+53357 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtDelete(3) StmtAppend(10,11) StmtReplace(2,4) StmtReplace(10,10) StmtReplace(4,3) StmtAppend(9,11) (stored at: )
+53359 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtDelete(10) StmtAppend(3,4) StmtReplace(10,10) StmtAppend(3,3) StmtDelete(11) StmtReplace(8,8) (stored at: )
+53361 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtDelete(2) StmtAppend(10,10) StmtReplace(2,3) StmtReplace(10,12) StmtReplace(11,11) (stored at: )
+53364 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtAppend(2,4) StmtAppend(9,10) StmtAppend(10,12) StmtReplace(10,10) StmtAppend(10,12) StmtReplace(11,11) (stored at: )
+53368 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtReplace(2,4) StmtReplace(4,4) StmtDelete(1) StmtDelete(3) StmtReplace(4,3) StmtDelete(9) StmtDelete(11) StmtAppend(9,10) StmtAppend(2,3) (stored at: )
+53370 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtAppend(2,4) StmtAppend(9,10) StmtAppend(10,12) StmtReplace(10,10) StmtAppend(10,12) StmtAppend(3,3) (stored at: )
+53373 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtReplace(2,4) StmtReplace(4,4) StmtDelete(1) StmtAppend(1,1) StmtAppend(1,1) StmtDelete(10) StmtAppend(4,4) StmtReplace(10,11) (stored at: )
+53376 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtDelete(10) StmtAppend(3,4) StmtAppend(11,11) StmtDelete(2) StmtAppend(10,10) StmtAppend(11,10) StmtDelete(11) StmtAppend(4,4) (stored at: )
+53382 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtReplace(2,3) StmtAppend(8,8) StmtReplace(4,4) StmtReplace(11,10) StmtAppend(9,10) StmtReplace(11,11) (stored at: )
+53384 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtDelete(11) StmtDelete(3) StmtReplace(4,3) StmtDelete(10) StmtReplace(3,4) StmtDelete(3) StmtAppend(11,11) (stored at: )
+53387 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtDelete(3) StmtAppend(10,11) StmtReplace(2,4) StmtReplace(10,10) StmtReplace(4,3) StmtAppend(8,8) (stored at: )
+53390 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtReplace(2,3) StmtAppend(8,8) StmtReplace(4,4) StmtDelete(1) StmtDelete(10) StmtReplace(3,3) StmtReplace(9,11) StmtDelete(3) StmtAppend(1,1) (stored at: )
+53394 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtDelete(3) StmtReplace(11,11) StmtAppend(8,8) StmtDelete(2) StmtDelete(3) StmtReplace(2,4) (stored at: )
+53396 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtReplace(10,10) StmtReplace(4,4) StmtDelete(3) StmtReplace(8,8) (stored at: )
+53398 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtDelete(11) StmtDelete(3) StmtReplace(4,3) StmtDelete(10) StmtReplace(11,11) (stored at: )
+53400 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtReplace(8,8) StmtAppend(10,12) (stored at: )
+53401 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtDelete(3) StmtAppend(10,11) StmtReplace(2,4) StmtDelete(3) StmtDelete(2) StmtDelete(3) StmtDelete(10) (stored at: )
+54059 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtAppend(2,4) StmtReplace(10,10) StmtAppend(2,3) StmtDelete(10) (stored at: variant15)
+54062 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtReplace(2,4) StmtReplace(4,4) StmtDelete(1) StmtReplace(4,4) StmtAppend(4,3) StmtAppend(10,12) StmtReplace(10,10) StmtAppend(10,12) StmtReplace(10,12) (stored at: )
+54064 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtDelete(3) StmtAppend(10,12) StmtReplace(10,10) StmtReplace(11,10) StmtAppend(1,1) (stored at: )
+54067 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtReplace(2,3) StmtReplace(4,4) StmtDelete(1) StmtReplace(4,4) StmtAppend(8,8) StmtDelete(2) StmtAppend(8,8) StmtDelete(11) (stored at: )
+54068 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtReplace(4,3) StmtReplace(8,8) (stored at: )
+54070 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtDelete(3) StmtAppend(10,11) StmtReplace(2,4) StmtReplace(1,1) (stored at: )
+54073 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtReplace(2,4) StmtReplace(4,4) StmtDelete(1) StmtAppend(1,1) StmtReplace(2,3) StmtReplace(10,12) StmtAppend(8,8) (stored at: )
+54076 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtDelete(2) StmtDelete(10) StmtAppend(4,4) StmtDelete(9) (stored at: )
+54078 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtDelete(9) StmtDelete(11) StmtAppend(9,10) StmtDelete(4) (stored at: )
+54081 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtReplace(2,4) StmtReplace(4,4) StmtDelete(1) StmtDelete(3) StmtDelete(3) StmtDelete(2) StmtDelete(3) StmtDelete(8) (stored at: )
+54082 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtAppend(9,10) StmtAppend(10,12) StmtReplace(10,10) StmtAppend(10,12) StmtReplace(10,10) (stored at: )
+54083 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtReplace(2,4) (stored at: )
+54104 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/sevenz/Coders.java:51: error: unreachable statement
+				{
+				^
+1 error
+
+54104 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(4,4) StmtReplace(9,10) at variant16 fails to compile
+
+54104 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtAppend(4,4) StmtReplace(9,10) (stored at: variant16)
+54107 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtReplace(2,4) StmtReplace(4,4) StmtDelete(1) StmtAppend(1,1) StmtAppend(1,1) StmtReplace(4,4) StmtDelete(1) StmtAppend(1,1) StmtAppend(1,1) StmtDelete(10) StmtAppend(4,4) StmtDelete(3) (stored at: )
+54109 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtDelete(10) StmtAppend(3,4) StmtAppend(11,11) StmtDelete(2) StmtAppend(10,10) StmtAppend(11,10) StmtDelete(11) StmtAppend(3,5) (stored at: )
+54112 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtReplace(10,10) StmtAppend(3,3) StmtDelete(11) StmtReplace(11,11) (stored at: )
+54117 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtReplace(2,4) StmtReplace(4,4) StmtReplace(11,10) StmtAppend(9,10) StmtDelete(3) (stored at: )
+54121 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtReplace(2,3) StmtAppend(8,8) StmtDelete(3) StmtReplace(4,3) StmtDelete(9) StmtDelete(11) StmtAppend(9,10) StmtAppend(8,8) (stored at: )
+54122 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtDelete(10) StmtReplace(3,4) StmtDelete(3) StmtDelete(9) (stored at: )
+54125 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtDelete(11) StmtDelete(3) StmtReplace(4,4) StmtDelete(1) StmtAppend(1,1) StmtAppend(1,1) StmtDelete(10) StmtAppend(10,10) StmtAppend(11,10) (stored at: )
+54127 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtDelete(3) StmtAppend(3,4) StmtDelete(4) StmtAppend(9,10) StmtDelete(1) StmtAppend(10,12) StmtDelete(1) StmtReplace(3,3) StmtReplace(9,11) StmtDelete(3) StmtDelete(10) (stored at: )
+54132 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtReplace(2,3) StmtAppend(8,8) StmtReplace(4,4) StmtDelete(1) StmtAppend(11,11) (stored at: )
+54133 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtDelete(3) StmtAppend(2,4) (stored at: )
+54136 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtDelete(3) StmtReplace(11,11) StmtAppend(8,8) StmtDelete(2) StmtReplace(2,4) StmtReplace(2,4) StmtReplace(8,8) StmtDelete(9) (stored at: )
+54136 [main] INFO clegoues.genprog4java.Search.Search  - search: generation8
+55762 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtDelete(10) StmtAppend(3,4) StmtReplace(10,10) StmtAppend(3,3) StmtDelete(11) StmtReplace(8,8) StmtAppend(2,4) (stored at: )
+55764 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtReplace(2,4) StmtReplace(4,4) StmtDelete(1) StmtDelete(3) StmtDelete(3) StmtDelete(2) StmtDelete(3) StmtDelete(8) StmtDelete(3) (stored at: )
+55768 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtDelete(11) StmtDelete(3) StmtReplace(4,4) StmtDelete(1) StmtAppend(1,1) StmtAppend(1,1) StmtDelete(10) StmtAppend(10,10) StmtAppend(11,10) StmtAppend(8,8) (stored at: )
+55771 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtDelete(10) StmtAppend(3,4) StmtAppend(11,11) StmtDelete(2) StmtAppend(10,10) StmtAppend(11,10) StmtDelete(11) StmtAppend(4,4) StmtReplace(8,8) (stored at: )
+55774 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtDelete(11) StmtDelete(3) StmtReplace(4,4) StmtDelete(1) StmtAppend(1,1) StmtAppend(1,1) StmtDelete(10) StmtAppend(10,10) StmtAppend(11,10) StmtAppend(3,3) (stored at: )
+55777 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtDelete(1) StmtReplace(10,10) StmtReplace(4,4) StmtDelete(3) StmtDelete(4) StmtAppend(10,10) (stored at: )
+55780 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtDelete(3) StmtAppend(10,11) StmtReplace(2,4) StmtReplace(10,10) StmtReplace(4,3) StmtAppend(8,8) StmtDelete(10) (stored at: )
+55782 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtAppend(9,10) StmtAppend(10,12) StmtReplace(10,10) StmtAppend(10,12) StmtReplace(10,10) StmtAppend(3,3) (stored at: )
+55785 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtAppend(10,10) StmtDelete(8) StmtDelete(2) StmtAppend(1,1) StmtAppend(10,10) StmtDelete(4) StmtDelete(1) StmtAppend(3,3) StmtDelete(8) (stored at: )
+55787 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtDelete(3) StmtAppend(10,11) StmtReplace(2,4) StmtReplace(1,1) StmtAppend(4,3) (stored at: )
+55790 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtDelete(11) StmtDelete(3) StmtReplace(4,3) StmtDelete(10) StmtReplace(3,4) StmtDelete(3) StmtAppend(2,4) StmtReplace(11,11) (stored at: )
+55794 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtReplace(2,3) StmtAppend(8,8) StmtReplace(4,4) StmtReplace(11,10) StmtAppend(9,10) StmtReplace(11,11) StmtAppend(1,1) (stored at: )
+55799 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtDelete(10) StmtAppend(3,4) StmtAppend(11,11) StmtDelete(2) StmtAppend(10,10) StmtAppend(11,10) StmtDelete(11) StmtAppend(4,4) StmtAppend(8,8) (stored at: )
+55802 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtReplace(2,4) StmtReplace(4,4) StmtDelete(1) StmtDelete(3) StmtDelete(3) StmtDelete(2) StmtDelete(3) StmtDelete(8) StmtAppend(8,8) (stored at: )
+55803 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtAppend(9,10) StmtAppend(10,12) StmtReplace(10,10) StmtAppend(10,12) StmtReplace(10,10) StmtReplace(9,11) (stored at: )
+55805 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtReplace(2,4) StmtReplace(4,4) StmtDelete(1) StmtDelete(3) StmtDelete(3) StmtDelete(2) StmtDelete(3) StmtDelete(8) StmtDelete(4) (stored at: )
+55808 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtReplace(2,4) StmtReplace(4,4) StmtDelete(1) StmtAppend(1,1) StmtAppend(1,1) StmtDelete(10) StmtAppend(4,4) StmtReplace(10,11) StmtReplace(8,8) (stored at: )
+55811 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtDelete(10) StmtAppend(3,4) StmtAppend(11,11) StmtDelete(2) StmtAppend(10,10) StmtAppend(11,10) StmtDelete(11) StmtAppend(4,4) StmtReplace(2,3) (stored at: )
+55814 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtDelete(3) StmtReplace(11,11) StmtAppend(8,8) StmtDelete(2) StmtReplace(9,11) StmtReplace(11,10) StmtReplace(3,4) (stored at: )
+55817 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtDelete(11) StmtDelete(3) StmtReplace(4,3) StmtDelete(10) StmtReplace(11,11) StmtAppend(8,8) (stored at: )
+55820 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtDelete(3) StmtReplace(11,11) StmtAppend(8,8) StmtDelete(2) StmtReplace(9,11) StmtDelete(8) StmtDelete(4) (stored at: )
+55825 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtReplace(2,3) StmtAppend(8,8) StmtDelete(3) StmtReplace(4,3) StmtDelete(9) StmtDelete(11) StmtAppend(9,10) StmtAppend(8,8) StmtAppend(8,8) (stored at: )
+55828 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtDelete(11) StmtDelete(3) StmtReplace(4,3) StmtDelete(10) StmtReplace(3,4) StmtDelete(3) StmtAppend(2,4) StmtDelete(1) (stored at: )
+55831 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtDelete(11) StmtDelete(3) StmtReplace(4,3) StmtDelete(10) StmtReplace(3,4) StmtDelete(3) StmtAppend(11,11) StmtReplace(10,10) (stored at: )
+55833 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtReplace(4,3) StmtReplace(8,8) StmtReplace(8,8) (stored at: )
+55836 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtDelete(3) StmtAppend(10,11) StmtReplace(2,4) StmtReplace(2,4) StmtReplace(8,8) StmtDelete(11) StmtAppend(9,11) (stored at: )
+55838 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtReplace(4,3) StmtReplace(8,8) StmtDelete(3) (stored at: )
+55842 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtReplace(1,1) StmtDelete(10) StmtReplace(3,3) StmtAppend(3,3) StmtReplace(9,11) StmtDelete(2) StmtReplace(8,8) (stored at: )
+55845 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtReplace(10,10) StmtReplace(4,4) StmtDelete(3) StmtReplace(8,8) StmtDelete(2) (stored at: )
+55848 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtDelete(11) StmtDelete(3) StmtReplace(4,4) StmtDelete(1) StmtAppend(1,1) StmtAppend(1,1) StmtDelete(10) StmtAppend(10,10) StmtAppend(11,10) StmtAppend(3,3) (stored at: )
+55852 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtReplace(2,4) StmtReplace(4,4) StmtDelete(1) StmtAppend(1,1) StmtReplace(2,3) StmtReplace(10,12) StmtAppend(8,8) StmtDelete(10) (stored at: )
+55854 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtDelete(10) StmtReplace(3,4) StmtDelete(3) StmtDelete(9) StmtAppend(11,10) (stored at: )
+55930 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtDelete(3) StmtAppend(10,11) StmtReplace(2,4) StmtReplace(1,1) StmtReplace(1,1) (stored at: )
+55935 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtAppend(10,10) StmtDelete(8) StmtDelete(2) StmtAppend(1,1) StmtAppend(10,10) StmtDelete(4) StmtDelete(1) StmtAppend(3,3) StmtReplace(11,10) (stored at: )
+55938 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtAppend(8,8) StmtAppend(9,10) StmtDelete(11) (stored at: )
+55946 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtDelete(3) StmtReplace(11,11) StmtAppend(8,8) StmtDelete(2) StmtReplace(2,4) StmtReplace(2,4) StmtReplace(8,8) StmtDelete(9) StmtAppend(10,12) (stored at: )
+55949 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtReplace(2,4) StmtReplace(2,4) StmtAppend(9,10) StmtReplace(11,10) StmtDelete(9) (stored at: )
+55952 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtDelete(2) StmtAppend(10,10) StmtReplace(2,3) StmtReplace(10,12) StmtReplace(11,11) StmtReplace(9,10) (stored at: )
+56290 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtDelete(3) StmtAppend(2,4) StmtReplace(11,10) (stored at: variant17)
+56292 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtDelete(1) StmtReplace(10,10) StmtReplace(4,4) StmtDelete(3) StmtDelete(4) StmtDelete(1) (stored at: )
+56294 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtDelete(2) StmtReplace(9,11) StmtDelete(8) StmtDelete(10) (stored at: )
+56297 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtDelete(3) StmtReplace(11,11) StmtAppend(3,4) StmtReplace(10,10) StmtAppend(3,3) StmtDelete(11) StmtReplace(8,8) StmtAppend(2,3) (stored at: )
+56298 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtReplace(3,4) StmtDelete(3) StmtAppend(11,11) StmtAppend(11,10) (stored at: )
+56301 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtDelete(11) StmtDelete(3) StmtReplace(4,3) StmtAppend(3,4) StmtAppend(11,11) StmtDelete(2) StmtAppend(10,10) StmtAppend(11,10) StmtDelete(11) StmtAppend(4,4) StmtDelete(8) (stored at: )
+56303 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtDelete(11) StmtReplace(3,3) (stored at: )
+56623 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtDelete(3) StmtAppend(10,11) StmtReplace(2,4) StmtReplace(2,4) StmtReplace(10,10) StmtReplace(4,4) StmtDelete(3) StmtDelete(4) StmtReplace(10,11) (stored at: variant18)
+56625 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtDelete(3) StmtAppend(10,11) StmtReplace(2,4) StmtReplace(10,10) StmtReplace(4,4) (stored at: )
+56627 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtReplace(4,3) StmtAppend(8,8) StmtAppend(9,11) (stored at: )
+56630 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtAppend(10,10) StmtDelete(8) StmtDelete(2) StmtAppend(1,1) StmtAppend(10,10) StmtReplace(8,8) StmtReplace(3,5) (stored at: )
+56633 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtReplace(10,10) StmtReplace(4,4) StmtDelete(1) StmtAppend(3,3) StmtDelete(11) (stored at: )
+56636 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtDelete(3) StmtAppend(10,11) StmtReplace(4,4) StmtDelete(1) StmtAppend(1,1) StmtAppend(1,1) StmtDelete(10) StmtAppend(10,10) StmtAppend(11,10) StmtAppend(11,11) (stored at: )
+56638 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtDelete(11) StmtReplace(1,1) StmtDelete(2) (stored at: )
+56641 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtDelete(10) StmtAppend(3,4) StmtAppend(11,11) StmtDelete(2) StmtAppend(10,10) StmtAppend(11,10) StmtReplace(2,4) StmtReplace(1,1) StmtAppend(1,1) (stored at: )
+56643 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtDelete(3) StmtAppend(4,4) StmtReplace(11,10) (stored at: )
+56645 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtAppend(9,10) StmtDelete(10) (stored at: )
+56647 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtAppend(8,8) StmtReplace(10,10) StmtAppend(10,12) StmtReplace(10,10) StmtReplace(11,10) (stored at: )
+56650 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtReplace(2,4) StmtReplace(4,4) StmtDelete(1) StmtAppend(1,1) StmtAppend(1,1) StmtReplace(11,10) StmtAppend(8,8) (stored at: )
+56653 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtReplace(2,4) StmtReplace(2,4) StmtAppend(4,4) StmtReplace(10,11) StmtAppend(10,11) (stored at: )
+56653 [main] INFO clegoues.genprog4java.Search.Search  - search: generation9
+57811 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/sevenz/Coders.java:61: error: unreachable statement
+				if (coderId.method.equals(method)) {
+				^
+1 error
+
+58172 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtDelete(11) StmtDelete(3) StmtReplace(4,3) StmtDelete(10) StmtReplace(3,4) StmtDelete(3) StmtAppend(2,4) StmtDelete(1) StmtAppend(10,11) (stored at: )
+58179 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtReplace(2,4) StmtReplace(4,4) StmtDelete(1) StmtAppend(1,1) StmtReplace(2,3) StmtReplace(10,12) StmtAppend(8,8) StmtDelete(10) StmtReplace(11,11) (stored at: )
+58184 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtDelete(3) StmtAppend(10,11) StmtReplace(2,4) StmtReplace(1,1) StmtAppend(4,3) StmtAppend(3,5) (stored at: )
+58188 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtReplace(2,4) StmtReplace(4,4) StmtDelete(1) StmtAppend(1,1) StmtAppend(1,1) StmtDelete(10) StmtAppend(4,4) StmtReplace(10,11) StmtReplace(8,8) StmtReplace(11,10) (stored at: )
+58191 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtReplace(2,4) StmtReplace(4,4) StmtDelete(1) StmtDelete(3) StmtDelete(3) StmtDelete(2) StmtDelete(3) StmtDelete(8) StmtDelete(4) StmtDelete(9) (stored at: )
+58194 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtDelete(3) StmtAppend(10,11) StmtReplace(2,4) StmtReplace(10,10) StmtReplace(4,4) StmtAppend(3,3) (stored at: )
+58198 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtAppend(10,10) StmtDelete(8) StmtDelete(2) StmtAppend(1,1) StmtAppend(10,10) StmtDelete(4) StmtDelete(1) StmtAppend(3,3) StmtDelete(8) StmtAppend(10,12) (stored at: )
+58203 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtDelete(10) StmtAppend(3,4) StmtAppend(11,11) StmtDelete(2) StmtAppend(10,10) StmtAppend(11,10) StmtDelete(11) StmtAppend(4,4) StmtReplace(2,3) StmtReplace(8,8) (stored at: )
+58206 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtDelete(10) StmtReplace(3,4) StmtDelete(3) StmtDelete(9) StmtAppend(11,10) StmtReplace(4,4) (stored at: )
+58210 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtAppend(10,10) StmtDelete(8) StmtDelete(2) StmtAppend(1,1) StmtAppend(10,10) StmtReplace(8,8) StmtReplace(3,5) StmtAppend(4,4) (stored at: )
+58213 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtReplace(4,3) StmtReplace(8,8) StmtReplace(8,8) StmtReplace(9,11) (stored at: )
+58216 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtReplace(4,3) StmtAppend(8,8) StmtAppend(9,11) StmtDelete(9) (stored at: )
+58220 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtDelete(11) StmtDelete(3) StmtReplace(4,3) StmtDelete(10) StmtReplace(3,4) StmtDelete(3) StmtAppend(2,4) StmtDelete(1) StmtReplace(11,11) (stored at: )
+58223 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtAppend(10,10) StmtDelete(8) StmtDelete(2) StmtAppend(1,1) StmtAppend(10,10) StmtReplace(8,8) StmtReplace(3,5) StmtReplace(10,11) (stored at: )
+58229 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtDelete(3) StmtReplace(11,11) StmtAppend(8,8) StmtDelete(2) StmtReplace(9,11) StmtReplace(11,10) StmtReplace(3,4) StmtReplace(3,3) (stored at: )
+58232 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtDelete(1) StmtReplace(10,10) StmtReplace(4,4) StmtDelete(3) StmtDelete(4) StmtAppend(10,10) StmtReplace(9,10) (stored at: )
+58239 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtReplace(1,1) StmtDelete(10) StmtReplace(3,3) StmtAppend(3,3) StmtReplace(9,11) StmtDelete(2) StmtReplace(8,8) StmtReplace(4,3) (stored at: )
+58243 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtDelete(3) StmtAppend(2,4) StmtReplace(11,10) StmtDelete(1) (stored at: )
+58249 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtDelete(2) StmtAppend(10,10) StmtReplace(2,3) StmtReplace(10,12) StmtReplace(11,11) StmtReplace(9,10) StmtDelete(3) (stored at: )
+58256 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtDelete(10) StmtAppend(3,4) StmtAppend(11,11) StmtDelete(2) StmtAppend(10,10) StmtAppend(11,10) StmtReplace(2,4) StmtReplace(1,1) StmtAppend(1,1) StmtAppend(4,3) (stored at: )
+58259 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtDelete(3) StmtAppend(4,4) StmtReplace(11,10) StmtDelete(11) (stored at: )
+58266 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtReplace(2,4) StmtReplace(4,4) StmtDelete(1) StmtAppend(1,1) StmtReplace(2,3) StmtReplace(10,12) StmtAppend(8,8) StmtDelete(10) StmtAppend(2,4) (stored at: )
+58270 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtDelete(1) StmtReplace(10,10) StmtReplace(4,4) StmtDelete(3) StmtDelete(4) StmtAppend(10,10) StmtReplace(2,3) (stored at: )
+58274 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtReplace(2,4) StmtReplace(4,4) StmtDelete(1) StmtAppend(1,1) StmtReplace(2,3) StmtReplace(10,12) StmtAppend(8,8) StmtDelete(10) StmtDelete(8) (stored at: )
+58282 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtDelete(3) StmtReplace(11,11) StmtAppend(8,8) StmtDelete(2) StmtReplace(9,11) StmtDelete(8) StmtDelete(4) StmtAppend(8,8) (stored at: )
+58287 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtDelete(3) StmtAppend(10,11) StmtReplace(2,4) StmtReplace(1,1) StmtAppend(4,3) StmtAppend(1,1) (stored at: )
+58291 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtReplace(2,4) StmtReplace(4,4) StmtDelete(1) StmtAppend(1,1) StmtAppend(1,1) StmtReplace(11,10) StmtAppend(8,8) StmtReplace(4,4) (stored at: )
+58296 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtDelete(2) StmtReplace(9,11) StmtDelete(8) StmtDelete(10) StmtDelete(4) (stored at: )
+58303 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtReplace(10,10) StmtReplace(4,4) StmtDelete(1) StmtAppend(3,3) StmtDelete(11) StmtReplace(9,11) (stored at: )
+58308 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtDelete(2) StmtAppend(10,10) StmtReplace(2,3) StmtReplace(10,12) StmtReplace(11,11) StmtReplace(9,10) StmtDelete(3) (stored at: )
+58315 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtDelete(10) StmtAppend(3,4) StmtAppend(11,11) StmtDelete(2) StmtAppend(10,10) StmtAppend(11,10) StmtDelete(11) StmtAppend(4,4) StmtReplace(8,8) StmtAppend(2,3) (stored at: )
+58321 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtReplace(2,4) StmtReplace(4,4) StmtDelete(1) StmtDelete(3) StmtDelete(3) StmtDelete(2) StmtDelete(3) StmtDelete(8) StmtDelete(4) StmtDelete(11) (stored at: )
+58328 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtDelete(10) StmtAppend(3,4) StmtAppend(11,11) StmtDelete(2) StmtAppend(10,10) StmtAppend(11,10) StmtDelete(11) StmtAppend(4,4) StmtReplace(8,8) StmtAppend(4,3) (stored at: )
+58334 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtReplace(2,4) StmtReplace(2,4) StmtAppend(4,4) StmtReplace(10,11) StmtAppend(10,11) StmtReplace(3,4) (stored at: )
+58339 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtDelete(10) StmtAppend(3,4) StmtReplace(10,10) StmtAppend(3,3) StmtDelete(11) StmtReplace(8,8) StmtAppend(2,4) StmtDelete(10) (stored at: )
+58346 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtDelete(3) StmtReplace(11,11) StmtAppend(8,8) StmtDelete(2) StmtReplace(2,4) StmtReplace(2,4) StmtReplace(8,8) StmtDelete(9) StmtAppend(10,12) StmtDelete(4) (stored at: )
+58354 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtDelete(11) StmtDelete(3) StmtReplace(4,4) StmtDelete(1) StmtAppend(1,1) StmtAppend(1,1) StmtDelete(10) StmtAppend(10,10) StmtAppend(11,10) StmtAppend(3,3) StmtAppend(9,11) (stored at: )
+58359 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtReplace(2,4) StmtReplace(4,4) StmtDelete(1) StmtDelete(3) StmtDelete(3) StmtDelete(2) StmtDelete(3) StmtDelete(8) StmtDelete(4) StmtReplace(8,8) (stored at: )
+58366 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtDelete(11) StmtDelete(3) StmtReplace(4,4) StmtDelete(1) StmtAppend(1,1) StmtAppend(1,1) StmtDelete(10) StmtAppend(10,10) StmtAppend(11,10) StmtAppend(3,3) StmtReplace(10,11) (stored at: )
+58372 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtDelete(10) StmtReplace(3,4) StmtDelete(3) StmtDelete(9) StmtAppend(11,10) StmtAppend(10,11) (stored at: )
+58375 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtReplace(2,4) StmtDelete(9) (stored at: )
+58381 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtReplace(2,4) StmtReplace(4,4) StmtDelete(1) StmtAppend(1,1) StmtReplace(2,3) StmtReplace(10,12) StmtAppend(8,8) StmtDelete(1) StmtAppend(1,1) StmtReplace(2,3) StmtReplace(10,12) StmtAppend(8,8) StmtDelete(10) StmtReplace(2,4) (stored at: )
+58780 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtDelete(3) StmtDelete(4) StmtAppend(10,10) StmtAppend(2,4) (stored at: variant19)
+58784 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtDelete(1) StmtReplace(10,10) StmtReplace(4,4) StmtReplace(2,4) StmtReplace(1,1) StmtAppend(4,3) StmtReplace(8,8) (stored at: )
+58787 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtReplace(2,4) StmtReplace(4,4) StmtDelete(1) StmtAppend(1,1) StmtAppend(1,1) StmtAppend(10,10) (stored at: )
+58790 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtReplace(2,4) StmtReplace(4,4) StmtDelete(1) StmtAppend(1,1) StmtReplace(2,3) StmtReplace(10,12) StmtAppend(8,8) StmtAppend(4,4) StmtReplace(10,11) StmtReplace(8,8) StmtReplace(9,11) (stored at: )
+58794 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtReplace(2,4) StmtReplace(4,4) StmtDelete(1) StmtDelete(3) StmtDelete(3) StmtDelete(2) StmtReplace(11,11) StmtAppend(8,8) StmtDelete(2) StmtReplace(9,11) StmtDelete(8) StmtDelete(4) StmtAppend(8,8) (stored at: )
+58797 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtDelete(8) StmtDelete(4) StmtReplace(11,10) (stored at: )
+58800 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtReplace(2,4) StmtReplace(1,1) StmtAppend(4,3) StmtAppend(8,8) (stored at: )
+59140 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtDelete(3) StmtAppend(10,11) StmtReplace(2,4) StmtReplace(10,10) StmtReplace(4,4) StmtReplace(10,12) (stored at: variant20)
+59141 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtReplace(11,11) (stored at: )
+59146 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtReplace(2,4) StmtReplace(4,4) StmtDelete(1) StmtAppend(1,1) StmtAppend(1,1) StmtReplace(11,10) StmtDelete(8) StmtDelete(2) StmtAppend(1,1) StmtAppend(10,10) StmtDelete(4) StmtDelete(1) StmtAppend(3,3) StmtDelete(8) StmtAppend(4,4) (stored at: )
+59149 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtAppend(10,10) StmtDelete(8) StmtDelete(2) StmtAppend(1,1) StmtAppend(10,10) StmtReplace(8,8) StmtReplace(9,10) StmtReplace(4,4) (stored at: )
+59151 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtDelete(2) StmtAppend(10,10) StmtReplace(2,3) StmtReplace(10,12) StmtReplace(11,10) (stored at: )
+59154 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtDelete(3) StmtReplace(11,11) StmtAppend(8,8) StmtDelete(2) StmtReplace(9,11) StmtDelete(11) StmtReplace(8,8) StmtAppend(2,4) StmtReplace(11,10) (stored at: )
+59488 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtDelete(10) StmtAppend(3,4) StmtReplace(10,10) StmtReplace(3,4) StmtReplace(3,4) (stored at: variant21)
+59492 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtDelete(1) StmtReplace(10,10) StmtReplace(4,4) StmtReplace(11,11) StmtAppend(8,8) StmtDelete(2) StmtReplace(2,4) StmtReplace(2,4) StmtReplace(8,8) StmtDelete(9) StmtAppend(10,12) StmtDelete(1) (stored at: )
+59805 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtDelete(4) StmtAppend(10,10) StmtReplace(3,4) (stored at: variant22)
+59808 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtReplace(1,1) StmtDelete(10) StmtAppend(4,3) (stored at: )
+59812 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtDelete(11) StmtDelete(3) StmtReplace(4,4) StmtDelete(1) StmtAppend(1,1) StmtAppend(1,1) StmtDelete(10) StmtAppend(10,10) StmtAppend(11,10) StmtAppend(3,3) StmtReplace(9,11) StmtDelete(2) StmtReplace(8,8) StmtAppend(3,3) (stored at: )
+59814 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtDelete(3) StmtAppend(2,4) StmtDelete(8) StmtDelete(4) StmtReplace(8,8) (stored at: )
+59837 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/archivers/sevenz/Coders.java:59: error: unreachable statement
+				{
+				^
+1 error
+
+59837 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(2,4) StmtReplace(4,4) StmtDelete(1) StmtDelete(3) StmtDelete(3) StmtDelete(2) StmtAppend(11,11) at variant23 fails to compile
+
+59837 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtReplace(2,4) StmtReplace(4,4) StmtDelete(1) StmtDelete(3) StmtDelete(3) StmtDelete(2) StmtAppend(11,11) (stored at: variant23)
+59855 [main] INFO clegoues.genprog4java.fitness.Fitness  - Serialized test cache to file testcache.ser
+59855 [main] INFO clegoues.genprog4java.main.Main  - 
+Total elapsed time: 59
+

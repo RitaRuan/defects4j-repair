@@ -1,0 +1,72 @@
+1 InsertBefore /home/rtx/d4j/JacksonCore/11b/src/main/java/com/fasterxml/jackson/core/sym/ByteQuadsCanonicalizer.java 631
+Faulty:
+if ((q1 == hashArea[offset]) && (1 == len)) {
+  return _names[offset >> 2];
+}
+Seed:
+_needRehash=false;
+**************************************************
+2 Replace /home/rtx/d4j/JacksonCore/11b/src/main/java/com/fasterxml/jackson/core/sym/ByteQuadsCanonicalizer.java 642
+Faulty:
+if ((q1 == hashArea[offset]) && (1 == hashArea[offset + 3])) {
+  return _names[offset >> 2];
+}
+Seed:
+int i=0;
+**************************************************
+3 InsertBefore /home/rtx/d4j/JacksonCore/11b/src/main/java/com/fasterxml/jackson/core/sym/ByteQuadsCanonicalizer.java 630
+Faulty:
+int len=hashArea[offset + 3];
+Seed:
+int hash=q1;
+**************************************************
+4 InsertBefore /home/rtx/d4j/JacksonCore/11b/src/main/java/com/fasterxml/jackson/core/sym/ByteQuadsCanonicalizer.java 626
+Faulty:
+int offset=_tertiaryStart + ((origOffset >> (_tertiaryShift + 2)) << _tertiaryShift);
+Seed:
+int[] q=new int[16];
+**************************************************
+5 InsertBefore /home/rtx/d4j/JacksonCore/11b/src/main/java/com/fasterxml/jackson/core/sym/ByteQuadsCanonicalizer.java 932
+Faulty:
+_reportTooManyCollisions();
+Seed:
+final int[] oldHashArea=_hashArea;
+**************************************************
+6 Delete /home/rtx/d4j/JacksonCore/11b/src/main/java/com/fasterxml/jackson/core/sym/ByteQuadsCanonicalizer.java 936
+Faulty:
+_needRehash=true;
+Seed:
+hash^=(hash << 9);
+**************************************************
+7 Delete /home/rtx/d4j/JacksonCore/11b/src/main/java/com/fasterxml/jackson/core/sym/ByteQuadsCanonicalizer.java 631
+Faulty:
+if ((q1 == hashArea[offset]) && (1 == len)) {
+  return _names[offset >> 2];
+}
+Seed:
+if (_parent != null && maybeDirty()) {
+  _parent.mergeChild(new TableInfo(this));
+  _hashShared=true;
+}
+**************************************************
+8 Delete /home/rtx/d4j/JacksonCore/11b/src/main/java/com/fasterxml/jackson/core/sym/ByteQuadsCanonicalizer.java 931
+Faulty:
+if (_failOnDoS) {
+  _reportTooManyCollisions();
+}
+Seed:
+int count=0;
+**************************************************
+9 InsertBefore /home/rtx/d4j/JacksonCore/11b/src/main/java/com/fasterxml/jackson/core/sym/ByteQuadsCanonicalizer.java 635
+Faulty:
+return null;
+Seed:
+if (_count > (_hashSize >> 1)) {
+  int spillCount=(_spilloverEnd - _spilloverStart()) >> 2;
+  if ((spillCount > (1 + _count >> 7)) || (_count > (_hashSize * 0.80))) {
+    _needRehash=true;
+  }
+}
+**************************************************
+Evaluations: 259
+EstimatedTime: 777060

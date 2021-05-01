@@ -1,0 +1,35 @@
+1 Replace /home/ubuntu/rtx/d4j/Math/58b/src/main/java/org/apache/commons/math/optimization/fitting/GaussianFitter.java 173
+Faulty:
+params[0]=points[maxYIdx].getY();
+Seed:
+params[0]=points[maxYIdx].getY();
+**************************************************
+2 Delete /home/ubuntu/rtx/d4j/Math/58b/src/main/java/org/apache/commons/math/optimization/fitting/GaussianFitter.java 169
+Faulty:
+Arrays.sort(points,createWeightedObservedPointComparator());
+Seed:
+final double[] gradient=new double[parameters.length];
+**************************************************
+3 InsertBefore /home/ubuntu/rtx/d4j/Math/58b/src/main/java/org/apache/commons/math/analysis/function/Gaussian.java 183
+Faulty:
+throw new NotStrictlyPositiveException(param[2]);
+Seed:
+final double sigma=param[2];
+**************************************************
+4 Replace /home/ubuntu/rtx/d4j/Math/58b/src/main/java/org/apache/commons/math/optimization/fitting/GaussianFitter.java 273
+Faulty:
+for (final WeightedObservedPoint point : points) {
+  minY=Math.min(minY,point.getY());
+  maxY=Math.max(maxY,point.getY());
+}
+Seed:
+double xn=1.0;
+**************************************************
+5 Replace /home/ubuntu/rtx/d4j/Math/58b/src/main/java/org/apache/commons/math/optimization/fitting/GaussianFitter.java 121
+Faulty:
+return fit(new Gaussian.Parametric(),guess);
+Seed:
+return fit((new ParameterGuesser(getObservations())).guess());
+**************************************************
+Evaluations: 418
+EstimatedTime: 233315

@@ -1,0 +1,58 @@
+Astor Output:
+
+General stats:
+EXECUTION_IDENTIFIER=
+TOTAL_TIME=299.955
+NR_GENERATIONS=58
+NR_RIGHT_COMPILATIONS=24
+NR_FAILLING_COMPILATIONS=34
+NR_ERRONEOUS_VARIANCES=null
+NR_FAILING_VALIDATION_PROCESS=null
+OUTPUT_STATUS=STOP_BY_PATCH_FOUND
+
+Patch stats:
+
+Patch 1
+VARIANT_ID=116
+TIME=299
+VALIDATION=|true|0|1304|[]|
+GENERATION=58
+FOLDER_SOLUTION_CODE=/home/rtx/repair/d4j/Math/95b/jgenprog/variantSeed4/AstorMain-95b//src//variant-116
+--Patch Hunk #1
+OPERATOR=ReplaceOp
+
+LOCATION=org.apache.commons.math.distribution.FDistributionImpl
+
+PATH=/home/rtx/repair/d4j/Math/95b/src/java/org/apache/commons/math/distribution/FDistributionImpl.java
+
+MODIFIED_FILE_PATH=/home/rtx/repair/d4j/Math/95b/jgenprog/variantSeed4/AstorMain-95b//src//variant-116/org/apache/commons/math/distribution/FDistributionImpl.java
+
+LINE=147
+
+SUSPICIOUNESS=0.258
+
+MP_RANKING=4
+
+ORIGINAL_CODE=ret = d / (d - 2.0)
+
+BUGGY_CODE_TYPE=CtAssignmentImpl|CtBlockImpl
+
+PATCH_HUNK_CODE=ret = 0.5
+
+PATCH_HUNK_TYPE=CtAssignmentImpl|CtBlockImpl
+
+INGREDIENT_SCOPE=PACKAGE
+
+INGREDIENT_PARENT=ret = 0.5
+
+PATCH_DIFF_ORIG=--- /home/rtx/repair/d4j/Math/95b/src/java/org/apache/commons/math/distribution/FDistributionImpl.java
++++ /home/rtx/repair/d4j/Math/95b/src/java/org/apache/commons/math/distribution/FDistributionImpl.java
+@@ -145 +145,2 @@
+-		double d = getDenominatorDegreesOfFreedom();
++		double d = getDenominatorDegreesOfFreedom(); 		ret = 0.5;
++
+@@ -147 +147,0 @@
+-		ret = d / (d - 2.0);
+
+
+

@@ -1,0 +1,22 @@
+1 Replace /home/ubuntu/rtx/d4j/Math/95b/src/java/org/apache/commons/math/distribution/FDistributionImpl.java 78
+Faulty:
+ret=Beta.regularizedBeta((n * x) / (m + n * x),0.5 * n,0.5 * m);
+Seed:
+ret=Beta.regularizedBeta((n * x) / (m + n * x),0.5 * n,0.5 * m);
+**************************************************
+2 Replace /home/ubuntu/rtx/d4j/Math/95b/src/java/org/apache/commons/math/distribution/FDistributionImpl.java 147
+Faulty:
+ret=d / (d - 2.0);
+Seed:
+ret=0.0;
+**************************************************
+3 InsertBefore /home/ubuntu/rtx/d4j/Math/95b/src/java/org/apache/commons/math/distribution/FDistributionImpl.java 119
+Faulty:
+return 0.0;
+Seed:
+if (p == 1) {
+  return Double.POSITIVE_INFINITY;
+}
+**************************************************
+Evaluations: 1210
+EstimatedTime: 566824

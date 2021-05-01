@@ -1,0 +1,30 @@
+1 Replace /home/ubuntu/rtx/d4j/Math/95b/src/java/org/apache/commons/math/distribution/FDistributionImpl.java 78
+Faulty:
+ret=Beta.regularizedBeta((n * x) / (m + n * x),0.5 * n,0.5 * m);
+Seed:
+ret=Beta.regularizedBeta((n * x) / (m + n * x),0.5 * n,0.5 * m);
+**************************************************
+2 InsertBefore /home/ubuntu/rtx/d4j/Math/95b/src/java/org/apache/commons/math/analysis/UnivariateRealSolverUtils.java 178
+Faulty:
+if (initial < lowerBound || initial > upperBound || lowerBound >= upperBound) {
+  throw new IllegalArgumentException("Invalid endpoint parameters:  lowerBound=" + lowerBound + " initial="+ initial+ " upperBound="+ upperBound);
+}
+Seed:
+if (maximumIterations <= 0) {
+  throw new IllegalArgumentException("bad value for maximumIterations: " + maximumIterations);
+}
+**************************************************
+3 Replace /home/ubuntu/rtx/d4j/Math/95b/src/java/org/apache/commons/math/distribution/FDistributionImpl.java 78
+Faulty:
+ret=Beta.regularizedBeta((n * x) / (m + n * x),0.5 * n,0.5 * m);
+Seed:
+ret=Beta.regularizedBeta((n * x) / (m + n * x),0.5 * n,0.5 * m);
+**************************************************
+4 Replace /home/ubuntu/rtx/d4j/Math/95b/src/java/org/apache/commons/math/distribution/FDistributionImpl.java 147
+Faulty:
+ret=d / (d - 2.0);
+Seed:
+ret=0.0;
+**************************************************
+Evaluations: 667
+EstimatedTime: 304774

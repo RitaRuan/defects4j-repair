@@ -1,0 +1,27 @@
+1 Delete /home/rtx/d4j/JacksonCore/11b/src/main/java/com/fasterxml/jackson/core/sym/ByteQuadsCanonicalizer.java 936
+Faulty:
+_needRehash=true;
+Seed:
+unshareNames();
+**************************************************
+2 InsertBefore /home/rtx/d4j/JacksonCore/11b/src/main/java/com/fasterxml/jackson/core/sym/ByteQuadsCanonicalizer.java 642
+Faulty:
+if ((q1 == hashArea[offset]) && (1 == hashArea[offset + 3])) {
+  return _names[offset >> 2];
+}
+Seed:
+int count=0;
+**************************************************
+3 InsertBefore /home/rtx/d4j/JacksonCore/11b/src/main/java/com/fasterxml/jackson/core/sym/ByteQuadsCanonicalizer.java 931
+Faulty:
+if (_failOnDoS) {
+  _reportTooManyCollisions();
+}
+Seed:
+if (_parent != null && maybeDirty()) {
+  _parent.mergeChild(new TableInfo(this));
+  _hashShared=true;
+}
+**************************************************
+Evaluations: 347
+EstimatedTime: 993480

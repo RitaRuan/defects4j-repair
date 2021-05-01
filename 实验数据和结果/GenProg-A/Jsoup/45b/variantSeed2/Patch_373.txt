@@ -1,0 +1,67 @@
+1 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/45b/src/main/java/org/jsoup/parser/HtmlTreeBuilder.java 348
+Faulty:
+if (StringUtil.in(next.nodeName(),nodeNames) || next.nodeName().equals("html")) break;
+ else stack.remove(pos);
+Seed:
+tokeniser=new Tokeniser(reader,errors);
+**************************************************
+2 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/45b/src/main/java/org/jsoup/parser/HtmlTreeBuilder.java 552
+Faulty:
+return StringUtil.in(name,TagSearchSpecial);
+Seed:
+baseUriSetFromDoc=true;
+**************************************************
+3 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/45b/src/main/java/org/jsoup/parser/HtmlTreeBuilder.java 346
+Faulty:
+for (int pos=stack.size() - 1; pos >= 0; pos--) {
+  Element next=stack.get(pos);
+  if (StringUtil.in(next.nodeName(),nodeNames) || next.nodeName().equals("html"))   break;
+ else   stack.remove(pos);
+}
+Seed:
+Document doc=Document.createShell(baseUri);
+**************************************************
+4 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/45b/src/main/java/org/jsoup/parser/TreeBuilder.java 78
+Faulty:
+return process(new Token.EndTag().name(name));
+Seed:
+this.errors=errors;
+**************************************************
+5 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/45b/src/main/java/org/jsoup/parser/HtmlTreeBuilder.java 398
+Faulty:
+transition(HtmlTreeBuilderState.InRow);
+Seed:
+state=HtmlTreeBuilderState.Initial;
+**************************************************
+6 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/45b/src/main/java/org/jsoup/parser/TreeBuilder.java 78
+Faulty:
+return process(new Token.EndTag().name(name));
+Seed:
+this.errors=errors;
+**************************************************
+7 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/45b/src/main/java/org/jsoup/parser/HtmlTreeBuilder.java 398
+Faulty:
+transition(HtmlTreeBuilderState.InRow);
+Seed:
+state=HtmlTreeBuilderState.Initial;
+**************************************************
+8 Replace /home/ubuntu/rtx/d4j/Jsoup/45b/src/main/java/org/jsoup/parser/HtmlTreeBuilder.java 398
+Faulty:
+transition(HtmlTreeBuilderState.InRow);
+Seed:
+formattingElements.add(null);
+**************************************************
+9 Delete /home/ubuntu/rtx/d4j/Jsoup/45b/src/main/java/org/jsoup/parser/HtmlTreeBuilder.java 398
+Faulty:
+transition(HtmlTreeBuilderState.InRow);
+Seed:
+characterReferenceError("missing semicolon");
+**************************************************
+10 Delete /home/ubuntu/rtx/d4j/Jsoup/45b/src/main/java/org/jsoup/parser/HtmlTreeBuilder.java 398
+Faulty:
+transition(HtmlTreeBuilderState.InRow);
+Seed:
+characterReferenceError("missing semicolon");
+**************************************************
+Evaluations: 487
+EstimatedTime: 562431

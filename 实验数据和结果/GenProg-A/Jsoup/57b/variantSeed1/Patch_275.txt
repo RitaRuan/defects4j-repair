@@ -1,0 +1,21 @@
+1 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/57b/src/main/java/org/jsoup/nodes/Attributes.java 123
+Faulty:
+String attrKey=it.next();
+Seed:
+attributes=new LinkedHashMap<String,Attribute>(2);
+**************************************************
+2 Delete /home/ubuntu/rtx/d4j/Jsoup/57b/src/main/java/org/jsoup/nodes/Attributes.java 119
+Faulty:
+Validate.notEmpty(key);
+Seed:
+if (tagName().equals("textarea")) return text();
+ else return attr("value");
+**************************************************
+3 Delete /home/ubuntu/rtx/d4j/Jsoup/57b/src/main/java/org/jsoup/nodes/Attributes.java 125
+Faulty:
+attributes.remove(attrKey);
+Seed:
+List<Element> siblings=parent().children();
+**************************************************
+Evaluations: 366
+EstimatedTime: 313888

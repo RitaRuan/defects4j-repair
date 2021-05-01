@@ -1,0 +1,88 @@
+1 Replace /home/ubuntu/rtx/d4j/Math/95b/src/java/org/apache/commons/math/distribution/FDistributionImpl.java 148
+Faulty:
+return ret;
+Seed:
+return 1;
+**************************************************
+2 Replace /home/ubuntu/rtx/d4j/Math/95b/src/java/org/apache/commons/math/distribution/FDistributionImpl.java 148
+Faulty:
+return ret;
+Seed:
+return 1;
+**************************************************
+3 InsertBefore /home/ubuntu/rtx/d4j/Math/95b/src/java/org/apache/commons/math/distribution/FDistributionImpl.java 106
+Faulty:
+return super.inverseCumulativeProbability(p);
+Seed:
+if (p < 0.0 || p > 1.0) {
+  throw new IllegalArgumentException("p must be between 0.0 and 1.0, inclusive.");
+}
+**************************************************
+4 Replace /home/ubuntu/rtx/d4j/Math/95b/src/java/org/apache/commons/math/distribution/FDistributionImpl.java 148
+Faulty:
+return ret;
+Seed:
+return 1;
+**************************************************
+5 InsertBefore /home/ubuntu/rtx/d4j/Math/95b/src/java/org/apache/commons/math/distribution/FDistributionImpl.java 106
+Faulty:
+return super.inverseCumulativeProbability(p);
+Seed:
+if (p == 1) {
+  return Integer.MAX_VALUE;
+}
+**************************************************
+6 InsertBefore /home/ubuntu/rtx/d4j/Math/95b/src/java/org/apache/commons/math/distribution/FDistributionImpl.java 132
+Faulty:
+return Double.MAX_VALUE;
+Seed:
+if (p == 0) {
+  return 0d;
+}
+**************************************************
+7 Delete /home/ubuntu/rtx/d4j/Math/95b/src/java/org/apache/commons/math/distribution/FDistributionImpl.java 147
+Faulty:
+ret=d / (d - 2.0);
+Seed:
+if (p == 0) {
+  return 0;
+}
+ else if (p == 1) {
+  return 1;
+}
+ else {
+  return super.inverseCumulativeProbability(p);
+}
+**************************************************
+8 InsertBefore /home/ubuntu/rtx/d4j/Math/95b/src/java/org/apache/commons/math/distribution/FDistributionImpl.java 132
+Faulty:
+return Double.MAX_VALUE;
+Seed:
+if (p == 0) {
+  return 0d;
+}
+**************************************************
+9 Delete /home/ubuntu/rtx/d4j/Math/95b/src/java/org/apache/commons/math/distribution/FDistributionImpl.java 147
+Faulty:
+ret=d / (d - 2.0);
+Seed:
+if (p == 0) {
+  return 0;
+}
+ else if (p == 1) {
+  return 1;
+}
+ else {
+  return super.inverseCumulativeProbability(p);
+}
+**************************************************
+10 InsertBefore /home/ubuntu/rtx/d4j/Math/95b/src/java/org/apache/commons/math/distribution/FDistributionImpl.java 103
+Faulty:
+if (p == 1) {
+  return Double.POSITIVE_INFINITY;
+}
+Seed:
+double[] bracket=null;
+**************************************************
+Evaluations: 1903
+EstimatedTime: 908911

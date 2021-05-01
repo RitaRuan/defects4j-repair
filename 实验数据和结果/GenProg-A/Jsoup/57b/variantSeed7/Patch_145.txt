@@ -1,0 +1,26 @@
+1 Delete /home/ubuntu/rtx/d4j/Jsoup/57b/src/main/java/org/jsoup/nodes/Node.java 127
+Faulty:
+Validate.notNull(attributeKey);
+Seed:
+Node firstChild=childNodes.size() > 0 ? childNodes.get(0) : null;
+**************************************************
+2 Delete /home/ubuntu/rtx/d4j/Jsoup/57b/src/main/java/org/jsoup/nodes/Attributes.java 119
+Faulty:
+Validate.notEmpty(key);
+Seed:
+return attributes.size();
+**************************************************
+3 Delete /home/ubuntu/rtx/d4j/Jsoup/57b/src/main/java/org/jsoup/nodes/Attributes.java 120
+Faulty:
+if (attributes == null) return;
+Seed:
+key=key.trim();
+**************************************************
+4 Replace /home/ubuntu/rtx/d4j/Jsoup/57b/src/main/java/org/jsoup/nodes/Attributes.java 119
+Faulty:
+Validate.notEmpty(key);
+Seed:
+attributes=new LinkedHashMap<String,Attribute>(2);
+**************************************************
+Evaluations: 220
+EstimatedTime: 177688

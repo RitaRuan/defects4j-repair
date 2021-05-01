@@ -1,0 +1,59 @@
+1 Replace /home/ubuntu/rtx/d4j/Math/95b/src/java/org/apache/commons/math/distribution/FDistributionImpl.java 148
+Faulty:
+return ret;
+Seed:
+return 1;
+**************************************************
+2 InsertBefore /home/ubuntu/rtx/d4j/Math/95b/src/java/org/apache/commons/math/distribution/FDistributionImpl.java 106
+Faulty:
+return super.inverseCumulativeProbability(p);
+Seed:
+if (p < 0.0 || p > 1.0) {
+  throw new IllegalArgumentException("p must be between 0.0 and 1.0, inclusive.");
+}
+**************************************************
+3 Replace /home/ubuntu/rtx/d4j/Math/95b/src/java/org/apache/commons/math/distribution/FDistributionImpl.java 148
+Faulty:
+return ret;
+Seed:
+return 1;
+**************************************************
+4 Replace /home/ubuntu/rtx/d4j/Math/95b/src/java/org/apache/commons/math/distribution/FDistributionImpl.java 148
+Faulty:
+return ret;
+Seed:
+return 1;
+**************************************************
+5 Delete /home/ubuntu/rtx/d4j/Math/95b/src/java/org/apache/commons/math/distribution/FDistributionImpl.java 147
+Faulty:
+ret=d / (d - 2.0);
+Seed:
+if (p == 0) {
+  return 0;
+}
+ else if (p == 1) {
+  return 1;
+}
+ else {
+  return super.inverseCumulativeProbability(p);
+}
+**************************************************
+6 Delete /home/ubuntu/rtx/d4j/Math/95b/src/java/org/apache/commons/math/distribution/FDistributionImpl.java 145
+Faulty:
+double d=getDenominatorDegreesOfFreedom();
+Seed:
+if (p == 1.0) {
+  ret=Double.POSITIVE_INFINITY;
+}
+ else {
+  ret=-getMean() * Math.log(1.0 - p);
+}
+**************************************************
+7 Delete /home/ubuntu/rtx/d4j/Math/95b/src/java/org/apache/commons/math/distribution/FDistributionImpl.java 145
+Faulty:
+double d=getDenominatorDegreesOfFreedom();
+Seed:
+return getGamma().getAlpha() * 2.0;
+**************************************************
+Evaluations: 1590
+EstimatedTime: 771151

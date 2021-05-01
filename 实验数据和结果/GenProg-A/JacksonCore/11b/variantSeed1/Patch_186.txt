@@ -1,0 +1,49 @@
+1 InsertBefore /home/rtx/d4j/JacksonCore/11b/src/main/java/com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java 1691
+Faulty:
+return findName(q,2);
+Seed:
+++_currInputRow;
+**************************************************
+2 InsertBefore /home/rtx/d4j/JacksonCore/11b/src/main/java/com/fasterxml/jackson/core/sym/ByteQuadsCanonicalizer.java 492
+Faulty:
+if (len == 0) {
+  return null;
+}
+Seed:
+_needRehash=true;
+**************************************************
+3 InsertBefore /home/rtx/d4j/JacksonCore/11b/src/main/java/com/fasterxml/jackson/core/sym/ByteQuadsCanonicalizer.java 486
+Faulty:
+len=hashArea[offset2 + 3];
+Seed:
+_verifyNeedForRehash();
+**************************************************
+4 Replace /home/rtx/d4j/JacksonCore/11b/src/main/java/com/fasterxml/jackson/core/sym/ByteQuadsCanonicalizer.java 641
+Faulty:
+for (offset=_spilloverStart(); offset < _spilloverEnd; offset+=4) {
+  if ((q1 == hashArea[offset]) && (1 == hashArea[offset + 3])) {
+    return _names[offset >> 2];
+  }
+}
+Seed:
+int copyCount=0;
+**************************************************
+5 InsertBefore /home/rtx/d4j/JacksonCore/11b/src/main/java/com/fasterxml/jackson/core/sym/ByteQuadsCanonicalizer.java 629
+Faulty:
+for (int end=offset + bucketSize; offset < end; offset+=4) {
+  int len=hashArea[offset + 3];
+  if ((q1 == hashArea[offset]) && (1 == len)) {
+    return _names[offset >> 2];
+  }
+  if (len == 0) {
+    return null;
+  }
+}
+Seed:
+if (_parent != null && maybeDirty()) {
+  _parent.mergeChild(new TableInfo(this));
+  _hashShared=true;
+}
+**************************************************
+Evaluations: 303
+EstimatedTime: 1104048

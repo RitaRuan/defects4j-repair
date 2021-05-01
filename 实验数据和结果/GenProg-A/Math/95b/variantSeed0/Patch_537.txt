@@ -1,0 +1,22 @@
+1 InsertBefore /home/ubuntu/rtx/d4j/Math/95b/src/java/org/apache/commons/math/distribution/FDistributionImpl.java 132
+Faulty:
+return Double.MAX_VALUE;
+Seed:
+if (p == 0) {
+  return Double.NEGATIVE_INFINITY;
+}
+**************************************************
+2 Replace /home/ubuntu/rtx/d4j/Math/95b/src/java/org/apache/commons/math/distribution/FDistributionImpl.java 148
+Faulty:
+return ret;
+Seed:
+return 0;
+**************************************************
+3 InsertBefore /home/ubuntu/rtx/d4j/Math/95b/src/java/org/apache/commons/math/distribution/FDistributionImpl.java 76
+Faulty:
+double m=getDenominatorDegreesOfFreedom();
+Seed:
+ret=-Double.MAX_VALUE;
+**************************************************
+Evaluations: 757
+EstimatedTime: 335649

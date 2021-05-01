@@ -1,0 +1,86 @@
+1 Replace /home/rtx/repair/d4j/Math/79b/src/main/java/org/apache/commons/math/stat/clustering/KMeansPlusPlusClusterer.java 157
+Faulty:
+if (distance < minDistance) {
+  minDistance=distance;
+  minCluster=c;
+}
+Seed:
+minCluster=c;
+**************************************************
+2 Replace /home/rtx/repair/d4j/Math/79b/src/main/java/org/apache/commons/math/stat/clustering/KMeansPlusPlusClusterer.java 157
+Faulty:
+if (distance < minDistance) {
+  minDistance=distance;
+  minCluster=c;
+}
+Seed:
+minCluster=c;
+**************************************************
+3 Replace /home/rtx/repair/d4j/Math/79b/src/main/java/org/apache/commons/math/stat/clustering/KMeansPlusPlusClusterer.java 107
+Faulty:
+final List<T> pointSet=new ArrayList<T>(points);
+Seed:
+final List<T> pointSet=new ArrayList<T>(points);
+**************************************************
+4 Replace /home/rtx/repair/d4j/Math/79b/src/main/java/org/apache/commons/math/stat/clustering/KMeansPlusPlusClusterer.java 157
+Faulty:
+if (distance < minDistance) {
+  minDistance=distance;
+  minCluster=c;
+}
+Seed:
+minCluster=c;
+**************************************************
+5 Replace /home/rtx/repair/d4j/Math/79b/src/main/java/org/apache/commons/math/stat/clustering/KMeansPlusPlusClusterer.java 107
+Faulty:
+final List<T> pointSet=new ArrayList<T>(points);
+Seed:
+final List<T> pointSet=new ArrayList<T>(points);
+**************************************************
+6 InsertBefore /home/rtx/repair/d4j/Math/79b/src/main/java/org/apache/commons/math/stat/clustering/KMeansPlusPlusClusterer.java 162
+Faulty:
+return minCluster;
+Seed:
+for (final Cluster<T> c : clusters) {
+  final double distance=point.distanceFrom(c.getCenter());
+  if (distance < minDistance) {
+    minDistance=distance;
+    minCluster=c;
+  }
+}
+**************************************************
+7 InsertBefore /home/rtx/repair/d4j/Math/79b/src/main/java/org/apache/commons/math/stat/clustering/KMeansPlusPlusClusterer.java 162
+Faulty:
+return minCluster;
+Seed:
+for (final Cluster<T> c : clusters) {
+  final double distance=point.distanceFrom(c.getCenter());
+  if (distance < minDistance) {
+    minDistance=distance;
+    minCluster=c;
+  }
+}
+**************************************************
+8 InsertBefore /home/rtx/repair/d4j/Math/79b/src/main/java/org/apache/commons/math/stat/clustering/KMeansPlusPlusClusterer.java 90
+Faulty:
+Cluster<T> cluster=getNearestCluster(clusters,p);
+Seed:
+Cluster<T> minCluster=null;
+**************************************************
+9 Replace /home/rtx/repair/d4j/Math/79b/src/main/java/org/apache/commons/math/stat/clustering/EuclideanIntegerPoint.java 57
+Faulty:
+return MathUtils.distance(point,p.getPoint());
+Seed:
+return MathUtils.distance(point,p.getPoint());
+**************************************************
+10 Replace /home/rtx/repair/d4j/Math/79b/src/main/java/org/apache/commons/math/stat/clustering/KMeansPlusPlusClusterer.java 157
+Faulty:
+if (distance < minDistance) {
+  minDistance=distance;
+  minCluster=c;
+}
+Seed:
+minCluster=c;
+**************************************************
+Evaluations: 1235
+EstimatedTime: 118404

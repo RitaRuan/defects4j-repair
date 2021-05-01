@@ -1,0 +1,12 @@
+--- org.jfree.data.statistics.BoxAndWhiskerItem
++++ org.jfree.data.statistics.BoxAndWhiskerItem
+@@ -113,7 +113,8 @@
+                              List outliers) {
+                                  
+         this.mean = mean;
+-        this.median = median;    
++        this.median = median;
++		double sumXY = 0;    
+         this.q1 = q1;
+         this.q3 = q3;
+         this.minRegularValue = minRegularValue;

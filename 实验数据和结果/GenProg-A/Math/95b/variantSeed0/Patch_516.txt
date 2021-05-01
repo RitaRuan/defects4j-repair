@@ -1,0 +1,16 @@
+1 Replace /home/ubuntu/rtx/d4j/Math/95b/src/java/org/apache/commons/math/distribution/FDistributionImpl.java 148
+Faulty:
+return ret;
+Seed:
+return 0;
+**************************************************
+2 InsertBefore /home/ubuntu/rtx/d4j/Math/95b/src/java/org/apache/commons/math/distribution/FDistributionImpl.java 119
+Faulty:
+return 0.0;
+Seed:
+if (p <= 0) {
+  throw new IllegalArgumentException("The Poisson mean must be positive");
+}
+**************************************************
+Evaluations: 732
+EstimatedTime: 324073

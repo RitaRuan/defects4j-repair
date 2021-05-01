@@ -1,0 +1,30 @@
+1 Delete /home/ubuntu/rtx/d4j/Jsoup/57b/src/main/java/org/jsoup/nodes/Attributes.java 120
+Faulty:
+if (attributes == null) return;
+Seed:
+for (Iterator<String> it=attributes.keySet().iterator(); it.hasNext(); ) {
+  String attrKey=it.next();
+  if (attrKey.equalsIgnoreCase(key))   attributes.remove(attrKey);
+}
+**************************************************
+2 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/57b/src/main/java/org/jsoup/nodes/Attributes.java 120
+Faulty:
+if (attributes == null) return;
+Seed:
+remove(key);
+**************************************************
+3 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/57b/src/main/java/org/jsoup/parser/Token.java 109
+Faulty:
+if (hasEmptyAttributeValue) attribute=new Attribute(pendingAttributeName,"");
+ else attribute=new BooleanAttribute(pendingAttributeName);
+Seed:
+if (attributes == null) attributes=new Attributes();
+**************************************************
+4 Delete /home/ubuntu/rtx/d4j/Jsoup/57b/src/main/java/org/jsoup/nodes/Attributes.java 124
+Faulty:
+if (attrKey.equalsIgnoreCase(key)) attributes.remove(attrKey);
+Seed:
+return dataPrefix + key;
+**************************************************
+Evaluations: 499
+EstimatedTime: 401558

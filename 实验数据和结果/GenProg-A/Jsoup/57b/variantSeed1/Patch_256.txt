@@ -1,0 +1,14 @@
+1 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/57b/src/main/java/org/jsoup/nodes/Attributes.java 123
+Faulty:
+String attrKey=it.next();
+Seed:
+attributes=new LinkedHashMap<String,Attribute>(2);
+**************************************************
+2 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/57b/src/main/java/org/jsoup/nodes/Attributes.java 125
+Faulty:
+attributes.remove(attrKey);
+Seed:
+final StringBuilder accum=new StringBuilder();
+**************************************************
+Evaluations: 344
+EstimatedTime: 294560

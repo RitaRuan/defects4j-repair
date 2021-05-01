@@ -1,0 +1,29 @@
+1 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/45b/src/main/java/org/jsoup/parser/HtmlTreeBuilder.java 398
+Faulty:
+transition(HtmlTreeBuilderState.InRow);
+Seed:
+baseUriSetFromDoc=false;
+**************************************************
+2 Replace /home/ubuntu/rtx/d4j/Jsoup/45b/src/main/java/org/jsoup/parser/HtmlTreeBuilder.java 424
+Faulty:
+if (last) {
+  transition(HtmlTreeBuilderState.InBody);
+  break;
+}
+Seed:
+transition(HtmlTreeBuilderState.InBody);
+**************************************************
+3 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/45b/src/main/java/org/jsoup/parser/HtmlTreeBuilder.java 398
+Faulty:
+transition(HtmlTreeBuilderState.InRow);
+Seed:
+baseUriSetFromDoc=false;
+**************************************************
+4 Delete /home/ubuntu/rtx/d4j/Jsoup/45b/src/main/java/org/jsoup/parser/HtmlTreeBuilder.java 398
+Faulty:
+transition(HtmlTreeBuilderState.InRow);
+Seed:
+tokeniser.acknowledgeSelfClosingFlag();
+**************************************************
+Evaluations: 391
+EstimatedTime: 466635

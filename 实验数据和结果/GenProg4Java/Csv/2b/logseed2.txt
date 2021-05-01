@@ -1,0 +1,2559 @@
+0 [main] DEBUG clegoues.genprog4java.fitness.Fitness  - parsing granularity, value: class
+25 [main] DEBUG clegoues.genprog4java.fitness.Fitness  - parsing granularity, value: class
+#Sun Feb 21 11:35:05 CST 2021
+negativeTestWeight=2.0
+classSourceFolder=/home/ubuntu/rtx/d4j/Csv/2b/target/classes
+model=default
+sampleStrategy=variant
+srcClassPath=/home/ubuntu/rtx/d4j/Csv/2b/target/classes
+sourceVersion=1.8
+popsize=40
+regenPaths=false
+posCoverageFile=coverage.path.pos
+continue=false
+edits=APPEND;DELETE;REPLACE
+negCoverageFile=coverage.path.neg
+workingDir=/home/ubuntu/rtx/d4j/Csv/2b/
+clearTestCache=false
+skipFailedSanity=false
+sample=0.1 
+oracleGenome=
+testGranularity=class
+justTestingFaultLoc=false
+faultLocStrategy=standardPathFile
+crossp=0.5
+pMutation=1
+generations=10
+positiveTests=/home/ubuntu/rtx/d4j/Csv/2b/pos.tests
+javaVM=/usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+seed=2
+negativePathWeight=0.35
+compileCommand=
+fixStrategy=classScope
+allowCoverageFail=false
+targetClassName=/home/ubuntu/rtx/d4j/Csv/2b/bugfiles.txt
+javaRuntime=java.lang.Runtime@179d3b25
+classTestFolder=
+modelPath=OVERALLModel.txt
+sanity=yes
+positivePathWeight=0.65
+jacocoPath=/home/ubuntu/rtx/genprog4java/lib/jacocoagent.jar
+negativeTests=/home/ubuntu/rtx/d4j/Csv/2b/neg.tests
+pathToFileHumanInjectedFaultLoc=fileHumanInjectedFaultLoc.txt
+outputDir=/home/ubuntu/rtx/d4j/Csv/2b/genprog4java/variantSeed2/
+testClassPath=/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/junit/junit/4.11/junit-4.11.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/commons-io/commons-io/2.2/commons-io-2.2.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/com/h2database/h2/1.3.168/h2-1.3.168.jar\:/home/ubuntu/rtx/d4j/Csv/2b/target/classes\:/home/ubuntu/rtx/d4j/Csv/2b/target/test-classes\:/home/ubuntu/rtx/defects4j/framework/projects/lib/junit-4.11.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/com/csvreader/1.0/javacsv.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/com/generationjava/io/1.0/gj-csv-1.0.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/com/h2database/h2/1.4.180/h2-1.4.180.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/com/h2database/h2/1.4.181/h2-1.4.181.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/com/h2database/h2/1.4.182/h2-1.4.182.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/com/h2database/h2/1.4.196/h2-1.4.196.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/com/h2database/h2/1.4.198/h2-1.4.198.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/com/opencsv/4.0/opencsv-4.0.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/commons-io/commons-io/2.4/commons-io-2.4.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/commons-io/commons-io/2.5/commons-io-2.5.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/commons-io/commons-io/2.6/commons-io-2.6.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/junit/junit/3.8.1/junit-3.8.1.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/junit/junit/4.10/junit-4.10.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/junit/junit/4.12/junit-4.12.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/lib/com/csvreader/1.0/javacsv.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/lib/com/generationjava/io/1.0/gj-csv-1.0.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/lib/com/h2database/h2/1.3.168/h2-1.3.168.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/lib/com/h2database/h2/1.4.180/h2-1.4.180.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/lib/com/h2database/h2/1.4.181/h2-1.4.181.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/lib/com/h2database/h2/1.4.182/h2-1.4.182.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/lib/com/h2database/h2/1.4.196/h2-1.4.196.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/lib/com/h2database/h2/1.4.198/h2-1.4.198.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/lib/com/opencsv/4.0/opencsv-4.0.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/lib/commons-io/commons-io/2.2/commons-io-2.2.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/lib/commons-io/commons-io/2.4/commons-io-2.4.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/lib/commons-io/commons-io/2.5/commons-io-2.5.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/lib/commons-io/commons-io/2.6/commons-io-2.6.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/lib/junit/junit/3.8.1/junit-3.8.1.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/lib/junit/junit/4.10/junit-4.10.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/lib/junit/junit/4.11/junit-4.11.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/lib/junit/junit/4.12/junit-4.12.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/lib/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/lib/org/apache/commons/commons-lang3/3.6/commons-lang3-3.6.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/lib/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/lib/org/apache/commons/commons-lang3/3.8.1/commons-lang3-3.8.1.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/lib/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/lib/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/lib/org/mockito/mockito-all/1.10.19/mockito-all-1.10.19.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/lib/org/mockito/mockito-all/1.9.5/mockito-all-1.9.5.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/lib/org/openjdk/jmh/1.21/jmh-core-1.21.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/lib/org/skife/csv/1.0/csv-1.0.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/lib/org/supercsv/2.4.0/super-csv-2.4.0.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/org/apache/commons/commons-lang3/3.6/commons-lang3-3.6.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/org/apache/commons/commons-lang3/3.8.1/commons-lang3-3.8.1.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/org/mockito/mockito-all/1.10.19/mockito-all-1.10.19.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/org/mockito/mockito-all/1.9.5/mockito-all-1.9.5.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/org/openjdk/jmh/1.21/jmh-core-1.21.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/org/skife/csv/1.0/csv-1.0.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/org/supercsv/2.4.0/super-csv-2.4.0.jar
+faultStrategy=classScope
+sourceDir=src/main/java
+checkSpace=false
+search=gp
+globalExtension=.java
+faultSpaceSubSet=1/5
+maxVariants=50
+libs=/home/ubuntu/rtx/genprog4java/lib/junittestrunner.jar\:/home/ubuntu/rtx/genprog4java/lib/commons-cli-20040117.000000.jar\:/home/ubuntu/rtx/genprog4java/lib/junit-4.12.jar\:/home/ubuntu/rtx/genprog4java/lib/hamcrest-core-1.3.jar\:/home/ubuntu/rtx/genprog4java/lib/log4j-1.2.17.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/junit/junit/4.11/junit-4.11.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/commons-io/commons-io/2.2/commons-io-2.2.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/com/h2database/h2/1.3.168/h2-1.3.168.jar\:/home/ubuntu/rtx/d4j/Csv/2b/target/classes\:/home/ubuntu/rtx/d4j/Csv/2b/target/test-classes\:/home/ubuntu/rtx/defects4j/framework/projects/lib/junit-4.11.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/com/csvreader/1.0/javacsv.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/com/generationjava/io/1.0/gj-csv-1.0.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/com/h2database/h2/1.4.180/h2-1.4.180.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/com/h2database/h2/1.4.181/h2-1.4.181.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/com/h2database/h2/1.4.182/h2-1.4.182.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/com/h2database/h2/1.4.196/h2-1.4.196.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/com/h2database/h2/1.4.198/h2-1.4.198.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/com/opencsv/4.0/opencsv-4.0.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/commons-io/commons-io/2.4/commons-io-2.4.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/commons-io/commons-io/2.5/commons-io-2.5.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/commons-io/commons-io/2.6/commons-io-2.6.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/junit/junit/3.8.1/junit-3.8.1.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/junit/junit/4.10/junit-4.10.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/junit/junit/4.12/junit-4.12.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/lib/com/csvreader/1.0/javacsv.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/lib/com/generationjava/io/1.0/gj-csv-1.0.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/lib/com/h2database/h2/1.3.168/h2-1.3.168.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/lib/com/h2database/h2/1.4.180/h2-1.4.180.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/lib/com/h2database/h2/1.4.181/h2-1.4.181.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/lib/com/h2database/h2/1.4.182/h2-1.4.182.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/lib/com/h2database/h2/1.4.196/h2-1.4.196.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/lib/com/h2database/h2/1.4.198/h2-1.4.198.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/lib/com/opencsv/4.0/opencsv-4.0.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/lib/commons-io/commons-io/2.2/commons-io-2.2.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/lib/commons-io/commons-io/2.4/commons-io-2.4.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/lib/commons-io/commons-io/2.5/commons-io-2.5.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/lib/commons-io/commons-io/2.6/commons-io-2.6.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/lib/junit/junit/3.8.1/junit-3.8.1.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/lib/junit/junit/4.10/junit-4.10.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/lib/junit/junit/4.11/junit-4.11.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/lib/junit/junit/4.12/junit-4.12.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/lib/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/lib/org/apache/commons/commons-lang3/3.6/commons-lang3-3.6.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/lib/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/lib/org/apache/commons/commons-lang3/3.8.1/commons-lang3-3.8.1.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/lib/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/lib/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/lib/org/mockito/mockito-all/1.10.19/mockito-all-1.10.19.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/lib/org/mockito/mockito-all/1.9.5/mockito-all-1.9.5.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/lib/org/openjdk/jmh/1.21/jmh-core-1.21.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/lib/org/skife/csv/1.0/csv-1.0.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/lib/org/supercsv/2.4.0/super-csv-2.4.0.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/org/apache/commons/commons-lang3/3.6/commons-lang3-3.6.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/org/apache/commons/commons-lang3/3.8.1/commons-lang3-3.8.1.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/org/mockito/mockito-all/1.10.19/mockito-all-1.10.19.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/org/mockito/mockito-all/1.9.5/mockito-all-1.9.5.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/org/openjdk/jmh/1.21/jmh-core-1.21.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/org/skife/csv/1.0/csv-1.0.jar\:/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/org/supercsv/2.4.0/super-csv-2.4.0.jar\:/home/ubuntu/rtx/d4j/Csv/2b/target/classes
+crossover=onepoint
+117 [main] INFO clegoues.genprog4java.main.Main  - Configuration file loaded
+Deserialized fitnessCache HashMap
+8772 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - loaded from source clegoues.genprog4java.java.ClassInfo@1c28cbad
+8772 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - sanity checking begins
+9407 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 1 out of 3
+9650 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+9650 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 2 out of 3
+9897 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+9898 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 3 out of 3
+11278 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+11279 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - 	n1: 
+11509 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - false (0)
+
+11511 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - sanity checking completed (time taken = 2739)
+11511 [main] INFO clegoues.genprog4java.localization.DefaultLocalization  - Start Fault Localization
+11568 [main] INFO clegoues.genprog4java.localization.DefaultLocalization  - Finish Fault Localization
+11568 [main] INFO clegoues.genprog4java.Search.Search  - search: genetic algorithm begins
+
+11599 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 original (stored at: )
+11649 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtAppend(4,9) (stored at: )
+11655 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtReplace(0,10) (stored at: )
+11658 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtDelete(1) (stored at: )
+11668 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtAppend(11,8) (stored at: )
+11674 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtAppend(4,10) (stored at: )
+11681 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtDelete(4) (stored at: )
+11685 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtReplace(4,9) (stored at: )
+11692 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtAppend(2,8) (stored at: )
+11696 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtAppend(4,8) (stored at: )
+11703 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtAppend(2,8) (stored at: )
+11707 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtAppend(11,9) (stored at: )
+11841 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:81: error: unreachable statement
+        final Integer index = mapping.get(name);
+                      ^
+1 error
+
+11841 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(8,10) at variant0 fails to compile
+
+11841 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtReplace(8,10) (stored at: variant0)
+11843 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtDelete(10) (stored at: )
+11844 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtDelete(3) (stored at: )
+11854 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtDelete(3) (stored at: )
+11856 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtDelete(0) (stored at: )
+11859 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtDelete(0) (stored at: )
+11864 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtDelete(8) (stored at: )
+11874 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtReplace(0,9) (stored at: )
+11875 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtDelete(3) (stored at: )
+11877 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtDelete(0) (stored at: )
+11880 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtDelete(2) (stored at: )
+11885 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtDelete(8) (stored at: )
+11888 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtReplace(8,9) (stored at: )
+11894 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtAppend(1,9) (stored at: )
+11897 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtDelete(0) (stored at: )
+11898 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtDelete(1) (stored at: )
+11906 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtDelete(4) (stored at: )
+11912 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtDelete(9) (stored at: )
+11914 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtDelete(10) (stored at: )
+12267 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtReplace(9,10) (stored at: variant1)
+12268 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtReplace(3,9) (stored at: )
+12279 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtAppend(8,8) (stored at: )
+12284 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtAppend(8,8) (stored at: )
+12289 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtAppend(4,8) (stored at: )
+12290 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtDelete(0) (stored at: )
+12291 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtDelete(4) (stored at: )
+12299 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtDelete(2) (stored at: )
+12301 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtReplace(2,9) (stored at: )
+12301 [main] INFO clegoues.genprog4java.Search.Search  - search: generation1
+12523 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:49: error: ';' expected
+            final String comment, final long recordNumber) throw new IllegalStateException(
+                                                          ^
+1 error
+
+12616 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:91: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                   ^
+  symbol:   variable index
+  location: class CSVRecord
+org/apache/commons/csv/CSVRecord.java:91: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                                          ^
+  symbol:   variable index
+  location: class CSVRecord
+2 errors
+
+12695 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:55: error: variable comment might not have been initialized
+    }
+    ^
+1 error
+
+13052 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:91: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                   ^
+  symbol:   variable index
+  location: class CSVRecord
+org/apache/commons/csv/CSVRecord.java:91: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                                          ^
+  symbol:   variable index
+  location: class CSVRecord
+2 errors
+
+13183 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:55: error: variable mapping might not have been initialized
+    }
+    ^
+1 error
+
+13235 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:50: error: variable values might not have been initialized
+			}
+			^
+1 error
+
+13410 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:55: error: variable mapping might not have been initialized
+    }
+    ^
+1 error
+
+13461 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:55: error: variable values might not have been initialized
+    }
+    ^
+1 error
+
+13522 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:84: error: unreachable statement
+        final Integer index = mapping.get(name);
+                      ^
+1 error
+
+13572 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:50: error: variable values might not have been initialized
+			}
+			^
+1 error
+
+13617 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:55: error: variable comment might not have been initialized
+    }
+    ^
+1 error
+
+13718 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:56: error: unreachable statement
+        this.comment = comment;
+        ^
+1 error
+
+13932 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:50: error: variable values might not have been initialized
+			}
+			^
+1 error
+
+13977 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:55: error: variable values might not have been initialized
+    }
+    ^
+1 error
+
+14683 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:61: error: variable recordNumber might not have been initialized
+    }
+    ^
+1 error
+
+14683 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(1) StmtAppend(4,8) at variant2 fails to compile
+
+14683 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(1) StmtAppend(4,8) (stored at: variant2)
+14977 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(4,8) StmtAppend(2,8) (stored at: variant3)
+14981 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(9) StmtReplace(8,9) (stored at: )
+14993 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(8) StmtDelete(0) (stored at: )
+15001 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(0) StmtReplace(2,8) (stored at: )
+15005 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(8) StmtDelete(3) (stored at: )
+15011 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(8,8) StmtReplace(1,9) (stored at: )
+15017 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(9,10) StmtDelete(0) (stored at: )
+15021 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(0) StmtAppend(4,9) (stored at: )
+15031 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(0,9) StmtAppend(9,8) (stored at: )
+15083 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:55: error: unreachable statement
+        this.mapping = mapping;
+        ^
+1 error
+
+15083 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(4,9) StmtReplace(2,9) at variant4 fails to compile
+
+15085 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(4,9) StmtReplace(2,9) (stored at: variant4)
+15132 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:57: error: unreachable statement
+        this.comment = comment;
+        ^
+1 error
+
+15132 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(8,8) StmtAppend(3,10) at variant5 fails to compile
+
+15132 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(8,8) StmtAppend(3,10) (stored at: variant5)
+15143 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(1) StmtDelete(9) (stored at: )
+15154 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(0) StmtAppend(9,9) (stored at: )
+15197 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:55: error: unreachable statement
+        this.mapping = mapping;
+        ^
+1 error
+
+15197 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(2,9) StmtAppend(4,8) at variant6 fails to compile
+
+15197 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(2,9) StmtAppend(4,8) (stored at: variant6)
+15200 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(2,9) (stored at: )
+15203 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(4,8) StmtDelete(4) (stored at: )
+15210 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(9,10) StmtReplace(0,9) (stored at: )
+15498 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(2,8) StmtDelete(8) (stored at: variant7)
+15500 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(8) StmtAppend(3,10) (stored at: )
+15511 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(0) StmtAppend(0,9) (stored at: )
+15554 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:56: error: variable mapping might not have been initialized
+    }
+    ^
+1 error
+
+15555 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(1) StmtDelete(3) at variant8 fails to compile
+
+15555 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(1) StmtDelete(3) (stored at: variant8)
+15562 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(0) StmtDelete(9) (stored at: )
+15667 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:55: error: unreachable statement
+        this.mapping = mapping;
+        ^
+org/apache/commons/csv/CSVRecord.java:88: error: unreachable statement
+			{
+			^
+2 errors
+
+15667 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(2,9) StmtAppend(9,9) at variant9 fails to compile
+
+15667 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(2,9) StmtAppend(9,9) (stored at: variant9)
+15952 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(4,10) StmtReplace(9,8) (stored at: variant10)
+15961 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(0) StmtReplace(10,28) (stored at: )
+15966 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(4,9) StmtDelete(8) (stored at: )
+16005 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:56: error: variable values might not have been initialized
+    }
+    ^
+1 error
+
+16005 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(1) StmtDelete(2) at variant11 fails to compile
+
+16005 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(1) StmtDelete(2) (stored at: variant11)
+16010 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(9) StmtDelete(8) (stored at: )
+16017 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(3) StmtDelete(8) (stored at: )
+16316 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(4,10) StmtReplace(9,9) (stored at: variant12)
+16320 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(1) StmtDelete(1) (stored at: )
+16647 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(4,8) StmtDelete(9) (stored at: variant13)
+16695 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:82: error: unreachable statement
+        final Integer index = mapping.get(name);
+                      ^
+org/apache/commons/csv/CSVRecord.java:55: error: variable recordNumber might not have been initialized
+    }
+    ^
+2 errors
+
+16697 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(1) StmtReplace(8,10) at variant14 fails to compile
+
+16697 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(1) StmtReplace(8,10) (stored at: variant14)
+16738 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:57: error: variable values might not have been initialized
+    }
+    ^
+1 error
+
+16739 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(9,10) StmtReplace(2,8) at variant15 fails to compile
+
+16739 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(9,10) StmtReplace(2,8) (stored at: variant15)
+16789 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:94: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                   ^
+  symbol:   variable index
+  location: class CSVRecord
+org/apache/commons/csv/CSVRecord.java:94: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                                          ^
+  symbol:   variable index
+  location: class CSVRecord
+2 errors
+
+16790 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(2,8) StmtReplace(11,8) at variant16 fails to compile
+
+16790 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(2,8) StmtReplace(11,8) (stored at: variant16)
+16791 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(4,8) StmtReplace(4,9) (stored at: )
+16824 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:58: error: unreachable statement
+        this.mapping = mapping;
+        ^
+1 error
+
+16825 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(9) StmtAppend(2,9) at variant17 fails to compile
+
+16825 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(9) StmtAppend(2,9) (stored at: variant17)
+16834 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(0) StmtAppend(4,8) (stored at: )
+16836 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(1,9) StmtDelete(1) (stored at: )
+16838 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(3) (stored at: )
+16842 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(4,10) (stored at: )
+16843 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(11) (stored at: )
+16844 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(2) (stored at: )
+16845 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(10) (stored at: )
+16846 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(2,9) (stored at: )
+16852 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(4) (stored at: )
+16856 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(4,9) (stored at: )
+16857 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(8) (stored at: )
+16862 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(8,9) (stored at: )
+16863 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(4) (stored at: )
+16865 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(0,10) (stored at: )
+16866 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(1) (stored at: )
+16871 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(4,10) (stored at: )
+16872 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(1,8) (stored at: )
+16883 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(8,8) (stored at: )
+16886 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(11,8) (stored at: )
+16887 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(2,9) (stored at: )
+16887 [main] INFO clegoues.genprog4java.Search.Search  - search: generation2
+16919 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:84: error: unreachable statement
+        final Integer index = mapping.get(name);
+                      ^
+1 error
+
+16951 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:50: error: variable values might not have been initialized
+			}
+			^
+1 error
+
+16976 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:54: error: unreachable statement
+        this.values = values != null ? values : EMPTY_STRING_ARRAY;
+        ^
+1 error
+
+17011 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:50: error: variable values might not have been initialized
+			}
+			^
+1 error
+
+17042 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:55: error: variable recordNumber might not have been initialized
+    }
+    ^
+1 error
+
+17080 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:55: error: variable comment might not have been initialized
+    }
+    ^
+1 error
+
+17117 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:57: error: unreachable statement
+        this.comment = comment;
+        ^
+1 error
+
+17153 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:77: error: incompatible types: int cannot be converted to String
+            return values.length;
+                         ^
+1 error
+
+17183 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:55: error: variable mapping might not have been initialized
+    }
+    ^
+1 error
+
+17220 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:55: error: variable recordNumber might not have been initialized
+    }
+    ^
+1 error
+
+17251 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:55: error: variable recordNumber might not have been initialized
+    }
+    ^
+1 error
+
+17326 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:86: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                   ^
+  symbol:   variable index
+  location: class CSVRecord
+org/apache/commons/csv/CSVRecord.java:86: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                                          ^
+  symbol:   variable index
+  location: class CSVRecord
+2 errors
+
+17395 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:58: error: unreachable statement
+        this.mapping = mapping;
+        ^
+1 error
+
+17507 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:84: error: unreachable statement
+        final Integer index = mapping.get(name);
+                      ^
+1 error
+
+17527 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:49: error: ';' expected
+            final String comment, final long recordNumber) throw new IllegalStateException(
+                                                          ^
+1 error
+
+17673 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:91: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                   ^
+  symbol:   variable index
+  location: class CSVRecord
+org/apache/commons/csv/CSVRecord.java:91: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                                          ^
+  symbol:   variable index
+  location: class CSVRecord
+2 errors
+
+18804 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:57: error: variable recordNumber might not have been initialized
+    }
+    ^
+1 error
+
+18807 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(8) StmtReplace(1,8) at variant18 fails to compile
+
+18808 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(8) StmtReplace(1,8) (stored at: variant18)
+18812 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtAppend(4,8) StmtReplace(4,9) StmtDelete(2) (stored at: )
+18844 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:61: error: variable values might not have been initialized
+    }
+    ^
+1 error
+
+18845 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(4,8) StmtAppend(2,8) StmtDelete(2) at variant19 fails to compile
+
+18845 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtAppend(4,8) StmtAppend(2,8) StmtDelete(2) (stored at: variant19)
+18847 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(4,10) StmtReplace(3,9) (stored at: )
+18850 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(4) StmtReplace(4,10) (stored at: )
+18884 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:96: error: unreachable statement
+        final Integer index = mapping.get(name);
+                      ^
+1 error
+
+18885 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(4,8) StmtDelete(9) StmtAppend(8,9) at variant20 fails to compile
+
+18885 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtAppend(4,8) StmtDelete(9) StmtAppend(8,9) (stored at: variant20)
+18930 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:90: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                   ^
+  symbol:   variable index
+  location: class CSVRecord
+org/apache/commons/csv/CSVRecord.java:90: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                                          ^
+  symbol:   variable index
+  location: class CSVRecord
+2 errors
+
+18930 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(2,8) StmtDelete(8) StmtDelete(11) at variant21 fails to compile
+
+18931 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtAppend(2,8) StmtDelete(8) StmtDelete(11) (stored at: variant21)
+18932 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(4) StmtDelete(3) (stored at: )
+18938 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(9,10) StmtReplace(2,8) StmtDelete(8) (stored at: )
+18977 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:86: error: unreachable statement
+        final Integer index = mapping.get(name);
+                      ^
+1 error
+
+18977 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(0,9) StmtAppend(9,8) StmtAppend(8,10) at variant22 fails to compile
+
+18977 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(0,9) StmtAppend(9,8) StmtAppend(8,10) (stored at: variant22)
+18978 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(2) StmtDelete(2) (stored at: )
+18985 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(0) StmtAppend(4,8) StmtAppend(0,9) (stored at: )
+18993 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtAppend(4,9) StmtDelete(8) StmtReplace(0,9) (stored at: )
+19366 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(8,8) StmtAppend(4,8) (stored at: variant23)
+19403 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:53: error: unreachable statement
+        this.comment = comment;
+        ^
+1 error
+
+19404 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(8,8) StmtReplace(3,10) at variant24 fails to compile
+
+19404 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(8,8) StmtReplace(3,10) (stored at: variant24)
+19405 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(1) StmtDelete(2) (stored at: )
+19453 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:61: error: variable mapping might not have been initialized
+    }
+    ^
+1 error
+
+19457 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(3) StmtAppend(4,8) at variant25 fails to compile
+
+19457 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(3) StmtAppend(4,8) (stored at: variant25)
+19490 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:55: error: unreachable statement
+        {
+        ^
+org/apache/commons/csv/CSVRecord.java:62: error: unreachable statement
+        this.comment = comment;
+        ^
+2 errors
+
+19490 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(2,9) StmtAppend(3,9) at variant26 fails to compile
+
+19490 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(2,9) StmtAppend(3,9) (stored at: variant26)
+19530 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:52: error: unreachable statement
+        {
+        ^
+1 error
+
+19531 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(8) StmtDelete(3) StmtReplace(2,10) at variant27 fails to compile
+
+19531 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(8) StmtDelete(3) StmtReplace(2,10) (stored at: variant27)
+19533 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(8) StmtReplace(9,8) (stored at: )
+19534 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(4,10) StmtDelete(4) (stored at: )
+19579 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:58: error: variable comment might not have been initialized
+    }
+    ^
+1 error
+
+19579 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(4) StmtReplace(1,8) at variant28 fails to compile
+
+19580 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(4) StmtReplace(1,8) (stored at: variant28)
+19850 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtAppend(4,9) StmtDelete(8) StmtDelete(2) (stored at: variant29)
+19852 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtAppend(2,8) StmtDelete(8) StmtAppend(0,9) (stored at: )
+19894 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:58: error: unreachable statement
+        this.mapping = mapping;
+        ^
+1 error
+
+19894 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(2,9) StmtReplace(1,8) at variant30 fails to compile
+
+19894 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(2,9) StmtReplace(1,8) (stored at: variant30)
+19902 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(0,9) StmtAppend(9,8) StmtReplace(8,9) (stored at: )
+19905 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(8,8) StmtReplace(4,9) (stored at: )
+19907 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtAppend(4,10) StmtReplace(0,9) (stored at: )
+20252 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(9,10) StmtReplace(2,8) StmtReplace(4,9) (stored at: variant31)
+20287 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:59: error: unreachable statement
+        this.comment = comment;
+        ^
+1 error
+
+20287 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(1,8) StmtReplace(3,10) at variant32 fails to compile
+
+20288 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtAppend(1,8) StmtReplace(3,10) (stored at: variant32)
+20321 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:86: error: unreachable statement
+			throw new IllegalStateException(
+			^
+org/apache/commons/csv/CSVRecord.java:55: error: variable values might not have been initialized
+    }
+    ^
+2 errors
+
+20322 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(2) StmtAppend(9,10) at variant33 fails to compile
+
+20322 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(2) StmtAppend(9,10) (stored at: variant33)
+20324 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(8) StmtDelete(3) StmtReplace(2,10) (stored at: )
+20624 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(4,10) StmtAppend(3,8) (stored at: variant34)
+20670 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:55: error: variable mapping might not have been initialized
+    }
+    ^
+1 error
+
+20670 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(8) StmtDelete(3) StmtReplace(8,8) at variant35 fails to compile
+
+20671 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(8) StmtDelete(3) StmtReplace(8,8) (stored at: variant35)
+20701 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:55: error: variable comment might not have been initialized
+    }
+    ^
+1 error
+
+20702 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(4) StmtDelete(9) at variant36 fails to compile
+
+20702 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(4) StmtDelete(9) (stored at: variant36)
+20704 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(9,10) StmtReplace(0,9) StmtReplace(9,8) (stored at: )
+20709 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(8) StmtDelete(4) (stored at: )
+20712 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(9,10) StmtDelete(0) StmtReplace(1,10) (stored at: )
+20718 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtAppend(4,8) StmtReplace(4,9) StmtDelete(4) (stored at: )
+20719 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(4,10) StmtDelete(9) (stored at: )
+21031 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtAppend(2,8) StmtReplace(4,9) (stored at: variant37)
+21033 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtAppend(2,9) (stored at: )
+21037 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtAppend(2,9) (stored at: )
+21039 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtAppend(2,9) (stored at: )
+21040 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(0) (stored at: )
+21046 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtAppend(1,9) (stored at: )
+21047 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(8,8) (stored at: )
+21094 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:63: error: variable mapping might not have been initialized
+    }
+    ^
+1 error
+
+21094 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(8) StmtAppend(4,8) StmtReplace(3,8) at variant38 fails to compile
+
+21094 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(8) StmtAppend(4,8) StmtReplace(3,8) (stored at: variant38)
+21375 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtAppend(4,9) StmtReplace(2,8) (stored at: variant39)
+21376 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtAppend(8,9) (stored at: )
+21386 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(0,9) StmtDelete(4) (stored at: )
+21387 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(3,9) (stored at: )
+21423 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:50: error: variable values might not have been initialized
+			}
+			^
+1 error
+
+21429 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(0) StmtReplace(10,30) at variant40 fails to compile
+
+21429 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(0) StmtReplace(10,30) (stored at: variant40)
+21430 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(4,8) (stored at: )
+21464 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:85: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                   ^
+  symbol:   variable index
+  location: class CSVRecord
+org/apache/commons/csv/CSVRecord.java:85: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                                          ^
+  symbol:   variable index
+  location: class CSVRecord
+2 errors
+
+21477 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(11,10) at variant41 fails to compile
+
+21477 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(11,10) (stored at: variant41)
+21479 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtAppend(4,8) StmtDelete(3) StmtAppend(0,9) (stored at: )
+21481 [main] INFO clegoues.genprog4java.Search.Search  - search: generation3
+21545 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:56: error: variable mapping might not have been initialized
+    }
+    ^
+1 error
+
+21644 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:55: error: variable comment might not have been initialized
+    }
+    ^
+1 error
+
+21765 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:52: error: unreachable statement
+        {
+        ^
+1 error
+
+21824 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:55: error: variable comment might not have been initialized
+    }
+    ^
+1 error
+
+21848 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:55: error: variable comment might not have been initialized
+    }
+    ^
+1 error
+
+21974 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:58: error: unreachable statement
+        this.mapping = mapping;
+        ^
+1 error
+
+21997 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:58: error: unreachable statement
+        this.mapping = mapping;
+        ^
+1 error
+
+22023 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:57: error: unreachable statement
+        this.values = values != null ? values : EMPTY_STRING_ARRAY;
+        ^
+1 error
+
+22050 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:90: error: unreachable statement
+        final Integer index = mapping.get(name);
+                      ^
+1 error
+
+22078 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:56: error: unreachable statement
+        this.comment = comment;
+        ^
+1 error
+
+22106 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:57: error: variable comment might not have been initialized
+    }
+    ^
+1 error
+
+22931 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(0) StmtAppend(4,8) StmtAppend(0,9) StmtDelete(9) (stored at: )
+22981 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:92: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                   ^
+  symbol:   variable index
+  location: class CSVRecord
+org/apache/commons/csv/CSVRecord.java:92: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                                          ^
+  symbol:   variable index
+  location: class CSVRecord
+2 errors
+
+22981 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(2) StmtDelete(2) StmtAppend(11,8) at variant42 fails to compile
+
+22981 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(2) StmtDelete(2) StmtAppend(11,8) (stored at: variant42)
+22983 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(2) StmtDelete(2) StmtReplace(0,8) (stored at: )
+22997 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(9,10) StmtDelete(0) StmtReplace(1,10) StmtAppend(9,9) (stored at: )
+22999 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(8,8) StmtAppend(0,9) (stored at: )
+23027 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:61: error: variable recordNumber might not have been initialized
+    }
+    ^
+1 error
+
+23028 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(1) StmtDelete(2) StmtAppend(2,8) at variant43 fails to compile
+
+23028 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(1) StmtDelete(2) StmtAppend(2,8) (stored at: variant43)
+23062 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:90: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                   ^
+  symbol:   variable index
+  location: class CSVRecord
+org/apache/commons/csv/CSVRecord.java:90: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                                          ^
+  symbol:   variable index
+  location: class CSVRecord
+2 errors
+
+23065 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(4) StmtReplace(1,8) StmtDelete(11) at variant44 fails to compile
+
+23065 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(4) StmtReplace(1,8) StmtDelete(11) (stored at: variant44)
+23075 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(9,10) StmtReplace(0,9) StmtReplace(9,8) StmtDelete(8) (stored at: )
+23078 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtAppend(4,10) StmtReplace(0,9) StmtReplace(2,10) (stored at: )
+23085 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(8,8) StmtAppend(9,8) (stored at: )
+23122 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:94: error: unreachable statement
+			{
+			^
+1 error
+
+23122 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(4,9) StmtReplace(2,8) StmtAppend(9,9) at variant45 fails to compile
+
+23122 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtAppend(4,9) StmtReplace(2,8) StmtAppend(9,9) (stored at: variant45)
+23125 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(4) StmtDelete(9) StmtReplace(0,9) (stored at: )
+23130 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(2) StmtDelete(2) StmtReplace(9,8) (stored at: )
+23159 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:60: error: unreachable statement
+        {
+        ^
+1 error
+
+23160 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(4,9) StmtDelete(8) StmtDelete(2) StmtAppend(3,9) at variant46 fails to compile
+
+23160 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtAppend(4,9) StmtDelete(8) StmtDelete(2) StmtAppend(3,9) (stored at: variant46)
+23205 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:92: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                   ^
+  symbol:   variable index
+  location: class CSVRecord
+org/apache/commons/csv/CSVRecord.java:92: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                                          ^
+  symbol:   variable index
+  location: class CSVRecord
+2 errors
+
+23205 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(2,8) StmtDelete(8) StmtDelete(11) StmtReplace(8,8) at variant47 fails to compile
+
+23205 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtAppend(2,8) StmtDelete(8) StmtDelete(11) StmtReplace(8,8) (stored at: variant47)
+23239 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:56: error: unreachable statement
+        throw new IllegalStateException("No header mapping was specified, the record values can't be accessed by name");
+        ^
+1 error
+
+23239 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(4,10) StmtReplace(3,9) StmtDelete(9) at variant48 fails to compile
+
+23239 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(4,10) StmtReplace(3,9) StmtDelete(9) (stored at: variant48)
+23240 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(1) StmtDelete(2) StmtReplace(1,9) (stored at: )
+23251 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(9,10) StmtReplace(0,9) StmtReplace(9,8) StmtDelete(3) (stored at: )
+23253 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtAppend(4,9) StmtDelete(8) StmtDelete(2) StmtReplace(0,10) (stored at: )
+23285 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:84: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                   ^
+  symbol:   variable index
+  location: class CSVRecord
+org/apache/commons/csv/CSVRecord.java:84: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                                          ^
+  symbol:   variable index
+  location: class CSVRecord
+2 errors
+
+23285 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(4) StmtDelete(9) StmtReplace(11,10) at variant49 fails to compile
+
+23285 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(4) StmtDelete(9) StmtReplace(11,10) (stored at: variant49)
+23313 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:92: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                   ^
+  symbol:   variable index
+  location: class CSVRecord
+org/apache/commons/csv/CSVRecord.java:92: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                                          ^
+  symbol:   variable index
+  location: class CSVRecord
+2 errors
+
+23314 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(2,8) StmtDelete(8) StmtDelete(11) StmtReplace(8,9) at variant50 fails to compile
+
+23314 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtAppend(2,8) StmtDelete(8) StmtDelete(11) StmtReplace(8,9) (stored at: variant50)
+23321 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(4,10) StmtDelete(9) StmtDelete(9) (stored at: )
+23323 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtAppend(4,10) StmtReplace(0,9) StmtDelete(3) (stored at: )
+23324 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(0,9) StmtDelete(4) StmtDelete(4) (stored at: )
+23329 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtAppend(4,9) StmtDelete(8) StmtReplace(0,9) StmtAppend(1,9) (stored at: )
+23331 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(0,9) StmtDelete(4) StmtDelete(9) (stored at: )
+23340 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(0,9) StmtAppend(9,8) StmtReplace(8,9) StmtDelete(3) (stored at: )
+23369 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:89: error: unreachable statement
+			throw new IllegalStateException(
+			^
+1 error
+
+23369 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(2) StmtAppend(9,10) StmtReplace(4,9) at variant51 fails to compile
+
+23369 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(2) StmtAppend(9,10) StmtReplace(4,9) (stored at: variant51)
+23372 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(0,9) StmtAppend(9,8) StmtReplace(8,9) StmtReplace(4,9) (stored at: )
+23379 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(0) StmtReplace(10,30) StmtReplace(1,9) (stored at: )
+23380 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(0) StmtReplace(10,30) StmtReplace(1,8) (stored at: )
+23385 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(8,8) StmtDelete(2) (stored at: )
+23389 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(0,9) StmtDelete(4) StmtReplace(1,8) (stored at: )
+23727 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(9,10) StmtReplace(2,8) StmtDelete(8) StmtAppend(4,10) (stored at: variant52)
+23729 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(9,10) StmtReplace(0,9) StmtReplace(9,8) StmtDelete(9) (stored at: )
+23739 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(0,9) StmtAppend(9,8) StmtReplace(8,9) StmtDelete(2) (stored at: )
+23741 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(2) StmtDelete(2) StmtReplace(0,10) (stored at: )
+23748 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(0) StmtAppend(4,8) StmtAppend(0,9) StmtAppend(0,9) (stored at: )
+23752 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtAppend(4,9) StmtDelete(8) StmtDelete(2) StmtAppend(0,10) (stored at: )
+23784 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:59: error: unreachable statement
+        this.mapping = mapping;
+        ^
+1 error
+
+23784 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(1) StmtDelete(2) StmtAppend(2,9) at variant53 fails to compile
+
+23784 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(1) StmtDelete(2) StmtAppend(2,9) (stored at: variant53)
+23814 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:56: error: variable values might not have been initialized
+    }
+    ^
+1 error
+
+23814 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(2) StmtDelete(9) StmtDelete(3) at variant54 fails to compile
+
+23814 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(2) StmtDelete(9) StmtDelete(3) (stored at: variant54)
+23818 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(4,9) (stored at: )
+23843 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:55: error: variable values might not have been initialized
+    }
+    ^
+1 error
+
+23844 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(2) StmtDelete(10) at variant55 fails to compile
+
+23844 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(2) StmtDelete(10) (stored at: variant55)
+24146 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtAppend(4,10) StmtDelete(3) (stored at: variant56)
+24148 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(1) StmtDelete(4) StmtAppend(0,8) (stored at: )
+24149 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(2) (stored at: )
+24190 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:58: error: unreachable statement
+        this.mapping = mapping;
+        ^
+org/apache/commons/csv/CSVRecord.java:90: error: unreachable statement
+        final Integer index = mapping.get(name);
+                      ^
+2 errors
+
+24191 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(8,9) StmtAppend(2,9) at variant57 fails to compile
+
+24191 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(8,9) StmtAppend(2,9) (stored at: variant57)
+24197 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(0,9) StmtReplace(1,8) StmtReplace(8,8) (stored at: )
+24231 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:85: error: unreachable statement
+        final Integer index = mapping.get(name);
+                      ^
+org/apache/commons/csv/CSVRecord.java:55: error: variable recordNumber might not have been initialized
+    }
+    ^
+2 errors
+
+24233 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(9,8) StmtReplace(8,9) StmtDelete(1) at variant58 fails to compile
+
+24233 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtAppend(9,8) StmtReplace(8,9) StmtDelete(1) (stored at: variant58)
+24259 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:86: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                   ^
+  symbol:   variable index
+  location: class CSVRecord
+org/apache/commons/csv/CSVRecord.java:86: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                                          ^
+  symbol:   variable index
+  location: class CSVRecord
+2 errors
+
+24261 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(0,9) StmtReplace(11,8) at variant59 fails to compile
+
+24261 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(0,9) StmtReplace(11,8) (stored at: variant59)
+24262 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(9) (stored at: )
+24269 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(0) StmtReplace(2,8) StmtDelete(9) (stored at: )
+24271 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtAppend(4,9) StmtDelete(8) StmtReplace(2,8) StmtDelete(8) StmtDelete(0) (stored at: )
+24271 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(1,9) (stored at: )
+24298 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:57: error: unreachable statement
+        {
+        ^
+1 error
+
+24299 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(2,8) StmtAppend(1,9) at variant60 fails to compile
+
+24299 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtAppend(2,8) StmtAppend(1,9) (stored at: variant60)
+24336 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:88: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                   ^
+  symbol:   variable index
+  location: class CSVRecord
+org/apache/commons/csv/CSVRecord.java:88: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                                          ^
+  symbol:   variable index
+  location: class CSVRecord
+2 errors
+
+24336 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(9,10) StmtReplace(0,9) StmtDelete(11) StmtAppend(9,10) at variant61 fails to compile
+
+24337 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(9,10) StmtReplace(0,9) StmtDelete(11) StmtAppend(9,10) (stored at: variant61)
+24389 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:84: error: unreachable statement
+        final Integer index = mapping.get(name);
+                      ^
+1 error
+
+24389 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(4,10) StmtAppend(9,8) StmtReplace(8,9) StmtReplace(10,9) at variant62 fails to compile
+
+24389 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(4,10) StmtAppend(9,8) StmtReplace(8,9) StmtReplace(10,9) (stored at: variant62)
+24390 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(1) (stored at: )
+24395 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(9,10) StmtReplace(8,9) (stored at: )
+24430 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:85: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                   ^
+  symbol:   variable index
+  location: class CSVRecord
+org/apache/commons/csv/CSVRecord.java:85: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                                          ^
+  symbol:   variable index
+  location: class CSVRecord
+2 errors
+
+24433 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(0) StmtAppend(4,8) StmtReplace(9,8) StmtReplace(11,8) at variant63 fails to compile
+
+24433 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(0) StmtAppend(4,8) StmtReplace(9,8) StmtReplace(11,8) (stored at: variant63)
+24435 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtAppend(9,9) (stored at: )
+24474 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:94: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                   ^
+  symbol:   variable index
+  location: class CSVRecord
+org/apache/commons/csv/CSVRecord.java:94: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                                          ^
+  symbol:   variable index
+  location: class CSVRecord
+2 errors
+
+24475 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(4,9) StmtDelete(8) StmtDelete(8) StmtDelete(2) StmtAppend(11,10) at variant64 fails to compile
+
+24475 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtAppend(4,9) StmtDelete(8) StmtDelete(8) StmtDelete(2) StmtAppend(11,10) (stored at: variant64)
+24476 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(10) (stored at: )
+24480 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(1) StmtDelete(9) StmtReplace(8,10) (stored at: )
+24481 [main] INFO clegoues.genprog4java.Search.Search  - search: generation4
+24539 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:81: error: unreachable statement
+			{
+			^
+org/apache/commons/csv/CSVRecord.java:50: error: variable values might not have been initialized
+			}
+			^
+2 errors
+
+24665 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:55: error: variable values might not have been initialized
+    }
+    ^
+1 error
+
+24704 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:54: error: unreachable statement
+        {
+        ^
+1 error
+
+24719 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:49: error: ';' expected
+            final String comment, final long recordNumber) throw new IllegalStateException(
+                                                          ^
+1 error
+
+24879 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:82: error: unreachable statement
+        final Integer index = mapping.get(name);
+                      ^
+1 error
+
+24908 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:82: error: unreachable statement
+        final Integer index = mapping.get(name);
+                      ^
+1 error
+
+24941 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:50: error: variable values might not have been initialized
+			}
+			^
+1 error
+
+25033 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:82: error: unreachable statement
+        final Integer index = mapping.get(name);
+                      ^
+1 error
+
+25192 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:55: error: variable values might not have been initialized
+    }
+    ^
+1 error
+
+25261 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:50: error: variable values might not have been initialized
+			}
+			^
+1 error
+
+25295 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:54: error: unreachable statement
+        this.values = values != null ? values : EMPTY_STRING_ARRAY;
+        ^
+1 error
+
+25337 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:55: error: variable recordNumber might not have been initialized
+    }
+    ^
+1 error
+
+25364 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:82: error: unreachable statement
+        final Integer index = mapping.get(name);
+                      ^
+org/apache/commons/csv/CSVRecord.java:55: error: variable recordNumber might not have been initialized
+    }
+    ^
+2 errors
+
+26308 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:96: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                   ^
+  symbol:   variable index
+  location: class CSVRecord
+org/apache/commons/csv/CSVRecord.java:96: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                                          ^
+  symbol:   variable index
+  location: class CSVRecord
+2 errors
+
+26308 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(9,10) StmtReplace(2,8) StmtDelete(8) StmtAppend(4,10) StmtAppend(11,9) at variant65 fails to compile
+
+26308 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(9,10) StmtReplace(2,8) StmtDelete(8) StmtAppend(4,10) StmtAppend(11,9) (stored at: variant65)
+26314 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(10) StmtAppend(8,8) (stored at: )
+26340 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:97: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                   ^
+  symbol:   variable index
+  location: class CSVRecord
+org/apache/commons/csv/CSVRecord.java:97: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                                          ^
+  symbol:   variable index
+  location: class CSVRecord
+2 errors
+
+26341 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(1) StmtDelete(4) StmtAppend(0,8) StmtAppend(11,9) at variant66 fails to compile
+
+26341 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(1) StmtDelete(4) StmtAppend(0,8) StmtAppend(11,9) (stored at: variant66)
+26343 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(9) StmtReplace(0,10) (stored at: )
+26358 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:49: error: ';' expected
+            final String comment, final long recordNumber) throw new IllegalStateException(
+                                                          ^
+1 error
+
+26364 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(2) StmtDelete(2) StmtReplace(0,10) StmtReplace(11,10) at variant67 fails to compile
+
+26364 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(2) StmtDelete(2) StmtReplace(0,10) StmtReplace(11,10) (stored at: variant67)
+26743 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(4,10) StmtDelete(9) StmtDelete(9) StmtReplace(9,8) (stored at: variant68)
+26992 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(10) StmtAppend(2,8) (stored at: variant69)
+27036 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:59: error: unreachable statement
+        this.mapping = mapping;
+        ^
+org/apache/commons/csv/CSVRecord.java:91: error: unreachable statement
+        final Integer index = mapping.get(name);
+                      ^
+2 errors
+
+27037 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(8,9) StmtAppend(2,9) StmtDelete(1) at variant70 fails to compile
+
+27037 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(8,9) StmtAppend(2,9) StmtDelete(1) (stored at: variant70)
+27072 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:91: error: unreachable statement
+			throw new IllegalStateException(
+			^
+1 error
+
+27072 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(1) StmtDelete(4) StmtAppend(0,8) StmtAppend(9,10) at variant71 fails to compile
+
+27072 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(1) StmtDelete(4) StmtAppend(0,8) StmtAppend(9,10) (stored at: variant71)
+27074 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(0,9) StmtDelete(4) StmtDelete(9) StmtAppend(2,9) (stored at: )
+27094 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:91: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                   ^
+  symbol:   variable index
+  location: class CSVRecord
+org/apache/commons/csv/CSVRecord.java:91: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                                          ^
+  symbol:   variable index
+  location: class CSVRecord
+2 errors
+
+27094 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(4,9) StmtReplace(11,8) at variant72 fails to compile
+
+27095 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(4,9) StmtReplace(11,8) (stored at: variant72)
+27122 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:60: error: unreachable statement
+        {
+        ^
+1 error
+
+27122 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(4,9) StmtDelete(8) StmtDelete(2) StmtAppend(3,9) StmtDelete(4) at variant73 fails to compile
+
+27122 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtAppend(4,9) StmtDelete(8) StmtDelete(2) StmtAppend(3,9) StmtDelete(4) (stored at: variant73)
+27125 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(9,10) StmtReplace(0,9) StmtReplace(9,8) StmtDelete(9) StmtDelete(3) (stored at: )
+27133 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtAppend(4,9) StmtDelete(8) StmtReplace(0,9) StmtAppend(1,9) StmtDelete(4) (stored at: )
+27172 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:87: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                   ^
+  symbol:   variable index
+  location: class CSVRecord
+org/apache/commons/csv/CSVRecord.java:87: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                                          ^
+  symbol:   variable index
+  location: class CSVRecord
+2 errors
+
+27180 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(4,10) StmtReplace(3,9) StmtDelete(9) StmtDelete(11) at variant74 fails to compile
+
+27180 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(4,10) StmtReplace(3,9) StmtDelete(9) StmtDelete(11) (stored at: variant74)
+27182 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(0,9) StmtDelete(4) StmtDelete(9) StmtReplace(0,9) (stored at: )
+27184 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(0) StmtAppend(4,8) StmtAppend(0,9) StmtDelete(9) StmtDelete(0) (stored at: )
+27191 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(8,8) StmtAppend(9,8) StmtDelete(2) (stored at: )
+27219 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:89: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                   ^
+  symbol:   variable index
+  location: class CSVRecord
+org/apache/commons/csv/CSVRecord.java:89: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                                          ^
+  symbol:   variable index
+  location: class CSVRecord
+2 errors
+
+27221 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(10) StmtAppend(11,10) at variant75 fails to compile
+
+27221 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(10) StmtAppend(11,10) (stored at: variant75)
+27222 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtAppend(4,10) StmtDelete(3) StmtReplace(4,10) (stored at: )
+27224 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(0) StmtAppend(4,8) StmtAppend(0,9) StmtAppend(0,9) StmtAppend(0,8) (stored at: )
+27254 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:57: error: unreachable statement
+        {
+        ^
+1 error
+
+27254 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(4,9) StmtDelete(8) StmtDelete(2) StmtAppend(3,9) StmtReplace(3,9) at variant76 fails to compile
+
+27254 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtAppend(4,9) StmtDelete(8) StmtDelete(2) StmtAppend(3,9) StmtReplace(3,9) (stored at: variant76)
+27303 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:56: error: unreachable statement
+        throw new IllegalStateException("No header mapping was specified, the record values can't be accessed by name");
+        ^
+org/apache/commons/csv/CSVRecord.java:87: error: unreachable statement
+        final Integer index = mapping.get(name);
+                      ^
+2 errors
+
+27303 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(4,10) StmtReplace(3,9) StmtDelete(9) StmtReplace(8,9) at variant77 fails to compile
+
+27303 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(4,10) StmtReplace(3,9) StmtDelete(9) StmtReplace(8,9) (stored at: variant77)
+27310 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(9,10) StmtReplace(0,9) StmtReplace(9,8) StmtDelete(3) StmtReplace(1,9) (stored at: )
+27340 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:60: error: variable values might not have been initialized
+    }
+    ^
+1 error
+
+27343 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(9,10) StmtReplace(2,8) StmtDelete(8) StmtAppend(4,10) StmtReplace(4,8) at variant78 fails to compile
+
+27343 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(9,10) StmtReplace(2,8) StmtDelete(8) StmtAppend(4,10) StmtReplace(4,8) (stored at: variant78)
+27346 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(10) StmtAppend(11,10) (stored at: )
+27348 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(4,9) StmtReplace(8,8) (stored at: )
+27352 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(9,10) StmtReplace(0,9) StmtReplace(9,8) StmtDelete(3) StmtAppend(9,9) (stored at: )
+27353 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(10) StmtReplace(9,8) (stored at: )
+27357 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(8,8) StmtAppend(9,8) StmtDelete(4) (stored at: )
+27360 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(9,10) StmtReplace(0,9) StmtReplace(9,8) StmtDelete(8) StmtReplace(3,9) (stored at: )
+27364 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(9,10) StmtReplace(0,9) StmtReplace(9,8) StmtDelete(8) StmtDelete(1) (stored at: )
+27367 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(10) StmtDelete(9) (stored at: )
+27371 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(0) StmtAppend(4,8) StmtAppend(0,9) StmtAppend(0,9) StmtReplace(4,9) (stored at: )
+27377 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(4,9) StmtAppend(8,9) (stored at: )
+27381 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(0) StmtAppend(4,8) StmtAppend(0,9) StmtDelete(9) StmtDelete(3) (stored at: )
+27387 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(8,8) StmtAppend(0,9) StmtReplace(1,8) (stored at: )
+27390 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(0,9) StmtDelete(4) StmtReplace(1,8) StmtDelete(1) (stored at: )
+27430 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:89: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                   ^
+  symbol:   variable index
+  location: class CSVRecord
+org/apache/commons/csv/CSVRecord.java:89: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                                          ^
+  symbol:   variable index
+  location: class CSVRecord
+2 errors
+
+27431 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(4,10) StmtAppend(9,8) StmtReplace(8,9) StmtReplace(10,9) StmtAppend(11,10) at variant79 fails to compile
+
+27431 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(4,10) StmtAppend(9,8) StmtReplace(8,9) StmtReplace(10,9) StmtAppend(11,10) (stored at: variant79)
+27435 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtAppend(4,10) StmtReplace(0,9) StmtDelete(3) StmtReplace(3,9) (stored at: )
+27464 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:86: error: unreachable statement
+        final Integer index = mapping.get(name);
+                      ^
+org/apache/commons/csv/CSVRecord.java:56: error: variable comment might not have been initialized
+    }
+    ^
+2 errors
+
+27464 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(1) StmtDelete(4) StmtDelete(9) StmtReplace(8,9) at variant80 fails to compile
+
+27465 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(1) StmtDelete(4) StmtDelete(9) StmtReplace(8,9) (stored at: variant80)
+27466 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(4,10) StmtReplace(3,9) (stored at: )
+27482 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(2,8) StmtDelete(8) StmtAppend(4,10) StmtDelete(10) (stored at: )
+27499 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:49: error: ';' expected
+            final String comment, final long recordNumber) throw new IllegalStateException(
+                                                          ^
+1 error
+
+27501 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(2) StmtReplace(0,10) StmtAppend(11,10) at variant81 fails to compile
+
+27501 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(2) StmtReplace(0,10) StmtAppend(11,10) (stored at: variant81)
+27529 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:61: error: variable mapping might not have been initialized
+    }
+    ^
+1 error
+
+27530 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(3) StmtAppend(1,8) at variant82 fails to compile
+
+27530 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(3) StmtAppend(1,8) (stored at: variant82)
+27532 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(9,10) StmtReplace(0,9) StmtAppend(2,9) StmtDelete(8) (stored at: )
+27538 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(0) (stored at: )
+27540 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(8,8) StmtDelete(4) StmtDelete(9) StmtAppend(0,9) (stored at: )
+27541 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtAppend(4,9) StmtDelete(8) StmtReplace(9,8) (stored at: )
+27547 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(9,10) StmtReplace(0,9) StmtDelete(2) StmtAppend(3,9) StmtDelete(10) (stored at: )
+27548 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(4,10) StmtReplace(3,9) StmtReplace(1,9) (stored at: )
+27549 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtAppend(4,8) (stored at: )
+27602 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:61: error: variable values might not have been initialized
+    }
+    ^
+1 error
+
+27602 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(4) StmtReplace(1,8) StmtReplace(2,8) at variant83 fails to compile
+
+27602 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(4) StmtReplace(1,8) StmtReplace(2,8) (stored at: variant83)
+27626 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:57: error: unreachable statement
+        this.values = values != null ? values : EMPTY_STRING_ARRAY;
+        ^
+org/apache/commons/csv/CSVRecord.java:91: error: unreachable statement
+			if (mapping == null) {
+			^
+2 errors
+
+27626 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(9,8) StmtAppend(1,9) at variant84 fails to compile
+
+27629 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtAppend(9,8) StmtAppend(1,9) (stored at: variant84)
+27631 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(8,9) StmtReplace(10,9) StmtReplace(2,8) (stored at: )
+28023 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(4,10) StmtDelete(8) (stored at: variant85)
+28024 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(8) (stored at: )
+28026 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtAppend(4,10) StmtReplace(0,9) StmtDelete(3) StmtAppend(1,10) (stored at: )
+28026 [main] INFO clegoues.genprog4java.Search.Search  - search: generation5
+28127 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:50: error: variable values might not have been initialized
+			}
+			^
+1 error
+
+28262 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:83: error: unreachable statement
+			{
+			^
+1 error
+
+28288 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:55: error: variable comment might not have been initialized
+    }
+    ^
+1 error
+
+28408 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:93: error: unreachable statement
+        final Integer index = mapping.get(name);
+                      ^
+1 error
+
+28566 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:50: error: variable values might not have been initialized
+			}
+			^
+1 error
+
+28649 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:54: error: unreachable statement
+        this.values = values != null ? values : EMPTY_STRING_ARRAY;
+        ^
+org/apache/commons/csv/CSVRecord.java:59: error: unreachable statement
+        throw new IllegalStateException("No header mapping was specified, the record values can't be accessed by name");
+        ^
+2 errors
+
+28670 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:87: error: unreachable statement
+        final Integer index = mapping.get(name);
+                      ^
+org/apache/commons/csv/CSVRecord.java:57: error: variable values might not have been initialized
+    }
+    ^
+2 errors
+
+29353 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtAppend(4,10) StmtReplace(0,9) StmtDelete(3) StmtReplace(3,9) StmtDelete(1) (stored at: )
+29386 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:85: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                   ^
+  symbol:   variable index
+  location: class CSVRecord
+org/apache/commons/csv/CSVRecord.java:85: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                                          ^
+  symbol:   variable index
+  location: class CSVRecord
+2 errors
+
+29386 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(9,10) StmtReplace(0,9) StmtDelete(2) StmtAppend(3,9) StmtDelete(10) StmtReplace(11,9) at variant86 fails to compile
+
+29386 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtReplace(9,10) StmtReplace(0,9) StmtDelete(2) StmtAppend(3,9) StmtDelete(10) StmtReplace(11,9) (stored at: variant86)
+29388 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtReplace(4,10) StmtReplace(3,9) StmtReplace(3,9) (stored at: )
+29394 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtReplace(9,10) StmtReplace(0,9) StmtDelete(2) StmtAppend(3,9) StmtDelete(10) StmtReplace(2,9) (stored at: )
+29395 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(3) StmtAppend(1,8) StmtAppend(0,9) (stored at: )
+29424 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:57: error: unreachable statement
+        this.values = values != null ? values : EMPTY_STRING_ARRAY;
+        ^
+org/apache/commons/csv/CSVRecord.java:92: error: unreachable statement
+			if (mapping == null) {
+			^
+2 errors
+
+29424 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(9,8) StmtAppend(1,9) StmtDelete(4) at variant87 fails to compile
+
+29424 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtAppend(9,8) StmtAppend(1,9) StmtDelete(4) (stored at: variant87)
+29425 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtAppend(4,8) StmtAppend(4,10) (stored at: )
+29430 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtReplace(0,9) StmtDelete(4) StmtReplace(1,8) StmtDelete(1) StmtDelete(2) (stored at: )
+29432 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(0) StmtAppend(4,8) StmtAppend(0,9) StmtAppend(0,9) StmtAppend(0,8) StmtDelete(3) (stored at: )
+29456 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:90: error: unreachable statement
+        final Integer index = mapping.get(name);
+                      ^
+1 error
+
+29461 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(4,10) StmtReplace(3,9) StmtDelete(9) StmtReplace(8,9) StmtAppend(3,8) at variant88 fails to compile
+
+29461 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtReplace(4,10) StmtReplace(3,9) StmtDelete(9) StmtReplace(8,9) StmtAppend(3,8) (stored at: variant88)
+29464 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtReplace(0,9) StmtDelete(4) StmtDelete(9) StmtAppend(2,9) StmtReplace(1,9) (stored at: )
+29473 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtReplace(9,10) StmtReplace(0,9) StmtReplace(9,8) StmtDelete(8) StmtDelete(1) StmtReplace(4,8) (stored at: )
+29475 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtReplace(2,8) StmtDelete(8) StmtAppend(4,10) StmtDelete(10) StmtDelete(9) (stored at: )
+29498 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:101: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                   ^
+  symbol:   variable index
+  location: class CSVRecord
+org/apache/commons/csv/CSVRecord.java:101: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                                          ^
+  symbol:   variable index
+  location: class CSVRecord
+2 errors
+
+29498 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(1) StmtDelete(4) StmtAppend(0,8) StmtAppend(9,10) StmtAppend(11,9) at variant89 fails to compile
+
+29499 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(1) StmtDelete(4) StmtAppend(0,8) StmtAppend(9,10) StmtAppend(11,9) (stored at: variant89)
+29744 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtAppend(4,10) StmtDelete(3) StmtReplace(4,10) StmtDelete(8) (stored at: variant90)
+29765 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:90: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                   ^
+  symbol:   variable index
+  location: class CSVRecord
+org/apache/commons/csv/CSVRecord.java:90: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                                          ^
+  symbol:   variable index
+  location: class CSVRecord
+2 errors
+
+29765 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(10) StmtAppend(11,10) StmtDelete(2) at variant91 fails to compile
+
+29765 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(10) StmtAppend(11,10) StmtDelete(2) (stored at: variant91)
+29769 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtReplace(8,8) StmtAppend(0,9) StmtReplace(1,8) StmtAppend(2,9) (stored at: )
+29798 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:87: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                   ^
+  symbol:   variable index
+  location: class CSVRecord
+org/apache/commons/csv/CSVRecord.java:87: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                                          ^
+  symbol:   variable index
+  location: class CSVRecord
+2 errors
+
+29799 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(10) StmtAppend(11,10) StmtReplace(0,9) at variant92 fails to compile
+
+29799 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(10) StmtAppend(11,10) StmtReplace(0,9) (stored at: variant92)
+29818 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:57: error: unreachable statement
+        if (mapping == null) {
+        ^
+1 error
+
+29818 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(2,8) StmtDelete(8) StmtAppend(4,10) StmtDelete(10) StmtAppend(1,9) at variant93 fails to compile
+
+29818 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtReplace(2,8) StmtDelete(8) StmtAppend(4,10) StmtDelete(10) StmtAppend(1,9) (stored at: variant93)
+29821 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtReplace(8,8) StmtAppend(0,9) StmtReplace(1,8) StmtReplace(11,8) (stored at: )
+29826 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(10) StmtReplace(9,8) StmtDelete(8) (stored at: )
+29833 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtAppend(4,8) StmtDelete(4) (stored at: )
+29836 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtReplace(9,10) StmtReplace(0,9) StmtAppend(2,9) StmtDelete(8) StmtDelete(4) (stored at: )
+29842 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtReplace(9,10) StmtReplace(0,9) StmtReplace(9,8) StmtDelete(8) StmtDelete(1) StmtReplace(3,10) (stored at: )
+29844 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtAppend(4,9) StmtDelete(8) StmtReplace(0,9) StmtAppend(1,9) StmtDelete(4) StmtReplace(3,10) (stored at: )
+30118 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtAppend(4,9) StmtDelete(8) StmtReplace(9,8) StmtReplace(1,8) (stored at: variant94)
+30120 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtReplace(9,10) StmtReplace(0,9) StmtAppend(2,9) StmtDelete(8) StmtDelete(9) (stored at: )
+30136 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtAppend(9,8) StmtAppend(1,9) StmtReplace(10,20) (stored at: )
+30139 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(9) StmtReplace(0,10) StmtDelete(10) (stored at: )
+30171 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:62: error: variable mapping might not have been initialized
+    }
+    ^
+1 error
+
+30173 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(3) StmtAppend(1,8) StmtDelete(4) at variant95 fails to compile
+
+30173 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(3) StmtAppend(1,8) StmtDelete(4) (stored at: variant95)
+30226 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:95: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                   ^
+  symbol:   variable index
+  location: class CSVRecord
+org/apache/commons/csv/CSVRecord.java:95: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                                          ^
+  symbol:   variable index
+  location: class CSVRecord
+2 errors
+
+30227 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(1) StmtDelete(4) StmtAppend(0,8) StmtAppend(9,10) StmtReplace(11,10) at variant96 fails to compile
+
+30227 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(1) StmtDelete(4) StmtAppend(0,8) StmtAppend(9,10) StmtReplace(11,10) (stored at: variant96)
+30252 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:59: error: unreachable statement
+        this.comment = comment;
+        ^
+1 error
+
+30252 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(10) StmtReplace(9,8) StmtAppend(3,9) at variant97 fails to compile
+
+30252 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(10) StmtReplace(9,8) StmtAppend(3,9) (stored at: variant97)
+30256 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtAppend(4,10) StmtReplace(0,9) StmtDelete(3) StmtAppend(1,10) StmtDelete(9) (stored at: )
+30282 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:61: error: variable mapping might not have been initialized
+    }
+    ^
+1 error
+
+30282 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(3) StmtAppend(1,8) StmtReplace(8,8) at variant98 fails to compile
+
+30282 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(3) StmtAppend(1,8) StmtReplace(8,8) (stored at: variant98)
+30284 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtReplace(8,8) StmtDelete(4) StmtDelete(9) StmtAppend(0,9) StmtDelete(0) (stored at: )
+30288 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtReplace(8,8) StmtAppend(0,9) StmtReplace(1,8) StmtReplace(2,8) (stored at: )
+30321 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:101: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                   ^
+  symbol:   variable index
+  location: class CSVRecord
+org/apache/commons/csv/CSVRecord.java:101: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                                          ^
+  symbol:   variable index
+  location: class CSVRecord
+2 errors
+
+30322 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(9,8) StmtAppend(1,9) StmtAppend(11,10) at variant99 fails to compile
+
+30322 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtAppend(9,8) StmtAppend(1,9) StmtAppend(11,10) (stored at: variant99)
+30330 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtReplace(0,9) StmtDelete(4) StmtDelete(9) StmtReplace(0,9) StmtReplace(1,10) (stored at: )
+30343 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:49: error: ';' expected
+            final String comment, final long recordNumber) throw new IllegalStateException(
+                                                          ^
+1 error
+
+30343 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(10) StmtAppend(8,8) StmtReplace(0,10) at variant100 fails to compile
+
+30343 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(10) StmtAppend(8,8) StmtReplace(0,10) (stored at: variant100)
+30370 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:94: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                   ^
+  symbol:   variable index
+  location: class CSVRecord
+org/apache/commons/csv/CSVRecord.java:94: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                                          ^
+  symbol:   variable index
+  location: class CSVRecord
+2 errors
+
+30371 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(0) StmtAppend(4,8) StmtAppend(0,9) StmtAppend(0,9) StmtAppend(0,8) StmtReplace(11,9) at variant101 fails to compile
+
+30371 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(0) StmtAppend(4,8) StmtAppend(0,9) StmtAppend(0,9) StmtAppend(0,8) StmtReplace(11,9) (stored at: variant101)
+30378 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtAppend(4,10) StmtReplace(0,9) StmtDelete(3) StmtReplace(9,8) StmtAppend(2,9) (stored at: )
+30379 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(11) (stored at: )
+30759 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtReplace(9,10) StmtAppend(4,8) (stored at: variant102)
+30785 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:60: error: unreachable statement
+        {
+        ^
+1 error
+
+30785 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(2) StmtAppend(3,9) StmtDelete(10) StmtDelete(4) at variant103 fails to compile
+
+30786 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(2) StmtAppend(3,9) StmtDelete(10) StmtDelete(4) (stored at: variant103)
+30787 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtReplace(4,10) StmtReplace(9,9) (stored at: )
+30793 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtReplace(9,10) StmtReplace(0,9) StmtAppend(2,9) StmtDelete(1) (stored at: )
+30826 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:49: error: ';' expected
+            final String comment, final long recordNumber) throw new IllegalStateException(
+                                                          ^
+1 error
+
+30830 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(9,10) StmtReplace(0,9) StmtDelete(2) StmtReplace(0,10) at variant104 fails to compile
+
+30831 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtReplace(9,10) StmtReplace(0,9) StmtDelete(2) StmtReplace(0,10) (stored at: variant104)
+30833 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtReplace(9,10) StmtReplace(0,9) StmtReplace(9,8) StmtDelete(8) StmtDelete(10) StmtAppend(3,8) (stored at: )
+30861 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:55: error: variable mapping might not have been initialized
+    }
+    ^
+1 error
+
+30862 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(3) StmtReplace(10,30) at variant105 fails to compile
+
+30862 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(3) StmtReplace(10,30) (stored at: variant105)
+30868 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtAppend(4,9) StmtDelete(8) StmtReplace(0,9) StmtAppend(1,9) StmtReplace(3,8) (stored at: )
+30895 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:57: error: unreachable statement
+        this.values = values != null ? values : EMPTY_STRING_ARRAY;
+        ^
+org/apache/commons/csv/CSVRecord.java:96: error: unreachable statement
+        final Integer index = mapping.get(name);
+                      ^
+2 errors
+
+30897 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(1,9) StmtAppend(8,9) at variant106 fails to compile
+
+30897 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtAppend(1,9) StmtAppend(8,9) (stored at: variant106)
+30902 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(4) StmtReplace(1,8) StmtDelete(1) StmtReplace(8,9) (stored at: )
+30903 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(0) StmtReplace(0,10) StmtAppend(11,9) (stored at: )
+30904 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtAppend(0,9) StmtAppend(0,9) StmtAppend(0,8) StmtDelete(2) (stored at: )
+30932 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:62: error: unreachable statement
+        throw new IllegalStateException("No header mapping was specified, the record values can't be accessed by name");
+        ^
+1 error
+
+30933 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(4,10) StmtReplace(3,9) StmtDelete(9) StmtAppend(1,8) StmtDelete(9) at variant107 fails to compile
+
+30933 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtReplace(4,10) StmtReplace(3,9) StmtDelete(9) StmtAppend(1,8) StmtDelete(9) (stored at: variant107)
+30934 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(8) (stored at: )
+30940 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtReplace(0,9) StmtDelete(4) StmtDelete(9) StmtAppend(0,8) StmtAppend(9,10) StmtReplace(4,8) (stored at: )
+30940 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(1) StmtDelete(3) (stored at: )
+30947 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtAppend(9,9) (stored at: )
+30950 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(10) StmtReplace(0,9) StmtReplace(9,8) StmtDelete(8) StmtDelete(1) StmtDelete(1) (stored at: )
+30951 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtReplace(2,8) StmtReplace(0,9) StmtDelete(3) StmtAppend(1,10) StmtReplace(3,9) (stored at: )
+30977 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:56: error: unreachable statement
+        this.mapping = mapping;
+        ^
+1 error
+
+30978 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(4,10) StmtDelete(10) StmtAppend(2,10) at variant108 fails to compile
+
+30978 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtAppend(4,10) StmtDelete(10) StmtAppend(2,10) (stored at: variant108)
+31004 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:57: error: unreachable statement
+        this.values = values != null ? values : EMPTY_STRING_ARRAY;
+        ^
+1 error
+
+31005 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(1,9) StmtReplace(9,10) at variant109 fails to compile
+
+31005 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtAppend(1,9) StmtReplace(9,10) (stored at: variant109)
+31006 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtAppend(0,9) StmtReplace(1,8) StmtDelete(1) (stored at: )
+31011 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(10) StmtReplace(11,9) (stored at: )
+31013 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtReplace(0,9) StmtDelete(4) StmtDelete(9) StmtAppend(4,10) (stored at: )
+31040 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:94: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                   ^
+  symbol:   variable index
+  location: class CSVRecord
+org/apache/commons/csv/CSVRecord.java:94: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                                          ^
+  symbol:   variable index
+  location: class CSVRecord
+2 errors
+
+31041 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(8,8) StmtReplace(11,8) at variant110 fails to compile
+
+31041 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtAppend(8,8) StmtReplace(11,8) (stored at: variant110)
+31043 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(8) StmtAppend(4,10) StmtDelete(10) StmtReplace(10,20) (stored at: )
+31045 [main] INFO clegoues.genprog4java.Search.Search  - search: generation6
+31287 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:94: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                   ^
+  symbol:   variable index
+  location: class CSVRecord
+org/apache/commons/csv/CSVRecord.java:94: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                                          ^
+  symbol:   variable index
+  location: class CSVRecord
+2 errors
+
+31310 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:55: error: variable comment might not have been initialized
+    }
+    ^
+1 error
+
+31440 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:57: error: unreachable statement
+        this.values = values != null ? values : EMPTY_STRING_ARRAY;
+        ^
+org/apache/commons/csv/CSVRecord.java:91: error: unreachable statement
+			if (mapping == null) {
+			^
+2 errors
+
+31542 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:86: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                   ^
+  symbol:   variable index
+  location: class CSVRecord
+org/apache/commons/csv/CSVRecord.java:86: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                                          ^
+  symbol:   variable index
+  location: class CSVRecord
+2 errors
+
+31584 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:49: error: ';' expected
+            final String comment, final long recordNumber) throw new IllegalStateException(
+                                                          ^
+1 error
+
+31612 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:91: error: unreachable statement
+			throw new IllegalStateException(
+			^
+1 error
+
+31670 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:85: error: unreachable statement
+			{
+			^
+1 error
+
+31720 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:88: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                   ^
+  symbol:   variable index
+  location: class CSVRecord
+org/apache/commons/csv/CSVRecord.java:88: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                                          ^
+  symbol:   variable index
+  location: class CSVRecord
+2 errors
+
+32660 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:90: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                   ^
+  symbol:   variable index
+  location: class CSVRecord
+org/apache/commons/csv/CSVRecord.java:90: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                                          ^
+  symbol:   variable index
+  location: class CSVRecord
+2 errors
+
+32665 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(8) StmtAppend(4,10) StmtDelete(10) StmtReplace(10,20) StmtReplace(11,8) at variant111 fails to compile
+
+32665 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtDelete(8) StmtAppend(4,10) StmtDelete(10) StmtReplace(10,20) StmtReplace(11,8) (stored at: variant111)
+32668 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtAppend(4,9) StmtDelete(8) StmtReplace(0,9) StmtAppend(1,9) StmtDelete(4) StmtReplace(3,10) StmtDelete(9) (stored at: )
+32945 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtDelete(9) StmtReplace(0,10) StmtDelete(10) StmtAppend(0,8) (stored at: variant112)
+32947 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtReplace(8,8) StmtDelete(4) StmtDelete(9) StmtAppend(0,9) StmtDelete(0) StmtDelete(1) (stored at: )
+32952 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtReplace(9,10) StmtReplace(0,9) StmtAppend(2,9) StmtDelete(1) StmtDelete(10) (stored at: )
+32953 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtDelete(8) StmtAppend(11,9) (stored at: )
+32961 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtReplace(2,8) StmtReplace(0,9) StmtDelete(3) StmtAppend(1,10) StmtReplace(3,9) StmtReplace(0,10) (stored at: )
+32965 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtReplace(9,10) StmtReplace(0,9) StmtReplace(9,8) StmtDelete(8) StmtDelete(1) StmtReplace(4,8) StmtDelete(10) (stored at: )
+32996 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:93: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                   ^
+  symbol:   variable index
+  location: class CSVRecord
+org/apache/commons/csv/CSVRecord.java:93: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                                          ^
+  symbol:   variable index
+  location: class CSVRecord
+2 errors
+
+33001 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(2,8) StmtDelete(8) StmtAppend(4,10) StmtDelete(10) StmtDelete(9) StmtReplace(11,8) at variant113 fails to compile
+
+33001 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtReplace(2,8) StmtDelete(8) StmtAppend(4,10) StmtDelete(10) StmtDelete(9) StmtReplace(11,8) (stored at: variant113)
+33261 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtReplace(9,10) StmtAppend(4,8) StmtAppend(1,8) (stored at: variant114)
+33265 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtReplace(0,9) StmtDelete(4) StmtDelete(9) StmtAppend(2,9) StmtReplace(1,9) StmtReplace(4,8) (stored at: )
+33268 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtReplace(8,8) StmtDelete(4) StmtDelete(9) StmtAppend(0,9) StmtDelete(0) StmtDelete(1) (stored at: )
+33275 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtReplace(9,10) StmtReplace(0,9) StmtAppend(2,9) StmtDelete(1) StmtReplace(2,9) (stored at: )
+33279 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtReplace(0,9) StmtDelete(4) StmtDelete(9) StmtAppend(2,9) StmtReplace(1,9) StmtReplace(11,9) (stored at: )
+33287 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtAppend(4,10) StmtReplace(0,9) StmtDelete(3) StmtReplace(9,8) StmtAppend(2,9) StmtAppend(4,10) (stored at: )
+33561 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtAppend(4,10) StmtDelete(3) StmtReplace(4,10) StmtDelete(8) StmtDelete(1) (stored at: variant115)
+33563 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtReplace(9,10) StmtReplace(0,9) StmtReplace(9,8) StmtDelete(8) StmtDelete(10) StmtAppend(3,8) StmtDelete(0) (stored at: )
+33575 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtReplace(0,9) StmtDelete(4) StmtDelete(9) StmtReplace(0,9) StmtReplace(1,10) StmtAppend(1,9) (stored at: )
+33583 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtAppend(4,9) StmtDelete(8) StmtReplace(9,8) StmtReplace(1,8) StmtReplace(0,8) (stored at: )
+33586 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtReplace(0,9) StmtDelete(4) StmtReplace(1,8) StmtDelete(1) StmtDelete(2) StmtAppend(3,8) (stored at: )
+33589 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtDelete(8) StmtDelete(11) (stored at: )
+33598 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtReplace(9,10) StmtReplace(0,9) StmtReplace(9,8) StmtDelete(8) StmtDelete(1) StmtReplace(4,8) StmtDelete(8) (stored at: )
+33600 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtReplace(9,10) StmtReplace(0,9) StmtReplace(9,8) StmtDelete(8) StmtDelete(1) StmtReplace(4,8) StmtAppend(0,9) (stored at: )
+33611 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtReplace(8,8) StmtAppend(0,9) StmtReplace(1,8) StmtReplace(2,8) StmtDelete(4) (stored at: )
+33613 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtAppend(4,9) StmtDelete(8) StmtReplace(9,8) StmtReplace(1,8) StmtDelete(10) (stored at: )
+33621 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtReplace(9,10) StmtReplace(0,9) StmtReplace(9,8) StmtDelete(8) StmtDelete(1) StmtReplace(3,10) StmtAppend(2,9) (stored at: )
+33623 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtDelete(10) StmtReplace(0,9) StmtReplace(9,8) StmtDelete(8) StmtDelete(1) StmtDelete(1) StmtReplace(8,8) (stored at: )
+33625 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtReplace(8,8) StmtDelete(4) StmtDelete(9) StmtAppend(0,9) StmtDelete(0) StmtAppend(4,8) (stored at: )
+33630 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtDelete(8) StmtAppend(4,8) (stored at: )
+33634 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtDelete(0) StmtAppend(4,8) StmtAppend(0,9) StmtAppend(0,9) StmtAppend(0,8) StmtDelete(3) StmtReplace(9,9) (stored at: )
+33636 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtAppend(4,10) StmtReplace(0,9) StmtDelete(3) StmtReplace(9,8) StmtAppend(2,9) StmtAppend(3,9) (stored at: )
+33643 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtDelete(0) StmtAppend(4,8) StmtAppend(0,9) StmtAppend(0,9) StmtAppend(0,8) StmtReplace(11,9) StmtAppend(2,10) (stored at: )
+33645 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtDelete(10) StmtReplace(9,8) StmtDelete(8) StmtReplace(1,9) (stored at: )
+33647 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtAppend(4,9) StmtDelete(8) StmtReplace(0,9) StmtAppend(1,9) StmtDelete(4) StmtReplace(3,10) StmtReplace(10,8) (stored at: )
+33655 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtAppend(1,9) StmtReplace(9,10) StmtDelete(0) (stored at: )
+33656 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtDelete(8) StmtReplace(9,9) (stored at: )
+33658 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtReplace(0,9) StmtDelete(4) StmtDelete(9) StmtAppend(2,9) StmtReplace(1,9) StmtDelete(9) (stored at: )
+33659 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtReplace(0,9) StmtDelete(4) StmtDelete(9) StmtReplace(0,9) StmtReplace(1,10) StmtDelete(3) (stored at: )
+33667 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtReplace(0,9) StmtDelete(4) StmtDelete(9) StmtAppend(2,9) StmtReplace(1,9) StmtAppend(4,9) (stored at: )
+33670 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtDelete(0) StmtAppend(4,8) StmtAppend(0,9) StmtAppend(0,9) StmtAppend(0,8) StmtDelete(3) StmtAppend(1,10) (stored at: )
+33681 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtReplace(8,8) StmtDelete(4) StmtDelete(9) StmtAppend(0,9) StmtReplace(1,8) StmtReplace(2,8) StmtReplace(11,9) (stored at: )
+33682 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtDelete(0) StmtDelete(2) (stored at: )
+33707 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:87: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                   ^
+  symbol:   variable index
+  location: class CSVRecord
+org/apache/commons/csv/CSVRecord.java:87: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                                          ^
+  symbol:   variable index
+  location: class CSVRecord
+2 errors
+
+33707 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(9,8) StmtDelete(8) StmtDelete(1) StmtReplace(3,10) StmtReplace(11,8) at variant116 fails to compile
+
+33709 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtReplace(9,8) StmtDelete(8) StmtDelete(1) StmtReplace(3,10) StmtReplace(11,8) (stored at: variant116)
+33740 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:90: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                   ^
+  symbol:   variable index
+  location: class CSVRecord
+org/apache/commons/csv/CSVRecord.java:90: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                                          ^
+  symbol:   variable index
+  location: class CSVRecord
+2 errors
+
+33740 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(9,10) StmtAppend(11,8) at variant117 fails to compile
+
+33740 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtReplace(9,10) StmtAppend(11,8) (stored at: variant117)
+33770 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:94: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                   ^
+  symbol:   variable index
+  location: class CSVRecord
+org/apache/commons/csv/CSVRecord.java:94: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                                          ^
+  symbol:   variable index
+  location: class CSVRecord
+2 errors
+
+33771 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(4,8) StmtAppend(0,9) StmtAppend(0,9) StmtAppend(0,8) StmtDelete(3) StmtReplace(11,8) at variant118 fails to compile
+
+33771 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtAppend(4,8) StmtAppend(0,9) StmtAppend(0,9) StmtAppend(0,8) StmtDelete(3) StmtReplace(11,8) (stored at: variant118)
+33772 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtAppend(4,8) StmtDelete(9) (stored at: )
+33786 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:85: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                   ^
+  symbol:   variable index
+  location: class CSVRecord
+org/apache/commons/csv/CSVRecord.java:85: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                                          ^
+  symbol:   variable index
+  location: class CSVRecord
+2 errors
+
+33786 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(4,10) StmtReplace(0,9) StmtDelete(3) StmtReplace(9,10) StmtReplace(11,8) at variant119 fails to compile
+
+33786 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtAppend(4,10) StmtReplace(0,9) StmtDelete(3) StmtReplace(9,10) StmtReplace(11,8) (stored at: variant119)
+33806 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:61: error: unreachable statement
+        this.mapping = mapping;
+        ^
+1 error
+
+33806 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(2,9) StmtReplace(1,8) at variant120 fails to compile
+
+33807 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtAppend(2,9) StmtReplace(1,8) (stored at: variant120)
+33807 [main] INFO clegoues.genprog4java.Search.Search  - search: generation7
+33833 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:50: error: variable values might not have been initialized
+			}
+			^
+1 error
+
+33864 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:89: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                   ^
+  symbol:   variable index
+  location: class CSVRecord
+org/apache/commons/csv/CSVRecord.java:89: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                                          ^
+  symbol:   variable index
+  location: class CSVRecord
+2 errors
+
+33942 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:50: error: variable values might not have been initialized
+			}
+			^
+1 error
+
+33966 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:84: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                   ^
+  symbol:   variable index
+  location: class CSVRecord
+org/apache/commons/csv/CSVRecord.java:84: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                                          ^
+  symbol:   variable index
+  location: class CSVRecord
+2 errors
+
+33989 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:50: error: variable values might not have been initialized
+			}
+			^
+1 error
+
+33999 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:49: error: ';' expected
+            final String comment, final long recordNumber) if (mapping == null) {
+                                                          ^
+1 error
+
+34023 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:84: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                   ^
+  symbol:   variable index
+  location: class CSVRecord
+org/apache/commons/csv/CSVRecord.java:84: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                                          ^
+  symbol:   variable index
+  location: class CSVRecord
+2 errors
+
+34206 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:50: error: variable values might not have been initialized
+			}
+			^
+1 error
+
+34277 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:94: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                   ^
+  symbol:   variable index
+  location: class CSVRecord
+org/apache/commons/csv/CSVRecord.java:94: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                                          ^
+  symbol:   variable index
+  location: class CSVRecord
+2 errors
+
+34322 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:50: error: variable values might not have been initialized
+			}
+			^
+1 error
+
+34466 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:94: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                   ^
+  symbol:   variable index
+  location: class CSVRecord
+org/apache/commons/csv/CSVRecord.java:94: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                                          ^
+  symbol:   variable index
+  location: class CSVRecord
+2 errors
+
+35000 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtReplace(0,9) StmtDelete(4) StmtReplace(1,8) StmtDelete(1) StmtDelete(2) StmtAppend(3,8) StmtReplace(4,10) (stored at: )
+35003 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtReplace(0,9) StmtDelete(4) StmtDelete(9) StmtReplace(0,9) StmtReplace(1,10) StmtAppend(1,9) StmtDelete(3) (stored at: )
+35031 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:91: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                   ^
+  symbol:   variable index
+  location: class CSVRecord
+org/apache/commons/csv/CSVRecord.java:91: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                                          ^
+  symbol:   variable index
+  location: class CSVRecord
+2 errors
+
+35032 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(9,10) StmtAppend(11,8) StmtDelete(2) at variant121 fails to compile
+
+35032 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtReplace(9,10) StmtAppend(11,8) StmtDelete(2) (stored at: variant121)
+35034 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtReplace(2,8) StmtReplace(0,9) StmtDelete(3) StmtAppend(1,10) StmtReplace(3,9) StmtReplace(0,10) StmtAppend(0,10) (stored at: )
+35042 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtReplace(9,10) StmtReplace(0,9) StmtReplace(9,8) StmtDelete(8) StmtDelete(1) StmtReplace(4,8) StmtDelete(8) StmtReplace(9,8) (stored at: )
+35047 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtReplace(0,9) StmtDelete(4) StmtDelete(9) StmtAppend(2,9) StmtReplace(1,9) StmtAppend(4,9) StmtDelete(10) (stored at: )
+35055 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtReplace(9,10) StmtReplace(0,9) StmtReplace(9,8) StmtDelete(8) StmtDelete(1) StmtReplace(4,8) StmtDelete(10) StmtDelete(3) (stored at: )
+35288 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtAppend(4,9) StmtDelete(8) StmtReplace(9,8) StmtReplace(1,8) StmtDelete(10) StmtDelete(3) (stored at: variant122)
+35296 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtReplace(9,10) StmtReplace(0,9) StmtReplace(9,8) StmtDelete(8) StmtDelete(1) StmtReplace(4,8) StmtAppend(0,9) StmtReplace(4,9) (stored at: )
+35302 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtReplace(0,9) StmtDelete(4) StmtDelete(9) StmtAppend(2,9) StmtReplace(1,9) StmtReplace(4,8) StmtAppend(3,9) (stored at: )
+35306 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtAppend(4,9) StmtDelete(8) StmtReplace(0,9) StmtAppend(1,9) StmtDelete(4) StmtReplace(3,10) StmtDelete(9) StmtAppend(3,8) (stored at: )
+35313 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtReplace(0,9) StmtDelete(4) StmtDelete(9) StmtReplace(0,9) StmtReplace(1,10) StmtAppend(1,9) StmtDelete(3) (stored at: )
+35585 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtReplace(9,10) StmtAppend(4,8) StmtAppend(1,8) StmtDelete(9) (stored at: variant123)
+35588 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtReplace(2,8) StmtReplace(0,9) StmtDelete(3) StmtAppend(1,10) StmtReplace(3,9) StmtReplace(0,10) StmtDelete(9) (stored at: )
+35608 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:95: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                   ^
+  symbol:   variable index
+  location: class CSVRecord
+org/apache/commons/csv/CSVRecord.java:95: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                                          ^
+  symbol:   variable index
+  location: class CSVRecord
+2 errors
+
+35609 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(8) StmtAppend(4,8) StmtAppend(11,8) at variant124 fails to compile
+
+35609 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtDelete(8) StmtAppend(4,8) StmtAppend(11,8) (stored at: variant124)
+35613 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtDelete(9) StmtReplace(0,10) StmtDelete(10) StmtAppend(0,8) StmtDelete(1) (stored at: )
+35618 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtReplace(9,10) StmtReplace(0,9) StmtReplace(9,8) StmtDelete(8) StmtDelete(1) StmtReplace(4,8) StmtDelete(8) StmtDelete(2) (stored at: )
+35623 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtReplace(0,9) StmtDelete(4) StmtDelete(9) StmtReplace(0,9) StmtReplace(1,10) StmtDelete(3) StmtDelete(8) (stored at: )
+35629 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtAppend(4,9) StmtDelete(8) StmtReplace(9,8) StmtReplace(1,8) StmtDelete(10) StmtDelete(4) (stored at: )
+35652 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:96: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                   ^
+  symbol:   variable index
+  location: class CSVRecord
+org/apache/commons/csv/CSVRecord.java:96: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                                          ^
+  symbol:   variable index
+  location: class CSVRecord
+2 errors
+
+35652 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(9,10) StmtAppend(11,8) StmtAppend(2,8) at variant125 fails to compile
+
+35652 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtReplace(9,10) StmtAppend(11,8) StmtAppend(2,8) (stored at: variant125)
+35655 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtAppend(4,8) StmtDelete(9) StmtDelete(8) (stored at: )
+35896 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtAppend(4,9) StmtDelete(8) StmtReplace(9,8) StmtReplace(1,8) StmtDelete(10) StmtReplace(2,8) (stored at: variant126)
+35902 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtReplace(0,9) StmtDelete(4) StmtReplace(1,8) StmtDelete(1) StmtDelete(2) StmtAppend(3,8) StmtDelete(11) (stored at: )
+35905 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtReplace(0,9) StmtDelete(4) StmtDelete(9) StmtReplace(0,9) StmtReplace(1,10) StmtDelete(3) StmtReplace(10,18) (stored at: )
+35910 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtReplace(2,8) StmtReplace(0,9) StmtDelete(3) StmtAppend(1,10) StmtReplace(3,9) StmtReplace(0,10) StmtAppend(1,9) (stored at: )
+35922 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtReplace(9,10) StmtReplace(0,9) StmtAppend(2,9) StmtDelete(1) StmtDelete(10) StmtReplace(1,8) (stored at: )
+35950 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:54: error: unreachable statement
+        this.values = values != null ? values : EMPTY_STRING_ARRAY;
+        ^
+1 error
+
+35951 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(10) StmtReplace(9,8) StmtDelete(8) StmtReplace(1,9) StmtAppend(4,8) at variant127 fails to compile
+
+35953 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtDelete(10) StmtReplace(9,8) StmtDelete(8) StmtReplace(1,9) StmtAppend(4,8) (stored at: variant127)
+35954 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtDelete(0) StmtDelete(2) StmtAppend(4,9) (stored at: )
+35960 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtReplace(0,9) StmtDelete(4) StmtDelete(9) StmtAppend(2,9) StmtReplace(1,9) StmtReplace(4,8) StmtAppend(8,9) (stored at: )
+35976 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:67: error: variable mapping might not have been initialized
+    }
+    ^
+1 error
+
+35976 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(9,10) StmtAppend(4,8) StmtAppend(1,8) StmtDelete(3) at variant128 fails to compile
+
+35976 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtReplace(9,10) StmtAppend(4,8) StmtAppend(1,8) StmtDelete(3) (stored at: variant128)
+35978 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtReplace(0,9) StmtDelete(4) StmtDelete(9) StmtAppend(2,9) StmtReplace(1,9) StmtAppend(4,9) StmtAppend(0,9) (stored at: )
+35986 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtDelete(10) StmtReplace(0,9) StmtReplace(9,8) StmtDelete(8) StmtDelete(1) StmtDelete(1) StmtReplace(8,8) StmtDelete(3) (stored at: )
+35990 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtReplace(0,9) StmtDelete(4) StmtDelete(9) StmtAppend(2,9) StmtReplace(1,9) StmtAppend(4,9) StmtDelete(3) (stored at: )
+35997 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtReplace(9,10) StmtReplace(0,9) StmtReplace(9,8) StmtDelete(8) StmtDelete(1) StmtReplace(4,8) StmtAppend(0,9) StmtReplace(1,8) (stored at: )
+36023 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:61: error: unreachable statement
+        {
+        ^
+1 error
+
+36024 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(2,9) StmtReplace(1,8) StmtAppend(3,8) at variant129 fails to compile
+
+36024 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtAppend(2,9) StmtReplace(1,8) StmtAppend(3,8) (stored at: variant129)
+36050 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:91: error: unreachable statement
+			if (mapping == null) {
+			^
+1 error
+
+36053 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(0) StmtAppend(4,8) StmtAppend(0,9) StmtAppend(0,9) StmtAppend(0,8) StmtDelete(3) StmtAppend(1,10) StmtAppend(9,8) at variant130 fails to compile
+
+36053 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtDelete(0) StmtAppend(4,8) StmtAppend(0,9) StmtAppend(0,9) StmtAppend(0,8) StmtDelete(3) StmtAppend(1,10) StmtAppend(9,8) (stored at: variant130)
+36055 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtReplace(0,9) StmtDelete(4) StmtDelete(9) StmtReplace(0,9) StmtReplace(1,10) StmtAppend(1,9) StmtDelete(4) (stored at: )
+36056 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtDelete(0) StmtDelete(2) StmtAppend(3,10) (stored at: )
+36058 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtReplace(2,8) StmtReplace(0,9) StmtDelete(3) StmtAppend(1,10) StmtReplace(3,9) StmtReplace(0,10) StmtAppend(1,9) (stored at: )
+36062 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtReplace(9,10) StmtAppend(4,8) StmtAppend(1,8) StmtDelete(10) (stored at: )
+36118 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:59: error: unreachable statement
+        {
+        ^
+1 error
+
+36119 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(4) StmtReplace(1,8) StmtDelete(1) StmtDelete(2) StmtAppend(3,8) StmtAppend(3,10) at variant131 fails to compile
+
+36119 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtDelete(4) StmtReplace(1,8) StmtDelete(1) StmtDelete(2) StmtAppend(3,8) StmtAppend(3,10) (stored at: variant131)
+36141 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:97: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                   ^
+  symbol:   variable index
+  location: class CSVRecord
+org/apache/commons/csv/CSVRecord.java:97: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                                          ^
+  symbol:   variable index
+  location: class CSVRecord
+2 errors
+
+36145 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(11,8) StmtAppend(9,9) at variant132 fails to compile
+
+36145 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtAppend(11,8) StmtAppend(9,9) (stored at: variant132)
+36147 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtReplace(2,8) StmtReplace(0,9) StmtDelete(3) StmtAppend(1,10) StmtReplace(3,9) StmtReplace(1,10) StmtDelete(3) StmtDelete(0) (stored at: )
+36148 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtReplace(0,9) StmtDelete(4) StmtDelete(9) StmtDelete(0) (stored at: )
+36150 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtReplace(0,9) StmtDelete(4) StmtDelete(9) StmtAppend(0,9) (stored at: )
+36153 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtReplace(9,10) StmtReplace(0,9) StmtAppend(2,9) StmtDelete(1) StmtReplace(1,9) StmtAppend(4,9) StmtDelete(11) (stored at: )
+36158 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtReplace(1,9) StmtReplace(0,10) (stored at: )
+36160 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtDelete(10) StmtReplace(9,8) StmtReplace(0,9) StmtReplace(9,8) StmtDelete(8) StmtDelete(1) StmtReplace(4,8) StmtDelete(10) StmtReplace(1,10) (stored at: )
+36166 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtReplace(0,9) StmtDelete(4) StmtDelete(9) StmtReplace(0,9) StmtReplace(0,8) (stored at: )
+36168 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtDelete(10) StmtReplace(0,9) StmtReplace(9,8) StmtDelete(8) StmtDelete(1) StmtDelete(1) StmtAppend(1,9) StmtDelete(10) (stored at: )
+36170 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtDelete(9) StmtAppend(4,8) StmtAppend(0,9) StmtAppend(0,9) StmtAppend(0,8) StmtDelete(3) StmtAppend(1,10) StmtDelete(8) (stored at: )
+36174 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtDelete(10) StmtAppend(0,8) StmtAppend(0,8) (stored at: )
+36183 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtReplace(9,10) StmtReplace(0,9) StmtReplace(9,8) StmtDelete(8) StmtDelete(1) StmtReplace(0,9) StmtReplace(1,10) StmtAppend(1,9) StmtAppend(2,9) (stored at: )
+36184 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtReplace(0,9) StmtDelete(4) StmtDelete(8) StmtReplace(2,9) (stored at: )
+36186 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtReplace(0,9) StmtDelete(4) StmtDelete(2) StmtDelete(4) (stored at: )
+36191 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtReplace(0,9) StmtReplace(1,10) StmtDelete(3) StmtReplace(11,9) (stored at: )
+36197 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtAppend(4,9) StmtDelete(8) StmtReplace(9,8) StmtReplace(1,8) StmtAppend(1,10) StmtReplace(3,9) StmtReplace(0,10) StmtDelete(4) (stored at: )
+36200 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtReplace(2,8) StmtReplace(0,9) StmtAppend(8,10) (stored at: )
+36200 [main] INFO clegoues.genprog4java.Search.Search  - search: generation8
+36400 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:49: error: ';' expected
+            final String comment, final long recordNumber) throw new IllegalStateException(
+                                                          ^
+1 error
+
+36499 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:58: error: variable comment might not have been initialized
+    }
+    ^
+1 error
+
+36542 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:84: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                   ^
+  symbol:   variable index
+  location: class CSVRecord
+org/apache/commons/csv/CSVRecord.java:84: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                                          ^
+  symbol:   variable index
+  location: class CSVRecord
+2 errors
+
+36553 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:49: error: ';' expected
+            final String comment, final long recordNumber) throw new IllegalStateException(
+                                                          ^
+1 error
+
+36572 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:88: error: unreachable statement
+        final Integer index = mapping.get(name);
+                      ^
+1 error
+
+36721 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:50: error: variable values might not have been initialized
+			}
+			^
+1 error
+
+36755 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:50: error: variable values might not have been initialized
+			}
+			^
+1 error
+
+36795 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:83: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                   ^
+  symbol:   variable index
+  location: class CSVRecord
+org/apache/commons/csv/CSVRecord.java:83: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                                          ^
+  symbol:   variable index
+  location: class CSVRecord
+2 errors
+
+36829 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:49: error: ';' expected
+            final String comment, final long recordNumber) if (mapping == null) {
+                                                          ^
+1 error
+
+36950 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:86: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                   ^
+  symbol:   variable index
+  location: class CSVRecord
+org/apache/commons/csv/CSVRecord.java:86: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                                          ^
+  symbol:   variable index
+  location: class CSVRecord
+2 errors
+
+36965 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:86: error: unreachable statement
+        final Integer index = mapping.get(name);
+                      ^
+1 error
+
+37394 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtDelete(10) StmtAppend(0,8) StmtAppend(0,8) StmtAppend(0,9) (stored at: )
+37397 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtReplace(0,9) StmtDelete(4) StmtDelete(9) StmtAppend(0,9) StmtAppend(8,9) (stored at: )
+37420 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:89: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                   ^
+  symbol:   variable index
+  location: class CSVRecord
+org/apache/commons/csv/CSVRecord.java:89: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                                          ^
+  symbol:   variable index
+  location: class CSVRecord
+2 errors
+
+37424 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(8) StmtAppend(4,8) StmtAppend(11,8) StmtReplace(11,10) at variant133 fails to compile
+
+37424 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtDelete(8) StmtAppend(4,8) StmtAppend(11,8) StmtReplace(11,10) (stored at: variant133)
+37427 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtReplace(9,10) StmtReplace(0,9) StmtReplace(9,8) StmtDelete(8) StmtDelete(1) StmtReplace(4,8) StmtDelete(8) StmtReplace(9,8) StmtDelete(3) (stored at: )
+37428 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtReplace(2,8) StmtReplace(0,9) StmtDelete(3) StmtAppend(1,10) StmtReplace(3,9) StmtReplace(0,10) StmtAppend(1,9) StmtAppend(4,10) (stored at: )
+37435 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtReplace(9,10) StmtReplace(0,9) StmtReplace(9,8) StmtDelete(8) StmtDelete(1) StmtReplace(4,8) StmtDelete(10) StmtDelete(3) StmtReplace(9,8) (stored at: )
+37437 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtReplace(0,9) StmtDelete(4) StmtDelete(8) StmtReplace(2,9) StmtReplace(2,9) (stored at: )
+37444 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtReplace(0,9) StmtDelete(4) StmtDelete(9) StmtAppend(2,9) StmtReplace(1,9) StmtAppend(4,9) StmtDelete(3) StmtReplace(8,8) (stored at: )
+37446 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtDelete(10) StmtReplace(9,8) StmtReplace(0,9) StmtReplace(9,8) StmtDelete(8) StmtDelete(1) StmtReplace(4,8) StmtDelete(10) StmtReplace(1,10) StmtReplace(0,8) (stored at: )
+37449 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtAppend(4,8) StmtDelete(9) StmtDelete(8) StmtAppend(9,10) (stored at: )
+37455 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtReplace(2,8) StmtReplace(0,9) StmtDelete(3) StmtAppend(1,10) StmtReplace(3,9) StmtReplace(0,10) StmtAppend(0,10) StmtAppend(0,10) (stored at: )
+37496 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:97: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                   ^
+  symbol:   variable index
+  location: class CSVRecord
+org/apache/commons/csv/CSVRecord.java:97: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                                          ^
+  symbol:   variable index
+  location: class CSVRecord
+2 errors
+
+37497 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(9,10) StmtAppend(4,8) StmtAppend(1,8) StmtDelete(10) StmtDelete(11) at variant134 fails to compile
+
+37497 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtReplace(9,10) StmtAppend(4,8) StmtAppend(1,8) StmtDelete(10) StmtDelete(11) (stored at: variant134)
+37506 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtReplace(9,10) StmtReplace(0,9) StmtReplace(9,8) StmtDelete(8) StmtDelete(1) StmtReplace(4,8) StmtDelete(8) StmtReplace(9,8) StmtAppend(0,9) (stored at: )
+37510 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtAppend(4,9) StmtDelete(8) StmtReplace(9,8) StmtReplace(1,8) StmtDelete(10) StmtDelete(3) StmtDelete(8) (stored at: )
+37518 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtReplace(0,9) StmtDelete(4) StmtDelete(8) StmtReplace(2,9) StmtReplace(2,10) (stored at: )
+37521 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtReplace(0,9) StmtDelete(4) StmtDelete(9) StmtReplace(0,9) StmtReplace(1,10) StmtDelete(3) StmtReplace(10,18) StmtReplace(9,8) (stored at: )
+37522 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtReplace(0,9) StmtDelete(4) StmtReplace(1,8) StmtDelete(1) StmtDelete(2) StmtAppend(3,8) StmtReplace(4,10) StmtReplace(4,8) (stored at: )
+37528 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtReplace(0,9) StmtDelete(4) StmtReplace(1,8) StmtDelete(1) StmtDelete(2) StmtAppend(3,8) StmtReplace(4,10) StmtAppend(1,10) (stored at: )
+37533 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtReplace(0,9) StmtDelete(4) StmtDelete(8) StmtReplace(2,9) StmtDelete(2) (stored at: )
+37535 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtReplace(9,10) StmtReplace(0,9) StmtReplace(9,8) StmtDelete(8) StmtDelete(1) StmtReplace(4,8) StmtAppend(0,9) StmtReplace(4,9) StmtDelete(9) (stored at: )
+37553 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:49: error: ';' expected
+            final String comment, final long recordNumber) throw new IllegalStateException(
+                                                          ^
+1 error
+
+37561 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(1,9) StmtReplace(0,10) StmtAppend(9,8) at variant135 fails to compile
+
+37561 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtReplace(1,9) StmtReplace(0,10) StmtAppend(9,8) (stored at: variant135)
+37564 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtDelete(10) StmtReplace(9,8) StmtReplace(0,9) StmtReplace(9,8) StmtDelete(8) StmtDelete(1) StmtReplace(4,8) StmtDelete(10) StmtReplace(1,10) StmtDelete(0) (stored at: )
+37595 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:55: error: unreachable statement
+        this.values = values != null ? values : EMPTY_STRING_ARRAY;
+        ^
+1 error
+
+37595 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(4,8) StmtDelete(9) StmtDelete(8) StmtAppend(1,10) at variant136 fails to compile
+
+37595 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtAppend(4,8) StmtDelete(9) StmtDelete(8) StmtAppend(1,10) (stored at: variant136)
+37623 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:94: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                   ^
+  symbol:   variable index
+  location: class CSVRecord
+org/apache/commons/csv/CSVRecord.java:94: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                                          ^
+  symbol:   variable index
+  location: class CSVRecord
+2 errors
+
+37625 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(8) StmtAppend(4,8) StmtAppend(11,8) StmtReplace(8,10) at variant137 fails to compile
+
+37625 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtDelete(8) StmtAppend(4,8) StmtAppend(11,8) StmtReplace(8,10) (stored at: variant137)
+37627 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtAppend(4,8) StmtDelete(9) StmtDelete(8) StmtDelete(8) (stored at: )
+37658 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:103: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                   ^
+  symbol:   variable index
+  location: class CSVRecord
+org/apache/commons/csv/CSVRecord.java:103: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                                          ^
+  symbol:   variable index
+  location: class CSVRecord
+2 errors
+
+37661 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(11,8) StmtAppend(9,9) StmtAppend(0,8) at variant138 fails to compile
+
+37661 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtAppend(11,8) StmtAppend(9,9) StmtAppend(0,8) (stored at: variant138)
+37666 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtReplace(0,9) StmtDelete(4) StmtDelete(9) StmtAppend(2,9) StmtReplace(1,9) StmtAppend(4,9) StmtAppend(0,9) StmtAppend(1,9) (stored at: )
+37668 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtReplace(0,9) StmtDelete(4) StmtDelete(9) StmtReplace(0,9) StmtReplace(1,10) StmtDelete(3) StmtDelete(8) StmtReplace(0,8) (stored at: )
+37721 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:97: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                   ^
+  symbol:   variable index
+  location: class CSVRecord
+org/apache/commons/csv/CSVRecord.java:97: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                                          ^
+  symbol:   variable index
+  location: class CSVRecord
+2 errors
+
+37722 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(10) StmtAppend(0,8) StmtAppend(0,8) StmtAppend(11,8) at variant139 fails to compile
+
+37722 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtDelete(10) StmtAppend(0,8) StmtAppend(0,8) StmtAppend(11,8) (stored at: variant139)
+37746 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:91: error: unreachable statement
+			throw new IllegalStateException(
+			^
+1 error
+
+37748 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(0,9) StmtDelete(4) StmtDelete(9) StmtAppend(0,9) StmtAppend(9,10) at variant140 fails to compile
+
+37748 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtReplace(0,9) StmtDelete(4) StmtDelete(9) StmtAppend(0,9) StmtAppend(9,10) (stored at: variant140)
+37755 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtDelete(10) StmtReplace(9,8) StmtReplace(0,9) StmtReplace(9,8) StmtDelete(8) StmtDelete(1) StmtReplace(4,8) StmtDelete(10) StmtReplace(1,10) StmtAppend(0,9) (stored at: )
+37779 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:92: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                   ^
+  symbol:   variable index
+  location: class CSVRecord
+org/apache/commons/csv/CSVRecord.java:92: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                                          ^
+  symbol:   variable index
+  location: class CSVRecord
+2 errors
+
+37780 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(4,8) StmtDelete(9) StmtDelete(8) StmtReplace(11,9) at variant141 fails to compile
+
+37780 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtAppend(4,8) StmtDelete(9) StmtDelete(8) StmtReplace(11,9) (stored at: variant141)
+37784 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtReplace(0,9) StmtDelete(4) StmtDelete(8) StmtReplace(2,9) StmtDelete(0) (stored at: )
+37786 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtDelete(10) StmtAppend(0,8) StmtAppend(0,8) StmtReplace(1,10) (stored at: )
+37794 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtDelete(10) StmtAppend(0,8) StmtAppend(0,8) StmtAppend(9,8) (stored at: )
+37797 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtReplace(9,10) StmtReplace(0,9) StmtReplace(9,8) StmtDelete(8) StmtDelete(1) StmtReplace(4,8) StmtDelete(8) StmtDelete(2) StmtReplace(8,8) (stored at: )
+37806 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtAppend(4,9) StmtDelete(8) StmtReplace(9,8) StmtReplace(1,8) StmtDelete(10) StmtDelete(3) StmtReplace(0,8) (stored at: )
+37811 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtReplace(0,9) StmtDelete(4) StmtDelete(9) StmtAppend(2,9) StmtReplace(1,9) StmtAppend(4,9) StmtAppend(0,9) StmtAppend(8,9) (stored at: )
+37821 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtReplace(0,9) StmtDelete(4) StmtDelete(9) StmtReplace(0,9) StmtReplace(1,10) StmtAppend(1,9) StmtDelete(3) StmtReplace(1,10) (stored at: )
+37823 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtReplace(9,10) StmtReplace(0,9) StmtReplace(9,8) StmtDelete(8) StmtDelete(1) StmtReplace(4,8) StmtAppend(0,9) StmtReplace(4,9) StmtReplace(1,8) (stored at: )
+37846 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:51: error: unreachable statement
+        this.values = values != null ? values : EMPTY_STRING_ARRAY;
+        ^
+org/apache/commons/csv/CSVRecord.java:59: error: unreachable statement
+        this.comment = comment;
+        ^
+2 errors
+
+37846 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(10) StmtReplace(1,10) StmtAppend(3,9) at variant142 fails to compile
+
+37846 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtDelete(10) StmtReplace(1,10) StmtAppend(3,9) (stored at: variant142)
+37857 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtDelete(10) StmtReplace(9,8) StmtReplace(0,9) StmtReplace(9,8) StmtDelete(8) StmtDelete(1) StmtDelete(4) StmtDelete(9) StmtAppend(0,9) StmtAppend(2,8) (stored at: )
+37858 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtAppend(1,8) (stored at: )
+37887 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:87: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                   ^
+  symbol:   variable index
+  location: class CSVRecord
+org/apache/commons/csv/CSVRecord.java:87: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                                          ^
+  symbol:   variable index
+  location: class CSVRecord
+2 errors
+
+37889 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(11,8) StmtReplace(0,9) StmtReplace(9,8) StmtDelete(8) StmtDelete(1) StmtReplace(4,8) StmtDelete(10) StmtDelete(3) StmtReplace(10,16) at variant143 fails to compile
+
+37889 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtAppend(11,8) StmtReplace(0,9) StmtReplace(9,8) StmtDelete(8) StmtDelete(1) StmtReplace(4,8) StmtDelete(10) StmtDelete(3) StmtReplace(10,16) (stored at: variant143)
+37892 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtReplace(0,9) StmtDelete(4) StmtDelete(9) StmtAppend(2,9) StmtReplace(1,9) StmtAppend(4,9) StmtReplace(1,10) StmtDelete(3) StmtDelete(8) StmtReplace(10,28) (stored at: )
+37902 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtReplace(0,9) StmtDelete(4) StmtDelete(9) StmtAppend(2,10) (stored at: )
+37904 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtDelete(10) StmtReplace(9,8) StmtReplace(0,9) StmtReplace(9,8) StmtDelete(8) StmtDelete(1) StmtReplace(2,8) (stored at: )
+37906 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtDelete(10) StmtAppend(0,8) StmtDelete(10) StmtReplace(1,10) StmtAppend(8,8) (stored at: )
+37907 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtDelete(8) StmtReplace(10,30) (stored at: )
+37938 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:61: error: variable recordNumber might not have been initialized
+    }
+    ^
+1 error
+
+37939 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(4,8) StmtAppend(4,8) StmtAppend(1,8) StmtDelete(10) StmtDelete(1) at variant144 fails to compile
+
+37939 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtAppend(4,8) StmtAppend(4,8) StmtAppend(1,8) StmtDelete(10) StmtDelete(1) (stored at: variant144)
+37943 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtAppend(4,9) StmtDelete(8) StmtReplace(9,8) StmtAppend(0,8) StmtDelete(8) (stored at: )
+37973 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:58: error: variable mapping might not have been initialized
+    }
+    ^
+1 error
+
+37973 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(10) StmtDelete(10) StmtDelete(3) StmtReplace(4,8) at variant145 fails to compile
+
+37973 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtDelete(10) StmtDelete(10) StmtDelete(3) StmtReplace(4,8) (stored at: variant145)
+37975 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtReplace(0,9) StmtDelete(4) StmtDelete(9) StmtReplace(0,9) StmtReplace(1,10) StmtDelete(2) StmtAppend(4,9) (stored at: )
+37983 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtReplace(9,10) StmtReplace(0,9) StmtReplace(9,8) StmtDelete(8) StmtDelete(1) StmtReplace(4,8) StmtReplace(10,18) StmtReplace(9,9) (stored at: )
+37992 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtReplace(0,9) StmtDelete(4) StmtReplace(1,8) StmtDelete(1) StmtDelete(2) StmtDelete(8) StmtReplace(9,8) StmtReplace(1,8) StmtDelete(10) StmtDelete(3) StmtReplace(2,9) (stored at: )
+38241 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtReplace(4,10) StmtDelete(2) (stored at: variant146)
+38246 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtReplace(0,9) StmtDelete(4) StmtReplace(1,8) StmtDelete(1) StmtDelete(2) StmtAppend(3,8) StmtReplace(8,8) (stored at: )
+38251 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtReplace(0,9) StmtDelete(4) StmtDelete(9) StmtAppend(2,9) StmtReplace(1,9) StmtAppend(4,9) StmtReplace(11,9) (stored at: )
+38256 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtReplace(9,10) StmtReplace(0,9) StmtReplace(9,8) StmtDelete(8) StmtDelete(1) StmtReplace(4,8) StmtReplace(4,9) StmtReplace(4,8) (stored at: )
+38263 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtReplace(9,10) StmtReplace(0,9) StmtReplace(9,8) StmtDelete(8) StmtDelete(1) StmtReplace(4,8) StmtReplace(4,9) StmtAppend(1,10) (stored at: )
+38263 [main] INFO clegoues.genprog4java.Search.Search  - search: generation9
+38305 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:96: error: unreachable statement
+        final Integer index = mapping.get(name);
+                      ^
+1 error
+
+38333 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:49: error: ';' expected
+            final String comment, final long recordNumber) throw new IllegalStateException(
+                                                          ^
+1 error
+
+38370 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:49: error: ';' expected
+            final String comment, final long recordNumber) if (mapping == null) {
+                                                          ^
+1 error
+
+38562 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:49: error: ';' expected
+            final String comment, final long recordNumber) if (mapping == null) {
+                                                          ^
+1 error
+
+38604 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:91: error: unreachable statement
+			if (mapping == null) {
+			^
+1 error
+
+38610 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:49: error: ';' expected
+            final String comment, final long recordNumber) if (mapping == null) {
+                                                          ^
+1 error
+
+38886 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:84: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                   ^
+  symbol:   variable index
+  location: class CSVRecord
+org/apache/commons/csv/CSVRecord.java:84: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                                          ^
+  symbol:   variable index
+  location: class CSVRecord
+2 errors
+
+39334 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:85: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                   ^
+  symbol:   variable index
+  location: class CSVRecord
+org/apache/commons/csv/CSVRecord.java:85: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                                          ^
+  symbol:   variable index
+  location: class CSVRecord
+2 errors
+
+39334 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(0,9) StmtDelete(4) StmtDelete(9) StmtReplace(0,9) StmtReplace(1,10) StmtDelete(3) StmtReplace(10,18) StmtReplace(9,8) StmtDelete(11) at variant147 fails to compile
+
+39334 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtReplace(0,9) StmtDelete(4) StmtDelete(9) StmtReplace(0,9) StmtReplace(1,10) StmtDelete(3) StmtReplace(10,18) StmtReplace(9,8) StmtDelete(11) (stored at: variant147)
+39338 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtDelete(10) StmtReplace(9,8) StmtReplace(0,9) StmtReplace(9,8) StmtDelete(8) StmtDelete(1) StmtReplace(4,8) StmtDelete(10) StmtReplace(1,10) StmtAppend(0,9) StmtAppend(2,8) (stored at: )
+39339 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtReplace(2,8) StmtReplace(0,9) StmtDelete(3) StmtAppend(1,10) StmtReplace(3,9) StmtReplace(0,10) StmtAppend(0,10) StmtAppend(0,10) StmtAppend(0,8) (stored at: )
+39342 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtReplace(0,9) StmtDelete(4) StmtDelete(9) StmtReplace(0,9) StmtReplace(1,10) StmtDelete(2) StmtAppend(4,9) StmtAppend(9,8) (stored at: )
+39351 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtReplace(0,9) StmtDelete(4) StmtDelete(9) StmtAppend(2,10) StmtDelete(2) (stored at: )
+39352 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtReplace(0,9) StmtDelete(4) StmtDelete(8) StmtReplace(2,9) StmtDelete(0) StmtDelete(2) (stored at: )
+39353 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtReplace(4,10) StmtDelete(2) StmtDelete(0) (stored at: )
+39358 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtDelete(8) StmtReplace(10,30) StmtAppend(0,8) (stored at: )
+39363 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtDelete(10) StmtReplace(9,8) StmtReplace(0,9) StmtReplace(9,8) StmtDelete(8) StmtDelete(1) StmtReplace(4,8) StmtDelete(10) StmtReplace(1,10) StmtDelete(0) StmtAppend(0,9) (stored at: )
+39369 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtReplace(0,9) StmtDelete(4) StmtDelete(9) StmtAppend(2,9) StmtReplace(1,9) StmtAppend(4,9) StmtAppend(0,9) StmtAppend(1,9) StmtAppend(3,10) (stored at: )
+39558 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtReplace(9,10) StmtReplace(0,9) StmtReplace(9,8) StmtDelete(8) StmtDelete(1) StmtReplace(4,8) StmtReplace(10,18) StmtReplace(9,9) StmtAppend(4,9) (stored at: )
+39579 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:100: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                   ^
+  symbol:   variable index
+  location: class CSVRecord
+org/apache/commons/csv/CSVRecord.java:100: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                                          ^
+  symbol:   variable index
+  location: class CSVRecord
+2 errors
+
+39579 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(10) StmtAppend(0,8) StmtDelete(10) StmtReplace(1,10) StmtAppend(8,8) StmtReplace(11,9) at variant148 fails to compile
+
+39579 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtDelete(10) StmtAppend(0,8) StmtDelete(10) StmtReplace(1,10) StmtAppend(8,8) StmtReplace(11,9) (stored at: variant148)
+39592 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtDelete(10) StmtReplace(9,8) StmtReplace(0,9) StmtReplace(9,8) StmtDelete(8) StmtDelete(1) StmtDelete(4) StmtDelete(9) StmtAppend(0,9) StmtAppend(2,8) StmtAppend(1,10) (stored at: )
+39599 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtReplace(0,9) StmtDelete(4) StmtDelete(9) StmtReplace(0,9) StmtReplace(1,10) StmtDelete(2) StmtAppend(4,9) StmtAppend(3,8) (stored at: )
+39610 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtReplace(9,10) StmtReplace(0,9) StmtReplace(9,8) StmtDelete(8) StmtDelete(1) StmtReplace(4,8) StmtDelete(10) StmtDelete(3) StmtReplace(9,8) StmtAppend(11,9) (stored at: )
+39613 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtDelete(10) StmtReplace(9,8) StmtReplace(0,9) StmtReplace(9,8) StmtDelete(8) StmtDelete(1) StmtReplace(2,8) StmtAppend(9,8) (stored at: )
+39615 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtReplace(0,9) StmtDelete(4) StmtDelete(9) StmtReplace(0,9) StmtReplace(1,10) StmtDelete(2) StmtAppend(4,9) StmtDelete(9) (stored at: )
+39622 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtReplace(0,9) StmtDelete(4) StmtDelete(9) StmtReplace(0,9) StmtReplace(1,10) StmtDelete(3) StmtReplace(10,18) StmtReplace(9,8) StmtReplace(4,8) (stored at: )
+39631 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtReplace(0,9) StmtDelete(4) StmtReplace(1,8) StmtDelete(1) StmtDelete(2) StmtDelete(8) StmtReplace(9,8) StmtReplace(1,8) StmtDelete(10) StmtDelete(3) StmtReplace(2,9) StmtDelete(4) (stored at: )
+39634 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtReplace(9,10) StmtReplace(0,9) StmtReplace(9,8) StmtDelete(8) StmtDelete(1) StmtReplace(4,8) StmtDelete(8) StmtReplace(9,8) StmtDelete(3) StmtReplace(0,10) (stored at: )
+39643 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtReplace(0,9) StmtDelete(4) StmtReplace(1,8) StmtDelete(1) StmtDelete(2) StmtAppend(3,8) StmtReplace(4,10) StmtReplace(4,8) StmtAppend(0,8) (stored at: )
+39645 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtReplace(0,9) StmtDelete(4) StmtReplace(1,8) StmtDelete(1) StmtDelete(2) StmtDelete(8) StmtReplace(9,8) StmtReplace(1,8) StmtDelete(10) StmtDelete(3) StmtReplace(2,9) StmtDelete(3) (stored at: )
+39649 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtReplace(0,9) StmtDelete(4) StmtDelete(9) StmtAppend(2,9) StmtReplace(1,9) StmtAppend(4,9) StmtAppend(0,9) StmtAppend(8,9) StmtDelete(4) (stored at: )
+39652 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtReplace(9,10) StmtReplace(0,9) StmtReplace(9,8) StmtDelete(8) StmtDelete(1) StmtReplace(4,8) StmtDelete(8) StmtReplace(9,8) StmtAppend(0,9) StmtReplace(10,16) (stored at: )
+39659 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtDelete(10) StmtAppend(0,8) StmtAppend(0,8) StmtAppend(11,8) StmtAppend(1,9) (stored at: )
+39685 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:88: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                   ^
+  symbol:   variable index
+  location: class CSVRecord
+org/apache/commons/csv/CSVRecord.java:88: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                                          ^
+  symbol:   variable index
+  location: class CSVRecord
+2 errors
+
+39685 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(8) StmtAppend(4,8) StmtAppend(11,8) StmtReplace(8,10) StmtReplace(11,10) at variant149 fails to compile
+
+39685 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtDelete(8) StmtAppend(4,8) StmtAppend(11,8) StmtReplace(8,10) StmtReplace(11,10) (stored at: variant149)
+39692 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtReplace(9,10) StmtReplace(0,9) StmtReplace(9,8) StmtDelete(8) StmtDelete(1) StmtReplace(4,8) StmtAppend(0,9) StmtReplace(4,9) StmtDelete(9) StmtReplace(9,10) (stored at: )
+39699 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtReplace(9,10) StmtReplace(0,9) StmtReplace(9,8) StmtDelete(8) StmtDelete(1) StmtReplace(4,8) StmtReplace(4,9) StmtReplace(4,8) StmtAppend(1,8) (stored at: )
+39703 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtReplace(9,10) StmtReplace(0,9) StmtReplace(9,8) StmtDelete(8) StmtDelete(1) StmtReplace(4,8) StmtDelete(10) StmtDelete(3) StmtReplace(9,8) StmtAppend(9,8) (stored at: )
+39711 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtDelete(8) StmtAppend(4,8) StmtAppend(11,8) StmtReplace(8,10) StmtReplace(10,20) (stored at: )
+39729 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:86: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                   ^
+  symbol:   variable index
+  location: class CSVRecord
+org/apache/commons/csv/CSVRecord.java:86: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                                          ^
+  symbol:   variable index
+  location: class CSVRecord
+2 errors
+
+39729 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(8) StmtAppend(4,8) StmtAppend(11,8) StmtReplace(11,10) StmtReplace(4,9) at variant150 fails to compile
+
+39730 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtDelete(8) StmtAppend(4,8) StmtAppend(11,8) StmtReplace(11,10) StmtReplace(4,9) (stored at: variant150)
+39732 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtAppend(4,8) StmtDelete(9) StmtDelete(8) StmtDelete(8) StmtAppend(0,9) (stored at: )
+39741 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtReplace(9,10) StmtReplace(0,9) StmtReplace(9,8) StmtDelete(8) StmtDelete(1) StmtReplace(4,8) StmtReplace(10,18) StmtReplace(9,9) StmtReplace(4,10) (stored at: )
+39744 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtReplace(9,10) StmtReplace(0,9) StmtReplace(9,8) StmtDelete(8) StmtDelete(1) StmtReplace(4,8) StmtReplace(4,9) StmtAppend(1,10) StmtDelete(8) (stored at: )
+39757 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:49: error: ';' expected
+            final String comment, final long recordNumber) throw new IllegalStateException(
+                                                          ^
+1 error
+
+39761 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(8) StmtAppend(4,8) StmtAppend(11,8) StmtReplace(8,10) StmtReplace(0,10) at variant151 fails to compile
+
+39761 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtDelete(8) StmtAppend(4,8) StmtAppend(11,8) StmtReplace(8,10) StmtReplace(0,10) (stored at: variant151)
+39792 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:94: error: unreachable statement
+        final Integer index = mapping.get(name);
+                      ^
+1 error
+
+39793 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(0,9) StmtDelete(4) StmtDelete(9) StmtAppend(2,9) StmtReplace(1,9) StmtAppend(4,9) StmtAppend(0,9) StmtAppend(1,9) StmtAppend(8,10) at variant152 fails to compile
+
+39793 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtReplace(0,9) StmtDelete(4) StmtDelete(9) StmtAppend(2,9) StmtReplace(1,9) StmtAppend(4,9) StmtAppend(0,9) StmtAppend(1,9) StmtAppend(8,10) (stored at: variant152)
+39796 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtReplace(9,10) StmtReplace(0,9) StmtReplace(9,8) StmtDelete(8) StmtDelete(1) StmtReplace(4,8) StmtReplace(10,18) StmtReplace(9,9) StmtAppend(11,9) (stored at: )
+39804 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtReplace(0,9) StmtDelete(4) StmtReplace(1,8) StmtDelete(1) StmtDelete(2) StmtDelete(8) StmtReplace(9,8) StmtReplace(1,8) StmtDelete(10) StmtDelete(3) StmtReplace(2,9) StmtAppend(2,10) (stored at: )
+39806 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtAppend(1,8) StmtDelete(10) (stored at: )
+39814 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtReplace(0,9) StmtDelete(4) StmtDelete(9) StmtReplace(0,9) StmtReplace(1,10) StmtDelete(3) StmtReplace(10,18) StmtReplace(9,8) StmtReplace(1,10) (stored at: )
+39841 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:58: error: unreachable statement
+        {
+        ^
+1 error
+
+39842 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(2) StmtDelete(8) StmtReplace(9,8) StmtReplace(1,8) StmtDelete(10) StmtDelete(3) StmtReplace(2,9) StmtReplace(8,8) at variant153 fails to compile
+
+39842 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtDelete(2) StmtDelete(8) StmtReplace(9,8) StmtReplace(1,8) StmtDelete(10) StmtDelete(3) StmtReplace(2,9) StmtReplace(8,8) (stored at: variant153)
+39845 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtReplace(0,9) StmtDelete(4) StmtReplace(1,8) StmtReplace(9,8) StmtReplace(0,9) StmtReplace(9,8) StmtDelete(8) StmtDelete(1) StmtReplace(4,8) StmtDelete(10) StmtReplace(1,10) StmtAppend(0,9) StmtDelete(2) (stored at: )
+39849 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtReplace(2,8) StmtReplace(0,9) StmtDelete(3) StmtAppend(8,9) StmtAppend(4,8) (stored at: )
+39852 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtReplace(0,9) StmtDelete(4) StmtDelete(9) StmtAppend(2,9) StmtReplace(1,9) StmtAppend(4,9) StmtReplace(3,9) StmtReplace(0,10) StmtAppend(0,10) StmtAppend(0,10) StmtReplace(3,9) (stored at: )
+39857 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtReplace(0,9) StmtDelete(4) StmtDelete(9) StmtAppend(0,9) StmtDelete(4) (stored at: )
+39860 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtReplace(9,10) StmtReplace(0,9) StmtReplace(9,8) StmtDelete(8) StmtDelete(1) StmtReplace(4,8) StmtDelete(8) StmtReplace(1,10) StmtDelete(2) StmtAppend(4,9) StmtAppend(11,9) (stored at: )
+39866 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtReplace(0,9) StmtDelete(4) StmtAppend(11,8) StmtReplace(1,8) (stored at: )
+39892 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:92: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                   ^
+  symbol:   variable index
+  location: class CSVRecord
+org/apache/commons/csv/CSVRecord.java:92: error: cannot find symbol
+            return index != null ? values[index.intValue()] : null;
+                                          ^
+  symbol:   variable index
+  location: class CSVRecord
+2 errors
+
+39893 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(10) StmtAppend(0,8) StmtAppend(2,10) StmtDelete(11) at variant154 fails to compile
+
+39893 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtDelete(10) StmtAppend(0,8) StmtAppend(2,10) StmtDelete(11) (stored at: variant154)
+39895 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtReplace(0,9) StmtDelete(4) StmtDelete(8) StmtReplace(2,9) StmtAppend(2,8) (stored at: )
+39905 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtDelete(8) StmtAppend(4,8) StmtAppend(11,8) StmtDelete(9) (stored at: )
+39908 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtDelete(10) StmtReplace(9,8) StmtReplace(0,9) StmtReplace(9,8) StmtDelete(8) StmtDelete(1) StmtReplace(4,8) StmtDelete(10) StmtReplace(1,10) StmtReplace(0,9) StmtReplace(9,8) StmtDelete(8) StmtDelete(1) StmtReplace(4,8) StmtDelete(10) StmtDelete(3) StmtReplace(9,8) StmtReplace(4,9) (stored at: )
+39908 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtDelete(4) (stored at: )
+39934 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:88: error: incompatible types: boolean cannot be converted to String
+            return isMapped(name) && mapping.get(name).intValue() < values.length;
+                                  ^
+1 error
+
+39935 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(4,9) StmtAppend(1,10) StmtReplace(10,18) at variant155 fails to compile
+
+39935 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtReplace(4,9) StmtAppend(1,10) StmtReplace(10,18) (stored at: variant155)
+39941 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtReplace(9,10) StmtReplace(0,9) StmtReplace(9,8) StmtDelete(8) StmtDelete(1) StmtDelete(4) StmtDelete(9) StmtReplace(0,9) StmtReplace(1,10) StmtDelete(2) StmtAppend(4,9) StmtReplace(9,8) (stored at: )
+39944 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtReplace(0,9) StmtDelete(4) StmtDelete(9) StmtDelete(4) StmtReplace(1,8) StmtDelete(1) StmtDelete(2) StmtDelete(8) StmtReplace(9,8) StmtReplace(1,8) StmtDelete(10) StmtDelete(3) StmtReplace(2,9) StmtAppend(8,8) (stored at: )
+39974 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/csv/CSVRecord.java:51: error: unreachable statement
+        this.values = values != null ? values : EMPTY_STRING_ARRAY;
+        ^
+1 error
+
+39974 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(1,10) StmtDelete(3) StmtReplace(10,18) StmtReplace(9,8) StmtAppend(4,10) at variant156 fails to compile
+
+39974 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtReplace(1,10) StmtDelete(3) StmtReplace(10,18) StmtReplace(9,8) StmtAppend(4,10) (stored at: variant156)
+39978 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtReplace(0,9) StmtAppend(3,9) (stored at: )
+39983 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtReplace(1,8) StmtDelete(1) StmtDelete(2) StmtDelete(8) StmtReplace(9,8) StmtReplace(1,8) StmtDelete(10) StmtDelete(3) StmtReplace(2,9) StmtAppend(0,10) (stored at: )
+39992 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtReplace(9,10) StmtReplace(0,9) StmtReplace(9,8) StmtDelete(8) StmtDelete(1) StmtReplace(4,8) StmtDelete(8) StmtReplace(1,10) StmtDelete(3) StmtReplace(10,18) StmtReplace(9,8) StmtDelete(9) (stored at: )
+39998 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtReplace(0,9) StmtDelete(4) StmtDelete(9) StmtDelete(3) StmtReplace(10,16) (stored at: )
+40048 [main] INFO clegoues.genprog4java.fitness.Fitness  - Serialized test cache to file testcache.ser
+40048 [main] INFO clegoues.genprog4java.main.Main  - 
+Total elapsed time: 40
+

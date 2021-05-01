@@ -1,0 +1,14 @@
+1 Delete /home/ubuntu/rtx/d4j/Jsoup/90b/src/main/java/org/jsoup/helper/HttpConnection.java 426
+Faulty:
+i++;
+Seed:
+addHeader(USER_AGENT,DEFAULT_UA);
+**************************************************
+2 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/90b/src/main/java/org/jsoup/helper/HttpConnection.java 373
+Faulty:
+headers.put(name,values);
+Seed:
+Validate.notNull(value,"Data value must not be null");
+**************************************************
+Evaluations: 356
+EstimatedTime: 357210

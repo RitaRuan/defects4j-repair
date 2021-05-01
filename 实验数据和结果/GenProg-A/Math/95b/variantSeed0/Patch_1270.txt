@@ -1,0 +1,18 @@
+1 Replace /home/ubuntu/rtx/d4j/Math/95b/src/java/org/apache/commons/math/distribution/FDistributionImpl.java 148
+Faulty:
+return ret;
+Seed:
+return 0;
+**************************************************
+2 Replace /home/ubuntu/rtx/d4j/Math/95b/src/java/org/apache/commons/math/distribution/FDistributionImpl.java 180
+Faulty:
+if (degreesOfFreedom <= 0.0) {
+  throw new IllegalArgumentException("degrees of freedom must be positive.");
+}
+Seed:
+if (degreesOfFreedom <= 0.0) {
+  throw new IllegalArgumentException("degrees of freedom must be positive.");
+}
+**************************************************
+Evaluations: 1706
+EstimatedTime: 748487

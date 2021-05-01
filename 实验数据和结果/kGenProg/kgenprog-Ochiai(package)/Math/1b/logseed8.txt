@@ -1,0 +1,201 @@
+RUNNING THE BUG: Math 1, WITH THE SEED: 8
+2021-04-21 05:06:48 [main] [INFO]  KGenProgMain - 
+==================== kGenProg Configuration ====================
+configPath = kgenprog.toml
+rootDir = . (set by command line)
+productPaths = [src/main/java] (set by command line)
+testPaths = [src/test/java] (set by command line)
+classPaths = [/home/rtx/repair/defects4j/framework/projects/lib/junit-4.11.jar] (set by command line)
+executionTests = [org.apache.commons.math3.fraction.BigFractionTest] (set by command line)
+outDir = /home/rtx/repair/d4j/Math/1b/Q1-kGenProg/patch8 (set by command line)
+logLevel = INFO
+mutationGeneratingCount = 10
+crossoverGeneratingCount = 10
+headcount = 10
+maxGeneration = 10
+timeLimit = PT1M
+testTimeLimit = PT10S
+requiredSolutionsCount = 1
+randomSeed = 8 (set by command line)
+scope = PACKAGE (set by command line)
+faultLocalization = Ochiai (set by command line)
+mutationType = Simple
+crossoverType = Random
+firstVariantSelectionStrategy = Random
+secondVariantSelectionStrategy = Random
+isPatchOutput = true
+isHistoryRecord = false
+currentDirectory = /home/rtx/repair/d4j/Math/1b
+version = 1.8.0
+================================================================
+2021-04-21 05:07:12 [main] [INFO]  KGenProgMain - initial failed tests (1/27)
+org.apache.commons.math3.fraction.BigFractionTest.testDigitLimitConstructor: illegal state: Overflow trying to convert 0.5 to fraction (2,499,999,794/4,999,999,587)
+2021-04-21 05:07:12 [main] [INFO]  KGenProgMain - GA started
+2021-04-21 05:07:12 [main] [INFO]  KGenProgMain - entered the era of 1st generation.
+2021-04-21 05:07:16 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 3 seconds
+Variants: generated 10, build-succeeded 1, build-failed 7, syntax-invalid 0, redundant 2
+Fitness: max 0.852(1), min 0.852(1), ave 0.852
+----------------------------------------------------------------
+
+2021-04-21 05:07:16 [main] [INFO]  KGenProgMain - entered the era of 2nd generation.
+2021-04-21 05:07:20 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 7 seconds
+Variants: generated 10, build-succeeded 3, build-failed 5, syntax-invalid 0, redundant 2
+Fitness: max 0.963(2), min 0.852(1), ave 0.926
+----------------------------------------------------------------
+
+2021-04-21 05:07:20 [main] [INFO]  KGenProgMain - entered the era of 3rd generation.
+2021-04-21 05:07:22 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 9 seconds
+Variants: generated 10, build-succeeded 0, build-failed 8, syntax-invalid 0, redundant 2
+Fitness: max --, min --, ave NaN
+----------------------------------------------------------------
+
+2021-04-21 05:07:22 [main] [INFO]  KGenProgMain - entered the era of 4th generation.
+2021-04-21 05:07:24 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 12 seconds
+Variants: generated 10, build-succeeded 1, build-failed 8, syntax-invalid 1, redundant 0
+Fitness: max 0.815(1), min 0.815(1), ave 0.815
+----------------------------------------------------------------
+
+2021-04-21 05:07:24 [main] [INFO]  KGenProgMain - entered the era of 5th generation.
+2021-04-21 05:07:25 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 12 seconds
+Variants: generated 1, build-succeeded 1, build-failed 0, syntax-invalid 0, redundant 0
+Fitness: max 1(1), min 1(1), ave 1
+----------------------------------------------------------------
+
+2021-04-21 05:07:25 [main] [INFO]  KGenProgMain - GA stopped
+2021-04-21 05:07:25 [main] [INFO]  PatchLogExporter - patch (v41)
+--- org.apache.commons.math3.optimization.fitting.WeightedObservedPoint
++++ org.apache.commons.math3.optimization.fitting.WeightedObservedPoint
+@@ -74,4 +74,3 @@
+     }
+ 
+ }
+-
+2021-04-21 05:07:25 [main] [INFO]  PatchLogExporter - patch (v41)
+--- org.apache.commons.math3.distribution.fitting.MultivariateNormalMixtureExpectationMaximization
++++ org.apache.commons.math3.distribution.fitting.MultivariateNormalMixtureExpectationMaximization
+@@ -450,4 +450,3 @@
+         }
+     }
+ }
+-
+2021-04-21 05:07:25 [main] [INFO]  PatchLogExporter - patch (v41)
+--- org.apache.commons.math3.primes.SmallPrimes
++++ org.apache.commons.math3.primes.SmallPrimes
+@@ -186,4 +186,3 @@
+         return true; // definitely prime
+     }
+ }
+-
+2021-04-21 05:07:25 [main] [INFO]  PatchLogExporter - patch (v41)
+--- org.apache.commons.math3.special.Erf
++++ org.apache.commons.math3.special.Erf
+@@ -241,4 +241,3 @@
+     }
+ 
+ }
+-
+2021-04-21 05:07:25 [main] [INFO]  PatchLogExporter - patch (v41)
+--- org.apache.commons.math3.distribution.ZipfDistribution
++++ org.apache.commons.math3.distribution.ZipfDistribution
+@@ -243,4 +243,3 @@
+         return true;
+     }
+ }
+-
+2021-04-21 05:07:25 [main] [INFO]  PatchLogExporter - patch (v41)
+--- org.apache.commons.math3.stat.correlation.StorelessBivariateCovariance
++++ org.apache.commons.math3.stat.correlation.StorelessBivariateCovariance
+@@ -136,4 +136,3 @@
+         }
+     }
+ }
+-
+2021-04-21 05:07:25 [main] [INFO]  PatchLogExporter - patch (v41)
+--- org.apache.commons.math3.stat.descriptive.AbstractUnivariateStatistic
++++ org.apache.commons.math3.stat.descriptive.AbstractUnivariateStatistic
+@@ -312,4 +312,3 @@
+         return test(values, begin, length, allowEmpty);
+     }
+ }
+-
+2021-04-21 05:07:25 [main] [INFO]  PatchLogExporter - patch (v41)
+--- org.apache.commons.math3.fitting.WeightedObservedPoint
++++ org.apache.commons.math3.fitting.WeightedObservedPoint
+@@ -76,4 +76,3 @@
+     }
+ 
+ }
+-
+2021-04-21 05:07:25 [main] [INFO]  PatchLogExporter - patch (v41)
+--- org.apache.commons.math3.exception.util.ArgUtils
++++ org.apache.commons.math3.exception.util.ArgUtils
+@@ -41,15 +41,6 @@
+     public static Object[] flatten(Object[] array) {
+         final List<Object> list = new ArrayList<Object>();
+         if (array != null) {
+-            for (Object o : array) {
+-                if (o instanceof Object[]) {
+-                    for (Object oR : flatten((Object[]) o)) {
+-                        list.add(oR);
+-                    }
+-                } else {
+-                    list.add(o);
+-                }
+-            }
+         }
+         return list.toArray();
+     }
+2021-04-21 05:07:25 [main] [INFO]  PatchLogExporter - patch (v41)
+--- org.apache.commons.math3.ode.JacobianMatrices
++++ org.apache.commons.math3.ode.JacobianMatrices
+@@ -491,4 +491,3 @@
+     }
+ 
+ }
+-
+2021-04-21 05:07:25 [main] [INFO]  PatchLogExporter - patch (v41)
+--- org.apache.commons.math3.fraction.BigFraction
++++ org.apache.commons.math3.fraction.BigFraction
+@@ -301,9 +301,6 @@
+             p2 = (a1 * p1) + p0;
+             q2 = (a1 * q1) + q0;
+             if ((p2 > overflow) || (q2 > overflow)) {
+-                // in maxDenominator mode, if the last fraction was very close to the actual value
+-                // q2 may overflow in the next iteration; in this case return the last one.
+-                throw new FractionConversionException(value, p2, q2);
+             }
+ 
+             final double convergent = (double) p2 / (double) q2;
+2021-04-21 05:07:25 [main] [INFO]  PatchLogExporter - patch (v41)
+--- org.apache.commons.math3.distribution.AbstractRealDistribution
++++ org.apache.commons.math3.distribution.AbstractRealDistribution
+@@ -287,4 +287,3 @@
+         return 0d;
+     }
+ }
+-
+2021-04-21 05:07:25 [main] [INFO]  PatchLogExporter - patch (v41)
+--- org.apache.commons.math3.distribution.WeibullDistribution
++++ org.apache.commons.math3.distribution.WeibullDistribution
+@@ -304,4 +304,3 @@
+         return true;
+     }
+ }
+-
+2021-04-21 05:07:25 [main] [INFO]  KGenProgMain - Summary
+Reached generation = 5
+Generated variants = 41
+Syntax valid variants = 40
+Build succeeded variants = 6
+Time elapsed = 13 seconds
+Exit status = SUCCESS

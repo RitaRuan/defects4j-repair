@@ -1,0 +1,17 @@
+1 Delete /home/ubuntu/rtx/d4j/Jsoup/90b/src/main/java/org/jsoup/helper/HttpConnection.java 426
+Faulty:
+i++;
+Seed:
+addHeader("Accept-Encoding","gzip");
+**************************************************
+2 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/90b/src/main/java/org/jsoup/helper/HttpConnection.java 371
+Faulty:
+if (values.isEmpty()) {
+  values=new ArrayList<>();
+  headers.put(name,values);
+}
+Seed:
+byte[] bom=new byte[4];
+**************************************************
+Evaluations: 683
+EstimatedTime: 601221

@@ -1,0 +1,20 @@
+1 Delete /home/rtx/d4j/JacksonCore/11b/src/main/java/com/fasterxml/jackson/core/sym/ByteQuadsCanonicalizer.java 641
+Faulty:
+for (offset=_spilloverStart(); offset < _spilloverEnd; offset+=4) {
+  if ((q1 == hashArea[offset]) && (1 == hashArea[offset + 3])) {
+    return _names[offset >> 2];
+  }
+}
+Seed:
+int symbolsSeen=0;
+**************************************************
+2 Replace /home/rtx/d4j/JacksonCore/11b/src/main/java/com/fasterxml/jackson/core/sym/ByteQuadsCanonicalizer.java 931
+Faulty:
+if (_failOnDoS) {
+  _reportTooManyCollisions();
+}
+Seed:
+rehash();
+**************************************************
+Evaluations: 129
+EstimatedTime: 444868

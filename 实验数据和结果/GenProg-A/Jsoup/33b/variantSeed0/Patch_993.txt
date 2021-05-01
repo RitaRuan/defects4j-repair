@@ -1,0 +1,20 @@
+1 Delete /home/ubuntu/rtx/d4j/Jsoup/33b/src/main/java/org/jsoup/parser/HtmlTreeBuilder.java 99
+Faulty:
+currentToken=token;
+Seed:
+fragmentParsing=true;
+**************************************************
+2 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/33b/src/main/java/org/jsoup/parser/HtmlTreeBuilder.java 163
+Faulty:
+return el;
+Seed:
+tokeniser.transition(TokeniserState.Data);
+**************************************************
+3 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/33b/src/main/java/org/jsoup/parser/TokeniserState.java 1655
+Faulty:
+String name=r.consumeLetterSequence();
+Seed:
+int depth=0;
+**************************************************
+Evaluations: 1337
+EstimatedTime: 1522402

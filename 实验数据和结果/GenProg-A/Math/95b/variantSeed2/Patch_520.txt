@@ -1,0 +1,34 @@
+1 InsertBefore /home/ubuntu/rtx/d4j/Math/95b/src/java/org/apache/commons/math/analysis/UnivariateRealSolverUtils.java 171
+Faulty:
+if (function == null) {
+  throw new IllegalArgumentException("function is null.");
+}
+Seed:
+if (initial < lowerBound || initial > upperBound || lowerBound >= upperBound) {
+  throw new IllegalArgumentException("Invalid endpoint parameters:  lowerBound=" + lowerBound + " initial="+ initial+ " upperBound="+ upperBound);
+}
+**************************************************
+2 InsertBefore /home/ubuntu/rtx/d4j/Math/95b/src/java/org/apache/commons/math/distribution/FDistributionImpl.java 170
+Faulty:
+return numeratorDegreesOfFreedom;
+Seed:
+setDenominatorDegreesOfFreedom(denominatorDegreesOfFreedom);
+**************************************************
+3 Replace /home/ubuntu/rtx/d4j/Math/95b/src/java/org/apache/commons/math/distribution/FDistributionImpl.java 147
+Faulty:
+ret=d / (d - 2.0);
+Seed:
+ret=1.0;
+**************************************************
+4 Replace /home/ubuntu/rtx/d4j/Math/95b/src/java/org/apache/commons/math/analysis/UnivariateRealSolverUtils.java 171
+Faulty:
+if (function == null) {
+  throw new IllegalArgumentException("function is null.");
+}
+Seed:
+if (function == null) {
+  throw new IllegalArgumentException("function is null.");
+}
+**************************************************
+Evaluations: 691
+EstimatedTime: 359591

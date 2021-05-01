@@ -1,0 +1,42 @@
+1 Delete /home/ubuntu/rtx/d4j/Jsoup/57b/src/main/java/org/jsoup/nodes/Attributes.java 120
+Faulty:
+if (attributes == null) return;
+Seed:
+for (Iterator<String> it=attributes.keySet().iterator(); it.hasNext(); ) {
+  String attrKey=it.next();
+  if (attrKey.equalsIgnoreCase(key))   attributes.remove(attrKey);
+}
+**************************************************
+2 Delete /home/ubuntu/rtx/d4j/Jsoup/57b/src/main/java/org/jsoup/nodes/Node.java 127
+Faulty:
+Validate.notNull(attributeKey);
+Seed:
+Node firstChild=childNodes.size() > 0 ? childNodes.get(0) : null;
+**************************************************
+3 Delete /home/ubuntu/rtx/d4j/Jsoup/57b/src/main/java/org/jsoup/nodes/Node.java 127
+Faulty:
+Validate.notNull(attributeKey);
+Seed:
+Node firstChild=childNodes.size() > 0 ? childNodes.get(0) : null;
+**************************************************
+4 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/57b/src/main/java/org/jsoup/nodes/Attributes.java 120
+Faulty:
+if (attributes == null) return;
+Seed:
+List<Attribute> list=new ArrayList<Attribute>(attributes.size());
+**************************************************
+5 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/57b/src/main/java/org/jsoup/nodes/Attributes.java 120
+Faulty:
+if (attributes == null) return;
+Seed:
+remove(key);
+**************************************************
+6 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/57b/src/main/java/org/jsoup/parser/Token.java 109
+Faulty:
+if (hasEmptyAttributeValue) attribute=new Attribute(pendingAttributeName,"");
+ else attribute=new BooleanAttribute(pendingAttributeName);
+Seed:
+if (attributes == null) attributes=new Attributes();
+**************************************************
+Evaluations: 421
+EstimatedTime: 337829

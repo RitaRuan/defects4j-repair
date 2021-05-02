@@ -1,0 +1,74 @@
+1 InsertBefore /home/ubuntu/rtx/d4j/Math/58b/src/main/java/org/apache/commons/math/optimization/fitting/GaussianFitter.java 302
+Faulty:
+return new Comparator<WeightedObservedPoint>(){
+  public int compare(  WeightedObservedPoint p1,  WeightedObservedPoint p2){
+    if (p1 == null && p2 == null) {
+      return 0;
+    }
+    if (p1 == null) {
+      return -1;
+    }
+    if (p2 == null) {
+      return 1;
+    }
+    if (p1.getX() < p2.getX()) {
+      return -1;
+    }
+    if (p1.getX() > p2.getX()) {
+      return 1;
+    }
+    if (p1.getY() < p2.getY()) {
+      return -1;
+    }
+    if (p1.getY() > p2.getY()) {
+      return 1;
+    }
+    if (p1.getWeight() < p2.getWeight()) {
+      return -1;
+    }
+    if (p1.getWeight() > p2.getWeight()) {
+      return 1;
+    }
+    return 0;
+  }
+}
+;
+Seed:
+double currentX=observations[0].getX();
+**************************************************
+2 Replace /home/ubuntu/rtx/d4j/Math/58b/src/main/java/org/apache/commons/math/optimization/fitting/GaussianFitter.java 275
+Faulty:
+maxY=Math.max(maxY,point.getY());
+Seed:
+if (observations.length < 4) {
+  throw new NumberIsTooSmallException(LocalizedFormats.INSUFFICIENT_OBSERVED_POINTS_IN_SAMPLE,observations.length,4,true);
+}
+**************************************************
+3 InsertBefore /home/ubuntu/rtx/d4j/Math/58b/src/main/java/org/apache/commons/math/optimization/fitting/GaussianFitter.java 272
+Faulty:
+double maxY=Double.NEGATIVE_INFINITY;
+Seed:
+double fcMean=0;
+**************************************************
+4 InsertBefore /home/ubuntu/rtx/d4j/Math/58b/src/main/java/org/apache/commons/math/optimization/fitting/GaussianFitter.java 223
+Faulty:
+if (idxStep == 0) {
+  throw new ZeroException();
+}
+Seed:
+double sxy=0;
+**************************************************
+5 InsertBefore /home/ubuntu/rtx/d4j/Math/58b/src/main/java/org/apache/commons/math/optimization/fitting/GaussianFitter.java 274
+Faulty:
+minY=Math.min(minY,point.getY());
+Seed:
+double fPrime2Integral=0;
+**************************************************
+6 Replace /home/ubuntu/rtx/d4j/Math/58b/src/main/java/org/apache/commons/math/optimization/fitting/GaussianFitter.java 121
+Faulty:
+return fit(new Gaussian.Parametric(),guess);
+Seed:
+return fit((new ParameterGuesser(getObservations())).guess());
+**************************************************
+Evaluations: 520
+EstimatedTime: 273240

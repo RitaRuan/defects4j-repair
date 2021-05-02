@@ -1,0 +1,194 @@
+1 Delete /home/ubuntu/rtx/d4j/Jsoup/90b/src/main/java/org/jsoup/helper/HttpConnection.java 426
+Faulty:
+i++;
+Seed:
+return new BomCharset("UTF-32",false);
+**************************************************
+2 Delete /home/ubuntu/rtx/d4j/Jsoup/90b/src/main/java/org/jsoup/helper/HttpConnection.java 407
+Faulty:
+for (int j=input.length; i < j; ++i) {
+  int o=input[i];
+  if ((o & 0x80) == 0) {
+    continue;
+  }
+  if ((o & 0xE0) == 0xC0) {
+    end=i + 1;
+  }
+ else   if ((o & 0xF0) == 0xE0) {
+    end=i + 2;
+  }
+ else   if ((o & 0xF8) == 0xF0) {
+    end=i + 3;
+  }
+ else {
+    return false;
+  }
+  while (i < end) {
+    i++;
+    o=input[i];
+    if ((o & 0xC0) != 0x80) {
+      return false;
+    }
+  }
+}
+Seed:
+break;
+**************************************************
+3 Delete /home/ubuntu/rtx/d4j/Jsoup/90b/src/main/java/org/jsoup/helper/HttpConnection.java 426
+Faulty:
+i++;
+Seed:
+return new BomCharset("UTF-32",false);
+**************************************************
+4 Replace /home/ubuntu/rtx/d4j/Jsoup/90b/src/main/java/org/jsoup/helper/HttpConnection.java 426
+Faulty:
+i++;
+Seed:
+if ((o & 0xE0) == 0xC0) {
+  end=i + 1;
+}
+ else if ((o & 0xF0) == 0xE0) {
+  end=i + 2;
+}
+ else if ((o & 0xF8) == 0xF0) {
+  end=i + 3;
+}
+ else {
+  return false;
+}
+**************************************************
+5 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/90b/src/main/java/org/jsoup/helper/HttpConnection.java 414
+Faulty:
+if ((o & 0xE0) == 0xC0) {
+  end=i + 1;
+}
+ else if ((o & 0xF0) == 0xE0) {
+  end=i + 2;
+}
+ else if ((o & 0xF8) == 0xF0) {
+  end=i + 3;
+}
+ else {
+  return false;
+}
+Seed:
+return new BomCharset("UTF-8",true);
+**************************************************
+6 Delete /home/ubuntu/rtx/d4j/Jsoup/90b/src/main/java/org/jsoup/helper/HttpConnection.java 407
+Faulty:
+for (int j=input.length; i < j; ++i) {
+  int o=input[i];
+  if ((o & 0x80) == 0) {
+    continue;
+  }
+  if ((o & 0xE0) == 0xC0) {
+    end=i + 1;
+  }
+ else   if ((o & 0xF0) == 0xE0) {
+    end=i + 2;
+  }
+ else   if ((o & 0xF8) == 0xF0) {
+    end=i + 3;
+  }
+ else {
+    return false;
+  }
+  while (i < end) {
+    i++;
+    o=input[i];
+    if ((o & 0xC0) != 0x80) {
+      return false;
+    }
+  }
+}
+Seed:
+break;
+**************************************************
+7 Delete /home/ubuntu/rtx/d4j/Jsoup/90b/src/main/java/org/jsoup/helper/HttpConnection.java 416
+Faulty:
+if ((o & 0xF0) == 0xE0) {
+  end=i + 2;
+}
+ else if ((o & 0xF8) == 0xF0) {
+  end=i + 3;
+}
+ else {
+  return false;
+}
+Seed:
+return null;
+**************************************************
+8 Delete /home/ubuntu/rtx/d4j/Jsoup/90b/src/main/java/org/jsoup/helper/HttpConnection.java 425
+Faulty:
+while (i < end) {
+  i++;
+  o=input[i];
+  if ((o & 0xC0) != 0x80) {
+    return false;
+  }
+}
+Seed:
+int i=0;
+**************************************************
+9 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/90b/src/main/java/org/jsoup/helper/HttpConnection.java 425
+Faulty:
+while (i < end) {
+  i++;
+  o=input[i];
+  if ((o & 0xC0) != 0x80) {
+    return false;
+  }
+}
+Seed:
+onContentsChanged();
+**************************************************
+10 Delete /home/ubuntu/rtx/d4j/Jsoup/90b/src/main/java/org/jsoup/helper/HttpConnection.java 416
+Faulty:
+if ((o & 0xF0) == 0xE0) {
+  end=i + 2;
+}
+ else if ((o & 0xF8) == 0xF0) {
+  end=i + 3;
+}
+ else {
+  return false;
+}
+Seed:
+return Collections.emptyList();
+**************************************************
+11 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/90b/src/main/java/org/jsoup/helper/HttpConnection.java 489
+Faulty:
+for (Map.Entry<String,List<String>> entry : headers.entrySet()) {
+  if (name.equalsIgnoreCase(entry.getKey()))   return entry.getValue();
+}
+Seed:
+method=Method.GET;
+**************************************************
+12 Replace /home/ubuntu/rtx/d4j/Jsoup/90b/src/main/java/org/jsoup/helper/HttpConnection.java 416
+Faulty:
+if ((o & 0xF0) == 0xE0) {
+  end=i + 2;
+}
+ else if ((o & 0xF8) == 0xF0) {
+  end=i + 3;
+}
+ else {
+  return false;
+}
+Seed:
+return null;
+**************************************************
+13 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/90b/src/main/java/org/jsoup/helper/HttpConnection.java 425
+Faulty:
+while (i < end) {
+  i++;
+  o=input[i];
+  if ((o & 0xC0) != 0x80) {
+    return false;
+  }
+}
+Seed:
+return this;
+**************************************************
+Evaluations: 807
+EstimatedTime: 842077

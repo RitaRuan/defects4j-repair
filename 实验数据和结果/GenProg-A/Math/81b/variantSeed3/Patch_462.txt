@@ -1,0 +1,22 @@
+1 Replace /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1520
+Faulty:
+if (a2 < cnst1) {
+  s=gam * (1 - Math.sqrt(a2)) / (1 + a2);
+}
+Seed:
+int h=3542;
+**************************************************
+2 Delete /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1627
+Faulty:
+break;
+Seed:
+return copy().mapSinToSelf();
+**************************************************
+3 Replace /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1544
+Faulty:
+b2=work[nn - 13] / work[nn - 15];
+Seed:
+tType=-3;
+**************************************************
+Evaluations: 530
+EstimatedTime: 170162

@@ -1,0 +1,26 @@
+1 Replace /home/ubuntu/rtx/d4j/Jsoup/90b/src/main/java/org/jsoup/helper/HttpConnection.java 427
+Faulty:
+o=input[i];
+Seed:
+end=i + 2;
+**************************************************
+2 Replace /home/ubuntu/rtx/d4j/Jsoup/90b/src/main/java/org/jsoup/helper/HttpConnection.java 425
+Faulty:
+while (i < end) {
+  i++;
+  o=input[i];
+  if ((o & 0xC0) != 0x80) {
+    return false;
+  }
+}
+Seed:
+end=i + 2;
+**************************************************
+3 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/90b/src/main/java/org/jsoup/helper/HttpConnection.java 370
+Faulty:
+List<String> values=headers(name);
+Seed:
+Validate.notNull(value,"Cookie value must not be null");
+**************************************************
+Evaluations: 690
+EstimatedTime: 667986

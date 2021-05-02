@@ -1,0 +1,44 @@
+1 InsertBefore /home/rtx/d4j/JacksonCore/11b/src/main/java/com/fasterxml/jackson/core/sym/ByteQuadsCanonicalizer.java 628
+Faulty:
+final int bucketSize=(1 << _tertiaryShift);
+Seed:
+_verifyNeedForRehash();
+**************************************************
+2 Delete /home/rtx/d4j/JacksonCore/11b/src/main/java/com/fasterxml/jackson/core/sym/ByteQuadsCanonicalizer.java 634
+Faulty:
+if (len == 0) {
+  return null;
+}
+Seed:
+final int oldEnd=_spilloverEnd;
+**************************************************
+3 Delete /home/rtx/d4j/JacksonCore/11b/src/main/java/com/fasterxml/jackson/core/sym/ByteQuadsCanonicalizer.java 641
+Faulty:
+for (offset=_spilloverStart(); offset < _spilloverEnd; offset+=4) {
+  if ((q1 == hashArea[offset]) && (1 == hashArea[offset + 3])) {
+    return _names[offset >> 2];
+  }
+}
+Seed:
+_names=Arrays.copyOf(_names,_names.length);
+**************************************************
+4 Replace /home/rtx/d4j/JacksonCore/11b/src/main/java/com/fasterxml/jackson/core/sym/ByteQuadsCanonicalizer.java 936
+Faulty:
+_needRehash=true;
+Seed:
+offset=_spilloverEnd;
+**************************************************
+5 Delete /home/rtx/d4j/JacksonCore/11b/src/main/java/com/fasterxml/jackson/core/sym/ByteQuadsCanonicalizer.java 635
+Faulty:
+return null;
+Seed:
+offset=_spilloverEnd;
+**************************************************
+6 InsertBefore /home/rtx/d4j/JacksonCore/11b/src/main/java/com/fasterxml/jackson/core/sym/ByteQuadsCanonicalizer.java 936
+Faulty:
+_needRehash=true;
+Seed:
+int count=0;
+**************************************************
+Evaluations: 246
+EstimatedTime: 793402

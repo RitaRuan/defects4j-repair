@@ -1,0 +1,20 @@
+1 Delete /home/ubuntu/rtx/d4j/Jsoup/90b/src/main/java/org/jsoup/helper/HttpConnection.java 426
+Faulty:
+i++;
+Seed:
+byte[] bom=new byte[4];
+**************************************************
+2 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/90b/src/main/java/org/jsoup/helper/HttpConnection.java 367
+Faulty:
+Validate.notEmpty(name);
+Seed:
+Validate.notNull(name,"Header name must not be null");
+**************************************************
+3 Delete /home/ubuntu/rtx/d4j/Jsoup/90b/src/main/java/org/jsoup/helper/HttpConnection.java 427
+Faulty:
+o=input[i];
+Seed:
+Connection con=new HttpConnection();
+**************************************************
+Evaluations: 367
+EstimatedTime: 340634

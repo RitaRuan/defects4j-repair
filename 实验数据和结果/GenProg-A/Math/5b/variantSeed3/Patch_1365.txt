@@ -1,0 +1,22 @@
+1 Delete /home/rtx/repair/d4j/Math/5b/src/main/java/org/apache/commons/math3/complex/Complex.java 300
+Faulty:
+if (isNaN) {
+  return NaN;
+}
+Seed:
+return createComplex(FastMath.cosh(real) * FastMath.cos(imaginary),FastMath.sinh(real) * FastMath.sin(imaginary));
+**************************************************
+2 Replace /home/rtx/repair/d4j/Math/5b/src/main/java/org/apache/commons/math3/complex/Complex.java 305
+Faulty:
+return NaN;
+Seed:
+return INF;
+**************************************************
+3 InsertBefore /home/rtx/repair/d4j/Math/5b/src/main/java/org/apache/commons/math3/complex/Complex.java 1228
+Faulty:
+return "(" + real + ", "+ imaginary+ ")";
+Seed:
+double q=real / imaginary;
+**************************************************
+Evaluations: 1619
+EstimatedTime: 492130

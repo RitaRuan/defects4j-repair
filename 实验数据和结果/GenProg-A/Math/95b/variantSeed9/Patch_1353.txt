@@ -1,0 +1,66 @@
+1 InsertBefore /home/ubuntu/rtx/d4j/Math/95b/src/java/org/apache/commons/math/analysis/UnivariateRealSolverUtils.java 178
+Faulty:
+if (initial < lowerBound || initial > upperBound || lowerBound >= upperBound) {
+  throw new IllegalArgumentException("Invalid endpoint parameters:  lowerBound=" + lowerBound + " initial="+ initial+ " upperBound="+ upperBound);
+}
+Seed:
+if (maximumIterations <= 0) {
+  throw new IllegalArgumentException("bad value for maximumIterations: " + maximumIterations);
+}
+**************************************************
+2 InsertBefore /home/ubuntu/rtx/d4j/Math/95b/src/java/org/apache/commons/math/analysis/UnivariateRealSolverUtils.java 178
+Faulty:
+if (initial < lowerBound || initial > upperBound || lowerBound >= upperBound) {
+  throw new IllegalArgumentException("Invalid endpoint parameters:  lowerBound=" + lowerBound + " initial="+ initial+ " upperBound="+ upperBound);
+}
+Seed:
+if (maximumIterations <= 0) {
+  throw new IllegalArgumentException("bad value for maximumIterations: " + maximumIterations);
+}
+**************************************************
+3 InsertBefore /home/ubuntu/rtx/d4j/Math/95b/src/java/org/apache/commons/math/analysis/UnivariateRealSolverUtils.java 178
+Faulty:
+if (initial < lowerBound || initial > upperBound || lowerBound >= upperBound) {
+  throw new IllegalArgumentException("Invalid endpoint parameters:  lowerBound=" + lowerBound + " initial="+ initial+ " upperBound="+ upperBound);
+}
+Seed:
+if (maximumIterations <= 0) {
+  throw new IllegalArgumentException("bad value for maximumIterations: " + maximumIterations);
+}
+**************************************************
+4 InsertBefore /home/ubuntu/rtx/d4j/Math/95b/src/java/org/apache/commons/math/analysis/UnivariateRealSolverUtils.java 178
+Faulty:
+if (initial < lowerBound || initial > upperBound || lowerBound >= upperBound) {
+  throw new IllegalArgumentException("Invalid endpoint parameters:  lowerBound=" + lowerBound + " initial="+ initial+ " upperBound="+ upperBound);
+}
+Seed:
+if (maximumIterations <= 0) {
+  throw new IllegalArgumentException("bad value for maximumIterations: " + maximumIterations);
+}
+**************************************************
+5 InsertBefore /home/ubuntu/rtx/d4j/Math/95b/src/java/org/apache/commons/math/analysis/UnivariateRealSolverUtils.java 178
+Faulty:
+if (initial < lowerBound || initial > upperBound || lowerBound >= upperBound) {
+  throw new IllegalArgumentException("Invalid endpoint parameters:  lowerBound=" + lowerBound + " initial="+ initial+ " upperBound="+ upperBound);
+}
+Seed:
+if (maximumIterations <= 0) {
+  throw new IllegalArgumentException("bad value for maximumIterations: " + maximumIterations);
+}
+**************************************************
+6 Replace /home/ubuntu/rtx/d4j/Math/95b/src/java/org/apache/commons/math/distribution/FDistributionImpl.java 147
+Faulty:
+ret=d / (d - 2.0);
+Seed:
+ret=0.0;
+**************************************************
+7 Replace /home/ubuntu/rtx/d4j/Math/95b/src/java/org/apache/commons/math/distribution/FDistributionImpl.java 145
+Faulty:
+double d=getDenominatorDegreesOfFreedom();
+Seed:
+if (p <= 0) {
+  throw new IllegalArgumentException("The Poisson mean must be positive");
+}
+**************************************************
+Evaluations: 1753
+EstimatedTime: 827361

@@ -1,0 +1,219 @@
+1 InsertBefore /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1533
+Faulty:
+final int np=nn - 2 * pingPong;
+Seed:
+if (work[nn - 9] > work[nn - 11]) {
+  return;
+}
+**************************************************
+2 Delete /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1544
+Faulty:
+b2=work[nn - 13] / work[nn - 15];
+Seed:
+throw new NonSquareMatrixException(getRowDimension(),getColumnDimension());
+**************************************************
+3 Delete /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1543
+Faulty:
+if (end - start > 2) {
+  b2=work[nn - 13] / work[nn - 15];
+  a2=a2 + b2;
+  for (int i4=nn - 17; i4 >= 4 * start + 2 + pingPong; i4-=4) {
+    if (b2 == 0.0) {
+      break;
+    }
+    b1=b2;
+    if (work[i4] > work[i4 - 2]) {
+      return;
+    }
+    b2=b2 * (work[i4] / work[i4 - 2]);
+    a2=a2 + b2;
+    if (100 * Math.max(b2,b1) < a2 || cnst1 < a2) {
+      break;
+    }
+  }
+  a2=cnst3 * a2;
+}
+Seed:
+b2=Math.sqrt(cnst3 * b2);
+**************************************************
+4 InsertBefore /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1508
+Faulty:
+if (work[i4] > work[i4 - 2]) {
+  return;
+}
+Seed:
+tau=Math.max(s,0.333 * dMin);
+**************************************************
+5 Replace /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1481
+Faulty:
+if (work[nn - 5] > work[nn - 7]) {
+  return;
+}
+Seed:
+this.splitTolerance=splitTolerance;
+**************************************************
+6 InsertBefore /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1093
+Faulty:
+if (dMin < 0.0) {
+  if (tType < -22) {
+    tau=0.0;
+  }
+ else   if (dMin1 > 0.0) {
+    tau=(tau + dMin) * (1.0 - 2.0 * MathUtils.EPSILON);
+    tType-=11;
+  }
+ else {
+    tau*=0.25;
+    tType-=12;
+  }
+}
+ else if (Double.isNaN(dMin)) {
+  tau=0.0;
+}
+ else {
+  loop=false;
+}
+Seed:
+double s=0.0;
+**************************************************
+7 InsertBefore /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1101
+Faulty:
+tType-=11;
+Seed:
+dMin=Math.min(dMin,dN1);
+**************************************************
+8 InsertBefore /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1504
+Faulty:
+if (b2 == 0.0) {
+  break;
+}
+Seed:
+double xNormSqr=0;
+**************************************************
+9 InsertBefore /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1480
+Faulty:
+a2=0.0;
+Seed:
+computeGershgorinCircles();
+**************************************************
+10 Delete /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1537
+Faulty:
+if (work[np - 8] > b2 || work[np - 4] > b1) {
+  return;
+}
+Seed:
+for (int i=0; i < realEigenvalues.length; ++i) {
+  if ((realEigenvalues[i] == 0) && (imagEigenvalues[i] == 0)) {
+    return false;
+  }
+}
+**************************************************
+11 InsertBefore /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1517
+Faulty:
+a2=cnst3 * a2;
+Seed:
+tType=-4;
+**************************************************
+12 Replace /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1508
+Faulty:
+if (work[i4] > work[i4 - 2]) {
+  return;
+}
+Seed:
+final int lowerStart=4 * main.length;
+**************************************************
+13 Delete /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1537
+Faulty:
+if (work[np - 8] > b2 || work[np - 4] > b1) {
+  return;
+}
+Seed:
+return false;
+**************************************************
+14 InsertBefore /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1480
+Faulty:
+a2=0.0;
+Seed:
+final int m=realEigenvalues.length;
+**************************************************
+15 Delete /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1512
+Faulty:
+a2=a2 + b2;
+Seed:
+if (dMin == dN && dMin1 == dN1) {
+  final double gap2=dMin2 - a2 - dMin2 * 0.25;
+  final double gap1=a2 - dN - ((gap2 > 0.0 && gap2 > b2) ? (b2 / gap2) * b2 : (b1 + b2));
+  if (gap1 > 0.0 && gap1 > b1) {
+    tau=Math.max(dN - (b1 / gap1) * b1,0.5 * dMin);
+    tType=-2;
+  }
+ else {
+    double s=0.0;
+    if (dN > b1) {
+      s=dN - b1;
+    }
+    if (a2 > (b1 + b2)) {
+      s=Math.min(s,a2 - (b1 + b2));
+    }
+    tau=Math.max(s,0.333 * dMin);
+    tType=-3;
+  }
+}
+ else {
+  tType=-4;
+  double s=0.25 * dMin;
+  double gam;
+  int np;
+  if (dMin == dN) {
+    gam=dN;
+    a2=0.0;
+    if (work[nn - 5] > work[nn - 7]) {
+      return;
+    }
+    b2=work[nn - 5] / work[nn - 7];
+    np=nn - 9;
+  }
+ else {
+    np=nn - 2 * pingPong;
+    b2=work[np - 2];
+    gam=dN1;
+    if (work[np - 4] > work[np - 2]) {
+      return;
+    }
+    a2=work[np - 4] / work[np - 2];
+    if (work[nn - 9] > work[nn - 11]) {
+      return;
+    }
+    b2=work[nn - 9] / work[nn - 11];
+    np=nn - 13;
+  }
+  a2=a2 + b2;
+  for (int i4=np; i4 >= 4 * start + 2 + pingPong; i4-=4) {
+    if (b2 == 0.0) {
+      break;
+    }
+    b1=b2;
+    if (work[i4] > work[i4 - 2]) {
+      return;
+    }
+    b2=b2 * (work[i4] / work[i4 - 2]);
+    a2=a2 + b2;
+    if (100 * Math.max(b2,b1) < a2 || cnst1 < a2) {
+      break;
+    }
+  }
+  a2=cnst3 * a2;
+  if (a2 < cnst1) {
+    s=gam * (1 - Math.sqrt(a2)) / (1 + a2);
+  }
+  tau=s;
+}
+**************************************************
+16 Delete /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1625
+Faulty:
+tType=-9;
+Seed:
+return copy().mapTanhToSelf();
+**************************************************
+Evaluations: 1265
+EstimatedTime: 424486

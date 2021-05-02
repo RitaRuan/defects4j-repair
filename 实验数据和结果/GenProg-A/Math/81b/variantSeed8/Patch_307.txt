@@ -1,0 +1,32 @@
+1 InsertBefore /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1537
+Faulty:
+if (work[np - 8] > b2 || work[np - 4] > b1) {
+  return;
+}
+Seed:
+g=0.25;
+**************************************************
+2 Delete /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1480
+Faulty:
+a2=0.0;
+Seed:
+if (work[nn - 9] > work[nn - 11]) {
+  return;
+}
+**************************************************
+3 Replace /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1537
+Faulty:
+if (work[np - 8] > b2 || work[np - 4] > b1) {
+  return;
+}
+Seed:
+this.eigenvectors=eigenvectors;
+**************************************************
+4 InsertBefore /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1625
+Faulty:
+tType=-9;
+Seed:
+double absDCurrent=Math.abs(main[0]);
+**************************************************
+Evaluations: 418
+EstimatedTime: 120301

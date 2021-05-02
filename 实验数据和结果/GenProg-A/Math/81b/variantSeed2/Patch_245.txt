@@ -1,0 +1,32 @@
+1 Replace /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1484
+Faulty:
+b2=work[nn - 5] / work[nn - 7];
+Seed:
+upperSpectra=Double.NEGATIVE_INFINITY;
+**************************************************
+2 Replace /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1484
+Faulty:
+b2=work[nn - 5] / work[nn - 7];
+Seed:
+upperSpectra=Double.NEGATIVE_INFINITY;
+**************************************************
+3 Replace /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1507
+Faulty:
+b1=b2;
+Seed:
+double largest=Double.NEGATIVE_INFINITY;
+**************************************************
+4 Delete /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1517
+Faulty:
+a2=cnst3 * a2;
+Seed:
+return copy().mapCoshToSelf();
+**************************************************
+5 Delete /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1529
+Faulty:
+tType=-5;
+Seed:
+return copy().mapSqrtToSelf();
+**************************************************
+Evaluations: 331
+EstimatedTime: 101984

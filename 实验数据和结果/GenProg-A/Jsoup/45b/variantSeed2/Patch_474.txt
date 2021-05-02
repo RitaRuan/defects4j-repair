@@ -1,0 +1,59 @@
+1 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/45b/src/main/java/org/jsoup/parser/TreeBuilder.java 78
+Faulty:
+return process(new Token.EndTag().name(name));
+Seed:
+this.errors=errors;
+**************************************************
+2 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/45b/src/main/java/org/jsoup/parser/HtmlTreeBuilder.java 398
+Faulty:
+transition(HtmlTreeBuilderState.InRow);
+Seed:
+state=HtmlTreeBuilderState.Initial;
+**************************************************
+3 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/45b/src/main/java/org/jsoup/parser/HtmlTreeBuilder.java 398
+Faulty:
+transition(HtmlTreeBuilderState.InRow);
+Seed:
+state=HtmlTreeBuilderState.Initial;
+**************************************************
+4 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/45b/src/main/java/org/jsoup/parser/HtmlTreeBuilder.java 398
+Faulty:
+transition(HtmlTreeBuilderState.InRow);
+Seed:
+state=HtmlTreeBuilderState.Initial;
+**************************************************
+5 Delete /home/ubuntu/rtx/d4j/Jsoup/45b/src/main/java/org/jsoup/parser/HtmlTreeBuilder.java 398
+Faulty:
+transition(HtmlTreeBuilderState.InRow);
+Seed:
+characterReferenceError("missing semicolon");
+**************************************************
+6 Delete /home/ubuntu/rtx/d4j/Jsoup/45b/src/main/java/org/jsoup/parser/HtmlTreeBuilder.java 398
+Faulty:
+transition(HtmlTreeBuilderState.InRow);
+Seed:
+characterReferenceError("missing semicolon");
+**************************************************
+7 Delete /home/ubuntu/rtx/d4j/Jsoup/45b/src/main/java/org/jsoup/parser/HtmlTreeBuilder.java 398
+Faulty:
+transition(HtmlTreeBuilderState.InRow);
+Seed:
+characterReferenceError("missing semicolon");
+**************************************************
+8 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/45b/src/main/java/org/jsoup/parser/HtmlTreeBuilder.java 633
+Faulty:
+while (!formattingElements.isEmpty()) {
+  Element el=removeLastFormattingElement();
+  if (el == null)   break;
+}
+Seed:
+String tagName=currentElement().tagName();
+**************************************************
+9 Delete /home/ubuntu/rtx/d4j/Jsoup/45b/src/main/java/org/jsoup/parser/HtmlTreeBuilder.java 114
+Faulty:
+currentToken=token;
+Seed:
+boolean isHexMode=reader.matchConsumeIgnoreCase("X");
+**************************************************
+Evaluations: 647
+EstimatedTime: 712820

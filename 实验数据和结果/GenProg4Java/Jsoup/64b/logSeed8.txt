@@ -1,0 +1,1997 @@
+1 [main] DEBUG clegoues.genprog4java.fitness.Fitness  - parsing granularity, value: class
+25 [main] DEBUG clegoues.genprog4java.fitness.Fitness  - parsing granularity, value: class
+#Fri Mar 05 19:52:25 CST 2021
+negativeTestWeight=2.0
+classSourceFolder=/home/rtx/repair/d4j/Jsoup/64b/target/classes
+model=default
+sampleStrategy=variant
+srcClassPath=/home/rtx/repair/d4j/Jsoup/64b/target/classes
+sourceVersion=1.8
+popsize=40
+regenPaths=false
+posCoverageFile=coverage.path.pos
+continue=false
+edits=APPEND;DELETE;REPLACE
+negCoverageFile=coverage.path.neg
+workingDir=/home/rtx/repair/d4j/Jsoup/64b/
+clearTestCache=false
+skipFailedSanity=false
+sample=0.1 
+oracleGenome=
+testGranularity=class
+justTestingFaultLoc=false
+faultLocStrategy=standardPathFile
+crossp=0.5
+pMutation=1
+generations=10
+positiveTests=/home/rtx/repair/d4j/Jsoup/64b/pos.tests
+javaVM=/home/rtx/java/jdk1.8.0_271/jre/bin/java
+seed=8
+negativePathWeight=0.35
+compileCommand=
+fixStrategy=classScope
+allowCoverageFail=false
+targetClassName=/home/rtx/repair/d4j/Jsoup/64b/bugfiles.txt
+javaRuntime=java.lang.Runtime@6576fe71
+classTestFolder=
+modelPath=OVERALLModel.txt
+sanity=yes
+positivePathWeight=0.65
+jacocoPath=/home/rtx/eclipse-workspace/genprog4java/lib/jacocoagent.jar
+negativeTests=/home/rtx/repair/d4j/Jsoup/64b/neg.tests
+pathToFileHumanInjectedFaultLoc=fileHumanInjectedFaultLoc.txt
+outputDir=/home/rtx/repair/d4j/Jsoup/64b/genprog4java/variantSeed8/
+testClassPath=/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/junit/junit/4.12/junit-4.12.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/com/google/code/gson/gson/2.7/gson-2.7.jar\:/home/rtx/repair/d4j/Jsoup/64b/target/classes\:/home/rtx/repair/d4j/Jsoup/64b/target/test-classes\:/home/rtx/repair/defects4j/framework/projects/lib/junit-4.11.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/commons-lang/commons-lang/2.4/commons-lang-2.4.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/junit/junit/4.5/junit-4.5.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/com/google/code/gson/gson/2.7/gson-2.7.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/commons-lang/commons-lang/2.4/commons-lang-2.4.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/junit/junit/4.12/junit-4.12.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/junit/junit/4.5/junit-4.5.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-http/9.2.22.v20170606/jetty-http-9.2.22.v20170606.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-http/9.2.26.v20180806/jetty-http-9.2.26.v20180806.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-http/9.2.28.v20190418/jetty-http-9.2.28.v20190418.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-io/9.2.22.v20170606/jetty-io-9.2.22.v20170606.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-io/9.2.26.v20180806/jetty-io-9.2.26.v20180806.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-io/9.2.28.v20190418/jetty-io-9.2.28.v20190418.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-security/9.2.22.v20170606/jetty-security-9.2.22.v20170606.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-security/9.2.26.v20180806/jetty-security-9.2.26.v20180806.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-security/9.2.28.v20190418/jetty-security-9.2.28.v20190418.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-server/9.2.22.v20170606/jetty-server-9.2.22.v20170606.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-server/9.2.26.v20180806/jetty-server-9.2.26.v20180806.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-server/9.2.28.v20190418/jetty-server-9.2.28.v20190418.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-servlet/9.2.22.v20170606/jetty-servlet-9.2.22.v20170606.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-servlet/9.2.26.v20180806/jetty-servlet-9.2.26.v20180806.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-servlet/9.2.28.v20190418/jetty-servlet-9.2.28.v20190418.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-util/9.2.22.v20170606/jetty-util-9.2.22.v20170606.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-util/9.2.26.v20180806/jetty-util-9.2.26.v20180806.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-util/9.2.28.v20190418/jetty-util-9.2.28.v20190418.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-http/9.2.22.v20170606/jetty-http-9.2.22.v20170606.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-http/9.2.26.v20180806/jetty-http-9.2.26.v20180806.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-http/9.2.28.v20190418/jetty-http-9.2.28.v20190418.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-io/9.2.22.v20170606/jetty-io-9.2.22.v20170606.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-io/9.2.26.v20180806/jetty-io-9.2.26.v20180806.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-io/9.2.28.v20190418/jetty-io-9.2.28.v20190418.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-security/9.2.22.v20170606/jetty-security-9.2.22.v20170606.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-security/9.2.26.v20180806/jetty-security-9.2.26.v20180806.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-security/9.2.28.v20190418/jetty-security-9.2.28.v20190418.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-server/9.2.22.v20170606/jetty-server-9.2.22.v20170606.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-server/9.2.26.v20180806/jetty-server-9.2.26.v20180806.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-server/9.2.28.v20190418/jetty-server-9.2.28.v20190418.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-servlet/9.2.22.v20170606/jetty-servlet-9.2.22.v20170606.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-servlet/9.2.26.v20180806/jetty-servlet-9.2.26.v20180806.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-servlet/9.2.28.v20190418/jetty-servlet-9.2.28.v20190418.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-util/9.2.22.v20170606/jetty-util-9.2.22.v20170606.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-util/9.2.26.v20180806/jetty-util-9.2.26.v20180806.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-util/9.2.28.v20190418/jetty-util-9.2.28.v20190418.jar
+faultStrategy=classScope
+sourceDir=src/main/java
+checkSpace=false
+search=gp
+globalExtension=.java
+faultSpaceSubSet=1/5
+maxVariants=50
+libs=/home/rtx/eclipse-workspace/genprog4java/lib/junittestrunner.jar\:/home/rtx/eclipse-workspace/genprog4java/lib/commons-cli-20040117.000000.jar\:/home/rtx/eclipse-workspace/genprog4java/lib/junit-4.12.jar\:/home/rtx/eclipse-workspace/genprog4java/lib/hamcrest-core-1.3.jar\:/home/rtx/eclipse-workspace/genprog4java/lib/log4j-1.2.17.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/junit/junit/4.12/junit-4.12.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/com/google/code/gson/gson/2.7/gson-2.7.jar\:/home/rtx/repair/d4j/Jsoup/64b/target/classes\:/home/rtx/repair/d4j/Jsoup/64b/target/test-classes\:/home/rtx/repair/defects4j/framework/projects/lib/junit-4.11.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/commons-lang/commons-lang/2.4/commons-lang-2.4.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/junit/junit/4.5/junit-4.5.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/com/google/code/gson/gson/2.7/gson-2.7.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/commons-lang/commons-lang/2.4/commons-lang-2.4.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/junit/junit/4.12/junit-4.12.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/junit/junit/4.5/junit-4.5.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-http/9.2.22.v20170606/jetty-http-9.2.22.v20170606.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-http/9.2.26.v20180806/jetty-http-9.2.26.v20180806.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-http/9.2.28.v20190418/jetty-http-9.2.28.v20190418.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-io/9.2.22.v20170606/jetty-io-9.2.22.v20170606.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-io/9.2.26.v20180806/jetty-io-9.2.26.v20180806.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-io/9.2.28.v20190418/jetty-io-9.2.28.v20190418.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-security/9.2.22.v20170606/jetty-security-9.2.22.v20170606.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-security/9.2.26.v20180806/jetty-security-9.2.26.v20180806.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-security/9.2.28.v20190418/jetty-security-9.2.28.v20190418.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-server/9.2.22.v20170606/jetty-server-9.2.22.v20170606.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-server/9.2.26.v20180806/jetty-server-9.2.26.v20180806.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-server/9.2.28.v20190418/jetty-server-9.2.28.v20190418.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-servlet/9.2.22.v20170606/jetty-servlet-9.2.22.v20170606.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-servlet/9.2.26.v20180806/jetty-servlet-9.2.26.v20180806.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-servlet/9.2.28.v20190418/jetty-servlet-9.2.28.v20190418.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-util/9.2.22.v20170606/jetty-util-9.2.22.v20170606.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-util/9.2.26.v20180806/jetty-util-9.2.26.v20180806.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-util/9.2.28.v20190418/jetty-util-9.2.28.v20190418.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-http/9.2.22.v20170606/jetty-http-9.2.22.v20170606.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-http/9.2.26.v20180806/jetty-http-9.2.26.v20180806.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-http/9.2.28.v20190418/jetty-http-9.2.28.v20190418.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-io/9.2.22.v20170606/jetty-io-9.2.22.v20170606.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-io/9.2.26.v20180806/jetty-io-9.2.26.v20180806.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-io/9.2.28.v20190418/jetty-io-9.2.28.v20190418.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-security/9.2.22.v20170606/jetty-security-9.2.22.v20170606.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-security/9.2.26.v20180806/jetty-security-9.2.26.v20180806.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-security/9.2.28.v20190418/jetty-security-9.2.28.v20190418.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-server/9.2.22.v20170606/jetty-server-9.2.22.v20170606.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-server/9.2.26.v20180806/jetty-server-9.2.26.v20180806.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-server/9.2.28.v20190418/jetty-server-9.2.28.v20190418.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-servlet/9.2.22.v20170606/jetty-servlet-9.2.22.v20170606.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-servlet/9.2.26.v20180806/jetty-servlet-9.2.26.v20180806.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-servlet/9.2.28.v20190418/jetty-servlet-9.2.28.v20190418.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-util/9.2.22.v20170606/jetty-util-9.2.22.v20170606.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-util/9.2.26.v20180806/jetty-util-9.2.26.v20180806.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-util/9.2.28.v20190418/jetty-util-9.2.28.v20190418.jar\:/home/rtx/repair/d4j/Jsoup/64b/target/classes
+crossover=onepoint
+109 [main] INFO clegoues.genprog4java.main.Main  - Configuration file loaded
+Deserialized fitnessCache HashMap
+55883 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - loaded from source clegoues.genprog4java.java.ClassInfo@8ac0c180
+55884 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - sanity checking begins
+57248 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 1 out of 17
+57622 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+57622 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 2 out of 17
+57942 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+57944 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 3 out of 17
+58354 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+58354 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 4 out of 17
+58773 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+58773 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 5 out of 17
+59117 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+59117 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 6 out of 17
+59391 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+59392 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 7 out of 17
+59766 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+59766 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 8 out of 17
+60069 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+60070 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 9 out of 17
+60460 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+60460 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 10 out of 17
+60789 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+60789 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 11 out of 17
+61020 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+61020 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 12 out of 17
+61275 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+61275 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 13 out of 17
+61500 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+61500 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 14 out of 17
+61794 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+61794 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 15 out of 17
+62211 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+62211 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 16 out of 17
+62553 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+62554 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 17 out of 17
+62950 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+62951 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - 	n1: 
+63378 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - false (0)
+
+63378 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - 	n2: 
+63786 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - false (0)
+
+63787 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - sanity checking completed (time taken = 7903)
+63787 [main] INFO clegoues.genprog4java.localization.DefaultLocalization  - Start Fault Localization
+63796 [main] INFO clegoues.genprog4java.localization.DefaultLocalization  - Finish Fault Localization
+63797 [main] INFO clegoues.genprog4java.Search.Search  - search: genetic algorithm begins
+
+63828 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 2.0 original (stored at: )
+64541 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 1.0 StmtDelete(1407) (stored at: variant0)
+65237 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 1.0 StmtDelete(1410) (stored at: variant1)
+65242 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 1.0 StmtDelete(1392) (stored at: )
+66948 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 2.0 StmtAppend(1412,1411) (stored at: variant2)
+66953 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtDelete(1399) (stored at: )
+67107 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1476: error: cannot find symbol
+            if (!StringUtil.isWhitespace(c))
+                                         ^
+  symbol:   variable c
+  location: class HtmlTreeBuilderState
+1 error
+
+67108 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(1400) at variant3 fails to compile
+
+67108 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtDelete(1400) (stored at: variant3)
+67117 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtReplace(1394,1398) (stored at: )
+67258 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1464: error: cannot find symbol
+        for (int i = 0; i < data.length(); i++) {
+                            ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+org/jsoup/parser/HtmlTreeBuilderState.java:1465: error: cannot find symbol
+			char c = data.charAt(i);
+			         ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+2 errors
+
+67258 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(1392,1398) at variant4 fails to compile
+
+67258 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtReplace(1392,1398) (stored at: variant4)
+67263 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtDelete(1396) (stored at: )
+67379 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1465: error: cannot find symbol
+			for (int i = 0; i < data.length(); i++) {
+			                    ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+org/jsoup/parser/HtmlTreeBuilderState.java:1466: error: cannot find symbol
+				char c = data.charAt(i);
+				         ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+2 errors
+
+67380 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(1393,1398) at variant5 fails to compile
+
+67380 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtReplace(1393,1398) (stored at: variant5)
+67383 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtDelete(1394) (stored at: )
+67392 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 2.0 StmtAppend(1398,1398) (stored at: )
+67397 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 2.0 StmtDelete(1398) (stored at: )
+67401 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 1.0 StmtDelete(1407) (stored at: )
+68299 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 2.0 StmtAppend(1410,1407) (stored at: variant6)
+68302 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtReplace(1396,1403) (stored at: )
+68305 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 1.0 StmtDelete(1402) (stored at: )
+68412 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1470: error: missing return statement
+    }
+    ^
+1 error
+
+68412 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(1396) at variant7 fails to compile
+
+68412 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtDelete(1396) (stored at: variant7)
+68419 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 2.0 StmtAppend(1398,1398) (stored at: )
+68428 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 2.0 StmtDelete(1399) (stored at: )
+68927 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 2.0 StmtDelete(1407) (stored at: variant8)
+68931 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 2.0 StmtDelete(1393) (stored at: )
+69521 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 1.0 StmtReplace(1401,1402) (stored at: variant9)
+69603 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1480: error: missing return statement
+    }
+    ^
+1 error
+
+69603 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(1403) at variant10 fails to compile
+
+69604 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtDelete(1403) (stored at: variant10)
+69608 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtDelete(1403) (stored at: )
+69612 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 1.0 StmtDelete(1393) (stored at: )
+71011 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 2.0 StmtAppend(1410,1412) (stored at: variant11)
+71094 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1473: error: cannot find symbol
+            return isWhitespace(data);
+                                ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+1 error
+
+71094 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(1394,1398) at variant12 fails to compile
+
+71094 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtAppend(1394,1398) (stored at: variant12)
+71771 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 1.0 StmtDelete(1395) (stored at: variant13)
+72344 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 1.0 StmtAppend(1411,1413) (stored at: variant14)
+72346 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 2.0 StmtDelete(1395) (stored at: )
+73072 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 2.0 StmtDelete(1405) (stored at: variant15)
+73150 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1486: error: cannot find symbol
+			for (int i = 0; i < data.length(); i++) {
+			                    ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+org/jsoup/parser/HtmlTreeBuilderState.java:1487: error: cannot find symbol
+				char c = data.charAt(i);
+				         ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+org/jsoup/parser/HtmlTreeBuilderState.java:1489: error: incompatible types: unexpected return value
+					return false;
+					       ^
+3 errors
+
+73151 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(1407,1398) at variant16 fails to compile
+
+73151 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtAppend(1407,1398) (stored at: variant16)
+73962 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 2.0 StmtReplace(1413,1412) (stored at: variant17)
+74894 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 2.0 StmtDelete(1412) (stored at: variant18)
+75707 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 1.0 StmtAppend(1411,1408) (stored at: variant19)
+75709 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 2.0 StmtDelete(1398) (stored at: )
+76243 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 2.0 StmtReplace(1413,1408) (stored at: variant20)
+76707 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 2.0 StmtDelete(1393) (stored at: variant21)
+76707 [main] INFO clegoues.genprog4java.Search.Search  - search: generation1
+79787 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 2.0 StmtAppend(1398,1398) StmtAppend(1406,1410) (stored at: variant22)
+81435 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 2.0 StmtReplace(1413,1408) StmtDelete(1405) (stored at: variant23)
+81858 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 2.0 StmtDelete(1393) StmtDelete(1399) (stored at: variant24)
+81865 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 2.0 StmtAppend(1412,1411) StmtReplace(1412,1406) (stored at: )
+83329 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 2.0 StmtDelete(1405) StmtAppend(1410,1411) (stored at: variant25)
+84121 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 1.0 StmtDelete(1407) StmtDelete(1411) (stored at: variant26)
+84180 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1476: error: cannot find symbol
+            if (!StringUtil.isWhitespace(c))
+                                         ^
+  symbol:   variable c
+  location: class HtmlTreeBuilderState
+1 error
+
+84180 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(1410,1407) StmtDelete(1400) at variant27 fails to compile
+
+84181 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(1410,1407) StmtDelete(1400) (stored at: variant27)
+85607 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 2.0 StmtDelete(1393) StmtAppend(1401,1402) (stored at: variant28)
+87237 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 1.0 StmtReplace(1413,1408) StmtDelete(1398) (stored at: variant29)
+88636 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(1399) StmtReplace(1396,1403) (stored at: variant30)
+90045 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 1.0 StmtReplace(1413,1412) StmtReplace(1407,1405) (stored at: variant31)
+91505 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 1.0 StmtAppend(1410,1407) StmtDelete(1399) (stored at: variant32)
+92462 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 1.0 StmtDelete(1393) StmtAppend(1407,1407) (stored at: variant33)
+93819 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 2.0 StmtAppend(1412,1411) StmtDelete(1408) (stored at: variant34)
+93821 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 2.0 StmtDelete(1411) (stored at: )
+93825 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 1.0 StmtDelete(1393) StmtReplace(1396,1402) (stored at: )
+94647 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 2.0 StmtDelete(1410) StmtDelete(1405) (stored at: variant35)
+96596 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 1.0 StmtReplace(1413,1412) StmtDelete(1392) (stored at: variant36)
+96655 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1480: error: missing return statement
+    }
+    ^
+1 error
+
+96655 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(1412,1411) StmtDelete(1403) at variant37 fails to compile
+
+96655 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(1412,1411) StmtDelete(1403) (stored at: variant37)
+98332 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 1.0 StmtAppend(1410,1412) StmtReplace(1401,1402) (stored at: variant38)
+100236 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 1.0 StmtAppend(1412,1411) StmtDelete(1410) (stored at: variant39)
+101087 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 2.0 StmtAppend(1398,1398) StmtAppend(1411,1406) (stored at: variant40)
+101627 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 2.0 StmtReplace(1398,1398) (stored at: variant41)
+101633 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 2.0 StmtDelete(1399) StmtReplace(1395,1402) (stored at: )
+102672 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 2.0 StmtReplace(1413,1408) StmtDelete(1407) (stored at: variant42)
+104280 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 2.0 StmtDelete(1407) StmtDelete(1413) (stored at: variant43)
+104328 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1474: error: cannot find symbol
+            if (!StringUtil.isWhitespace(c))
+                                         ^
+  symbol:   variable c
+  location: class HtmlTreeBuilderState
+1 error
+
+104328 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(1393) StmtDelete(1400) at variant44 fails to compile
+
+104328 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(1393) StmtDelete(1400) (stored at: variant44)
+105826 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 2.0 StmtDelete(1405) StmtReplace(1403,1402) (stored at: variant45)
+107520 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 2.0 StmtAppend(1412,1411) StmtDelete(1402) (stored at: variant46)
+108278 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 1.0 StmtDelete(1393) StmtReplace(1408,1408) (stored at: variant47)
+110103 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 2.0 StmtAppend(1412,1411) StmtReplace(1401,1402) (stored at: variant48)
+110164 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1465: error: cannot find symbol
+			for (int i = 0; i < data.length(); i++) {
+			                    ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+org/jsoup/parser/HtmlTreeBuilderState.java:1466: error: cannot find symbol
+				char c = data.charAt(i);
+				         ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+2 errors
+
+110164 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(1410,1412) StmtReplace(1393,1398) at variant49 fails to compile
+
+110164 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(1410,1412) StmtReplace(1393,1398) (stored at: variant49)
+111610 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 2.0 StmtDelete(1398) StmtAppend(1411,1405) (stored at: variant50)
+113498 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 1.0 StmtDelete(1399) StmtAppend(1408,1405) (stored at: variant51)
+114837 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 2.0 StmtAppend(1410,1407) StmtAppend(1406,1408) (stored at: variant52)
+114840 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 2.0 StmtDelete(1402) (stored at: )
+116139 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 2.0 StmtReplace(1413,1412) StmtDelete(1399) (stored at: variant53)
+116141 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 1.0 StmtDelete(1407) (stored at: )
+116630 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 1.0 StmtDelete(1393) StmtReplace(1405,1405) (stored at: variant54)
+117082 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 1.0 StmtDelete(1398) StmtDelete(1400) (stored at: variant55)
+117089 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(1393,1398) (stored at: )
+117092 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 1.0 StmtDelete(1402) (stored at: )
+118052 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 2.0 StmtDelete(1405) (stored at: variant56)
+118502 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 2.0 StmtDelete(1413) (stored at: variant57)
+118504 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 2.0 StmtDelete(1392) (stored at: )
+118976 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 1.0 StmtDelete(1410) (stored at: variant58)
+119969 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 2.0 StmtDelete(1408) (stored at: variant59)
+120026 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1483: error: missing return statement
+    }
+    ^
+1 error
+
+120026 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(1403,1398) at variant60 fails to compile
+
+120026 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(1403,1398) (stored at: variant60)
+120031 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(1394,1398) (stored at: )
+120032 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 2.0 StmtDelete(1412) (stored at: )
+120034 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(1396) (stored at: )
+120036 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 2.0 StmtDelete(1412) (stored at: )
+120620 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 2.0 StmtAppend(1410,1408) (stored at: variant61)
+120624 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(1394,1398) (stored at: )
+120624 [main] INFO clegoues.genprog4java.Search.Search  - search: generation2
+121463 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1469: error: cannot find symbol
+			for (int i = 0; i < data.length(); i++) {
+			                    ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+org/jsoup/parser/HtmlTreeBuilderState.java:1470: error: cannot find symbol
+				char c = data.charAt(i);
+				         ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+2 errors
+
+121671 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1470: error: missing return statement
+    }
+    ^
+1 error
+
+121750 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1473: error: cannot find symbol
+            return isWhitespace(data);
+                                ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+1 error
+
+124142 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 1.0 StmtDelete(1407) StmtDelete(1413) StmtAppend(1413,1412) (stored at: variant62)
+125131 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 2.0 StmtDelete(1398) StmtAppend(1411,1405) StmtReplace(1413,1413) (stored at: variant63)
+125178 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1469: error: cannot find symbol
+			for (int i = 0; i < data.length(); i++) {
+			                    ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+org/jsoup/parser/HtmlTreeBuilderState.java:1470: error: cannot find symbol
+				char c = data.charAt(i);
+				         ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+2 errors
+
+125178 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(1405) StmtReplace(1403,1402) StmtAppend(1393,1398) at variant64 fails to compile
+
+125178 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(1405) StmtReplace(1403,1402) StmtAppend(1393,1398) (stored at: variant64)
+125234 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1487: error: cannot find symbol
+        for (int i = 0; i < data.length(); i++) {
+                            ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+org/jsoup/parser/HtmlTreeBuilderState.java:1488: error: cannot find symbol
+			char c = data.charAt(i);
+			         ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+org/jsoup/parser/HtmlTreeBuilderState.java:1490: error: incompatible types: unexpected return value
+				return false;
+				       ^
+3 errors
+
+125235 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(1393) StmtDelete(1399) StmtReplace(1413,1398) at variant65 fails to compile
+
+125235 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(1393) StmtDelete(1399) StmtReplace(1413,1398) (stored at: variant65)
+126798 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 1.0 StmtAppend(1412,1411) StmtDelete(1402) StmtReplace(1413,1405) (stored at: variant66)
+127664 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 1.0 StmtAppend(1410,1408) StmtDelete(1408) (stored at: variant67)
+128453 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 2.0 StmtReplace(1398,1398) StmtDelete(1407) (stored at: variant68)
+130085 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 2.0 StmtDelete(1399) StmtReplace(1395,1402) StmtAppend(1411,1405) (stored at: variant69)
+131837 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 1.0 StmtDelete(1413) StmtDelete(1395) (stored at: variant70)
+132676 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 1.0 StmtDelete(1405) StmtDelete(1399) (stored at: variant71)
+133428 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(1402) StmtDelete(1407) (stored at: variant72)
+133474 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1468: error: missing return statement
+    }
+    ^
+1 error
+
+133475 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(1392) StmtDelete(1396) at variant73 fails to compile
+
+133475 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(1392) StmtDelete(1396) (stored at: variant73)
+135365 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 2.0 StmtDelete(1413) StmtDelete(1411) (stored at: variant74)
+135423 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1501: error: cannot find symbol
+        for (int i = 0; i < data.length(); i++) {
+                            ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+org/jsoup/parser/HtmlTreeBuilderState.java:1502: error: cannot find symbol
+			char c = data.charAt(i);
+			         ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+org/jsoup/parser/HtmlTreeBuilderState.java:1504: error: incompatible types: unexpected return value
+				return false;
+				       ^
+3 errors
+
+135424 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(1398,1398) StmtAppend(1411,1406) StmtReplace(1413,1398) at variant75 fails to compile
+
+135424 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtAppend(1398,1398) StmtAppend(1411,1406) StmtReplace(1413,1398) (stored at: variant75)
+137118 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 2.0 StmtAppend(1412,1411) StmtReplace(1401,1402) StmtDelete(1399) (stored at: variant76)
+137121 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 2.0 StmtDelete(1392) StmtDelete(1393) (stored at: )
+138608 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 2.0 StmtAppend(1398,1398) StmtAppend(1406,1410) StmtDelete(1413) (stored at: variant77)
+140010 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 2.0 StmtDelete(1410) StmtDelete(1405) StmtReplace(1395,1398) (stored at: variant78)
+140409 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 2.0 StmtAppend(1412,1411) StmtReplace(1412,1406) StmtDelete(1413) (stored at: variant79)
+140469 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1480: error: missing return statement
+    }
+    ^
+1 error
+
+140470 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(1410) StmtDelete(1405) StmtDelete(1403) at variant80 fails to compile
+
+140470 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(1410) StmtDelete(1405) StmtDelete(1403) (stored at: variant80)
+141799 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 2.0 StmtAppend(1412,1411) StmtDelete(1402) StmtAppend(1412,1412) (stored at: variant81)
+141806 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 2.0 StmtDelete(1410) StmtDelete(1405) StmtReplace(1413,1413) (stored at: )
+143281 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 2.0 StmtAppend(1412,1411) StmtDelete(1408) StmtDelete(1395) (stored at: variant82)
+144120 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 2.0 StmtDelete(1408) StmtReplace(1398,1398) (stored at: variant83)
+145679 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 2.0 StmtAppend(1410,1407) StmtAppend(1406,1408) StmtReplace(1398,1398) (stored at: variant84)
+145726 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1470: error: missing return statement
+    }
+    ^
+1 error
+
+145726 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(1399) StmtReplace(1395,1402) StmtDelete(1396) at variant85 fails to compile
+
+145726 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(1399) StmtReplace(1395,1402) StmtDelete(1396) (stored at: variant85)
+145765 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1465: error: cannot find symbol
+			for (int i = 0; i < data.length(); i++) {
+			                    ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+org/jsoup/parser/HtmlTreeBuilderState.java:1466: error: cannot find symbol
+				char c = data.charAt(i);
+				         ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+2 errors
+
+145765 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(1393) StmtDelete(1399) StmtReplace(1393,1398) at variant86 fails to compile
+
+145765 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(1393) StmtDelete(1399) StmtReplace(1393,1398) (stored at: variant86)
+147038 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 2.0 StmtDelete(1393) StmtDelete(1399) StmtDelete(1412) (stored at: variant87)
+148664 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 1.0 StmtDelete(1408) StmtReplace(1403,1402) (stored at: variant88)
+150388 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 1.0 StmtAppend(1412,1411) StmtDelete(1402) StmtReplace(1395,1402) (stored at: variant89)
+152288 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtAppend(1412,1411) StmtDelete(1408) StmtDelete(1411) (stored at: variant90)
+153903 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 2.0 StmtDelete(1405) StmtAppend(1410,1411) StmtDelete(1395) (stored at: variant91)
+153908 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 2.0 StmtReplace(1413,1408) StmtDelete(1407) StmtReplace(1406,1406) (stored at: )
+153938 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 2.0 StmtDelete(1412) StmtReplace(1406,1412) (stored at: )
+154886 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 1.0 StmtDelete(1398) StmtAppend(1411,1405) StmtDelete(1402) (stored at: variant92)
+154937 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1475: error: missing return statement
+    }
+    ^
+1 error
+
+154937 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(1393) StmtDelete(1399) StmtDelete(1403) at variant93 fails to compile
+
+154938 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(1393) StmtDelete(1399) StmtDelete(1403) (stored at: variant93)
+156249 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 2.0 StmtReplace(1413,1408) StmtDelete(1405) StmtReplace(1398,1398) (stored at: variant94)
+156316 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1469: error: cannot find symbol
+			for (int i = 0; i < data.length(); i++) {
+			                    ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+org/jsoup/parser/HtmlTreeBuilderState.java:1470: error: cannot find symbol
+				char c = data.charAt(i);
+				         ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+2 errors
+
+156316 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(1412) StmtAppend(1393,1398) at variant95 fails to compile
+
+156316 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(1412) StmtAppend(1393,1398) (stored at: variant95)
+157722 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 2.0 StmtAppend(1412,1411) StmtReplace(1401,1402) StmtAppend(1398,1398) (stored at: variant96)
+158207 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 1.0 StmtDelete(1399) StmtReplace(1395,1402) StmtDelete(1402) (stored at: variant97)
+158263 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1476: error: cannot find symbol
+            if (!StringUtil.isWhitespace(c)) {
+                                         ^
+  symbol:   variable c
+  location: class HtmlTreeBuilderState
+1 error
+
+158263 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(1407) StmtDelete(1402) StmtDelete(1400) at variant98 fails to compile
+
+158263 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(1407) StmtDelete(1402) StmtDelete(1400) (stored at: variant98)
+158311 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1469: error: cannot find symbol
+			for (int i = 0; i < data.length(); i++) {
+			                    ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+org/jsoup/parser/HtmlTreeBuilderState.java:1470: error: cannot find symbol
+				char c = data.charAt(i);
+				         ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+2 errors
+
+158312 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(1392,1398) at variant99 fails to compile
+
+158312 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtAppend(1392,1398) (stored at: variant99)
+158313 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 1.0 StmtDelete(1407) (stored at: )
+159756 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(1410) StmtAppend(1411,1405) StmtAppend(1412,1406) (stored at: variant100)
+159812 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1468: error: cannot find symbol
+        for (int i = 0; i < data.length(); i++) {
+                            ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+org/jsoup/parser/HtmlTreeBuilderState.java:1469: error: cannot find symbol
+			char c = data.charAt(i);
+			         ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+2 errors
+
+159812 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(1396,1398) at variant101 fails to compile
+
+159812 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(1396,1398) (stored at: variant101)
+160513 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 2.0 StmtDelete(1399) StmtAppend(1408,1408) (stored at: variant102)
+161386 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 1.0 StmtDelete(1406) (stored at: variant103)
+162644 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtAppend(1410,1407) StmtDelete(1402) StmtReplace(1412,1408) (stored at: variant104)
+162679 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1485: error: cannot find symbol
+        for (int i = 0; i < data.length(); i++) {
+                            ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+org/jsoup/parser/HtmlTreeBuilderState.java:1486: error: cannot find symbol
+			char c = data.charAt(i);
+			         ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+org/jsoup/parser/HtmlTreeBuilderState.java:1488: error: incompatible types: unexpected return value
+				return false;
+				       ^
+3 errors
+
+162679 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(1408,1398) at variant105 fails to compile
+
+162679 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(1408,1398) (stored at: variant105)
+163406 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 1.0 StmtDelete(1399) StmtDelete(1411) (stored at: variant106)
+163408 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 2.0 StmtReplace(1398,1398) (stored at: )
+164712 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 1.0 StmtDelete(1393) StmtDelete(1398) (stored at: variant107)
+164714 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 2.0 StmtReplace(1405,1405) (stored at: )
+164749 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1493: error: cannot find symbol
+			for (int i = 0; i < data.length(); i++) {
+			                    ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+org/jsoup/parser/HtmlTreeBuilderState.java:1494: error: cannot find symbol
+				char c = data.charAt(i);
+				         ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+org/jsoup/parser/HtmlTreeBuilderState.java:1496: error: incompatible types: unexpected return value
+					return false;
+					       ^
+3 errors
+
+164749 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(1412,1398) at variant108 fails to compile
+
+164749 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtAppend(1412,1398) (stored at: variant108)
+164785 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1465: error: cannot find symbol
+            for (int i = 0; i < data.length(); i++) {
+                                ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+org/jsoup/parser/HtmlTreeBuilderState.java:1466: error: cannot find symbol
+				char c = data.charAt(i);
+				         ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+org/jsoup/parser/HtmlTreeBuilderState.java:1470: error: cannot find symbol
+            return isWhitespace(data);
+                                ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+3 errors
+
+164785 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(1408) StmtReplace(1394,1398) at variant109 fails to compile
+
+164785 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(1408) StmtReplace(1394,1398) (stored at: variant109)
+165878 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 2.0 StmtAppend(1406,1411) (stored at: variant110)
+165916 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1470: error: missing return statement
+    }
+    ^
+1 error
+
+165916 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(1398,1398) StmtDelete(1405) StmtDelete(1396) at variant111 fails to compile
+
+165916 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtAppend(1398,1398) StmtDelete(1405) StmtDelete(1396) (stored at: variant111)
+165917 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(1396) (stored at: )
+166273 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 2.0 StmtReplace(1398,1398) (stored at: variant112)
+166575 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 1.0 StmtDelete(1405) StmtDelete(1399) (stored at: variant113)
+166576 [main] INFO clegoues.genprog4java.Search.Search  - search: generation3
+168601 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 2.0 StmtDelete(1410) StmtDelete(1405) StmtReplace(1395,1398) StmtDelete(1399) (stored at: variant114)
+169688 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 2.0 StmtAppend(1412,1411) StmtDelete(1408) StmtDelete(1395) StmtDelete(1406) (stored at: variant115)
+170776 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 2.0 StmtDelete(1412) StmtReplace(1406,1412) StmtReplace(1411,1405) (stored at: variant116)
+170812 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1465: error: cannot find symbol
+            for (int i = 0; i < data.length(); i++) {
+                                ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+org/jsoup/parser/HtmlTreeBuilderState.java:1466: error: cannot find symbol
+				char c = data.charAt(i);
+				         ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+org/jsoup/parser/HtmlTreeBuilderState.java:1470: error: cannot find symbol
+            return isWhitespace(data);
+                                ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+3 errors
+
+170812 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(1405,1405) StmtReplace(1394,1398) at variant117 fails to compile
+
+170812 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(1405,1405) StmtReplace(1394,1398) (stored at: variant117)
+170855 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1465: error: cannot find symbol
+			for (int i = 0; i < data.length(); i++) {
+			                    ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+org/jsoup/parser/HtmlTreeBuilderState.java:1466: error: cannot find symbol
+				char c = data.charAt(i);
+				         ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+2 errors
+
+170855 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(1398,1398) StmtAppend(1406,1410) StmtDelete(1413) StmtReplace(1393,1398) at variant118 fails to compile
+
+170855 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtAppend(1398,1398) StmtAppend(1406,1410) StmtDelete(1413) StmtReplace(1393,1398) (stored at: variant118)
+171982 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 2.0 StmtDelete(1405) StmtAppend(1410,1411) StmtDelete(1395) StmtAppend(1394,1398) (stored at: variant119)
+173033 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 1.0 StmtDelete(1399) StmtAppend(1408,1408) StmtDelete(1412) (stored at: variant120)
+174038 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 2.0 StmtAppend(1412,1411) StmtDelete(1402) StmtAppend(1412,1412) StmtReplace(1398,1398) (stored at: variant121)
+175333 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 2.0 StmtDelete(1405) StmtAppend(1410,1411) StmtDelete(1395) StmtDelete(1394) (stored at: variant122)
+176481 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 1.0 StmtDelete(1398) StmtAppend(1411,1405) StmtReplace(1413,1413) StmtDelete(1395) (stored at: variant123)
+177120 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 1.0 StmtDelete(1410) StmtDelete(1405) StmtReplace(1395,1398) StmtReplace(1396,1402) (stored at: variant124)
+178269 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(1399) StmtAppend(1408,1408) StmtDelete(1413) (stored at: variant125)
+179541 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(1399) StmtAppend(1408,1408) StmtDelete(1392) (stored at: variant126)
+180147 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 1.0 StmtDelete(1408) StmtReplace(1398,1398) StmtReplace(1411,1411) (stored at: variant127)
+180703 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 2.0 StmtDelete(1398) StmtAppend(1411,1405) StmtReplace(1413,1413) StmtDelete(1400) (stored at: variant128)
+181391 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 1.0 StmtAppend(1412,1411) StmtReplace(1401,1402) StmtDelete(1399) StmtDelete(1402) (stored at: variant129)
+181395 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(1405,1405) StmtReplace(1394,1398) (stored at: )
+182492 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 1.0 StmtReplace(1413,1408) StmtDelete(1407) StmtReplace(1406,1406) StmtDelete(1399) (stored at: variant130)
+183092 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 2.0 StmtAppend(1412,1411) StmtReplace(1401,1402) StmtAppend(1398,1398) StmtReplace(1406,1406) (stored at: variant131)
+183129 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1469: error: cannot find symbol
+			for (int i = 0; i < data.length(); i++) {
+			                    ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+org/jsoup/parser/HtmlTreeBuilderState.java:1470: error: cannot find symbol
+				char c = data.charAt(i);
+				         ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+2 errors
+
+183129 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(1410) StmtDelete(1405) StmtReplace(1413,1413) StmtAppend(1393,1398) at variant132 fails to compile
+
+183129 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(1410) StmtDelete(1405) StmtReplace(1413,1413) StmtAppend(1393,1398) (stored at: variant132)
+183164 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1499: error: cannot find symbol
+			for (int i = 0; i < data.length(); i++) {
+			                    ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+org/jsoup/parser/HtmlTreeBuilderState.java:1500: error: cannot find symbol
+				char c = data.charAt(i);
+				         ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+org/jsoup/parser/HtmlTreeBuilderState.java:1502: error: incompatible types: unexpected return value
+					return false;
+					       ^
+3 errors
+
+183164 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(1412,1411) StmtReplace(1401,1402) StmtAppend(1398,1398) StmtAppend(1412,1398) at variant133 fails to compile
+
+183164 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtAppend(1412,1411) StmtReplace(1401,1402) StmtAppend(1398,1398) StmtAppend(1412,1398) (stored at: variant133)
+183196 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1465: error: cannot find symbol
+            for (int i = 0; i < data.length(); i++) {
+                                ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+org/jsoup/parser/HtmlTreeBuilderState.java:1466: error: cannot find symbol
+				char c = data.charAt(i);
+				         ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+org/jsoup/parser/HtmlTreeBuilderState.java:1470: error: cannot find symbol
+            return isWhitespace(data);
+                                ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+3 errors
+
+183196 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(1398,1398) StmtReplace(1394,1398) at variant134 fails to compile
+
+183196 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(1398,1398) StmtReplace(1394,1398) (stored at: variant134)
+183236 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1480: error: missing return statement
+    }
+    ^
+1 error
+
+183236 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(1413,1408) StmtDelete(1407) StmtReplace(1406,1406) StmtDelete(1403) at variant135 fails to compile
+
+183236 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(1413,1408) StmtDelete(1407) StmtReplace(1406,1406) StmtDelete(1403) (stored at: variant135)
+183271 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1464: error: cannot find symbol
+        for (int i = 0; i < data.length(); i++) {
+                            ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+org/jsoup/parser/HtmlTreeBuilderState.java:1465: error: cannot find symbol
+			char c = data.charAt(i);
+			         ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+2 errors
+
+183271 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(1412,1411) StmtReplace(1401,1402) StmtAppend(1398,1398) StmtReplace(1392,1398) at variant136 fails to compile
+
+183271 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtAppend(1412,1411) StmtReplace(1401,1402) StmtAppend(1398,1398) StmtReplace(1392,1398) (stored at: variant136)
+184307 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 1.0 StmtDelete(1399) StmtAppend(1408,1408) StmtReplace(1403,1402) (stored at: variant137)
+185481 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 1.0 StmtAppend(1398,1398) StmtAppend(1406,1410) StmtDelete(1413) StmtDelete(1407) (stored at: variant138)
+185514 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1470: error: missing return statement
+    }
+    ^
+1 error
+
+185514 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(1398,1398) StmtDelete(1396) at variant139 fails to compile
+
+185514 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(1398,1398) StmtDelete(1396) (stored at: variant139)
+186505 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 2.0 StmtAppend(1406,1411) StmtAppend(1405,1408) (stored at: variant140)
+187624 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 1.0 StmtDelete(1413) StmtDelete(1411) StmtDelete(1402) (stored at: variant141)
+188787 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 2.0 StmtAppend(1406,1411) StmtAppend(1410,1412) (stored at: variant142)
+188820 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1465: error: cannot find symbol
+            for (int i = 0; i < data.length(); i++) {
+                                ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+org/jsoup/parser/HtmlTreeBuilderState.java:1466: error: cannot find symbol
+				char c = data.charAt(i);
+				         ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+2 errors
+
+188820 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(1399) StmtReplace(1395,1402) StmtAppend(1411,1405) StmtReplace(1394,1398) at variant143 fails to compile
+
+188820 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(1399) StmtReplace(1395,1402) StmtAppend(1411,1405) StmtReplace(1394,1398) (stored at: variant143)
+189506 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 2.0 StmtReplace(1398,1398) StmtDelete(1405) (stored at: variant144)
+190106 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 1.0 StmtAppend(1412,1411) StmtReplace(1412,1406) StmtDelete(1413) StmtDelete(1402) (stored at: variant145)
+190844 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 1.0 StmtAppend(1410,1407) StmtAppend(1406,1408) StmtReplace(1398,1398) StmtDelete(1402) (stored at: variant146)
+190879 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1481: error: missing return statement
+    }
+    ^
+1 error
+
+190879 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(1392) StmtDelete(1393) StmtReplace(1403,1398) at variant147 fails to compile
+
+190879 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(1392) StmtDelete(1393) StmtReplace(1403,1398) (stored at: variant147)
+192020 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 1.0 StmtDelete(1408) StmtReplace(1398,1398) StmtDelete(1411) (stored at: variant148)
+192769 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 2.0 StmtDelete(1405) StmtAppend(1410,1411) StmtDelete(1395) StmtDelete(1394) (stored at: variant149)
+192800 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1467: error: cannot find symbol
+            return isWhitespace(data);
+                                ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+1 error
+
+192800 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(1405,1405) StmtDelete(1394) at variant150 fails to compile
+
+192800 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(1405,1405) StmtDelete(1394) (stored at: variant150)
+193762 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 2.0 StmtDelete(1399) StmtReplace(1395,1402) StmtAppend(1411,1405) StmtDelete(1392) (stored at: variant151)
+194740 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 2.0 StmtDelete(1410) StmtDelete(1405) StmtReplace(1413,1413) StmtReplace(1403,1402) (stored at: variant152)
+196127 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 1.0 StmtDelete(1410) StmtReplace(1401,1402) StmtAppend(1398,1398) StmtAppend(1398,1398) (stored at: variant153)
+197464 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(1395,1398) StmtDelete(1398) (stored at: variant154)
+198587 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 1.0 StmtDelete(1412) StmtDelete(1407) StmtReplace(1406,1406) StmtReplace(1395,1398) (stored at: variant155)
+198620 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1465: error: cannot find symbol
+			for (int i = 0; i < data.length(); i++) {
+			                    ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+org/jsoup/parser/HtmlTreeBuilderState.java:1466: error: cannot find symbol
+				char c = data.charAt(i);
+				         ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+2 errors
+
+198620 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(1393,1398) at variant156 fails to compile
+
+198620 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(1393,1398) (stored at: variant156)
+199246 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 1.0 StmtReplace(1401,1402) StmtAppend(1398,1398) StmtDelete(1410) (stored at: variant157)
+199247 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 2.0 StmtDelete(1410) (stored at: )
+200391 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 1.0 StmtDelete(1405) StmtAppend(1410,1411) StmtDelete(1398) (stored at: variant158)
+201405 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 2.0 StmtDelete(1413) StmtDelete(1401) (stored at: variant159)
+201407 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 2.0 StmtAppend(1398,1398) (stored at: )
+201438 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1476: error: cannot find symbol
+            if (!StringUtil.isWhitespace(c))
+                                         ^
+  symbol:   variable c
+  location: class HtmlTreeBuilderState
+1 error
+
+201438 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(1411,1405) StmtReplace(1413,1413) StmtDelete(1400) at variant160 fails to compile
+
+201438 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtAppend(1411,1405) StmtReplace(1413,1413) StmtDelete(1400) (stored at: variant160)
+202499 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 2.0 StmtDelete(1399) StmtAppend(1408,1413) (stored at: variant161)
+202815 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 1.0 StmtReplace(1403,1402) (stored at: variant162)
+203116 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 2.0 StmtDelete(1393) (stored at: variant163)
+204221 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 2.0 StmtDelete(1392) StmtAppend(1411,1405) StmtReplace(1413,1413) StmtReplace(1411,1406) (stored at: variant164)
+204524 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 2.0 StmtAppend(1412,1411) StmtDelete(1402) (stored at: variant165)
+205563 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(1408) StmtDelete(1399) StmtReplace(1396,1403) (stored at: variant166)
+206827 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(1413,1408) StmtDelete(1407) StmtDelete(1402) (stored at: variant167)
+206829 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 2.0 StmtDelete(1411) (stored at: )
+206860 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1476: error: cannot find symbol
+            if (!StringUtil.isWhitespace(c))
+                                         ^
+  symbol:   variable c
+  location: class HtmlTreeBuilderState
+1 error
+
+206860 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(1411,1405) StmtDelete(1400) at variant168 fails to compile
+
+206860 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtAppend(1411,1405) StmtDelete(1400) (stored at: variant168)
+206893 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1470: error: missing return statement
+    }
+    ^
+1 error
+
+206893 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(1399) StmtReplace(1401,1402) StmtAppend(1398,1398) StmtDelete(1396) at variant169 fails to compile
+
+206893 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(1399) StmtReplace(1401,1402) StmtAppend(1398,1398) StmtDelete(1396) (stored at: variant169)
+207666 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 1.0 StmtDelete(1410) StmtDelete(1405) StmtReplace(1413,1413) StmtReplace(1406,1406) (stored at: variant170)
+207669 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(1413,1413) StmtDelete(1403) (stored at: )
+207669 [main] INFO clegoues.genprog4java.Search.Search  - search: generation4
+207703 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1465: error: cannot find symbol
+            for (int i = 0; i < data.length(); i++) {
+                                ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+org/jsoup/parser/HtmlTreeBuilderState.java:1466: error: cannot find symbol
+				char c = data.charAt(i);
+				         ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+org/jsoup/parser/HtmlTreeBuilderState.java:1470: error: cannot find symbol
+            return isWhitespace(data);
+                                ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+3 errors
+
+207862 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1480: error: missing return statement
+    }
+    ^
+1 error
+
+209553 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 1.0 StmtAppend(1412,1411) StmtDelete(1408) StmtDelete(1395) StmtDelete(1406) StmtDelete(1410) (stored at: variant171)
+210844 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 2.0 StmtAppend(1412,1411) StmtDelete(1408) StmtDelete(1395) StmtDelete(1406) StmtDelete(1407) (stored at: variant172)
+211652 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 2.0 StmtDelete(1405) StmtAppend(1410,1411) StmtDelete(1395) StmtDelete(1394) StmtReplace(1407,1407) (stored at: variant173)
+212893 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 2.0 StmtDelete(1399) StmtReplace(1395,1402) StmtAppend(1411,1405) StmtDelete(1392) StmtDelete(1398) (stored at: variant174)
+213841 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 2.0 StmtDelete(1410) StmtAppend(1405,1412) (stored at: variant175)
+213842 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 2.0 StmtDelete(1393) StmtDelete(1393) (stored at: )
+213883 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1464: error: cannot find symbol
+        for (int i = 0; i < data.length(); i++) {
+                            ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+org/jsoup/parser/HtmlTreeBuilderState.java:1465: error: cannot find symbol
+			char c = data.charAt(i);
+			         ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+2 errors
+
+213883 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(1412,1411) StmtDelete(1408) StmtDelete(1395) StmtDelete(1406) StmtReplace(1392,1398) at variant176 fails to compile
+
+213883 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtAppend(1412,1411) StmtDelete(1408) StmtDelete(1395) StmtDelete(1406) StmtReplace(1392,1398) (stored at: variant176)
+214565 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 2.0 StmtDelete(1411) StmtReplace(1408,1408) (stored at: variant177)
+215996 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 1.0 StmtAppend(1412,1411) StmtDelete(1402) StmtDelete(1395) (stored at: variant178)
+217328 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 2.0 StmtDelete(1412) StmtReplace(1406,1412) StmtReplace(1411,1405) StmtDelete(1406) (stored at: variant179)
+218754 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 1.0 StmtDelete(1392) StmtAppend(1411,1405) StmtReplace(1413,1413) StmtReplace(1411,1406) StmtAppend(1406,1412) (stored at: variant180)
+218814 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1466: error: cannot find symbol
+        for (int i = 0; i < data.length(); i++) {
+                            ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+org/jsoup/parser/HtmlTreeBuilderState.java:1467: error: cannot find symbol
+			char c = data.charAt(i);
+			         ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+2 errors
+
+218814 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(1399) StmtReplace(1395,1402) StmtAppend(1411,1405) StmtDelete(1392) StmtReplace(1396,1398) at variant181 fails to compile
+
+218814 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(1399) StmtReplace(1395,1402) StmtAppend(1411,1405) StmtDelete(1392) StmtReplace(1396,1398) (stored at: variant181)
+220235 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 2.0 StmtReplace(1398,1398) StmtDelete(1405) StmtAppend(1413,1405) (stored at: variant182)
+221651 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 2.0 StmtDelete(1410) StmtDelete(1405) StmtReplace(1395,1398) StmtDelete(1399) StmtReplace(1405,1411) (stored at: variant183)
+222060 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 2.0 StmtDelete(1410) StmtDelete(1405) StmtReplace(1395,1398) StmtDelete(1399) StmtDelete(1410) (stored at: variant184)
+223497 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 2.0 StmtAppend(1406,1411) StmtAppend(1410,1412) StmtDelete(1399) (stored at: variant185)
+225027 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 2.0 StmtDelete(1405) StmtAppend(1410,1411) StmtDelete(1395) StmtDelete(1394) StmtDelete(1411) (stored at: variant186)
+225331 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 2.0 StmtDelete(1392) StmtAppend(1411,1405) StmtReplace(1413,1413) StmtReplace(1411,1406) StmtReplace(1395,1403) (stored at: variant187)
+225592 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 1.0 StmtDelete(1398) StmtAppend(1411,1405) StmtReplace(1413,1413) StmtDelete(1400) StmtDelete(1401) (stored at: variant188)
+225620 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1476: error: cannot find symbol
+            if (!StringUtil.isWhitespace(c))
+                                         ^
+  symbol:   variable c
+  location: class HtmlTreeBuilderState
+1 error
+
+225621 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(1406,1411) StmtAppend(1410,1412) StmtDelete(1400) at variant189 fails to compile
+
+225621 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtAppend(1406,1411) StmtAppend(1410,1412) StmtDelete(1400) (stored at: variant189)
+226763 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 2.0 StmtDelete(1405) StmtAppend(1410,1411) StmtDelete(1395) StmtAppend(1394,1398) StmtReplace(1401,1402) (stored at: variant190)
+227676 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(1399) StmtReplace(1395,1402) StmtAppend(1411,1405) StmtDelete(1392) StmtAppend(1401,1402) (stored at: variant191)
+228921 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 2.0 StmtDelete(1405) StmtAppend(1410,1411) StmtDelete(1395) StmtAppend(1394,1398) StmtDelete(1402) (stored at: variant192)
+230473 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 1.0 StmtDelete(1398) StmtAppend(1411,1405) StmtReplace(1413,1413) StmtDelete(1400) StmtDelete(1410) (stored at: variant193)
+230512 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1471: error: missing return statement
+    }
+    ^
+1 error
+
+230512 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(1412,1411) StmtDelete(1408) StmtDelete(1395) StmtDelete(1406) StmtDelete(1396) at variant194 fails to compile
+
+230512 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtAppend(1412,1411) StmtDelete(1408) StmtDelete(1395) StmtDelete(1406) StmtDelete(1396) (stored at: variant194)
+230549 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1464: error: cannot find symbol
+        for (int i = 0; i < data.length(); i++) {
+                            ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+org/jsoup/parser/HtmlTreeBuilderState.java:1465: error: cannot find symbol
+			char c = data.charAt(i);
+			         ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+2 errors
+
+230549 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(1411) StmtReplace(1392,1398) at variant195 fails to compile
+
+230549 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(1411) StmtReplace(1392,1398) (stored at: variant195)
+230580 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 2.0 StmtDelete(1398) StmtAppend(1411,1405) StmtReplace(1413,1413) StmtDelete(1400) StmtDelete(1402) (stored at: )
+231925 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 2.0 StmtDelete(1412) StmtReplace(1406,1412) StmtReplace(1411,1405) StmtReplace(1408,1411) (stored at: variant196)
+233060 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 2.0 StmtDelete(1410) StmtDelete(1405) StmtReplace(1413,1413) StmtReplace(1403,1402) StmtDelete(1406) (stored at: variant197)
+234099 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 1.0 StmtDelete(1413) StmtDelete(1401) StmtReplace(1407,1410) (stored at: variant198)
+234103 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 2.0 StmtDelete(1405) StmtAppend(1410,1411) StmtDelete(1395) StmtAppend(1394,1398) StmtDelete(1394) (stored at: )
+234148 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1470: error: missing return statement
+    }
+    ^
+1 error
+
+234148 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(1410) StmtDelete(1405) StmtReplace(1413,1413) StmtReplace(1403,1402) StmtDelete(1396) at variant199 fails to compile
+
+234148 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(1410) StmtDelete(1405) StmtReplace(1413,1413) StmtReplace(1403,1402) StmtDelete(1396) (stored at: variant199)
+234954 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 2.0 StmtDelete(1411) StmtDelete(1402) (stored at: variant200)
+235007 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1476: error: cannot find symbol
+            if (!StringUtil.isWhitespace(c))
+                                         ^
+  symbol:   variable c
+  location: class HtmlTreeBuilderState
+1 error
+
+235007 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(1410) StmtDelete(1405) StmtReplace(1413,1413) StmtReplace(1403,1402) StmtDelete(1400) at variant201 fails to compile
+
+235008 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(1410) StmtDelete(1405) StmtReplace(1413,1413) StmtReplace(1403,1402) StmtDelete(1400) (stored at: variant201)
+236443 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 1.0 StmtDelete(1405) StmtAppend(1410,1411) StmtDelete(1395) StmtDelete(1394) StmtAppend(1408,1413) (stored at: variant202)
+237202 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 1.0 StmtReplace(1398,1398) StmtDelete(1405) StmtDelete(1402) (stored at: variant203)
+237242 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1469: error: cannot find symbol
+			for (int i = 0; i < data.length(); i++) {
+			                    ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+org/jsoup/parser/HtmlTreeBuilderState.java:1470: error: cannot find symbol
+				char c = data.charAt(i);
+				         ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+2 errors
+
+237242 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(1405) StmtAppend(1410,1411) StmtDelete(1395) StmtDelete(1394) StmtAppend(1392,1398) at variant204 fails to compile
+
+237242 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(1405) StmtAppend(1410,1411) StmtDelete(1395) StmtDelete(1394) StmtAppend(1392,1398) (stored at: variant204)
+238648 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 1.0 StmtDelete(1398) StmtAppend(1411,1405) StmtReplace(1413,1413) StmtDelete(1400) StmtReplace(1413,1408) (stored at: variant205)
+240079 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 2.0 StmtDelete(1411) StmtReplace(1412,1411) (stored at: variant206)
+241478 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 2.0 StmtDelete(1410) StmtDelete(1405) StmtReplace(1413,1413) StmtReplace(1403,1402) StmtReplace(1412,1408) (stored at: variant207)
+241523 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1473: error: cannot find symbol
+            for (int i = 0; i < data.length(); i++) {
+                                ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+org/jsoup/parser/HtmlTreeBuilderState.java:1474: error: cannot find symbol
+				char c = data.charAt(i);
+				         ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+2 errors
+
+241523 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(1412,1411) StmtDelete(1408) StmtAppend(1394,1398) StmtReplace(1395,1398) at variant208 fails to compile
+
+241523 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtAppend(1412,1411) StmtDelete(1408) StmtAppend(1394,1398) StmtReplace(1395,1398) (stored at: variant208)
+242833 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 1.0 StmtDelete(1405) StmtAppend(1410,1411) StmtDelete(1406) StmtReplace(1395,1402) (stored at: variant209)
+244266 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 1.0 StmtAppend(1412,1411) StmtDelete(1408) StmtDelete(1395) StmtDelete(1393) (stored at: variant210)
+245417 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 1.0 StmtDelete(1399) StmtReplace(1395,1402) StmtAppend(1411,1405) StmtDelete(1398) (stored at: variant211)
+245694 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 2.0 StmtDelete(1408) (stored at: variant212)
+246817 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 2.0 StmtDelete(1405) StmtAppend(1410,1411) StmtDelete(1395) StmtAppend(1410,1411) StmtDelete(1395) StmtDelete(1394) StmtDelete(1399) (stored at: variant213)
+248264 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 1.0 StmtDelete(1399) StmtReplace(1395,1402) StmtAppend(1411,1405) StmtReplace(1413,1413) StmtDelete(1400) StmtReplace(1411,1412) (stored at: variant214)
+249052 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 2.0 StmtDelete(1392) StmtReplace(1412,1413) (stored at: variant215)
+250849 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 1.0 StmtDelete(1405) StmtReplace(1413,1413) StmtReplace(1403,1402) StmtAppend(1408,1408) (stored at: variant216)
+250915 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1476: error: cannot find symbol
+            if (!StringUtil.isWhitespace(c)) {
+                                         ^
+  symbol:   variable c
+  location: class HtmlTreeBuilderState
+1 error
+
+250915 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(1402) StmtDelete(1400) at variant217 fails to compile
+
+250915 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(1402) StmtDelete(1400) (stored at: variant217)
+252449 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 2.0 StmtReplace(1398,1398) StmtReplace(1411,1406) (stored at: variant218)
+252450 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 2.0 StmtDelete(1405) (stored at: )
+253755 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 2.0 StmtDelete(1410) StmtDelete(1405) StmtReplace(1395,1398) StmtDelete(1395) (stored at: variant219)
+255183 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 1.0 StmtDelete(1410) StmtDelete(1405) StmtReplace(1413,1413) StmtReplace(1408,1407) (stored at: variant220)
+255229 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1464: error: cannot find symbol
+        for (int i = 0; i < data.length(); i++) {
+                            ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+org/jsoup/parser/HtmlTreeBuilderState.java:1465: error: cannot find symbol
+			char c = data.charAt(i);
+			         ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+2 errors
+
+255230 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(1395) StmtDelete(1394) StmtReplace(1392,1398) at variant221 fails to compile
+
+255230 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(1395) StmtDelete(1394) StmtReplace(1392,1398) (stored at: variant221)
+256753 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 1.0 StmtDelete(1405) StmtDelete(1405) StmtReplace(1395,1398) StmtDelete(1399) StmtDelete(1392) (stored at: variant222)
+258250 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 2.0 StmtAppend(1406,1411) StmtDelete(1413) (stored at: variant223)
+258808 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 1.0 StmtReplace(1398,1398) StmtReplace(1395,1403) (stored at: variant224)
+258857 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1474: error: cannot find symbol
+            if (!StringUtil.isWhitespace(c))
+                                         ^
+  symbol:   variable c
+  location: class HtmlTreeBuilderState
+1 error
+
+258857 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(1392) StmtDelete(1400) StmtDelete(1407) at variant225 fails to compile
+
+258857 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(1392) StmtDelete(1400) StmtDelete(1407) (stored at: variant225)
+260171 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 2.0 StmtDelete(1398) StmtAppend(1411,1405) StmtReplace(1413,1413) StmtReplace(1411,1406) StmtDelete(1408) (stored at: variant226)
+260171 [main] INFO clegoues.genprog4java.Search.Search  - search: generation5
+262036 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 1.0 StmtAppend(1412,1411) StmtDelete(1408) StmtDelete(1395) StmtDelete(1406) StmtDelete(1407) StmtAppend(1406,1407) (stored at: variant227)
+263480 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 2.0 StmtDelete(1405) StmtAppend(1410,1411) StmtDelete(1395) StmtAppend(1394,1398) StmtDelete(1394) StmtReplace(1413,1405) (stored at: variant228)
+264328 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 2.0 StmtDelete(1399) StmtReplace(1395,1402) StmtAppend(1411,1405) StmtDelete(1392) StmtDelete(1398) StmtReplace(1401,1402) (stored at: variant229)
+265021 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 2.0 StmtDelete(1392) StmtAppend(1411,1405) StmtReplace(1413,1413) StmtReplace(1411,1406) StmtReplace(1395,1403) StmtAppend(1394,1398) (stored at: variant230)
+265851 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 1.0 StmtDelete(1405) StmtAppend(1410,1411) StmtDelete(1395) StmtDelete(1394) StmtReplace(1407,1407) StmtDelete(1399) (stored at: variant231)
+265905 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1465: error: cannot find symbol
+            for (int i = 0; i < data.length(); i++) {
+                                ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+org/jsoup/parser/HtmlTreeBuilderState.java:1466: error: cannot find symbol
+				char c = data.charAt(i);
+				         ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+org/jsoup/parser/HtmlTreeBuilderState.java:1470: error: cannot find symbol
+            return isWhitespace(data);
+                                ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+3 errors
+
+265906 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(1412) StmtReplace(1406,1412) StmtReplace(1411,1405) StmtDelete(1406) StmtReplace(1394,1398) at variant232 fails to compile
+
+265906 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(1412) StmtReplace(1406,1412) StmtReplace(1411,1405) StmtDelete(1406) StmtReplace(1394,1398) (stored at: variant232)
+266332 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 1.0 StmtDelete(1405) StmtDelete(1402) (stored at: variant233)
+266378 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1464: error: cannot find symbol
+        for (int i = 0; i < data.length(); i++) {
+                            ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+org/jsoup/parser/HtmlTreeBuilderState.java:1465: error: cannot find symbol
+			char c = data.charAt(i);
+			         ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+2 errors
+
+266378 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(1399) StmtReplace(1395,1402) StmtAppend(1411,1405) StmtDelete(1392) StmtDelete(1398) StmtReplace(1392,1398) at variant234 fails to compile
+
+266378 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(1399) StmtReplace(1395,1402) StmtAppend(1411,1405) StmtDelete(1392) StmtDelete(1398) StmtReplace(1392,1398) (stored at: variant234)
+267709 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 1.0 StmtDelete(1392) StmtReplace(1412,1413) StmtDelete(1410) (stored at: variant235)
+269061 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtReplace(1398,1398) StmtReplace(1411,1406) StmtDelete(1393) (stored at: variant236)
+269836 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 2.0 StmtDelete(1410) StmtDelete(1405) StmtReplace(1413,1413) StmtReplace(1403,1402) StmtReplace(1412,1408) StmtReplace(1403,1402) (stored at: variant237)
+270422 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 2.0 StmtDelete(1410) StmtAppend(1405,1412) StmtReplace(1396,1402) (stored at: variant238)
+271129 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 2.0 StmtDelete(1392) StmtAppend(1411,1405) StmtReplace(1413,1413) StmtReplace(1411,1406) StmtReplace(1395,1403) StmtDelete(1395) (stored at: variant239)
+272578 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 2.0 StmtDelete(1392) StmtReplace(1412,1413) StmtDelete(1399) (stored at: variant240)
+274114 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 1.0 StmtDelete(1411) StmtDelete(1402) StmtAppend(1406,1408) (stored at: variant241)
+274561 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 2.0 StmtDelete(1410) StmtDelete(1405) StmtReplace(1413,1413) StmtReplace(1403,1402) StmtReplace(1412,1408) StmtReplace(1412,1406) (stored at: variant242)
+276128 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 1.0 StmtDelete(1405) StmtReplace(1407,1406) (stored at: variant243)
+276171 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1469: error: cannot find symbol
+			for (int i = 0; i < data.length(); i++) {
+			                    ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+org/jsoup/parser/HtmlTreeBuilderState.java:1470: error: cannot find symbol
+				char c = data.charAt(i);
+				         ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+2 errors
+
+276171 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(1405) StmtAppend(1410,1411) StmtDelete(1395) StmtAppend(1394,1398) StmtDelete(1402) StmtAppend(1393,1398) at variant244 fails to compile
+
+276171 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(1405) StmtAppend(1410,1411) StmtDelete(1395) StmtAppend(1394,1398) StmtDelete(1402) StmtAppend(1393,1398) (stored at: variant244)
+277554 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 2.0 StmtDelete(1399) StmtReplace(1395,1402) StmtAppend(1411,1405) StmtDelete(1392) StmtDelete(1398) StmtDelete(1407) (stored at: variant245)
+278876 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 1.0 StmtAppend(1412,1411) StmtDelete(1408) StmtDelete(1395) StmtDelete(1406) StmtDelete(1407) StmtDelete(1413) (stored at: variant246)
+278918 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1487: error: cannot find symbol
+        for (int i = 0; i < data.length(); i++) {
+                            ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+org/jsoup/parser/HtmlTreeBuilderState.java:1488: error: cannot find symbol
+			char c = data.charAt(i);
+			         ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+org/jsoup/parser/HtmlTreeBuilderState.java:1490: error: incompatible types: unexpected return value
+				return false;
+				       ^
+3 errors
+
+278918 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(1410) StmtDelete(1405) StmtReplace(1395,1398) StmtDelete(1395) StmtReplace(1408,1398) at variant247 fails to compile
+
+278918 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(1410) StmtDelete(1405) StmtReplace(1395,1398) StmtDelete(1395) StmtReplace(1408,1398) (stored at: variant247)
+280807 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 1.0 StmtAppend(1406,1411) StmtDelete(1413) StmtDelete(1398) (stored at: variant248)
+282306 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 1.0 StmtReplace(1398,1398) StmtDelete(1405) StmtAppend(1413,1405) StmtDelete(1410) (stored at: variant249)
+283405 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 2.0 StmtDelete(1405) StmtAppend(1410,1411) StmtDelete(1395) StmtAppend(1410,1411) StmtDelete(1395) StmtDelete(1394) StmtDelete(1399) StmtDelete(1399) (stored at: variant250)
+284805 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(1412) StmtReplace(1406,1412) StmtReplace(1411,1405) StmtReplace(1408,1411) StmtAppend(1401,1402) (stored at: variant251)
+284853 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1476: error: cannot find symbol
+            if (!StringUtil.isWhitespace(c))
+                                         ^
+  symbol:   variable c
+  location: class HtmlTreeBuilderState
+1 error
+
+284853 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(1406,1411) StmtDelete(1413) StmtDelete(1400) at variant252 fails to compile
+
+284853 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtAppend(1406,1411) StmtDelete(1413) StmtDelete(1400) (stored at: variant252)
+286252 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 2.0 StmtDelete(1392) StmtReplace(1412,1413) StmtAppend(1410,1413) (stored at: variant253)
+287606 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 1.0 StmtDelete(1392) StmtAppend(1411,1405) StmtReplace(1413,1413) StmtReplace(1411,1406) StmtReplace(1395,1403) StmtAppend(1401,1402) (stored at: variant254)
+289009 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 1.0 StmtDelete(1410) StmtDelete(1405) StmtReplace(1413,1413) StmtReplace(1403,1402) StmtDelete(1406) StmtDelete(1392) (stored at: variant255)
+289053 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1464: error: cannot find symbol
+        for (int i = 0; i < data.length(); i++) {
+                            ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+org/jsoup/parser/HtmlTreeBuilderState.java:1465: error: cannot find symbol
+			char c = data.charAt(i);
+			         ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+2 errors
+
+289054 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(1412,1411) StmtDelete(1408) StmtDelete(1395) StmtDelete(1406) StmtDelete(1407) StmtReplace(1392,1398) at variant256 fails to compile
+
+289054 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtAppend(1412,1411) StmtDelete(1408) StmtDelete(1395) StmtDelete(1406) StmtDelete(1407) StmtReplace(1392,1398) (stored at: variant256)
+289057 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 2.0 StmtDelete(1405) StmtDelete(1402) (stored at: )
+289103 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1469: error: cannot find symbol
+			for (int i = 0; i < data.length(); i++) {
+			                    ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+org/jsoup/parser/HtmlTreeBuilderState.java:1470: error: cannot find symbol
+				char c = data.charAt(i);
+				         ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+2 errors
+
+289103 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(1405) StmtAppend(1410,1411) StmtDelete(1395) StmtAppend(1410,1411) StmtDelete(1395) StmtDelete(1394) StmtDelete(1399) StmtAppend(1392,1398) at variant257 fails to compile
+
+289103 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(1405) StmtAppend(1410,1411) StmtDelete(1395) StmtAppend(1410,1411) StmtDelete(1395) StmtDelete(1394) StmtDelete(1399) StmtAppend(1392,1398) (stored at: variant257)
+290471 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 1.0 StmtDelete(1405) StmtAppend(1410,1411) StmtDelete(1395) StmtAppend(1394,1398) StmtDelete(1394) StmtReplace(1406,1408) (stored at: variant258)
+292024 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 1.0 StmtReplace(1398,1398) StmtDelete(1405) StmtAppend(1413,1405) StmtDelete(1407) (stored at: variant259)
+293382 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 2.0 StmtDelete(1411) StmtReplace(1412,1411) StmtAppend(1405,1413) (stored at: variant260)
+293432 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1469: error: cannot find symbol
+			for (int i = 0; i < data.length(); i++) {
+			                    ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+org/jsoup/parser/HtmlTreeBuilderState.java:1470: error: cannot find symbol
+				char c = data.charAt(i);
+				         ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+2 errors
+
+293432 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(1412) StmtReplace(1406,1412) StmtReplace(1411,1405) StmtDelete(1406) StmtAppend(1393,1398) at variant261 fails to compile
+
+293432 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(1412) StmtReplace(1406,1412) StmtReplace(1411,1405) StmtDelete(1406) StmtAppend(1393,1398) (stored at: variant261)
+293438 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 1.0 StmtDelete(1398) StmtAppend(1411,1405) StmtReplace(1413,1413) StmtDelete(1400) StmtDelete(1402) StmtDelete(1402) (stored at: )
+294680 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 2.0 StmtAppend(1406,1411) StmtDelete(1413) StmtDelete(1408) (stored at: variant262)
+296094 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 1.0 StmtDelete(1398) StmtAppend(1411,1405) StmtReplace(1413,1413) StmtReplace(1411,1406) StmtDelete(1408) StmtDelete(1406) (stored at: variant263)
+297567 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 1.0 StmtAppend(1412,1411) StmtDelete(1408) StmtDelete(1395) StmtDelete(1406) StmtDelete(1407) StmtDelete(1398) (stored at: variant264)
+298965 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 1.0 StmtDelete(1399) StmtDelete(1407) (stored at: variant265)
+299843 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 2.0 StmtReplace(1398,1398) StmtDelete(1405) StmtAppend(1411,1405) StmtDelete(1392) StmtDelete(1398) StmtReplace(1393,1398) (stored at: variant266)
+299845 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 2.0 StmtAppend(1401,1402) (stored at: )
+300872 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 1.0 StmtAppend(1406,1411) StmtReplace(1406,1412) StmtReplace(1411,1405) StmtDelete(1406) StmtDelete(1413) (stored at: variant267)
+302376 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 1.0 StmtReplace(1413,1413) StmtReplace(1403,1402) StmtDelete(1406) StmtDelete(1411) (stored at: variant268)
+302450 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1476: error: cannot find symbol
+            if (!StringUtil.isWhitespace(c))
+                                         ^
+  symbol:   variable c
+  location: class HtmlTreeBuilderState
+1 error
+
+302450 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(1410) StmtReplace(1412,1413) StmtDelete(1400) at variant269 fails to compile
+
+302450 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(1410) StmtReplace(1412,1413) StmtDelete(1400) (stored at: variant269)
+304054 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 1.0 StmtDelete(1410) StmtDelete(1395) StmtDelete(1394) StmtDelete(1399) StmtDelete(1412) (stored at: variant270)
+305616 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 2.0 StmtDelete(1405) StmtAppend(1410,1411) StmtDelete(1395) StmtDelete(1399) (stored at: variant271)
+305669 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1470: error: missing return statement
+    }
+    ^
+1 error
+
+305669 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(1411) StmtDelete(1396) at variant272 fails to compile
+
+305669 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(1411) StmtDelete(1396) (stored at: variant272)
+307290 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 1.0 StmtDelete(1411) StmtReplace(1406,1413) (stored at: variant273)
+308759 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 1.0 StmtDelete(1405) StmtReplace(1411,1413) (stored at: variant274)
+310088 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 2.0 StmtAppend(1406,1411) StmtDelete(1395) StmtAppend(1394,1398) StmtDelete(1402) StmtReplace(1412,1405) (stored at: variant275)
+310088 [main] INFO clegoues.genprog4java.Search.Search  - search: generation6
+311849 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 2.0 StmtDelete(1399) StmtReplace(1395,1402) StmtAppend(1411,1405) StmtDelete(1392) StmtDelete(1398) StmtDelete(1407) StmtDelete(1406) (stored at: variant276)
+312900 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 1.0 StmtDelete(1399) StmtReplace(1395,1402) StmtAppend(1411,1405) StmtDelete(1392) StmtDelete(1398) StmtDelete(1407) StmtReplace(1395,1398) (stored at: variant277)
+314313 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 2.0 StmtDelete(1405) StmtAppend(1410,1411) StmtDelete(1395) StmtAppend(1410,1411) StmtDelete(1395) StmtDelete(1394) StmtDelete(1399) StmtDelete(1399) StmtAppend(1405,1406) (stored at: variant278)
+315960 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 2.0 StmtDelete(1405) StmtAppend(1410,1411) StmtDelete(1395) StmtDelete(1399) StmtAppend(1394,1398) (stored at: variant279)
+317168 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 2.0 StmtReplace(1398,1398) StmtDelete(1405) StmtAppend(1411,1405) StmtDelete(1392) StmtDelete(1398) StmtReplace(1393,1398) StmtDelete(1399) (stored at: variant280)
+318705 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 2.0 StmtDelete(1411) StmtReplace(1412,1411) StmtAppend(1405,1413) StmtDelete(1398) (stored at: variant281)
+320373 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 1.0 StmtDelete(1399) StmtReplace(1395,1402) StmtAppend(1411,1405) StmtDelete(1392) StmtDelete(1398) StmtReplace(1401,1402) StmtDelete(1406) (stored at: variant282)
+320451 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1473: error: cannot find symbol
+            return isWhitespace(data);
+                                ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+1 error
+
+320451 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(1406,1411) StmtReplace(1406,1412) StmtReplace(1411,1405) StmtDelete(1406) StmtDelete(1413) StmtAppend(1394,1398) at variant283 fails to compile
+
+320451 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtAppend(1406,1411) StmtReplace(1406,1412) StmtReplace(1411,1405) StmtDelete(1406) StmtDelete(1413) StmtAppend(1394,1398) (stored at: variant283)
+321988 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 1.0 StmtDelete(1392) StmtAppend(1411,1405) StmtReplace(1413,1413) StmtReplace(1411,1406) StmtReplace(1395,1403) StmtAppend(1394,1398) StmtReplace(1410,1411) (stored at: variant284)
+322038 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1464: error: cannot find symbol
+        for (int i = 0; i < data.length(); i++) {
+                            ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+org/jsoup/parser/HtmlTreeBuilderState.java:1465: error: cannot find symbol
+			char c = data.charAt(i);
+			         ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+2 errors
+
+322038 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(1410) StmtDelete(1405) StmtReplace(1413,1413) StmtReplace(1403,1402) StmtReplace(1412,1408) StmtReplace(1403,1402) StmtReplace(1392,1398) at variant285 fails to compile
+
+322038 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtDelete(1410) StmtDelete(1405) StmtReplace(1413,1413) StmtReplace(1403,1402) StmtReplace(1412,1408) StmtReplace(1403,1402) StmtReplace(1392,1398) (stored at: variant285)
+323199 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtDelete(1399) StmtReplace(1395,1402) StmtAppend(1411,1405) StmtDelete(1392) StmtDelete(1398) StmtDelete(1407) StmtDelete(1400) (stored at: variant286)
+324816 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 1.0 StmtDelete(1405) StmtAppend(1410,1411) StmtDelete(1395) StmtAppend(1394,1398) StmtDelete(1394) StmtReplace(1413,1405) StmtDelete(1406) (stored at: variant287)
+326470 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 1.0 StmtDelete(1392) StmtReplace(1412,1413) StmtAppend(1410,1413) StmtDelete(1399) (stored at: variant288)
+327115 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 2.0 StmtDelete(1392) StmtReplace(1412,1413) StmtDelete(1399) StmtDelete(1393) (stored at: variant289)
+327156 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1469: error: cannot find symbol
+			for (int i = 0; i < data.length(); i++) {
+			                    ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+org/jsoup/parser/HtmlTreeBuilderState.java:1470: error: cannot find symbol
+				char c = data.charAt(i);
+				         ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+2 errors
+
+327157 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(1411) StmtReplace(1412,1411) StmtAppend(1405,1413) StmtAppend(1392,1398) at variant290 fails to compile
+
+327157 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtDelete(1411) StmtReplace(1412,1411) StmtAppend(1405,1413) StmtAppend(1392,1398) (stored at: variant290)
+327691 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 1.0 StmtDelete(1399) StmtReplace(1395,1402) StmtAppend(1411,1405) StmtDelete(1392) StmtDelete(1398) StmtReplace(1401,1402) StmtDelete(1406) (stored at: variant291)
+329092 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtDelete(1411) StmtReplace(1412,1411) StmtAppend(1405,1413) StmtDelete(1399) (stored at: variant292)
+329145 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1468: error: missing return statement
+    }
+    ^
+1 error
+
+329145 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(1392) StmtAppend(1411,1405) StmtReplace(1413,1413) StmtReplace(1411,1406) StmtReplace(1395,1403) StmtAppend(1394,1398) StmtDelete(1396) at variant293 fails to compile
+
+329145 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtDelete(1392) StmtAppend(1411,1405) StmtReplace(1413,1413) StmtReplace(1411,1406) StmtReplace(1395,1403) StmtAppend(1394,1398) StmtDelete(1396) (stored at: variant293)
+329921 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 2.0 StmtDelete(1392) StmtAppend(1411,1405) StmtReplace(1413,1413) StmtReplace(1411,1406) StmtReplace(1395,1403) StmtAppend(1394,1398) StmtAppend(1401,1402) (stored at: variant294)
+331577 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 1.0 StmtAppend(1412,1411) StmtDelete(1408) StmtDelete(1395) StmtDelete(1406) StmtDelete(1407) StmtDelete(1413) StmtReplace(1410,1413) (stored at: variant295)
+331638 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1465: error: cannot find symbol
+			for (int i = 0; i < data.length(); i++) {
+			                    ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+org/jsoup/parser/HtmlTreeBuilderState.java:1466: error: cannot find symbol
+				char c = data.charAt(i);
+				         ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+2 errors
+
+331638 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(1406,1411) StmtDelete(1395) StmtAppend(1394,1398) StmtDelete(1402) StmtReplace(1412,1405) StmtReplace(1393,1398) at variant296 fails to compile
+
+331638 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtAppend(1406,1411) StmtDelete(1395) StmtAppend(1394,1398) StmtDelete(1402) StmtReplace(1412,1405) StmtReplace(1393,1398) (stored at: variant296)
+333334 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 1.0 StmtDelete(1399) StmtReplace(1395,1402) StmtAppend(1411,1405) StmtDelete(1392) StmtDelete(1398) StmtReplace(1401,1402) StmtDelete(1412) (stored at: variant297)
+333396 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1468: error: missing return statement
+    }
+    ^
+1 error
+
+333396 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(1399) StmtReplace(1395,1402) StmtAppend(1411,1405) StmtDelete(1392) StmtDelete(1398) StmtReplace(1401,1402) StmtDelete(1396) at variant298 fails to compile
+
+333397 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtDelete(1399) StmtReplace(1395,1402) StmtAppend(1411,1405) StmtDelete(1392) StmtDelete(1398) StmtReplace(1401,1402) StmtDelete(1396) (stored at: variant298)
+334777 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 1.0 StmtDelete(1410) StmtDelete(1405) StmtReplace(1413,1413) StmtReplace(1403,1402) StmtReplace(1412,1408) StmtReplace(1403,1402) StmtReplace(1408,1412) (stored at: variant299)
+335774 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 2.0 StmtAppend(1406,1411) StmtDelete(1395) StmtAppend(1394,1398) StmtDelete(1402) StmtReplace(1412,1405) StmtDelete(1405) (stored at: variant300)
+336108 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 2.0 StmtReplace(1398,1398) StmtDelete(1405) StmtAppend(1411,1405) StmtDelete(1392) StmtDelete(1398) StmtReplace(1393,1398) StmtDelete(1395) (stored at: variant301)
+336157 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1465: error: cannot find symbol
+            for (int i = 0; i < data.length(); i++) {
+                                ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+org/jsoup/parser/HtmlTreeBuilderState.java:1466: error: cannot find symbol
+				char c = data.charAt(i);
+				         ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+org/jsoup/parser/HtmlTreeBuilderState.java:1470: error: cannot find symbol
+            return isWhitespace(data);
+                                ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+3 errors
+
+336157 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(1411) StmtReplace(1406,1413) StmtReplace(1394,1398) at variant302 fails to compile
+
+336157 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtDelete(1411) StmtReplace(1406,1413) StmtReplace(1394,1398) (stored at: variant302)
+336810 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 1.0 StmtDelete(1410) StmtAppend(1405,1412) StmtReplace(1396,1402) StmtReplace(1396,1402) (stored at: variant303)
+338438 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 1.0 StmtAppend(1401,1402) StmtAppend(1407,1412) (stored at: variant304)
+339691 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 1.0 StmtDelete(1392) StmtAppend(1411,1405) StmtReplace(1413,1413) StmtReplace(1411,1406) StmtReplace(1395,1403) StmtDelete(1395) StmtDelete(1401) (stored at: variant305)
+341043 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 1.0 StmtAppend(1406,1411) StmtDelete(1395) StmtAppend(1394,1398) StmtDelete(1402) StmtReplace(1412,1405) StmtAppend(1405,1408) (stored at: variant306)
+342800 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 2.0 StmtDelete(1392) StmtReplace(1412,1413) StmtAppend(1410,1413) StmtDelete(1413) (stored at: variant307)
+344352 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 2.0 StmtDelete(1410) StmtAppend(1405,1412) StmtReplace(1396,1402) StmtReplace(1405,1411) (stored at: variant308)
+344795 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 2.0 StmtDelete(1405) StmtAppend(1410,1411) StmtDelete(1395) StmtAppend(1410,1411) StmtDelete(1395) StmtDelete(1394) StmtDelete(1399) StmtDelete(1399) StmtReplace(1406,1406) (stored at: variant309)
+346328 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 1.0 StmtDelete(1399) StmtReplace(1395,1402) StmtAppend(1411,1405) StmtDelete(1392) StmtDelete(1398) StmtReplace(1401,1402) StmtAppend(1410,1408) (stored at: variant310)
+348040 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 1.0 StmtDelete(1410) StmtDelete(1405) StmtReplace(1413,1413) StmtReplace(1403,1402) StmtReplace(1412,1408) StmtReplace(1403,1402) StmtAppend(1408,1411) (stored at: variant311)
+348046 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 1.0 StmtDelete(1405) StmtAppend(1410,1411) StmtDelete(1395) StmtAppend(1410,1411) StmtDelete(1395) StmtDelete(1394) StmtDelete(1399) StmtDelete(1399) StmtDelete(1401) (stored at: )
+349537 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 1.0 StmtDelete(1405) StmtAppend(1410,1411) StmtDelete(1395) StmtDelete(1399) StmtDelete(1408) (stored at: variant312)
+349592 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1465: error: cannot find symbol
+            for (int i = 0; i < data.length(); i++) {
+                                ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+org/jsoup/parser/HtmlTreeBuilderState.java:1466: error: cannot find symbol
+				char c = data.charAt(i);
+				         ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+org/jsoup/parser/HtmlTreeBuilderState.java:1470: error: cannot find symbol
+            return isWhitespace(data);
+                                ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+3 errors
+
+349593 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(1406,1411) StmtDelete(1413) StmtDelete(1408) StmtReplace(1394,1398) at variant313 fails to compile
+
+349593 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtAppend(1406,1411) StmtDelete(1413) StmtDelete(1408) StmtReplace(1394,1398) (stored at: variant313)
+351021 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 1.0 StmtDelete(1392) StmtReplace(1412,1413) StmtDelete(1399) StmtReplace(1406,1413) (stored at: variant314)
+352553 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 2.0 StmtDelete(1399) StmtReplace(1395,1402) StmtAppend(1394,1398) StmtDelete(1402) StmtReplace(1412,1405) StmtReplace(1395,1403) (stored at: variant315)
+354137 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 2.0 StmtAppend(1406,1411) StmtDelete(1392) StmtDelete(1398) StmtDelete(1407) StmtDelete(1406) (stored at: variant316)
+355860 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 2.0 StmtDelete(1405) StmtAppend(1410,1411) StmtDelete(1395) StmtReplace(1403,1402) StmtDelete(1411) (stored at: variant317)
+357362 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 1.0 StmtDelete(1410) StmtDelete(1405) StmtReplace(1413,1413) StmtReplace(1403,1402) StmtDelete(1392) (stored at: variant318)
+359078 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 1.0 StmtReplace(1410,1411) (stored at: variant319)
+361200 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 1.0 StmtDelete(1392) StmtAppend(1411,1405) StmtReplace(1413,1413) StmtReplace(1411,1406) StmtReplace(1395,1403) StmtDelete(1405) StmtReplace(1413,1413) StmtReplace(1403,1402) StmtReplace(1412,1408) StmtReplace(1403,1402) StmtAppend(1398,1398) (stored at: variant320)
+362062 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 2.0 StmtDelete(1399) StmtReplace(1395,1402) StmtAppend(1411,1405) StmtDelete(1392) StmtDelete(1398) (stored at: variant321)
+363587 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 1.0 StmtAppend(1406,1411) StmtDelete(1395) StmtAppend(1394,1398) StmtDelete(1402) StmtDelete(1407) StmtAppend(1410,1413) (stored at: variant322)
+363632 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1466: error: cannot find symbol
+        for (int i = 0; i < data.length(); i++) {
+                            ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+org/jsoup/parser/HtmlTreeBuilderState.java:1467: error: cannot find symbol
+			char c = data.charAt(i);
+			         ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+2 errors
+
+363632 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(1411) StmtAppend(1411,1405) StmtDelete(1392) StmtDelete(1398) StmtReplace(1401,1402) StmtReplace(1396,1398) at variant323 fails to compile
+
+363632 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtDelete(1411) StmtAppend(1411,1405) StmtDelete(1392) StmtDelete(1398) StmtReplace(1401,1402) StmtReplace(1396,1398) (stored at: variant323)
+365309 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 1.0 StmtDelete(1399) StmtAppend(1405,1413) StmtReplace(1406,1407) (stored at: variant324)
+366754 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 2.0 StmtDelete(1411) StmtAppend(1410,1411) StmtDelete(1395) StmtAppend(1410,1411) StmtDelete(1395) StmtDelete(1394) StmtDelete(1399) StmtDelete(1399) StmtAppend(1405,1411) (stored at: variant325)
+368226 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 2.0 StmtAppend(1405,1413) StmtDelete(1402) (stored at: variant326)
+369678 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 2.0 StmtDelete(1392) StmtAppend(1411,1405) StmtReplace(1413,1413) StmtReplace(1411,1406) StmtReplace(1395,1403) StmtDelete(1399) StmtReplace(1408,1405) (stored at: variant327)
+369732 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1480: error: missing return statement
+    }
+    ^
+1 error
+
+369733 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(1405) StmtAppend(1410,1411) StmtDelete(1403) at variant328 fails to compile
+
+369733 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtDelete(1405) StmtAppend(1410,1411) StmtDelete(1403) (stored at: variant328)
+371280 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 1.0 StmtDelete(1392) StmtAppend(1411,1405) StmtDelete(1413) StmtDelete(1408) StmtDelete(1392) (stored at: variant329)
+371328 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1465: error: cannot find symbol
+            for (int i = 0; i < data.length(); i++) {
+                                ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+org/jsoup/parser/HtmlTreeBuilderState.java:1466: error: cannot find symbol
+				char c = data.charAt(i);
+				         ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+2 errors
+
+371328 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(1411,1406) StmtReplace(1395,1403) StmtAppend(1394,1398) StmtReplace(1394,1398) at variant330 fails to compile
+
+371328 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtReplace(1411,1406) StmtReplace(1395,1403) StmtAppend(1394,1398) StmtReplace(1394,1398) (stored at: variant330)
+371328 [main] INFO clegoues.genprog4java.Search.Search  - search: generation7
+373563 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 2.0 StmtDelete(1411) StmtAppend(1410,1411) StmtDelete(1395) StmtAppend(1410,1411) StmtDelete(1395) StmtDelete(1394) StmtDelete(1399) StmtDelete(1399) StmtAppend(1405,1411) StmtAppend(1407,1411) (stored at: variant331)
+374462 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 1.0 StmtReplace(1398,1398) StmtDelete(1405) StmtAppend(1411,1405) StmtDelete(1392) StmtDelete(1398) StmtReplace(1393,1398) StmtDelete(1399) StmtAppend(1393,1398) (stored at: variant332)
+374927 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 1.0 StmtDelete(1392) StmtAppend(1411,1405) StmtReplace(1413,1413) StmtReplace(1411,1406) StmtReplace(1395,1403) StmtAppend(1394,1398) StmtAppend(1401,1402) StmtAppend(1401,1402) (stored at: variant333)
+376723 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 1.0 StmtDelete(1405) StmtAppend(1410,1411) StmtDelete(1395) StmtReplace(1403,1402) StmtDelete(1411) StmtDelete(1402) (stored at: variant334)
+377905 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 1.0 StmtDelete(1405) StmtAppend(1410,1411) StmtDelete(1395) StmtDelete(1399) StmtAppend(1394,1398) StmtDelete(1405) (stored at: variant335)
+379551 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 1.0 StmtReplace(1398,1398) StmtDelete(1405) StmtAppend(1411,1405) StmtDelete(1392) StmtDelete(1398) StmtReplace(1393,1398) StmtDelete(1399) StmtReplace(1412,1405) (stored at: variant336)
+380603 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 2.0 StmtReplace(1398,1398) StmtDelete(1405) StmtAppend(1411,1405) StmtDelete(1392) StmtDelete(1398) StmtReplace(1393,1398) StmtDelete(1399) StmtAppend(1398,1398) (stored at: variant337)
+382032 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 2.0 StmtDelete(1399) StmtReplace(1395,1402) StmtAppend(1394,1398) StmtDelete(1402) StmtReplace(1412,1405) StmtReplace(1395,1403) StmtAppend(1406,1405) (stored at: variant338)
+383501 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 1.0 StmtDelete(1392) StmtAppend(1411,1405) StmtReplace(1413,1413) StmtReplace(1411,1406) StmtReplace(1395,1403) StmtDelete(1399) StmtReplace(1408,1405) StmtDelete(1406) (stored at: variant339)
+385217 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 1.0 StmtAppend(1405,1413) StmtDelete(1402) StmtAppend(1412,1406) (stored at: variant340)
+387148 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtAppend(1405,1413) StmtDelete(1402) StmtDelete(1411) (stored at: variant341)
+387664 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 2.0 StmtDelete(1399) StmtReplace(1395,1402) StmtAppend(1411,1405) StmtDelete(1392) StmtDelete(1398) StmtDelete(1401) (stored at: variant342)
+389157 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 2.0 StmtDelete(1392) StmtReplace(1412,1413) StmtDelete(1399) StmtDelete(1393) StmtReplace(1405,1408) (stored at: variant343)
+389209 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1472: error: missing return statement
+    }
+    ^
+1 error
+
+389209 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(1411) StmtAppend(1410,1411) StmtDelete(1395) StmtAppend(1410,1411) StmtDelete(1395) StmtDelete(1394) StmtDelete(1399) StmtDelete(1399) StmtAppend(1405,1411) StmtDelete(1396) at variant344 fails to compile
+
+389209 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtDelete(1411) StmtAppend(1410,1411) StmtDelete(1395) StmtAppend(1410,1411) StmtDelete(1395) StmtDelete(1394) StmtDelete(1399) StmtDelete(1399) StmtAppend(1405,1411) StmtDelete(1396) (stored at: variant344)
+389988 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 2.0 StmtDelete(1399) StmtReplace(1395,1402) StmtAppend(1394,1398) StmtDelete(1402) StmtReplace(1412,1405) StmtReplace(1395,1403) StmtDelete(1402) (stored at: variant345)
+391552 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 1.0 StmtDelete(1405) StmtAppend(1410,1411) StmtDelete(1395) StmtAppend(1410,1411) StmtDelete(1395) StmtDelete(1394) StmtDelete(1399) StmtDelete(1399) StmtReplace(1406,1406) StmtAppend(1408,1406) (stored at: variant346)
+393405 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 1.0 StmtDelete(1411) StmtReplace(1412,1411) StmtAppend(1405,1413) StmtDelete(1398) StmtReplace(1403,1402) (stored at: variant347)
+394418 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 2.0 StmtDelete(1405) StmtAppend(1410,1411) StmtDelete(1395) StmtAppend(1410,1411) StmtDelete(1395) StmtDelete(1394) StmtDelete(1399) StmtDelete(1399) StmtReplace(1406,1406) StmtDelete(1400) (stored at: variant348)
+395901 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 1.0 StmtDelete(1399) StmtReplace(1395,1402) StmtAppend(1394,1398) StmtDelete(1402) StmtReplace(1412,1405) StmtReplace(1395,1403) StmtReplace(1406,1410) (stored at: variant349)
+396918 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 1.0 StmtDelete(1392) StmtReplace(1412,1413) StmtAppend(1410,1413) StmtDelete(1413) StmtReplace(1395,1398) (stored at: variant350)
+398385 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 2.0 StmtAppend(1406,1411) StmtDelete(1395) StmtAppend(1394,1398) StmtDelete(1402) StmtReplace(1412,1405) StmtDelete(1405) StmtDelete(1392) (stored at: variant351)
+399446 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 2.0 StmtDelete(1405) StmtAppend(1410,1411) StmtDelete(1395) StmtAppend(1410,1411) StmtDelete(1395) StmtDelete(1394) StmtDelete(1399) StmtDelete(1399) StmtReplace(1406,1406) StmtAppend(1411,1408) (stored at: variant352)
+400208 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 2.0 StmtDelete(1405) StmtAppend(1410,1411) StmtDelete(1395) StmtReplace(1403,1402) StmtDelete(1411) StmtDelete(1411) (stored at: variant353)
+400816 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtReplace(1398,1398) StmtDelete(1405) StmtAppend(1411,1405) StmtDelete(1392) StmtDelete(1398) StmtReplace(1393,1398) StmtDelete(1399) StmtReplace(1395,1398) (stored at: variant354)
+401540 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 1.0 StmtDelete(1399) StmtReplace(1395,1402) StmtAppend(1411,1405) StmtDelete(1392) StmtDelete(1398) StmtDelete(1395) (stored at: variant355)
+401584 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1489: error: cannot find symbol
+        for (int i = 0; i < data.length(); i++) {
+                            ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+org/jsoup/parser/HtmlTreeBuilderState.java:1490: error: cannot find symbol
+			char c = data.charAt(i);
+			         ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+org/jsoup/parser/HtmlTreeBuilderState.java:1492: error: incompatible types: unexpected return value
+				return false;
+				       ^
+3 errors
+
+401584 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(1399) StmtReplace(1395,1402) StmtAppend(1411,1405) StmtDelete(1392) StmtDelete(1398) StmtReplace(1413,1398) at variant356 fails to compile
+
+401584 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtDelete(1399) StmtReplace(1395,1402) StmtAppend(1411,1405) StmtDelete(1392) StmtDelete(1398) StmtReplace(1413,1398) (stored at: variant356)
+403341 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 2.0 StmtDelete(1392) StmtReplace(1412,1413) StmtAppend(1410,1413) StmtDelete(1413) StmtDelete(1401) (stored at: variant357)
+405115 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 2.0 StmtAppend(1405,1413) StmtDelete(1402) StmtReplace(1395,1398) (stored at: variant358)
+405816 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 1.0 StmtDelete(1392) StmtReplace(1412,1413) StmtDelete(1399) StmtDelete(1393) StmtDelete(1393) (stored at: variant359)
+407595 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 1.0 StmtDelete(1405) StmtAppend(1410,1411) StmtDelete(1395) StmtDelete(1399) StmtAppend(1394,1398) StmtAppend(1413,1411) (stored at: variant360)
+409114 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 1.0 StmtDelete(1392) StmtAppend(1411,1405) StmtReplace(1413,1413) StmtReplace(1411,1406) StmtReplace(1395,1403) StmtDelete(1399) StmtReplace(1408,1405) StmtAppend(1398,1398) (stored at: variant361)
+410677 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 2.0 StmtDelete(1405) StmtAppend(1410,1411) StmtDelete(1395) StmtDelete(1399) StmtAppend(1394,1398) StmtReplace(1410,1406) (stored at: variant362)
+411447 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 2.0 StmtDelete(1405) StmtAppend(1410,1411) StmtDelete(1395) StmtReplace(1403,1402) StmtDelete(1411) StmtReplace(1413,1413) (stored at: variant363)
+412328 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 2.0 StmtDelete(1392) StmtReplace(1412,1413) StmtDelete(1399) StmtDelete(1393) StmtReplace(1413,1407) (stored at: variant364)
+412371 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1465: error: cannot find symbol
+			for (int i = 0; i < data.length(); i++) {
+			                    ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+org/jsoup/parser/HtmlTreeBuilderState.java:1466: error: cannot find symbol
+				char c = data.charAt(i);
+				         ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+2 errors
+
+412371 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(1405,1413) StmtDelete(1402) StmtReplace(1393,1398) at variant365 fails to compile
+
+412371 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtAppend(1405,1413) StmtDelete(1402) StmtReplace(1393,1398) (stored at: variant365)
+412947 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 1.0 StmtAppend(1406,1411) StmtDelete(1392) StmtDelete(1398) StmtDelete(1407) StmtDelete(1406) StmtReplace(1394,1398) (stored at: variant366)
+414652 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 1.0 StmtDelete(1405) StmtAppend(1410,1411) StmtDelete(1395) StmtAppend(1410,1411) StmtDelete(1395) StmtDelete(1394) StmtDelete(1399) StmtDelete(1399) StmtAppend(1405,1406) StmtDelete(1408) (stored at: variant367)
+416183 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 2.0 StmtDelete(1405) StmtAppend(1410,1411) StmtDelete(1395) StmtReplace(1403,1402) StmtDelete(1411) StmtReplace(1395,1402) (stored at: variant368)
+417328 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 1.0 StmtDelete(1392) StmtReplace(1412,1413) StmtDelete(1399) StmtDelete(1393) StmtDelete(1400) (stored at: variant369)
+418164 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 2.0 StmtDelete(1392) StmtAppend(1411,1405) StmtReplace(1413,1413) StmtReplace(1411,1406) StmtReplace(1395,1403) StmtAppend(1394,1398) StmtAppend(1401,1402) StmtReplace(1395,1398) (stored at: variant370)
+418221 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1485: error: missing return statement
+    }
+    ^
+1 error
+
+418221 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(1411) StmtAppend(1410,1411) StmtDelete(1395) StmtAppend(1410,1411) StmtDelete(1395) StmtDelete(1394) StmtDelete(1402) StmtReplace(1412,1405) StmtDelete(1405) StmtReplace(1403,1398) at variant371 fails to compile
+
+418221 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtDelete(1411) StmtAppend(1410,1411) StmtDelete(1395) StmtAppend(1410,1411) StmtDelete(1395) StmtDelete(1394) StmtDelete(1402) StmtReplace(1412,1405) StmtDelete(1405) StmtReplace(1403,1398) (stored at: variant371)
+419700 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 2.0 StmtAppend(1406,1411) StmtDelete(1395) StmtDelete(1399) StmtAppend(1405,1411) StmtAppend(1398,1398) (stored at: variant372)
+419746 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1468: error: missing return statement
+    }
+    ^
+1 error
+
+419746 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(1392) StmtAppend(1411,1405) StmtReplace(1413,1413) StmtReplace(1411,1406) StmtDelete(1396) at variant373 fails to compile
+
+419747 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtDelete(1392) StmtAppend(1411,1405) StmtReplace(1413,1413) StmtReplace(1411,1406) StmtDelete(1396) (stored at: variant373)
+421511 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 1.0 StmtDelete(1405) StmtAppend(1410,1411) StmtDelete(1395) StmtReplace(1403,1402) StmtAppend(1394,1398) StmtAppend(1401,1402) StmtAppend(1398,1398) (stored at: variant374)
+423142 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 2.0 StmtDelete(1405) StmtAppend(1410,1411) StmtReplace(1395,1402) StmtAppend(1411,1405) StmtDelete(1392) StmtDelete(1398) StmtAppend(1405,1405) (stored at: variant375)
+423194 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1473: error: cannot find symbol
+            return isWhitespace(data);
+                                ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+1 error
+
+423194 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(1399) StmtAppend(1394,1398) StmtDelete(1406) at variant376 fails to compile
+
+423194 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtDelete(1399) StmtAppend(1394,1398) StmtDelete(1406) (stored at: variant376)
+424769 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 1.0 StmtReplace(1398,1398) StmtDelete(1405) StmtAppend(1411,1405) StmtDelete(1392) StmtDelete(1398) StmtDelete(1413) StmtDelete(1399) (stored at: variant377)
+425244 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 2.0 StmtDelete(1392) StmtReplace(1412,1413) StmtDelete(1399) StmtDelete(1395) (stored at: variant378)
+427044 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 1.0 StmtDelete(1399) StmtReplace(1395,1402) StmtDelete(1392) (stored at: variant379)
+428620 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 1.0 StmtAppend(1405,1413) StmtDelete(1402) StmtReplace(1412,1405) StmtReplace(1395,1403) StmtDelete(1401) (stored at: variant380)
+428699 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1483: error: missing return statement
+    }
+    ^
+1 error
+
+428699 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(1405,1413) StmtReplace(1408,1405) StmtReplace(1403,1398) at variant381 fails to compile
+
+428699 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtAppend(1405,1413) StmtReplace(1408,1405) StmtReplace(1403,1398) (stored at: variant381)
+429361 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 1.0 StmtDelete(1392) StmtAppend(1411,1405) StmtReplace(1413,1413) StmtReplace(1411,1406) StmtReplace(1395,1403) StmtReplace(1410,1408) (stored at: variant382)
+429422 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1465: error: cannot find symbol
+            for (int i = 0; i < data.length(); i++) {
+                                ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+org/jsoup/parser/HtmlTreeBuilderState.java:1466: error: cannot find symbol
+				char c = data.charAt(i);
+				         ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+2 errors
+
+429422 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(1410,1411) StmtDelete(1395) StmtDelete(1399) StmtAppend(1394,1398) StmtReplace(1394,1398) at variant383 fails to compile
+
+429422 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtAppend(1410,1411) StmtDelete(1395) StmtDelete(1399) StmtAppend(1394,1398) StmtReplace(1394,1398) (stored at: variant383)
+429427 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 2.0 StmtReplace(1395,1402) StmtAppend(1411,1405) StmtDelete(1392) StmtDelete(1398) StmtReplace(1401,1402) (stored at: )
+431118 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 2.0 StmtDelete(1411) StmtReplace(1412,1411) StmtAppend(1405,1413) StmtDelete(1395) StmtAppend(1410,1411) StmtDelete(1395) StmtDelete(1394) StmtDelete(1399) StmtDelete(1399) StmtAppend(1405,1406) StmtReplace(1412,1412) (stored at: variant384)
+432329 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 2.0 StmtDelete(1405) StmtDelete(1395) (stored at: variant385)
+432367 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1475: error: cannot find symbol
+				if (!StringUtil.isWhitespace(c))
+				                             ^
+  symbol:   variable c
+  location: class HtmlTreeBuilderState
+1 error
+
+432367 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(1392) StmtReplace(1412,1413) StmtAppend(1411,1405) StmtReplace(1413,1413) StmtReplace(1411,1406) StmtReplace(1395,1403) StmtAppend(1394,1398) StmtAppend(1401,1402) StmtDelete(1400) at variant386 fails to compile
+
+432367 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 0.0 StmtDelete(1392) StmtReplace(1412,1413) StmtAppend(1411,1405) StmtReplace(1413,1413) StmtReplace(1411,1406) StmtReplace(1395,1403) StmtAppend(1394,1398) StmtAppend(1401,1402) StmtDelete(1400) (stored at: variant386)
+432687 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 7 2.0 StmtDelete(1413) StmtDelete(1407) (stored at: variant387)
+432688 [main] INFO clegoues.genprog4java.Search.Search  - search: generation8
+433660 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 2.0 StmtDelete(1392) StmtAppend(1411,1405) StmtReplace(1413,1413) StmtReplace(1411,1406) StmtReplace(1395,1403) StmtAppend(1394,1398) StmtAppend(1401,1402) StmtReplace(1395,1398) StmtDelete(1402) (stored at: variant388)
+433730 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1490: error: cannot find symbol
+        for (int i = 0; i < data.length(); i++) {
+                            ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+org/jsoup/parser/HtmlTreeBuilderState.java:1491: error: cannot find symbol
+			char c = data.charAt(i);
+			         ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+org/jsoup/parser/HtmlTreeBuilderState.java:1493: error: incompatible types: unexpected return value
+				return false;
+				       ^
+3 errors
+
+433730 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(1405) StmtAppend(1410,1411) StmtReplace(1395,1402) StmtAppend(1411,1405) StmtDelete(1392) StmtDelete(1398) StmtAppend(1405,1405) StmtReplace(1411,1398) at variant389 fails to compile
+
+433730 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtDelete(1405) StmtAppend(1410,1411) StmtReplace(1395,1402) StmtAppend(1411,1405) StmtDelete(1392) StmtDelete(1398) StmtAppend(1405,1405) StmtReplace(1411,1398) (stored at: variant389)
+435678 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtDelete(1413) StmtDelete(1407) StmtDelete(1411) (stored at: variant390)
+437618 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 1.0 StmtDelete(1392) StmtReplace(1412,1413) StmtAppend(1410,1413) StmtDelete(1413) StmtDelete(1401) StmtDelete(1399) (stored at: variant391)
+439637 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 1.0 StmtDelete(1405) StmtAppend(1410,1411) StmtDelete(1395) StmtReplace(1403,1402) StmtDelete(1411) StmtDelete(1411) StmtReplace(1411,1406) (stored at: variant392)
+441366 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 2.0 StmtDelete(1411) StmtAppend(1410,1411) StmtDelete(1395) StmtAppend(1410,1411) StmtDelete(1395) StmtDelete(1394) StmtDelete(1399) StmtDelete(1399) StmtAppend(1405,1411) StmtAppend(1407,1411) StmtAppend(1394,1398) (stored at: variant393)
+443079 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 1.0 StmtDelete(1405) StmtAppend(1410,1411) StmtReplace(1395,1402) StmtAppend(1411,1405) StmtDelete(1392) StmtDelete(1398) StmtAppend(1405,1405) StmtAppend(1406,1411) (stored at: variant394)
+444855 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 2.0 StmtDelete(1392) StmtReplace(1412,1413) StmtAppend(1410,1413) StmtDelete(1413) StmtDelete(1401) StmtAppend(1413,1411) (stored at: variant395)
+446489 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 2.0 StmtAppend(1405,1413) StmtDelete(1402) StmtReplace(1395,1398) StmtDelete(1407) (stored at: variant396)
+447497 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 2.0 StmtDelete(1399) StmtReplace(1395,1402) StmtAppend(1394,1398) StmtDelete(1402) StmtReplace(1412,1405) StmtReplace(1395,1403) StmtDelete(1402) StmtAppend(1394,1398) (stored at: variant397)
+448066 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 1.0 StmtReplace(1395,1402) StmtAppend(1411,1405) StmtDelete(1392) StmtDelete(1398) StmtReplace(1401,1402) StmtDelete(1394) (stored at: variant398)
+448491 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 2.0 StmtDelete(1399) StmtReplace(1395,1402) StmtAppend(1411,1405) StmtDelete(1392) StmtDelete(1398) StmtDelete(1401) StmtDelete(1405) (stored at: variant399)
+450165 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 2.0 StmtDelete(1405) StmtAppend(1410,1411) StmtDelete(1395) StmtAppend(1410,1411) StmtDelete(1395) StmtDelete(1394) StmtDelete(1399) StmtDelete(1399) StmtReplace(1406,1406) StmtDelete(1400) StmtDelete(1406) (stored at: variant400)
+451076 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 2.0 StmtAppend(1406,1411) StmtDelete(1395) StmtAppend(1394,1398) StmtDelete(1402) StmtReplace(1412,1405) StmtDelete(1405) StmtDelete(1392) StmtReplace(1394,1398) (stored at: variant401)
+451522 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 2.0 StmtReplace(1395,1402) StmtAppend(1411,1405) StmtDelete(1392) StmtDelete(1398) StmtReplace(1401,1402) StmtDelete(1394) (stored at: variant402)
+451573 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1471: error: missing return statement
+    }
+    ^
+1 error
+
+451573 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(1405) StmtDelete(1395) StmtDelete(1396) at variant403 fails to compile
+
+451573 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtDelete(1405) StmtDelete(1395) StmtDelete(1396) (stored at: variant403)
+452498 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 2.0 StmtAppend(1406,1411) StmtDelete(1395) StmtDelete(1399) StmtAppend(1405,1411) StmtAppend(1398,1398) StmtDelete(1400) (stored at: variant404)
+453355 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 2.0 StmtDelete(1405) StmtAppend(1410,1411) StmtDelete(1395) StmtAppend(1410,1411) StmtDelete(1395) StmtDelete(1394) StmtDelete(1399) StmtDelete(1399) StmtReplace(1406,1406) StmtDelete(1400) StmtDelete(1400) (stored at: variant405)
+453362 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 2.0 StmtDelete(1399) StmtReplace(1395,1402) StmtAppend(1411,1405) StmtDelete(1392) StmtDelete(1398) StmtDelete(1401) StmtDelete(1402) (stored at: )
+454552 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 1.0 StmtAppend(1405,1413) StmtDelete(1402) StmtReplace(1395,1398) StmtReplace(1407,1406) (stored at: variant406)
+456175 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 2.0 StmtReplace(1395,1402) StmtAppend(1411,1405) StmtDelete(1392) StmtDelete(1398) StmtReplace(1401,1402) StmtReplace(1412,1411) (stored at: variant407)
+456181 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 2.0 StmtDelete(1405) StmtAppend(1410,1411) StmtDelete(1395) StmtAppend(1410,1411) StmtDelete(1395) StmtDelete(1394) StmtDelete(1399) StmtDelete(1399) StmtReplace(1406,1406) StmtDelete(1400) StmtDelete(1399) (stored at: )
+457791 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 1.0 StmtDelete(1413) StmtDelete(1407) StmtDelete(1395) (stored at: variant408)
+459414 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 2.0 StmtAppend(1406,1411) StmtDelete(1395) StmtAppend(1394,1398) StmtDelete(1402) StmtReplace(1412,1405) StmtDelete(1405) StmtDelete(1392) StmtAppend(1413,1405) (stored at: variant409)
+459464 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1500: error: cannot find symbol
+        for (int i = 0; i < data.length(); i++) {
+                            ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+org/jsoup/parser/HtmlTreeBuilderState.java:1501: error: cannot find symbol
+			char c = data.charAt(i);
+			         ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+org/jsoup/parser/HtmlTreeBuilderState.java:1503: error: incompatible types: unexpected return value
+				return false;
+				       ^
+3 errors
+
+459464 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(1411) StmtAppend(1410,1411) StmtDelete(1395) StmtAppend(1410,1411) StmtDelete(1395) StmtDelete(1394) StmtDelete(1399) StmtDelete(1399) StmtAppend(1405,1411) StmtAppend(1407,1411) StmtReplace(1412,1398) at variant410 fails to compile
+
+459464 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtDelete(1411) StmtAppend(1410,1411) StmtDelete(1395) StmtAppend(1410,1411) StmtDelete(1395) StmtDelete(1394) StmtDelete(1399) StmtDelete(1399) StmtAppend(1405,1411) StmtAppend(1407,1411) StmtReplace(1412,1398) (stored at: variant410)
+461343 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtDelete(1392) StmtReplace(1412,1413) StmtAppend(1410,1413) StmtDelete(1413) StmtDelete(1401) StmtDelete(1408) (stored at: variant411)
+461754 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 2.0 StmtDelete(1392) StmtReplace(1412,1413) StmtDelete(1399) StmtDelete(1395) StmtAppend(1393,1398) (stored at: variant412)
+463310 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 2.0 StmtDelete(1399) StmtReplace(1395,1402) StmtAppend(1394,1398) StmtDelete(1402) StmtReplace(1412,1405) StmtReplace(1395,1403) StmtAppend(1406,1405) StmtReplace(1403,1402) (stored at: variant413)
+465146 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 1.0 StmtDelete(1392) StmtAppend(1411,1405) StmtReplace(1413,1413) StmtReplace(1411,1406) StmtReplace(1395,1403) StmtAppend(1394,1398) StmtAppend(1401,1402) StmtReplace(1395,1398) StmtDelete(1410) (stored at: variant414)
+466217 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 2.0 StmtAppend(1406,1411) StmtDelete(1395) StmtAppend(1394,1398) StmtDelete(1402) StmtReplace(1412,1405) StmtDelete(1405) StmtDelete(1392) StmtDelete(1395) (stored at: variant415)
+466974 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 2.0 StmtDelete(1392) StmtReplace(1412,1413) StmtDelete(1399) StmtDelete(1393) StmtReplace(1413,1407) StmtReplace(1412,1413) (stored at: variant416)
+466980 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 2.0 StmtDelete(1392) StmtAppend(1411,1405) StmtReplace(1413,1413) StmtReplace(1411,1406) StmtReplace(1395,1403) StmtAppend(1394,1398) StmtAppend(1401,1402) StmtReplace(1395,1398) StmtDelete(1395) (stored at: )
+468572 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 2.0 StmtDelete(1405) StmtAppend(1410,1411) StmtDelete(1395) StmtDelete(1399) StmtAppend(1394,1398) StmtReplace(1410,1406) StmtDelete(1392) (stored at: variant417)
+470036 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtAppend(1406,1411) StmtDelete(1395) StmtDelete(1399) StmtAppend(1405,1411) StmtAppend(1398,1398) StmtReplace(1396,1403) (stored at: variant418)
+471202 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 1.0 StmtDelete(1392) StmtAppend(1411,1405) StmtReplace(1413,1413) StmtReplace(1411,1406) StmtReplace(1395,1403) StmtAppend(1394,1398) StmtAppend(1401,1402) StmtReplace(1395,1398) StmtReplace(1394,1398) (stored at: variant419)
+471828 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 1.0 StmtReplace(1398,1398) StmtDelete(1405) StmtAppend(1411,1405) StmtDelete(1392) StmtDelete(1398) StmtReplace(1393,1398) StmtDelete(1399) StmtAppend(1398,1398) StmtReplace(1412,1406) (stored at: variant420)
+473523 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 2.0 StmtDelete(1405) StmtAppend(1410,1411) StmtDelete(1395) StmtReplace(1403,1402) StmtDelete(1411) StmtReplace(1395,1402) StmtDelete(1394) (stored at: variant421)
+473575 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1481: error: missing return statement
+    }
+    ^
+1 error
+
+473575 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(1405) StmtAppend(1410,1411) StmtDelete(1395) StmtReplace(1403,1402) StmtDelete(1411) StmtReplace(1413,1413) StmtDelete(1403) at variant422 fails to compile
+
+473575 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtDelete(1405) StmtAppend(1410,1411) StmtDelete(1395) StmtReplace(1403,1402) StmtDelete(1411) StmtReplace(1413,1413) StmtDelete(1403) (stored at: variant422)
+475195 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 2.0 StmtAppend(1405,1413) StmtDelete(1402) StmtReplace(1395,1398) StmtDelete(1395) (stored at: variant423)
+476773 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 2.0 StmtDelete(1392) StmtReplace(1412,1413) StmtAppend(1410,1413) StmtDelete(1413) StmtDelete(1401) StmtDelete(1405) (stored at: variant424)
+478471 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 1.0 StmtDelete(1392) StmtAppend(1411,1405) StmtReplace(1413,1413) StmtReplace(1401,1402) StmtDelete(1402) (stored at: variant425)
+480108 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 1.0 StmtReplace(1395,1402) StmtAppend(1411,1405) StmtDelete(1392) StmtReplace(1395,1403) StmtAppend(1394,1398) StmtAppend(1401,1402) StmtReplace(1395,1398) StmtReplace(1407,1405) (stored at: variant426)
+481464 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 2.0 StmtDelete(1405) StmtAppend(1410,1411) StmtAppend(1410,1411) StmtDelete(1395) StmtDelete(1394) StmtDelete(1399) StmtDelete(1399) StmtReplace(1406,1406) StmtDelete(1400) StmtReplace(1405,1408) (stored at: variant427)
+481999 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 2.0 StmtDelete(1405) StmtAppend(1410,1411) StmtAppend(1411,1405) StmtDelete(1392) StmtDelete(1398) StmtAppend(1405,1405) StmtDelete(1395) (stored at: variant428)
+483965 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 2.0 StmtDelete(1411) StmtAppend(1410,1411) StmtDelete(1395) StmtAppend(1410,1411) StmtDelete(1401) StmtReplace(1412,1406) (stored at: variant429)
+485950 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 2.0 StmtDelete(1392) StmtReplace(1412,1413) StmtAppend(1410,1413) StmtDelete(1394) StmtDelete(1399) StmtDelete(1399) StmtAppend(1405,1411) StmtAppend(1407,1411) StmtDelete(1394) (stored at: variant430)
+487738 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 2.0 StmtDelete(1392) StmtReplace(1412,1413) StmtAppend(1410,1413) StmtDelete(1413) StmtAppend(1406,1405) StmtReplace(1393,1398) (stored at: variant431)
+489543 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 2.0 StmtDelete(1399) StmtReplace(1395,1402) StmtAppend(1394,1398) StmtDelete(1402) StmtReplace(1412,1405) StmtAppend(1401,1402) (stored at: variant432)
+489616 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1473: error: cannot find symbol
+            for (int i = 0; i < data.length(); i++) {
+                                ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+org/jsoup/parser/HtmlTreeBuilderState.java:1474: error: cannot find symbol
+				char c = data.charAt(i);
+				         ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+2 errors
+
+489616 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(1405,1413) StmtDelete(1402) StmtReplace(1411,1406) StmtReplace(1395,1403) StmtAppend(1394,1398) StmtAppend(1401,1402) StmtReplace(1395,1398) StmtReplace(1408,1410) at variant433 fails to compile
+
+489616 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtAppend(1405,1413) StmtDelete(1402) StmtReplace(1411,1406) StmtReplace(1395,1403) StmtAppend(1394,1398) StmtAppend(1401,1402) StmtReplace(1395,1398) StmtReplace(1408,1410) (stored at: variant433)
+489682 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1474: error: cannot find symbol
+            if (!StringUtil.isWhitespace(c))
+                                         ^
+  symbol:   variable c
+  location: class HtmlTreeBuilderState
+1 error
+
+489682 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(1392) StmtAppend(1411,1405) StmtDelete(1400) at variant434 fails to compile
+
+489682 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtDelete(1392) StmtAppend(1411,1405) StmtDelete(1400) (stored at: variant434)
+489748 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1469: error: cannot find symbol
+			for (int i = 0; i < data.length(); i++) {
+			                    ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+org/jsoup/parser/HtmlTreeBuilderState.java:1470: error: cannot find symbol
+				char c = data.charAt(i);
+				         ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+2 errors
+
+489748 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(1405) StmtAppend(1410,1411) StmtDelete(1395) StmtAppend(1410,1411) StmtDelete(1395) StmtDelete(1394) StmtDelete(1399) StmtDelete(1399) StmtReplace(1406,1406) StmtAppend(1394,1398) StmtReplace(1410,1406) StmtAppend(1392,1398) at variant435 fails to compile
+
+489748 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtDelete(1405) StmtAppend(1410,1411) StmtDelete(1395) StmtAppend(1410,1411) StmtDelete(1395) StmtDelete(1394) StmtDelete(1399) StmtDelete(1399) StmtReplace(1406,1406) StmtAppend(1394,1398) StmtReplace(1410,1406) StmtAppend(1392,1398) (stored at: variant435)
+489799 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1477: error: cannot find symbol
+            if (!StringUtil.isWhitespace(c))
+                                         ^
+  symbol:   variable c
+  location: class HtmlTreeBuilderState
+1 error
+
+489799 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(1405) StmtAppend(1410,1411) StmtDelete(1395) StmtDelete(1400) at variant436 fails to compile
+
+489799 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtDelete(1405) StmtAppend(1410,1411) StmtDelete(1395) StmtDelete(1400) (stored at: variant436)
+489843 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1465: error: cannot find symbol
+			for (int i = 0; i < data.length(); i++) {
+			                    ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+org/jsoup/parser/HtmlTreeBuilderState.java:1466: error: cannot find symbol
+				char c = data.charAt(i);
+				         ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+2 errors
+
+489843 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(1405) StmtDelete(1398) StmtReplace(1393,1398) StmtDelete(1399) StmtAppend(1398,1398) StmtDelete(1396) at variant437 fails to compile
+
+489843 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtDelete(1405) StmtDelete(1398) StmtReplace(1393,1398) StmtDelete(1399) StmtAppend(1398,1398) StmtDelete(1396) (stored at: variant437)
+491463 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 2.0 StmtReplace(1398,1398) StmtDelete(1405) StmtAppend(1411,1405) StmtReplace(1410,1406) (stored at: variant438)
+493186 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 2.0 StmtAppend(1406,1411) StmtReplace(1395,1402) StmtReplace(1395,1403) (stored at: variant439)
+494690 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 2.0 StmtDelete(1405) StmtAppend(1410,1411) StmtDelete(1395) StmtReplace(1403,1402) StmtDelete(1399) StmtAppend(1405,1411) StmtAppend(1398,1398) StmtAppend(1413,1407) (stored at: variant440)
+496382 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 2.0 StmtDelete(1405) StmtAppend(1410,1411) StmtDelete(1395) StmtAppend(1410,1411) StmtDelete(1395) StmtAppend(1410,1411) StmtDelete(1395) StmtReplace(1403,1402) StmtDelete(1411) StmtReplace(1413,1413) StmtDelete(1398) (stored at: variant441)
+497584 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 1.0 StmtDelete(1399) StmtDelete(1399) StmtReplace(1406,1406) StmtDelete(1400) StmtAppend(1412,1411) (stored at: variant442)
+497605 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 2.0 StmtDelete(1399) StmtReplace(1395,1402) StmtAppend(1411,1405) StmtDelete(1392) StmtDelete(1398) StmtReplace(1395,1398) StmtDelete(1395) (stored at: )
+499200 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 1.0 StmtAppend(1405,1413) StmtReplace(1410,1406) (stored at: variant443)
+499244 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1480: error: missing return statement
+    }
+    ^
+1 error
+
+499244 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(1405,1413) StmtReplace(1412,1413) StmtAppend(1410,1413) StmtDelete(1413) StmtDelete(1401) StmtDelete(1403) at variant444 fails to compile
+
+499244 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 0.0 StmtAppend(1405,1413) StmtReplace(1412,1413) StmtAppend(1410,1413) StmtDelete(1413) StmtDelete(1401) StmtDelete(1403) (stored at: variant444)
+499248 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 8 1.0 StmtReplace(1395,1398) StmtReplace(1408,1410) (stored at: )
+499248 [main] INFO clegoues.genprog4java.Search.Search  - search: generation9
+500112 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1477: error: cannot find symbol
+        for (int i = 0; i < data.length(); i++) {
+                            ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+org/jsoup/parser/HtmlTreeBuilderState.java:1478: error: cannot find symbol
+			char c = data.charAt(i);
+			         ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+org/jsoup/parser/HtmlTreeBuilderState.java:1480: error: incompatible types: unexpected return value
+				return false;
+				       ^
+3 errors
+
+500112 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(1392) StmtReplace(1412,1413) StmtDelete(1399) StmtDelete(1393) StmtReplace(1413,1407) StmtReplace(1412,1413) StmtReplace(1405,1398) at variant445 fails to compile
+
+500112 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtDelete(1392) StmtReplace(1412,1413) StmtDelete(1399) StmtDelete(1393) StmtReplace(1413,1407) StmtReplace(1412,1413) StmtReplace(1405,1398) (stored at: variant445)
+501846 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 1.0 StmtDelete(1405) StmtAppend(1410,1411) StmtDelete(1395) StmtReplace(1403,1402) StmtDelete(1411) StmtReplace(1395,1402) StmtDelete(1394) StmtAppend(1410,1413) (stored at: variant446)
+503340 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 2.0 StmtAppend(1406,1411) StmtDelete(1395) StmtDelete(1399) StmtAppend(1405,1411) StmtAppend(1398,1398) StmtDelete(1400) StmtDelete(1411) (stored at: variant447)
+505045 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 1.0 StmtDelete(1405) StmtAppend(1410,1411) StmtDelete(1395) StmtAppend(1410,1411) StmtDelete(1395) StmtDelete(1394) StmtDelete(1399) StmtDelete(1399) StmtReplace(1406,1406) StmtDelete(1400) StmtDelete(1406) StmtDelete(1408) (stored at: variant448)
+505120 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1480: error: missing return statement
+    }
+    ^
+1 error
+
+505120 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(1406,1411) StmtReplace(1395,1402) StmtReplace(1395,1403) StmtDelete(1403) at variant449 fails to compile
+
+505120 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtAppend(1406,1411) StmtReplace(1395,1402) StmtReplace(1395,1403) StmtDelete(1403) (stored at: variant449)
+507021 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 2.0 StmtAppend(1406,1411) StmtDelete(1395) StmtDelete(1399) StmtAppend(1405,1411) StmtAppend(1398,1398) StmtDelete(1400) StmtReplace(1395,1398) (stored at: variant450)
+507092 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1479: error: missing return statement
+    }
+    ^
+1 error
+
+507092 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(1405) StmtAppend(1410,1411) StmtAppend(1410,1411) StmtDelete(1395) StmtDelete(1394) StmtDelete(1399) StmtDelete(1399) StmtReplace(1406,1406) StmtDelete(1400) StmtReplace(1405,1408) StmtDelete(1403) at variant451 fails to compile
+
+507092 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtDelete(1405) StmtAppend(1410,1411) StmtAppend(1410,1411) StmtDelete(1395) StmtDelete(1394) StmtDelete(1399) StmtDelete(1399) StmtReplace(1406,1406) StmtDelete(1400) StmtReplace(1405,1408) StmtDelete(1403) (stored at: variant451)
+508695 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 2.0 StmtDelete(1405) StmtAppend(1410,1411) StmtDelete(1395) StmtAppend(1410,1411) StmtDelete(1395) StmtDelete(1394) StmtDelete(1399) StmtDelete(1399) StmtReplace(1406,1406) StmtDelete(1400) StmtDelete(1399) StmtDelete(1393) (stored at: variant452)
+510520 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 1.0 StmtDelete(1405) StmtAppend(1410,1411) StmtDelete(1395) StmtAppend(1410,1411) StmtDelete(1395) StmtDelete(1394) StmtDelete(1399) StmtDelete(1399) StmtReplace(1406,1406) StmtDelete(1400) StmtDelete(1399) StmtAppend(1398,1398) (stored at: variant453)
+510527 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 1.0 StmtDelete(1399) StmtReplace(1395,1402) StmtAppend(1411,1405) StmtDelete(1392) StmtDelete(1398) StmtDelete(1401) StmtDelete(1402) StmtDelete(1392) (stored at: )
+512022 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 2.0 StmtAppend(1406,1411) StmtDelete(1395) StmtDelete(1399) StmtAppend(1405,1411) StmtAppend(1398,1398) StmtDelete(1400) StmtAppend(1412,1407) (stored at: variant454)
+513942 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 1.0 StmtAppend(1406,1411) StmtDelete(1395) StmtAppend(1394,1398) StmtDelete(1402) StmtReplace(1412,1405) StmtDelete(1405) StmtDelete(1392) StmtAppend(1413,1405) StmtAppend(1413,1411) (stored at: variant455)
+514575 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 1.0 StmtAppend(1405,1413) StmtDelete(1402) StmtReplace(1395,1398) StmtDelete(1395) StmtReplace(1411,1411) (stored at: variant456)
+516769 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtDelete(1405) StmtAppend(1410,1411) StmtDelete(1395) StmtAppend(1410,1411) StmtDelete(1395) StmtAppend(1410,1411) StmtDelete(1395) StmtReplace(1403,1402) StmtDelete(1411) StmtReplace(1413,1413) StmtDelete(1398) StmtAppend(1411,1410) (stored at: variant457)
+518389 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 2.0 StmtDelete(1405) StmtAppend(1410,1411) StmtDelete(1395) StmtReplace(1403,1402) StmtDelete(1411) StmtReplace(1395,1402) StmtDelete(1394) StmtAppend(1412,1412) (stored at: variant458)
+519946 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 2.0 StmtDelete(1405) StmtAppend(1410,1411) StmtDelete(1395) StmtReplace(1403,1402) StmtDelete(1399) StmtAppend(1405,1411) StmtAppend(1398,1398) StmtAppend(1413,1407) StmtReplace(1411,1407) (stored at: variant459)
+521240 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 2.0 StmtDelete(1411) StmtAppend(1410,1411) StmtDelete(1395) StmtAppend(1410,1411) StmtDelete(1395) StmtDelete(1394) StmtDelete(1399) StmtDelete(1399) StmtAppend(1405,1411) StmtAppend(1407,1411) StmtAppend(1394,1398) StmtDelete(1399) (stored at: variant460)
+522975 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 1.0 StmtDelete(1405) StmtAppend(1410,1411) StmtDelete(1395) StmtAppend(1410,1411) StmtDelete(1395) StmtDelete(1394) StmtDelete(1399) StmtDelete(1399) StmtReplace(1406,1406) StmtDelete(1400) StmtDelete(1400) StmtDelete(1412) (stored at: variant461)
+524514 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 2.0 StmtDelete(1405) StmtAppend(1410,1411) StmtDelete(1395) StmtReplace(1403,1402) StmtDelete(1399) StmtAppend(1405,1411) StmtAppend(1398,1398) StmtAppend(1413,1407) StmtDelete(1407) (stored at: variant462)
+525296 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 2.0 StmtAppend(1406,1411) StmtDelete(1395) StmtAppend(1394,1398) StmtDelete(1402) StmtReplace(1412,1405) StmtDelete(1405) StmtDelete(1392) StmtAppend(1413,1405) StmtDelete(1393) (stored at: variant463)
+525803 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 2.0 StmtDelete(1392) StmtAppend(1411,1405) StmtReplace(1413,1413) StmtReplace(1411,1406) StmtReplace(1395,1403) StmtAppend(1394,1398) StmtAppend(1401,1402) StmtReplace(1395,1398) StmtDelete(1402) StmtDelete(1402) (stored at: variant464)
+525811 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 1.0 StmtDelete(1399) StmtReplace(1395,1402) StmtAppend(1411,1405) StmtDelete(1392) StmtDelete(1398) StmtDelete(1401) StmtDelete(1405) StmtDelete(1394) (stored at: )
+527993 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 2.0 StmtDelete(1399) StmtReplace(1395,1402) StmtAppend(1394,1398) StmtDelete(1402) StmtReplace(1412,1405) StmtAppend(1401,1402) StmtDelete(1405) (stored at: variant465)
+529760 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 1.0 StmtAppend(1406,1411) StmtDelete(1395) StmtAppend(1394,1398) StmtDelete(1402) StmtReplace(1412,1405) StmtDelete(1405) StmtDelete(1392) StmtDelete(1395) StmtDelete(1407) (stored at: variant466)
+531236 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 2.0 StmtAppend(1405,1413) StmtDelete(1402) StmtReplace(1395,1398) StmtDelete(1395) StmtReplace(1395,1402) (stored at: variant467)
+532243 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 2.0 StmtAppend(1406,1411) StmtDelete(1395) StmtDelete(1399) StmtAppend(1405,1411) StmtAppend(1398,1398) StmtDelete(1400) StmtDelete(1411) (stored at: variant468)
+534122 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 2.0 StmtDelete(1405) StmtAppend(1410,1411) StmtDelete(1395) StmtReplace(1403,1402) StmtDelete(1411) StmtReplace(1395,1402) StmtDelete(1394) StmtAppend(1394,1398) (stored at: variant469)
+535158 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 2.0 StmtDelete(1392) StmtAppend(1411,1405) StmtReplace(1413,1413) StmtReplace(1411,1406) StmtReplace(1395,1403) StmtAppend(1394,1398) StmtAppend(1401,1402) StmtReplace(1395,1398) StmtDelete(1395) StmtReplace(1407,1407) (stored at: variant470)
+535166 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 2.0 StmtDelete(1405) StmtAppend(1410,1411) StmtDelete(1395) StmtAppend(1410,1411) StmtDelete(1395) StmtDelete(1394) StmtDelete(1399) StmtDelete(1399) StmtReplace(1406,1406) StmtDelete(1400) StmtDelete(1399) StmtReplace(1401,1402) (stored at: )
+535238 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1479: error: missing return statement
+    }
+    ^
+1 error
+
+535238 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(1405) StmtAppend(1410,1411) StmtDelete(1395) StmtAppend(1410,1411) StmtDelete(1395) StmtDelete(1394) StmtDelete(1399) StmtDelete(1399) StmtReplace(1406,1406) StmtDelete(1400) StmtDelete(1406) StmtDelete(1403) at variant471 fails to compile
+
+535238 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtDelete(1405) StmtAppend(1410,1411) StmtDelete(1395) StmtAppend(1410,1411) StmtDelete(1395) StmtDelete(1394) StmtDelete(1399) StmtDelete(1399) StmtReplace(1406,1406) StmtDelete(1400) StmtDelete(1406) StmtDelete(1403) (stored at: variant471)
+536702 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 2.0 StmtAppend(1406,1411) StmtDelete(1395) StmtAppend(1394,1398) StmtDelete(1402) StmtReplace(1412,1405) StmtDelete(1405) StmtDelete(1392) StmtReplace(1394,1398) StmtDelete(1410) (stored at: variant472)
+536754 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1479: error: missing return statement
+    }
+    ^
+1 error
+
+536755 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(1405) StmtAppend(1410,1411) StmtDelete(1395) StmtAppend(1410,1411) StmtDelete(1395) StmtDelete(1394) StmtDelete(1399) StmtDelete(1399) StmtReplace(1406,1406) StmtDelete(1400) StmtDelete(1406) StmtDelete(1403) at variant473 fails to compile
+
+536755 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtDelete(1405) StmtAppend(1410,1411) StmtDelete(1395) StmtAppend(1410,1411) StmtDelete(1395) StmtDelete(1394) StmtDelete(1399) StmtDelete(1399) StmtReplace(1406,1406) StmtDelete(1400) StmtDelete(1406) StmtDelete(1403) (stored at: variant473)
+537181 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 2.0 StmtDelete(1411) StmtAppend(1410,1411) StmtDelete(1395) StmtAppend(1410,1411) StmtDelete(1395) StmtDelete(1394) StmtDelete(1399) StmtDelete(1399) StmtAppend(1405,1411) StmtAppend(1407,1411) StmtAppend(1394,1398) StmtDelete(1399) (stored at: variant474)
+538955 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 1.0 StmtDelete(1392) StmtReplace(1412,1413) StmtDelete(1399) StmtDelete(1393) StmtReplace(1413,1407) StmtReplace(1412,1413) StmtDelete(1405) (stored at: variant475)
+540618 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 1.0 StmtDelete(1392) StmtReplace(1412,1413) StmtDelete(1399) StmtDelete(1395) StmtAppend(1393,1398) StmtDelete(1410) (stored at: variant476)
+542810 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 1.0 StmtDelete(1392) StmtReplace(1412,1413) StmtAppend(1410,1413) StmtDelete(1413) StmtDelete(1401) StmtDelete(1405) StmtDelete(1408) (stored at: variant477)
+544337 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 2.0 StmtReplace(1398,1398) StmtDelete(1405) StmtAppend(1411,1405) StmtReplace(1410,1406) StmtAppend(1405,1407) (stored at: variant478)
+544396 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1469: error: cannot find symbol
+			for (int i = 0; i < data.length(); i++) {
+			                    ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+org/jsoup/parser/HtmlTreeBuilderState.java:1470: error: cannot find symbol
+				char c = data.charAt(i);
+				         ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+2 errors
+
+544396 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(1399) StmtReplace(1395,1402) StmtAppend(1394,1398) StmtDelete(1402) StmtReplace(1412,1405) StmtReplace(1395,1403) StmtAppend(1406,1405) StmtReplace(1403,1402) StmtAppend(1392,1398) at variant479 fails to compile
+
+544396 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtDelete(1399) StmtReplace(1395,1402) StmtAppend(1394,1398) StmtDelete(1402) StmtReplace(1412,1405) StmtReplace(1395,1403) StmtAppend(1406,1405) StmtReplace(1403,1402) StmtAppend(1392,1398) (stored at: variant479)
+544458 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1471: error: missing return statement
+    }
+    ^
+1 error
+
+544458 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(1405) StmtAppend(1410,1411) StmtDelete(1395) StmtReplace(1403,1402) StmtDelete(1399) StmtAppend(1405,1411) StmtAppend(1398,1398) StmtAppend(1413,1407) StmtDelete(1396) at variant480 fails to compile
+
+544458 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtDelete(1405) StmtAppend(1410,1411) StmtDelete(1395) StmtReplace(1403,1402) StmtDelete(1399) StmtAppend(1405,1411) StmtAppend(1398,1398) StmtAppend(1413,1407) StmtDelete(1396) (stored at: variant480)
+546332 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 1.0 StmtDelete(1392) StmtReplace(1412,1413) StmtAppend(1410,1413) StmtDelete(1413) StmtAppend(1406,1405) StmtReplace(1393,1398) StmtAppend(1411,1406) (stored at: variant481)
+547938 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 1.0 StmtDelete(1392) StmtReplace(1412,1413) StmtDelete(1399) StmtReplace(1395,1398) StmtDelete(1402) StmtReplace(1411,1406) (stored at: variant482)
+549579 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 2.0 StmtDelete(1392) StmtAppend(1411,1405) StmtReplace(1413,1413) StmtReplace(1411,1406) StmtReplace(1395,1403) StmtAppend(1394,1398) StmtReplace(1413,1407) StmtReplace(1412,1413) StmtDelete(1407) (stored at: variant483)
+549629 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1471: error: missing return statement
+    }
+    ^
+1 error
+
+549629 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(1395) StmtDelete(1396) at variant484 fails to compile
+
+549629 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtDelete(1395) StmtDelete(1396) (stored at: variant484)
+551151 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 1.0 StmtAppend(1405,1413) StmtDelete(1402) StmtReplace(1395,1402) StmtReplace(1395,1403) StmtDelete(1402) (stored at: variant485)
+552156 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 2.0 StmtAppend(1406,1411) StmtDelete(1395) StmtDelete(1399) StmtAppend(1405,1411) StmtDelete(1399) StmtAppend(1405,1411) StmtAppend(1398,1398) StmtDelete(1400) StmtDelete(1399) (stored at: variant486)
+552197 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1476: error: cannot find symbol
+            if (!StringUtil.isWhitespace(c))
+                                         ^
+  symbol:   variable c
+  location: class HtmlTreeBuilderState
+1 error
+
+552197 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(1406,1411) StmtDelete(1400) StmtDelete(1405) at variant487 fails to compile
+
+552197 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtAppend(1406,1411) StmtDelete(1400) StmtDelete(1405) (stored at: variant487)
+552246 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1469: error: cannot find symbol
+			for (int i = 0; i < data.length(); i++) {
+			                    ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+org/jsoup/parser/HtmlTreeBuilderState.java:1470: error: cannot find symbol
+				char c = data.charAt(i);
+				         ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+2 errors
+
+552246 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(1405) StmtAppend(1410,1411) StmtAppend(1410,1411) StmtDelete(1395) StmtDelete(1394) StmtDelete(1399) StmtAppend(1393,1398) at variant488 fails to compile
+
+552246 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtDelete(1405) StmtAppend(1410,1411) StmtAppend(1410,1411) StmtDelete(1395) StmtDelete(1394) StmtDelete(1399) StmtAppend(1393,1398) (stored at: variant488)
+552296 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1476: error: cannot find symbol
+            if (!StringUtil.isWhitespace(c))
+                                         ^
+  symbol:   variable c
+  location: class HtmlTreeBuilderState
+1 error
+
+552296 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(1405) StmtAppend(1410,1411) StmtDelete(1395) StmtReplace(1403,1402) StmtDelete(1411) StmtReplace(1395,1402) StmtReplace(1406,1406) StmtDelete(1400) StmtReplace(1405,1408) StmtDelete(1400) at variant489 fails to compile
+
+552296 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtDelete(1405) StmtAppend(1410,1411) StmtDelete(1395) StmtReplace(1403,1402) StmtDelete(1411) StmtReplace(1395,1402) StmtReplace(1406,1406) StmtDelete(1400) StmtReplace(1405,1408) StmtDelete(1400) (stored at: variant489)
+553768 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 1.0 StmtDelete(1405) StmtAppend(1410,1411) StmtDelete(1399) StmtAppend(1405,1410) (stored at: variant490)
+553775 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 1.0 StmtDelete(1405) StmtAppend(1410,1411) StmtDelete(1395) StmtAppend(1410,1411) StmtDelete(1395) StmtDelete(1394) StmtDelete(1399) StmtDelete(1399) StmtReplace(1406,1406) StmtAppend(1410,1411) StmtDelete(1395) StmtDelete(1394) StmtDelete(1399) StmtDelete(1399) StmtReplace(1406,1406) StmtDelete(1400) StmtDelete(1399) StmtDelete(1394) (stored at: )
+555332 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 1.0 StmtDelete(1399) StmtReplace(1395,1402) StmtAppend(1411,1405) StmtDelete(1392) StmtDelete(1398) StmtDelete(1401) StmtDelete(1399) StmtReplace(1406,1406) StmtDelete(1400) StmtDelete(1406) StmtAppend(1411,1408) (stored at: variant491)
+555979 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 2.0 StmtDelete(1405) StmtAppend(1410,1411) StmtDelete(1395) StmtAppend(1410,1411) StmtDelete(1395) StmtDelete(1394) StmtReplace(1413,1413) (stored at: variant492)
+556026 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1467: error: cannot find symbol
+            for (int i = 0; i < data.length(); i++) {
+                                ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+org/jsoup/parser/HtmlTreeBuilderState.java:1468: error: cannot find symbol
+				char c = data.charAt(i);
+				         ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+2 errors
+
+556026 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(1405,1413) StmtDelete(1402) StmtReplace(1395,1398) StmtDelete(1399) StmtAppend(1405,1411) StmtAppend(1407,1411) StmtAppend(1394,1398) StmtDelete(1394) at variant493 fails to compile
+
+556026 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtAppend(1405,1413) StmtDelete(1402) StmtReplace(1395,1398) StmtDelete(1399) StmtAppend(1405,1411) StmtAppend(1407,1411) StmtAppend(1394,1398) StmtDelete(1394) (stored at: variant493)
+557634 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 1.0 StmtDelete(1411) StmtAppend(1410,1411) StmtDelete(1395) StmtAppend(1410,1411) StmtDelete(1395) StmtDelete(1394) StmtDelete(1402) (stored at: variant494)
+557639 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtDelete(1395) StmtAppend(1393,1398) StmtAppend(1394,1398) (stored at: )
+557696 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1478: error: missing return statement
+    }
+    ^
+1 error
+
+557696 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(1392) StmtReplace(1412,1413) StmtAppend(1410,1411) StmtDelete(1395) StmtReplace(1403,1402) StmtDelete(1411) StmtReplace(1395,1402) StmtDelete(1394) StmtDelete(1403) at variant495 fails to compile
+
+557696 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtDelete(1392) StmtReplace(1412,1413) StmtAppend(1410,1411) StmtDelete(1395) StmtReplace(1403,1402) StmtDelete(1411) StmtReplace(1395,1402) StmtDelete(1394) StmtDelete(1403) (stored at: variant495)
+559167 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 2.0 StmtDelete(1405) StmtAppend(1410,1411) StmtDelete(1395) StmtReplace(1403,1402) StmtDelete(1399) StmtAppend(1405,1411) StmtAppend(1410,1413) StmtDelete(1413) StmtDelete(1401) StmtDelete(1405) StmtDelete(1402) (stored at: variant496)
+560696 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 2.0 StmtDelete(1392) StmtAppend(1413,1407) StmtReplace(1396,1402) (stored at: variant497)
+562060 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 1.0 StmtDelete(1405) StmtAppend(1410,1411) StmtDelete(1395) StmtAppend(1410,1411) StmtDelete(1395) StmtDelete(1394) StmtDelete(1399) StmtDelete(1399) StmtReplace(1406,1406) StmtDelete(1400) StmtReplace(1395,1403) StmtAppend(1406,1405) StmtReplace(1403,1402) StmtDelete(1399) (stored at: variant498)
+563538 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 2.0 StmtDelete(1399) StmtReplace(1395,1402) StmtAppend(1394,1398) StmtDelete(1402) StmtReplace(1395,1402) (stored at: variant499)
+563588 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/HtmlTreeBuilderState.java:1465: error: cannot find symbol
+			for (int i = 0; i < data.length(); i++) {
+			                    ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+org/jsoup/parser/HtmlTreeBuilderState.java:1466: error: cannot find symbol
+				char c = data.charAt(i);
+				         ^
+  symbol:   variable data
+  location: class HtmlTreeBuilderState
+2 errors
+
+563588 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(1406,1411) StmtDelete(1395) StmtAppend(1394,1398) StmtDelete(1402) StmtReplace(1412,1405) StmtDelete(1413) StmtAppend(1406,1405) StmtReplace(1393,1398) StmtDelete(1402) at variant500 fails to compile
+
+563588 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 0.0 StmtAppend(1406,1411) StmtDelete(1395) StmtAppend(1394,1398) StmtDelete(1402) StmtReplace(1412,1405) StmtDelete(1413) StmtAppend(1406,1405) StmtReplace(1393,1398) StmtDelete(1402) (stored at: variant500)
+564930 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 9 2.0 StmtDelete(1392) StmtReplace(1412,1413) StmtDelete(1392) StmtAppend(1413,1405) StmtAppend(1407,1407) (stored at: variant501)
+565014 [main] INFO clegoues.genprog4java.fitness.Fitness  - Serialized test cache to file testcache.ser
+565014 [main] INFO clegoues.genprog4java.main.Main  - 
+Total elapsed time: 565
+

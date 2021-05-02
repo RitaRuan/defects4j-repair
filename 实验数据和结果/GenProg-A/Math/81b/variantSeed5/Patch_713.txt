@@ -1,0 +1,36 @@
+1 Delete /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1537
+Faulty:
+if (work[np - 8] > b2 || work[np - 4] > b1) {
+  return;
+}
+Seed:
+final int blockSize=BlockRealMatrix.BLOCK_SIZE;
+**************************************************
+2 Delete /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1481
+Faulty:
+if (work[nn - 5] > work[nn - 7]) {
+  return;
+}
+Seed:
+cachedVt=null;
+**************************************************
+3 Replace /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1517
+Faulty:
+a2=cnst3 * a2;
+Seed:
+final double gap2=0.5 * dMin2 - a2;
+**************************************************
+4 InsertBefore /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1535
+Faulty:
+double b2=work[np - 6];
+Seed:
+double beta=0;
+**************************************************
+5 Replace /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1544
+Faulty:
+b2=work[nn - 13] / work[nn - 15];
+Seed:
+tType=0;
+**************************************************
+Evaluations: 874
+EstimatedTime: 295948

@@ -1,0 +1,40 @@
+1 Delete /home/rtx/repair/d4j/Math/8b/src/main/java/org/apache/commons/math3/distribution/DiscreteDistribution.java 189
+Faulty:
+for (int i=0; i < sampleSize; i++) {
+  out[i]=sample();
+}
+Seed:
+double rnd=1.0d;
+**************************************************
+2 InsertBefore /home/rtx/repair/d4j/Math/8b/src/main/java/org/apache/commons/math3/util/MathArrays.java 1257
+Faulty:
+double[] out=new double[len];
+Seed:
+long result=1;
+**************************************************
+3 Delete /home/rtx/repair/d4j/Math/8b/src/main/java/org/apache/commons/math3/distribution/DiscreteDistribution.java 189
+Faulty:
+for (int i=0; i < sampleSize; i++) {
+  out[i]=sample();
+}
+Seed:
+double rnd=1.0d;
+**************************************************
+4 Delete /home/rtx/repair/d4j/Math/8b/src/main/java/org/apache/commons/math3/distribution/DiscreteDistribution.java 182
+Faulty:
+if (sampleSize <= 0) {
+  throw new NotStrictlyPositiveException(LocalizedFormats.NUMBER_OF_SAMPLES,sampleSize);
+}
+Seed:
+final double s=getExponent();
+**************************************************
+5 Replace /home/rtx/repair/d4j/Math/8b/src/main/java/org/apache/commons/math3/distribution/DiscreteDistribution.java 182
+Faulty:
+if (sampleSize <= 0) {
+  throw new NotStrictlyPositiveException(LocalizedFormats.NUMBER_OF_SAMPLES,sampleSize);
+}
+Seed:
+double meanOfSquares=0;
+**************************************************
+Evaluations: 1691
+EstimatedTime: 340579

@@ -1,0 +1,26 @@
+1 Delete /home/ubuntu/rtx/d4j/Jsoup/90b/src/main/java/org/jsoup/helper/HttpConnection.java 427
+Faulty:
+o=input[i];
+Seed:
+Connection con=new HttpConnection();
+**************************************************
+2 Delete /home/ubuntu/rtx/d4j/Jsoup/90b/src/main/java/org/jsoup/helper/HttpConnection.java 389
+Faulty:
+if (!looksLikeUtf8(bytes)) return val;
+Seed:
+return false;
+**************************************************
+3 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/90b/src/main/java/org/jsoup/helper/HttpConnection.java 425
+Faulty:
+while (i < end) {
+  i++;
+  o=input[i];
+  if ((o & 0xC0) != 0x80) {
+    return false;
+  }
+}
+Seed:
+String foundCharset=null;
+**************************************************
+Evaluations: 207
+EstimatedTime: 181853

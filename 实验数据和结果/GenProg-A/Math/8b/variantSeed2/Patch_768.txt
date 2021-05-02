@@ -1,0 +1,41 @@
+1 Delete /home/rtx/repair/d4j/Math/8b/src/main/java/org/apache/commons/math3/distribution/DiscreteDistribution.java 189
+Faulty:
+for (int i=0; i < sampleSize; i++) {
+  out[i]=sample();
+}
+Seed:
+final double u=random.nextDouble();
+**************************************************
+2 InsertBefore /home/rtx/repair/d4j/Math/8b/src/main/java/org/apache/commons/math3/util/MathArrays.java 1257
+Faulty:
+double[] out=new double[len];
+Seed:
+boolean result=true;
+**************************************************
+3 InsertBefore /home/rtx/repair/d4j/Math/8b/src/main/java/org/apache/commons/math3/distribution/DiscreteDistribution.java 163
+Faulty:
+return singletons.get(i);
+Seed:
+final double n=random.nextGaussian();
+**************************************************
+4 InsertBefore /home/rtx/repair/d4j/Math/8b/src/main/java/org/apache/commons/math3/util/MathArrays.java 1269
+Faulty:
+for (int i=0; i < len; i++) {
+  if (Double.isNaN(values[i])) {
+    out[i]=Double.NaN;
+  }
+ else {
+    out[i]=values[i] * normalizedSum / sum;
+  }
+}
+Seed:
+boolean newMapping=true;
+**************************************************
+5 InsertBefore /home/rtx/repair/d4j/Math/8b/src/main/java/org/apache/commons/math3/distribution/DiscreteDistribution.java 190
+Faulty:
+out[i]=sample();
+Seed:
+final double n=getSampleSize();
+**************************************************
+Evaluations: 947
+EstimatedTime: 193054

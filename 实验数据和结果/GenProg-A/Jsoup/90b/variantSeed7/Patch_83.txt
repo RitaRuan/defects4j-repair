@@ -1,0 +1,14 @@
+1 Delete /home/ubuntu/rtx/d4j/Jsoup/90b/src/main/java/org/jsoup/helper/HttpConnection.java 389
+Faulty:
+if (!looksLikeUtf8(bytes)) return val;
+Seed:
+return new String(bytes,"UTF-8");
+**************************************************
+2 Delete /home/ubuntu/rtx/d4j/Jsoup/90b/src/main/java/org/jsoup/helper/HttpConnection.java 382
+Faulty:
+Validate.notEmpty(name);
+Seed:
+Validate.notEmpty(name,"Header name must not be empty");
+**************************************************
+Evaluations: 106
+EstimatedTime: 102616

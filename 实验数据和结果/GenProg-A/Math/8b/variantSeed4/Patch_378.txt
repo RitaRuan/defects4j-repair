@@ -1,0 +1,50 @@
+1 Delete /home/rtx/repair/d4j/Math/8b/src/main/java/org/apache/commons/math3/distribution/DiscreteDistribution.java 190
+Faulty:
+out[i]=sample();
+Seed:
+throw new MathArithmeticException(LocalizedFormats.OVERFLOW);
+**************************************************
+2 Delete /home/rtx/repair/d4j/Math/8b/src/main/java/org/apache/commons/math3/distribution/DiscreteDistribution.java 189
+Faulty:
+for (int i=0; i < sampleSize; i++) {
+  out[i]=sample();
+}
+Seed:
+final double m=getMean();
+**************************************************
+3 Delete /home/rtx/repair/d4j/Math/8b/src/main/java/org/apache/commons/math3/distribution/DiscreteDistribution.java 190
+Faulty:
+out[i]=sample();
+Seed:
+throw new MathArithmeticException(LocalizedFormats.OVERFLOW);
+**************************************************
+4 Delete /home/rtx/repair/d4j/Math/8b/src/main/java/org/apache/commons/math3/distribution/DiscreteDistribution.java 189
+Faulty:
+for (int i=0; i < sampleSize; i++) {
+  out[i]=sample();
+}
+Seed:
+final double m=getMean();
+**************************************************
+5 InsertBefore /home/rtx/repair/d4j/Math/8b/src/main/java/org/apache/commons/math3/distribution/DiscreteDistribution.java 161
+Faulty:
+sum+=probabilities[i];
+Seed:
+int max=Integer.MIN_VALUE;
+**************************************************
+6 Replace /home/rtx/repair/d4j/Math/8b/src/main/java/org/apache/commons/math3/distribution/DiscreteDistribution.java 189
+Faulty:
+for (int i=0; i < sampleSize; i++) {
+  out[i]=sample();
+}
+Seed:
+double probability=0;
+**************************************************
+7 InsertBefore /home/rtx/repair/d4j/Math/8b/src/main/java/org/apache/commons/math3/distribution/DiscreteDistribution.java 190
+Faulty:
+out[i]=sample();
+Seed:
+int i=1;
+**************************************************
+Evaluations: 462
+EstimatedTime: 97841

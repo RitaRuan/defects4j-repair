@@ -1,0 +1,253 @@
+RUNNING THE BUG: Chart 21, WITH THE SEED: 7
+2021-01-20 01:25:24 [main] [INFO]  KGenProgMain - 
+==================== kGenProg Configuration ====================
+configPath = kgenprog.toml
+rootDir = . (set by command line)
+productPaths = [source] (set by command line)
+testPaths = [tests] (set by command line)
+classPaths = [/home/rtx/repair/d4j/genprogScript/kGenProgScripts/hamcrest-core-1.3.jar, lib/itext-2.0.2.jar, lib/junit.jar, lib/servlet.jar] (set by command line)
+executionTests = [org.jfree.data.statistics.junit.DefaultBoxAndWhiskerCategoryDatasetTests] (set by command line)
+outDir = ./patch7 (set by command line)
+logLevel = INFO
+mutationGeneratingCount = 10
+crossoverGeneratingCount = 10
+headcount = 10
+maxGeneration = 10
+timeLimit = PT1M
+testTimeLimit = PT10S
+requiredSolutionsCount = 1
+randomSeed = 7 (set by command line)
+scope = PACKAGE
+faultLocalization = Ochiai
+mutationType = Simple
+crossoverType = Random
+firstVariantSelectionStrategy = Random
+secondVariantSelectionStrategy = Random
+isPatchOutput = true
+isHistoryRecord = false
+currentDirectory = /home/rtx/repair/d4j/Chart/21b
+version = 1.8.0
+================================================================
+2021-01-20 01:25:37 [main] [INFO]  KGenProgMain - initial failed tests (1/8)
+org.jfree.data.statistics.junit.DefaultBoxAndWhiskerCategoryDatasetTests.testGetRangeBounds: null
+2021-01-20 01:25:37 [main] [INFO]  KGenProgMain - GA started
+2021-01-20 01:25:37 [main] [INFO]  KGenProgMain - entered the era of 1st generation.
+2021-01-20 01:25:39 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 1 seconds
+Variants: generated 10, build-succeeded 3, build-failed 7, syntax-invalid 0, redundant 0
+Fitness: max 0.875(1), min 0.625(2), ave 0.708
+----------------------------------------------------------------
+
+2021-01-20 01:25:39 [main] [INFO]  KGenProgMain - entered the era of 2nd generation.
+2021-01-20 01:25:40 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 2 seconds
+Variants: generated 10, build-succeeded 1, build-failed 8, syntax-invalid 0, redundant 1
+Fitness: max 0.625(1), min 0.625(1), ave 0.625
+----------------------------------------------------------------
+
+2021-01-20 01:25:40 [main] [INFO]  KGenProgMain - entered the era of 3rd generation.
+2021-01-20 01:25:41 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 3 seconds
+Variants: generated 10, build-succeeded 2, build-failed 8, syntax-invalid 0, redundant 0
+Fitness: max 0.875(2), min 0.875(2), ave 0.875
+----------------------------------------------------------------
+
+2021-01-20 01:25:41 [main] [INFO]  KGenProgMain - entered the era of 4th generation.
+2021-01-20 01:25:42 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 5 seconds
+Variants: generated 10, build-succeeded 2, build-failed 6, syntax-invalid 0, redundant 2
+Fitness: max 0.875(1), min 0.625(1), ave 0.75
+----------------------------------------------------------------
+
+2021-01-20 01:25:42 [main] [INFO]  KGenProgMain - entered the era of 5th generation.
+2021-01-20 01:25:44 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 6 seconds
+Variants: generated 14, build-succeeded 5, build-failed 7, syntax-invalid 0, redundant 2
+Fitness: max 1(1), min 0(1), ave 0.725
+----------------------------------------------------------------
+
+2021-01-20 01:25:44 [main] [INFO]  KGenProgMain - GA stopped
+2021-01-20 01:25:45 [main] [INFO]  PatchLogExporter - patch (v54)
+--- org.jfree.chart.needle.ShipNeedle
++++ org.jfree.chart.needle.ShipNeedle
+@@ -126,4 +126,3 @@
+     }
+ 
+ }
+-
+2021-01-20 01:25:45 [main] [INFO]  PatchLogExporter - patch (v54)
+--- org.jfree.chart.renderer.xy.CyclicXYItemRenderer
++++ org.jfree.chart.renderer.xy.CyclicXYItemRenderer
+@@ -505,5 +505,3 @@
+     }
+     
+ }
+-
+-
+2021-01-20 01:25:45 [main] [INFO]  PatchLogExporter - patch (v54)
+--- org.jfree.data.KeyedValueComparatorType
++++ org.jfree.data.KeyedValueComparatorType
+@@ -111,4 +111,3 @@
+         return this.name.hashCode();
+     }
+ }
+-
+2021-01-20 01:25:45 [main] [INFO]  PatchLogExporter - patch (v54)
+--- org.jfree.data.resources.DataPackageResources_es
++++ org.jfree.data.resources.DataPackageResources_es
+@@ -69,4 +69,3 @@
+     };
+ 
+ }
+-
+2021-01-20 01:25:45 [main] [INFO]  PatchLogExporter - patch (v54)
+--- org.jfree.data.xy.XYSeries
++++ org.jfree.data.xy.XYSeries
+@@ -691,4 +691,3 @@
+     }
+ 
+ }
+-
+2021-01-20 01:25:45 [main] [INFO]  PatchLogExporter - patch (v54)
+--- org.jfree.chart.needle.WindNeedle
++++ org.jfree.chart.needle.WindNeedle
+@@ -117,4 +117,3 @@
+     }
+ 
+ }
+-
+2021-01-20 01:25:45 [main] [INFO]  PatchLogExporter - patch (v54)
+--- org.jfree.chart.renderer.xy.XYAreaRenderer2
++++ org.jfree.chart.renderer.xy.XYAreaRenderer2
+@@ -447,4 +447,3 @@
+     }
+ 
+ }
+-
+2021-01-20 01:25:45 [main] [INFO]  PatchLogExporter - patch (v54)
+--- org.jfree.data.Range
++++ org.jfree.data.Range
+@@ -328,11 +328,9 @@
+      */
+     public boolean equals(Object obj) {
+         if (!(obj instanceof Range)) {
+-            return false;
+         }
+         Range range = (Range) obj;
+         if (!(this.lower == range.lower)) {
+-            return false;
+         }
+         if (!(this.upper == range.upper)) {
+             return false;
+2021-01-20 01:25:45 [main] [INFO]  PatchLogExporter - patch (v54)
+--- org.jfree.chart.needle.LineNeedle
++++ org.jfree.chart.needle.LineNeedle
+@@ -123,4 +123,3 @@
+     }
+     
+ }
+-
+2021-01-20 01:25:45 [main] [INFO]  PatchLogExporter - patch (v54)
+--- org.jfree.data.statistics.HistogramType
++++ org.jfree.data.statistics.HistogramType
+@@ -147,4 +147,3 @@
+     }
+ 
+ }
+-
+2021-01-20 01:25:45 [main] [INFO]  PatchLogExporter - patch (v54)
+--- org.jfree.chart.util.RefineryUtilities
++++ org.jfree.chart.util.RefineryUtilities
+@@ -308,5 +308,3 @@
+     }
+ 
+ }
+-
+-
+2021-01-20 01:25:45 [main] [INFO]  PatchLogExporter - patch (v54)
+--- org.jfree.chart.util.SerialUtilities
++++ org.jfree.chart.util.SerialUtilities
+@@ -570,4 +570,3 @@
+     }
+ 
+ }
+-
+2021-01-20 01:25:45 [main] [INFO]  PatchLogExporter - patch (v54)
+--- org.jfree.chart.util.StrokeList
++++ org.jfree.chart.util.StrokeList
+@@ -175,4 +175,3 @@
+     }
+ 
+ }
+-
+2021-01-20 01:25:45 [main] [INFO]  PatchLogExporter - patch (v54)
+--- org.jfree.data.statistics.StatisticalCategoryDataset
++++ org.jfree.data.statistics.StatisticalCategoryDataset
+@@ -96,4 +96,3 @@
+     public Number getStdDevValue(Comparable rowKey, Comparable columnKey);
+ 
+ }
+-
+2021-01-20 01:25:45 [main] [INFO]  PatchLogExporter - patch (v54)
+--- org.jfree.data.general.AbstractDataset
++++ org.jfree.data.general.AbstractDataset
+@@ -94,7 +94,6 @@
+      * group.
+      */
+     protected AbstractDataset() {
+-        this.group = new DatasetGroup();
+         this.listenerList = new EventListenerList();
+     }
+ 
+2021-01-20 01:25:45 [main] [INFO]  PatchLogExporter - patch (v54)
+--- org.jfree.chart.title.TextTitle
++++ org.jfree.chart.title.TextTitle
+@@ -778,4 +778,3 @@
+     }
+ 
+ }
+-
+2021-01-20 01:25:45 [main] [INFO]  PatchLogExporter - patch (v54)
+--- org.jfree.chart.util.Layer
++++ org.jfree.chart.util.Layer
+@@ -110,4 +110,3 @@
+     }
+     
+ }
+-
+2021-01-20 01:25:45 [main] [INFO]  PatchLogExporter - patch (v54)
+--- org.jfree.chart.util.GradientPaintTransformType
++++ org.jfree.chart.util.GradientPaintTransformType
+@@ -153,4 +153,3 @@
+     }
+     
+ }
+-
+2021-01-20 01:25:45 [main] [INFO]  PatchLogExporter - patch (v54)
+--- org.jfree.chart.text.G2TextMeasurer
++++ org.jfree.chart.text.G2TextMeasurer
+@@ -82,4 +82,3 @@
+     }
+     
+ }
+-
+2021-01-20 01:25:45 [main] [INFO]  PatchLogExporter - patch (v54)
+--- org.jfree.chart.util.ShapeList
++++ org.jfree.chart.util.ShapeList
+@@ -174,4 +174,3 @@
+     }
+ 
+ }
+-
+2021-01-20 01:25:45 [main] [INFO]  KGenProgMain - Summary
+Reached generation = 5
+Generated variants = 54
+Syntax valid variants = 54
+Build succeeded variants = 13
+Time elapsed = 7 seconds
+Exit status = SUCCESS

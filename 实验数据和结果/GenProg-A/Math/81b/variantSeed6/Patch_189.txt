@@ -1,0 +1,44 @@
+1 Replace /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1625
+Faulty:
+tType=-9;
+Seed:
+List<Number> components=new ArrayList<Number>();
+**************************************************
+2 Delete /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1537
+Faulty:
+if (work[np - 8] > b2 || work[np - 4] > b1) {
+  return;
+}
+Seed:
+String fullClassName=getClass().getName();
+**************************************************
+3 Delete /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1504
+Faulty:
+if (b2 == 0.0) {
+  break;
+}
+Seed:
+final int nSum=getColumnDimension();
+**************************************************
+4 Delete /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1537
+Faulty:
+if (work[np - 8] > b2 || work[np - 4] > b1) {
+  return;
+}
+Seed:
+tau=0;
+**************************************************
+5 Replace /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1484
+Faulty:
+b2=work[nn - 5] / work[nn - 7];
+Seed:
+double dotProduct=0;
+**************************************************
+6 InsertBefore /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1544
+Faulty:
+b2=work[nn - 13] / work[nn - 15];
+Seed:
+List<Integer> splitIndices=computeSplits();
+**************************************************
+Evaluations: 284
+EstimatedTime: 93078

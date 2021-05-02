@@ -1,0 +1,22 @@
+1 Replace /home/rtx/d4j/JacksonCore/11b/src/main/java/com/fasterxml/jackson/core/sym/ByteQuadsCanonicalizer.java 1184
+Faulty:
+return;
+Seed:
+if (!maybeDirty()) {
+  return;
+}
+**************************************************
+2 InsertBefore /home/rtx/d4j/JacksonCore/11b/src/main/java/com/fasterxml/jackson/core/sym/ByteQuadsCanonicalizer.java 635
+Faulty:
+return null;
+Seed:
+int ix=0;
+**************************************************
+3 InsertBefore /home/rtx/d4j/JacksonCore/11b/src/main/java/com/fasterxml/jackson/core/sym/ByteQuadsCanonicalizer.java 626
+Faulty:
+int offset=_tertiaryStart + ((origOffset >> (_tertiaryShift + 2)) << _tertiaryShift);
+Seed:
+_needRehash=true;
+**************************************************
+Evaluations: 183
+EstimatedTime: 522590

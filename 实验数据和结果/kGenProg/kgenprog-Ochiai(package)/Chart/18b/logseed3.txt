@@ -1,0 +1,222 @@
+RUNNING THE BUG: Chart 18, WITH THE SEED: 3
+2021-01-20 01:01:12 [main] [INFO]  KGenProgMain - 
+==================== kGenProg Configuration ====================
+configPath = kgenprog.toml
+rootDir = . (set by command line)
+productPaths = [source] (set by command line)
+testPaths = [tests] (set by command line)
+classPaths = [/home/rtx/repair/d4j/genprogScript/kGenProgScripts/hamcrest-core-1.3.jar, lib/itext-2.0.6.jar, lib/junit.jar, lib/servlet.jar] (set by command line)
+executionTests = [org.jfree.data.category.junit.DefaultCategoryDatasetTests] (set by command line)
+outDir = ./patch3 (set by command line)
+logLevel = INFO
+mutationGeneratingCount = 10
+crossoverGeneratingCount = 10
+headcount = 10
+maxGeneration = 10
+timeLimit = PT1M
+testTimeLimit = PT10S
+requiredSolutionsCount = 1
+randomSeed = 3 (set by command line)
+scope = PACKAGE
+faultLocalization = Ochiai
+mutationType = Simple
+crossoverType = Random
+firstVariantSelectionStrategy = Random
+secondVariantSelectionStrategy = Random
+isPatchOutput = true
+isHistoryRecord = false
+currentDirectory = /home/rtx/repair/d4j/Chart/18b
+version = 1.8.0
+================================================================
+2021-01-20 01:01:25 [main] [INFO]  KGenProgMain - initial failed tests (1/11)
+org.jfree.data.category.junit.DefaultCategoryDatasetTests.testBug1835955: null
+2021-01-20 01:01:25 [main] [INFO]  KGenProgMain - GA started
+2021-01-20 01:01:25 [main] [INFO]  KGenProgMain - entered the era of 1st generation.
+2021-01-20 01:01:26 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 1 seconds
+Variants: generated 10, build-succeeded 1, build-failed 8, syntax-invalid 0, redundant 1
+Fitness: max 0.909(1), min 0.909(1), ave 0.909
+----------------------------------------------------------------
+
+2021-01-20 01:01:26 [main] [INFO]  KGenProgMain - entered the era of 2nd generation.
+2021-01-20 01:01:27 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 1 seconds
+Variants: generated 2, build-succeeded 1, build-failed 1, syntax-invalid 0, redundant 0
+Fitness: max 1(1), min 1(1), ave 1
+----------------------------------------------------------------
+
+2021-01-20 01:01:27 [main] [INFO]  KGenProgMain - GA stopped
+2021-01-20 01:01:27 [main] [INFO]  PatchLogExporter - patch (v12)
+--- org.jfree.chart.needle.ShipNeedle
++++ org.jfree.chart.needle.ShipNeedle
+@@ -124,4 +124,3 @@
+     }
+ 
+ }
+-
+2021-01-20 01:01:27 [main] [INFO]  PatchLogExporter - patch (v12)
+--- org.jfree.chart.renderer.xy.CyclicXYItemRenderer
++++ org.jfree.chart.renderer.xy.CyclicXYItemRenderer
+@@ -503,5 +503,3 @@
+     }
+     
+ }
+-
+-
+2021-01-20 01:01:27 [main] [INFO]  PatchLogExporter - patch (v12)
+--- org.jfree.chart.plot.dial.DialCap
++++ org.jfree.chart.plot.dial.DialCap
+@@ -335,4 +335,3 @@
+     }
+     
+ }
+-
+2021-01-20 01:01:27 [main] [INFO]  PatchLogExporter - patch (v12)
+--- org.jfree.data.KeyedValueComparatorType
++++ org.jfree.data.KeyedValueComparatorType
+@@ -109,4 +109,3 @@
+         return this.name.hashCode();
+     }
+ }
+-
+2021-01-20 01:01:27 [main] [INFO]  PatchLogExporter - patch (v12)
+--- org.jfree.data.resources.DataPackageResources_es
++++ org.jfree.data.resources.DataPackageResources_es
+@@ -67,4 +67,3 @@
+     };
+ 
+ }
+-
+2021-01-20 01:01:27 [main] [INFO]  PatchLogExporter - patch (v12)
+--- org.jfree.data.xy.XYSeries
++++ org.jfree.data.xy.XYSeries
+@@ -706,4 +706,3 @@
+     }
+ 
+ }
+-
+2021-01-20 01:01:27 [main] [INFO]  PatchLogExporter - patch (v12)
+--- org.jfree.chart.needle.WindNeedle
++++ org.jfree.chart.needle.WindNeedle
+@@ -115,4 +115,3 @@
+     }
+ 
+ }
+-
+2021-01-20 01:01:27 [main] [INFO]  PatchLogExporter - patch (v12)
+--- org.jfree.chart.renderer.xy.XYAreaRenderer2
++++ org.jfree.chart.renderer.xy.XYAreaRenderer2
+@@ -445,4 +445,3 @@
+     }
+ 
+ }
+-
+2021-01-20 01:01:27 [main] [INFO]  PatchLogExporter - patch (v12)
+--- org.jfree.chart.needle.LineNeedle
++++ org.jfree.chart.needle.LineNeedle
+@@ -121,4 +121,3 @@
+     }
+     
+ }
+-
+2021-01-20 01:01:27 [main] [INFO]  PatchLogExporter - patch (v12)
+--- org.jfree.data.statistics.HistogramType
++++ org.jfree.data.statistics.HistogramType
+@@ -145,4 +145,3 @@
+     }
+ 
+ }
+-
+2021-01-20 01:01:27 [main] [INFO]  PatchLogExporter - patch (v12)
+--- org.jfree.chart.util.RefineryUtilities
++++ org.jfree.chart.util.RefineryUtilities
+@@ -306,5 +306,3 @@
+     }
+ 
+ }
+-
+-
+2021-01-20 01:01:27 [main] [INFO]  PatchLogExporter - patch (v12)
+--- org.jfree.chart.util.SerialUtilities
++++ org.jfree.chart.util.SerialUtilities
+@@ -568,4 +568,3 @@
+     }
+ 
+ }
+-
+2021-01-20 01:01:27 [main] [INFO]  PatchLogExporter - patch (v12)
+--- org.jfree.chart.util.StrokeList
++++ org.jfree.chart.util.StrokeList
+@@ -173,4 +173,3 @@
+     }
+ 
+ }
+-
+2021-01-20 01:01:27 [main] [INFO]  PatchLogExporter - patch (v12)
+--- org.jfree.data.statistics.StatisticalCategoryDataset
++++ org.jfree.data.statistics.StatisticalCategoryDataset
+@@ -94,4 +94,3 @@
+     public Number getStdDevValue(Comparable rowKey, Comparable columnKey);
+ 
+ }
+-
+2021-01-20 01:01:27 [main] [INFO]  PatchLogExporter - patch (v12)
+--- org.jfree.chart.title.TextTitle
++++ org.jfree.chart.title.TextTitle
+@@ -776,4 +776,3 @@
+     }
+ 
+ }
+-
+2021-01-20 01:01:27 [main] [INFO]  PatchLogExporter - patch (v12)
+--- org.jfree.data.category.DefaultCategoryDataset
++++ org.jfree.data.category.DefaultCategoryDataset
+@@ -348,6 +348,7 @@
+      */
+     public void removeColumn(Comparable columnKey) {
+         this.data.removeColumn(columnKey);
++		this.data.clear();
+         fireDatasetChanged();
+     }
+ 
+2021-01-20 01:01:27 [main] [INFO]  PatchLogExporter - patch (v12)
+--- org.jfree.chart.util.Layer
++++ org.jfree.chart.util.Layer
+@@ -133,4 +133,3 @@
+     }
+     
+ }
+-
+2021-01-20 01:01:27 [main] [INFO]  PatchLogExporter - patch (v12)
+--- org.jfree.chart.util.GradientPaintTransformType
++++ org.jfree.chart.util.GradientPaintTransformType
+@@ -151,4 +151,3 @@
+     }
+     
+ }
+-
+2021-01-20 01:01:27 [main] [INFO]  PatchLogExporter - patch (v12)
+--- org.jfree.chart.text.G2TextMeasurer
++++ org.jfree.chart.text.G2TextMeasurer
+@@ -80,4 +80,3 @@
+     }
+     
+ }
+-
+2021-01-20 01:01:27 [main] [INFO]  PatchLogExporter - patch (v12)
+--- org.jfree.chart.util.ShapeList
++++ org.jfree.chart.util.ShapeList
+@@ -172,4 +172,3 @@
+     }
+ 
+ }
+-
+2021-01-20 01:01:27 [main] [INFO]  KGenProgMain - Summary
+Reached generation = 2
+Generated variants = 12
+Syntax valid variants = 12
+Build succeeded variants = 2
+Time elapsed = 2 seconds
+Exit status = SUCCESS

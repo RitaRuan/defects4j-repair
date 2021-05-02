@@ -1,0 +1,131 @@
+1 Delete /home/rtx/repair/d4j/Math/8b/src/main/java/org/apache/commons/math3/distribution/DiscreteDistribution.java 182
+Faulty:
+if (sampleSize <= 0) {
+  throw new NotStrictlyPositiveException(LocalizedFormats.NUMBER_OF_SAMPLES,sampleSize);
+}
+Seed:
+final double dx=getSolverAbsoluteAccuracy();
+**************************************************
+2 Delete /home/rtx/repair/d4j/Math/8b/src/main/java/org/apache/commons/math3/distribution/DiscreteDistribution.java 189
+Faulty:
+for (int i=0; i < sampleSize; i++) {
+  out[i]=sample();
+}
+Seed:
+return 1.0;
+**************************************************
+3 Replace /home/rtx/repair/d4j/Math/8b/src/main/java/org/apache/commons/math3/distribution/DiscreteDistribution.java 190
+Faulty:
+out[i]=sample();
+Seed:
+final double randomValue=random.nextDouble();
+**************************************************
+4 Delete /home/rtx/repair/d4j/Math/8b/src/main/java/org/apache/commons/math3/distribution/DiscreteDistribution.java 182
+Faulty:
+if (sampleSize <= 0) {
+  throw new NotStrictlyPositiveException(LocalizedFormats.NUMBER_OF_SAMPLES,sampleSize);
+}
+Seed:
+final double dx=getSolverAbsoluteAccuracy();
+**************************************************
+5 Delete /home/rtx/repair/d4j/Math/8b/src/main/java/org/apache/commons/math3/distribution/DiscreteDistribution.java 189
+Faulty:
+for (int i=0; i < sampleSize; i++) {
+  out[i]=sample();
+}
+Seed:
+return false;
+**************************************************
+6 Delete /home/rtx/repair/d4j/Math/8b/src/main/java/org/apache/commons/math3/distribution/DiscreteDistribution.java 189
+Faulty:
+for (int i=0; i < sampleSize; i++) {
+  out[i]=sample();
+}
+Seed:
+return false;
+**************************************************
+7 Delete /home/rtx/repair/d4j/Math/8b/src/main/java/org/apache/commons/math3/distribution/DiscreteDistribution.java 189
+Faulty:
+for (int i=0; i < sampleSize; i++) {
+  out[i]=sample();
+}
+Seed:
+return false;
+**************************************************
+8 Delete /home/rtx/repair/d4j/Math/8b/src/main/java/org/apache/commons/math3/distribution/DiscreteDistribution.java 189
+Faulty:
+for (int i=0; i < sampleSize; i++) {
+  out[i]=sample();
+}
+Seed:
+return false;
+**************************************************
+9 Delete /home/rtx/repair/d4j/Math/8b/src/main/java/org/apache/commons/math3/distribution/DiscreteDistribution.java 189
+Faulty:
+for (int i=0; i < sampleSize; i++) {
+  out[i]=sample();
+}
+Seed:
+return 1.0;
+**************************************************
+10 Replace /home/rtx/repair/d4j/Math/8b/src/main/java/org/apache/commons/math3/distribution/DiscreteDistribution.java 190
+Faulty:
+out[i]=sample();
+Seed:
+final double randomValue=random.nextDouble();
+**************************************************
+11 InsertBefore /home/rtx/repair/d4j/Math/8b/src/main/java/org/apache/commons/math3/util/MathArrays.java 1252
+Faulty:
+if (Double.isNaN(normalizedSum)) {
+  throw new MathIllegalArgumentException(LocalizedFormats.NORMALIZE_NAN);
+}
+Seed:
+double prodLowSum=0;
+**************************************************
+12 Delete /home/rtx/repair/d4j/Math/8b/src/main/java/org/apache/commons/math3/distribution/DiscreteDistribution.java 189
+Faulty:
+for (int i=0; i < sampleSize; i++) {
+  out[i]=sample();
+}
+Seed:
+return 1.0;
+**************************************************
+13 Delete /home/rtx/repair/d4j/Math/8b/src/main/java/org/apache/commons/math3/distribution/DiscreteDistribution.java 189
+Faulty:
+for (int i=0; i < sampleSize; i++) {
+  out[i]=sample();
+}
+Seed:
+return false;
+**************************************************
+14 Delete /home/rtx/repair/d4j/Math/8b/src/main/java/org/apache/commons/math3/distribution/DiscreteDistribution.java 190
+Faulty:
+out[i]=sample();
+Seed:
+final double r=random.nextDouble();
+**************************************************
+15 InsertBefore /home/rtx/repair/d4j/Math/8b/src/main/java/org/apache/commons/math3/util/MathArrays.java 1255
+Faulty:
+double sum=0d;
+Seed:
+double max=0;
+**************************************************
+16 Replace /home/rtx/repair/d4j/Math/8b/src/main/java/org/apache/commons/math3/distribution/DiscreteDistribution.java 190
+Faulty:
+out[i]=sample();
+Seed:
+return 1.0;
+**************************************************
+17 InsertBefore /home/rtx/repair/d4j/Math/8b/src/main/java/org/apache/commons/math3/distribution/DiscreteDistribution.java 160
+Faulty:
+for (int i=0; i < probabilities.length; i++) {
+  sum+=probabilities[i];
+  if (randomValue < sum) {
+    return singletons.get(i);
+  }
+}
+Seed:
+double result=Double.NaN;
+**************************************************
+Evaluations: 1963
+EstimatedTime: 392767

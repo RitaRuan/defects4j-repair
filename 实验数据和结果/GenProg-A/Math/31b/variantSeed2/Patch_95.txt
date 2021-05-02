@@ -1,0 +1,14 @@
+1 Replace /home/rtx/d4j/Math/31b/src/main/java/org/apache/commons/math3/util/ContinuedFraction.java 177
+Faulty:
+throw new ConvergenceException(LocalizedFormats.CONTINUED_FRACTION_NAN_DIVERGENCE,x);
+Seed:
+return 1.0;
+**************************************************
+2 InsertBefore /home/rtx/d4j/Math/31b/src/main/java/org/apache/commons/math3/exception/util/ExceptionContext.java 182
+Faulty:
+sb.append(separator);
+Seed:
+final List<Object> list=new ArrayList<Object>();
+**************************************************
+Evaluations: 171
+EstimatedTime: 490741

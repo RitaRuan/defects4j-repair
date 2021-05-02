@@ -1,0 +1,52 @@
+1 Delete /home/ubuntu/rtx/d4j/Jsoup/90b/src/main/java/org/jsoup/helper/HttpConnection.java 425
+Faulty:
+while (i < end) {
+  i++;
+  o=input[i];
+  if ((o & 0xC0) != 0x80) {
+    return false;
+  }
+}
+Seed:
+addHeader("Accept-Encoding","gzip");
+**************************************************
+2 Delete /home/ubuntu/rtx/d4j/Jsoup/90b/src/main/java/org/jsoup/helper/HttpConnection.java 425
+Faulty:
+while (i < end) {
+  i++;
+  o=input[i];
+  if ((o & 0xC0) != 0x80) {
+    return false;
+  }
+}
+Seed:
+return new BomCharset("UTF-16",false);
+**************************************************
+3 Delete /home/ubuntu/rtx/d4j/Jsoup/90b/src/main/java/org/jsoup/helper/HttpConnection.java 425
+Faulty:
+while (i < end) {
+  i++;
+  o=input[i];
+  if ((o & 0xC0) != 0x80) {
+    return false;
+  }
+}
+Seed:
+if ((o & 0x80) == 0) {
+  continue;
+}
+**************************************************
+4 Delete /home/ubuntu/rtx/d4j/Jsoup/90b/src/main/java/org/jsoup/helper/HttpConnection.java 382
+Faulty:
+Validate.notEmpty(name);
+Seed:
+XmlDeclaration decl=null;
+**************************************************
+5 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/90b/src/main/java/org/jsoup/helper/HttpConnection.java 427
+Faulty:
+o=input[i];
+Seed:
+int i=0;
+**************************************************
+Evaluations: 934
+EstimatedTime: 917612

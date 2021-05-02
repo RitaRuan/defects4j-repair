@@ -1,0 +1,11 @@
+--- org.apache.commons.codec.binary.Base64
++++ org.apache.commons.codec.binary.Base64
+@@ -417,7 +417,7 @@
+     }
+ 
+     void setInitialBuffer(byte[] out, int outPos, int outAvail) {
+-        if (out != null && out.length == outAvail) {
++        if (eof && modulus != 0) {
+             buffer = out;
+             pos = outPos;
+             readPos = outPos;

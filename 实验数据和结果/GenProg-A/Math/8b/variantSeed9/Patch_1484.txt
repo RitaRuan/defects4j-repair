@@ -1,0 +1,22 @@
+1 Replace /home/rtx/repair/d4j/Math/8b/src/main/java/org/apache/commons/math3/distribution/DiscreteDistribution.java 190
+Faulty:
+out[i]=sample();
+Seed:
+final double m=getMean();
+**************************************************
+2 Delete /home/rtx/repair/d4j/Math/8b/src/main/java/org/apache/commons/math3/distribution/DiscreteDistribution.java 190
+Faulty:
+out[i]=sample();
+Seed:
+final double numeratorDF=getNumeratorDegreesOfFreedom();
+**************************************************
+3 Replace /home/rtx/repair/d4j/Math/8b/src/main/java/org/apache/commons/math3/distribution/DiscreteDistribution.java 182
+Faulty:
+if (sampleSize <= 0) {
+  throw new NotStrictlyPositiveException(LocalizedFormats.NUMBER_OF_SAMPLES,sampleSize);
+}
+Seed:
+int min=Integer.MAX_VALUE;
+**************************************************
+Evaluations: 1722
+EstimatedTime: 335215

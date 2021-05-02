@@ -1,0 +1,40 @@
+1 Delete /home/ubuntu/rtx/d4j/Jsoup/45b/src/main/java/org/jsoup/parser/HtmlTreeBuilder.java 398
+Faulty:
+transition(HtmlTreeBuilderState.InRow);
+Seed:
+if (node instanceof Element && ((Element)node).tag().isFormListed()) {
+  if (formElement != null)   formElement.addElement((Element)node);
+}
+**************************************************
+2 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/45b/src/main/java/org/jsoup/parser/TreeBuilder.java 78
+Faulty:
+return process(new Token.EndTag().name(name));
+Seed:
+StringBuilder out=new StringBuilder();
+**************************************************
+3 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/45b/src/main/java/org/jsoup/parser/HtmlTreeBuilder.java 398
+Faulty:
+transition(HtmlTreeBuilderState.InRow);
+Seed:
+tokeniser=new Tokeniser(reader,errors);
+**************************************************
+4 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/45b/src/main/java/org/jsoup/parser/HtmlTreeBuilder.java 351
+Faulty:
+stack.remove(pos);
+Seed:
+if (errors.canAddError()) errors.add(new ParseError(reader.pos(),"Unexpected token [%s] when in state [%s]",currentToken.tokenType(),state));
+**************************************************
+5 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/45b/src/main/java/org/jsoup/parser/HtmlTreeBuilder.java 398
+Faulty:
+transition(HtmlTreeBuilderState.InRow);
+Seed:
+transition(HtmlTreeBuilderState.InCell);
+**************************************************
+6 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/45b/src/main/java/org/jsoup/parser/HtmlTreeBuilder.java 562
+Faulty:
+return formattingElements.remove(size - 1);
+Seed:
+this.fosterInserts=fosterInserts;
+**************************************************
+Evaluations: 1074
+EstimatedTime: 1181006

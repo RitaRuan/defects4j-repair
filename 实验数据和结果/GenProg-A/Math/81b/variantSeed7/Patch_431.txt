@@ -1,0 +1,26 @@
+1 Delete /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1544
+Faulty:
+b2=work[nn - 13] / work[nn - 15];
+Seed:
+final int m=eigenvectors.length;
+**************************************************
+2 Delete /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1512
+Faulty:
+a2=a2 + b2;
+Seed:
+if (isNaN()) {
+  return false;
+}
+**************************************************
+3 InsertBefore /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1481
+Faulty:
+if (work[nn - 5] > work[nn - 7]) {
+  return;
+}
+Seed:
+if (cachedD == null) {
+  cachedD=MatrixUtils.createRealDiagonalMatrix(realEigenvalues);
+}
+**************************************************
+Evaluations: 546
+EstimatedTime: 215528

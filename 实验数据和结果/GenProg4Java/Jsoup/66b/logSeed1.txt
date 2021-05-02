@@ -1,0 +1,2383 @@
+0 [main] DEBUG clegoues.genprog4java.fitness.Fitness  - parsing granularity, value: class
+26 [main] DEBUG clegoues.genprog4java.fitness.Fitness  - parsing granularity, value: class
+#Fri Mar 05 23:24:28 CST 2021
+negativeTestWeight=2.0
+classSourceFolder=/home/rtx/repair/d4j/Jsoup/66b/target/classes
+model=default
+sampleStrategy=variant
+srcClassPath=/home/rtx/repair/d4j/Jsoup/66b/target/classes
+sourceVersion=1.8
+popsize=40
+regenPaths=false
+posCoverageFile=coverage.path.pos
+continue=false
+edits=APPEND;DELETE;REPLACE
+negCoverageFile=coverage.path.neg
+workingDir=/home/rtx/repair/d4j/Jsoup/66b/
+clearTestCache=false
+skipFailedSanity=false
+sample=0.1 
+oracleGenome=
+testGranularity=class
+justTestingFaultLoc=false
+faultLocStrategy=standardPathFile
+crossp=0.5
+pMutation=1
+generations=10
+positiveTests=/home/rtx/repair/d4j/Jsoup/66b/pos.tests
+javaVM=/home/rtx/java/jdk1.8.0_271/jre/bin/java
+seed=1
+negativePathWeight=0.35
+compileCommand=
+fixStrategy=classScope
+allowCoverageFail=false
+targetClassName=/home/rtx/repair/d4j/Jsoup/66b/bugfiles.txt
+javaRuntime=java.lang.Runtime@6576fe71
+classTestFolder=
+modelPath=OVERALLModel.txt
+sanity=yes
+positivePathWeight=0.65
+jacocoPath=/home/rtx/eclipse-workspace/genprog4java/lib/jacocoagent.jar
+negativeTests=/home/rtx/repair/d4j/Jsoup/66b/neg.tests
+pathToFileHumanInjectedFaultLoc=fileHumanInjectedFaultLoc.txt
+outputDir=/home/rtx/repair/d4j/Jsoup/66b/genprog4java/variantSeed1/
+testClassPath=/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/junit/junit/4.12/junit-4.12.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/com/google/code/gson/gson/2.7/gson-2.7.jar\:/home/rtx/repair/d4j/Jsoup/66b/target/classes\:/home/rtx/repair/d4j/Jsoup/66b/target/test-classes\:/home/rtx/repair/defects4j/framework/projects/lib/junit-4.11.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/commons-lang/commons-lang/2.4/commons-lang-2.4.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/junit/junit/4.5/junit-4.5.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/com/google/code/gson/gson/2.7/gson-2.7.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/commons-lang/commons-lang/2.4/commons-lang-2.4.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/junit/junit/4.12/junit-4.12.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/junit/junit/4.5/junit-4.5.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-http/9.2.22.v20170606/jetty-http-9.2.22.v20170606.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-http/9.2.26.v20180806/jetty-http-9.2.26.v20180806.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-http/9.2.28.v20190418/jetty-http-9.2.28.v20190418.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-io/9.2.22.v20170606/jetty-io-9.2.22.v20170606.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-io/9.2.26.v20180806/jetty-io-9.2.26.v20180806.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-io/9.2.28.v20190418/jetty-io-9.2.28.v20190418.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-security/9.2.22.v20170606/jetty-security-9.2.22.v20170606.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-security/9.2.26.v20180806/jetty-security-9.2.26.v20180806.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-security/9.2.28.v20190418/jetty-security-9.2.28.v20190418.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-server/9.2.22.v20170606/jetty-server-9.2.22.v20170606.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-server/9.2.26.v20180806/jetty-server-9.2.26.v20180806.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-server/9.2.28.v20190418/jetty-server-9.2.28.v20190418.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-servlet/9.2.22.v20170606/jetty-servlet-9.2.22.v20170606.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-servlet/9.2.26.v20180806/jetty-servlet-9.2.26.v20180806.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-servlet/9.2.28.v20190418/jetty-servlet-9.2.28.v20190418.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-util/9.2.22.v20170606/jetty-util-9.2.22.v20170606.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-util/9.2.26.v20180806/jetty-util-9.2.26.v20180806.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-util/9.2.28.v20190418/jetty-util-9.2.28.v20190418.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-http/9.2.22.v20170606/jetty-http-9.2.22.v20170606.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-http/9.2.26.v20180806/jetty-http-9.2.26.v20180806.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-http/9.2.28.v20190418/jetty-http-9.2.28.v20190418.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-io/9.2.22.v20170606/jetty-io-9.2.22.v20170606.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-io/9.2.26.v20180806/jetty-io-9.2.26.v20180806.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-io/9.2.28.v20190418/jetty-io-9.2.28.v20190418.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-security/9.2.22.v20170606/jetty-security-9.2.22.v20170606.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-security/9.2.26.v20180806/jetty-security-9.2.26.v20180806.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-security/9.2.28.v20190418/jetty-security-9.2.28.v20190418.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-server/9.2.22.v20170606/jetty-server-9.2.22.v20170606.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-server/9.2.26.v20180806/jetty-server-9.2.26.v20180806.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-server/9.2.28.v20190418/jetty-server-9.2.28.v20190418.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-servlet/9.2.22.v20170606/jetty-servlet-9.2.22.v20170606.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-servlet/9.2.26.v20180806/jetty-servlet-9.2.26.v20180806.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-servlet/9.2.28.v20190418/jetty-servlet-9.2.28.v20190418.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-util/9.2.22.v20170606/jetty-util-9.2.22.v20170606.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-util/9.2.26.v20180806/jetty-util-9.2.26.v20180806.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-util/9.2.28.v20190418/jetty-util-9.2.28.v20190418.jar
+faultStrategy=classScope
+sourceDir=src/main/java
+checkSpace=false
+search=gp
+globalExtension=.java
+faultSpaceSubSet=1/5
+maxVariants=50
+libs=/home/rtx/eclipse-workspace/genprog4java/lib/junittestrunner.jar\:/home/rtx/eclipse-workspace/genprog4java/lib/commons-cli-20040117.000000.jar\:/home/rtx/eclipse-workspace/genprog4java/lib/junit-4.12.jar\:/home/rtx/eclipse-workspace/genprog4java/lib/hamcrest-core-1.3.jar\:/home/rtx/eclipse-workspace/genprog4java/lib/log4j-1.2.17.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/junit/junit/4.12/junit-4.12.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/com/google/code/gson/gson/2.7/gson-2.7.jar\:/home/rtx/repair/d4j/Jsoup/66b/target/classes\:/home/rtx/repair/d4j/Jsoup/66b/target/test-classes\:/home/rtx/repair/defects4j/framework/projects/lib/junit-4.11.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/commons-lang/commons-lang/2.4/commons-lang-2.4.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/junit/junit/4.5/junit-4.5.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/com/google/code/gson/gson/2.7/gson-2.7.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/commons-lang/commons-lang/2.4/commons-lang-2.4.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/junit/junit/4.12/junit-4.12.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/junit/junit/4.5/junit-4.5.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-http/9.2.22.v20170606/jetty-http-9.2.22.v20170606.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-http/9.2.26.v20180806/jetty-http-9.2.26.v20180806.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-http/9.2.28.v20190418/jetty-http-9.2.28.v20190418.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-io/9.2.22.v20170606/jetty-io-9.2.22.v20170606.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-io/9.2.26.v20180806/jetty-io-9.2.26.v20180806.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-io/9.2.28.v20190418/jetty-io-9.2.28.v20190418.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-security/9.2.22.v20170606/jetty-security-9.2.22.v20170606.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-security/9.2.26.v20180806/jetty-security-9.2.26.v20180806.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-security/9.2.28.v20190418/jetty-security-9.2.28.v20190418.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-server/9.2.22.v20170606/jetty-server-9.2.22.v20170606.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-server/9.2.26.v20180806/jetty-server-9.2.26.v20180806.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-server/9.2.28.v20190418/jetty-server-9.2.28.v20190418.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-servlet/9.2.22.v20170606/jetty-servlet-9.2.22.v20170606.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-servlet/9.2.26.v20180806/jetty-servlet-9.2.26.v20180806.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-servlet/9.2.28.v20190418/jetty-servlet-9.2.28.v20190418.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-util/9.2.22.v20170606/jetty-util-9.2.22.v20170606.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-util/9.2.26.v20180806/jetty-util-9.2.26.v20180806.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-util/9.2.28.v20190418/jetty-util-9.2.28.v20190418.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-http/9.2.22.v20170606/jetty-http-9.2.22.v20170606.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-http/9.2.26.v20180806/jetty-http-9.2.26.v20180806.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-http/9.2.28.v20190418/jetty-http-9.2.28.v20190418.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-io/9.2.22.v20170606/jetty-io-9.2.22.v20170606.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-io/9.2.26.v20180806/jetty-io-9.2.26.v20180806.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-io/9.2.28.v20190418/jetty-io-9.2.28.v20190418.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-security/9.2.22.v20170606/jetty-security-9.2.22.v20170606.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-security/9.2.26.v20180806/jetty-security-9.2.26.v20180806.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-security/9.2.28.v20190418/jetty-security-9.2.28.v20190418.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-server/9.2.22.v20170606/jetty-server-9.2.22.v20170606.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-server/9.2.26.v20180806/jetty-server-9.2.26.v20180806.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-server/9.2.28.v20190418/jetty-server-9.2.28.v20190418.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-servlet/9.2.22.v20170606/jetty-servlet-9.2.22.v20170606.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-servlet/9.2.26.v20180806/jetty-servlet-9.2.26.v20180806.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-servlet/9.2.28.v20190418/jetty-servlet-9.2.28.v20190418.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-util/9.2.22.v20170606/jetty-util-9.2.22.v20170606.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-util/9.2.26.v20180806/jetty-util-9.2.26.v20180806.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-util/9.2.28.v20190418/jetty-util-9.2.28.v20190418.jar\:/home/rtx/repair/d4j/Jsoup/66b/target/classes
+crossover=onepoint
+115 [main] INFO clegoues.genprog4java.main.Main  - Configuration file loaded
+Deserialized fitnessCache HashMap
+31022 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - loaded from source clegoues.genprog4java.java.ClassInfo@7ab3a5fd
+31022 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - sanity checking begins
+32120 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 1 out of 21
+32555 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+32555 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 2 out of 21
+32840 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+32840 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 3 out of 21
+33180 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+33181 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 4 out of 21
+33844 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+33844 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 5 out of 21
+34393 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+34393 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 6 out of 21
+34653 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+34653 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 7 out of 21
+34923 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+34924 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 8 out of 21
+35380 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+35380 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 9 out of 21
+35699 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+35699 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 10 out of 21
+36007 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+36007 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 11 out of 21
+36337 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+36337 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 12 out of 21
+36692 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+36692 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 13 out of 21
+37013 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+37013 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 14 out of 21
+37322 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+37322 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 15 out of 21
+37856 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+37856 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 16 out of 21
+38184 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+38184 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 17 out of 21
+38532 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+38532 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 18 out of 21
+38858 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+38858 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 19 out of 21
+39102 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+39102 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 20 out of 21
+39467 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+39467 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 21 out of 21
+39763 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+39764 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - 	n1: 
+40180 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - false (0)
+
+40180 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - sanity checking completed (time taken = 9158)
+40180 [main] INFO clegoues.genprog4java.localization.DefaultLocalization  - Start Fault Localization
+40267 [main] INFO clegoues.genprog4java.localization.DefaultLocalization  - Finish Fault Localization
+40267 [main] INFO clegoues.genprog4java.Search.Search  - search: genetic algorithm begins
+
+41549 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 2.0 original (stored at: variant0)
+42837 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 2.0 StmtDelete(404) (stored at: variant1)
+44321 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 2.0 StmtAppend(496,497) (stored at: variant2)
+45673 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 1.0 StmtReplace(483,477) (stored at: variant3)
+45814 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:672: error: missing return statement
+    }
+    ^
+1 error
+
+45814 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(200) at variant4 fails to compile
+
+45814 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtDelete(200) (stored at: variant4)
+45951 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:807: error: incompatible types: String cannot be converted to Elements
+				return "#" + id();
+				           ^
+1 error
+
+45952 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(250,179) at variant5 fails to compile
+
+45952 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtAppend(250,179) (stored at: variant5)
+46093 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:1149: error: cannot find symbol
+				classNames.remove("");
+				^
+  symbol:   variable classNames
+  location: class Element
+1 error
+
+46094 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(376,394) at variant6 fails to compile
+
+46094 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtAppend(376,394) (stored at: variant6)
+47816 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 1.0 StmtReplace(72,211) (stored at: variant7)
+49541 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 2.0 StmtDelete(3) (stored at: variant8)
+50832 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 2.0 StmtDelete(72) (stored at: variant9)
+50925 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:1086: error: cannot find symbol
+			reparentChild(child);
+			              ^
+  symbol:   variable child
+  location: class Element
+1 error
+
+50925 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(343,106) at variant10 fails to compile
+
+50925 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtAppend(343,106) (stored at: variant10)
+52244 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 2.0 StmtAppend(4,83) (stored at: variant11)
+52348 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:1064: error: cannot find symbol
+			Validate.notEmpty(tagName);
+			                  ^
+  symbol:   variable tagName
+  location: class Element
+1 error
+
+52348 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(329,236) at variant12 fails to compile
+
+52348 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtReplace(329,236) (stored at: variant12)
+52455 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:670: error: cannot find symbol
+				Element clone = (Element) super.doClone(parent);
+				                                        ^
+  symbol:   variable parent
+  location: class Element
+1 error
+
+52455 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(199,504) at variant13 fails to compile
+
+52455 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtAppend(199,504) (stored at: variant13)
+53923 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 2.0 StmtReplace(117,7) (stored at: variant14)
+55133 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 2.0 StmtDelete(352) (stored at: variant15)
+55201 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:1144: error: cannot find symbol
+			appendChild(child);
+			            ^
+  symbol:   variable child
+  location: class Element
+1 error
+
+55202 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(374,139) at variant16 fails to compile
+
+55202 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtReplace(374,139) (stored at: variant16)
+55288 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:655: error: missing return statement
+    }
+    ^
+1 error
+
+55288 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(191) at variant17 fails to compile
+
+55289 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtDelete(191) (stored at: variant17)
+55374 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:704: error: package clone does not exist
+			clone.childNodes.addAll(childNodes);
+			     ^
+1 error
+
+55375 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(217,508) at variant18 fails to compile
+
+55375 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtReplace(217,508) (stored at: variant18)
+57077 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 2.0 StmtReplace(365,7) (stored at: variant19)
+57153 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:775: error: missing return statement
+    }
+    ^
+1 error
+
+57153 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(242) at variant20 fails to compile
+
+57153 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtDelete(242) (stored at: variant20)
+57270 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:1189: error: cannot find symbol
+        addChildren(0, child);
+                       ^
+  symbol:   variable child
+  location: class Element
+1 error
+
+57270 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(398,117) at variant21 fails to compile
+
+57270 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtReplace(398,117) (stored at: variant21)
+58528 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 2.0 StmtDelete(84) (stored at: variant22)
+58602 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:1090: error: cannot find symbol
+            Validate.notNull(child);
+                             ^
+  symbol:   variable child
+  location: class Element
+org/jsoup/nodes/Element.java:1091: error: package element does not exist
+            return element.tag.preserveWhitespace() ||
+                          ^
+org/jsoup/nodes/Element.java:1092: error: cannot find symbol
+                element.parent() != null && element.parent().tag.preserveWhitespace();
+                ^
+  symbol:   variable element
+  location: class Element
+org/jsoup/nodes/Element.java:1092: error: cannot find symbol
+                element.parent() != null && element.parent().tag.preserveWhitespace();
+                                            ^
+  symbol:   variable element
+  location: class Element
+4 errors
+
+58602 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(348,116) at variant23 fails to compile
+
+58602 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtReplace(348,116) (stored at: variant23)
+58675 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:453: error: cannot find symbol
+        Element child = new Element(Tag.valueOf(tagName), baseUri());
+                                                ^
+  symbol:   variable tagName
+  location: class Element
+org/jsoup/nodes/Element.java:454: error: cannot find symbol
+        Node[] nodeArray = nodes.toArray(new Node[nodes.size()]);
+                                                  ^
+  symbol:   variable nodes
+  location: class Element
+org/jsoup/nodes/Element.java:454: error: cannot find symbol
+        Node[] nodeArray = nodes.toArray(new Node[nodes.size()]);
+                           ^
+  symbol:   variable nodes
+  location: class Element
+3 errors
+
+58676 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(125,138) at variant24 fails to compile
+
+58676 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtReplace(125,138) (stored at: variant24)
+58750 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:1399: error: cannot find symbol
+        Validate.notEmpty(className);
+                          ^
+  symbol:   variable className
+  location: class Element
+org/jsoup/nodes/Element.java:1400: error: cannot find symbol
+        clone.attributes = attributes != null ? attributes.clone() : null;
+        ^
+  symbol:   variable clone
+  location: class Element
+org/jsoup/nodes/Element.java:1401: error: cannot find symbol
+        clone.baseUri = baseUri;
+        ^
+  symbol:   variable clone
+  location: class Element
+org/jsoup/nodes/Element.java:1402: error: cannot find symbol
+        clone.childNodes = new NodeList(childNodes.size());
+        ^
+  symbol:   variable clone
+  location: class Element
+org/jsoup/nodes/Element.java:1403: error: package clone does not exist
+        clone.childNodes.addAll(childNodes);
+             ^
+org/jsoup/nodes/Element.java:1405: error: cannot find symbol
+        return clone;
+               ^
+  symbol:   variable clone
+  location: class Element
+6 errors
+
+58750 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(504,246) at variant25 fails to compile
+
+58750 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtReplace(504,246) (stored at: variant25)
+59935 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 2.0 StmtDelete(80) (stored at: variant26)
+60970 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 2.0 StmtAppend(366,366) (stored at: variant27)
+62054 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 2.0 StmtReplace(394,8) (stored at: variant28)
+62160 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:1402: error: cannot find symbol
+			addChildren(0, child);
+			               ^
+  symbol:   variable child
+  location: class Element
+1 error
+
+62160 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(505,117) at variant29 fails to compile
+
+62160 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtAppend(505,117) (stored at: variant29)
+63262 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 2.0 StmtDelete(361) (stored at: variant30)
+63337 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:1124: error: cannot find symbol
+				accumulateParents(this, parents);
+				                        ^
+  symbol:   variable parents
+  location: class Element
+1 error
+
+63337 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(361,54) at variant31 fails to compile
+
+63337 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtAppend(361,54) (stored at: variant31)
+64518 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 2.0 StmtAppend(383,81) (stored at: variant32)
+65716 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 2.0 StmtDelete(447) (stored at: variant33)
+66490 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 2.0 StmtReplace(146,146) (stored at: variant34)
+66571 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:691: error: missing return statement
+    }
+    ^
+1 error
+
+66572 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(209) at variant35 fails to compile
+
+66572 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtDelete(209) (stored at: variant35)
+66651 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:1204: error: cannot find symbol
+        if (len == 0 || len < wantLen) {
+                              ^
+  symbol:   variable wantLen
+  location: class Element
+org/jsoup/nodes/Element.java:1209: error: cannot find symbol
+        if (len == wantLen) {
+                   ^
+  symbol:   variable wantLen
+  location: class Element
+org/jsoup/nodes/Element.java:1220: error: cannot find symbol
+                    if (i - start == wantLen && classAttr.regionMatches(true, start, className, 0, wantLen)) {
+                                     ^
+  symbol:   variable wantLen
+  location: class Element
+org/jsoup/nodes/Element.java:1220: error: cannot find symbol
+                    if (i - start == wantLen && classAttr.regionMatches(true, start, className, 0, wantLen)) {
+                                                                                                   ^
+  symbol:   variable wantLen
+  location: class Element
+org/jsoup/nodes/Element.java:1235: error: cannot find symbol
+        if (inClass && len - start == wantLen) {
+                                      ^
+  symbol:   variable wantLen
+  location: class Element
+org/jsoup/nodes/Element.java:1236: error: cannot find symbol
+            return classAttr.regionMatches(true, start, className, 0, wantLen);
+                                                                      ^
+  symbol:   variable wantLen
+  location: class Element
+6 errors
+
+66651 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(403,8) at variant36 fails to compile
+
+66651 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtReplace(403,8) (stored at: variant36)
+66728 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:726: error: incompatible types: Element cannot be converted to int
+       return this;
+              ^
+1 error
+
+66728 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(225,399) at variant37 fails to compile
+
+66728 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtReplace(225,399) (stored at: variant37)
+68229 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 2.0 StmtDelete(414) (stored at: variant38)
+68289 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:1092: error: package element does not exist
+            return element.tag.preserveWhitespace() ||
+                          ^
+org/jsoup/nodes/Element.java:1093: error: cannot find symbol
+                element.parent() != null && element.parent().tag.preserveWhitespace();
+                ^
+  symbol:   variable element
+  location: class Element
+org/jsoup/nodes/Element.java:1093: error: cannot find symbol
+                element.parent() != null && element.parent().tag.preserveWhitespace();
+                                            ^
+  symbol:   variable element
+  location: class Element
+3 errors
+
+68289 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(348) at variant39 fails to compile
+
+68289 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtDelete(348) (stored at: variant39)
+68289 [main] INFO clegoues.genprog4java.Search.Search  - search: generation1
+70486 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 2.0 StmtReplace(365,7) StmtAppend(197,25) (stored at: variant40)
+71458 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 2.0 StmtDelete(84) StmtReplace(212,81) (stored at: variant41)
+71503 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:702: error: cannot find symbol
+        reparentChild(child);
+                      ^
+  symbol:   variable child
+  location: class Element
+1 error
+
+71503 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(365,7) StmtReplace(215,106) at variant42 fails to compile
+
+71503 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(365,7) StmtReplace(215,106) (stored at: variant42)
+71556 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:1158: error: cannot find symbol
+				Element el = (Element) child;
+				                       ^
+  symbol:   variable child
+  location: class Element
+org/jsoup/nodes/Element.java:1160: error: incompatible types: boolean cannot be converted to String
+					return true;
+					       ^
+2 errors
+
+71556 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(117,7) StmtAppend(374,366) at variant43 fails to compile
+
+71556 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(117,7) StmtAppend(374,366) (stored at: variant43)
+71605 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:1205: error: cannot find symbol
+        if (len == 0 || len < wantLen) {
+            ^
+  symbol:   variable len
+  location: class Element
+org/jsoup/nodes/Element.java:1205: error: cannot find symbol
+        if (len == 0 || len < wantLen) {
+                        ^
+  symbol:   variable len
+  location: class Element
+org/jsoup/nodes/Element.java:1210: error: cannot find symbol
+        if (len == wantLen) {
+            ^
+  symbol:   variable len
+  location: class Element
+org/jsoup/nodes/Element.java:1217: error: cannot find symbol
+        for (int i = 0; i < len; i++) {
+                            ^
+  symbol:   variable len
+  location: class Element
+org/jsoup/nodes/Element.java:1223: error: cannot find symbol
+        if (inClass && len - start == wantLen) {
+                       ^
+  symbol:   variable len
+  location: class Element
+5 errors
+
+71605 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(414) StmtDelete(402) at variant44 fails to compile
+
+71605 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(414) StmtDelete(402) (stored at: variant44)
+71666 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:1090: error: cannot find symbol
+			Validate.notNull(className);
+			                 ^
+  symbol:   variable className
+  location: class Element
+1 error
+
+71666 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(365,7) StmtReplace(347,438) at variant45 fails to compile
+
+71666 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(365,7) StmtReplace(347,438) (stored at: variant45)
+71733 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:236: error: cannot find symbol
+        clone.attributes = attributes != null ? attributes.clone() : null;
+        ^
+  symbol:   variable clone
+  location: class Element
+org/jsoup/nodes/Element.java:236: error: non-static variable attributes cannot be referenced from a static context
+        clone.attributes = attributes != null ? attributes.clone() : null;
+                           ^
+org/jsoup/nodes/Element.java:236: error: non-static variable attributes cannot be referenced from a static context
+        clone.attributes = attributes != null ? attributes.clone() : null;
+                                                ^
+3 errors
+
+71734 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(414) StmtReplace(58,505) at variant46 fails to compile
+
+71734 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(414) StmtReplace(58,505) (stored at: variant46)
+72732 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 1.0 StmtAppend(4,83) StmtDelete(233) (stored at: variant47)
+72783 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:1205: error: cannot find symbol
+        if (len == 0 || len < wantLen) {
+            ^
+  symbol:   variable len
+  location: class Element
+org/jsoup/nodes/Element.java:1205: error: cannot find symbol
+        if (len == 0 || len < wantLen) {
+                        ^
+  symbol:   variable len
+  location: class Element
+org/jsoup/nodes/Element.java:1210: error: cannot find symbol
+        if (len == wantLen) {
+            ^
+  symbol:   variable len
+  location: class Element
+org/jsoup/nodes/Element.java:1217: error: cannot find symbol
+        for (int i = 0; i < len; i++) {
+                            ^
+  symbol:   variable len
+  location: class Element
+org/jsoup/nodes/Element.java:1236: error: cannot find symbol
+        if (inClass && len - start == wantLen) {
+                       ^
+  symbol:   variable len
+  location: class Element
+5 errors
+
+72783 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(352) StmtReplace(402,8) at variant48 fails to compile
+
+72783 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(352) StmtReplace(402,8) (stored at: variant48)
+72833 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:539: error: cannot find symbol
+        {List<Node> nodes=Parser.parseFragment(html,this,baseUri());Validate.notNull(text);}
+                                                                                     ^
+  symbol:   variable text
+  location: class Element
+org/jsoup/nodes/Element.java:540: error: cannot find symbol
+        addChildren(nodes.toArray(new Node[nodes.size()]));
+                                           ^
+  symbol:   variable nodes
+  location: class Element
+org/jsoup/nodes/Element.java:540: error: cannot find symbol
+        addChildren(nodes.toArray(new Node[nodes.size()]));
+                    ^
+  symbol:   variable nodes
+  location: class Element
+3 errors
+
+72833 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(404) StmtAppend(157,151) at variant49 fails to compile
+
+72833 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(404) StmtAppend(157,151) (stored at: variant49)
+72881 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:792: error: incompatible types: String cannot be converted to Elements
+				return "#" + id();
+				           ^
+1 error
+
+72881 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(84) StmtAppend(246,179) at variant50 fails to compile
+
+72881 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(84) StmtAppend(246,179) (stored at: variant50)
+73892 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 2.0 StmtDelete(84) StmtDelete(412) (stored at: variant51)
+73933 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:1405: error: cannot find symbol
+			if (child instanceof TextNode) {
+			    ^
+  symbol:   variable child
+  location: class Element
+org/jsoup/nodes/Element.java:1406: error: cannot find symbol
+				TextNode textNode = (TextNode) child;
+				                               ^
+  symbol:   variable child
+  location: class Element
+org/jsoup/nodes/Element.java:1408: error: incompatible types: boolean cannot be converted to Element
+					return true;
+					       ^
+org/jsoup/nodes/Element.java:1409: error: cannot find symbol
+			} else if (child instanceof Element) {
+			           ^
+  symbol:   variable child
+  location: class Element
+org/jsoup/nodes/Element.java:1410: error: cannot find symbol
+				Element el = (Element) child;
+				                       ^
+  symbol:   variable child
+  location: class Element
+org/jsoup/nodes/Element.java:1412: error: incompatible types: boolean cannot be converted to Element
+					return true;
+					       ^
+6 errors
+
+73933 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(4,83) StmtAppend(508,360) at variant52 fails to compile
+
+73933 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(4,83) StmtAppend(508,360) (stored at: variant52)
+73986 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:515: error: cannot find symbol
+        appendChild(node);
+                    ^
+  symbol:   variable node
+  location: class Element
+1 error
+
+73986 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(80) StmtDelete(147) at variant53 fails to compile
+
+73986 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(80) StmtDelete(147) (stored at: variant53)
+74030 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:1404: error: cannot find symbol
+			Validate.notNull(className);
+			                 ^
+  symbol:   variable className
+  location: class Element
+1 error
+
+74030 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(80) StmtAppend(506,444) at variant54 fails to compile
+
+74030 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(80) StmtAppend(506,444) (stored at: variant54)
+74895 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 1.0 StmtReplace(6,107) (stored at: variant55)
+75757 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 2.0 StmtDelete(161) (stored at: variant56)
+75808 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:539: error: cannot find symbol
+			Validate.notNull(className);
+			                 ^
+  symbol:   variable className
+  location: class Element
+1 error
+
+75808 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(146,146) StmtAppend(156,438) at variant57 fails to compile
+
+75808 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(146,146) StmtAppend(156,438) (stored at: variant57)
+75853 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:525: error: cannot find symbol
+			append(html);
+			       ^
+  symbol:   variable html
+  location: class Element
+org/jsoup/nodes/Element.java:527: error: cannot find symbol
+        prependChild(node);
+                     ^
+  symbol:   variable node
+  location: class Element
+2 errors
+
+75854 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(84) StmtAppend(152,497) at variant58 fails to compile
+
+75854 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(84) StmtAppend(152,497) (stored at: variant58)
+76809 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 2.0 StmtDelete(3) StmtDelete(61) (stored at: variant59)
+77855 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 2.0 StmtAppend(366,366) StmtDelete(387) (stored at: variant60)
+78689 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 2.0 StmtDelete(404) StmtDelete(120) (stored at: variant61)
+79608 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 2.0 StmtDelete(404) StmtDelete(203) (stored at: variant62)
+80945 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(404) StmtDelete(479) (stored at: variant63)
+82017 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 2.0 StmtDelete(80) StmtDelete(158) (stored at: variant64)
+82071 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:1329: error: cannot find symbol
+            Validate.notNull(children, "Children collection to be inserted must not be null.");
+                             ^
+  symbol:   variable children
+  location: class Element
+1 error
+
+82071 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(352) StmtReplace(474,120) at variant65 fails to compile
+
+82071 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(352) StmtReplace(474,120) (stored at: variant65)
+82135 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:1217: error: incompatible types: <null> cannot be converted to boolean
+			return null;
+			       ^
+1 error
+
+82136 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(496,497) StmtReplace(412,211) at variant66 fails to compile
+
+82136 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(496,497) StmtReplace(412,211) (stored at: variant66)
+82207 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:1108: error: cannot find symbol
+			Validate.notEmpty(tagName, "Tag name must not be empty.");
+			                  ^
+  symbol:   variable tagName
+  location: class Element
+org/jsoup/nodes/Element.java:1110: error: cannot find symbol
+        appendChild(textNode);
+                    ^
+  symbol:   variable textNode
+  location: class Element
+2 errors
+
+82207 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(366,366) StmtAppend(354,33) at variant67 fails to compile
+
+82207 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(366,366) StmtAppend(354,33) (stored at: variant67)
+83304 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 2.0 StmtDelete(352) StmtAppend(6,107) (stored at: variant68)
+83375 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:91: error: cannot find symbol
+				Element child = new Element(Tag.valueOf(tagName), baseUri());
+				                                        ^
+  symbol:   variable tagName
+  location: class Element
+1 error
+
+83375 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(146,146) StmtAppend(14,138) at variant69 fails to compile
+
+83375 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(146,146) StmtAppend(14,138) (stored at: variant69)
+83433 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:515: error: cannot find symbol
+        appendChild(node);
+                    ^
+  symbol:   variable node
+  location: class Element
+1 error
+
+83433 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(80) StmtDelete(147) at variant70 fails to compile
+
+83433 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(80) StmtDelete(147) (stored at: variant70)
+83492 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:642: error: cannot find symbol
+			Validate.notNull(text);
+			                 ^
+  symbol:   variable text
+  location: class Element
+org/jsoup/nodes/Element.java:646: error: cannot find symbol
+            selector.append('.').append(classes);
+            ^
+  symbol:   variable selector
+  location: class Element
+org/jsoup/nodes/Element.java:649: error: cannot find symbol
+            return selector.toString();
+                   ^
+  symbol:   variable selector
+  location: class Element
+org/jsoup/nodes/Element.java:651: error: cannot find symbol
+        selector.insert(0, " > ");
+        ^
+  symbol:   variable selector
+  location: class Element
+org/jsoup/nodes/Element.java:652: error: cannot find symbol
+        if (parent().select(selector.toString()).size() > 1)
+                            ^
+  symbol:   variable selector
+  location: class Element
+org/jsoup/nodes/Element.java:653: error: cannot find symbol
+            selector.append(String.format(
+            ^
+  symbol:   variable selector
+  location: class Element
+org/jsoup/nodes/Element.java:656: error: cannot find symbol
+        return parent().cssSelector() + selector.toString();
+                                        ^
+  symbol:   variable selector
+  location: class Element
+7 errors
+
+83492 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(496,497) StmtAppend(182,352) at variant71 fails to compile
+
+83492 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(496,497) StmtAppend(182,352) (stored at: variant71)
+84625 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 2.0 StmtDelete(447) StmtAppend(329,3) (stored at: variant72)
+84946 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:402: error: cannot find symbol
+        Validate.notNull(className);
+                         ^
+  symbol:   variable className
+  location: class Element
+1 error
+
+84946 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(352) StmtReplace(105,438) at variant73 fails to compile
+
+84946 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(352) StmtReplace(105,438) (stored at: variant73)
+86311 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(72) StmtAppend(473,471) (stored at: variant74)
+86362 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:1225: error: cannot find symbol
+						Validate.notNull(html);
+						                 ^
+  symbol:   variable html
+  location: class Element
+1 error
+
+86362 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(72) StmtAppend(425,156) at variant75 fails to compile
+
+86363 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(72) StmtAppend(425,156) (stored at: variant75)
+87299 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 2.0 StmtReplace(117,7) StmtDelete(420) (stored at: variant76)
+87329 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:1143: error: cannot find symbol
+        Validate.notNull(text);
+                         ^
+  symbol:   variable text
+  location: class Element
+1 error
+
+87329 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(373,352) at variant77 fails to compile
+
+87329 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(373,352) (stored at: variant77)
+88302 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 2.0 StmtReplace(365,7) StmtAppend(472,19) (stored at: variant78)
+88342 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:1253: error: cannot find symbol
+			addChildren(0, child);
+			               ^
+  symbol:   variable child
+  location: class Element
+1 error
+
+88342 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(434,117) at variant79 fails to compile
+
+88342 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(434,117) (stored at: variant79)
+89086 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 2.0 StmtReplace(368,14) (stored at: variant80)
+89115 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:648: error: cannot find symbol
+        reparentChild(child);
+                      ^
+  symbol:   variable child
+  location: class Element
+1 error
+
+89115 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(188,106) at variant81 fails to compile
+
+89115 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(188,106) (stored at: variant81)
+89156 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:685: error: cannot find symbol
+        accumulateParents(parent, parents);
+                          ^
+  symbol:   variable parent
+  location: class Element
+org/jsoup/nodes/Element.java:685: error: cannot find symbol
+        accumulateParents(parent, parents);
+                                  ^
+  symbol:   variable parents
+  location: class Element
+org/jsoup/nodes/Element.java:686: error: cannot find symbol
+        Validate.notNull(index);
+                         ^
+  symbol:   variable index
+  location: class Element
+org/jsoup/nodes/Element.java:687: error: cannot find symbol
+        if (siblings.size() > index+1)
+                              ^
+  symbol:   variable index
+  location: class Element
+org/jsoup/nodes/Element.java:688: error: cannot find symbol
+            return siblings.get(index+1);
+                                ^
+  symbol:   variable index
+  location: class Element
+5 errors
+
+89156 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(205,61) at variant82 fails to compile
+
+89156 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(205,61) (stored at: variant82)
+89190 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:409: error: incompatible types: boolean cannot be converted to Element
+			return true;
+			       ^
+1 error
+
+89190 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(109,419) at variant83 fails to compile
+
+89190 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(109,419) (stored at: variant83)
+89230 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:1205: error: incompatible types: Element cannot be converted to boolean
+            return (Element) super.clone();
+                   ^
+1 error
+
+89230 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(406,502) at variant84 fails to compile
+
+89230 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(406,502) (stored at: variant84)
+89270 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:646: error: cannot find symbol
+        StringBuilder selector = new StringBuilder(tagName);
+                                                   ^
+  symbol:   variable tagName
+  location: class Element
+1 error
+
+89270 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(181,2) at variant85 fails to compile
+
+89270 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(181,2) (stored at: variant85)
+89311 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:1265: error: cannot find symbol
+        {Set<String> classes=classNames();Validate.notNull(html);}
+                                                           ^
+  symbol:   variable html
+  location: class Element
+org/jsoup/nodes/Element.java:1266: error: cannot find symbol
+        classes.remove(className);
+        ^
+  symbol:   variable classes
+  location: class Element
+org/jsoup/nodes/Element.java:1267: error: cannot find symbol
+        classNames(classes);
+                   ^
+  symbol:   variable classes
+  location: class Element
+3 errors
+
+89312 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(439,156) at variant86 fails to compile
+
+89312 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(439,156) (stored at: variant86)
+90388 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 2.0 StmtDelete(86) (stored at: variant87)
+90433 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:1063: error: cannot find symbol
+        ownText(sb);
+                ^
+  symbol:   variable sb
+  location: class Element
+org/jsoup/nodes/Element.java:1064: error: cannot find symbol
+        return sb.toString().trim();
+               ^
+  symbol:   variable sb
+  location: class Element
+2 errors
+
+90434 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(324,12) at variant88 fails to compile
+
+90434 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(324,12) (stored at: variant88)
+91687 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 1.0 StmtAppend(71,211) (stored at: variant89)
+91705 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:1220: error: variable declaration not allowed here
+                    if (i - start == wantLen && classAttr.regionMatches(true, start, className, 0, wantLen))Element child = new Element(Tag.valueOf(tagName), baseUri());
+                                                                                                                    ^
+1 error
+
+91705 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(419,138) at variant90 fails to compile
+
+91705 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(419,138) (stored at: variant90)
+91755 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:1088: error: cannot find symbol
+        childNodes.add(child);
+                       ^
+  symbol:   variable child
+  location: class Element
+org/jsoup/nodes/Element.java:1088: error: non-static variable childNodes cannot be referenced from a static context
+        childNodes.add(child);
+        ^
+2 errors
+
+91755 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(346,108) at variant91 fails to compile
+
+91755 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(346,108) (stored at: variant91)
+91805 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:1147: error: cannot find symbol
+                sb.append(data.getWholeData());
+                ^
+  symbol:   variable sb
+  location: class Element
+org/jsoup/nodes/Element.java:1150: error: cannot find symbol
+                sb.append(comment.getData());
+                ^
+  symbol:   variable sb
+  location: class Element
+org/jsoup/nodes/Element.java:1154: error: cannot find symbol
+                sb.append(elementData);
+                ^
+  symbol:   variable sb
+  location: class Element
+org/jsoup/nodes/Element.java:1157: error: cannot find symbol
+        return sb.toString();
+               ^
+  symbol:   variable sb
+  location: class Element
+4 errors
+
+91805 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(372) at variant92 fails to compile
+
+91805 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(372) (stored at: variant92)
+91855 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:237: error: non-static variable this cannot be referenced from a static context
+			this.baseUri = baseUri;
+			^
+org/jsoup/nodes/Element.java:237: error: non-static variable baseUri cannot be referenced from a static context
+			this.baseUri = baseUri;
+			               ^
+2 errors
+
+91855 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(59,25) at variant93 fails to compile
+
+91855 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(59,25) (stored at: variant93)
+92876 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 2.0 StmtDelete(424) (stored at: variant94)
+92919 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:705: error: missing return statement
+    }
+    ^
+1 error
+
+92919 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(216) at variant95 fails to compile
+
+92920 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(216) (stored at: variant95)
+92920 [main] INFO clegoues.genprog4java.Search.Search  - search: generation2
+94838 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:237: error: non-static variable this cannot be referenced from a static context
+            parent.appendChild(this);
+                               ^
+1 error
+
+94838 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(447) StmtAppend(329,3) StmtReplace(60,113) at variant96 fails to compile
+
+94839 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(447) StmtAppend(329,3) StmtReplace(60,113) (stored at: variant96)
+95919 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 2.0 StmtDelete(86) StmtAppend(398,13) (stored at: variant97)
+96287 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 2.0 StmtDelete(86) StmtDelete(87) (stored at: variant98)
+96346 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:1241: error: cannot find symbol
+			accumulateParents(parent, parents);
+			                  ^
+  symbol:   variable parent
+  location: class Element
+org/jsoup/nodes/Element.java:1241: error: cannot find symbol
+			accumulateParents(parent, parents);
+			                          ^
+  symbol:   variable parents
+  location: class Element
+2 errors
+
+96346 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(80) StmtDelete(158) StmtAppend(428,61) at variant99 fails to compile
+
+96346 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(80) StmtDelete(158) StmtAppend(428,61) (stored at: variant99)
+96414 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:278: error: cannot find symbol
+            Validate.notNull(classNames);
+                             ^
+  symbol:   variable classNames
+  location: class Element
+1 error
+
+96415 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(365,7) StmtAppend(197,25) StmtReplace(71,397) at variant100 fails to compile
+
+96415 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(365,7) StmtAppend(197,25) StmtReplace(71,397) (stored at: variant100)
+96470 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:1305: error: cannot find symbol
+				TextNode textNode = (TextNode) child;
+				                               ^
+  symbol:   variable child
+  location: class Element
+org/jsoup/nodes/Element.java:1307: error: incompatible types: boolean cannot be converted to Element
+					return true;
+					       ^
+2 errors
+
+96470 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(365,7) StmtAppend(197,25) StmtAppend(457,361) at variant101 fails to compile
+
+96470 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(365,7) StmtAppend(197,25) StmtAppend(457,361) (stored at: variant101)
+97574 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 2.0 StmtDelete(352) StmtAppend(6,107) StmtDelete(347) (stored at: variant102)
+97619 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:285: error: incompatible types: Element cannot be converted to List<Element>
+					return this;
+					       ^
+1 error
+
+97619 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(86) StmtAppend(75,459) at variant103 fails to compile
+
+97619 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(86) StmtAppend(75,459) (stored at: variant103)
+97671 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:1326: error: cannot find symbol
+			Validate.notNull(className);
+			                 ^
+  symbol:   variable className
+  location: class Element
+1 error
+
+97671 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(80) StmtDelete(158) StmtAppend(462,444) at variant104 fails to compile
+
+97671 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(80) StmtDelete(158) StmtAppend(462,444) (stored at: variant104)
+97715 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:1143: error: cannot find symbol
+        if (child instanceof TextNode) {
+            ^
+  symbol:   variable child
+  location: class Element
+org/jsoup/nodes/Element.java:1144: error: cannot find symbol
+			TextNode textNode = (TextNode) child;
+			                               ^
+  symbol:   variable child
+  location: class Element
+org/jsoup/nodes/Element.java:1146: error: incompatible types: boolean cannot be converted to String
+				return true;
+				       ^
+org/jsoup/nodes/Element.java:1147: error: cannot find symbol
+		} else if (child instanceof Element) {
+		           ^
+  symbol:   variable child
+  location: class Element
+org/jsoup/nodes/Element.java:1148: error: cannot find symbol
+			Element el = (Element) child;
+			                       ^
+  symbol:   variable child
+  location: class Element
+org/jsoup/nodes/Element.java:1150: error: incompatible types: boolean cannot be converted to String
+				return true;
+				       ^
+6 errors
+
+97715 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(117,7) StmtDelete(420) StmtReplace(373,360) at variant105 fails to compile
+
+97715 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(117,7) StmtDelete(420) StmtReplace(373,360) (stored at: variant105)
+97768 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:525: error: cannot find symbol
+			append(html);
+			       ^
+  symbol:   variable html
+  location: class Element
+org/jsoup/nodes/Element.java:527: error: cannot find symbol
+        prependChild(node);
+                     ^
+  symbol:   variable node
+  location: class Element
+2 errors
+
+97768 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(84) StmtAppend(152,497) StmtAppend(211,14) at variant106 fails to compile
+
+97768 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(84) StmtAppend(152,497) StmtAppend(211,14) (stored at: variant106)
+97825 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:1149: error: cannot find symbol
+                sb.append(comment.getData());
+                          ^
+  symbol:   variable comment
+  location: class Element
+1 error
+
+97826 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(365,7) StmtAppend(472,19) StmtAppend(381,6) at variant107 fails to compile
+
+97826 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(365,7) StmtAppend(472,19) StmtAppend(381,6) (stored at: variant107)
+97889 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:539: error: cannot find symbol
+        {List<Node> nodes=Parser.parseFragment(html,this,baseUri());for (Node node:childNodes){if (node instanceof TextNode)textNodes.add((TextNode)node);}}
+                                                                                                                            ^
+  symbol:   variable textNodes
+  location: class Element
+org/jsoup/nodes/Element.java:540: error: cannot find symbol
+        addChildren(nodes.toArray(new Node[nodes.size()]));
+                                           ^
+  symbol:   variable nodes
+  location: class Element
+org/jsoup/nodes/Element.java:540: error: cannot find symbol
+        addChildren(nodes.toArray(new Node[nodes.size()]));
+                    ^
+  symbol:   variable nodes
+  location: class Element
+org/jsoup/nodes/Element.java:1265: error: cannot find symbol
+        {Set<String> classes=classNames();Validate.notNull(html);}
+                                                           ^
+  symbol:   variable html
+  location: class Element
+org/jsoup/nodes/Element.java:1266: error: cannot find symbol
+        classes.remove(className);
+        ^
+  symbol:   variable classes
+  location: class Element
+org/jsoup/nodes/Element.java:1267: error: cannot find symbol
+        classNames(classes);
+                   ^
+  symbol:   variable classes
+  location: class Element
+6 errors
+
+97890 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(439,156) StmtAppend(157,84) at variant108 fails to compile
+
+97890 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtAppend(439,156) StmtAppend(157,84) (stored at: variant108)
+97935 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:285: error: cannot find symbol
+					clone.baseUri = baseUri;
+					^
+  symbol:   variable clone
+  location: class Element
+1 error
+
+97935 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(3) StmtDelete(61) StmtReplace(76,506) at variant109 fails to compile
+
+97935 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(3) StmtDelete(61) StmtReplace(76,506) (stored at: variant109)
+99076 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 2.0 StmtDelete(80) StmtDelete(158) StmtAppend(384,25) (stored at: variant110)
+99119 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:1152: error: cannot find symbol
+                String elementData = element.data();
+                                     ^
+  symbol:   variable element
+  location: class Element
+1 error
+
+99119 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(424) StmtReplace(385,3) at variant111 fails to compile
+
+99119 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(424) StmtReplace(385,3) (stored at: variant111)
+99176 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:1267: error: cannot find symbol
+        classes.remove(className);
+        ^
+  symbol:   variable classes
+  location: class Element
+org/jsoup/nodes/Element.java:1268: error: cannot find symbol
+        classNames(classes);
+                   ^
+  symbol:   variable classes
+  location: class Element
+2 errors
+
+99177 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(404) StmtDelete(120) StmtDelete(439) at variant112 fails to compile
+
+99177 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(404) StmtDelete(120) StmtDelete(439) (stored at: variant112)
+100138 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(365,7) StmtAppend(472,19) StmtDelete(14) (stored at: variant113)
+100189 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:1315: error: cannot find symbol
+            Validate.notNull(className);
+                             ^
+  symbol:   variable className
+  location: class Element
+1 error
+
+100189 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(368,14) StmtReplace(463,438) at variant114 fails to compile
+
+100190 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(368,14) StmtReplace(463,438) (stored at: variant114)
+101193 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 2.0 StmtDelete(161) StmtDelete(352) (stored at: variant115)
+101225 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:769: error: cannot find symbol
+        if (child instanceof Element) {
+            ^
+  symbol:   variable child
+  location: class Element
+org/jsoup/nodes/Element.java:770: error: cannot find symbol
+			Element el = (Element) child;
+			                       ^
+  symbol:   variable child
+  location: class Element
+org/jsoup/nodes/Element.java:772: error: incompatible types: boolean cannot be converted to Element
+				return true;
+				       ^
+3 errors
+
+101226 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(84) StmtReplace(212,81) StmtReplace(240,365) at variant116 fails to compile
+
+101226 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(84) StmtReplace(212,81) StmtReplace(240,365) (stored at: variant116)
+101261 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:420: error: cannot find symbol
+        Validate.notNull(className);
+                         ^
+  symbol:   variable className
+  location: class Element
+1 error
+
+101261 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(365,7) StmtAppend(197,25) StmtReplace(113,444) at variant117 fails to compile
+
+101261 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(365,7) StmtAppend(197,25) StmtReplace(113,444) (stored at: variant117)
+101295 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:726: error: cannot find symbol
+       return Collections.unmodifiableList(textNodes);
+                                           ^
+  symbol:   variable textNodes
+  location: class Element
+1 error
+
+101295 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(117,7) StmtDelete(420) StmtReplace(225,88) at variant118 fails to compile
+
+101295 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(117,7) StmtDelete(420) StmtReplace(225,88) (stored at: variant118)
+102198 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 1.0 StmtAppend(366,366) StmtDelete(387) StmtDelete(231) (stored at: variant119)
+102240 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:1326: error: cannot find symbol
+			Validate.notNull(children, "Children collection to be inserted must not be null.");
+			                 ^
+  symbol:   variable children
+  location: class Element
+1 error
+
+102240 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(84) StmtReplace(212,81) StmtAppend(470,120) at variant120 fails to compile
+
+102240 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(84) StmtReplace(212,81) StmtAppend(470,120) (stored at: variant120)
+102271 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:1271: error: cannot find symbol
+        tag = Tag.valueOf(tagName, ParseSettings.preserveCase);
+                          ^
+  symbol:   variable tagName
+  location: class Element
+1 error
+
+102272 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(366,366) StmtDelete(387) StmtReplace(438,34) at variant121 fails to compile
+
+102272 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtAppend(366,366) StmtDelete(387) StmtReplace(438,34) (stored at: variant121)
+103175 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(352) StmtAppend(6,107) StmtReplace(472,53) (stored at: variant122)
+103207 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:645: error: cannot find symbol
+			if (child instanceof TextNode) {
+			    ^
+  symbol:   variable child
+  location: class Element
+org/jsoup/nodes/Element.java:646: error: cannot find symbol
+				TextNode textNode = (TextNode) child;
+				                               ^
+  symbol:   variable child
+  location: class Element
+org/jsoup/nodes/Element.java:648: error: incompatible types: boolean cannot be converted to String
+					return true;
+					       ^
+org/jsoup/nodes/Element.java:649: error: cannot find symbol
+			} else if (child instanceof Element) {
+			           ^
+  symbol:   variable child
+  location: class Element
+org/jsoup/nodes/Element.java:650: error: cannot find symbol
+				Element el = (Element) child;
+				                       ^
+  symbol:   variable child
+  location: class Element
+org/jsoup/nodes/Element.java:652: error: incompatible types: boolean cannot be converted to String
+					return true;
+					       ^
+org/jsoup/nodes/Element.java:657: error: cannot find symbol
+            selector.append('.').append(classes);
+            ^
+  symbol:   variable selector
+  location: class Element
+org/jsoup/nodes/Element.java:660: error: cannot find symbol
+            return selector.toString();
+                   ^
+  symbol:   variable selector
+  location: class Element
+org/jsoup/nodes/Element.java:662: error: cannot find symbol
+        selector.insert(0, " > ");
+        ^
+  symbol:   variable selector
+  location: class Element
+org/jsoup/nodes/Element.java:663: error: cannot find symbol
+        if (parent().select(selector.toString()).size() > 1)
+                            ^
+  symbol:   variable selector
+  location: class Element
+org/jsoup/nodes/Element.java:664: error: cannot find symbol
+            selector.append(String.format(
+            ^
+  symbol:   variable selector
+  location: class Element
+org/jsoup/nodes/Element.java:667: error: cannot find symbol
+        return parent().cssSelector() + selector.toString();
+                                        ^
+  symbol:   variable selector
+  location: class Element
+12 errors
+
+103207 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(352) StmtAppend(6,107) StmtAppend(182,360) at variant123 fails to compile
+
+103207 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(352) StmtAppend(6,107) StmtAppend(182,360) (stored at: variant123)
+103925 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 2.0 StmtDelete(447) StmtAppend(329,3) StmtDelete(424) (stored at: variant124)
+104656 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 2.0 StmtReplace(368,14) StmtReplace(116,105) (stored at: variant125)
+104730 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:1070: error: cannot find symbol
+					Validate.notNull(children, "Children collection to be inserted must not be null.");
+					                 ^
+  symbol:   variable children
+  location: class Element
+1 error
+
+104730 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(424) StmtAppend(336,130) at variant126 fails to compile
+
+104730 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(424) StmtAppend(336,130) (stored at: variant126)
+105581 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 1.0 StmtReplace(365,7) StmtAppend(472,19) StmtDelete(212) (stored at: variant127)
+105628 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:279: error: cannot find symbol
+				clone.childNodes = new NodeList(childNodes.size());
+				^
+  symbol:   variable clone
+  location: class Element
+org/jsoup/nodes/Element.java:281: error: cannot find symbol
+            children = new ArrayList<>(size);
+                                       ^
+  symbol:   variable size
+  location: class Element
+org/jsoup/nodes/Element.java:283: error: cannot find symbol
+            for (int i = 0; i < size; i++) {
+                                ^
+  symbol:   variable size
+  location: class Element
+3 errors
+
+105628 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(404) StmtDelete(120) StmtAppend(70,507) at variant128 fails to compile
+
+105628 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(404) StmtDelete(120) StmtAppend(70,507) (stored at: variant128)
+105663 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:1299: error: incompatible types: int cannot be converted to String
+			return childNodes.size();
+			                      ^
+1 error
+
+105663 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(84) StmtReplace(212,81) StmtAppend(452,27) at variant129 fails to compile
+
+105664 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(84) StmtReplace(212,81) StmtAppend(452,27) (stored at: variant129)
+105697 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:1153: error: cannot find symbol
+                sb.append(comment.getData());
+                          ^
+  symbol:   variable comment
+  location: class Element
+1 error
+
+105697 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(447) StmtAppend(329,3) StmtDelete(381) at variant130 fails to compile
+
+105697 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(447) StmtAppend(329,3) StmtDelete(381) (stored at: variant130)
+106594 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 2.0 StmtDelete(84) StmtReplace(212,81) StmtDelete(378) (stored at: variant131)
+107448 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 2.0 StmtDelete(404) StmtDelete(120) StmtAppend(69,107) (stored at: variant132)
+107486 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:1238: error: cannot find symbol
+            Validate.notNull(html);
+                             ^
+  symbol:   variable html
+  location: class Element
+1 error
+
+107486 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(80) StmtDelete(158) StmtReplace(429,161) at variant133 fails to compile
+
+107486 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(80) StmtDelete(158) StmtReplace(429,161) (stored at: variant133)
+107516 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:1288: error: cannot find symbol
+			Validate.notEmpty(tagName);
+			                  ^
+  symbol:   variable tagName
+  location: class Element
+1 error
+
+107516 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(366,366) StmtDelete(387) StmtAppend(444,236) at variant134 fails to compile
+
+107517 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtAppend(366,366) StmtDelete(387) StmtAppend(444,236) (stored at: variant134)
+108533 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 1.0 StmtReplace(117,7) StmtDelete(420) StmtDelete(407) (stored at: variant135)
+108613 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:1215: error: cannot find symbol
+        if (child instanceof TextNode) {
+            ^
+  symbol:   variable child
+  location: class Element
+org/jsoup/nodes/Element.java:1216: error: cannot find symbol
+			TextNode textNode = (TextNode) child;
+			                               ^
+  symbol:   variable child
+  location: class Element
+org/jsoup/nodes/Element.java:1219: error: cannot find symbol
+		} else if (child instanceof Element) {
+		           ^
+  symbol:   variable child
+  location: class Element
+org/jsoup/nodes/Element.java:1220: error: cannot find symbol
+			Element el = (Element) child;
+			                       ^
+  symbol:   variable child
+  location: class Element
+org/jsoup/nodes/Element.java:1228: error: cannot find symbol
+                    if (i - start == wantLen && classAttr.regionMatches(true, start, className, 0, wantLen)) {
+                            ^
+  symbol:   variable start
+  location: class Element
+org/jsoup/nodes/Element.java:1228: error: cannot find symbol
+                    if (i - start == wantLen && classAttr.regionMatches(true, start, className, 0, wantLen)) {
+                                                                              ^
+  symbol:   variable start
+  location: class Element
+org/jsoup/nodes/Element.java:1237: error: cannot find symbol
+                    start = i;
+                    ^
+  symbol:   variable start
+  location: class Element
+org/jsoup/nodes/Element.java:1243: error: cannot find symbol
+        if (inClass && len - start == wantLen) {
+                             ^
+  symbol:   variable start
+  location: class Element
+org/jsoup/nodes/Element.java:1244: error: cannot find symbol
+            return classAttr.regionMatches(true, start, className, 0, wantLen);
+                                                 ^
+  symbol:   variable start
+  location: class Element
+9 errors
+
+108613 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(411,360) at variant136 fails to compile
+
+108613 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(411,360) (stored at: variant136)
+109348 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 1.0 StmtReplace(365,7) StmtDelete(382) (stored at: variant137)
+110146 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 2.0 StmtReplace(365,7) StmtDelete(387) StmtDelete(383) (stored at: variant138)
+111035 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 1.0 StmtDelete(471) (stored at: variant139)
+111869 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 2.0 StmtDelete(84) StmtAppend(476,489) (stored at: variant140)
+111905 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:524: error: cannot find symbol
+        Validate.notNull(className);
+                         ^
+  symbol:   variable className
+  location: class Element
+1 error
+
+111905 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(151,432) at variant141 fails to compile
+
+111905 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(151,432) (stored at: variant141)
+112571 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 2.0 StmtReplace(365,7) StmtAppend(472,19) StmtAppend(474,83) (stored at: variant142)
+113928 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 2.0 StmtAppend(446,81) (stored at: variant143)
+114561 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 2.0 StmtDelete(429) (stored at: variant144)
+114606 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:1069: error: cannot find symbol
+                appendNormalisedText(accum, textNode);
+                                            ^
+  symbol:   variable textNode
+  location: class Element
+1 error
+
+114607 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(404) StmtAppend(332,7) at variant145 fails to compile
+
+114607 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(404) StmtAppend(332,7) (stored at: variant145)
+114660 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:725: error: cannot find symbol
+       for (Node node:childNodes){if (node instanceof TextNode)textNodes.add((TextNode)node);}
+                                                               ^
+  symbol:   variable textNodes
+  location: class Element
+1 error
+
+114660 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(223,84) at variant146 fails to compile
+
+114661 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(223,84) (stored at: variant146)
+115787 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 2.0 StmtDelete(84) StmtDelete(61) StmtDelete(421) (stored at: variant147)
+115830 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:470: error: cannot find symbol
+        parents.add(parent);
+                    ^
+  symbol:   variable parent
+  location: class Element
+org/jsoup/nodes/Element.java:470: error: cannot find symbol
+        parents.add(parent);
+        ^
+  symbol:   variable parents
+  location: class Element
+org/jsoup/nodes/Element.java:471: error: cannot find symbol
+        if (index < 0) index += currentSize +1; // roll around
+                                ^
+  symbol:   variable currentSize
+  location: class Element
+org/jsoup/nodes/Element.java:472: error: cannot find symbol
+        Validate.isTrue(index >= 0 && index <= currentSize, "Insert position out of bounds.");
+                                               ^
+  symbol:   variable currentSize
+  location: class Element
+4 errors
+
+115830 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(329,3) StmtReplace(131,60) at variant148 fails to compile
+
+115830 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtAppend(329,3) StmtReplace(131,60) (stored at: variant148)
+115875 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:68: error: cannot find symbol
+        clone.attributes = attributes != null ? attributes.clone() : null;
+        ^
+  symbol:   variable clone
+  location: class Element
+1 error
+
+115875 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(158) StmtReplace(4,505) at variant149 fails to compile
+
+115875 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(158) StmtReplace(4,505) (stored at: variant149)
+115926 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:1079: error: cannot find symbol
+			Validate.notEmpty(tagName);
+			                  ^
+  symbol:   variable tagName
+  location: class Element
+1 error
+
+115926 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(341,236) at variant150 fails to compile
+
+115926 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(341,236) (stored at: variant150)
+116634 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 2.0 StmtDelete(84) StmtDelete(86) (stored at: variant151)
+116663 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:1382: error: cannot find symbol
+			clone.childNodes = new NodeList(childNodes.size());
+			^
+  symbol:   variable clone
+  location: class Element
+1 error
+
+116664 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(365,7) StmtAppend(496,507) at variant152 fails to compile
+
+116664 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(365,7) StmtAppend(496,507) (stored at: variant152)
+116692 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:668: error: cannot find symbol
+        Validate.notNull(children, "Children collection to be inserted must not be null.");
+                         ^
+  symbol:   variable children
+  location: class Element
+1 error
+
+116693 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(80) StmtReplace(197,120) at variant153 fails to compile
+
+116693 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(80) StmtReplace(197,120) (stored at: variant153)
+117477 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 2.0 StmtDelete(387) StmtReplace(335,496) (stored at: variant154)
+117504 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:1057: error: cannot find symbol
+        Validate.notNull(children, "Children collection to be inserted must not be null.");
+                         ^
+  symbol:   variable children
+  location: class Element
+org/jsoup/nodes/Element.java:1058: error: cannot find symbol
+        ownText(sb);
+                ^
+  symbol:   variable sb
+  location: class Element
+org/jsoup/nodes/Element.java:1059: error: cannot find symbol
+        return sb.toString().trim();
+               ^
+  symbol:   variable sb
+  location: class Element
+3 errors
+
+117504 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(324,130) at variant155 fails to compile
+
+117504 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(324,130) (stored at: variant155)
+117504 [main] INFO clegoues.genprog4java.Search.Search  - search: generation3
+119509 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 2.0 StmtDelete(84) StmtAppend(476,489) StmtDelete(408) (stored at: variant156)
+120288 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 2.0 StmtAppend(446,81) StmtDelete(474) (stored at: variant157)
+120331 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:1230: error: incompatible types: Elements cannot be converted to boolean
+						return new Elements(0);
+						       ^
+1 error
+
+120331 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(84) StmtReplace(212,81) StmtDelete(378) StmtReplace(426,193) at variant158 fails to compile
+
+120332 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(84) StmtReplace(212,81) StmtDelete(378) StmtReplace(426,193) (stored at: variant158)
+120363 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:706: error: missing return statement
+    }
+    ^
+1 error
+
+120363 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(84) StmtDelete(61) StmtDelete(421) StmtDelete(218) at variant159 fails to compile
+
+120363 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(84) StmtDelete(61) StmtDelete(421) StmtDelete(218) (stored at: variant159)
+120392 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:1402: error: cannot find symbol
+        childNodes.add(child);
+                       ^
+  symbol:   variable child
+  location: class Element
+1 error
+
+120393 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(365,7) StmtAppend(472,19) StmtAppend(474,83) StmtReplace(508,108) at variant160 fails to compile
+
+120393 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(365,7) StmtAppend(472,19) StmtAppend(474,83) StmtReplace(508,108) (stored at: variant160)
+121212 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 2.0 StmtReplace(368,14) StmtReplace(116,105) StmtReplace(146,12) (stored at: variant161)
+121241 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:1328: error: cannot find symbol
+			clone.baseUri = baseUri;
+			^
+  symbol:   variable clone
+  location: class Element
+1 error
+
+121241 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(352) StmtAppend(6,107) StmtDelete(347) StmtAppend(470,506) at variant162 fails to compile
+
+121242 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(352) StmtAppend(6,107) StmtDelete(347) StmtAppend(470,506) (stored at: variant162)
+121273 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:1118: error: cannot find symbol
+                if (!textNode.isBlank())
+                     ^
+  symbol:   variable textNode
+  location: class Element
+1 error
+
+121274 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(84) StmtAppend(476,489) StmtReplace(362,174) at variant163 fails to compile
+
+121274 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(84) StmtAppend(476,489) StmtReplace(362,174) (stored at: variant163)
+122102 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 1.0 StmtDelete(80) StmtDelete(158) StmtAppend(384,25) StmtReplace(73,3) (stored at: variant164)
+122146 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:1187: error: cannot find symbol
+        Validate.notNull(className);
+                         ^
+  symbol:   variable className
+  location: class Element
+1 error
+
+122146 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(368,14) StmtReplace(116,105) StmtReplace(397,432) at variant165 fails to compile
+
+122146 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(368,14) StmtReplace(116,105) StmtReplace(397,432) (stored at: variant165)
+122174 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:700: error: cannot find symbol
+			Validate.notNull(text);
+			                 ^
+  symbol:   variable text
+  location: class Element
+1 error
+
+122174 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(365,7) StmtDelete(382) StmtReplace(212,146) at variant166 fails to compile
+
+122174 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(365,7) StmtDelete(382) StmtReplace(212,146) (stored at: variant166)
+122206 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:754: error: cannot find symbol
+        Validate.notNull(child);
+                         ^
+  symbol:   variable child
+  location: class Element
+1 error
+
+122206 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(84) StmtReplace(212,81) StmtDelete(378) StmtReplace(237,105) at variant167 fails to compile
+
+122206 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(84) StmtReplace(212,81) StmtDelete(378) StmtReplace(237,105) (stored at: variant167)
+123132 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 1.0 StmtDelete(404) StmtDelete(120) StmtAppend(69,107) StmtDelete(84) (stored at: variant168)
+123177 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:1293: error: cannot find symbol
+        return clone;
+               ^
+  symbol:   variable clone
+  location: class Element
+1 error
+
+123177 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(84) StmtAppend(476,489) StmtReplace(452,509) at variant169 fails to compile
+
+123178 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(84) StmtAppend(476,489) StmtReplace(452,509) (stored at: variant169)
+124048 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 1.0 StmtDelete(387) StmtReplace(335,496) StmtDelete(92) (stored at: variant170)
+124077 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:88: error: cannot find symbol
+        Validate.notNull(child);
+                         ^
+  symbol:   variable child
+  location: class Element
+1 error
+
+124077 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(387) StmtReplace(335,496) StmtReplace(12,105) at variant171 fails to compile
+
+124077 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(387) StmtReplace(335,496) StmtReplace(12,105) (stored at: variant171)
+125271 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 2.0 StmtAppend(446,81) StmtDelete(330) (stored at: variant172)
+126672 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 2.0 StmtReplace(365,7) StmtAppend(472,19) StmtAppend(474,83) StmtDelete(406) (stored at: variant173)
+127985 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 2.0 StmtDelete(447) StmtAppend(329,3) StmtDelete(424) StmtDelete(415) (stored at: variant174)
+128033 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:523: error: cannot find symbol
+        Validate.notEmpty(id);
+                          ^
+  symbol:   variable id
+  location: class Element
+org/jsoup/nodes/Element.java:524: error: cannot find symbol
+        prependChild(node);
+                     ^
+  symbol:   variable node
+  location: class Element
+2 errors
+
+128033 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(84) StmtAppend(476,489) StmtReplace(152,240) at variant175 fails to compile
+
+128033 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(84) StmtAppend(476,489) StmtReplace(152,240) (stored at: variant175)
+128075 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:89: error: cannot find symbol
+			Validate.notNull(classNames);
+			                 ^
+  symbol:   variable classNames
+  location: class Element
+1 error
+
+128076 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(366,366) StmtDelete(387) StmtDelete(231) StmtReplace(13,397) at variant176 fails to compile
+
+128076 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtAppend(366,366) StmtDelete(387) StmtDelete(231) StmtReplace(13,397) (stored at: variant176)
+128848 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 1.0 StmtDelete(161) StmtDelete(352) StmtDelete(117) (stored at: variant177)
+130026 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 2.0 StmtReplace(365,7) StmtDelete(387) StmtDelete(383) StmtReplace(336,80) (stored at: variant178)
+130080 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:1322: error: cannot find symbol
+			Validate.notNull(className);
+			                 ^
+  symbol:   variable className
+  location: class Element
+1 error
+
+130080 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(365,7) StmtDelete(382) StmtAppend(462,444) at variant179 fails to compile
+
+130080 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(365,7) StmtDelete(382) StmtAppend(462,444) (stored at: variant179)
+130124 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:1071: error: cannot find symbol
+				Validate.notNull(className);
+				                 ^
+  symbol:   variable className
+  location: class Element
+1 error
+
+130124 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(80) StmtDelete(158) StmtAppend(384,25) StmtAppend(331,432) at variant180 fails to compile
+
+130124 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(80) StmtDelete(158) StmtAppend(384,25) StmtAppend(331,432) (stored at: variant180)
+131232 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 2.0 StmtDelete(429) StmtDelete(325) (stored at: variant181)
+132560 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(84) StmtReplace(212,81) StmtDelete(378) StmtDelete(310) (stored at: variant182)
+133582 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 1.0 StmtReplace(368,14) StmtReplace(116,105) StmtReplace(14,19) (stored at: variant183)
+134631 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 2.0 StmtDelete(387) StmtReplace(335,496) StmtDelete(335) (stored at: variant184)
+134693 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:68: error: cannot find symbol
+        clone.attributes = attributes != null ? attributes.clone() : null;
+        ^
+  symbol:   variable clone
+  location: class Element
+org/jsoup/nodes/Element.java:89: error: cannot find symbol
+			if (child instanceof TextNode) {
+			    ^
+  symbol:   variable child
+  location: class Element
+org/jsoup/nodes/Element.java:90: error: cannot find symbol
+				TextNode textNode = (TextNode) child;
+				                               ^
+  symbol:   variable child
+  location: class Element
+org/jsoup/nodes/Element.java:92: error: incompatible types: boolean cannot be converted to List<Node>
+					return true;
+					       ^
+org/jsoup/nodes/Element.java:93: error: cannot find symbol
+			} else if (child instanceof Element) {
+			           ^
+  symbol:   variable child
+  location: class Element
+org/jsoup/nodes/Element.java:94: error: cannot find symbol
+				Element el = (Element) child;
+				                       ^
+  symbol:   variable child
+  location: class Element
+org/jsoup/nodes/Element.java:96: error: incompatible types: boolean cannot be converted to List<Node>
+					return true;
+					       ^
+7 errors
+
+134693 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(158) StmtReplace(4,505) StmtReplace(13,360) at variant185 fails to compile
+
+134693 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(158) StmtReplace(4,505) StmtReplace(13,360) (stored at: variant185)
+135503 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 1.0 StmtDelete(447) StmtAppend(329,3) StmtDelete(424) StmtAppend(124,202) (stored at: variant186)
+135540 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:1129: error: cannot find symbol
+        Validate.notEmpty(className);
+                          ^
+  symbol:   variable className
+  location: class Element
+org/jsoup/nodes/Element.java:1267: error: cannot find symbol
+        classes.remove(className);
+        ^
+  symbol:   variable classes
+  location: class Element
+org/jsoup/nodes/Element.java:1268: error: cannot find symbol
+        classNames(classes);
+                   ^
+  symbol:   variable classes
+  location: class Element
+3 errors
+
+135540 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(404) StmtDelete(120) StmtDelete(439) StmtReplace(370,246) at variant187 fails to compile
+
+135540 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(404) StmtDelete(120) StmtDelete(439) StmtReplace(370,246) (stored at: variant187)
+135571 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:1357: error: cannot find symbol
+        html(accum);
+             ^
+  symbol:   variable accum
+  location: class Element
+org/jsoup/nodes/Element.java:1358: error: cannot find symbol
+        return getOutputSettings().prettyPrint() ? accum.toString().trim() : accum.toString();
+                                                   ^
+  symbol:   variable accum
+  location: class Element
+org/jsoup/nodes/Element.java:1358: error: cannot find symbol
+        return getOutputSettings().prettyPrint() ? accum.toString().trim() : accum.toString();
+                                                                             ^
+  symbol:   variable accum
+  location: class Element
+3 errors
+
+135571 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(84) StmtDelete(61) StmtDelete(421) StmtDelete(485) at variant188 fails to compile
+
+135571 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(84) StmtDelete(61) StmtDelete(421) StmtDelete(485) (stored at: variant188)
+136338 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 2.0 StmtAppend(446,81) StmtDelete(93) (stored at: variant189)
+136368 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:537: error: cannot find symbol
+        Validate.notNull(parent);
+                         ^
+  symbol:   variable parent
+  location: class Element
+1 error
+
+136368 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(446,81) StmtReplace(156,112) at variant190 fails to compile
+
+136368 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtAppend(446,81) StmtReplace(156,112) (stored at: variant190)
+136397 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:278: error: variable children might not have been initialized
+        return children;
+               ^
+1 error
+
+136397 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(446,81) StmtDelete(68) at variant191 fails to compile
+
+136397 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtAppend(446,81) StmtDelete(68) (stored at: variant191)
+137187 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(365,7) StmtAppend(472,19) StmtAppend(474,83) StmtDelete(8) (stored at: variant192)
+329440 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 1.0 StmtDelete(86) StmtDelete(87) StmtDelete(109) (stored at: variant193)
+330440 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 2.0 StmtDelete(86) StmtDelete(87) StmtDelete(364) (stored at: variant194)
+331378 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 1.0 StmtDelete(352) StmtAppend(6,107) StmtDelete(347) StmtDelete(428) (stored at: variant195)
+332221 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 2.0 StmtDelete(476) (stored at: variant196)
+332258 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:1232: error: cannot find symbol
+						addChildren(0, child);
+						               ^
+  symbol:   variable child
+  location: class Element
+1 error
+
+332258 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(161) StmtAppend(426,117) at variant197 fails to compile
+
+332258 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(161) StmtAppend(426,117) (stored at: variant197)
+332992 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(84) StmtReplace(5,19) (stored at: variant198)
+333031 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:1212: error: cannot find symbol
+        addChildren(0, child);
+                       ^
+  symbol:   variable child
+  location: class Element
+org/jsoup/nodes/Element.java:1216: error: cannot find symbol
+                if (inClass) {
+                    ^
+  symbol:   variable inClass
+  location: class Element
+org/jsoup/nodes/Element.java:1216: error: illegal start of type
+                if (inClass) {
+                   ^
+org/jsoup/nodes/Element.java:1221: error: cannot find symbol
+                    inClass = false;
+                    ^
+  symbol:   variable inClass
+  location: class Element
+org/jsoup/nodes/Element.java:1224: error: cannot find symbol
+                if (!inClass) {
+                     ^
+  symbol:   variable inClass
+  location: class Element
+org/jsoup/nodes/Element.java:1226: error: cannot find symbol
+                    inClass = true;
+                    ^
+  symbol:   variable inClass
+  location: class Element
+org/jsoup/nodes/Element.java:1233: error: cannot find symbol
+        if (inClass && len - start == wantLen) {
+            ^
+  symbol:   variable inClass
+  location: class Element
+7 errors
+
+333031 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(365,7) StmtDelete(387) StmtDelete(378) StmtReplace(410,117) at variant199 fails to compile
+
+333031 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(365,7) StmtDelete(387) StmtDelete(378) StmtReplace(410,117) (stored at: variant199)
+333971 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 2.0 StmtReplace(360,8) (stored at: variant200)
+334039 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:503: error: cannot find symbol
+        prependChild(child);
+                     ^
+  symbol:   variable child
+  location: class Element
+org/jsoup/nodes/Element.java:504: error: cannot find symbol
+        return child;
+               ^
+  symbol:   variable child
+  location: class Element
+2 errors
+
+334039 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(158) StmtReplace(116,105) StmtAppend(142,5) at variant201 fails to compile
+
+334039 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(158) StmtReplace(116,105) StmtAppend(142,5) (stored at: variant201)
+334078 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:453: error: cannot find symbol
+			Element clone = (Element) super.doClone(parent);
+			                                        ^
+  symbol:   variable parent
+  location: class Element
+1 error
+
+334078 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(365,7) StmtDelete(424) StmtAppend(122,504) at variant202 fails to compile
+
+334078 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(365,7) StmtDelete(424) StmtAppend(122,504) (stored at: variant202)
+334822 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 2.0 StmtDelete(447) StmtDelete(139) (stored at: variant203)
+334897 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:281: error: cannot find symbol
+				parents.add(parent);
+				            ^
+  symbol:   variable parent
+  location: class Element
+org/jsoup/nodes/Element.java:281: error: cannot find symbol
+				parents.add(parent);
+				^
+  symbol:   variable parents
+  location: class Element
+2 errors
+
+334897 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(84) StmtReplace(73,60) at variant204 fails to compile
+
+334897 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(84) StmtReplace(73,60) (stored at: variant204)
+334933 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:1371: error: cannot find symbol
+        addChildren(0, child);
+                       ^
+  symbol:   variable child
+  location: class Element
+1 error
+
+334933 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(404) StmtDelete(120) StmtDelete(378) StmtReplace(492,117) at variant205 fails to compile
+
+334933 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(404) StmtDelete(120) StmtDelete(378) StmtReplace(492,117) (stored at: variant205)
+334966 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:1177: error: cannot find symbol
+    	Set<String> classNames = new LinkedHashSet<>(Arrays.asList(names));
+    	                                                           ^
+  symbol:   variable names
+  location: class Element
+1 error
+
+334966 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(84) StmtAppend(392,353) at variant206 fails to compile
+
+334966 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(84) StmtAppend(392,353) (stored at: variant206)
+335004 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:489: error: cannot find symbol
+			Validate.notNull(className);
+			                 ^
+  symbol:   variable className
+  location: class Element
+1 error
+
+335004 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(139,438) at variant207 fails to compile
+
+335004 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtAppend(139,438) (stored at: variant207)
+335039 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:1223: error: cannot find symbol
+                    if (i - start == wantLen && classAttr.regionMatches(true, start, className, 0, wantLen)) {
+                            ^
+  symbol:   variable start
+  location: class Element
+org/jsoup/nodes/Element.java:1223: error: cannot find symbol
+                    if (i - start == wantLen && classAttr.regionMatches(true, start, className, 0, wantLen)) {
+                                                                              ^
+  symbol:   variable start
+  location: class Element
+org/jsoup/nodes/Element.java:1232: error: cannot find symbol
+                    start = i;
+                    ^
+  symbol:   variable start
+  location: class Element
+org/jsoup/nodes/Element.java:1238: error: cannot find symbol
+        if (inClass && len - start == wantLen) {
+                             ^
+  symbol:   variable start
+  location: class Element
+org/jsoup/nodes/Element.java:1239: error: cannot find symbol
+            return classAttr.regionMatches(true, start, className, 0, wantLen);
+                                                 ^
+  symbol:   variable start
+  location: class Element
+5 errors
+
+335039 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(411,80) at variant208 fails to compile
+
+335039 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtAppend(411,80) (stored at: variant208)
+335924 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 1.0 StmtReplace(335,496) StmtDelete(398) (stored at: variant209)
+336841 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 2.0 StmtDelete(387) StmtDelete(368) (stored at: variant210)
+337321 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 2.0 StmtDelete(349) (stored at: variant211)
+337331 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:1332: error: variable declaration not allowed here
+        }else Elements parents = new Elements();
+                       ^
+1 error
+
+337331 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(477,53) at variant212 fails to compile
+
+337331 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(477,53) (stored at: variant212)
+337369 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:1315: error: incompatible types: unexpected return value
+					return "#" + id();
+					           ^
+1 error
+
+337369 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(365,7) StmtAppend(472,19) StmtReplace(465,179) at variant213 fails to compile
+
+337369 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(365,7) StmtAppend(472,19) StmtReplace(465,179) (stored at: variant213)
+337407 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:665: error: cannot find symbol
+        for (Node node:childNodes){if (node instanceof DataNode)dataNodes.add((DataNode)node);}
+                                                                ^
+  symbol:   variable dataNodes
+  location: class Element
+org/jsoup/nodes/Element.java:666: error: cannot find symbol
+        Elements siblings = new Elements(elements.size() - 1);
+                                         ^
+  symbol:   variable elements
+  location: class Element
+org/jsoup/nodes/Element.java:667: error: cannot find symbol
+        for (Element el: elements)
+                         ^
+  symbol:   variable elements
+  location: class Element
+3 errors
+
+337407 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(195,91) at variant214 fails to compile
+
+337407 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(195,91) (stored at: variant214)
+338193 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 1.0 StmtDelete(86) StmtAppend(472,19) StmtAppend(474,83) StmtDelete(458) (stored at: variant215)
+338224 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:405: error: cannot find symbol
+        accumulateParents(this, parents);
+                                ^
+  symbol:   variable parents
+  location: class Element
+1 error
+
+338224 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(84) StmtDelete(347) StmtReplace(108,54) at variant216 fails to compile
+
+338224 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(84) StmtDelete(347) StmtReplace(108,54) (stored at: variant216)
+339290 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 2.0 StmtDelete(352) StmtDelete(3) (stored at: variant217)
+339290 [main] INFO clegoues.genprog4java.Search.Search  - search: generation4
+340260 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:239: error: non-static variable tag cannot be referenced from a static context
+				Validate.notNull(tag);
+				                 ^
+org/jsoup/nodes/Element.java:240: error: non-static variable baseUri cannot be referenced from a static context
+				Validate.notNull(baseUri);
+				                 ^
+org/jsoup/nodes/Element.java:241: error: non-static variable childNodes cannot be referenced from a static context
+				childNodes = EMPTY_NODES;
+				^
+org/jsoup/nodes/Element.java:242: error: non-static variable this cannot be referenced from a static context
+				this.baseUri = baseUri;
+				^
+org/jsoup/nodes/Element.java:242: error: non-static variable baseUri cannot be referenced from a static context
+				this.baseUri = baseUri;
+				               ^
+org/jsoup/nodes/Element.java:243: error: non-static variable this cannot be referenced from a static context
+				this.attributes = attributes;
+				^
+org/jsoup/nodes/Element.java:243: error: non-static variable attributes cannot be referenced from a static context
+				this.attributes = attributes;
+				                  ^
+org/jsoup/nodes/Element.java:244: error: non-static variable this cannot be referenced from a static context
+				this.tag = tag;
+				^
+org/jsoup/nodes/Element.java:244: error: non-static variable tag cannot be referenced from a static context
+				this.tag = tag;
+				           ^
+9 errors
+
+340261 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(84) StmtAppend(476,489) StmtDelete(408) StmtReplace(61,2) at variant218 fails to compile
+
+340261 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(84) StmtAppend(476,489) StmtDelete(408) StmtReplace(61,2) (stored at: variant218)
+341020 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 2.0 StmtReplace(365,7) StmtAppend(472,19) StmtAppend(474,83) StmtDelete(406) StmtDelete(416) (stored at: variant219)
+341050 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:92: error: cannot find symbol
+			Validate.notNull(child);
+			                 ^
+  symbol:   variable child
+  location: class Element
+1 error
+
+341051 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(447) StmtAppend(329,3) StmtDelete(424) StmtDelete(415) StmtAppend(12,105) at variant220 fails to compile
+
+341051 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(447) StmtAppend(329,3) StmtDelete(424) StmtDelete(415) StmtAppend(12,105) (stored at: variant220)
+341081 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:1147: error: cannot find symbol
+                sb.append(data.getWholeData());
+                ^
+  symbol:   variable sb
+  location: class Element
+org/jsoup/nodes/Element.java:1150: error: cannot find symbol
+                sb.append(comment.getData());
+                ^
+  symbol:   variable sb
+  location: class Element
+org/jsoup/nodes/Element.java:1154: error: cannot find symbol
+                sb.append(elementData);
+                ^
+  symbol:   variable sb
+  location: class Element
+org/jsoup/nodes/Element.java:1157: error: cannot find symbol
+        return sb.toString();
+               ^
+  symbol:   variable sb
+  location: class Element
+4 errors
+
+341081 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(446,81) StmtDelete(93) StmtDelete(372) at variant221 fails to compile
+
+341081 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtAppend(446,81) StmtDelete(93) StmtDelete(372) (stored at: variant221)
+342050 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 2.0 StmtReplace(360,8) StmtReplace(438,211) (stored at: variant222)
+342096 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:74: error: cannot find symbol
+			if (child instanceof Element) {
+			    ^
+  symbol:   variable child
+  location: class Element
+org/jsoup/nodes/Element.java:75: error: cannot find symbol
+				Element el = (Element) child;
+				                       ^
+  symbol:   variable child
+  location: class Element
+org/jsoup/nodes/Element.java:77: error: incompatible types: unexpected return value
+					return true;
+					       ^
+3 errors
+
+342096 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(360,8) StmtAppend(8,365) at variant223 fails to compile
+
+342096 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(360,8) StmtAppend(8,365) (stored at: variant223)
+343106 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 2.0 StmtReplace(360,8) StmtAppend(486,475) (stored at: variant224)
+343881 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 2.0 StmtDelete(476) StmtDelete(25) (stored at: variant225)
+343908 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:1221: error: incompatible types: String cannot be converted to boolean
+						return attr("value");
+						           ^
+1 error
+
+343908 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(446,81) StmtDelete(330) StmtAppend(421,454) at variant226 fails to compile
+
+343908 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtAppend(446,81) StmtDelete(330) StmtAppend(421,454) (stored at: variant226)
+343936 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:1266: error: cannot find symbol
+        clone.baseUri = baseUri;
+        ^
+  symbol:   variable clone
+  location: class Element
+org/jsoup/nodes/Element.java:1267: error: cannot find symbol
+        classes.remove(className);
+        ^
+  symbol:   variable classes
+  location: class Element
+org/jsoup/nodes/Element.java:1268: error: cannot find symbol
+        classNames(classes);
+                   ^
+  symbol:   variable classes
+  location: class Element
+3 errors
+
+343936 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(447) StmtDelete(139) StmtReplace(439,506) at variant227 fails to compile
+
+343936 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(447) StmtDelete(139) StmtReplace(439,506) (stored at: variant227)
+343963 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:1025: error: cannot find symbol
+        Validate.notNull(text);
+                         ^
+  symbol:   variable text
+  location: class Element
+1 error
+
+343963 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(446,81) StmtDelete(93) StmtReplace(310,151) at variant228 fails to compile
+
+343964 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtAppend(446,81) StmtDelete(93) StmtReplace(310,151) (stored at: variant228)
+343992 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:553: error: cannot find symbol
+			Validate.notNull(child);
+			                 ^
+  symbol:   variable child
+  location: class Element
+1 error
+
+343992 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(429) StmtDelete(325) StmtAppend(161,116) at variant229 fails to compile
+
+343992 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(429) StmtDelete(325) StmtAppend(161,116) (stored at: variant229)
+344021 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:777: error: missing return statement
+    }
+    ^
+1 error
+
+344022 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(446,81) StmtDelete(330) StmtDelete(244) at variant230 fails to compile
+
+344022 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtAppend(446,81) StmtDelete(330) StmtDelete(244) (stored at: variant230)
+344050 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:687: error: cannot find symbol
+        Validate.notNull(index);
+                         ^
+  symbol:   variable index
+  location: class Element
+org/jsoup/nodes/Element.java:688: error: cannot find symbol
+        if (siblings.size() > index+1)
+                              ^
+  symbol:   variable index
+  location: class Element
+org/jsoup/nodes/Element.java:689: error: cannot find symbol
+            return siblings.get(index+1);
+                                ^
+  symbol:   variable index
+  location: class Element
+3 errors
+
+344051 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(476) StmtDelete(205) at variant231 fails to compile
+
+344051 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(476) StmtDelete(205) (stored at: variant231)
+344109 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:1128: error: missing return statement
+    }
+    ^
+1 error
+
+344109 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(84) StmtAppend(476,489) StmtDelete(408) StmtDelete(370) at variant232 fails to compile
+
+344109 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(84) StmtAppend(476,489) StmtDelete(408) StmtDelete(370) (stored at: variant232)
+345120 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 1.0 StmtDelete(349) StmtDelete(469) (stored at: variant233)
+345946 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 2.0 StmtReplace(365,7) StmtAppend(472,19) StmtAppend(474,83) StmtDelete(406) StmtAppend(340,476) (stored at: variant234)
+346682 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 1.0 StmtDelete(84) StmtAppend(476,489) StmtDelete(408) StmtDelete(475) (stored at: variant235)
+346710 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:1149: error: cannot find symbol
+				parents.add(parent);
+				            ^
+  symbol:   variable parent
+  location: class Element
+org/jsoup/nodes/Element.java:1149: error: cannot find symbol
+				parents.add(parent);
+				^
+  symbol:   variable parents
+  location: class Element
+2 errors
+
+346710 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(365,7) StmtAppend(472,19) StmtAppend(474,83) StmtDelete(8) StmtReplace(384,60) at variant236 fails to compile
+
+346710 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(365,7) StmtAppend(472,19) StmtAppend(474,83) StmtDelete(8) StmtReplace(384,60) (stored at: variant236)
+347542 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 2.0 StmtDelete(349) StmtDelete(143) (stored at: variant237)
+347582 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:1063: error: cannot find symbol
+        accumulateParents(parent, parents);
+                          ^
+  symbol:   variable parent
+  location: class Element
+org/jsoup/nodes/Element.java:1063: error: cannot find symbol
+        accumulateParents(parent, parents);
+                                  ^
+  symbol:   variable parents
+  location: class Element
+2 errors
+
+347582 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(365,7) StmtDelete(387) StmtDelete(383) StmtReplace(336,80) StmtReplace(328,61) at variant238 fails to compile
+
+347582 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(365,7) StmtDelete(387) StmtDelete(383) StmtReplace(336,80) StmtReplace(328,61) (stored at: variant238)
+347622 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:1163: error: cannot find symbol
+                String elementData = element.data();
+                                     ^
+  symbol:   variable element
+  location: class Element
+1 error
+
+347622 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(447) StmtDelete(139) StmtAppend(385,2) at variant239 fails to compile
+
+347622 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(447) StmtDelete(139) StmtAppend(385,2) (stored at: variant239)
+347659 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:641: error: cannot find symbol
+        accumulateParents(this, parents);
+                                ^
+  symbol:   variable parents
+  location: class Element
+org/jsoup/nodes/Element.java:642: error: cannot find symbol
+        if (classes.length() > 0)
+            ^
+  symbol:   variable classes
+  location: class Element
+org/jsoup/nodes/Element.java:643: error: cannot find symbol
+            selector.append('.').append(classes);
+                                        ^
+  symbol:   variable classes
+  location: class Element
+3 errors
+
+347659 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(349) StmtReplace(183,54) at variant240 fails to compile
+
+347659 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(349) StmtReplace(183,54) (stored at: variant240)
+347692 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:1067: error: incompatible types: unexpected return value
+					return true;
+					       ^
+1 error
+
+347692 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(360,8) StmtReplace(330,361) at variant241 fails to compile
+
+347692 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(360,8) StmtReplace(330,361) (stored at: variant241)
+347724 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:1297: error: unreachable statement
+			return tag.getName();
+			^
+1 error
+
+347724 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(84) StmtAppend(476,489) StmtDelete(408) StmtAppend(452,29) at variant242 fails to compile
+
+347724 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(84) StmtAppend(476,489) StmtDelete(408) StmtAppend(452,29) (stored at: variant242)
+348592 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 1.0 StmtDelete(447) StmtDelete(139) StmtAppend(199,199) (stored at: variant243)
+348627 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:705: error: missing return statement
+    }
+    ^
+1 error
+
+348627 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(365,7) StmtDelete(387) StmtDelete(383) StmtReplace(336,80) StmtDelete(216) at variant244 fails to compile
+
+348627 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(365,7) StmtDelete(387) StmtDelete(383) StmtReplace(336,80) StmtDelete(216) (stored at: variant244)
+348658 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:1279: error: cannot find symbol
+			Element el = (Element) child;
+			                       ^
+  symbol:   variable child
+  location: class Element
+org/jsoup/nodes/Element.java:1281: error: incompatible types: boolean cannot be converted to Element
+				return true;
+				       ^
+2 errors
+
+348658 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(446,81) StmtDelete(474) StmtReplace(444,366) at variant245 fails to compile
+
+348658 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtAppend(446,81) StmtDelete(474) StmtReplace(444,366) (stored at: variant245)
+349454 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 1.0 StmtAppend(446,81) StmtDelete(474) StmtReplace(482,14) (stored at: variant246)
+350394 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 2.0 StmtDelete(86) StmtDelete(87) StmtDelete(364) StmtDelete(363) (stored at: variant247)
+350470 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:1130: error: missing return statement
+    }
+    ^
+1 error
+
+350470 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(446,81) StmtDelete(93) StmtDelete(370) at variant248 fails to compile
+
+350470 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtAppend(446,81) StmtDelete(93) StmtDelete(370) (stored at: variant248)
+350507 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:1144: error: cannot find symbol
+        {for (Node childNode:childNodes){if (childNode instanceof DataNode){DataNode data=(DataNode)childNode;sb.append(data.getWholeData());} else if (childNode instanceof Comment){Comment comment=(Comment)childNode;sb.append(comment.getData());} else if (childNode instanceof Element){Element element=(Element)childNode;String elementData=element.data();sb.append(elementData);}}parents.add(parent);}
+                                                                                                                                                                                                                                                                                                                                                                                                         ^
+  symbol:   variable parent
+  location: class Element
+org/jsoup/nodes/Element.java:1144: error: cannot find symbol
+        {for (Node childNode:childNodes){if (childNode instanceof DataNode){DataNode data=(DataNode)childNode;sb.append(data.getWholeData());} else if (childNode instanceof Comment){Comment comment=(Comment)childNode;sb.append(comment.getData());} else if (childNode instanceof Element){Element element=(Element)childNode;String elementData=element.data();sb.append(elementData);}}parents.add(parent);}
+                                                                                                                                                                                                                                                                                                                                                                                             ^
+  symbol:   variable parents
+  location: class Element
+2 errors
+
+350507 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(429) StmtDelete(325) StmtAppend(373,60) at variant249 fails to compile
+
+350507 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(429) StmtDelete(325) StmtAppend(373,60) (stored at: variant249)
+350537 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:1402: error: cannot find symbol
+        {clone.attributes=attributes != null?attributes.clone():null;for (Node node:childNodes){if (node instanceof TextNode)textNodes.add((TextNode)node);}}
+                                                                                                                             ^
+  symbol:   variable textNodes
+  location: class Element
+1 error
+
+350537 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(429) StmtDelete(325) StmtAppend(505,84) at variant250 fails to compile
+
+350537 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(429) StmtDelete(325) StmtAppend(505,84) (stored at: variant250)
+350566 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:1157: error: cannot find symbol
+			accumulateParents(this, parents);
+			                        ^
+  symbol:   variable parents
+  location: class Element
+1 error
+
+350566 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(387) StmtDelete(368) StmtAppend(374,54) at variant251 fails to compile
+
+350567 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(387) StmtDelete(368) StmtAppend(374,54) (stored at: variant251)
+351444 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 1.0 StmtReplace(368,14) StmtReplace(116,105) StmtReplace(146,12) StmtDelete(198) (stored at: variant252)
+351481 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:229: error: cannot find symbol
+        Validate.notEmpty(id);
+                          ^
+  symbol:   variable id
+  location: class Element
+org/jsoup/nodes/Element.java:230: error: cannot find symbol
+        accumulateParents(this, parents);
+                                ^
+  symbol:   variable parents
+  location: class Element
+org/jsoup/nodes/Element.java:231: error: cannot find symbol
+        return parents;
+               ^
+  symbol:   variable parents
+  location: class Element
+3 errors
+
+351482 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(368,14) StmtReplace(116,105) StmtReplace(146,12) StmtReplace(53,240) at variant253 fails to compile
+
+351482 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(368,14) StmtReplace(116,105) StmtReplace(146,12) StmtReplace(53,240) (stored at: variant253)
+351509 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:1207: error: cannot find symbol
+        if (len == 0 || len < wantLen) {
+            ^
+  symbol:   variable len
+  location: class Element
+org/jsoup/nodes/Element.java:1207: error: cannot find symbol
+        if (len == 0 || len < wantLen) {
+                        ^
+  symbol:   variable len
+  location: class Element
+org/jsoup/nodes/Element.java:1212: error: cannot find symbol
+        if (len == wantLen) {
+            ^
+  symbol:   variable len
+  location: class Element
+org/jsoup/nodes/Element.java:1219: error: cannot find symbol
+        for (int i = 0; i < len; i++) {
+                            ^
+  symbol:   variable len
+  location: class Element
+org/jsoup/nodes/Element.java:1238: error: cannot find symbol
+        if (inClass && len - start == wantLen) {
+                       ^
+  symbol:   variable len
+  location: class Element
+5 errors
+
+351509 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(476) StmtAppend(402,246) at variant254 fails to compile
+
+351509 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(476) StmtAppend(402,246) (stored at: variant254)
+352503 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 2.0 StmtReplace(365,7) StmtAppend(472,19) StmtAppend(474,83) StmtDelete(406) StmtReplace(80,8) (stored at: variant255)
+353321 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 2.0 StmtDelete(387) StmtDelete(368) StmtDelete(81) (stored at: variant256)
+354295 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 2.0 StmtDelete(352) StmtDelete(3) StmtDelete(359) (stored at: variant257)
+355050 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 2.0 StmtDelete(84) StmtReplace(336,80) StmtDelete(184) (stored at: variant258)
+355091 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Element.java:320: error: cannot find symbol
+                textNodes.add((TextNode) node);
+                ^
+  symbol:   variable textNodes
+  location: class Element
+org/jsoup/nodes/Element.java:322: error: cannot find symbol
+        return Collections.unmodifiableList(textNodes);
+                                            ^
+  symbol:   variable textNodes
+  location: class Element
+2 errors
+
+355092 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(365,7) StmtDelete(387) StmtDelete(408) StmtDelete(83) at variant259 fails to compile
+
+355092 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(365,7) StmtDelete(387) StmtDelete(408) StmtDelete(83) (stored at: variant259)
+361274 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 63.0 StmtAppend(446,81) StmtDelete(77) (stored at: variant260)
+361274 [main] INFO clegoues.genprog4java.Search.Search  - 
+Repair Found: StmtAppend(446,81) StmtDelete(77) (in variant260)
+
+361344 [main] INFO clegoues.genprog4java.fitness.Fitness  - Serialized test cache to file testcache.ser
+361345 [main] INFO clegoues.genprog4java.main.Main  - 
+Total elapsed time: 361
+

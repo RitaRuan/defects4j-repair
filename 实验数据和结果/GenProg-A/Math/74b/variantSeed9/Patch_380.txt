@@ -1,0 +1,64 @@
+1 InsertBefore /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 236
+Faulty:
+interpolator.reinitialize(stepStart,stepSize,scaled,nordsieck);
+Seed:
+System.arraycopy(y0,0,y,0,y0.length);
+**************************************************
+2 InsertBefore /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 309
+Faulty:
+final double factor=computeStepGrowShrinkFactor(error);
+Seed:
+System.arraycopy(interpolator.getInterpolatedState(),0,yTmp,0,y0.length);
+**************************************************
+3 Replace /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 286
+Faulty:
+interpolatorTmp.storeTime(stepStart);
+Seed:
+double yDotOnScale2=0;
+**************************************************
+4 InsertBefore /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 236
+Faulty:
+interpolator.reinitialize(stepStart,stepSize,scaled,nordsieck);
+Seed:
+System.arraycopy(y0,0,y,0,y0.length);
+**************************************************
+5 InsertBefore /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 237
+Faulty:
+interpolator.storeTime(stepStart);
+Seed:
+setMaxGrowth(10.0);
+**************************************************
+6 InsertBefore /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 236
+Faulty:
+interpolator.reinitialize(stepStart,stepSize,scaled,nordsieck);
+Seed:
+System.arraycopy(y0,0,y,0,y0.length);
+**************************************************
+7 InsertBefore /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 236
+Faulty:
+interpolator.reinitialize(stepStart,stepSize,scaled,nordsieck);
+Seed:
+System.arraycopy(y0,0,y,0,y0.length);
+**************************************************
+8 InsertBefore /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 279
+Faulty:
+for (int j=0; j < y0.length; ++j) {
+  correctedScaled[j]=stepSize * yDot[j];
+}
+Seed:
+final double factor=computeStepGrowShrinkFactor(error);
+**************************************************
+9 Delete /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 240
+Faulty:
+interpolator.rescale(hNew);
+Seed:
+interpolatorTmp.reinitialize(yTmp,forward);
+**************************************************
+10 InsertBefore /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 256
+Faulty:
+System.arraycopy(interpolator.getInterpolatedState(),0,yTmp,0,y0.length);
+Seed:
+boolean reject=false;
+**************************************************
+Evaluations: 654
+EstimatedTime: 590672

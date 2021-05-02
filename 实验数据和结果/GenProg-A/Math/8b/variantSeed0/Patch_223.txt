@@ -1,0 +1,14 @@
+1 Delete /home/rtx/repair/d4j/Math/8b/src/main/java/org/apache/commons/math3/distribution/DiscreteDistribution.java 190
+Faulty:
+out[i]=sample();
+Seed:
+return getMean();
+**************************************************
+2 InsertBefore /home/rtx/repair/d4j/Math/8b/src/main/java/org/apache/commons/math3/distribution/DiscreteDistribution.java 163
+Faulty:
+return singletons.get(i);
+Seed:
+int max=Integer.MIN_VALUE;
+**************************************************
+Evaluations: 294
+EstimatedTime: 59188

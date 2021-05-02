@@ -1,0 +1,20 @@
+1 InsertBefore /home/ubuntu/rtx/d4j/Math/95b/src/java/org/apache/commons/math/distribution/FDistributionImpl.java 147
+Faulty:
+ret=d / (d - 2.0);
+Seed:
+ret=0.5;
+**************************************************
+2 Delete /home/ubuntu/rtx/d4j/Math/95b/src/java/org/apache/commons/math/distribution/FDistributionImpl.java 147
+Faulty:
+ret=d / (d - 2.0);
+Seed:
+return getLowerDomain(getPopulationSize(),getNumberOfSuccesses(),getSampleSize());
+**************************************************
+3 InsertBefore /home/ubuntu/rtx/d4j/Math/95b/src/java/org/apache/commons/math/distribution/FDistributionImpl.java 148
+Faulty:
+return ret;
+Seed:
+ret=0.0;
+**************************************************
+Evaluations: 1510
+EstimatedTime: 687689

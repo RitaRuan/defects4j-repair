@@ -1,0 +1,57 @@
+RUNNING THE BUG: Math 106, WITH THE SEED: 5
+2021-01-21 01:07:37 [main] [INFO]  KGenProgMain - 
+==================== kGenProg Configuration ====================
+configPath = kgenprog.toml
+rootDir = . (set by command line)
+productPaths = [src/java] (set by command line)
+testPaths = [src/test] (set by command line)
+classPaths = [/home/rtx/repair/defects4j/framework/projects/lib/junit-4.11.jar, /home/rtx/repair/d4j/genprogScript/kGenProgScripts/commons-discovery-0.2.jar] (set by command line)
+executionTests = [org.apache.commons.math.fraction.FractionFormatTest] (set by command line)
+outDir = ./patch5 (set by command line)
+logLevel = INFO
+mutationGeneratingCount = 10
+crossoverGeneratingCount = 10
+headcount = 10
+maxGeneration = 10
+timeLimit = PT1M
+testTimeLimit = PT10S
+requiredSolutionsCount = 1
+randomSeed = 5 (set by command line)
+scope = PACKAGE
+faultLocalization = Ochiai
+mutationType = Simple
+crossoverType = Random
+firstVariantSelectionStrategy = Random
+secondVariantSelectionStrategy = Random
+isPatchOutput = true
+isHistoryRecord = false
+currentDirectory = /home/rtx/repair/d4j/Math/106b
+version = 1.8.0
+================================================================
+2021-01-21 01:07:42 [main] [INFO]  KGenProgMain - initial failed tests (1/16)
+org.apache.commons.math.fraction.FractionFormatTest.testParseProperInvalidMinus: null
+2021-01-21 01:07:42 [main] [INFO]  KGenProgMain - GA started
+2021-01-21 01:07:42 [main] [INFO]  KGenProgMain - entered the era of 1st generation.
+2021-01-21 01:07:43 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 0 seconds
+Variants: generated 10, build-succeeded 2, build-failed 6, syntax-invalid 1, redundant 1
+Fitness: max 0.938(1), min 0.875(1), ave 0.906
+----------------------------------------------------------------
+
+2021-01-21 01:07:43 [main] [INFO]  KGenProgMain - entered the era of 2nd generation.
+2021-01-21 01:08:44 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 1 minutes 1 seconds
+Variants: generated 10, build-succeeded 2, build-failed 5, syntax-invalid 1, redundant 2
+Fitness: max 0.875(1), min 0.625(1), ave 0.75
+----------------------------------------------------------------
+
+2021-01-21 01:08:44 [main] [INFO]  KGenProgMain - GA stopped
+2021-01-21 01:08:44 [main] [INFO]  KGenProgMain - Summary
+Reached generation = 2
+Generated variants = 20
+Syntax valid variants = 18
+Build succeeded variants = 4
+Time elapsed = 1 minutes 1 seconds
+Exit status = FAILURE (time limit)

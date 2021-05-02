@@ -1,0 +1,119 @@
+1 InsertBefore /home/rtx/repair/d4j/Math/79b/src/main/java/org/apache/commons/math/stat/clustering/KMeansPlusPlusClusterer.java 162
+Faulty:
+return minCluster;
+Seed:
+for (final Cluster<T> c : clusters) {
+  final double distance=point.distanceFrom(c.getCenter());
+  if (distance < minDistance) {
+    minDistance=distance;
+    minCluster=c;
+  }
+}
+**************************************************
+2 InsertBefore /home/rtx/repair/d4j/Math/79b/src/main/java/org/apache/commons/math/stat/clustering/KMeansPlusPlusClusterer.java 90
+Faulty:
+Cluster<T> cluster=getNearestCluster(clusters,p);
+Seed:
+Cluster<T> minCluster=null;
+**************************************************
+3 Replace /home/rtx/repair/d4j/Math/79b/src/main/java/org/apache/commons/math/stat/clustering/KMeansPlusPlusClusterer.java 157
+Faulty:
+if (distance < minDistance) {
+  minDistance=distance;
+  minCluster=c;
+}
+Seed:
+minCluster=c;
+**************************************************
+4 InsertBefore /home/rtx/repair/d4j/Math/79b/src/main/java/org/apache/commons/math/stat/clustering/KMeansPlusPlusClusterer.java 162
+Faulty:
+return minCluster;
+Seed:
+for (final Cluster<T> c : clusters) {
+  final double distance=point.distanceFrom(c.getCenter());
+  if (distance < minDistance) {
+    minDistance=distance;
+    minCluster=c;
+  }
+}
+**************************************************
+5 Replace /home/rtx/repair/d4j/Math/79b/src/main/java/org/apache/commons/math/stat/clustering/KMeansPlusPlusClusterer.java 157
+Faulty:
+if (distance < minDistance) {
+  minDistance=distance;
+  minCluster=c;
+}
+Seed:
+minCluster=c;
+**************************************************
+6 Replace /home/rtx/repair/d4j/Math/79b/src/main/java/org/apache/commons/math/stat/clustering/KMeansPlusPlusClusterer.java 157
+Faulty:
+if (distance < minDistance) {
+  minDistance=distance;
+  minCluster=c;
+}
+Seed:
+minCluster=c;
+**************************************************
+7 Replace /home/rtx/repair/d4j/Math/79b/src/main/java/org/apache/commons/math/stat/clustering/KMeansPlusPlusClusterer.java 157
+Faulty:
+if (distance < minDistance) {
+  minDistance=distance;
+  minCluster=c;
+}
+Seed:
+minCluster=c;
+**************************************************
+8 Replace /home/rtx/repair/d4j/Math/79b/src/main/java/org/apache/commons/math/stat/clustering/KMeansPlusPlusClusterer.java 157
+Faulty:
+if (distance < minDistance) {
+  minDistance=distance;
+  minCluster=c;
+}
+Seed:
+minCluster=c;
+**************************************************
+9 Replace /home/rtx/repair/d4j/Math/79b/src/main/java/org/apache/commons/math/stat/clustering/KMeansPlusPlusClusterer.java 157
+Faulty:
+if (distance < minDistance) {
+  minDistance=distance;
+  minCluster=c;
+}
+Seed:
+minCluster=c;
+**************************************************
+10 Replace /home/rtx/repair/d4j/Math/79b/src/main/java/org/apache/commons/math/stat/clustering/KMeansPlusPlusClusterer.java 157
+Faulty:
+if (distance < minDistance) {
+  minDistance=distance;
+  minCluster=c;
+}
+Seed:
+minCluster=c;
+**************************************************
+11 InsertBefore /home/rtx/repair/d4j/Math/79b/src/main/java/org/apache/commons/math/stat/clustering/KMeansPlusPlusClusterer.java 90
+Faulty:
+Cluster<T> cluster=getNearestCluster(clusters,p);
+Seed:
+List<Cluster<T>> newClusters=new ArrayList<Cluster<T>>();
+**************************************************
+12 Replace /home/rtx/repair/d4j/Math/79b/src/main/java/org/apache/commons/math/stat/clustering/KMeansPlusPlusClusterer.java 154
+Faulty:
+Cluster<T> minCluster=null;
+Seed:
+Cluster<T> minCluster=null;
+**************************************************
+13 Delete /home/rtx/repair/d4j/Math/79b/src/main/java/org/apache/commons/math/stat/clustering/KMeansPlusPlusClusterer.java 156
+Faulty:
+final double distance=point.distanceFrom(c.getCenter());
+Seed:
+final double distance=point.distanceFrom(c.getCenter());
+**************************************************
+14 Replace /home/rtx/repair/d4j/Math/79b/src/main/java/org/apache/commons/math/stat/clustering/KMeansPlusPlusClusterer.java 56
+Faulty:
+List<Cluster<T>> clusters=chooseInitialCenters(points,k,random);
+Seed:
+List<Cluster<T>> clusters=chooseInitialCenters(points,k,random);
+**************************************************
+Evaluations: 1868
+EstimatedTime: 171064

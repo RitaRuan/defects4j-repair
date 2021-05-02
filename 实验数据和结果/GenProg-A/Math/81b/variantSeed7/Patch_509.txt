@@ -1,0 +1,184 @@
+1 Delete /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1621
+Faulty:
+tau=0.25 * dMin1;
+Seed:
+return new SparseFieldVector<T>(this);
+**************************************************
+2 Delete /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1544
+Faulty:
+b2=work[nn - 13] / work[nn - 15];
+Seed:
+int lastPos=0;
+**************************************************
+3 Delete /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1621
+Faulty:
+tau=0.25 * dMin1;
+Seed:
+return new SparseFieldVector<T>(this);
+**************************************************
+4 Delete /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1544
+Faulty:
+b2=work[nn - 13] / work[nn - 15];
+Seed:
+int lastPos=0;
+**************************************************
+5 Delete /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1621
+Faulty:
+tau=0.25 * dMin1;
+Seed:
+return new SparseFieldVector<T>(this);
+**************************************************
+6 Delete /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1621
+Faulty:
+tau=0.25 * dMin1;
+Seed:
+return new SparseFieldVector<T>(this);
+**************************************************
+7 Replace /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1093
+Faulty:
+if (dMin < 0.0) {
+  if (tType < -22) {
+    tau=0.0;
+  }
+ else   if (dMin1 > 0.0) {
+    tau=(tau + dMin) * (1.0 - 2.0 * MathUtils.EPSILON);
+    tType-=11;
+  }
+ else {
+    tau*=0.25;
+    tType-=12;
+  }
+}
+ else if (Double.isNaN(dMin)) {
+  tau=0.0;
+}
+ else {
+  loop=false;
+}
+Seed:
+if ((dMin >= 0) && (dMin1 > 0)) {
+  updateSigma(tau);
+  return deflatedEnd;
+}
+ else if ((dMin < 0.0) && (dMin1 > 0.0) && (work[4 * deflatedEnd - 5 - pingPong] < TOLERANCE * (sigma + dN1))&& (Math.abs(dN) < TOLERANCE * sigma)) {
+  work[4 * deflatedEnd - 3 - pingPong]=0.0;
+  dMin=0.0;
+  updateSigma(tau);
+  return deflatedEnd;
+}
+ else if (dMin < 0.0) {
+  if (tType < -22) {
+    tau=0.0;
+  }
+ else   if (dMin1 > 0.0) {
+    tau=(tau + dMin) * (1.0 - 2.0 * MathUtils.EPSILON);
+    tType-=11;
+  }
+ else {
+    tau*=0.25;
+    tType-=12;
+  }
+}
+ else if (Double.isNaN(dMin)) {
+  tau=0.0;
+}
+ else {
+  loop=false;
+}
+**************************************************
+8 Replace /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1627
+Faulty:
+break;
+Seed:
+final double gam=dN2;
+**************************************************
+9 Replace /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1509
+Faulty:
+return;
+Seed:
+int sixI=0;
+**************************************************
+10 Delete /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1544
+Faulty:
+b2=work[nn - 13] / work[nn - 15];
+Seed:
+return cachedD;
+**************************************************
+11 Delete /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1544
+Faulty:
+b2=work[nn - 13] / work[nn - 15];
+Seed:
+int lastPos=0;
+**************************************************
+12 Delete /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1621
+Faulty:
+tau=0.25 * dMin1;
+Seed:
+return new SparseFieldVector<T>(this);
+**************************************************
+13 InsertBefore /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1540
+Faulty:
+double a2=(work[np - 8] / b2) * (1 + work[np - 4] / b1);
+Seed:
+this.realEigenvalues=realEigenvalues;
+**************************************************
+14 Delete /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1512
+Faulty:
+a2=a2 + b2;
+Seed:
+final double oldB1=b1;
+**************************************************
+15 Delete /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1621
+Faulty:
+tau=0.25 * dMin1;
+Seed:
+return new SparseFieldVector<T>(this);
+**************************************************
+16 Delete /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1512
+Faulty:
+a2=a2 + b2;
+Seed:
+final int upperStart=5 * main.length;
+**************************************************
+17 Delete /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1512
+Faulty:
+a2=a2 + b2;
+Seed:
+final int upperStart=5 * main.length;
+**************************************************
+18 InsertBefore /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1508
+Faulty:
+if (work[i4] > work[i4 - 2]) {
+  return;
+}
+Seed:
+tau=Math.max(s,0.333 * dMin);
+**************************************************
+19 Delete /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1507
+Faulty:
+b1=b2;
+Seed:
+this.secondary=secondary.clone();
+**************************************************
+20 Replace /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1513
+Faulty:
+if (100 * Math.max(b2,b1) < a2 || cnst1 < a2) {
+  break;
+}
+Seed:
+final double relativeTolerance=Math.sqrt(MathUtils.EPSILON);
+**************************************************
+21 Replace /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1100
+Faulty:
+tau=(tau + dMin) * (1.0 - 2.0 * MathUtils.EPSILON);
+Seed:
+double sum=0;
+**************************************************
+22 InsertBefore /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1540
+Faulty:
+double a2=(work[np - 8] / b2) * (1 + work[np - 4] / b1);
+Seed:
+realEigenvalues=new double[main.length];
+**************************************************
+Evaluations: 631
+EstimatedTime: 257907

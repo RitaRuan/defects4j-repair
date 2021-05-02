@@ -1,0 +1,62 @@
+1 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/33b/src/main/java/org/jsoup/parser/HtmlTreeBuilder.java 187
+Faulty:
+if (tag.isKnownTag()) {
+  if (tag.isSelfClosing())   tokeniser.acknowledgeSelfClosingFlag();
+}
+ else {
+  tag.setSelfClosing();
+  tokeniser.acknowledgeSelfClosingFlag();
+}
+Seed:
+tokeniser=new Tokeniser(reader,errors);
+**************************************************
+2 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/33b/src/main/java/org/jsoup/parser/HtmlTreeBuilder.java 187
+Faulty:
+if (tag.isKnownTag()) {
+  if (tag.isSelfClosing())   tokeniser.acknowledgeSelfClosingFlag();
+}
+ else {
+  tag.setSelfClosing();
+  tokeniser.acknowledgeSelfClosingFlag();
+}
+Seed:
+tokeniser=new Tokeniser(reader,errors);
+**************************************************
+3 Delete /home/ubuntu/rtx/d4j/Jsoup/33b/src/main/java/org/jsoup/parser/HtmlTreeBuilder.java 99
+Faulty:
+currentToken=token;
+Seed:
+clearStackToContext("tr");
+**************************************************
+4 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/33b/src/main/java/org/jsoup/parser/HtmlTreeBuilder.java 187
+Faulty:
+if (tag.isKnownTag()) {
+  if (tag.isSelfClosing())   tokeniser.acknowledgeSelfClosingFlag();
+}
+ else {
+  tag.setSelfClosing();
+  tokeniser.acknowledgeSelfClosingFlag();
+}
+Seed:
+tokeniser=new Tokeniser(reader,errors);
+**************************************************
+5 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/33b/src/main/java/org/jsoup/parser/HtmlTreeBuilder.java 161
+Faulty:
+stack.add(el);
+Seed:
+if (stack.peekLast().nodeName().equals("td") && !state.name().equals("InCell")) Validate.isFalse(true,"pop td not in cell");
+**************************************************
+6 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/33b/src/main/java/org/jsoup/parser/TokeniserState.java 1684
+Faulty:
+needsExitTransition=true;
+Seed:
+boolean last=false;
+**************************************************
+7 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/33b/src/main/java/org/jsoup/parser/HtmlTreeBuilder.java 163
+Faulty:
+return el;
+Seed:
+this.baseUri=baseUri;
+**************************************************
+Evaluations: 914
+EstimatedTime: 1016991

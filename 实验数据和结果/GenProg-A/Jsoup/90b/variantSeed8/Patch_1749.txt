@@ -1,0 +1,114 @@
+1 Delete /home/ubuntu/rtx/d4j/Jsoup/90b/src/main/java/org/jsoup/helper/HttpConnection.java 425
+Faulty:
+while (i < end) {
+  i++;
+  o=input[i];
+  if ((o & 0xC0) != 0x80) {
+    return false;
+  }
+}
+Seed:
+addHeader("Accept-Encoding","gzip");
+**************************************************
+2 Delete /home/ubuntu/rtx/d4j/Jsoup/90b/src/main/java/org/jsoup/helper/HttpConnection.java 425
+Faulty:
+while (i < end) {
+  i++;
+  o=input[i];
+  if ((o & 0xC0) != 0x80) {
+    return false;
+  }
+}
+Seed:
+addHeader("Accept-Encoding","gzip");
+**************************************************
+3 Delete /home/ubuntu/rtx/d4j/Jsoup/90b/src/main/java/org/jsoup/helper/HttpConnection.java 426
+Faulty:
+i++;
+Seed:
+return false;
+**************************************************
+4 Delete /home/ubuntu/rtx/d4j/Jsoup/90b/src/main/java/org/jsoup/helper/HttpConnection.java 425
+Faulty:
+while (i < end) {
+  i++;
+  o=input[i];
+  if ((o & 0xC0) != 0x80) {
+    return false;
+  }
+}
+Seed:
+int o=input[i];
+**************************************************
+5 Delete /home/ubuntu/rtx/d4j/Jsoup/90b/src/main/java/org/jsoup/helper/HttpConnection.java 425
+Faulty:
+while (i < end) {
+  i++;
+  o=input[i];
+  if ((o & 0xC0) != 0x80) {
+    return false;
+  }
+}
+Seed:
+return new BomCharset("UTF-32",false);
+**************************************************
+6 Replace /home/ubuntu/rtx/d4j/Jsoup/90b/src/main/java/org/jsoup/helper/HttpConnection.java 416
+Faulty:
+if ((o & 0xF0) == 0xE0) {
+  end=i + 2;
+}
+ else if ((o & 0xF8) == 0xF0) {
+  end=i + 3;
+}
+ else {
+  return false;
+}
+Seed:
+continue;
+**************************************************
+7 Delete /home/ubuntu/rtx/d4j/Jsoup/90b/src/main/java/org/jsoup/helper/HttpConnection.java 427
+Faulty:
+o=input[i];
+Seed:
+boolean fullyRead=false;
+**************************************************
+8 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/90b/src/main/java/org/jsoup/helper/HttpConnection.java 426
+Faulty:
+i++;
+Seed:
+byte[] bom=new byte[4];
+**************************************************
+9 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/90b/src/main/java/org/jsoup/helper/HttpConnection.java 426
+Faulty:
+i++;
+Seed:
+addHeader("Accept-Encoding","gzip");
+**************************************************
+10 Replace /home/ubuntu/rtx/d4j/Jsoup/90b/src/main/java/org/jsoup/helper/HttpConnection.java 409
+Faulty:
+if ((o & 0x80) == 0) {
+  continue;
+}
+Seed:
+Document doc=null;
+**************************************************
+11 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/90b/src/main/java/org/jsoup/helper/HttpConnection.java 425
+Faulty:
+while (i < end) {
+  i++;
+  o=input[i];
+  if ((o & 0xC0) != 0x80) {
+    return false;
+  }
+}
+Seed:
+final StringBuilder mime=StringUtil.borrowBuilder();
+**************************************************
+12 Delete /home/ubuntu/rtx/d4j/Jsoup/90b/src/main/java/org/jsoup/helper/HttpConnection.java 426
+Faulty:
+i++;
+Seed:
+throw new IllegalArgumentException("Object must not be null");
+**************************************************
+Evaluations: 1615
+EstimatedTime: 1601663

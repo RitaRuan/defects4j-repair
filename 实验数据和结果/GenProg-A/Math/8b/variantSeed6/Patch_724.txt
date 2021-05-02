@@ -1,0 +1,24 @@
+1 Delete /home/rtx/repair/d4j/Math/8b/src/main/java/org/apache/commons/math3/distribution/DiscreteDistribution.java 189
+Faulty:
+for (int i=0; i < sampleSize; i++) {
+  out[i]=sample();
+}
+Seed:
+double qi=0;
+**************************************************
+2 Delete /home/rtx/repair/d4j/Math/8b/src/main/java/org/apache/commons/math3/distribution/DiscreteDistribution.java 182
+Faulty:
+if (sampleSize <= 0) {
+  throw new NotStrictlyPositiveException(LocalizedFormats.NUMBER_OF_SAMPLES,sampleSize);
+}
+Seed:
+throw new MathArithmeticException(LocalizedFormats.OVERFLOW);
+**************************************************
+3 InsertBefore /home/rtx/repair/d4j/Math/8b/src/main/java/org/apache/commons/math3/distribution/DiscreteDistribution.java 187
+Faulty:
+final T[] out=(T[])java.lang.reflect.Array.newInstance(singletons.get(0).getClass(),sampleSize);
+Seed:
+double y=0;
+**************************************************
+Evaluations: 895
+EstimatedTime: 189920

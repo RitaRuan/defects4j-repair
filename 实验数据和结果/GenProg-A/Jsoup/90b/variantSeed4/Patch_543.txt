@@ -1,0 +1,48 @@
+1 Replace /home/ubuntu/rtx/d4j/Jsoup/90b/src/main/java/org/jsoup/helper/HttpConnection.java 426
+Faulty:
+i++;
+Seed:
+Connection con=new HttpConnection();
+**************************************************
+2 Delete /home/ubuntu/rtx/d4j/Jsoup/90b/src/main/java/org/jsoup/helper/HttpConnection.java 427
+Faulty:
+o=input[i];
+Seed:
+if ((o & 0xF0) == 0xE0) {
+  end=i + 2;
+}
+ else if ((o & 0xF8) == 0xF0) {
+  end=i + 3;
+}
+ else {
+  return false;
+}
+**************************************************
+3 Delete /home/ubuntu/rtx/d4j/Jsoup/90b/src/main/java/org/jsoup/helper/HttpConnection.java 425
+Faulty:
+while (i < end) {
+  i++;
+  o=input[i];
+  if ((o & 0xC0) != 0x80) {
+    return false;
+  }
+}
+Seed:
+super.clear();
+**************************************************
+4 Replace /home/ubuntu/rtx/d4j/Jsoup/90b/src/main/java/org/jsoup/helper/HttpConnection.java 416
+Faulty:
+if ((o & 0xF0) == 0xE0) {
+  end=i + 2;
+}
+ else if ((o & 0xF8) == 0xF0) {
+  end=i + 3;
+}
+ else {
+  return false;
+}
+Seed:
+return false;
+**************************************************
+Evaluations: 575
+EstimatedTime: 559615

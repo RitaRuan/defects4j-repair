@@ -1,0 +1,10 @@
+--- org.apache.commons.math.exception.util.MessageFactory
++++ org.apache.commons.math.exception.util.MessageFactory
+@@ -63,7 +63,6 @@
+         final StringBuilder sb = new StringBuilder();
+         if (general != null) {
+             final MessageFormat fmt = new MessageFormat(general.getLocalizedString(locale), locale);
+-            sb.append(fmt.format(arguments));
+         }
+         if (specific != null) {
+             if (general != null) {

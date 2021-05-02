@@ -1,0 +1,62 @@
+1 Delete /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1544
+Faulty:
+b2=work[nn - 13] / work[nn - 15];
+Seed:
+throw new NonSquareMatrixException(getRowDimension(),getColumnDimension());
+**************************************************
+2 Replace /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1508
+Faulty:
+if (work[i4] > work[i4 - 2]) {
+  return;
+}
+Seed:
+g+=0.333 * (1 - g);
+**************************************************
+3 Replace /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1621
+Faulty:
+tau=0.25 * dMin1;
+Seed:
+this.eigenvectors=eigenvectors;
+**************************************************
+4 InsertBefore /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1101
+Faulty:
+tType-=11;
+Seed:
+dMin=Math.min(dMin,dN1);
+**************************************************
+5 InsertBefore /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1504
+Faulty:
+if (b2 == 0.0) {
+  break;
+}
+Seed:
+double xNormSqr=0;
+**************************************************
+6 InsertBefore /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1480
+Faulty:
+a2=0.0;
+Seed:
+computeGershgorinCircles();
+**************************************************
+7 Delete /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1480
+Faulty:
+a2=0.0;
+Seed:
+double b2=Math.sqrt(work[nn - 7]) * Math.sqrt(work[nn - 9]);
+**************************************************
+8 Replace /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1530
+Faulty:
+double s=0.25 * dMin;
+Seed:
+double s=0.0;
+**************************************************
+9 InsertBefore /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1481
+Faulty:
+if (work[nn - 5] > work[nn - 7]) {
+  return;
+}
+Seed:
+dMin1=dMin;
+**************************************************
+Evaluations: 926
+EstimatedTime: 311395

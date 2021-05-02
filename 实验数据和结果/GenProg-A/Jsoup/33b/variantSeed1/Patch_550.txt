@@ -1,0 +1,32 @@
+1 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/33b/src/main/java/org/jsoup/parser/HtmlTreeBuilder.java 187
+Faulty:
+if (tag.isKnownTag()) {
+  if (tag.isSelfClosing())   tokeniser.acknowledgeSelfClosingFlag();
+}
+ else {
+  tag.setSelfClosing();
+  tokeniser.acknowledgeSelfClosingFlag();
+}
+Seed:
+tokeniser=new Tokeniser(reader,errors);
+**************************************************
+2 Replace /home/ubuntu/rtx/d4j/Jsoup/33b/src/main/java/org/jsoup/parser/HtmlTreeBuilder.java 99
+Faulty:
+currentToken=token;
+Seed:
+boolean isHexMode=reader.matchConsumeIgnoreCase("X");
+**************************************************
+3 Delete /home/ubuntu/rtx/d4j/Jsoup/33b/src/main/java/org/jsoup/parser/Tokeniser.java 38
+Faulty:
+selfClosingFlagAcknowledged=true;
+Seed:
+commentPending=new Token.Comment();
+**************************************************
+4 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/33b/src/main/java/org/jsoup/parser/HtmlTreeBuilder.java 112
+Faulty:
+originalState=state;
+Seed:
+reader.mark();
+**************************************************
+Evaluations: 692
+EstimatedTime: 765245

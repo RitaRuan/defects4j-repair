@@ -1,0 +1,40 @@
+1 InsertBefore /home/rtx/repair/d4j/Math/8b/src/main/java/org/apache/commons/math3/distribution/DiscreteDistribution.java 161
+Faulty:
+sum+=probabilities[i];
+Seed:
+double r=1.0d;
+**************************************************
+2 Replace /home/rtx/repair/d4j/Math/8b/src/main/java/org/apache/commons/math3/distribution/DiscreteDistribution.java 190
+Faulty:
+out[i]=sample();
+Seed:
+double min=Double.POSITIVE_INFINITY;
+**************************************************
+3 InsertBefore /home/rtx/repair/d4j/Math/8b/src/main/java/org/apache/commons/math3/distribution/DiscreteDistribution.java 162
+Faulty:
+if (randomValue < sum) {
+  return singletons.get(i);
+}
+Seed:
+final List<Pair<T,Double>> samples=new ArrayList<Pair<T,Double>>(probabilities.length);
+**************************************************
+4 InsertBefore /home/rtx/repair/d4j/Math/8b/src/main/java/org/apache/commons/math3/distribution/DiscreteDistribution.java 182
+Faulty:
+if (sampleSize <= 0) {
+  throw new NotStrictlyPositiveException(LocalizedFormats.NUMBER_OF_SAMPLES,sampleSize);
+}
+Seed:
+if (sampleSize < 0) {
+  throw new NotPositiveException(LocalizedFormats.NUMBER_OF_SAMPLES,sampleSize);
+}
+**************************************************
+5 Delete /home/rtx/repair/d4j/Math/8b/src/main/java/org/apache/commons/math3/distribution/DiscreteDistribution.java 182
+Faulty:
+if (sampleSize <= 0) {
+  throw new NotStrictlyPositiveException(LocalizedFormats.NUMBER_OF_SAMPLES,sampleSize);
+}
+Seed:
+int i=0;
+**************************************************
+Evaluations: 1798
+EstimatedTime: 369411

@@ -1,0 +1,64 @@
+1 Delete /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1484
+Faulty:
+b2=work[nn - 5] / work[nn - 7];
+Seed:
+tType=-10;
+**************************************************
+2 Delete /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1625
+Faulty:
+tType=-9;
+Seed:
+return walkInOptimizedOrder(new RealMatrixPreservingVisitor(){
+  /** 
+ * Sum of squared entries. 
+ */
+  private double sum;
+  /** 
+ * {@inheritDoc} 
+ */
+  public void start(  final int rows,  final int columns,  final int startRow,  final int endRow,  final int startColumn,  final int endColumn){
+    sum=0;
+  }
+  /** 
+ * {@inheritDoc} 
+ */
+  public void visit(  final int row,  final int column,  final double value){
+    sum+=value * value;
+  }
+  /** 
+ * {@inheritDoc} 
+ */
+  public double end(){
+    return Math.sqrt(sum);
+  }
+}
+);
+**************************************************
+3 Delete /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1481
+Faulty:
+if (work[nn - 5] > work[nn - 7]) {
+  return;
+}
+Seed:
+cachedVt=null;
+**************************************************
+4 Delete /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1627
+Faulty:
+break;
+Seed:
+dMin=Math.min(dMin,dN);
+**************************************************
+5 InsertBefore /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1475
+Faulty:
+double s=0.25 * dMin;
+Seed:
+double tmp=0;
+**************************************************
+6 Delete /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1529
+Faulty:
+tType=-5;
+Seed:
+return;
+**************************************************
+Evaluations: 1015
+EstimatedTime: 364045

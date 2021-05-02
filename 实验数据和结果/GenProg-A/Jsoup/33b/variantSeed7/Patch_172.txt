@@ -1,0 +1,20 @@
+1 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/33b/src/main/java/org/jsoup/parser/HtmlTreeBuilder.java 162
+Faulty:
+tokeniser.emit(new Token.EndTag(el.tagName()));
+Seed:
+StringBuilder builder=new StringBuilder();
+**************************************************
+2 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/33b/src/main/java/org/jsoup/parser/Tokeniser.java 37
+Faulty:
+error("Self closing flag not acknowledged");
+Seed:
+;
+**************************************************
+3 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/33b/src/main/java/org/jsoup/parser/HtmlTreeBuilder.java 162
+Faulty:
+tokeniser.emit(new Token.EndTag(el.tagName()));
+Seed:
+tokeniser=new Tokeniser(reader,errors);
+**************************************************
+Evaluations: 248
+EstimatedTime: 258611

@@ -1,0 +1,38 @@
+1 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/45b/src/main/java/org/jsoup/parser/TreeBuilder.java 78
+Faulty:
+return process(new Token.EndTag().name(name));
+Seed:
+this.errors=errors;
+**************************************************
+2 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/45b/src/main/java/org/jsoup/parser/HtmlTreeBuilder.java 398
+Faulty:
+transition(HtmlTreeBuilderState.InRow);
+Seed:
+reader.mark();
+**************************************************
+3 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/45b/src/main/java/org/jsoup/parser/HtmlTreeBuilder.java 398
+Faulty:
+transition(HtmlTreeBuilderState.InRow);
+Seed:
+reader.mark();
+**************************************************
+4 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/45b/src/main/java/org/jsoup/parser/HtmlTreeBuilder.java 398
+Faulty:
+transition(HtmlTreeBuilderState.InRow);
+Seed:
+state=HtmlTreeBuilderState.Initial;
+**************************************************
+5 Replace /home/ubuntu/rtx/d4j/Jsoup/45b/src/main/java/org/jsoup/parser/HtmlTreeBuilder.java 398
+Faulty:
+transition(HtmlTreeBuilderState.InRow);
+Seed:
+formattingElements.add(null);
+**************************************************
+6 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/45b/src/main/java/org/jsoup/parser/HtmlTreeBuilder.java 398
+Faulty:
+transition(HtmlTreeBuilderState.InRow);
+Seed:
+int j=0;
+**************************************************
+Evaluations: 327
+EstimatedTime: 371381

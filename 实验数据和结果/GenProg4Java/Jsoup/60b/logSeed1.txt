@@ -1,0 +1,2605 @@
+0 [main] DEBUG clegoues.genprog4java.fitness.Fitness  - parsing granularity, value: class
+20 [main] DEBUG clegoues.genprog4java.fitness.Fitness  - parsing granularity, value: class
+#Fri Mar 05 10:22:58 CST 2021
+negativeTestWeight=2.0
+classSourceFolder=/home/rtx/repair/d4j/Jsoup/60b/target/classes
+model=default
+sampleStrategy=variant
+srcClassPath=/home/rtx/repair/d4j/Jsoup/60b/target/classes
+sourceVersion=1.8
+popsize=40
+regenPaths=false
+posCoverageFile=coverage.path.pos
+continue=false
+edits=APPEND;DELETE;REPLACE
+negCoverageFile=coverage.path.neg
+workingDir=/home/rtx/repair/d4j/Jsoup/60b/
+clearTestCache=false
+skipFailedSanity=false
+sample=0.1 
+oracleGenome=
+testGranularity=class
+justTestingFaultLoc=false
+faultLocStrategy=standardPathFile
+crossp=0.5
+pMutation=1
+generations=10
+positiveTests=/home/rtx/repair/d4j/Jsoup/60b/pos.tests
+javaVM=/home/rtx/java/jdk1.8.0_271/jre/bin/java
+seed=1
+negativePathWeight=0.35
+compileCommand=
+fixStrategy=classScope
+allowCoverageFail=false
+targetClassName=/home/rtx/repair/d4j/Jsoup/60b/bugfiles.txt
+javaRuntime=java.lang.Runtime@6576fe71
+classTestFolder=
+modelPath=OVERALLModel.txt
+sanity=yes
+positivePathWeight=0.65
+jacocoPath=/home/rtx/eclipse-workspace/genprog4java/lib/jacocoagent.jar
+negativeTests=/home/rtx/repair/d4j/Jsoup/60b/neg.tests
+pathToFileHumanInjectedFaultLoc=fileHumanInjectedFaultLoc.txt
+outputDir=/home/rtx/repair/d4j/Jsoup/60b/genprog4java/variantSeed1/
+testClassPath=/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/junit/junit/4.12/junit-4.12.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/com/google/code/gson/gson/2.7/gson-2.7.jar\:/home/rtx/repair/d4j/Jsoup/60b/target/classes\:/home/rtx/repair/d4j/Jsoup/60b/target/test-classes\:/home/rtx/repair/defects4j/framework/projects/lib/junit-4.11.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/commons-lang/commons-lang/2.4/commons-lang-2.4.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/junit/junit/4.5/junit-4.5.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/com/google/code/gson/gson/2.7/gson-2.7.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/commons-lang/commons-lang/2.4/commons-lang-2.4.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/junit/junit/4.12/junit-4.12.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/junit/junit/4.5/junit-4.5.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-http/9.2.22.v20170606/jetty-http-9.2.22.v20170606.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-http/9.2.26.v20180806/jetty-http-9.2.26.v20180806.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-http/9.2.28.v20190418/jetty-http-9.2.28.v20190418.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-io/9.2.22.v20170606/jetty-io-9.2.22.v20170606.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-io/9.2.26.v20180806/jetty-io-9.2.26.v20180806.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-io/9.2.28.v20190418/jetty-io-9.2.28.v20190418.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-security/9.2.22.v20170606/jetty-security-9.2.22.v20170606.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-security/9.2.26.v20180806/jetty-security-9.2.26.v20180806.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-security/9.2.28.v20190418/jetty-security-9.2.28.v20190418.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-server/9.2.22.v20170606/jetty-server-9.2.22.v20170606.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-server/9.2.26.v20180806/jetty-server-9.2.26.v20180806.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-server/9.2.28.v20190418/jetty-server-9.2.28.v20190418.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-servlet/9.2.22.v20170606/jetty-servlet-9.2.22.v20170606.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-servlet/9.2.26.v20180806/jetty-servlet-9.2.26.v20180806.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-servlet/9.2.28.v20190418/jetty-servlet-9.2.28.v20190418.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-util/9.2.22.v20170606/jetty-util-9.2.22.v20170606.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-util/9.2.26.v20180806/jetty-util-9.2.26.v20180806.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-util/9.2.28.v20190418/jetty-util-9.2.28.v20190418.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-http/9.2.22.v20170606/jetty-http-9.2.22.v20170606.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-http/9.2.26.v20180806/jetty-http-9.2.26.v20180806.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-http/9.2.28.v20190418/jetty-http-9.2.28.v20190418.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-io/9.2.22.v20170606/jetty-io-9.2.22.v20170606.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-io/9.2.26.v20180806/jetty-io-9.2.26.v20180806.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-io/9.2.28.v20190418/jetty-io-9.2.28.v20190418.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-security/9.2.22.v20170606/jetty-security-9.2.22.v20170606.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-security/9.2.26.v20180806/jetty-security-9.2.26.v20180806.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-security/9.2.28.v20190418/jetty-security-9.2.28.v20190418.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-server/9.2.22.v20170606/jetty-server-9.2.22.v20170606.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-server/9.2.26.v20180806/jetty-server-9.2.26.v20180806.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-server/9.2.28.v20190418/jetty-server-9.2.28.v20190418.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-servlet/9.2.22.v20170606/jetty-servlet-9.2.22.v20170606.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-servlet/9.2.26.v20180806/jetty-servlet-9.2.26.v20180806.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-servlet/9.2.28.v20190418/jetty-servlet-9.2.28.v20190418.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-util/9.2.22.v20170606/jetty-util-9.2.22.v20170606.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-util/9.2.26.v20180806/jetty-util-9.2.26.v20180806.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-util/9.2.28.v20190418/jetty-util-9.2.28.v20190418.jar
+faultStrategy=classScope
+sourceDir=src/main/java
+checkSpace=false
+search=gp
+globalExtension=.java
+faultSpaceSubSet=1/5
+maxVariants=50
+libs=/home/rtx/eclipse-workspace/genprog4java/lib/junittestrunner.jar\:/home/rtx/eclipse-workspace/genprog4java/lib/commons-cli-20040117.000000.jar\:/home/rtx/eclipse-workspace/genprog4java/lib/junit-4.12.jar\:/home/rtx/eclipse-workspace/genprog4java/lib/hamcrest-core-1.3.jar\:/home/rtx/eclipse-workspace/genprog4java/lib/log4j-1.2.17.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/junit/junit/4.12/junit-4.12.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/com/google/code/gson/gson/2.7/gson-2.7.jar\:/home/rtx/repair/d4j/Jsoup/60b/target/classes\:/home/rtx/repair/d4j/Jsoup/60b/target/test-classes\:/home/rtx/repair/defects4j/framework/projects/lib/junit-4.11.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/commons-lang/commons-lang/2.4/commons-lang-2.4.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/junit/junit/4.5/junit-4.5.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/com/google/code/gson/gson/2.7/gson-2.7.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/commons-lang/commons-lang/2.4/commons-lang-2.4.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/junit/junit/4.12/junit-4.12.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/junit/junit/4.5/junit-4.5.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-http/9.2.22.v20170606/jetty-http-9.2.22.v20170606.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-http/9.2.26.v20180806/jetty-http-9.2.26.v20180806.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-http/9.2.28.v20190418/jetty-http-9.2.28.v20190418.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-io/9.2.22.v20170606/jetty-io-9.2.22.v20170606.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-io/9.2.26.v20180806/jetty-io-9.2.26.v20180806.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-io/9.2.28.v20190418/jetty-io-9.2.28.v20190418.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-security/9.2.22.v20170606/jetty-security-9.2.22.v20170606.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-security/9.2.26.v20180806/jetty-security-9.2.26.v20180806.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-security/9.2.28.v20190418/jetty-security-9.2.28.v20190418.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-server/9.2.22.v20170606/jetty-server-9.2.22.v20170606.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-server/9.2.26.v20180806/jetty-server-9.2.26.v20180806.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-server/9.2.28.v20190418/jetty-server-9.2.28.v20190418.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-servlet/9.2.22.v20170606/jetty-servlet-9.2.22.v20170606.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-servlet/9.2.26.v20180806/jetty-servlet-9.2.26.v20180806.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-servlet/9.2.28.v20190418/jetty-servlet-9.2.28.v20190418.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-util/9.2.22.v20170606/jetty-util-9.2.22.v20170606.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-util/9.2.26.v20180806/jetty-util-9.2.26.v20180806.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-util/9.2.28.v20190418/jetty-util-9.2.28.v20190418.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-http/9.2.22.v20170606/jetty-http-9.2.22.v20170606.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-http/9.2.26.v20180806/jetty-http-9.2.26.v20180806.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-http/9.2.28.v20190418/jetty-http-9.2.28.v20190418.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-io/9.2.22.v20170606/jetty-io-9.2.22.v20170606.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-io/9.2.26.v20180806/jetty-io-9.2.26.v20180806.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-io/9.2.28.v20190418/jetty-io-9.2.28.v20190418.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-security/9.2.22.v20170606/jetty-security-9.2.22.v20170606.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-security/9.2.26.v20180806/jetty-security-9.2.26.v20180806.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-security/9.2.28.v20190418/jetty-security-9.2.28.v20190418.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-server/9.2.22.v20170606/jetty-server-9.2.22.v20170606.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-server/9.2.26.v20180806/jetty-server-9.2.26.v20180806.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-server/9.2.28.v20190418/jetty-server-9.2.28.v20190418.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-servlet/9.2.22.v20170606/jetty-servlet-9.2.22.v20170606.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-servlet/9.2.26.v20180806/jetty-servlet-9.2.26.v20180806.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-servlet/9.2.28.v20190418/jetty-servlet-9.2.28.v20190418.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-util/9.2.22.v20170606/jetty-util-9.2.22.v20170606.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-util/9.2.26.v20180806/jetty-util-9.2.26.v20180806.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-util/9.2.28.v20190418/jetty-util-9.2.28.v20190418.jar\:/home/rtx/repair/d4j/Jsoup/60b/target/classes
+crossover=onepoint
+88 [main] INFO clegoues.genprog4java.main.Main  - Configuration file loaded
+28449 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - loaded from source clegoues.genprog4java.java.ClassInfo@b72addd9
+42189 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - loaded from source clegoues.genprog4java.java.ClassInfo@124969f9
+42189 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - sanity checking begins
+42795 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 1 out of 17
+43083 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+43084 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 2 out of 17
+43274 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+43274 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 3 out of 17
+43684 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+43684 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 4 out of 17
+44147 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+44147 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 5 out of 17
+44516 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+44516 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 6 out of 17
+44830 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+44830 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 7 out of 17
+45069 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+45069 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 8 out of 17
+45332 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+45332 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 9 out of 17
+45594 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+45594 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 10 out of 17
+45830 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+45830 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 11 out of 17
+46063 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+46063 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 12 out of 17
+46455 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+46455 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 13 out of 17
+46624 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+46624 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 14 out of 17
+46873 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+46874 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 15 out of 17
+47194 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+47194 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 16 out of 17
+47467 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+47467 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 17 out of 17
+47769 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+47770 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - 	n1: 
+47949 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - false (0)
+
+47949 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - 	n2: 
+48121 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - false (0)
+
+48121 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - sanity checking completed (time taken = 5932)
+48121 [main] INFO clegoues.genprog4java.localization.DefaultLocalization  - Start Fault Localization
+48236 [main] INFO clegoues.genprog4java.localization.DefaultLocalization  - Finish Fault Localization
+48237 [main] INFO clegoues.genprog4java.Search.Search  - search: genetic algorithm begins
+
+49372 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 2.0 original (stored at: variant0)
+50456 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 1.0 StmtDelete(313) (stored at: variant1)
+50563 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/select/QueryParser.java:351: error: cannot find symbol
+        Validate.notEmpty(searchText, ":containsData(text) query must not be empty");
+                          ^
+  symbol:   variable searchText
+  location: class QueryParser
+org/jsoup/select/QueryParser.java:352: error: cannot find symbol
+        evals.add(new Evaluator.ContainsData(searchText));
+                                             ^
+  symbol:   variable searchText
+  location: class QueryParser
+2 errors
+
+50563 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(414,362) at variant2 fails to compile
+
+50564 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtAppend(414,362) (stored at: variant2)
+50660 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/select/QueryParser.java:331: error: cannot find symbol
+        Validate.notEmpty(subQuery, ":has(el) subselect must not be empty");
+                          ^
+  symbol:   variable subQuery
+  location: class QueryParser
+org/jsoup/select/QueryParser.java:332: error: cannot find symbol
+        evals.add(new StructuralEvaluator.Has(parse(subQuery)));
+                                                    ^
+  symbol:   variable subQuery
+  location: class QueryParser
+2 errors
+
+50661 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(402,357) at variant3 fails to compile
+
+50661 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtReplace(402,357) (stored at: variant3)
+51682 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 1.0 StmtAppend(144,3) (stored at: variant4)
+52515 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 2.0 StmtReplace(52,46) (stored at: variant5)
+52589 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/TokenQueue.java:213: error: cannot find symbol
+        return queue.substring(start, pos);
+                               ^
+  symbol:   variable start
+  location: class TokenQueue
+1 error
+
+52589 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(67) at variant6 fails to compile
+
+52589 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtDelete(67) (stored at: variant6)
+52655 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/select/QueryParser.java:182: error: cannot find symbol
+			if (isEmpty())
+			    ^
+  symbol:   method isEmpty()
+  location: class QueryParser
+org/jsoup/select/QueryParser.java:183: error: incompatible types: unexpected return value
+				return false;
+				       ^
+2 errors
+
+52655 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(299,25) at variant7 fails to compile
+
+52655 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtReplace(299,25) (stored at: variant7)
+53732 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 2.0 StmtReplace(229,223) (stored at: variant8)
+53802 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/select/QueryParser.java:92: error: variable currentEval might not have been initialized
+            currentEval = new CombiningEvaluator.And(newEval, new StructuralEvaluator.ImmediateParent(currentEval));
+                                                                                                      ^
+org/jsoup/select/QueryParser.java:94: error: variable currentEval might not have been initialized
+            currentEval = new CombiningEvaluator.And(newEval, new StructuralEvaluator.Parent(currentEval));
+                                                                                             ^
+org/jsoup/select/QueryParser.java:96: error: variable currentEval might not have been initialized
+            currentEval = new CombiningEvaluator.And(newEval, new StructuralEvaluator.ImmediatePreviousSibling(currentEval));
+                                                                                                               ^
+org/jsoup/select/QueryParser.java:98: error: variable currentEval might not have been initialized
+            currentEval = new CombiningEvaluator.And(newEval, new StructuralEvaluator.PreviousSibling(currentEval));
+                                                                                                      ^
+org/jsoup/select/QueryParser.java:101: error: variable currentEval might not have been initialized
+            if (currentEval instanceof CombiningEvaluator.Or) {
+                ^
+org/jsoup/select/QueryParser.java:115: error: variable rootEval might not have been initialized
+            ((CombiningEvaluator.Or) rootEval).replaceRightMostEvaluator(currentEval);
+                                     ^
+6 errors
+
+53802 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(213) at variant9 fails to compile
+
+53802 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtDelete(213) (stored at: variant9)
+150255 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 2.0 StmtDelete(87) (stored at: variant10)
+150317 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/TokenQueue.java:202: error: cannot find symbol
+            if (canScan) {
+                ^
+  symbol:   variable canScan
+  location: class TokenQueue
+org/jsoup/parser/TokenQueue.java:202: error: illegal start of type
+            if (canScan) {
+               ^
+2 errors
+
+150318 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(69,13) at variant11 fails to compile
+
+150318 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtAppend(69,13) (stored at: variant11)
+151268 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 2.0 StmtAppend(418,309) (stored at: variant12)
+152312 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 2.0 StmtDelete(92) (stored at: variant13)
+153320 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 2.0 StmtAppend(379,198) (stored at: variant14)
+154062 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 1.0 StmtAppend(284,263) (stored at: variant15)
+154961 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 2.0 StmtAppend(422,306) (stored at: variant16)
+155978 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 2.0 StmtDelete(202) (stored at: variant17)
+156672 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 1.0 StmtReplace(222,218) (stored at: variant18)
+157478 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 2.0 StmtDelete(388) (stored at: variant19)
+158234 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 1.0 StmtAppend(187,274) (stored at: variant20)
+159173 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 2.0 StmtAppend(411,268) (stored at: variant21)
+159925 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 2.0 StmtDelete(241) (stored at: variant22)
+160592 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 1.0 StmtReplace(340,280) (stored at: variant23)
+160631 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/TokenQueue.java:271: error: cannot find symbol
+                if ((c.equals('\'') || c.equals('"')) && c != open)
+                     ^
+  symbol:   variable c
+  location: class TokenQueue
+org/jsoup/parser/TokenQueue.java:271: error: cannot find symbol
+                if ((c.equals('\'') || c.equals('"')) && c != open)
+                                       ^
+  symbol:   variable c
+  location: class TokenQueue
+org/jsoup/parser/TokenQueue.java:271: error: cannot find symbol
+                if ((c.equals('\'') || c.equals('"')) && c != open)
+                                                         ^
+  symbol:   variable c
+  location: class TokenQueue
+org/jsoup/parser/TokenQueue.java:275: error: cannot find symbol
+                if (c.equals(open)) {
+                    ^
+  symbol:   variable c
+  location: class TokenQueue
+org/jsoup/parser/TokenQueue.java:280: error: cannot find symbol
+                else if (c.equals(close))
+                         ^
+  symbol:   variable c
+  location: class TokenQueue
+org/jsoup/parser/TokenQueue.java:286: error: cannot find symbol
+            last = c;
+                   ^
+  symbol:   variable c
+  location: class TokenQueue
+6 errors
+
+160631 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(108,88) at variant24 fails to compile
+
+160631 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtReplace(108,88) (stored at: variant24)
+161352 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 2.0 StmtReplace(421,299) (stored at: variant25)
+162062 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 2.0 StmtDelete(70) (stored at: variant26)
+162858 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 1.0 StmtAppend(275,304) (stored at: variant27)
+162891 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/select/QueryParser.java:188: error: incompatible types: unexpected return value
+			return false;
+			       ^
+1 error
+
+162891 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(304,39) at variant28 fails to compile
+
+162891 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtReplace(304,39) (stored at: variant28)
+163728 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 2.0 StmtAppend(423,275) (stored at: variant29)
+164355 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 2.0 StmtAppend(353,260) (stored at: variant30)
+165245 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 2.0 StmtAppend(213,215) (stored at: variant31)
+166045 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 2.0 StmtDelete(13) (stored at: variant32)
+166082 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/TokenQueue.java:124: error: missing return statement
+    }
+    ^
+1 error
+
+166082 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(36,82) at variant33 fails to compile
+
+166082 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtReplace(36,82) (stored at: variant33)
+166760 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 1.0 StmtReplace(264,300) (stored at: variant34)
+167553 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 1.0 StmtAppend(262,304) (stored at: variant35)
+167587 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/select/QueryParser.java:211: error: cannot find symbol
+        Validate.notEmpty(className);
+                          ^
+  symbol:   variable className
+  location: class QueryParser
+org/jsoup/select/QueryParser.java:212: error: cannot find symbol
+        evals.add(new Evaluator.Class(className.trim()));
+                                      ^
+  symbol:   variable className
+  location: class QueryParser
+2 errors
+
+167587 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(320) at variant36 fails to compile
+
+167587 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtDelete(320) (stored at: variant36)
+168528 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 2.0 StmtReplace(114,123) (stored at: variant37)
+169350 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtDelete(21) (stored at: variant38)
+170154 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 1.0 StmtAppend(384,287) (stored at: variant39)
+170154 [main] INFO clegoues.genprog4java.Search.Search  - search: generation1
+171392 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 2.0 StmtReplace(421,299) StmtAppend(327,297) (stored at: variant40)
+172294 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 2.0 StmtDelete(202) StmtDelete(284) (stored at: variant41)
+460360 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(87) StmtAppend(310,361) (stored at: variant42)
+460399 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/TokenQueue.java:224: error: incompatible types: String[] cannot be converted to String
+        matchChomp(seq);
+                   ^
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+1 error
+
+460399 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(411,268) StmtReplace(86,96) at variant43 fails to compile
+
+460399 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(411,268) StmtReplace(86,96) (stored at: variant43)
+460422 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/select/QueryParser.java:286: error: ';' expected
+	private void cssNthChild(boolean backwards, boolean ofType) if (tq.matches(":matches("))
+	                                                           ^
+org/jsoup/select/QueryParser.java:288: error: illegal start of type
+	else if (tq.matches(":matchesOwn("))
+	^
+org/jsoup/select/QueryParser.java:288: error: ';' expected
+	else if (tq.matches(":matchesOwn("))
+	    ^
+org/jsoup/select/QueryParser.java:288: error: illegal start of type
+	else if (tq.matches(":matchesOwn("))
+	        ^
+org/jsoup/select/QueryParser.java:288: error: ';' expected
+	else if (tq.matches(":matchesOwn("))
+	           ^
+org/jsoup/select/QueryParser.java:288: error: invalid method declaration; return type required
+	else if (tq.matches(":matchesOwn("))
+	            ^
+org/jsoup/select/QueryParser.java:288: error: illegal start of type
+	else if (tq.matches(":matchesOwn("))
+	                    ^
+org/jsoup/select/QueryParser.java:288: error: ';' expected
+	else if (tq.matches(":matchesOwn("))
+	                                   ^
+org/jsoup/select/QueryParser.java:290: error: illegal start of type
+	else if (tq.matches(":not("))
+	^
+org/jsoup/select/QueryParser.java:290: error: ';' expected
+	else if (tq.matches(":not("))
+	    ^
+org/jsoup/select/QueryParser.java:290: error: illegal start of type
+	else if (tq.matches(":not("))
+	        ^
+org/jsoup/select/QueryParser.java:290: error: ';' expected
+	else if (tq.matches(":not("))
+	           ^
+org/jsoup/select/QueryParser.java:290: error: invalid method declaration; return type required
+	else if (tq.matches(":not("))
+	            ^
+org/jsoup/select/QueryParser.java:290: error: illegal start of type
+	else if (tq.matches(":not("))
+	                    ^
+org/jsoup/select/QueryParser.java:290: error: ';' expected
+	else if (tq.matches(":not("))
+	                            ^
+org/jsoup/select/QueryParser.java:292: error: illegal start of type
+	else if (tq.matchChomp(":nth-child("))
+	^
+org/jsoup/select/QueryParser.java:292: error: ';' expected
+	else if (tq.matchChomp(":nth-child("))
+	    ^
+org/jsoup/select/QueryParser.java:292: error: illegal start of type
+	else if (tq.matchChomp(":nth-child("))
+	        ^
+org/jsoup/select/QueryParser.java:292: error: ';' expected
+	else if (tq.matchChomp(":nth-child("))
+	           ^
+org/jsoup/select/QueryParser.java:292: error: invalid method declaration; return type required
+	else if (tq.matchChomp(":nth-child("))
+	            ^
+org/jsoup/select/QueryParser.java:292: error: illegal start of type
+	else if (tq.matchChomp(":nth-child("))
+	                       ^
+org/jsoup/select/QueryParser.java:292: error: ';' expected
+	else if (tq.matchChomp(":nth-child("))
+	                                     ^
+org/jsoup/select/QueryParser.java:294: error: illegal start of type
+	else if (tq.matchChomp(":nth-last-child("))
+	^
+org/jsoup/select/QueryParser.java:294: error: ';' expected
+	else if (tq.matchChomp(":nth-last-child("))
+	    ^
+org/jsoup/select/QueryParser.java:294: error: illegal start of type
+	else if (tq.matchChomp(":nth-last-child("))
+	        ^
+org/jsoup/select/QueryParser.java:294: error: ';' expected
+	else if (tq.matchChomp(":nth-last-child("))
+	           ^
+org/jsoup/select/QueryParser.java:294: error: invalid method declaration; return type required
+	else if (tq.matchChomp(":nth-last-child("))
+	            ^
+org/jsoup/select/QueryParser.java:294: error: illegal start of type
+	else if (tq.matchChomp(":nth-last-child("))
+	                       ^
+org/jsoup/select/QueryParser.java:294: error: ';' expected
+	else if (tq.matchChomp(":nth-last-child("))
+	                                          ^
+org/jsoup/select/QueryParser.java:296: error: illegal start of type
+	else if (tq.matchChomp(":nth-of-type("))
+	^
+org/jsoup/select/QueryParser.java:296: error: ';' expected
+	else if (tq.matchChomp(":nth-of-type("))
+	    ^
+org/jsoup/select/QueryParser.java:296: error: illegal start of type
+	else if (tq.matchChomp(":nth-of-type("))
+	        ^
+org/jsoup/select/QueryParser.java:296: error: ';' expected
+	else if (tq.matchChomp(":nth-of-type("))
+	           ^
+org/jsoup/select/QueryParser.java:296: error: invalid method declaration; return type required
+	else if (tq.matchChomp(":nth-of-type("))
+	            ^
+org/jsoup/select/QueryParser.java:296: error: illegal start of type
+	else if (tq.matchChomp(":nth-of-type("))
+	                       ^
+org/jsoup/select/QueryParser.java:296: error: ';' expected
+	else if (tq.matchChomp(":nth-of-type("))
+	                                       ^
+org/jsoup/select/QueryParser.java:298: error: illegal start of type
+	else if (tq.matchChomp(":nth-last-of-type("))
+	^
+org/jsoup/select/QueryParser.java:298: error: ';' expected
+	else if (tq.matchChomp(":nth-last-of-type("))
+	    ^
+org/jsoup/select/QueryParser.java:298: error: illegal start of type
+	else if (tq.matchChomp(":nth-last-of-type("))
+	        ^
+org/jsoup/select/QueryParser.java:298: error: ';' expected
+	else if (tq.matchChomp(":nth-last-of-type("))
+	           ^
+org/jsoup/select/QueryParser.java:298: error: invalid method declaration; return type required
+	else if (tq.matchChomp(":nth-last-of-type("))
+	            ^
+org/jsoup/select/QueryParser.java:298: error: illegal start of type
+	else if (tq.matchChomp(":nth-last-of-type("))
+	                       ^
+org/jsoup/select/QueryParser.java:298: error: ';' expected
+	else if (tq.matchChomp(":nth-last-of-type("))
+	                                            ^
+org/jsoup/select/QueryParser.java:300: error: illegal start of type
+	else if (tq.matchChomp(":first-child"))
+	^
+org/jsoup/select/QueryParser.java:300: error: ';' expected
+	else if (tq.matchChomp(":first-child"))
+	    ^
+org/jsoup/select/QueryParser.java:300: error: illegal start of type
+	else if (tq.matchChomp(":first-child"))
+	        ^
+org/jsoup/select/QueryParser.java:300: error: ';' expected
+	else if (tq.matchChomp(":first-child"))
+	           ^
+org/jsoup/select/QueryParser.java:300: error: invalid method declaration; return type required
+	else if (tq.matchChomp(":first-child"))
+	            ^
+org/jsoup/select/QueryParser.java:300: error: illegal start of type
+	else if (tq.matchChomp(":first-child"))
+	                       ^
+org/jsoup/select/QueryParser.java:300: error: ';' expected
+	else if (tq.matchChomp(":first-child"))
+	                                      ^
+org/jsoup/select/QueryParser.java:302: error: illegal start of type
+	else if (tq.matchChomp(":last-child"))
+	^
+org/jsoup/select/QueryParser.java:302: error: ';' expected
+	else if (tq.matchChomp(":last-child"))
+	    ^
+org/jsoup/select/QueryParser.java:302: error: illegal start of type
+	else if (tq.matchChomp(":last-child"))
+	        ^
+org/jsoup/select/QueryParser.java:302: error: ';' expected
+	else if (tq.matchChomp(":last-child"))
+	           ^
+org/jsoup/select/QueryParser.java:302: error: invalid method declaration; return type required
+	else if (tq.matchChomp(":last-child"))
+	            ^
+org/jsoup/select/QueryParser.java:302: error: illegal start of type
+	else if (tq.matchChomp(":last-child"))
+	                       ^
+org/jsoup/select/QueryParser.java:302: error: ';' expected
+	else if (tq.matchChomp(":last-child"))
+	                                     ^
+org/jsoup/select/QueryParser.java:304: error: illegal start of type
+	else if (tq.matchChomp(":first-of-type"))
+	^
+org/jsoup/select/QueryParser.java:304: error: ';' expected
+	else if (tq.matchChomp(":first-of-type"))
+	    ^
+org/jsoup/select/QueryParser.java:304: error: illegal start of type
+	else if (tq.matchChomp(":first-of-type"))
+	        ^
+org/jsoup/select/QueryParser.java:304: error: ';' expected
+	else if (tq.matchChomp(":first-of-type"))
+	           ^
+org/jsoup/select/QueryParser.java:304: error: invalid method declaration; return type required
+	else if (tq.matchChomp(":first-of-type"))
+	            ^
+org/jsoup/select/QueryParser.java:304: error: illegal start of type
+	else if (tq.matchChomp(":first-of-type"))
+	                       ^
+org/jsoup/select/QueryParser.java:304: error: ';' expected
+	else if (tq.matchChomp(":first-of-type"))
+	                                        ^
+org/jsoup/select/QueryParser.java:306: error: illegal start of type
+	else if (tq.matchChomp(":last-of-type"))
+	^
+org/jsoup/select/QueryParser.java:306: error: ';' expected
+	else if (tq.matchChomp(":last-of-type"))
+	    ^
+org/jsoup/select/QueryParser.java:306: error: illegal start of type
+	else if (tq.matchChomp(":last-of-type"))
+	        ^
+org/jsoup/select/QueryParser.java:306: error: ';' expected
+	else if (tq.matchChomp(":last-of-type"))
+	           ^
+org/jsoup/select/QueryParser.java:306: error: invalid method declaration; return type required
+	else if (tq.matchChomp(":last-of-type"))
+	            ^
+org/jsoup/select/QueryParser.java:306: error: illegal start of type
+	else if (tq.matchChomp(":last-of-type"))
+	                       ^
+org/jsoup/select/QueryParser.java:306: error: ';' expected
+	else if (tq.matchChomp(":last-of-type"))
+	                                       ^
+org/jsoup/select/QueryParser.java:308: error: illegal start of type
+	else if (tq.matchChomp(":only-child"))
+	^
+org/jsoup/select/QueryParser.java:308: error: ';' expected
+	else if (tq.matchChomp(":only-child"))
+	    ^
+org/jsoup/select/QueryParser.java:308: error: illegal start of type
+	else if (tq.matchChomp(":only-child"))
+	        ^
+org/jsoup/select/QueryParser.java:308: error: ';' expected
+	else if (tq.matchChomp(":only-child"))
+	           ^
+org/jsoup/select/QueryParser.java:308: error: invalid method declaration; return type required
+	else if (tq.matchChomp(":only-child"))
+	            ^
+org/jsoup/select/QueryParser.java:308: error: illegal start of type
+	else if (tq.matchChomp(":only-child"))
+	                       ^
+org/jsoup/select/QueryParser.java:308: error: ';' expected
+	else if (tq.matchChomp(":only-child"))
+	                                     ^
+org/jsoup/select/QueryParser.java:310: error: illegal start of type
+	else if (tq.matchChomp(":only-of-type"))
+	^
+org/jsoup/select/QueryParser.java:310: error: ';' expected
+	else if (tq.matchChomp(":only-of-type"))
+	    ^
+org/jsoup/select/QueryParser.java:310: error: illegal start of type
+	else if (tq.matchChomp(":only-of-type"))
+	        ^
+org/jsoup/select/QueryParser.java:310: error: ';' expected
+	else if (tq.matchChomp(":only-of-type"))
+	           ^
+org/jsoup/select/QueryParser.java:310: error: invalid method declaration; return type required
+	else if (tq.matchChomp(":only-of-type"))
+	            ^
+org/jsoup/select/QueryParser.java:310: error: illegal start of type
+	else if (tq.matchChomp(":only-of-type"))
+	                       ^
+org/jsoup/select/QueryParser.java:310: error: ';' expected
+	else if (tq.matchChomp(":only-of-type"))
+	                                       ^
+org/jsoup/select/QueryParser.java:312: error: illegal start of type
+	else if (tq.matchChomp(":empty"))
+	^
+org/jsoup/select/QueryParser.java:312: error: ';' expected
+	else if (tq.matchChomp(":empty"))
+	    ^
+org/jsoup/select/QueryParser.java:312: error: illegal start of type
+	else if (tq.matchChomp(":empty"))
+	        ^
+org/jsoup/select/QueryParser.java:312: error: ';' expected
+	else if (tq.matchChomp(":empty"))
+	           ^
+org/jsoup/select/QueryParser.java:312: error: invalid method declaration; return type required
+	else if (tq.matchChomp(":empty"))
+	            ^
+org/jsoup/select/QueryParser.java:312: error: illegal start of type
+	else if (tq.matchChomp(":empty"))
+	                       ^
+org/jsoup/select/QueryParser.java:312: error: ';' expected
+	else if (tq.matchChomp(":empty"))
+	                                ^
+org/jsoup/select/QueryParser.java:314: error: illegal start of type
+	else if (tq.matchChomp(":root"))
+	^
+org/jsoup/select/QueryParser.java:314: error: ';' expected
+	else if (tq.matchChomp(":root"))
+	    ^
+org/jsoup/select/QueryParser.java:314: error: illegal start of type
+	else if (tq.matchChomp(":root"))
+	        ^
+org/jsoup/select/QueryParser.java:314: error: ';' expected
+	else if (tq.matchChomp(":root"))
+	           ^
+org/jsoup/select/QueryParser.java:314: error: invalid method declaration; return type required
+	else if (tq.matchChomp(":root"))
+	            ^
+org/jsoup/select/QueryParser.java:314: error: illegal start of type
+	else if (tq.matchChomp(":root"))
+	                       ^
+org/jsoup/select/QueryParser.java:314: error: ';' expected
+	else if (tq.matchChomp(":root"))
+	                               ^
+org/jsoup/select/QueryParser.java:316: error: illegal start of type
+	else
+	^
+100 errors
+
+460423 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(92) StmtReplace(365,284) at variant44 fails to compile
+
+460423 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(92) StmtReplace(365,284) (stored at: variant44)
+461249 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 1.0 StmtDelete(241) StmtAppend(78,119) (stored at: variant45)
+461868 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 2.0 StmtDelete(241) StmtReplace(271,281) (stored at: variant46)
+462705 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 1.0 StmtAppend(423,275) StmtAppend(206,199) (stored at: variant47)
+462742 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/select/QueryParser.java:352: error: cannot find symbol
+        Validate.isTrue(StringUtil.isNumeric(indexS), "Index must be numeric");
+                                             ^
+  symbol:   variable indexS
+  location: class QueryParser
+org/jsoup/select/QueryParser.java:353: error: cannot find symbol
+        return Integer.parseInt(indexS);
+                                ^
+  symbol:   variable indexS
+  location: class QueryParser
+2 errors
+
+462743 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(388) StmtReplace(397,276) at variant48 fails to compile
+
+462743 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(388) StmtReplace(397,276) (stored at: variant48)
+462792 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/TokenQueue.java:100: error: incompatible types: char cannot be converted to String
+        {for (String s:seq){if (matches(s))return true;}return false;}
+                       ^
+1 error
+
+462792 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(411,268) StmtReplace(27,18) at variant49 fails to compile
+
+462792 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(411,268) StmtReplace(27,18) (stored at: variant49)
+462835 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/select/QueryParser.java:309: error: variable a might not have been initialized
+				evals.add(new Evaluator.IsNthLastOfType(a, b));
+				                                        ^
+org/jsoup/select/QueryParser.java:311: error: variable a might not have been initialized
+				evals.add(new Evaluator.IsNthOfType(a, b));
+				                                    ^
+org/jsoup/select/QueryParser.java:314: error: variable a might not have been initialized
+				evals.add(new Evaluator.IsNthLastChild(a, b));
+				                                       ^
+org/jsoup/select/QueryParser.java:316: error: variable a might not have been initialized
+				evals.add(new Evaluator.IsNthChild(a, b));
+				                                   ^
+4 errors
+
+462835 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(13) StmtDelete(380) at variant50 fails to compile
+
+462835 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(13) StmtDelete(380) (stored at: variant50)
+462884 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/TokenQueue.java:183: error: cannot find symbol
+        if (offset != -1) {
+            ^
+  symbol:   variable offset
+  location: class TokenQueue
+org/jsoup/parser/TokenQueue.java:184: error: cannot find symbol
+            String consumed = queue.substring(pos, offset);
+                                                   ^
+  symbol:   variable offset
+  location: class TokenQueue
+2 errors
+
+462884 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(213,215) StmtDelete(58) at variant51 fails to compile
+
+462884 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(213,215) StmtDelete(58) (stored at: variant51)
+462936 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/TokenQueue.java:172: error: incompatible types: boolean cannot be converted to String
+			matches(true);
+			        ^
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+1 error
+
+462936 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(241) StmtAppend(54,287) at variant52 fails to compile
+
+462936 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(241) StmtAppend(54,287) (stored at: variant52)
+463739 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 1.0 StmtDelete(92) StmtAppend(192,297) (stored at: variant53)
+463777 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/TokenQueue.java:212: error: unreachable statement
+		pos = 0;
+		^
+org/jsoup/parser/TokenQueue.java:213: error: missing return statement
+	}
+	^
+2 errors
+
+463777 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(422,306) StmtAppend(66,13) at variant54 fails to compile
+
+463777 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(422,306) StmtAppend(66,13) (stored at: variant54)
+464596 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 1.0 StmtAppend(418,309) StmtAppend(187,267) (stored at: variant55)
+465336 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 2.0 StmtAppend(423,275) StmtReplace(25,86) (stored at: variant56)
+466169 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(241) StmtAppend(255,359) (stored at: variant57)
+466198 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/select/QueryParser.java:309: error: variable a might not have been initialized
+				evals.add(new Evaluator.IsNthLastOfType(a, b));
+				                                        ^
+org/jsoup/select/QueryParser.java:311: error: variable a might not have been initialized
+				evals.add(new Evaluator.IsNthOfType(a, b));
+				                                    ^
+org/jsoup/select/QueryParser.java:314: error: variable a might not have been initialized
+				evals.add(new Evaluator.IsNthLastChild(a, b));
+				                                       ^
+org/jsoup/select/QueryParser.java:316: error: variable a might not have been initialized
+				evals.add(new Evaluator.IsNthChild(a, b));
+				                                   ^
+4 errors
+
+466198 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(229,223) StmtDelete(384) at variant58 fails to compile
+
+466198 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(229,223) StmtDelete(384) (stored at: variant58)
+466242 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/select/QueryParser.java:306: error: variable a might not have been initialized
+				evals.add(new Evaluator.IsNthLastOfType(a, b));
+				                                        ^
+org/jsoup/select/QueryParser.java:306: error: variable b might not have been initialized
+				evals.add(new Evaluator.IsNthLastOfType(a, b));
+				                                           ^
+org/jsoup/select/QueryParser.java:308: error: variable a might not have been initialized
+				evals.add(new Evaluator.IsNthOfType(a, b));
+				                                    ^
+org/jsoup/select/QueryParser.java:308: error: variable b might not have been initialized
+				evals.add(new Evaluator.IsNthOfType(a, b));
+				                                       ^
+org/jsoup/select/QueryParser.java:311: error: variable a might not have been initialized
+				evals.add(new Evaluator.IsNthLastChild(a, b));
+				                                       ^
+org/jsoup/select/QueryParser.java:311: error: variable b might not have been initialized
+				evals.add(new Evaluator.IsNthLastChild(a, b));
+				                                          ^
+org/jsoup/select/QueryParser.java:313: error: variable a might not have been initialized
+				evals.add(new Evaluator.IsNthChild(a, b));
+				                                   ^
+org/jsoup/select/QueryParser.java:313: error: variable b might not have been initialized
+				evals.add(new Evaluator.IsNthChild(a, b));
+				                                      ^
+8 errors
+
+466242 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(114,123) StmtDelete(379) at variant59 fails to compile
+
+466242 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(114,123) StmtDelete(379) (stored at: variant59)
+467142 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 2.0 StmtAppend(353,260) StmtDelete(163) (stored at: variant60)
+468042 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 2.0 StmtReplace(52,46) StmtDelete(349) (stored at: variant61)
+468961 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 1.0 StmtDelete(241) StmtAppend(71,256) (stored at: variant62)
+469684 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 1.0 StmtDelete(241) StmtAppend(354,196) (stored at: variant63)
+470634 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 2.0 StmtReplace(52,46) StmtAppend(212,230) (stored at: variant64)
+470665 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/select/QueryParser.java:307: error: variable a might not have been initialized
+				evals.add(new Evaluator.IsNthLastOfType(a, b));
+				                                        ^
+org/jsoup/select/QueryParser.java:307: error: variable b might not have been initialized
+				evals.add(new Evaluator.IsNthLastOfType(a, b));
+				                                           ^
+org/jsoup/select/QueryParser.java:309: error: variable a might not have been initialized
+				evals.add(new Evaluator.IsNthOfType(a, b));
+				                                    ^
+org/jsoup/select/QueryParser.java:309: error: variable b might not have been initialized
+				evals.add(new Evaluator.IsNthOfType(a, b));
+				                                       ^
+org/jsoup/select/QueryParser.java:312: error: variable a might not have been initialized
+				evals.add(new Evaluator.IsNthLastChild(a, b));
+				                                       ^
+org/jsoup/select/QueryParser.java:312: error: variable b might not have been initialized
+				evals.add(new Evaluator.IsNthLastChild(a, b));
+				                                          ^
+org/jsoup/select/QueryParser.java:314: error: variable a might not have been initialized
+				evals.add(new Evaluator.IsNthChild(a, b));
+				                                   ^
+org/jsoup/select/QueryParser.java:314: error: variable b might not have been initialized
+				evals.add(new Evaluator.IsNthChild(a, b));
+				                                      ^
+8 errors
+
+470665 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(418,309) StmtReplace(383,305) at variant65 fails to compile
+
+470665 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(418,309) StmtReplace(383,305) (stored at: variant65)
+471480 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 2.0 StmtDelete(70) StmtDelete(245) (stored at: variant66)
+472381 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 1.0 StmtReplace(114,123) StmtAppend(118,149) (stored at: variant67)
+473160 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 2.0 StmtAppend(422,306) StmtDelete(244) (stored at: variant68)
+473625 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 2.0 StmtAppend(379,198) StmtAppend(381,178) (stored at: variant69)
+474335 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 2.0 StmtReplace(229,223) StmtAppend(283,294) (stored at: variant70)
+475146 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 1.0 StmtReplace(421,299) StmtDelete(311) (stored at: variant71)
+786468 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 1.0 StmtAppend(213,215) StmtReplace(255,307) (stored at: variant72)
+786483 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/TokenQueue.java:165: error: ';' expected
+    public void consume(String seq) final String remainder = queue.substring(pos, queue.length());
+                                   ^
+1 error
+
+786483 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(213,215) StmtReplace(50,172) at variant73 fails to compile
+
+786483 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(213,215) StmtReplace(50,172) (stored at: variant73)
+786518 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/select/QueryParser.java:102: error: cannot find symbol
+            currentEval = new CombiningEvaluator.And(newEval, new StructuralEvaluator.ImmediateParent(currentEval));
+                                                     ^
+  symbol:   variable newEval
+  location: class QueryParser
+org/jsoup/select/QueryParser.java:104: error: cannot find symbol
+            currentEval = new CombiningEvaluator.And(newEval, new StructuralEvaluator.Parent(currentEval));
+                                                     ^
+  symbol:   variable newEval
+  location: class QueryParser
+org/jsoup/select/QueryParser.java:106: error: cannot find symbol
+            currentEval = new CombiningEvaluator.And(newEval, new StructuralEvaluator.ImmediatePreviousSibling(currentEval));
+                                                     ^
+  symbol:   variable newEval
+  location: class QueryParser
+org/jsoup/select/QueryParser.java:108: error: cannot find symbol
+            currentEval = new CombiningEvaluator.And(newEval, new StructuralEvaluator.PreviousSibling(currentEval));
+                                                     ^
+  symbol:   variable newEval
+  location: class QueryParser
+org/jsoup/select/QueryParser.java:113: error: cannot find symbol
+                or.add(newEval);
+                       ^
+  symbol:   variable newEval
+  location: class QueryParser
+org/jsoup/select/QueryParser.java:117: error: cannot find symbol
+                or.add(newEval);
+                       ^
+  symbol:   variable newEval
+  location: class QueryParser
+6 errors
+
+786518 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(87) StmtAppend(210,295) at variant74 fails to compile
+
+786518 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(87) StmtAppend(210,295) (stored at: variant74)
+786556 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/select/QueryParser.java:194: error: incompatible types: unexpected return value
+			return false;
+			       ^
+1 error
+
+786556 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(421,299) StmtReplace(311,39) at variant75 fails to compile
+
+786556 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(421,299) StmtReplace(311,39) (stored at: variant75)
+786600 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/TokenQueue.java:301: error: non-static method isEmpty() cannot be referenced from a static context
+        {for (char c:in.toCharArray()){if (c == ESC){if (last != 0 && last == ESC)out.append(c);} else out.append(c);last=c;}if (isEmpty())break;}
+                                                                                                                                 ^
+org/jsoup/parser/TokenQueue.java:301: error: break outside switch or loop
+        {for (char c:in.toCharArray()){if (c == ESC){if (last != 0 && last == ESC)out.append(c);} else out.append(c);last=c;}if (isEmpty())break;}
+                                                                                                                                           ^
+2 errors
+
+786600 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(13) StmtAppend(130,106) at variant76 fails to compile
+
+786600 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(13) StmtAppend(130,106) (stored at: variant76)
+787589 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(202) StmtAppend(221,278) (stored at: variant77)
+788539 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 2.0 StmtDelete(202) StmtDelete(325) (stored at: variant78)
+789446 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 2.0 StmtAppend(422,306) StmtAppend(427,302) (stored at: variant79)
+790597 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 1.0 StmtAppend(227,190) (stored at: variant80)
+791282 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 1.0 StmtReplace(122,87) (stored at: variant81)
+792389 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 1.0 StmtAppend(192,295) (stored at: variant82)
+793152 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 2.0 StmtDelete(86) (stored at: variant83)
+794051 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 2.0 StmtDelete(134) (stored at: variant84)
+794077 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/TokenQueue.java:334: error: cannot find symbol
+        return queue.substring(start, pos);
+                               ^
+  symbol:   variable start
+  location: class TokenQueue
+1 error
+
+794077 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(147) at variant85 fails to compile
+
+794077 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(147) (stored at: variant85)
+794106 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/TokenQueue.java:188: error: missing return statement
+    }
+    ^
+1 error
+
+794106 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(64) at variant86 fails to compile
+
+794106 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(64) (stored at: variant86)
+794136 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/TokenQueue.java:92: error: unreachable statement
+        return false;
+        ^
+1 error
+
+794136 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(19,41) at variant87 fails to compile
+
+794136 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(19,41) (stored at: variant87)
+794774 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 2.0 StmtReplace(217,260) (stored at: variant88)
+795478 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 1.0 StmtAppend(192,277) (stored at: variant89)
+796283 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 1.0 StmtReplace(249,267) (stored at: variant90)
+797080 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 2.0 StmtAppend(220,311) (stored at: variant91)
+797896 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(224,286) (stored at: variant92)
+798669 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 1.0 StmtReplace(276,401) (stored at: variant93)
+799517 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 1.0 StmtReplace(390,264) (stored at: variant94)
+799543 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/TokenQueue.java:298: error: non-static variable pos cannot be referenced from a static context
+        pos++;
+        ^
+org/jsoup/parser/TokenQueue.java:303: error: cannot find symbol
+                    out.append(c);
+                    ^
+  symbol:   variable out
+  location: class TokenQueue
+org/jsoup/parser/TokenQueue.java:306: error: cannot find symbol
+                out.append(c);
+                ^
+  symbol:   variable out
+  location: class TokenQueue
+org/jsoup/parser/TokenQueue.java:309: error: cannot find symbol
+        return out.toString();
+               ^
+  symbol:   variable out
+  location: class TokenQueue
+4 errors
+
+799544 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(128,159) at variant95 fails to compile
+
+799544 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(128,159) (stored at: variant95)
+800458 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 2.0 StmtDelete(341) (stored at: variant96)
+801134 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 2.0 StmtAppend(244,283) (stored at: variant97)
+801161 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/select/QueryParser.java:180: error: incompatible types: unexpected return value
+				return evals.get(0);
+				                ^
+1 error
+
+801161 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(295,202) at variant98 fails to compile
+
+801161 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(295,202) (stored at: variant98)
+801199 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/TokenQueue.java:229: error: incompatible types: boolean cannot be converted to String
+				return false;
+				       ^
+1 error
+
+801199 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(87,39) at variant99 fails to compile
+
+801200 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(87,39) (stored at: variant99)
+802085 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 2.0 StmtDelete(114) (stored at: variant100)
+802876 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 2.0 StmtDelete(360) (stored at: variant101)
+803872 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 2.0 StmtAppend(213,265) (stored at: variant102)
+804562 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 1.0 StmtDelete(177) (stored at: variant103)
+804588 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/TokenQueue.java:299: error: non-static variable pos cannot be referenced from a static context
+        pos++;
+        ^
+org/jsoup/parser/TokenQueue.java:302: error: cannot find symbol
+                if (last != 0 && last == ESC)
+                    ^
+  symbol:   variable last
+  location: class TokenQueue
+org/jsoup/parser/TokenQueue.java:302: error: cannot find symbol
+                if (last != 0 && last == ESC)
+                                 ^
+  symbol:   variable last
+  location: class TokenQueue
+org/jsoup/parser/TokenQueue.java:307: error: cannot find symbol
+            last = c;
+            ^
+  symbol:   variable last
+  location: class TokenQueue
+4 errors
+
+804588 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(129,143) at variant104 fails to compile
+
+804588 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(129,143) (stored at: variant104)
+804598 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/TokenQueue.java:154: error: ';' expected
+    public char consume() continue;
+                         ^
+1 error
+
+804598 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(48,114) at variant105 fails to compile
+
+804598 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(48,114) (stored at: variant105)
+804598 [main] INFO clegoues.genprog4java.Search.Search  - search: generation2
+806039 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 1.0 StmtAppend(213,265) StmtReplace(12,51) (stored at: variant106)
+806066 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/select/QueryParser.java:218: error: cannot find symbol
+        Validate.notEmpty(tagName);
+                          ^
+  symbol:   variable tagName
+  location: class QueryParser
+org/jsoup/select/QueryParser.java:221: error: cannot find symbol
+        if (tagName.startsWith("*|")) {
+            ^
+  symbol:   variable tagName
+  location: class QueryParser
+org/jsoup/select/QueryParser.java:222: error: cannot find symbol
+            evals.add(new CombiningEvaluator.Or(new Evaluator.Tag(tagName.trim().toLowerCase()), new Evaluator.TagEndsWith(tagName.replace("*|", ":").trim().toLowerCase())));
+                                                                  ^
+  symbol:   variable tagName
+  location: class QueryParser
+org/jsoup/select/QueryParser.java:222: error: cannot find symbol
+            evals.add(new CombiningEvaluator.Or(new Evaluator.Tag(tagName.trim().toLowerCase()), new Evaluator.TagEndsWith(tagName.replace("*|", ":").trim().toLowerCase())));
+                                                                                                                           ^
+  symbol:   variable tagName
+  location: class QueryParser
+org/jsoup/select/QueryParser.java:225: error: cannot find symbol
+            if (tagName.contains("|"))
+                ^
+  symbol:   variable tagName
+  location: class QueryParser
+org/jsoup/select/QueryParser.java:226: error: cannot find symbol
+                tagName = tagName.replace("|", ":");
+                ^
+  symbol:   variable tagName
+  location: class QueryParser
+org/jsoup/select/QueryParser.java:226: error: cannot find symbol
+                tagName = tagName.replace("|", ":");
+                          ^
+  symbol:   variable tagName
+  location: class QueryParser
+org/jsoup/select/QueryParser.java:228: error: cannot find symbol
+            evals.add(new Evaluator.Tag(tagName.trim()));
+                                        ^
+  symbol:   variable tagName
+  location: class QueryParser
+8 errors
+
+806066 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(360) StmtDelete(324) at variant107 fails to compile
+
+806066 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(360) StmtDelete(324) (stored at: variant107)
+806101 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/TokenQueue.java:298: error: missing return statement
+	}
+	^
+1 error
+
+806101 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(213,265) StmtDelete(127) at variant108 fails to compile
+
+806102 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtAppend(213,265) StmtDelete(127) (stored at: variant108)
+806802 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 1.0 StmtDelete(114) StmtReplace(318,304) (stored at: variant109)
+807497 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 2.0 StmtAppend(422,306) StmtAppend(427,302) StmtDelete(345) (stored at: variant110)
+904150 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 1.0 StmtAppend(422,306) StmtAppend(427,302) StmtDelete(296) (stored at: variant111)
+904183 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/select/QueryParser.java:63: error: incompatible types: boolean cannot be converted to Evaluator
+					return true;
+					       ^
+1 error
+
+904183 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(241) StmtReplace(271,281) StmtAppend(196,38) at variant112 fails to compile
+
+904183 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(241) StmtReplace(271,281) StmtAppend(196,38) (stored at: variant112)
+904951 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 2.0 StmtDelete(134) StmtReplace(311,287) (stored at: variant113)
+904987 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/TokenQueue.java:105: error: missing return statement
+    }
+    ^
+1 error
+
+904987 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(360) StmtReplace(31,149) at variant114 fails to compile
+
+904987 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(360) StmtReplace(31,149) (stored at: variant114)
+905028 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/TokenQueue.java:181: error: missing return statement
+	}
+	^
+1 error
+
+905028 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(229,223) StmtAppend(283,294) StmtDelete(57) at variant115 fails to compile
+
+905029 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(229,223) StmtAppend(283,294) StmtDelete(57) (stored at: variant115)
+906263 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 2.0 StmtDelete(341) StmtAppend(346,276) (stored at: variant116)
+907098 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 1.0 StmtReplace(229,223) StmtAppend(283,294) StmtReplace(344,289) (stored at: variant117)
+907133 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/TokenQueue.java:199: error: incompatible types: boolean cannot be converted to String
+            return true;
+                   ^
+1 error
+
+907133 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(353,260) StmtDelete(163) StmtReplace(74,22) at variant118 fails to compile
+
+907133 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtAppend(353,260) StmtDelete(163) StmtReplace(74,22) (stored at: variant118)
+908234 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 1.0 StmtAppend(353,260) StmtDelete(163) StmtReplace(346,304) (stored at: variant119)
+909410 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 2.0 StmtAppend(220,311) StmtReplace(401,360) (stored at: variant120)
+910379 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtAppend(353,260) StmtDelete(163) StmtReplace(267,296) (stored at: variant121)
+911489 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 2.0 StmtAppend(422,306) StmtAppend(427,302) StmtAppend(123,172) (stored at: variant122)
+912511 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 2.0 StmtReplace(229,223) StmtAppend(283,294) StmtAppend(322,413) (stored at: variant123)
+1200566 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtAppend(422,306) StmtDelete(244) StmtDelete(159) (stored at: variant124)
+1201144 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 2.0 StmtAppend(227,190) StmtDelete(309) (stored at: variant125)
+1201978 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(421,299) StmtAppend(327,297) StmtReplace(19,12) (stored at: variant126)
+1202665 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 1.0 StmtAppend(422,306) StmtDelete(244) StmtDelete(120) (stored at: variant127)
+1203380 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 2.0 StmtAppend(379,198) StmtAppend(381,178) StmtAppend(359,293) (stored at: variant128)
+1204095 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 2.0 StmtAppend(244,283) StmtDelete(353) (stored at: variant129)
+1204870 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 1.0 StmtAppend(213,265) StmtAppend(286,272) (stored at: variant130)
+1205572 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 1.0 StmtAppend(244,283) StmtReplace(113,119) (stored at: variant131)
+1205608 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/TokenQueue.java:304: error: non-static method isEmpty() cannot be referenced from a static context
+					while (!isEmpty() && (matchesWord() || matchesAny('-', '_')))
+					        ^
+org/jsoup/parser/TokenQueue.java:304: error: non-static method matchesWord() cannot be referenced from a static context
+					while (!isEmpty() && (matchesWord() || matchesAny('-', '_')))
+					                      ^
+org/jsoup/parser/TokenQueue.java:304: error: non-static method matchesAny(char...) cannot be referenced from a static context
+					while (!isEmpty() && (matchesWord() || matchesAny('-', '_')))
+					                                       ^
+org/jsoup/parser/TokenQueue.java:305: error: non-static variable pos cannot be referenced from a static context
+						pos++;
+						^
+4 errors
+
+1205608 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(229,223) StmtAppend(283,294) StmtAppend(135,163) at variant132 fails to compile
+
+1205608 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(229,223) StmtAppend(283,294) StmtAppend(135,163) (stored at: variant132)
+1206302 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 2.0 StmtDelete(241) StmtReplace(271,281) StmtAppend(96,13) (stored at: variant133)
+1206959 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 2.0 StmtAppend(379,198) StmtAppend(381,178) StmtDelete(221) (stored at: variant134)
+1207807 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 2.0 StmtAppend(379,198) StmtAppend(381,178) StmtAppend(313,307) (stored at: variant135)
+1208433 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 2.0 StmtDelete(202) StmtDelete(284) StmtAppend(271,305) (stored at: variant136)
+1209266 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 1.0 StmtAppend(379,198) StmtAppend(381,178) StmtReplace(295,290) (stored at: variant137)
+1210055 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(86) StmtAppend(229,215) (stored at: variant138)
+1210922 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtAppend(213,265) StmtAppend(344,262) (stored at: variant139)
+1210949 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/TokenQueue.java:189: error: cannot find symbol
+            pos += consumed.length();
+                   ^
+  symbol:   variable consumed
+  location: class TokenQueue
+org/jsoup/parser/TokenQueue.java:190: error: cannot find symbol
+            return consumed;
+                   ^
+  symbol:   variable consumed
+  location: class TokenQueue
+2 errors
+
+1210949 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(213,265) StmtReplace(61,146) at variant140 fails to compile
+
+1210949 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtAppend(213,265) StmtReplace(61,146) (stored at: variant140)
+1211652 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 2.0 StmtReplace(52,46) StmtDelete(349) StmtAppend(373,307) (stored at: variant141)
+1404085 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 1.0 StmtReplace(52,46) StmtAppend(212,230) StmtDelete(255) (stored at: variant142)
+1404112 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/TokenQueue.java:190: error: missing return statement
+    }
+    ^
+1 error
+
+1404112 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(379,198) StmtAppend(381,178) StmtDelete(65) at variant143 fails to compile
+
+1404112 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtAppend(379,198) StmtAppend(381,178) StmtDelete(65) (stored at: variant143)
+1404928 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 2.0 StmtAppend(379,198) StmtAppend(381,178) StmtAppend(378,302) (stored at: variant144)
+1405790 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 1.0 StmtDelete(86) StmtReplace(283,302) (stored at: variant145)
+1406653 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 2.0 StmtAppend(186,188) (stored at: variant146)
+1407357 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 2.0 StmtReplace(421,299) StmtAppend(291,425) (stored at: variant147)
+1407385 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/TokenQueue.java:300: error: non-static method remainder() cannot be referenced from a static context
+        {for (char c:in.toCharArray()){if (c == ESC){if (last != 0 && last == ESC)out.append(c);} else out.append(c);last=c;}{return remainder();}}
+                                                                                                                                     ^
+1 error
+
+1407385 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(130,64) at variant148 fails to compile
+
+1407385 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtAppend(130,64) (stored at: variant148)
+1407395 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/TokenQueue.java:191: error: ';' expected
+    public String consumeToIgnoreCase(String seq) matches(false);
+                                                 ^
+1 error
+
+1407395 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(379,198) StmtReplace(66,285) at variant149 fails to compile
+
+1407395 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtAppend(379,198) StmtReplace(66,285) (stored at: variant149)
+1408134 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 2.0 StmtAppend(295,184) (stored at: variant150)
+1409027 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 1.0 StmtReplace(296,364) (stored at: variant151)
+1409870 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 2.0 StmtDelete(355) (stored at: variant152)
+1409895 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/TokenQueue.java:89: error: missing return statement
+	}
+	^
+1 error
+
+1409895 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(229,223) StmtReplace(271,281) StmtDelete(18) at variant153 fails to compile
+
+1409895 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(229,223) StmtReplace(271,281) StmtDelete(18) (stored at: variant153)
+1410538 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 2.0 StmtReplace(82,73) (stored at: variant154)
+1410562 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/select/QueryParser.java:92: error: variable currentEval might not have been initialized
+            currentEval = new CombiningEvaluator.And(newEval, new StructuralEvaluator.ImmediateParent(currentEval));
+                                                                                                      ^
+org/jsoup/select/QueryParser.java:94: error: variable currentEval might not have been initialized
+            currentEval = new CombiningEvaluator.And(newEval, new StructuralEvaluator.Parent(currentEval));
+                                                                                             ^
+org/jsoup/select/QueryParser.java:96: error: variable currentEval might not have been initialized
+            currentEval = new CombiningEvaluator.And(newEval, new StructuralEvaluator.ImmediatePreviousSibling(currentEval));
+                                                                                                               ^
+org/jsoup/select/QueryParser.java:98: error: variable currentEval might not have been initialized
+            currentEval = new CombiningEvaluator.And(newEval, new StructuralEvaluator.PreviousSibling(currentEval));
+                                                                                                      ^
+org/jsoup/select/QueryParser.java:101: error: variable currentEval might not have been initialized
+            if (currentEval instanceof CombiningEvaluator.Or) {
+                ^
+org/jsoup/select/QueryParser.java:115: error: variable rootEval might not have been initialized
+            ((CombiningEvaluator.Or) rootEval).replaceRightMostEvaluator(currentEval);
+                                     ^
+6 errors
+
+1410562 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(379,198) StmtDelete(213) at variant155 fails to compile
+
+1410562 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtAppend(379,198) StmtDelete(213) (stored at: variant155)
+1411310 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 1.0 StmtDelete(243) (stored at: variant156)
+1412232 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 1.0 StmtAppend(379,198) StmtAppend(283,294) StmtAppend(378,364) (stored at: variant157)
+1508714 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(284) StmtDelete(404) (stored at: variant158)
+1508913 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/TokenQueue.java:190: error: missing return statement
+    }
+    ^
+1 error
+
+1508913 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(65) at variant159 fails to compile
+
+1508913 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(65) (stored at: variant159)
+1509594 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 1.0 StmtAppend(381,178) StmtAppend(241,306) (stored at: variant160)
+1510186 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 2.0 StmtAppend(283,294) StmtAppend(131,137) (stored at: variant161)
+1510927 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 2.0 StmtAppend(353,260) StmtDelete(315) (stored at: variant162)
+1511642 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 2.0 StmtReplace(389,185) (stored at: variant163)
+1512426 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 2.0 StmtAppend(149,118) (stored at: variant164)
+1512958 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 2.0 StmtDelete(163) StmtDelete(340) (stored at: variant165)
+1512985 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/TokenQueue.java:279: error: cannot find symbol
+                    depth++;
+                    ^
+  symbol:   variable depth
+  location: class TokenQueue
+org/jsoup/parser/TokenQueue.java:284: error: cannot find symbol
+                    depth--;
+                    ^
+  symbol:   variable depth
+  location: class TokenQueue
+org/jsoup/parser/TokenQueue.java:287: error: cannot find symbol
+            if (depth > 0 && last != 0)
+                ^
+  symbol:   variable depth
+  location: class TokenQueue
+org/jsoup/parser/TokenQueue.java:290: error: cannot find symbol
+        } while (depth > 0);
+                 ^
+  symbol:   variable depth
+  location: class TokenQueue
+4 errors
+
+1512985 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(101,123) at variant166 fails to compile
+
+1512985 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtAppend(101,123) (stored at: variant166)
+1513968 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 2.0 StmtDelete(75) (stored at: variant167)
+1513968 [main] INFO clegoues.genprog4java.Search.Search  - search: generation3
+1515194 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 1.0 StmtDelete(75) StmtReplace(119,107) (stored at: variant168)
+1515217 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/select/QueryParser.java:111: error: variable or might not have been initialized
+                or.add(newEval);
+                ^
+1 error
+
+1515217 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(202) StmtDelete(284) StmtAppend(271,305) StmtDelete(235) at variant169 fails to compile
+
+1515217 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(202) StmtDelete(284) StmtAppend(271,305) StmtDelete(235) (stored at: variant169)
+1515881 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 2.0 StmtAppend(295,184) StmtDelete(241) (stored at: variant170)
+1515908 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/TokenQueue.java:306: error: non-static variable pos cannot be referenced from a static context
+            return queue.charAt(pos++);
+                                ^
+org/jsoup/parser/TokenQueue.java:306: error: non-static variable queue cannot be referenced from a static context
+            return queue.charAt(pos++);
+                   ^
+org/jsoup/parser/TokenQueue.java:306: error: incompatible types: char cannot be converted to String
+            return queue.charAt(pos++);
+                               ^
+3 errors
+
+1515908 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(82,73) StmtReplace(137,49) at variant171 fails to compile
+
+1515908 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(82,73) StmtReplace(137,49) (stored at: variant171)
+1612320 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 1.0 StmtDelete(75) StmtDelete(280) (stored at: variant172)
+1612344 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/TokenQueue.java:101: error: incompatible types: String cannot be converted to boolean
+			return remainder();
+			                ^
+1 error
+
+1612344 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(220,311) StmtReplace(401,360) StmtReplace(28,64) at variant173 fails to compile
+
+1612344 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtAppend(220,311) StmtReplace(401,360) StmtReplace(28,64) (stored at: variant173)
+1613166 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 1.0 StmtReplace(421,299) StmtAppend(291,425) StmtReplace(241,312) (stored at: variant174)
+1614001 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtAppend(353,260) StmtDelete(315) StmtReplace(354,339) (stored at: variant175)
+1614769 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 1.0 StmtReplace(229,223) StmtAppend(283,294) StmtAppend(322,413) StmtDelete(114) (stored at: variant176)
+1615371 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 2.0 StmtReplace(229,223) StmtAppend(283,294) StmtAppend(322,413) StmtDelete(318) (stored at: variant177)
+1615403 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/TokenQueue.java:91: error: incompatible types: String cannot be converted to boolean
+				return remainder();
+				                ^
+1 error
+
+1615403 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(52,46) StmtDelete(349) StmtAppend(373,307) StmtReplace(22,64) at variant178 fails to compile
+
+1615403 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(52,46) StmtDelete(349) StmtAppend(373,307) StmtReplace(22,64) (stored at: variant178)
+1616319 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 1.0 StmtDelete(163) StmtDelete(340) StmtReplace(418,191) (stored at: variant179)
+1617097 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 1.0 StmtAppend(379,198) StmtAppend(381,178) StmtAppend(378,302) StmtReplace(269,201) (stored at: variant180)
+1617815 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 2.0 StmtDelete(341) StmtAppend(346,276) StmtDelete(245) (stored at: variant181)
+1618687 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 1.0 StmtDelete(241) StmtReplace(271,281) StmtAppend(96,13) StmtReplace(78,13) (stored at: variant182)
+1715216 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 1.0 StmtAppend(149,118) StmtDelete(312) (stored at: variant183)
+1715240 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/TokenQueue.java:186: error: missing return statement
+    }
+    ^
+1 error
+
+1715240 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(341) StmtAppend(346,276) StmtDelete(60) at variant184 fails to compile
+
+1715240 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(341) StmtAppend(346,276) StmtDelete(60) (stored at: variant184)
+1716007 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 2.0 StmtAppend(186,188) StmtDelete(354) (stored at: variant185)
+1716018 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/TokenQueue.java:146: error: ';' expected
+    public void advance() throw new IllegalStateException("Queue did not match expected sequence");
+                         ^
+1 error
+
+1716018 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(202) StmtDelete(284) StmtAppend(271,305) StmtReplace(45,52) at variant186 fails to compile
+
+1716018 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(202) StmtDelete(284) StmtAppend(271,305) StmtReplace(45,52) (stored at: variant186)
+1716043 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/select/QueryParser.java:307: error: variable a might not have been initialized
+				evals.add(new Evaluator.IsNthLastOfType(a, b));
+				                                        ^
+org/jsoup/select/QueryParser.java:307: error: variable b might not have been initialized
+				evals.add(new Evaluator.IsNthLastOfType(a, b));
+				                                           ^
+org/jsoup/select/QueryParser.java:309: error: variable a might not have been initialized
+				evals.add(new Evaluator.IsNthOfType(a, b));
+				                                    ^
+org/jsoup/select/QueryParser.java:309: error: variable b might not have been initialized
+				evals.add(new Evaluator.IsNthOfType(a, b));
+				                                       ^
+org/jsoup/select/QueryParser.java:312: error: variable a might not have been initialized
+				evals.add(new Evaluator.IsNthLastChild(a, b));
+				                                       ^
+org/jsoup/select/QueryParser.java:312: error: variable b might not have been initialized
+				evals.add(new Evaluator.IsNthLastChild(a, b));
+				                                          ^
+org/jsoup/select/QueryParser.java:314: error: variable a might not have been initialized
+				evals.add(new Evaluator.IsNthChild(a, b));
+				                                   ^
+org/jsoup/select/QueryParser.java:314: error: variable b might not have been initialized
+				evals.add(new Evaluator.IsNthChild(a, b));
+				                                      ^
+8 errors
+
+1716044 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(295,184) StmtDelete(371) at variant187 fails to compile
+
+1716044 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtAppend(295,184) StmtDelete(371) (stored at: variant187)
+1716080 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/select/QueryParser.java:332: error: variable b might not have been initialized
+				evals.add(new Evaluator.IsNthLastOfType(a, b));
+				                                           ^
+org/jsoup/select/QueryParser.java:334: error: variable b might not have been initialized
+				evals.add(new Evaluator.IsNthOfType(a, b));
+				                                       ^
+org/jsoup/select/QueryParser.java:337: error: variable b might not have been initialized
+				evals.add(new Evaluator.IsNthLastChild(a, b));
+				                                          ^
+org/jsoup/select/QueryParser.java:339: error: variable b might not have been initialized
+				evals.add(new Evaluator.IsNthChild(a, b));
+				                                      ^
+4 errors
+
+1716080 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(283,294) StmtAppend(131,137) StmtDelete(385) at variant188 fails to compile
+
+1716080 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtAppend(283,294) StmtAppend(131,137) StmtDelete(385) (stored at: variant188)
+1717012 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 1.0 StmtReplace(229,223) StmtAppend(283,294) StmtAppend(322,413) StmtDelete(347) (stored at: variant189)
+1717053 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/select/QueryParser.java:320: error: missing return statement
+	}
+	^
+1 error
+
+1717053 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(134) StmtReplace(311,287) StmtDelete(396) at variant190 fails to compile
+
+1717053 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(134) StmtReplace(311,287) StmtDelete(396) (stored at: variant190)
+1717084 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/select/QueryParser.java:313: error: variable a might not have been initialized
+				evals.add(new Evaluator.IsNthLastOfType(a, b));
+				                                        ^
+org/jsoup/select/QueryParser.java:313: error: variable b might not have been initialized
+				evals.add(new Evaluator.IsNthLastOfType(a, b));
+				                                           ^
+org/jsoup/select/QueryParser.java:315: error: variable a might not have been initialized
+				evals.add(new Evaluator.IsNthOfType(a, b));
+				                                    ^
+org/jsoup/select/QueryParser.java:315: error: variable b might not have been initialized
+				evals.add(new Evaluator.IsNthOfType(a, b));
+				                                       ^
+org/jsoup/select/QueryParser.java:318: error: variable a might not have been initialized
+				evals.add(new Evaluator.IsNthLastChild(a, b));
+				                                       ^
+org/jsoup/select/QueryParser.java:318: error: variable b might not have been initialized
+				evals.add(new Evaluator.IsNthLastChild(a, b));
+				                                          ^
+org/jsoup/select/QueryParser.java:320: error: variable a might not have been initialized
+				evals.add(new Evaluator.IsNthChild(a, b));
+				                                   ^
+org/jsoup/select/QueryParser.java:320: error: variable b might not have been initialized
+				evals.add(new Evaluator.IsNthChild(a, b));
+				                                      ^
+8 errors
+
+1717084 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(379,198) StmtAppend(381,178) StmtDelete(221) StmtDelete(386) at variant191 fails to compile
+
+1717084 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtAppend(379,198) StmtAppend(381,178) StmtDelete(221) StmtDelete(386) (stored at: variant191)
+1717841 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 2.0 StmtReplace(229,223) StmtAppend(283,294) StmtAppend(322,413) StmtAppend(322,363) (stored at: variant192)
+1718659 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 1.0 StmtAppend(353,260) StmtDelete(315) StmtAppend(306,267) (stored at: variant193)
+1719395 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtAppend(149,118) StmtReplace(266,363) (stored at: variant194)
+1720305 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 2.0 StmtAppend(227,190) StmtDelete(309) StmtDelete(302) (stored at: variant195)
+1720330 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/select/QueryParser.java:236: error: cannot find symbol
+        String key = cq.consumeToAny(AttributeEvals); // eq, not, start, end, contain, match, (no val)
+                     ^
+  symbol:   variable cq
+  location: class QueryParser
+org/jsoup/select/QueryParser.java:238: error: cannot find symbol
+        cq.consumeWhitespace();
+        ^
+  symbol:   variable cq
+  location: class QueryParser
+org/jsoup/select/QueryParser.java:240: error: cannot find symbol
+        if (cq.isEmpty()) {
+            ^
+  symbol:   variable cq
+  location: class QueryParser
+org/jsoup/select/QueryParser.java:246: error: cannot find symbol
+            if (cq.matchChomp("="))
+                ^
+  symbol:   variable cq
+  location: class QueryParser
+org/jsoup/select/QueryParser.java:247: error: cannot find symbol
+                evals.add(new Evaluator.AttributeWithValue(key, cq.remainder()));
+                                                                ^
+  symbol:   variable cq
+  location: class QueryParser
+org/jsoup/select/QueryParser.java:249: error: cannot find symbol
+            else if (cq.matchChomp("!="))
+                     ^
+  symbol:   variable cq
+  location: class QueryParser
+org/jsoup/select/QueryParser.java:250: error: cannot find symbol
+                evals.add(new Evaluator.AttributeWithValueNot(key, cq.remainder()));
+                                                                   ^
+  symbol:   variable cq
+  location: class QueryParser
+org/jsoup/select/QueryParser.java:252: error: cannot find symbol
+            else if (cq.matchChomp("^="))
+                     ^
+  symbol:   variable cq
+  location: class QueryParser
+org/jsoup/select/QueryParser.java:253: error: cannot find symbol
+                evals.add(new Evaluator.AttributeWithValueStarting(key, cq.remainder()));
+                                                                        ^
+  symbol:   variable cq
+  location: class QueryParser
+org/jsoup/select/QueryParser.java:255: error: cannot find symbol
+            else if (cq.matchChomp("$="))
+                     ^
+  symbol:   variable cq
+  location: class QueryParser
+org/jsoup/select/QueryParser.java:256: error: cannot find symbol
+                evals.add(new Evaluator.AttributeWithValueEnding(key, cq.remainder()));
+                                                                      ^
+  symbol:   variable cq
+  location: class QueryParser
+org/jsoup/select/QueryParser.java:258: error: cannot find symbol
+            else if (cq.matchChomp("*="))
+                     ^
+  symbol:   variable cq
+  location: class QueryParser
+org/jsoup/select/QueryParser.java:259: error: cannot find symbol
+                evals.add(new Evaluator.AttributeWithValueContaining(key, cq.remainder()));
+                                                                          ^
+  symbol:   variable cq
+  location: class QueryParser
+org/jsoup/select/QueryParser.java:261: error: cannot find symbol
+            else if (cq.matchChomp("~="))
+                     ^
+  symbol:   variable cq
+  location: class QueryParser
+org/jsoup/select/QueryParser.java:262: error: cannot find symbol
+                evals.add(new Evaluator.AttributeWithValueMatching(key, Pattern.compile(cq.remainder())));
+                                                                                        ^
+  symbol:   variable cq
+  location: class QueryParser
+org/jsoup/select/QueryParser.java:264: error: cannot find symbol
+                throw new Selector.SelectorParseException("Could not parse attribute query '%s': unexpected token at '%s'", query, cq.remainder());
+                                                                                                                                   ^
+  symbol:   variable cq
+  location: class QueryParser
+16 errors
+
+1720330 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(389,185) StmtAppend(334,425) at variant196 fails to compile
+
+1720330 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(389,185) StmtAppend(334,425) (stored at: variant196)
+1721079 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 1.0 StmtAppend(220,311) StmtReplace(401,360) StmtDelete(408) (stored at: variant197)
+1721806 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 2.0 StmtAppend(422,306) StmtAppend(427,302) StmtDelete(345) StmtAppend(199,305) (stored at: variant198)
+1722523 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 2.0 StmtAppend(149,118) StmtAppend(282,277) (stored at: variant199)
+1723318 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 2.0 StmtReplace(82,73) StmtReplace(285,279) (stored at: variant200)
+1724057 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 2.0 StmtReplace(389,185) StmtAppend(284,363) (stored at: variant201)
+1724797 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 1.0 StmtAppend(186,188) StmtAppend(389,188) (stored at: variant202)
+1725576 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 1.0 StmtAppend(283,294) StmtAppend(131,137) StmtAppend(277,199) (stored at: variant203)
+1725601 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/TokenQueue.java:212: error: cannot find symbol
+        return queue.substring(start, pos);
+                               ^
+  symbol:   variable start
+  location: class TokenQueue
+1 error
+
+1725601 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(82,73) StmtDelete(67) at variant204 fails to compile
+
+1725601 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(82,73) StmtDelete(67) (stored at: variant204)
+1726336 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 1.0 StmtAppend(283,294) StmtAppend(131,137) StmtReplace(261,312) (stored at: variant205)
+1726360 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/TokenQueue.java:321: error: cannot find symbol
+            seen = true;
+            ^
+  symbol:   variable seen
+  location: class TokenQueue
+org/jsoup/parser/TokenQueue.java:323: error: cannot find symbol
+        return seen;
+               ^
+  symbol:   variable seen
+  location: class TokenQueue
+2 errors
+
+1726361 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(186,188) StmtDelete(140) at variant206 fails to compile
+
+1726361 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtAppend(186,188) StmtDelete(140) (stored at: variant206)
+1726405 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/TokenQueue.java:265: error: incompatible types: boolean cannot be converted to String
+			return false;
+			       ^
+org/jsoup/parser/TokenQueue.java:282: error: cannot find symbol
+                    if (start == -1)
+                        ^
+  symbol:   variable start
+  location: class TokenQueue
+org/jsoup/parser/TokenQueue.java:283: error: cannot find symbol
+                        start = pos;
+                        ^
+  symbol:   variable start
+  location: class TokenQueue
+org/jsoup/parser/TokenQueue.java:293: error: cannot find symbol
+        final String out = (end >= 0) ? queue.substring(start, end) : "";
+                                                        ^
+  symbol:   variable start
+  location: class TokenQueue
+4 errors
+
+1726405 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(241) StmtReplace(271,281) StmtAppend(96,13) StmtReplace(99,39) at variant207 fails to compile
+
+1726405 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(241) StmtReplace(271,281) StmtAppend(96,13) StmtReplace(99,39) (stored at: variant207)
+1727270 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 2.0 StmtReplace(52,55) (stored at: variant208)
+1727296 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/TokenQueue.java:106: error: missing return statement
+    }
+    ^
+1 error
+
+1727296 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(283,294) StmtDelete(31) at variant209 fails to compile
+
+1727296 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtAppend(283,294) StmtDelete(31) (stored at: variant209)
+1727323 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/TokenQueue.java:357: error: incompatible types: boolean cannot be converted to String
+			matches(true);
+			        ^
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+1 error
+
+1727323 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(159,287) at variant210 fails to compile
+
+1727323 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(159,287) (stored at: variant210)
+1727345 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/select/QueryParser.java:115: error: variable or might not have been initialized
+            currentEval = or;
+                          ^
+1 error
+
+1727345 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(134) StmtReplace(234,184) at variant211 fails to compile
+
+1727345 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(134) StmtReplace(234,184) (stored at: variant211)
+1727371 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/TokenQueue.java:211: error: incompatible types: boolean cannot be converted to String
+				return false;
+				       ^
+1 error
+
+1727371 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(70,39) at variant212 fails to compile
+
+1727371 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtAppend(70,39) (stored at: variant212)
+1728219 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 1.0 StmtReplace(229,223) StmtAppend(283,294) StmtDelete(70) (stored at: variant213)
+1728837 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 2.0 StmtAppend(217,187) (stored at: variant214)
+1729659 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtAppend(353,260) StmtReplace(401,360) StmtDelete(393) (stored at: variant215)
+1730485 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 2.0 StmtReplace(52,46) StmtDelete(349) StmtAppend(427,302) StmtDelete(345) StmtAppend(343,303) (stored at: variant216)
+1730508 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/select/QueryParser.java:266: error: cannot find symbol
+        throw new Selector.SelectorParseException("Unknown combinator: " + combinator);
+                                                                           ^
+  symbol:   variable combinator
+  location: class QueryParser
+1 error
+
+1730508 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(358,242) at variant217 fails to compile
+
+1730508 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(358,242) (stored at: variant217)
+1731382 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 2.0 StmtAppend(379,198) StmtAppend(381,178) StmtReplace(339,306) (stored at: variant218)
+1732041 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 2.0 StmtAppend(283,221) (stored at: variant219)
+1732870 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(338) (stored at: variant220)
+1733606 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 2.0 StmtAppend(346,276) StmtAppend(398,311) (stored at: variant221)
+1733634 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/TokenQueue.java:213: error: cannot find symbol
+        return queue.substring(start, pos);
+                               ^
+  symbol:   variable start
+  location: class TokenQueue
+1 error
+
+1733634 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(67) at variant222 fails to compile
+
+1733634 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(67) (stored at: variant222)
+1733661 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/select/QueryParser.java:161: error: variable or might not have been initialized
+                or.add(currentEval);
+                ^
+1 error
+
+1733661 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(283,294) StmtReplace(238,268) at variant223 fails to compile
+
+1733661 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtAppend(283,294) StmtReplace(238,268) (stored at: variant223)
+1733685 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/select/QueryParser.java:90: error: variable currentEval might not have been initialized
+            currentEval = new CombiningEvaluator.And(newEval, new StructuralEvaluator.ImmediateParent(currentEval));
+                                                                                                      ^
+org/jsoup/select/QueryParser.java:92: error: variable currentEval might not have been initialized
+            currentEval = new CombiningEvaluator.And(newEval, new StructuralEvaluator.Parent(currentEval));
+                                                                                             ^
+org/jsoup/select/QueryParser.java:94: error: variable currentEval might not have been initialized
+            currentEval = new CombiningEvaluator.And(newEval, new StructuralEvaluator.ImmediatePreviousSibling(currentEval));
+                                                                                                               ^
+org/jsoup/select/QueryParser.java:96: error: variable currentEval might not have been initialized
+            currentEval = new CombiningEvaluator.And(newEval, new StructuralEvaluator.PreviousSibling(currentEval));
+                                                                                                      ^
+org/jsoup/select/QueryParser.java:99: error: variable currentEval might not have been initialized
+            if (currentEval instanceof CombiningEvaluator.Or) {
+                ^
+org/jsoup/select/QueryParser.java:113: error: variable rootEval might not have been initialized
+            ((CombiningEvaluator.Or) rootEval).replaceRightMostEvaluator(currentEval);
+                                     ^
+6 errors
+
+1733685 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(202) StmtDelete(212) at variant224 fails to compile
+
+1733685 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(202) StmtDelete(212) (stored at: variant224)
+1734381 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 1.0 StmtAppend(271,305) StmtReplace(179,186) (stored at: variant225)
+1735060 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 2.0 StmtReplace(349,280) (stored at: variant226)
+1735717 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 2.0 StmtDelete(241) StmtReplace(271,281) StmtAppend(377,390) (stored at: variant227)
+1735717 [main] INFO clegoues.genprog4java.Search.Search  - search: generation4
+1736475 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/TokenQueue.java:188: error: missing return statement
+    }
+    ^
+1 error
+
+1736475 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(52,55) StmtDelete(64) at variant228 fails to compile
+
+1736475 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(52,55) StmtDelete(64) (stored at: variant228)
+1736502 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/TokenQueue.java:28: error: incompatible types: unexpected return value
+				return queue.substring(start, pos);
+				                      ^
+1 error
+
+1736502 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(422,306) StmtAppend(427,302) StmtDelete(345) StmtAppend(199,305) StmtAppend(1,161) at variant229 fails to compile
+
+1736502 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtAppend(422,306) StmtAppend(427,302) StmtDelete(345) StmtAppend(199,305) StmtAppend(1,161) (stored at: variant229)
+1737370 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(52,46) StmtDelete(349) StmtAppend(427,302) StmtDelete(345) StmtAppend(343,303) StmtAppend(255,291) (stored at: variant230)
+1737398 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/TokenQueue.java:132: error: missing return statement
+	}
+	^
+1 error
+
+1737398 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(241) StmtReplace(271,281) StmtAppend(377,390) StmtDelete(41) at variant231 fails to compile
+
+1737398 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(241) StmtReplace(271,281) StmtAppend(377,390) StmtDelete(41) (stored at: variant231)
+1738218 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 1.0 StmtAppend(186,188) StmtDelete(354) StmtDelete(337) (stored at: variant232)
+1739115 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 2.0 StmtReplace(349,280) StmtAppend(234,214) (stored at: variant233)
+1739139 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/select/QueryParser.java:310: error: missing return statement
+	}
+	^
+1 error
+
+1739139 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(227,190) StmtDelete(309) StmtDelete(302) StmtDelete(396) at variant234 fails to compile
+
+1739139 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtAppend(227,190) StmtDelete(309) StmtDelete(302) StmtDelete(396) (stored at: variant234)
+1931374 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtAppend(227,190) StmtDelete(309) StmtDelete(302) StmtDelete(277) (stored at: variant235)
+1932051 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 1.0 StmtAppend(217,187) StmtDelete(62) (stored at: variant236)
+1932773 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 1.0 StmtReplace(421,299) StmtAppend(291,425) StmtReplace(241,312) StmtAppend(279,195) (stored at: variant237)
+1933577 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 2.0 StmtAppend(186,188) StmtDelete(354) StmtAppend(361,364) (stored at: variant238)
+1934518 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 1.0 StmtAppend(295,184) StmtDelete(241) StmtDelete(73) (stored at: variant239)
+1935412 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(241) StmtReplace(271,281) StmtAppend(377,390) StmtAppend(285,272) (stored at: variant240)
+1935439 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/select/QueryParser.java:90: error: variable currentEval might not have been initialized
+            currentEval = new CombiningEvaluator.And(newEval, new StructuralEvaluator.ImmediateParent(currentEval));
+                                                                                                      ^
+org/jsoup/select/QueryParser.java:92: error: variable currentEval might not have been initialized
+            currentEval = new CombiningEvaluator.And(newEval, new StructuralEvaluator.Parent(currentEval));
+                                                                                             ^
+org/jsoup/select/QueryParser.java:94: error: variable currentEval might not have been initialized
+            currentEval = new CombiningEvaluator.And(newEval, new StructuralEvaluator.ImmediatePreviousSibling(currentEval));
+                                                                                                               ^
+org/jsoup/select/QueryParser.java:96: error: variable currentEval might not have been initialized
+            currentEval = new CombiningEvaluator.And(newEval, new StructuralEvaluator.PreviousSibling(currentEval));
+                                                                                                      ^
+org/jsoup/select/QueryParser.java:99: error: variable currentEval might not have been initialized
+            if (currentEval instanceof CombiningEvaluator.Or) {
+                ^
+org/jsoup/select/QueryParser.java:113: error: variable rootEval might not have been initialized
+            ((CombiningEvaluator.Or) rootEval).replaceRightMostEvaluator(currentEval);
+                                     ^
+6 errors
+
+1935439 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(52,46) StmtDelete(349) StmtAppend(427,302) StmtDelete(345) StmtAppend(343,303) StmtDelete(212) at variant241 fails to compile
+
+1935439 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(52,46) StmtDelete(349) StmtAppend(427,302) StmtDelete(345) StmtAppend(343,303) StmtDelete(212) (stored at: variant241)
+2070576 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 1.0 StmtAppend(227,190) StmtDelete(309) StmtDelete(302) StmtReplace(292,311) (stored at: variant242)
+2070624 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/TokenQueue.java:200: error: cannot find symbol
+            if (canScan) {
+                ^
+  symbol:   variable canScan
+  location: class TokenQueue
+org/jsoup/parser/TokenQueue.java:200: error: illegal start of type
+            if (canScan) {
+               ^
+2 errors
+
+2070624 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(229,223) StmtAppend(283,294) StmtAppend(322,413) StmtDelete(318) StmtDelete(69) at variant243 fails to compile
+
+2070624 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(229,223) StmtAppend(283,294) StmtAppend(322,413) StmtDelete(318) StmtDelete(69) (stored at: variant243)
+2071735 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 1.0 StmtReplace(229,223) StmtAppend(283,294) StmtAppend(322,413) StmtDelete(318) StmtDelete(389) (stored at: variant244)
+2264082 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 1.0 StmtDelete(241) StmtReplace(271,281) StmtAppend(377,390) StmtDelete(257) (stored at: variant245)
+2264930 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 2.0 StmtAppend(186,188) StmtDelete(354) StmtAppend(359,179) (stored at: variant246)
+2264962 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/TokenQueue.java:292: error: cannot find symbol
+        return out;
+               ^
+  symbol:   variable out
+  location: class TokenQueue
+1 error
+
+2264962 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(241) StmtReplace(271,281) StmtAppend(377,390) StmtAppend(125,55) at variant247 fails to compile
+
+2264962 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(241) StmtReplace(271,281) StmtAppend(377,390) StmtAppend(125,55) (stored at: variant247)
+2264998 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/TokenQueue.java:126: error: unreachable statement
+			if (matches(seq)) {
+			^
+1 error
+
+2264999 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(341) StmtAppend(346,276) StmtDelete(245) StmtAppend(39,35) at variant248 fails to compile
+
+2264999 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(341) StmtAppend(346,276) StmtDelete(245) StmtAppend(39,35) (stored at: variant248)
+2265643 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 1.0 StmtReplace(52,46) StmtDelete(349) StmtAppend(427,302) StmtDelete(345) StmtAppend(343,303) StmtReplace(351,261) (stored at: variant249)
+2266483 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 2.0 StmtAppend(217,187) StmtDelete(297) (stored at: variant250)
+2267151 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 2.0 StmtReplace(82,73) StmtReplace(285,279) StmtDelete(398) (stored at: variant251)
+2267964 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 2.0 StmtAppend(283,221) StmtAppend(254,275) (stored at: variant252)
+2268639 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 2.0 StmtReplace(52,55) StmtDelete(359) (stored at: variant253)
+2269494 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 2.0 StmtAppend(346,276) StmtAppend(398,311) StmtDelete(149) (stored at: variant254)
+2270372 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 1.0 StmtDelete(341) StmtAppend(346,276) StmtDelete(245) StmtReplace(239,235) (stored at: variant255)
+2270399 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/TokenQueue.java:126: error: missing return statement
+    }
+    ^
+1 error
+
+2270399 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(52,55) StmtDelete(40) at variant256 fails to compile
+
+2270399 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(52,55) StmtDelete(40) (stored at: variant256)
+2270427 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/select/QueryParser.java:88: error: variable rootEval might not have been initialized
+            if (rootEval instanceof CombiningEvaluator.Or && combinator != ',') {
+                ^
+org/jsoup/select/QueryParser.java:89: error: variable currentEval might not have been initialized
+                currentEval = ((CombiningEvaluator.Or) currentEval).rightMostEvaluator();
+                                                       ^
+org/jsoup/select/QueryParser.java:100: error: variable currentEval might not have been initialized
+            currentEval = new CombiningEvaluator.And(newEval, new StructuralEvaluator.ImmediateParent(currentEval));
+                                                                                                      ^
+org/jsoup/select/QueryParser.java:102: error: variable currentEval might not have been initialized
+            currentEval = new CombiningEvaluator.And(newEval, new StructuralEvaluator.Parent(currentEval));
+                                                                                             ^
+org/jsoup/select/QueryParser.java:104: error: variable currentEval might not have been initialized
+            currentEval = new CombiningEvaluator.And(newEval, new StructuralEvaluator.ImmediatePreviousSibling(currentEval));
+                                                                                                               ^
+org/jsoup/select/QueryParser.java:106: error: variable currentEval might not have been initialized
+            currentEval = new CombiningEvaluator.And(newEval, new StructuralEvaluator.PreviousSibling(currentEval));
+                                                                                                      ^
+org/jsoup/select/QueryParser.java:109: error: variable currentEval might not have been initialized
+            if (currentEval instanceof CombiningEvaluator.Or) {
+                ^
+7 errors
+
+2270427 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(346,276) StmtAppend(398,311) StmtDelete(214) at variant257 fails to compile
+
+2270427 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtAppend(346,276) StmtAppend(398,311) StmtDelete(214) (stored at: variant257)
+2271188 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 1.0 StmtAppend(422,306) StmtAppend(427,302) StmtDelete(345) StmtAppend(199,305) StmtDelete(342) (stored at: variant258)
+2271874 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 1.0 StmtAppend(283,221) StmtReplace(364,311) (stored at: variant259)
+2271920 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/select/QueryParser.java:307: error: variable a might not have been initialized
+				evals.add(new Evaluator.IsNthLastOfType(a, b));
+				                                        ^
+org/jsoup/select/QueryParser.java:309: error: variable a might not have been initialized
+				evals.add(new Evaluator.IsNthOfType(a, b));
+				                                    ^
+org/jsoup/select/QueryParser.java:312: error: variable a might not have been initialized
+				evals.add(new Evaluator.IsNthLastChild(a, b));
+				                                       ^
+org/jsoup/select/QueryParser.java:314: error: variable a might not have been initialized
+				evals.add(new Evaluator.IsNthChild(a, b));
+				                                   ^
+4 errors
+
+2271920 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(52,46) StmtDelete(349) StmtAppend(427,302) StmtDelete(345) StmtAppend(343,303) StmtReplace(384,187) at variant260 fails to compile
+
+2271920 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(52,46) StmtDelete(349) StmtAppend(427,302) StmtDelete(345) StmtAppend(343,303) StmtReplace(384,187) (stored at: variant260)
+2272672 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 2.0 StmtDelete(341) StmtAppend(346,276) StmtDelete(245) StmtAppend(382,265) (stored at: variant261)
+2273662 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 2.0 StmtReplace(52,55) StmtReplace(311,281) (stored at: variant262)
+2274680 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 2.0 StmtAppend(379,198) StmtAppend(381,178) StmtReplace(339,306) StmtReplace(71,64) (stored at: variant263)
+2275820 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 2.0 StmtReplace(229,223) StmtAppend(283,294) StmtAppend(322,413) StmtAppend(322,363) StmtDelete(55) (stored at: variant264)
+2276683 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 1.0 StmtReplace(349,280) StmtAppend(233,294) (stored at: variant265)
+2469086 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 1.0 StmtDelete(241) StmtReplace(271,281) StmtAppend(377,390) StmtDelete(276) (stored at: variant266)
+2469106 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/select/QueryParser.java:61: error: incompatible types: boolean cannot be converted to Evaluator
+                return true;
+                       ^
+1 error
+
+2469106 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(229,223) StmtAppend(283,294) StmtDelete(70) StmtReplace(196,38) at variant267 fails to compile
+
+2469107 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(229,223) StmtAppend(283,294) StmtDelete(70) StmtReplace(196,38) (stored at: variant267)
+2469128 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/select/QueryParser.java:62: error: cannot find symbol
+            } else if (seenWhite) {
+                       ^
+  symbol:   variable seenWhite
+  location: class QueryParser
+org/jsoup/select/QueryParser.java:62: error: illegal start of type
+            } else if (seenWhite) {
+                      ^
+2 errors
+
+2469128 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(52,46) StmtDelete(349) StmtAppend(427,302) StmtDelete(345) StmtDelete(193) at variant268 fails to compile
+
+2469128 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(52,46) StmtDelete(349) StmtAppend(427,302) StmtDelete(345) StmtDelete(193) (stored at: variant268)
+2469871 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(246,361) (stored at: variant269)
+2470806 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(241) StmtReplace(285,279) StmtAppend(308,313) (stored at: variant270)
+2470832 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/TokenQueue.java:241: error: incompatible types: char cannot be converted to String
+			return queue.charAt(pos++);
+			                   ^
+org/jsoup/parser/TokenQueue.java:244: error: cannot find symbol
+        return data;
+               ^
+  symbol:   variable data
+  location: class TokenQueue
+2 errors
+
+2470832 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(377,390) StmtReplace(91,48) at variant271 fails to compile
+
+2470832 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtAppend(377,390) StmtReplace(91,48) (stored at: variant271)
+2471735 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 2.0 StmtAppend(202,261) (stored at: variant272)
+2471744 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/TokenQueue.java:139: error: ';' expected
+    public boolean matchesWord() pos++;
+                                ^
+1 error
+
+2471744 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(354) StmtReplace(43,88) at variant273 fails to compile
+
+2471744 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(354) StmtReplace(43,88) (stored at: variant273)
+2472531 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 1.0 StmtAppend(206,315) (stored at: variant274)
+2473535 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 2.0 StmtDelete(203) (stored at: variant275)
+2474603 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 1.0 StmtAppend(227,190) StmtDelete(309) StmtAppend(346,276) StmtDelete(245) StmtAppend(349,114) (stored at: variant276)
+2474638 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/TokenQueue.java:275: error: incompatible types: boolean cannot be converted to String
+                return !isEmpty() && Character.isLetterOrDigit(queue.charAt(pos));
+                                  ^
+1 error
+
+2474638 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(115,44) at variant277 fails to compile
+
+2474638 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(115,44) (stored at: variant277)
+2474669 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/TokenQueue.java:229: error: incompatible types: String[] cannot be converted to String
+				String data = consumeTo(seq);
+				                        ^
+org/jsoup/parser/TokenQueue.java:230: error: incompatible types: String[] cannot be converted to String
+				matchChomp(seq);
+				           ^
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+2 errors
+
+2474669 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(86,90) at variant278 fails to compile
+
+2474669 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtAppend(86,90) (stored at: variant278)
+2475814 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 2.0 StmtReplace(82,78) (stored at: variant279)
+2476697 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 2.0 StmtAppend(199,305) StmtDelete(336) (stored at: variant280)
+2477833 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 1.0 StmtAppend(422,306) StmtAppend(427,302) StmtDelete(354) StmtDelete(271) (stored at: variant281)
+2478971 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 1.0 StmtReplace(229,223) StmtAppend(283,294) StmtReplace(339,306) StmtDelete(299) (stored at: variant282)
+2671211 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 1.0 StmtAppend(379,198) StmtDelete(318) StmtDelete(274) (stored at: variant283)
+2671895 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 1.0 StmtReplace(229,223) StmtAppend(322,363) StmtReplace(206,279) (stored at: variant284)
+2671922 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/TokenQueue.java:34: error: unreachable statement
+		if (!isEmpty())
+		^
+org/jsoup/parser/TokenQueue.java:36: error: missing return statement
+	}
+	^
+2 errors
+
+2671922 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(229,223) StmtAppend(283,294) StmtAppend(322,413) StmtDelete(318) StmtAppend(3,46) at variant285 fails to compile
+
+2671922 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(229,223) StmtAppend(283,294) StmtAppend(322,413) StmtDelete(318) StmtAppend(3,46) (stored at: variant285)
+2671946 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/select/QueryParser.java:292: error: incompatible types: unexpected return value
+			return Integer.parseInt(indexS);
+			                       ^
+org/jsoup/select/QueryParser.java:304: error: cannot find symbol
+		} else if (mB.matches()) {
+		           ^
+  symbol:   variable mB
+  location: class QueryParser
+org/jsoup/select/QueryParser.java:306: error: cannot find symbol
+			b = Integer.parseInt(mB.group().replaceFirst("^\\+", ""));
+			                     ^
+  symbol:   variable mB
+  location: class QueryParser
+3 errors
+
+2671946 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(368,396) at variant286 fails to compile
+
+2671946 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(368,396) (stored at: variant286)
+2672683 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 2.0 StmtReplace(271,281) StmtAppend(377,390) StmtDelete(420) (stored at: variant287)
+2672683 [main] INFO clegoues.genprog4java.Search.Search  - search: generation5
+2672713 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/TokenQueue.java:28: error: incompatible types: unexpected return value
+				return queue.substring(start, pos);
+				                      ^
+1 error
+
+2672742 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/TokenQueue.java:28: error: incompatible types: unexpected return value
+				return queue.substring(start, pos);
+				                      ^
+1 error
+
+2672787 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/TokenQueue.java:28: error: incompatible types: unexpected return value
+				return queue.substring(start, pos);
+				                      ^
+1 error
+
+2672817 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/TokenQueue.java:28: error: incompatible types: unexpected return value
+				return queue.substring(start, pos);
+				                      ^
+1 error
+
+2672852 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/TokenQueue.java:28: error: incompatible types: unexpected return value
+				return queue.substring(start, pos);
+				                      ^
+1 error
+
+2672890 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/TokenQueue.java:28: error: incompatible types: unexpected return value
+				return queue.substring(start, pos);
+				                      ^
+1 error
+
+2672927 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/TokenQueue.java:28: error: incompatible types: unexpected return value
+				return queue.substring(start, pos);
+				                      ^
+1 error
+
+2672958 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/TokenQueue.java:28: error: incompatible types: unexpected return value
+				return queue.substring(start, pos);
+				                      ^
+1 error
+
+2672993 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/TokenQueue.java:28: error: incompatible types: unexpected return value
+				return queue.substring(start, pos);
+				                      ^
+1 error
+
+2673035 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/TokenQueue.java:28: error: incompatible types: unexpected return value
+				return queue.substring(start, pos);
+				                      ^
+1 error
+
+2673091 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/TokenQueue.java:28: error: incompatible types: unexpected return value
+				return queue.substring(start, pos);
+				                      ^
+1 error
+
+2673133 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/TokenQueue.java:28: error: incompatible types: unexpected return value
+				return queue.substring(start, pos);
+				                      ^
+1 error
+
+2673178 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/TokenQueue.java:28: error: incompatible types: unexpected return value
+				return queue.substring(start, pos);
+				                      ^
+1 error
+
+2674223 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 2.0 StmtReplace(349,280) StmtAppend(234,214) StmtReplace(72,50) (stored at: variant288)
+2675283 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 1.0 StmtDelete(341) StmtAppend(346,276) StmtDelete(245) StmtAppend(382,265) StmtDelete(423) (stored at: variant289)
+2675306 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/TokenQueue.java:88: error: ';' expected
+    public boolean matchesAny(String... seq) pos = queue.length();
+                                            ^
+1 error
+
+2675307 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(229,223) StmtAppend(283,294) StmtAppend(322,413) StmtAppend(322,363) StmtDelete(55) StmtReplace(18,80) at variant290 fails to compile
+
+2675307 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtReplace(229,223) StmtAppend(283,294) StmtAppend(322,413) StmtAppend(322,363) StmtDelete(55) StmtReplace(18,80) (stored at: variant290)
+2675353 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/select/QueryParser.java:90: error: cannot find symbol
+                replaceRightMost = true;
+                ^
+  symbol:   variable replaceRightMost
+  location: class QueryParser
+org/jsoup/select/QueryParser.java:122: error: cannot find symbol
+        if (replaceRightMost)
+            ^
+  symbol:   variable replaceRightMost
+  location: class QueryParser
+org/jsoup/select/QueryParser.java:122: error: illegal start of type
+        if (replaceRightMost)
+           ^
+3 errors
+
+2675353 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(379,198) StmtAppend(381,178) StmtReplace(339,306) StmtReplace(71,64) StmtDelete(211) at variant291 fails to compile
+
+2675353 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtAppend(379,198) StmtAppend(381,178) StmtReplace(339,306) StmtReplace(71,64) StmtDelete(211) (stored at: variant291)
+2676292 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 2.0 StmtReplace(349,280) StmtAppend(234,214) StmtAppend(322,298) (stored at: variant292)
+2677141 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 2.0 StmtDelete(341) StmtAppend(346,276) StmtDelete(245) StmtAppend(382,265) StmtAppend(218,401) (stored at: variant293)
+2678226 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 1.0 StmtDelete(341) StmtAppend(346,276) StmtDelete(245) StmtAppend(382,265) StmtReplace(242,223) (stored at: variant294)
+2679122 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 1.0 StmtReplace(229,223) StmtAppend(322,363) StmtReplace(206,279) StmtReplace(236,263) (stored at: variant295)
+2679867 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 2.0 StmtAppend(346,276) StmtAppend(398,311) StmtDelete(149) StmtAppend(243,363) (stored at: variant296)
+2680611 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 1.0 StmtReplace(229,223) StmtAppend(283,294) StmtReplace(339,306) StmtDelete(299) StmtDelete(163) (stored at: variant297)
+2680641 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/select/QueryParser.java:62: error: cannot find symbol
+            } else if (seenWhite) {
+                       ^
+  symbol:   variable seenWhite
+  location: class QueryParser
+org/jsoup/select/QueryParser.java:62: error: illegal start of type
+            } else if (seenWhite) {
+                      ^
+2 errors
+
+2680641 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(229,223) StmtAppend(283,294) StmtAppend(322,413) StmtAppend(322,363) StmtDelete(55) StmtDelete(193) at variant298 fails to compile
+
+2680641 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtReplace(229,223) StmtAppend(283,294) StmtAppend(322,413) StmtAppend(322,363) StmtDelete(55) StmtDelete(193) (stored at: variant298)
+2681446 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 1.0 StmtReplace(82,73) StmtReplace(285,279) StmtDelete(398) StmtDelete(239) (stored at: variant299)
+2682335 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 1.0 StmtAppend(199,305) StmtDelete(336) StmtDelete(283) (stored at: variant300)
+2683052 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 1.0 StmtReplace(82,73) StmtReplace(285,279) StmtDelete(398) StmtDelete(291) (stored at: variant301)
+2683695 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 1.0 StmtAppend(199,305) StmtDelete(336) StmtAppend(338,348) (stored at: variant302)
+2684427 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 2.0 StmtReplace(349,280) StmtAppend(234,214) StmtReplace(114,106) (stored at: variant303)
+2684449 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/select/QueryParser.java:90: error: cannot find symbol
+                replaceRightMost = true;
+                ^
+  symbol:   variable replaceRightMost
+  location: class QueryParser
+org/jsoup/select/QueryParser.java:122: error: cannot find symbol
+        if (replaceRightMost)
+            ^
+  symbol:   variable replaceRightMost
+  location: class QueryParser
+org/jsoup/select/QueryParser.java:122: error: illegal start of type
+        if (replaceRightMost)
+           ^
+3 errors
+
+2684449 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(82,78) StmtDelete(211) at variant304 fails to compile
+
+2684449 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtReplace(82,78) StmtDelete(211) (stored at: variant304)
+2684474 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/select/QueryParser.java:40: error: non-static variable tq cannot be referenced from a static context
+				if (tq.matchChomp(":only-of-type"))
+				    ^
+org/jsoup/select/QueryParser.java:41: error: non-static variable evals cannot be referenced from a static context
+					evals.add(new Evaluator.IsOnlyOfType());
+					^
+org/jsoup/select/QueryParser.java:42: error: non-static variable tq cannot be referenced from a static context
+				else if (tq.matchChomp(":empty"))
+				         ^
+org/jsoup/select/QueryParser.java:43: error: non-static variable evals cannot be referenced from a static context
+					evals.add(new Evaluator.IsEmpty());
+					^
+org/jsoup/select/QueryParser.java:44: error: non-static variable tq cannot be referenced from a static context
+				else if (tq.matchChomp(":root"))
+				         ^
+org/jsoup/select/QueryParser.java:45: error: non-static variable evals cannot be referenced from a static context
+					evals.add(new Evaluator.IsRoot());
+					^
+org/jsoup/select/QueryParser.java:48: error: non-static variable tq cannot be referenced from a static context
+							query, tq.remainder());
+							       ^
+org/jsoup/select/QueryParser.java:50: error: cannot find symbol
+            return p.parse();
+                   ^
+  symbol:   variable p
+  location: class QueryParser
+8 errors
+
+2684474 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(206,315) StmtAppend(181,308) at variant305 fails to compile
+
+2684474 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtAppend(206,315) StmtAppend(181,308) (stored at: variant305)
+2684500 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/TokenQueue.java:128: error: missing return statement
+    }
+    ^
+1 error
+
+2684500 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(82,73) StmtReplace(285,279) StmtDelete(398) StmtReplace(38,45) at variant306 fails to compile
+
+2684500 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtReplace(82,73) StmtReplace(285,279) StmtDelete(398) StmtReplace(38,45) (stored at: variant306)
+2685286 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 1.0 StmtAppend(186,188) StmtDelete(354) StmtAppend(361,364) StmtAppend(1,0) (stored at: variant307)
+2686086 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 1.0 StmtReplace(52,55) StmtReplace(311,281) StmtDelete(134) (stored at: variant308)
+2686113 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/TokenQueue.java:288: error: cannot find symbol
+				return remainder;
+				       ^
+  symbol:   variable remainder
+  location: class TokenQueue
+1 error
+
+2686113 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(229,223) StmtAppend(283,294) StmtAppend(322,413) StmtAppend(322,363) StmtDelete(55) StmtAppend(124,174) at variant309 fails to compile
+
+2686113 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtReplace(229,223) StmtAppend(283,294) StmtAppend(322,413) StmtAppend(322,363) StmtDelete(55) StmtAppend(124,174) (stored at: variant309)
+2686969 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 1.0 StmtDelete(203) StmtAppend(245,363) (stored at: variant310)
+2687633 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 2.0 StmtReplace(52,55) StmtReplace(311,281) StmtDelete(229) (stored at: variant311)
+2687663 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/TokenQueue.java:204: error: for-each not applicable to expression type
+                    pos = queue.length();else {pos+=skip;for (String s:seq){if (matches(s))return true;}}
+                                                                       ^
+  required: array or java.lang.Iterable
+  found:    String
+org/jsoup/parser/TokenQueue.java:204: error: incompatible types: boolean cannot be converted to String
+                    pos = queue.length();else {pos+=skip;for (String s:seq){if (matches(s))return true;}}
+                                                                                                  ^
+2 errors
+
+2687663 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(186,188) StmtDelete(354) StmtAppend(359,179) StmtAppend(81,19) at variant312 fails to compile
+
+2687663 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtAppend(186,188) StmtDelete(354) StmtAppend(359,179) StmtAppend(81,19) (stored at: variant312)
+2688518 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 2.0 StmtReplace(52,55) StmtDelete(359) StmtDelete(421) (stored at: variant313)
+2689399 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 2.0 StmtReplace(52,55) StmtReplace(311,281) StmtReplace(27,149) (stored at: variant314)
+2689424 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/select/QueryParser.java:287: error: variable a might not have been initialized
+				evals.add(new Evaluator.IsNthLastOfType(a, b));
+				                                        ^
+org/jsoup/select/QueryParser.java:287: error: variable b might not have been initialized
+				evals.add(new Evaluator.IsNthLastOfType(a, b));
+				                                           ^
+org/jsoup/select/QueryParser.java:289: error: variable a might not have been initialized
+				evals.add(new Evaluator.IsNthOfType(a, b));
+				                                    ^
+org/jsoup/select/QueryParser.java:289: error: variable b might not have been initialized
+				evals.add(new Evaluator.IsNthOfType(a, b));
+				                                       ^
+org/jsoup/select/QueryParser.java:292: error: variable a might not have been initialized
+				evals.add(new Evaluator.IsNthLastChild(a, b));
+				                                       ^
+org/jsoup/select/QueryParser.java:292: error: variable b might not have been initialized
+				evals.add(new Evaluator.IsNthLastChild(a, b));
+				                                          ^
+org/jsoup/select/QueryParser.java:294: error: variable a might not have been initialized
+				evals.add(new Evaluator.IsNthChild(a, b));
+				                                   ^
+org/jsoup/select/QueryParser.java:294: error: variable b might not have been initialized
+				evals.add(new Evaluator.IsNthChild(a, b));
+				                                      ^
+8 errors
+
+2689425 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(227,190) StmtDelete(309) StmtDelete(302) StmtReplace(292,311) StmtReplace(386,277) at variant315 fails to compile
+
+2689425 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtAppend(227,190) StmtDelete(309) StmtDelete(302) StmtReplace(292,311) StmtReplace(386,277) (stored at: variant315)
+2689469 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/TokenQueue.java:167: error: incompatible types: unexpected return value
+			return remainder();
+			                ^
+1 error
+
+2689470 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(379,198) StmtAppend(381,178) StmtReplace(339,306) StmtReplace(71,64) StmtReplace(51,64) at variant316 fails to compile
+
+2689470 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtAppend(379,198) StmtAppend(381,178) StmtReplace(339,306) StmtReplace(71,64) StmtReplace(51,64) (stored at: variant316)
+2690477 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtReplace(229,223) StmtAppend(283,294) StmtAppend(322,413) StmtAppend(322,363) StmtDelete(55) StmtAppend(221,303) (stored at: variant317)
+2691203 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 1.0 StmtAppend(283,221) StmtAppend(254,275) StmtAppend(279,284) (stored at: variant318)
+2691925 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtAppend(379,198) StmtAppend(381,178) StmtReplace(339,306) StmtReplace(71,64) StmtDelete(45) (stored at: variant319)
+2692910 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 1.0 StmtAppend(283,221) StmtAppend(254,275) StmtReplace(357,363) (stored at: variant320)
+2692939 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/select/QueryParser.java:208: error: cannot find symbol
+        Validate.notEmpty(id);
+                          ^
+  symbol:   variable id
+  location: class QueryParser
+org/jsoup/select/QueryParser.java:209: error: cannot find symbol
+        evals.add(new Evaluator.Id(id));
+                                   ^
+  symbol:   variable id
+  location: class QueryParser
+2 errors
+
+2692939 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(202,261) StmtDelete(316) at variant321 fails to compile
+
+2692939 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtAppend(202,261) StmtDelete(316) (stored at: variant321)
+2693789 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 2.0 StmtDelete(203) StmtDelete(186) (stored at: variant322)
+2694761 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtAppend(422,306) StmtAppend(427,302) StmtDelete(345) StmtAppend(199,305) StmtDelete(342) StmtDelete(291) (stored at: variant323)
+2695716 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 1.0 StmtReplace(271,281) StmtAppend(377,390) StmtDelete(420) StmtReplace(388,362) (stored at: variant324)
+2695740 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/TokenQueue.java:200: error: cannot find symbol
+            if (canScan) {
+                ^
+  symbol:   variable canScan
+  location: class TokenQueue
+org/jsoup/parser/TokenQueue.java:200: error: illegal start of type
+            if (canScan) {
+               ^
+2 errors
+
+2695740 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(52,55) StmtDelete(359) StmtDelete(69) at variant325 fails to compile
+
+2695740 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtReplace(52,55) StmtDelete(359) StmtDelete(69) (stored at: variant325)
+2695768 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/TokenQueue.java:184: error: incompatible types: boolean cannot be converted to String
+				return false;
+				       ^
+org/jsoup/parser/TokenQueue.java:186: error: cannot find symbol
+            pos += consumed.length();
+                   ^
+  symbol:   variable consumed
+  location: class TokenQueue
+org/jsoup/parser/TokenQueue.java:187: error: cannot find symbol
+            return consumed;
+                   ^
+  symbol:   variable consumed
+  location: class TokenQueue
+3 errors
+
+2695768 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(82,78) StmtReplace(61,39) at variant326 fails to compile
+
+2695768 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtReplace(82,78) StmtReplace(61,39) (stored at: variant326)
+2695794 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/select/QueryParser.java:361: error: incompatible types: unexpected return value
+			return remainder();
+			                ^
+org/jsoup/select/QueryParser.java:361: error: cannot find symbol
+			return remainder();
+			       ^
+  symbol:   method remainder()
+  location: class QueryParser
+2 errors
+
+2695794 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(217,187) StmtDelete(297) StmtReplace(421,64) at variant327 fails to compile
+
+2695794 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtAppend(217,187) StmtDelete(297) StmtReplace(421,64) (stored at: variant327)
+2695824 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/select/QueryParser.java:100: error: cannot find symbol
+            currentEval = new CombiningEvaluator.And(newEval, new StructuralEvaluator.ImmediateParent(currentEval));
+                                                     ^
+  symbol:   variable newEval
+  location: class QueryParser
+org/jsoup/select/QueryParser.java:102: error: cannot find symbol
+            currentEval = new CombiningEvaluator.And(newEval, new StructuralEvaluator.Parent(currentEval));
+                                                     ^
+  symbol:   variable newEval
+  location: class QueryParser
+org/jsoup/select/QueryParser.java:104: error: cannot find symbol
+            currentEval = new CombiningEvaluator.And(newEval, new StructuralEvaluator.ImmediatePreviousSibling(currentEval));
+                                                     ^
+  symbol:   variable newEval
+  location: class QueryParser
+org/jsoup/select/QueryParser.java:106: error: cannot find symbol
+			currentEval = new CombiningEvaluator.And(newEval, new StructuralEvaluator.ImmediateParent(currentEval));
+			                                         ^
+  symbol:   variable newEval
+  location: class QueryParser
+org/jsoup/select/QueryParser.java:111: error: cannot find symbol
+                or.add(newEval);
+                       ^
+  symbol:   variable newEval
+  location: class QueryParser
+org/jsoup/select/QueryParser.java:115: error: cannot find symbol
+                or.add(newEval);
+                       ^
+  symbol:   variable newEval
+  location: class QueryParser
+6 errors
+
+2695825 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(229,223) StmtDelete(210) at variant328 fails to compile
+
+2695825 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtReplace(229,223) StmtDelete(210) (stored at: variant328)
+2695856 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/TokenQueue.java:240: error: missing return statement
+	}
+	^
+1 error
+
+2695856 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(322,413) StmtAppend(322,363) StmtDelete(55) StmtDelete(90) at variant329 fails to compile
+
+2695856 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtAppend(322,413) StmtAppend(322,363) StmtDelete(55) StmtDelete(90) (stored at: variant329)
+2695886 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/select/QueryParser.java:154: error: incompatible types: unexpected return value
+			return Integer.parseInt(indexS);
+			                       ^
+1 error
+
+2695886 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(349,280) StmtDelete(354) StmtAppend(359,179) StmtReplace(269,396) at variant330 fails to compile
+
+2695886 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtReplace(349,280) StmtDelete(354) StmtAppend(359,179) StmtReplace(269,396) (stored at: variant330)
+2696794 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 2.0 StmtReplace(351,221) (stored at: variant331)
+2697421 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 2.0 StmtDelete(185) (stored at: variant332)
+2698168 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 2.0 StmtReplace(52,55) StmtAppend(346,276) StmtDelete(245) StmtAppend(382,265) StmtAppend(404,187) (stored at: variant333)
+2698196 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/select/QueryParser.java:247: error: cannot find symbol
+        Validate.notEmpty(key);
+                          ^
+  symbol:   variable key
+  location: class QueryParser
+org/jsoup/select/QueryParser.java:251: error: cannot find symbol
+            if (key.startsWith("^"))
+                ^
+  symbol:   variable key
+  location: class QueryParser
+org/jsoup/select/QueryParser.java:252: error: cannot find symbol
+                evals.add(new Evaluator.AttributeStarting(key.substring(1)));
+                                                          ^
+  symbol:   variable key
+  location: class QueryParser
+org/jsoup/select/QueryParser.java:254: error: cannot find symbol
+                evals.add(new Evaluator.Attribute(key));
+                                                  ^
+  symbol:   variable key
+  location: class QueryParser
+org/jsoup/select/QueryParser.java:257: error: cannot find symbol
+                evals.add(new Evaluator.AttributeWithValue(key, cq.remainder()));
+                                                           ^
+  symbol:   variable key
+  location: class QueryParser
+org/jsoup/select/QueryParser.java:260: error: cannot find symbol
+                evals.add(new Evaluator.AttributeWithValueNot(key, cq.remainder()));
+                                                              ^
+  symbol:   variable key
+  location: class QueryParser
+org/jsoup/select/QueryParser.java:263: error: cannot find symbol
+                evals.add(new Evaluator.AttributeWithValueStarting(key, cq.remainder()));
+                                                                   ^
+  symbol:   variable key
+  location: class QueryParser
+org/jsoup/select/QueryParser.java:266: error: cannot find symbol
+                evals.add(new Evaluator.AttributeWithValueEnding(key, cq.remainder()));
+                                                                 ^
+  symbol:   variable key
+  location: class QueryParser
+org/jsoup/select/QueryParser.java:269: error: cannot find symbol
+                evals.add(new Evaluator.AttributeWithValueContaining(key, cq.remainder()));
+                                                                     ^
+  symbol:   variable key
+  location: class QueryParser
+org/jsoup/select/QueryParser.java:272: error: cannot find symbol
+                evals.add(new Evaluator.AttributeWithValueMatching(key, Pattern.compile(cq.remainder())));
+                                                                   ^
+  symbol:   variable key
+  location: class QueryParser
+10 errors
+
+2698197 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(229,223) StmtAppend(322,363) StmtDelete(309) StmtDelete(302) StmtReplace(292,311) StmtReplace(335,286) at variant334 fails to compile
+
+2698197 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtReplace(229,223) StmtAppend(322,363) StmtDelete(309) StmtDelete(302) StmtReplace(292,311) StmtReplace(335,286) (stored at: variant334)
+2698221 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/select/QueryParser.java:61: error: cannot find symbol
+            } else if (seenWhite) {
+                       ^
+  symbol:   variable seenWhite
+  location: class QueryParser
+org/jsoup/select/QueryParser.java:61: error: illegal start of type
+            } else if (seenWhite) {
+                      ^
+2 errors
+
+2698221 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(193,401) at variant335 fails to compile
+
+2698221 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtReplace(193,401) (stored at: variant335)
+2698251 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/TokenQueue.java:243: error: cannot find symbol
+        return data;
+               ^
+  symbol:   variable data
+  location: class TokenQueue
+1 error
+
+2698251 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(346,276) StmtAppend(398,311) StmtDelete(91) at variant336 fails to compile
+
+2698251 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtAppend(346,276) StmtAppend(398,311) StmtDelete(91) (stored at: variant336)
+2699039 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtAppend(379,198) StmtAppend(381,178) StmtReplace(339,306) StmtDelete(19) (stored at: variant337)
+2699812 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 1.0 StmtReplace(229,223) StmtAppend(283,294) StmtAppend(322,413) StmtAppend(322,363) StmtAppend(254,275) StmtDelete(81) (stored at: variant338)
+2700523 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 2.0 StmtDelete(293) (stored at: variant339)
+2700553 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/TokenQueue.java:301: error: non-static method remainingLength() cannot be referenced from a static context
+			return remainingLength() == 0;
+			       ^
+org/jsoup/parser/TokenQueue.java:301: error: incompatible types: boolean cannot be converted to String
+			return remainingLength() == 0;
+			                         ^
+2 errors
+
+2700553 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(130,3) at variant340 fails to compile
+
+2700553 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtReplace(130,3) (stored at: variant340)
+2701337 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 1.0 StmtReplace(285,279) StmtDelete(398) StmtAppend(86,82) (stored at: variant341)
+3210282 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtReplace(254,358) (stored at: variant342)
+3211075 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 2.0 StmtDelete(336) StmtDelete(421) (stored at: variant343)
+3403512 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtReplace(349,280) StmtAppend(427,302) StmtDelete(345) StmtAppend(199,305) StmtDelete(342) StmtDelete(272) (stored at: variant344)
+3404364 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 1.0 StmtReplace(228,261) (stored at: variant345)
+3405255 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtAppend(340,199) (stored at: variant346)
+3406124 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 1.0 StmtReplace(271,281) StmtAppend(377,390) StmtAppend(380,293) (stored at: variant347)
+3406940 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 2.0 StmtReplace(82,73) StmtReplace(88,159) (stored at: variant348)
+3407933 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 5 0.0 StmtDelete(398) StmtDelete(110) (stored at: variant349)
+3407933 [main] INFO clegoues.genprog4java.Search.Search  - search: generation6
+3409598 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 1.0 StmtReplace(52,55) StmtReplace(311,281) StmtReplace(27,149) StmtReplace(351,288) (stored at: variant350)
+3410402 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 1.0 StmtDelete(293) StmtAppend(115,119) (stored at: variant351)
+3411179 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 2.0 StmtDelete(203) StmtDelete(186) StmtReplace(395,285) (stored at: variant352)
+3411209 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/select/QueryParser.java:334: error: variable b might not have been initialized
+				evals.add(new Evaluator.IsNthLastChild(a, b));
+				                                          ^
+org/jsoup/select/QueryParser.java:336: error: variable b might not have been initialized
+				evals.add(new Evaluator.IsNthChild(a, b));
+				                                      ^
+2 errors
+
+3411209 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(52,55) StmtAppend(346,276) StmtDelete(245) StmtAppend(382,265) StmtAppend(404,187) StmtReplace(373,393) at variant353 fails to compile
+
+3411209 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtReplace(52,55) StmtAppend(346,276) StmtDelete(245) StmtAppend(382,265) StmtAppend(404,187) StmtReplace(373,393) (stored at: variant353)
+3412034 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 2.0 StmtReplace(82,73) StmtReplace(88,159) StmtReplace(274,300) (stored at: variant354)
+3412072 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/TokenQueue.java:334: error: cannot find symbol
+        return queue.substring(start, pos);
+                               ^
+  symbol:   variable start
+  location: class TokenQueue
+1 error
+
+3412072 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(351,221) StmtDelete(147) at variant355 fails to compile
+
+3412072 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtReplace(351,221) StmtDelete(147) (stored at: variant355)
+3412098 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/TokenQueue.java:330: error: incompatible types: boolean cannot be converted to String
+        matches(true);
+                ^
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+1 error
+
+3412098 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(82,73) StmtReplace(88,159) StmtReplace(148,287) at variant356 fails to compile
+
+3412098 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtReplace(82,73) StmtReplace(88,159) StmtReplace(148,287) (stored at: variant356)
+3412125 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/select/QueryParser.java:100: error: variable currentEval might not have been initialized
+            currentEval = new CombiningEvaluator.And(newEval, new StructuralEvaluator.ImmediateParent(currentEval));
+                                                                                                      ^
+org/jsoup/select/QueryParser.java:102: error: variable currentEval might not have been initialized
+            currentEval = new CombiningEvaluator.And(newEval, new StructuralEvaluator.Parent(currentEval));
+                                                                                             ^
+org/jsoup/select/QueryParser.java:104: error: variable currentEval might not have been initialized
+            currentEval = new CombiningEvaluator.And(newEval, new StructuralEvaluator.ImmediatePreviousSibling(currentEval));
+                                                                                                               ^
+org/jsoup/select/QueryParser.java:106: error: variable currentEval might not have been initialized
+            currentEval = new CombiningEvaluator.And(newEval, new StructuralEvaluator.PreviousSibling(currentEval));
+                                                                                                      ^
+org/jsoup/select/QueryParser.java:109: error: variable currentEval might not have been initialized
+            if (currentEval instanceof CombiningEvaluator.Or) {
+                ^
+org/jsoup/select/QueryParser.java:126: error: variable rootEval might not have been initialized
+            ((CombiningEvaluator.Or) rootEval).replaceRightMostEvaluator(currentEval);
+                                     ^
+6 errors
+
+3412125 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(349,280) StmtAppend(234,214) StmtAppend(322,298) StmtDelete(220) at variant357 fails to compile
+
+3412125 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtReplace(349,280) StmtAppend(234,214) StmtAppend(322,298) StmtDelete(220) (stored at: variant357)
+3412154 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/select/QueryParser.java:198: error: incompatible types: unexpected return value
+			return false;
+			       ^
+1 error
+
+3412154 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(346,276) StmtAppend(398,311) StmtDelete(149) StmtAppend(243,363) StmtReplace(308,39) at variant358 fails to compile
+
+3412154 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtAppend(346,276) StmtAppend(398,311) StmtDelete(149) StmtAppend(243,363) StmtReplace(308,39) (stored at: variant358)
+3412182 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/select/QueryParser.java:307: error: variable a might not have been initialized
+				evals.add(new Evaluator.IsNthLastOfType(a, b));
+				                                        ^
+org/jsoup/select/QueryParser.java:307: error: variable b might not have been initialized
+				evals.add(new Evaluator.IsNthLastOfType(a, b));
+				                                           ^
+org/jsoup/select/QueryParser.java:309: error: variable a might not have been initialized
+				evals.add(new Evaluator.IsNthOfType(a, b));
+				                                    ^
+org/jsoup/select/QueryParser.java:309: error: variable b might not have been initialized
+				evals.add(new Evaluator.IsNthOfType(a, b));
+				                                       ^
+org/jsoup/select/QueryParser.java:312: error: variable a might not have been initialized
+				evals.add(new Evaluator.IsNthLastChild(a, b));
+				                                       ^
+org/jsoup/select/QueryParser.java:312: error: variable b might not have been initialized
+				evals.add(new Evaluator.IsNthLastChild(a, b));
+				                                          ^
+org/jsoup/select/QueryParser.java:314: error: variable a might not have been initialized
+				evals.add(new Evaluator.IsNthChild(a, b));
+				                                   ^
+org/jsoup/select/QueryParser.java:314: error: variable b might not have been initialized
+				evals.add(new Evaluator.IsNthChild(a, b));
+				                                      ^
+8 errors
+
+3412182 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(82,73) StmtReplace(88,159) StmtReplace(383,361) at variant359 fails to compile
+
+3412182 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtReplace(82,73) StmtReplace(88,159) StmtReplace(383,361) (stored at: variant359)
+3413034 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 2.0 StmtReplace(82,73) StmtReplace(88,159) StmtReplace(341,198) (stored at: variant360)
+3413932 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 2.0 StmtDelete(336) StmtDelete(421) StmtAppend(410,280) (stored at: variant361)
+3414695 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 1.0 StmtDelete(341) StmtAppend(346,276) StmtDelete(245) StmtAppend(382,265) StmtReplace(242,223) StmtAppend(420,401) (stored at: variant362)
+3415480 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 2.0 StmtDelete(293) StmtReplace(354,355) (stored at: variant363)
+3416380 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtReplace(285,279) StmtDelete(398) StmtAppend(86,82) StmtAppend(382,262) (stored at: variant364)
+3416408 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/TokenQueue.java:73: error: unreachable statement
+		throw new IllegalStateException("Queue not long enough to consume sequence");
+		^
+1 error
+
+3416408 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(271,281) StmtAppend(377,390) StmtDelete(420) StmtReplace(388,362) StmtAppend(14,55) at variant365 fails to compile
+
+3416408 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtReplace(271,281) StmtAppend(377,390) StmtDelete(420) StmtReplace(388,362) StmtAppend(14,55) (stored at: variant365)
+3417299 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 1.0 StmtAppend(346,276) StmtAppend(398,311) StmtDelete(149) StmtAppend(243,363) StmtAppend(220,309) (stored at: variant366)
+3417975 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 2.0 StmtReplace(52,55) StmtAppend(346,276) StmtDelete(245) StmtAppend(382,265) StmtAppend(404,187) StmtAppend(378,273) (stored at: variant367)
+3418606 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 2.0 StmtReplace(52,55) StmtReplace(311,281) StmtReplace(27,149) StmtReplace(352,178) (stored at: variant368)
+3418762 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/TokenQueue.java:31: error: missing return statement
+	}
+	^
+1 error
+
+3418762 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(203) StmtDelete(186) StmtDelete(3) at variant369 fails to compile
+
+3418762 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtDelete(203) StmtDelete(186) StmtDelete(3) (stored at: variant369)
+3418786 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/select/QueryParser.java:328: error: cannot find symbol
+        Validate.notEmpty(subQuery, ":has(el) subselect must not be empty");
+                          ^
+  symbol:   variable subQuery
+  location: class QueryParser
+org/jsoup/select/QueryParser.java:329: error: cannot find symbol
+        evals.add(new StructuralEvaluator.Has(parse(subQuery)));
+                                                    ^
+  symbol:   variable subQuery
+  location: class QueryParser
+2 errors
+
+3418786 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(185) StmtAppend(402,281) at variant370 fails to compile
+
+3418786 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtDelete(185) StmtAppend(402,281) (stored at: variant370)
+3419789 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 1.0 StmtReplace(52,55) StmtReplace(311,281) StmtReplace(27,149) StmtReplace(301,312) (stored at: variant371)
+3420680 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 1.0 StmtDelete(336) StmtDelete(421) StmtAppend(105,121) (stored at: variant372)
+3421549 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 2.0 StmtDelete(293) StmtReplace(355,359) (stored at: variant373)
+3422423 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 2.0 StmtDelete(185) StmtDelete(123) (stored at: variant374)
+3422448 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/select/QueryParser.java:338: error: cannot find symbol
+        Validate.notEmpty(searchText, ":contains(text) query must not be empty");
+                          ^
+  symbol:   variable searchText
+  location: class QueryParser
+org/jsoup/select/QueryParser.java:340: error: cannot find symbol
+            evals.add(new Evaluator.ContainsOwnText(searchText));
+                                                    ^
+  symbol:   variable searchText
+  location: class QueryParser
+org/jsoup/select/QueryParser.java:342: error: cannot find symbol
+            evals.add(new Evaluator.ContainsText(searchText));
+                                                 ^
+  symbol:   variable searchText
+  location: class QueryParser
+3 errors
+
+3422448 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(52,55) StmtReplace(311,281) StmtReplace(27,149) StmtDelete(407) at variant375 fails to compile
+
+3422448 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtReplace(52,55) StmtReplace(311,281) StmtReplace(27,149) StmtDelete(407) (stored at: variant375)
+3423189 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 2.0 StmtDelete(341) StmtAppend(346,276) StmtDelete(245) StmtAppend(382,265) StmtAppend(218,401) StmtAppend(221,295) (stored at: variant376)
+3423967 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 2.0 StmtDelete(341) StmtAppend(346,276) StmtDelete(245) StmtAppend(382,265) StmtAppend(218,401) StmtAppend(279,261) (stored at: variant377)
+3423994 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/parser/TokenQueue.java:135: error: incompatible types: String cannot be converted to boolean
+		return queue.substring(start, pos);
+		                      ^
+1 error
+
+3423994 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(293) StmtReplace(41,146) at variant378 fails to compile
+
+3423994 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtDelete(293) StmtReplace(41,146) (stored at: variant378)
+3425109 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 1.0 StmtDelete(203) StmtDelete(186) StmtAppend(350,260) (stored at: variant379)
+3426021 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 2.0 StmtDelete(185) StmtReplace(346,206) (stored at: variant380)
+3426811 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 2.0 StmtDelete(341) StmtAppend(346,276) StmtDelete(245) StmtAppend(382,265) StmtAppend(218,401) StmtAppend(119,13) (stored at: variant381)
+3427690 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 1.0 StmtReplace(349,280) StmtAppend(234,214) StmtReplace(114,106) StmtAppend(245,285) (stored at: variant382)
+3428524 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 1.0 StmtDelete(293) StmtDelete(184) (stored at: variant383)
+3429270 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 2.0 StmtReplace(349,280) StmtAppend(234,214) StmtReplace(114,106) StmtDelete(185) (stored at: variant384)
+3429297 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/select/QueryParser.java:322: error: variable b might not have been initialized
+				evals.add(new Evaluator.IsNthLastOfType(a, b));
+				                                           ^
+org/jsoup/select/QueryParser.java:324: error: variable b might not have been initialized
+				evals.add(new Evaluator.IsNthOfType(a, b));
+				                                       ^
+org/jsoup/select/QueryParser.java:327: error: variable b might not have been initialized
+				evals.add(new Evaluator.IsNthLastChild(a, b));
+				                                          ^
+org/jsoup/select/QueryParser.java:329: error: variable b might not have been initialized
+				evals.add(new Evaluator.IsNthChild(a, b));
+				                                      ^
+4 errors
+
+3429297 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(199,305) StmtDelete(336) StmtAppend(338,348) StmtDelete(373) at variant385 fails to compile
+
+3429297 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtAppend(199,305) StmtDelete(336) StmtAppend(338,348) StmtDelete(373) (stored at: variant385)
+3525780 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 1.0 StmtDelete(203) StmtDelete(186) StmtDelete(286) (stored at: variant386)
+3526587 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 2.0 StmtReplace(52,55) StmtDelete(359) StmtDelete(421) StmtReplace(75,37) (stored at: variant387)
+3526614 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/select/QueryParser.java:374: error: cannot find symbol
+		} else if (mAB.matches()) {
+		           ^
+  symbol:   variable mAB
+  location: class QueryParser
+org/jsoup/select/QueryParser.java:375: error: cannot find symbol
+			a = mAB.group(3) != null ? Integer.parseInt(mAB.group(1).replaceFirst("^\\+", "")) : 1;
+			    ^
+  symbol:   variable mAB
+  location: class QueryParser
+org/jsoup/select/QueryParser.java:375: error: cannot find symbol
+			a = mAB.group(3) != null ? Integer.parseInt(mAB.group(1).replaceFirst("^\\+", "")) : 1;
+			                                            ^
+  symbol:   variable mAB
+  location: class QueryParser
+org/jsoup/select/QueryParser.java:376: error: cannot find symbol
+			b = mAB.group(4) != null ? Integer.parseInt(mAB.group(4).replaceFirst("^\\+", "")) : 0;
+			    ^
+  symbol:   variable mAB
+  location: class QueryParser
+org/jsoup/select/QueryParser.java:376: error: cannot find symbol
+			b = mAB.group(4) != null ? Integer.parseInt(mAB.group(4).replaceFirst("^\\+", "")) : 0;
+			                                            ^
+  symbol:   variable mAB
+  location: class QueryParser
+5 errors
+
+3526614 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(349,280) StmtAppend(234,214) StmtAppend(322,298) StmtReplace(367,298) at variant388 fails to compile
+
+3526614 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtReplace(349,280) StmtAppend(234,214) StmtAppend(322,298) StmtReplace(367,298) (stored at: variant388)
+3526636 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/select/QueryParser.java:356: error: incompatible types: unexpected return value
+			return evals.get(0);
+			                ^
+1 error
+
+3526637 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(351,221) StmtReplace(420,202) at variant389 fails to compile
+
+3526637 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtReplace(351,221) StmtReplace(420,202) (stored at: variant389)
+3526658 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/select/QueryParser.java:136: error: cannot find symbol
+                sq.append("(").append(tq.chompBalanced('(', ')')).append(")");
+                ^
+  symbol:   variable sq
+  location: class QueryParser
+org/jsoup/select/QueryParser.java:138: error: cannot find symbol
+                sq.append("[").append(tq.chompBalanced('[', ']')).append("]");
+                ^
+  symbol:   variable sq
+  location: class QueryParser
+org/jsoup/select/QueryParser.java:142: error: cannot find symbol
+                sq.append(tq.consume());
+                ^
+  symbol:   variable sq
+  location: class QueryParser
+org/jsoup/select/QueryParser.java:144: error: cannot find symbol
+        return sq.toString();
+               ^
+  symbol:   variable sq
+  location: class QueryParser
+4 errors
+
+3526658 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(248,363) at variant390 fails to compile
+
+3526658 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 0.0 StmtAppend(248,363) (stored at: variant390)
+3527537 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 6 2.0 StmtReplace(52,55) StmtReplace(311,281) StmtDelete(284) (stored at: variant391)

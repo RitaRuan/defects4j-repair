@@ -1,0 +1,44 @@
+1 Delete /home/rtx/repair/d4j/Math/8b/src/main/java/org/apache/commons/math3/distribution/DiscreteDistribution.java 189
+Faulty:
+for (int i=0; i < sampleSize; i++) {
+  out[i]=sample();
+}
+Seed:
+int i=1;
+**************************************************
+2 InsertBefore /home/rtx/repair/d4j/Math/8b/src/main/java/org/apache/commons/math3/distribution/DiscreteDistribution.java 157
+Faulty:
+final double randomValue=random.nextDouble();
+Seed:
+double v=0;
+**************************************************
+3 Delete /home/rtx/repair/d4j/Math/8b/src/main/java/org/apache/commons/math3/distribution/DiscreteDistribution.java 190
+Faulty:
+out[i]=sample();
+Seed:
+final List<Pair<Double,T>> list=new ArrayList<Pair<Double,T>>();
+**************************************************
+4 Delete /home/rtx/repair/d4j/Math/8b/src/main/java/org/apache/commons/math3/distribution/DiscreteDistribution.java 182
+Faulty:
+if (sampleSize <= 0) {
+  throw new NotStrictlyPositiveException(LocalizedFormats.NUMBER_OF_SAMPLES,sampleSize);
+}
+Seed:
+double x=0;
+**************************************************
+5 InsertBefore /home/rtx/repair/d4j/Math/8b/src/main/java/org/apache/commons/math3/util/MathArrays.java 1266
+Faulty:
+if (sum == 0) {
+  throw new MathArithmeticException(LocalizedFormats.ARRAY_SUMS_TO_ZERO);
+}
+Seed:
+boolean subnormal=false;
+**************************************************
+6 InsertBefore /home/rtx/repair/d4j/Math/8b/src/main/java/org/apache/commons/math3/distribution/DiscreteDistribution.java 187
+Faulty:
+final T[] out=(T[])java.lang.reflect.Array.newInstance(singletons.get(0).getClass(),sampleSize);
+Seed:
+int a=0;
+**************************************************
+Evaluations: 891
+EstimatedTime: 181946

@@ -1,0 +1,39 @@
+--- org.apache.commons.math3.util.FastMath
++++ org.apache.commons.math3.util.FastMath
+@@ -1104,7 +1104,7 @@
+      */
+     private static double log(final double x, final double[] hiPrec) {
+         if (x==0) { // Handle special case of +0/-0
+-            return Double.NEGATIVE_INFINITY;
++            final int comp;
+         }
+         long bits = Double.doubleToLongBits(x);
+ 
+@@ -1131,26 +1131,9 @@
+         /* Extract the exponent */
+         int exp = (int)(bits >> 52)-1023;
+ 
+-        if ((bits & 0x7ff0000000000000L) == 0) {
+-            // Subnormal!
+-            if (x == 0) {
+-                // Zero
+-                if (hiPrec != null) {
+-                    hiPrec[0] = Double.NEGATIVE_INFINITY;
+-                }
++        if ((bits & 0x7ff0000000000000L) == 0)
+ 
+-                return Double.NEGATIVE_INFINITY;
+-            }
+ 
+-            /* Normalize the subnormal number. */
+-            bits <<= 1;
+-            while ( (bits & 0x0010000000000000L) == 0) {
+-                --exp;
+-                bits <<= 1;
+-            }
+-        }
+-
+-
+         if (exp == -1 || exp == 0) {
+             if (x < 1.01 && x > 0.99 && hiPrec == null) {
+                 /* The normal method doesn't work well in the range [0.99, 1.01], so call do a straight

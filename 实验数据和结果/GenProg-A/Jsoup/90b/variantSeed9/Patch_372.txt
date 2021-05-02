@@ -1,0 +1,35 @@
+1 Delete /home/ubuntu/rtx/d4j/Jsoup/90b/src/main/java/org/jsoup/helper/HttpConnection.java 389
+Faulty:
+if (!looksLikeUtf8(bytes)) return val;
+Seed:
+return false;
+**************************************************
+2 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/90b/src/main/java/org/jsoup/helper/HttpConnection.java 425
+Faulty:
+while (i < end) {
+  i++;
+  o=input[i];
+  if ((o & 0xC0) != 0x80) {
+    return false;
+  }
+}
+Seed:
+String foundCharset=null;
+**************************************************
+3 Delete /home/ubuntu/rtx/d4j/Jsoup/90b/src/main/java/org/jsoup/helper/HttpConnection.java 426
+Faulty:
+i++;
+Seed:
+TransformerFactory tf=TransformerFactory.newInstance();
+**************************************************
+4 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/90b/src/main/java/org/jsoup/helper/HttpConnection.java 371
+Faulty:
+if (values.isEmpty()) {
+  values=new ArrayList<>();
+  headers.put(name,values);
+}
+Seed:
+Validate.notNull(value,"Data input stream must not be null");
+**************************************************
+Evaluations: 447
+EstimatedTime: 398718

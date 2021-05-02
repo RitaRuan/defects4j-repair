@@ -1,0 +1,20 @@
+1 Delete /home/ubuntu/rtx/d4j/Jsoup/90b/src/main/java/org/jsoup/helper/HttpConnection.java 425
+Faulty:
+while (i < end) {
+  i++;
+  o=input[i];
+  if ((o & 0xC0) != 0x80) {
+    return false;
+  }
+}
+Seed:
+int o=input[i];
+**************************************************
+2 Delete /home/ubuntu/rtx/d4j/Jsoup/90b/src/main/java/org/jsoup/helper/HttpConnection.java 389
+Faulty:
+if (!looksLikeUtf8(bytes)) return val;
+Seed:
+return false;
+**************************************************
+Evaluations: 83
+EstimatedTime: 72520

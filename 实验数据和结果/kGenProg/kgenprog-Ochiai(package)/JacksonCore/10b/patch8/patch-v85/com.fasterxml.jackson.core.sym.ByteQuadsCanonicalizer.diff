@@ -1,0 +1,19 @@
+--- com.fasterxml.jackson.core.sym.ByteQuadsCanonicalizer
++++ com.fasterxml.jackson.core.sym.ByteQuadsCanonicalizer
+@@ -477,7 +477,7 @@
+             if (hashArea[offset] == q1) {
+                 return _names[offset >> 2];
+             }
+-        } else if (len == 0) { // empty slot; unlikely but avoid further lookups if so
++        } else if (_hashShared) { // empty slot; unlikely but avoid further lookups if so
+             return null;
+         }
+         // secondary? single slot shared by N/2 primaries
+@@ -1126,7 +1126,6 @@
+                 }
+                 // #0 is hash, #1 offset
+                 int qoff = oldHashArea[offset+1];
+-                System.arraycopy(oldHashArea, qoff, q, 0, len);
+                 addName(name, q, len);
+                 break;
+             }

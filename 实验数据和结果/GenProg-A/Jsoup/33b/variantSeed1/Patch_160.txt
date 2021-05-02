@@ -1,0 +1,26 @@
+1 Replace /home/ubuntu/rtx/d4j/Jsoup/33b/src/main/java/org/jsoup/parser/HtmlTreeBuilder.java 99
+Faulty:
+currentToken=token;
+Seed:
+boolean isHexMode=reader.matchConsumeIgnoreCase("X");
+**************************************************
+2 Delete /home/ubuntu/rtx/d4j/Jsoup/33b/src/main/java/org/jsoup/parser/TokeniserState.java 1658
+Faulty:
+return;
+Seed:
+return new Parser(new HtmlTreeBuilder());
+**************************************************
+3 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/33b/src/main/java/org/jsoup/parser/HtmlTreeBuilder.java 187
+Faulty:
+if (tag.isKnownTag()) {
+  if (tag.isSelfClosing())   tokeniser.acknowledgeSelfClosingFlag();
+}
+ else {
+  tag.setSelfClosing();
+  tokeniser.acknowledgeSelfClosingFlag();
+}
+Seed:
+tokeniser=new Tokeniser(reader,errors);
+**************************************************
+Evaluations: 229
+EstimatedTime: 241876

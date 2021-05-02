@@ -1,0 +1,37 @@
+1 Replace /home/rtx/d4j/JacksonCore/11b/src/main/java/com/fasterxml/jackson/core/sym/ByteQuadsCanonicalizer.java 493
+Faulty:
+return null;
+Seed:
+_hashArea=Arrays.copyOf(_hashArea,_hashArea.length);
+**************************************************
+2 InsertBefore /home/rtx/d4j/JacksonCore/11b/src/main/java/com/fasterxml/jackson/core/sym/ByteQuadsCanonicalizer.java 1184
+Faulty:
+return;
+Seed:
+_spilloverEnd=_spilloverStart();
+**************************************************
+3 InsertBefore /home/rtx/d4j/JacksonCore/11b/src/main/java/com/fasterxml/jackson/core/sym/ByteQuadsCanonicalizer.java 1184
+Faulty:
+return;
+Seed:
+if (_parent != null && maybeDirty()) {
+  _parent.mergeChild(new TableInfo(this));
+  _hashShared=true;
+}
+**************************************************
+4 Delete /home/rtx/d4j/JacksonCore/11b/src/main/java/com/fasterxml/jackson/core/sym/ByteQuadsCanonicalizer.java 629
+Faulty:
+for (int end=offset + bucketSize; offset < end; offset+=4) {
+  int len=hashArea[offset + 3];
+  if ((q1 == hashArea[offset]) && (1 == len)) {
+    return _names[offset >> 2];
+  }
+  if (len == 0) {
+    return null;
+  }
+}
+Seed:
+_reportTooManyCollisions();
+**************************************************
+Evaluations: 62
+EstimatedTime: 191204

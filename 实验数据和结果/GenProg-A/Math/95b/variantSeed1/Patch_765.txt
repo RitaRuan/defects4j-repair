@@ -1,0 +1,16 @@
+1 Replace /home/ubuntu/rtx/d4j/Math/95b/src/java/org/apache/commons/math/distribution/FDistributionImpl.java 148
+Faulty:
+return ret;
+Seed:
+return 0;
+**************************************************
+2 InsertBefore /home/ubuntu/rtx/d4j/Math/95b/src/java/org/apache/commons/math/distribution/FDistributionImpl.java 106
+Faulty:
+return super.inverseCumulativeProbability(p);
+Seed:
+if (p == 1) {
+  return Double.POSITIVE_INFINITY;
+}
+**************************************************
+Evaluations: 976
+EstimatedTime: 459337

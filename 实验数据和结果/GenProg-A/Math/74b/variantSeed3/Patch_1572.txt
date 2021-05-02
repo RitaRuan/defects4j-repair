@@ -1,0 +1,2614 @@
+1 Replace /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 357
+Faulty:
+stepStart=Double.NaN;
+Seed:
+interpolator.reinitialize(y,forward);
+**************************************************
+2 Delete /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 243
+Faulty:
+while (!lastStep) {
+  interpolator.shift();
+  double error=0;
+  for (boolean loop=true; loop; ) {
+    stepSize=hNew;
+    final double stepEnd=stepStart + stepSize;
+    interpolator.setInterpolatedTime(stepEnd);
+    System.arraycopy(interpolator.getInterpolatedState(),0,yTmp,0,y0.length);
+    computeDerivatives(stepEnd,yTmp,yDot);
+    final double[] predictedScaled=new double[y0.length];
+    for (int j=0; j < y0.length; ++j) {
+      predictedScaled[j]=stepSize * yDot[j];
+    }
+    final Array2DRowRealMatrix nordsieckTmp=updateHighOrderDerivativesPhase1(nordsieck);
+    updateHighOrderDerivativesPhase2(scaled,predictedScaled,nordsieckTmp);
+    error=nordsieckTmp.walkInOptimizedOrder(new Corrector(y,predictedScaled,yTmp));
+    if (error <= 1.0) {
+      computeDerivatives(stepEnd,yTmp,yDot);
+      final double[] correctedScaled=new double[y0.length];
+      for (int j=0; j < y0.length; ++j) {
+        correctedScaled[j]=stepSize * yDot[j];
+      }
+      updateHighOrderDerivativesPhase2(predictedScaled,correctedScaled,nordsieckTmp);
+      interpolatorTmp.reinitialize(stepEnd,stepSize,correctedScaled,nordsieckTmp);
+      interpolatorTmp.storeTime(stepStart);
+      interpolatorTmp.shift();
+      interpolatorTmp.storeTime(stepEnd);
+      if (manager.evaluateStep(interpolatorTmp)) {
+        final double dt=manager.getEventTime() - stepStart;
+        if (Math.abs(dt) <= Math.ulp(stepStart)) {
+          loop=false;
+        }
+ else {
+          hNew=dt;
+          interpolator.rescale(hNew);
+        }
+      }
+ else {
+        scaled=correctedScaled;
+        nordsieck=nordsieckTmp;
+        interpolator.reinitialize(stepEnd,stepSize,scaled,nordsieck);
+        loop=false;
+      }
+    }
+ else {
+      final double factor=computeStepGrowShrinkFactor(error);
+      hNew=filterStep(stepSize * factor,forward,false);
+      interpolator.rescale(hNew);
+    }
+  }
+  final double nextStep=stepStart + stepSize;
+  System.arraycopy(yTmp,0,y,0,n);
+  interpolator.storeTime(nextStep);
+  manager.stepAccepted(nextStep,y);
+  lastStep=manager.stop();
+  for (  StepHandler handler : stepHandlers) {
+    interpolator.setInterpolatedTime(nextStep);
+    handler.handleStep(interpolator,lastStep);
+  }
+  stepStart=nextStep;
+  if (!lastStep && manager.reset(stepStart,y)) {
+    start(stepStart,y,t);
+    interpolator.reinitialize(stepStart,stepSize,scaled,nordsieck);
+  }
+  if (!lastStep) {
+    stepSize=filterStep(stepSize,forward,true);
+    final double factor=computeStepGrowShrinkFactor(error);
+    final double scaledH=stepSize * factor;
+    final double nextT=stepStart + scaledH;
+    final boolean nextIsLast=forward ? (nextT >= t) : (nextT <= t);
+    hNew=filterStep(scaledH,forward,nextIsLast);
+    interpolator.rescale(hNew);
+  }
+}
+Seed:
+setInterpolationControl(true,-1);
+**************************************************
+3 Replace /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 357
+Faulty:
+stepStart=Double.NaN;
+Seed:
+interpolator.reinitialize(y,forward);
+**************************************************
+4 Replace /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 286
+Faulty:
+interpolatorTmp.storeTime(stepStart);
+Seed:
+interpolatorTmp.storeTime(stepEnd);
+**************************************************
+5 Replace /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 282
+Faulty:
+updateHighOrderDerivativesPhase2(predictedScaled,correctedScaled,nordsieckTmp);
+Seed:
+lastStep=manager.stop();
+**************************************************
+6 InsertBefore /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 248
+Faulty:
+double error=0;
+Seed:
+final double[] scale=new double[y0.length];
+**************************************************
+7 InsertBefore /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 357
+Faulty:
+stepStart=Double.NaN;
+Seed:
+while (!lastStep) {
+  interpolator.shift();
+  double error=0;
+  for (boolean loop=true; loop; ) {
+    stepSize=hNew;
+    final double stepEnd=stepStart + stepSize;
+    interpolator.setInterpolatedTime(stepEnd);
+    System.arraycopy(interpolator.getInterpolatedState(),0,yTmp,0,y0.length);
+    computeDerivatives(stepEnd,yTmp,yDot);
+    final double[] predictedScaled=new double[y0.length];
+    for (int j=0; j < y0.length; ++j) {
+      predictedScaled[j]=stepSize * yDot[j];
+    }
+    final Array2DRowRealMatrix nordsieckTmp=updateHighOrderDerivativesPhase1(nordsieck);
+    updateHighOrderDerivativesPhase2(scaled,predictedScaled,nordsieckTmp);
+    error=nordsieckTmp.walkInOptimizedOrder(new Corrector(y,predictedScaled,yTmp));
+    if (error <= 1.0) {
+      computeDerivatives(stepEnd,yTmp,yDot);
+      final double[] correctedScaled=new double[y0.length];
+      for (int j=0; j < y0.length; ++j) {
+        correctedScaled[j]=stepSize * yDot[j];
+      }
+      updateHighOrderDerivativesPhase2(predictedScaled,correctedScaled,nordsieckTmp);
+      interpolatorTmp.reinitialize(stepEnd,stepSize,correctedScaled,nordsieckTmp);
+      interpolatorTmp.storeTime(stepStart);
+      interpolatorTmp.shift();
+      interpolatorTmp.storeTime(stepEnd);
+      if (manager.evaluateStep(interpolatorTmp)) {
+        final double dt=manager.getEventTime() - stepStart;
+        if (Math.abs(dt) <= Math.ulp(stepStart)) {
+          loop=false;
+        }
+ else {
+          hNew=dt;
+          interpolator.rescale(hNew);
+        }
+      }
+ else {
+        scaled=correctedScaled;
+        nordsieck=nordsieckTmp;
+        interpolator.reinitialize(stepEnd,stepSize,scaled,nordsieck);
+        loop=false;
+      }
+    }
+ else {
+      final double factor=computeStepGrowShrinkFactor(error);
+      hNew=filterStep(stepSize * factor,forward,false);
+      interpolator.rescale(hNew);
+    }
+  }
+  final double nextStep=stepStart + stepSize;
+  System.arraycopy(yTmp,0,y,0,n);
+  interpolator.storeTime(nextStep);
+  manager.stepAccepted(nextStep,y);
+  lastStep=manager.stop();
+  for (  StepHandler handler : stepHandlers) {
+    interpolator.setInterpolatedTime(nextStep);
+    handler.handleStep(interpolator,lastStep);
+  }
+  stepStart=nextStep;
+  if (!lastStep && manager.reset(stepStart,y)) {
+    start(stepStart,y,t);
+    interpolator.reinitialize(stepStart,stepSize,scaled,nordsieck);
+  }
+  if (!lastStep) {
+    stepSize=filterStep(stepSize,forward,true);
+    final double factor=computeStepGrowShrinkFactor(error);
+    final double scaledH=stepSize * factor;
+    final double nextT=stepStart + scaledH;
+    final boolean nextIsLast=forward ? (nextT >= t) : (nextT <= t);
+    hNew=filterStep(scaledH,forward,nextIsLast);
+    interpolator.rescale(hNew);
+  }
+}
+**************************************************
+8 Delete /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 291
+Faulty:
+if (Math.abs(dt) <= Math.ulp(stepStart)) {
+  loop=false;
+}
+ else {
+  hNew=dt;
+  interpolator.rescale(hNew);
+}
+Seed:
+setMaxGrowth(10.0);
+**************************************************
+9 Replace /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 286
+Faulty:
+interpolatorTmp.storeTime(stepStart);
+Seed:
+final double dt=eventsHandlersManager.getEventTime() - stepStart;
+**************************************************
+10 InsertBefore /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 255
+Faulty:
+interpolator.setInterpolatedTime(stepEnd);
+Seed:
+boolean lastStep=false;
+**************************************************
+11 InsertBefore /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 251
+Faulty:
+stepSize=hNew;
+Seed:
+interpolator.storeTime(stepStart + stepSize);
+**************************************************
+12 Replace /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 357
+Faulty:
+stepStart=Double.NaN;
+Seed:
+interpolator.reinitialize(y,forward);
+**************************************************
+13 Replace /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 286
+Faulty:
+interpolatorTmp.storeTime(stepStart);
+Seed:
+interpolatorTmp.storeTime(stepEnd);
+**************************************************
+14 Replace /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 282
+Faulty:
+updateHighOrderDerivativesPhase2(predictedScaled,correctedScaled,nordsieckTmp);
+Seed:
+lastStep=manager.stop();
+**************************************************
+15 InsertBefore /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 248
+Faulty:
+double error=0;
+Seed:
+final double[] scale=new double[y0.length];
+**************************************************
+16 InsertBefore /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 357
+Faulty:
+stepStart=Double.NaN;
+Seed:
+while (!lastStep) {
+  interpolator.shift();
+  double error=0;
+  for (boolean loop=true; loop; ) {
+    stepSize=hNew;
+    final double stepEnd=stepStart + stepSize;
+    interpolator.setInterpolatedTime(stepEnd);
+    System.arraycopy(interpolator.getInterpolatedState(),0,yTmp,0,y0.length);
+    computeDerivatives(stepEnd,yTmp,yDot);
+    final double[] predictedScaled=new double[y0.length];
+    for (int j=0; j < y0.length; ++j) {
+      predictedScaled[j]=stepSize * yDot[j];
+    }
+    final Array2DRowRealMatrix nordsieckTmp=updateHighOrderDerivativesPhase1(nordsieck);
+    updateHighOrderDerivativesPhase2(scaled,predictedScaled,nordsieckTmp);
+    error=nordsieckTmp.walkInOptimizedOrder(new Corrector(y,predictedScaled,yTmp));
+    if (error <= 1.0) {
+      computeDerivatives(stepEnd,yTmp,yDot);
+      final double[] correctedScaled=new double[y0.length];
+      for (int j=0; j < y0.length; ++j) {
+        correctedScaled[j]=stepSize * yDot[j];
+      }
+      updateHighOrderDerivativesPhase2(predictedScaled,correctedScaled,nordsieckTmp);
+      interpolatorTmp.reinitialize(stepEnd,stepSize,correctedScaled,nordsieckTmp);
+      interpolatorTmp.storeTime(stepStart);
+      interpolatorTmp.shift();
+      interpolatorTmp.storeTime(stepEnd);
+      if (manager.evaluateStep(interpolatorTmp)) {
+        final double dt=manager.getEventTime() - stepStart;
+        if (Math.abs(dt) <= Math.ulp(stepStart)) {
+          loop=false;
+        }
+ else {
+          hNew=dt;
+          interpolator.rescale(hNew);
+        }
+      }
+ else {
+        scaled=correctedScaled;
+        nordsieck=nordsieckTmp;
+        interpolator.reinitialize(stepEnd,stepSize,scaled,nordsieck);
+        loop=false;
+      }
+    }
+ else {
+      final double factor=computeStepGrowShrinkFactor(error);
+      hNew=filterStep(stepSize * factor,forward,false);
+      interpolator.rescale(hNew);
+    }
+  }
+  final double nextStep=stepStart + stepSize;
+  System.arraycopy(yTmp,0,y,0,n);
+  interpolator.storeTime(nextStep);
+  manager.stepAccepted(nextStep,y);
+  lastStep=manager.stop();
+  for (  StepHandler handler : stepHandlers) {
+    interpolator.setInterpolatedTime(nextStep);
+    handler.handleStep(interpolator,lastStep);
+  }
+  stepStart=nextStep;
+  if (!lastStep && manager.reset(stepStart,y)) {
+    start(stepStart,y,t);
+    interpolator.reinitialize(stepStart,stepSize,scaled,nordsieck);
+  }
+  if (!lastStep) {
+    stepSize=filterStep(stepSize,forward,true);
+    final double factor=computeStepGrowShrinkFactor(error);
+    final double scaledH=stepSize * factor;
+    final double nextT=stepStart + scaledH;
+    final boolean nextIsLast=forward ? (nextT >= t) : (nextT <= t);
+    hNew=filterStep(scaledH,forward,nextIsLast);
+    interpolator.rescale(hNew);
+  }
+}
+**************************************************
+17 Delete /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 291
+Faulty:
+if (Math.abs(dt) <= Math.ulp(stepStart)) {
+  loop=false;
+}
+ else {
+  hNew=dt;
+  interpolator.rescale(hNew);
+}
+Seed:
+setMaxGrowth(10.0);
+**************************************************
+18 InsertBefore /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 282
+Faulty:
+updateHighOrderDerivativesPhase2(predictedScaled,correctedScaled,nordsieckTmp);
+Seed:
+stepSize=Double.NaN;
+**************************************************
+19 InsertBefore /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 239
+Faulty:
+double hNew=stepSize;
+Seed:
+stepSize=t - stepStart;
+**************************************************
+20 Replace /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 249
+Faulty:
+for (boolean loop=true; loop; ) {
+  stepSize=hNew;
+  final double stepEnd=stepStart + stepSize;
+  interpolator.setInterpolatedTime(stepEnd);
+  System.arraycopy(interpolator.getInterpolatedState(),0,yTmp,0,y0.length);
+  computeDerivatives(stepEnd,yTmp,yDot);
+  final double[] predictedScaled=new double[y0.length];
+  for (int j=0; j < y0.length; ++j) {
+    predictedScaled[j]=stepSize * yDot[j];
+  }
+  final Array2DRowRealMatrix nordsieckTmp=updateHighOrderDerivativesPhase1(nordsieck);
+  updateHighOrderDerivativesPhase2(scaled,predictedScaled,nordsieckTmp);
+  error=nordsieckTmp.walkInOptimizedOrder(new Corrector(y,predictedScaled,yTmp));
+  if (error <= 1.0) {
+    computeDerivatives(stepEnd,yTmp,yDot);
+    final double[] correctedScaled=new double[y0.length];
+    for (int j=0; j < y0.length; ++j) {
+      correctedScaled[j]=stepSize * yDot[j];
+    }
+    updateHighOrderDerivativesPhase2(predictedScaled,correctedScaled,nordsieckTmp);
+    interpolatorTmp.reinitialize(stepEnd,stepSize,correctedScaled,nordsieckTmp);
+    interpolatorTmp.storeTime(stepStart);
+    interpolatorTmp.shift();
+    interpolatorTmp.storeTime(stepEnd);
+    if (manager.evaluateStep(interpolatorTmp)) {
+      final double dt=manager.getEventTime() - stepStart;
+      if (Math.abs(dt) <= Math.ulp(stepStart)) {
+        loop=false;
+      }
+ else {
+        hNew=dt;
+        interpolator.rescale(hNew);
+      }
+    }
+ else {
+      scaled=correctedScaled;
+      nordsieck=nordsieckTmp;
+      interpolator.reinitialize(stepEnd,stepSize,scaled,nordsieck);
+      loop=false;
+    }
+  }
+ else {
+    final double factor=computeStepGrowShrinkFactor(error);
+    hNew=filterStep(stepSize * factor,forward,false);
+    interpolator.rescale(hNew);
+  }
+}
+Seed:
+final double[] yTmpDot=new double[y0.length];
+**************************************************
+21 Replace /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 291
+Faulty:
+if (Math.abs(dt) <= Math.ulp(stepStart)) {
+  loop=false;
+}
+ else {
+  hNew=dt;
+  interpolator.rescale(hNew);
+}
+Seed:
+return false;
+**************************************************
+22 Replace /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 282
+Faulty:
+updateHighOrderDerivativesPhase2(predictedScaled,correctedScaled,nordsieckTmp);
+Seed:
+boolean firstStepAlreadyComputed=false;
+**************************************************
+23 Replace /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 290
+Faulty:
+final double dt=manager.getEventTime() - stepStart;
+Seed:
+interpolatorTmp.reinitialize(yTmp,forward);
+**************************************************
+24 Replace /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 246
+Faulty:
+interpolator.shift();
+Seed:
+final double[] correctedScaled=new double[y0.length];
+**************************************************
+25 Replace /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 282
+Faulty:
+updateHighOrderDerivativesPhase2(predictedScaled,correctedScaled,nordsieckTmp);
+Seed:
+lastStep=manager.stop();
+**************************************************
+26 InsertBefore /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 248
+Faulty:
+double error=0;
+Seed:
+final double[] scale=new double[y0.length];
+**************************************************
+27 InsertBefore /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 357
+Faulty:
+stepStart=Double.NaN;
+Seed:
+while (!lastStep) {
+  interpolator.shift();
+  double error=0;
+  for (boolean loop=true; loop; ) {
+    stepSize=hNew;
+    final double stepEnd=stepStart + stepSize;
+    interpolator.setInterpolatedTime(stepEnd);
+    System.arraycopy(interpolator.getInterpolatedState(),0,yTmp,0,y0.length);
+    computeDerivatives(stepEnd,yTmp,yDot);
+    final double[] predictedScaled=new double[y0.length];
+    for (int j=0; j < y0.length; ++j) {
+      predictedScaled[j]=stepSize * yDot[j];
+    }
+    final Array2DRowRealMatrix nordsieckTmp=updateHighOrderDerivativesPhase1(nordsieck);
+    updateHighOrderDerivativesPhase2(scaled,predictedScaled,nordsieckTmp);
+    error=nordsieckTmp.walkInOptimizedOrder(new Corrector(y,predictedScaled,yTmp));
+    if (error <= 1.0) {
+      computeDerivatives(stepEnd,yTmp,yDot);
+      final double[] correctedScaled=new double[y0.length];
+      for (int j=0; j < y0.length; ++j) {
+        correctedScaled[j]=stepSize * yDot[j];
+      }
+      updateHighOrderDerivativesPhase2(predictedScaled,correctedScaled,nordsieckTmp);
+      interpolatorTmp.reinitialize(stepEnd,stepSize,correctedScaled,nordsieckTmp);
+      interpolatorTmp.storeTime(stepStart);
+      interpolatorTmp.shift();
+      interpolatorTmp.storeTime(stepEnd);
+      if (manager.evaluateStep(interpolatorTmp)) {
+        final double dt=manager.getEventTime() - stepStart;
+        if (Math.abs(dt) <= Math.ulp(stepStart)) {
+          loop=false;
+        }
+ else {
+          hNew=dt;
+          interpolator.rescale(hNew);
+        }
+      }
+ else {
+        scaled=correctedScaled;
+        nordsieck=nordsieckTmp;
+        interpolator.reinitialize(stepEnd,stepSize,scaled,nordsieck);
+        loop=false;
+      }
+    }
+ else {
+      final double factor=computeStepGrowShrinkFactor(error);
+      hNew=filterStep(stepSize * factor,forward,false);
+      interpolator.rescale(hNew);
+    }
+  }
+  final double nextStep=stepStart + stepSize;
+  System.arraycopy(yTmp,0,y,0,n);
+  interpolator.storeTime(nextStep);
+  manager.stepAccepted(nextStep,y);
+  lastStep=manager.stop();
+  for (  StepHandler handler : stepHandlers) {
+    interpolator.setInterpolatedTime(nextStep);
+    handler.handleStep(interpolator,lastStep);
+  }
+  stepStart=nextStep;
+  if (!lastStep && manager.reset(stepStart,y)) {
+    start(stepStart,y,t);
+    interpolator.reinitialize(stepStart,stepSize,scaled,nordsieck);
+  }
+  if (!lastStep) {
+    stepSize=filterStep(stepSize,forward,true);
+    final double factor=computeStepGrowShrinkFactor(error);
+    final double scaledH=stepSize * factor;
+    final double nextT=stepStart + scaledH;
+    final boolean nextIsLast=forward ? (nextT >= t) : (nextT <= t);
+    hNew=filterStep(scaledH,forward,nextIsLast);
+    interpolator.rescale(hNew);
+  }
+}
+**************************************************
+28 Delete /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 291
+Faulty:
+if (Math.abs(dt) <= Math.ulp(stepStart)) {
+  loop=false;
+}
+ else {
+  hNew=dt;
+  interpolator.rescale(hNew);
+}
+Seed:
+setMaxGrowth(10.0);
+**************************************************
+29 InsertBefore /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 282
+Faulty:
+updateHighOrderDerivativesPhase2(predictedScaled,correctedScaled,nordsieckTmp);
+Seed:
+stepSize=Double.NaN;
+**************************************************
+30 InsertBefore /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 239
+Faulty:
+double hNew=stepSize;
+Seed:
+stepSize=t - stepStart;
+**************************************************
+31 Replace /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 249
+Faulty:
+for (boolean loop=true; loop; ) {
+  stepSize=hNew;
+  final double stepEnd=stepStart + stepSize;
+  interpolator.setInterpolatedTime(stepEnd);
+  System.arraycopy(interpolator.getInterpolatedState(),0,yTmp,0,y0.length);
+  computeDerivatives(stepEnd,yTmp,yDot);
+  final double[] predictedScaled=new double[y0.length];
+  for (int j=0; j < y0.length; ++j) {
+    predictedScaled[j]=stepSize * yDot[j];
+  }
+  final Array2DRowRealMatrix nordsieckTmp=updateHighOrderDerivativesPhase1(nordsieck);
+  updateHighOrderDerivativesPhase2(scaled,predictedScaled,nordsieckTmp);
+  error=nordsieckTmp.walkInOptimizedOrder(new Corrector(y,predictedScaled,yTmp));
+  if (error <= 1.0) {
+    computeDerivatives(stepEnd,yTmp,yDot);
+    final double[] correctedScaled=new double[y0.length];
+    for (int j=0; j < y0.length; ++j) {
+      correctedScaled[j]=stepSize * yDot[j];
+    }
+    updateHighOrderDerivativesPhase2(predictedScaled,correctedScaled,nordsieckTmp);
+    interpolatorTmp.reinitialize(stepEnd,stepSize,correctedScaled,nordsieckTmp);
+    interpolatorTmp.storeTime(stepStart);
+    interpolatorTmp.shift();
+    interpolatorTmp.storeTime(stepEnd);
+    if (manager.evaluateStep(interpolatorTmp)) {
+      final double dt=manager.getEventTime() - stepStart;
+      if (Math.abs(dt) <= Math.ulp(stepStart)) {
+        loop=false;
+      }
+ else {
+        hNew=dt;
+        interpolator.rescale(hNew);
+      }
+    }
+ else {
+      scaled=correctedScaled;
+      nordsieck=nordsieckTmp;
+      interpolator.reinitialize(stepEnd,stepSize,scaled,nordsieck);
+      loop=false;
+    }
+  }
+ else {
+    final double factor=computeStepGrowShrinkFactor(error);
+    hNew=filterStep(stepSize * factor,forward,false);
+    interpolator.rescale(hNew);
+  }
+}
+Seed:
+final double[] yTmpDot=new double[y0.length];
+**************************************************
+32 Replace /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 291
+Faulty:
+if (Math.abs(dt) <= Math.ulp(stepStart)) {
+  loop=false;
+}
+ else {
+  hNew=dt;
+  interpolator.rescale(hNew);
+}
+Seed:
+return false;
+**************************************************
+33 Delete /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 275
+Faulty:
+computeDerivatives(stepEnd,yTmp,yDot);
+Seed:
+final GraggBulirschStoerStepInterpolator gbsInterpolator=(GraggBulirschStoerStepInterpolator)interpolator;
+**************************************************
+34 Delete /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 256
+Faulty:
+System.arraycopy(interpolator.getInterpolatedState(),0,yTmp,0,y0.length);
+Seed:
+if (error <= 1.0) {
+  final double stepEnd=stepStart + stepSize;
+  interpolator.setInterpolatedTime(stepEnd);
+  System.arraycopy(interpolator.getInterpolatedState(),0,yTmp,0,y0.length);
+  computeDerivatives(stepEnd,yTmp,yDot);
+  final double[] predictedScaled=new double[y0.length];
+  for (int j=0; j < y0.length; ++j) {
+    predictedScaled[j]=stepSize * yDot[j];
+  }
+  final Array2DRowRealMatrix nordsieckTmp=updateHighOrderDerivativesPhase1(nordsieck);
+  updateHighOrderDerivativesPhase2(scaled,predictedScaled,nordsieckTmp);
+  interpolatorTmp.reinitialize(stepEnd,stepSize,predictedScaled,nordsieckTmp);
+  interpolatorTmp.storeTime(stepStart);
+  interpolatorTmp.shift();
+  interpolatorTmp.storeTime(stepEnd);
+  if (manager.evaluateStep(interpolatorTmp)) {
+    final double dt=manager.getEventTime() - stepStart;
+    if (Math.abs(dt) <= Math.ulp(stepStart)) {
+      loop=false;
+    }
+ else {
+      hNew=dt;
+      interpolator.rescale(hNew);
+    }
+  }
+ else {
+    scaled=predictedScaled;
+    nordsieck=nordsieckTmp;
+    interpolator.reinitialize(stepEnd,stepSize,scaled,nordsieck);
+    loop=false;
+  }
+}
+ else {
+  final double factor=computeStepGrowShrinkFactor(error);
+  hNew=filterStep(stepSize * factor,forward,false);
+  interpolator.rescale(hNew);
+}
+**************************************************
+35 InsertBefore /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 359
+Faulty:
+return stopTime;
+Seed:
+System.arraycopy(yTmp,0,y,0,y0.length);
+**************************************************
+36 Delete /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 262
+Faulty:
+final double[] predictedScaled=new double[y0.length];
+Seed:
+return new GillStepInterpolator(this);
+**************************************************
+37 InsertBefore /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 359
+Faulty:
+return stopTime;
+Seed:
+if (!forward) {
+  hNew=-hNew;
+}
+**************************************************
+38 Replace /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 291
+Faulty:
+if (Math.abs(dt) <= Math.ulp(stepStart)) {
+  loop=false;
+}
+ else {
+  hNew=dt;
+  interpolator.rescale(hNew);
+}
+Seed:
+return false;
+**************************************************
+39 Delete /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 275
+Faulty:
+computeDerivatives(stepEnd,yTmp,yDot);
+Seed:
+final GraggBulirschStoerStepInterpolator gbsInterpolator=(GraggBulirschStoerStepInterpolator)interpolator;
+**************************************************
+40 Delete /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 256
+Faulty:
+System.arraycopy(interpolator.getInterpolatedState(),0,yTmp,0,y0.length);
+Seed:
+if (error <= 1.0) {
+  final double stepEnd=stepStart + stepSize;
+  interpolator.setInterpolatedTime(stepEnd);
+  System.arraycopy(interpolator.getInterpolatedState(),0,yTmp,0,y0.length);
+  computeDerivatives(stepEnd,yTmp,yDot);
+  final double[] predictedScaled=new double[y0.length];
+  for (int j=0; j < y0.length; ++j) {
+    predictedScaled[j]=stepSize * yDot[j];
+  }
+  final Array2DRowRealMatrix nordsieckTmp=updateHighOrderDerivativesPhase1(nordsieck);
+  updateHighOrderDerivativesPhase2(scaled,predictedScaled,nordsieckTmp);
+  interpolatorTmp.reinitialize(stepEnd,stepSize,predictedScaled,nordsieckTmp);
+  interpolatorTmp.storeTime(stepStart);
+  interpolatorTmp.shift();
+  interpolatorTmp.storeTime(stepEnd);
+  if (manager.evaluateStep(interpolatorTmp)) {
+    final double dt=manager.getEventTime() - stepStart;
+    if (Math.abs(dt) <= Math.ulp(stepStart)) {
+      loop=false;
+    }
+ else {
+      hNew=dt;
+      interpolator.rescale(hNew);
+    }
+  }
+ else {
+    scaled=predictedScaled;
+    nordsieck=nordsieckTmp;
+    interpolator.reinitialize(stepEnd,stepSize,scaled,nordsieck);
+    loop=false;
+  }
+}
+ else {
+  final double factor=computeStepGrowShrinkFactor(error);
+  hNew=filterStep(stepSize * factor,forward,false);
+  interpolator.rescale(hNew);
+}
+**************************************************
+41 InsertBefore /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 359
+Faulty:
+return stopTime;
+Seed:
+System.arraycopy(yTmp,0,y,0,y0.length);
+**************************************************
+42 Delete /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 262
+Faulty:
+final double[] predictedScaled=new double[y0.length];
+Seed:
+return new GillStepInterpolator(this);
+**************************************************
+43 InsertBefore /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 359
+Faulty:
+return stopTime;
+Seed:
+if (!forward) {
+  hNew=-hNew;
+}
+**************************************************
+44 InsertBefore /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 285
+Faulty:
+interpolatorTmp.reinitialize(stepEnd,stepSize,correctedScaled,nordsieckTmp);
+Seed:
+this.vecAbsoluteTolerance=vecAbsoluteTolerance.clone();
+**************************************************
+45 InsertBefore /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdaptiveStepsizeIntegrator.java 292
+Faulty:
+filteredH=maxStep;
+Seed:
+this.initialStep=-1.0;
+**************************************************
+46 Replace /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 286
+Faulty:
+interpolatorTmp.storeTime(stepStart);
+Seed:
+interpolatorTmp.storeTime(stepEnd);
+**************************************************
+47 Replace /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 282
+Faulty:
+updateHighOrderDerivativesPhase2(predictedScaled,correctedScaled,nordsieckTmp);
+Seed:
+lastStep=manager.stop();
+**************************************************
+48 InsertBefore /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 248
+Faulty:
+double error=0;
+Seed:
+final double[] scale=new double[y0.length];
+**************************************************
+49 InsertBefore /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 357
+Faulty:
+stepStart=Double.NaN;
+Seed:
+while (!lastStep) {
+  interpolator.shift();
+  double error=0;
+  for (boolean loop=true; loop; ) {
+    stepSize=hNew;
+    final double stepEnd=stepStart + stepSize;
+    interpolator.setInterpolatedTime(stepEnd);
+    System.arraycopy(interpolator.getInterpolatedState(),0,yTmp,0,y0.length);
+    computeDerivatives(stepEnd,yTmp,yDot);
+    final double[] predictedScaled=new double[y0.length];
+    for (int j=0; j < y0.length; ++j) {
+      predictedScaled[j]=stepSize * yDot[j];
+    }
+    final Array2DRowRealMatrix nordsieckTmp=updateHighOrderDerivativesPhase1(nordsieck);
+    updateHighOrderDerivativesPhase2(scaled,predictedScaled,nordsieckTmp);
+    error=nordsieckTmp.walkInOptimizedOrder(new Corrector(y,predictedScaled,yTmp));
+    if (error <= 1.0) {
+      computeDerivatives(stepEnd,yTmp,yDot);
+      final double[] correctedScaled=new double[y0.length];
+      for (int j=0; j < y0.length; ++j) {
+        correctedScaled[j]=stepSize * yDot[j];
+      }
+      updateHighOrderDerivativesPhase2(predictedScaled,correctedScaled,nordsieckTmp);
+      interpolatorTmp.reinitialize(stepEnd,stepSize,correctedScaled,nordsieckTmp);
+      interpolatorTmp.storeTime(stepStart);
+      interpolatorTmp.shift();
+      interpolatorTmp.storeTime(stepEnd);
+      if (manager.evaluateStep(interpolatorTmp)) {
+        final double dt=manager.getEventTime() - stepStart;
+        if (Math.abs(dt) <= Math.ulp(stepStart)) {
+          loop=false;
+        }
+ else {
+          hNew=dt;
+          interpolator.rescale(hNew);
+        }
+      }
+ else {
+        scaled=correctedScaled;
+        nordsieck=nordsieckTmp;
+        interpolator.reinitialize(stepEnd,stepSize,scaled,nordsieck);
+        loop=false;
+      }
+    }
+ else {
+      final double factor=computeStepGrowShrinkFactor(error);
+      hNew=filterStep(stepSize * factor,forward,false);
+      interpolator.rescale(hNew);
+    }
+  }
+  final double nextStep=stepStart + stepSize;
+  System.arraycopy(yTmp,0,y,0,n);
+  interpolator.storeTime(nextStep);
+  manager.stepAccepted(nextStep,y);
+  lastStep=manager.stop();
+  for (  StepHandler handler : stepHandlers) {
+    interpolator.setInterpolatedTime(nextStep);
+    handler.handleStep(interpolator,lastStep);
+  }
+  stepStart=nextStep;
+  if (!lastStep && manager.reset(stepStart,y)) {
+    start(stepStart,y,t);
+    interpolator.reinitialize(stepStart,stepSize,scaled,nordsieck);
+  }
+  if (!lastStep) {
+    stepSize=filterStep(stepSize,forward,true);
+    final double factor=computeStepGrowShrinkFactor(error);
+    final double scaledH=stepSize * factor;
+    final double nextT=stepStart + scaledH;
+    final boolean nextIsLast=forward ? (nextT >= t) : (nextT <= t);
+    hNew=filterStep(scaledH,forward,nextIsLast);
+    interpolator.rescale(hNew);
+  }
+}
+**************************************************
+50 Delete /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 291
+Faulty:
+if (Math.abs(dt) <= Math.ulp(stepStart)) {
+  loop=false;
+}
+ else {
+  hNew=dt;
+  interpolator.rescale(hNew);
+}
+Seed:
+setMaxGrowth(10.0);
+**************************************************
+51 InsertBefore /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 282
+Faulty:
+updateHighOrderDerivativesPhase2(predictedScaled,correctedScaled,nordsieckTmp);
+Seed:
+stepSize=Double.NaN;
+**************************************************
+52 InsertBefore /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdaptiveStepsizeIntegrator.java 292
+Faulty:
+filteredH=maxStep;
+Seed:
+this.initialStep=-1.0;
+**************************************************
+53 Delete /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 264
+Faulty:
+predictedScaled[j]=stepSize * yDot[j];
+Seed:
+final double[] predictedScaled=new double[y0.length];
+**************************************************
+54 InsertBefore /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 282
+Faulty:
+updateHighOrderDerivativesPhase2(predictedScaled,correctedScaled,nordsieckTmp);
+Seed:
+stepSize=Double.NaN;
+**************************************************
+55 InsertBefore /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdaptiveStepsizeIntegrator.java 292
+Faulty:
+filteredH=maxStep;
+Seed:
+this.initialStep=-1.0;
+**************************************************
+56 Delete /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 264
+Faulty:
+predictedScaled[j]=stepSize * yDot[j];
+Seed:
+final double[] predictedScaled=new double[y0.length];
+**************************************************
+57 Replace /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 286
+Faulty:
+interpolatorTmp.storeTime(stepStart);
+Seed:
+final double dt=eventsHandlersManager.getEventTime() - stepStart;
+**************************************************
+58 InsertBefore /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 279
+Faulty:
+for (int j=0; j < y0.length; ++j) {
+  correctedScaled[j]=stepSize * yDot[j];
+}
+Seed:
+final double tol=(vecRelativeTolerance == null) ? scalRelativeTolerance : vecRelativeTolerance[0];
+**************************************************
+59 Replace /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 286
+Faulty:
+interpolatorTmp.storeTime(stepStart);
+Seed:
+final double dt=eventsHandlersManager.getEventTime() - stepStart;
+**************************************************
+60 InsertBefore /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 255
+Faulty:
+interpolator.setInterpolatedTime(stepEnd);
+Seed:
+boolean lastStep=false;
+**************************************************
+61 InsertBefore /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 251
+Faulty:
+stepSize=hNew;
+Seed:
+interpolator.storeTime(stepStart + stepSize);
+**************************************************
+62 Replace /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 357
+Faulty:
+stepStart=Double.NaN;
+Seed:
+interpolator.reinitialize(y,forward);
+**************************************************
+63 Replace /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 286
+Faulty:
+interpolatorTmp.storeTime(stepStart);
+Seed:
+interpolatorTmp.storeTime(stepEnd);
+**************************************************
+64 Replace /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 282
+Faulty:
+updateHighOrderDerivativesPhase2(predictedScaled,correctedScaled,nordsieckTmp);
+Seed:
+lastStep=manager.stop();
+**************************************************
+65 InsertBefore /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 248
+Faulty:
+double error=0;
+Seed:
+final double[] scale=new double[y0.length];
+**************************************************
+66 InsertBefore /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 357
+Faulty:
+stepStart=Double.NaN;
+Seed:
+while (!lastStep) {
+  interpolator.shift();
+  double error=0;
+  for (boolean loop=true; loop; ) {
+    stepSize=hNew;
+    final double stepEnd=stepStart + stepSize;
+    interpolator.setInterpolatedTime(stepEnd);
+    System.arraycopy(interpolator.getInterpolatedState(),0,yTmp,0,y0.length);
+    computeDerivatives(stepEnd,yTmp,yDot);
+    final double[] predictedScaled=new double[y0.length];
+    for (int j=0; j < y0.length; ++j) {
+      predictedScaled[j]=stepSize * yDot[j];
+    }
+    final Array2DRowRealMatrix nordsieckTmp=updateHighOrderDerivativesPhase1(nordsieck);
+    updateHighOrderDerivativesPhase2(scaled,predictedScaled,nordsieckTmp);
+    error=nordsieckTmp.walkInOptimizedOrder(new Corrector(y,predictedScaled,yTmp));
+    if (error <= 1.0) {
+      computeDerivatives(stepEnd,yTmp,yDot);
+      final double[] correctedScaled=new double[y0.length];
+      for (int j=0; j < y0.length; ++j) {
+        correctedScaled[j]=stepSize * yDot[j];
+      }
+      updateHighOrderDerivativesPhase2(predictedScaled,correctedScaled,nordsieckTmp);
+      interpolatorTmp.reinitialize(stepEnd,stepSize,correctedScaled,nordsieckTmp);
+      interpolatorTmp.storeTime(stepStart);
+      interpolatorTmp.shift();
+      interpolatorTmp.storeTime(stepEnd);
+      if (manager.evaluateStep(interpolatorTmp)) {
+        final double dt=manager.getEventTime() - stepStart;
+        if (Math.abs(dt) <= Math.ulp(stepStart)) {
+          loop=false;
+        }
+ else {
+          hNew=dt;
+          interpolator.rescale(hNew);
+        }
+      }
+ else {
+        scaled=correctedScaled;
+        nordsieck=nordsieckTmp;
+        interpolator.reinitialize(stepEnd,stepSize,scaled,nordsieck);
+        loop=false;
+      }
+    }
+ else {
+      final double factor=computeStepGrowShrinkFactor(error);
+      hNew=filterStep(stepSize * factor,forward,false);
+      interpolator.rescale(hNew);
+    }
+  }
+  final double nextStep=stepStart + stepSize;
+  System.arraycopy(yTmp,0,y,0,n);
+  interpolator.storeTime(nextStep);
+  manager.stepAccepted(nextStep,y);
+  lastStep=manager.stop();
+  for (  StepHandler handler : stepHandlers) {
+    interpolator.setInterpolatedTime(nextStep);
+    handler.handleStep(interpolator,lastStep);
+  }
+  stepStart=nextStep;
+  if (!lastStep && manager.reset(stepStart,y)) {
+    start(stepStart,y,t);
+    interpolator.reinitialize(stepStart,stepSize,scaled,nordsieck);
+  }
+  if (!lastStep) {
+    stepSize=filterStep(stepSize,forward,true);
+    final double factor=computeStepGrowShrinkFactor(error);
+    final double scaledH=stepSize * factor;
+    final double nextT=stepStart + scaledH;
+    final boolean nextIsLast=forward ? (nextT >= t) : (nextT <= t);
+    hNew=filterStep(scaledH,forward,nextIsLast);
+    interpolator.rescale(hNew);
+  }
+}
+**************************************************
+67 Delete /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 291
+Faulty:
+if (Math.abs(dt) <= Math.ulp(stepStart)) {
+  loop=false;
+}
+ else {
+  hNew=dt;
+  interpolator.rescale(hNew);
+}
+Seed:
+setMaxGrowth(10.0);
+**************************************************
+68 InsertBefore /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 282
+Faulty:
+updateHighOrderDerivativesPhase2(predictedScaled,correctedScaled,nordsieckTmp);
+Seed:
+stepSize=Double.NaN;
+**************************************************
+69 InsertBefore /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 239
+Faulty:
+double hNew=stepSize;
+Seed:
+stepSize=t - stepStart;
+**************************************************
+70 Replace /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 249
+Faulty:
+for (boolean loop=true; loop; ) {
+  stepSize=hNew;
+  final double stepEnd=stepStart + stepSize;
+  interpolator.setInterpolatedTime(stepEnd);
+  System.arraycopy(interpolator.getInterpolatedState(),0,yTmp,0,y0.length);
+  computeDerivatives(stepEnd,yTmp,yDot);
+  final double[] predictedScaled=new double[y0.length];
+  for (int j=0; j < y0.length; ++j) {
+    predictedScaled[j]=stepSize * yDot[j];
+  }
+  final Array2DRowRealMatrix nordsieckTmp=updateHighOrderDerivativesPhase1(nordsieck);
+  updateHighOrderDerivativesPhase2(scaled,predictedScaled,nordsieckTmp);
+  error=nordsieckTmp.walkInOptimizedOrder(new Corrector(y,predictedScaled,yTmp));
+  if (error <= 1.0) {
+    computeDerivatives(stepEnd,yTmp,yDot);
+    final double[] correctedScaled=new double[y0.length];
+    for (int j=0; j < y0.length; ++j) {
+      correctedScaled[j]=stepSize * yDot[j];
+    }
+    updateHighOrderDerivativesPhase2(predictedScaled,correctedScaled,nordsieckTmp);
+    interpolatorTmp.reinitialize(stepEnd,stepSize,correctedScaled,nordsieckTmp);
+    interpolatorTmp.storeTime(stepStart);
+    interpolatorTmp.shift();
+    interpolatorTmp.storeTime(stepEnd);
+    if (manager.evaluateStep(interpolatorTmp)) {
+      final double dt=manager.getEventTime() - stepStart;
+      if (Math.abs(dt) <= Math.ulp(stepStart)) {
+        loop=false;
+      }
+ else {
+        hNew=dt;
+        interpolator.rescale(hNew);
+      }
+    }
+ else {
+      scaled=correctedScaled;
+      nordsieck=nordsieckTmp;
+      interpolator.reinitialize(stepEnd,stepSize,scaled,nordsieck);
+      loop=false;
+    }
+  }
+ else {
+    final double factor=computeStepGrowShrinkFactor(error);
+    hNew=filterStep(stepSize * factor,forward,false);
+    interpolator.rescale(hNew);
+  }
+}
+Seed:
+final double[] yTmpDot=new double[y0.length];
+**************************************************
+71 Replace /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 291
+Faulty:
+if (Math.abs(dt) <= Math.ulp(stepStart)) {
+  loop=false;
+}
+ else {
+  hNew=dt;
+  interpolator.rescale(hNew);
+}
+Seed:
+return false;
+**************************************************
+72 Delete /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 275
+Faulty:
+computeDerivatives(stepEnd,yTmp,yDot);
+Seed:
+final GraggBulirschStoerStepInterpolator gbsInterpolator=(GraggBulirschStoerStepInterpolator)interpolator;
+**************************************************
+73 Delete /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 256
+Faulty:
+System.arraycopy(interpolator.getInterpolatedState(),0,yTmp,0,y0.length);
+Seed:
+if (error <= 1.0) {
+  final double stepEnd=stepStart + stepSize;
+  interpolator.setInterpolatedTime(stepEnd);
+  System.arraycopy(interpolator.getInterpolatedState(),0,yTmp,0,y0.length);
+  computeDerivatives(stepEnd,yTmp,yDot);
+  final double[] predictedScaled=new double[y0.length];
+  for (int j=0; j < y0.length; ++j) {
+    predictedScaled[j]=stepSize * yDot[j];
+  }
+  final Array2DRowRealMatrix nordsieckTmp=updateHighOrderDerivativesPhase1(nordsieck);
+  updateHighOrderDerivativesPhase2(scaled,predictedScaled,nordsieckTmp);
+  interpolatorTmp.reinitialize(stepEnd,stepSize,predictedScaled,nordsieckTmp);
+  interpolatorTmp.storeTime(stepStart);
+  interpolatorTmp.shift();
+  interpolatorTmp.storeTime(stepEnd);
+  if (manager.evaluateStep(interpolatorTmp)) {
+    final double dt=manager.getEventTime() - stepStart;
+    if (Math.abs(dt) <= Math.ulp(stepStart)) {
+      loop=false;
+    }
+ else {
+      hNew=dt;
+      interpolator.rescale(hNew);
+    }
+  }
+ else {
+    scaled=predictedScaled;
+    nordsieck=nordsieckTmp;
+    interpolator.reinitialize(stepEnd,stepSize,scaled,nordsieck);
+    loop=false;
+  }
+}
+ else {
+  final double factor=computeStepGrowShrinkFactor(error);
+  hNew=filterStep(stepSize * factor,forward,false);
+  interpolator.rescale(hNew);
+}
+**************************************************
+74 InsertBefore /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 359
+Faulty:
+return stopTime;
+Seed:
+System.arraycopy(yTmp,0,y,0,y0.length);
+**************************************************
+75 Delete /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 262
+Faulty:
+final double[] predictedScaled=new double[y0.length];
+Seed:
+return new GillStepInterpolator(this);
+**************************************************
+76 InsertBefore /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 359
+Faulty:
+return stopTime;
+Seed:
+if (!forward) {
+  hNew=-hNew;
+}
+**************************************************
+77 Replace /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 310
+Faulty:
+hNew=filterStep(stepSize * factor,forward,false);
+Seed:
+double yDotOnScale2=0;
+**************************************************
+78 Replace /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 249
+Faulty:
+for (boolean loop=true; loop; ) {
+  stepSize=hNew;
+  final double stepEnd=stepStart + stepSize;
+  interpolator.setInterpolatedTime(stepEnd);
+  System.arraycopy(interpolator.getInterpolatedState(),0,yTmp,0,y0.length);
+  computeDerivatives(stepEnd,yTmp,yDot);
+  final double[] predictedScaled=new double[y0.length];
+  for (int j=0; j < y0.length; ++j) {
+    predictedScaled[j]=stepSize * yDot[j];
+  }
+  final Array2DRowRealMatrix nordsieckTmp=updateHighOrderDerivativesPhase1(nordsieck);
+  updateHighOrderDerivativesPhase2(scaled,predictedScaled,nordsieckTmp);
+  error=nordsieckTmp.walkInOptimizedOrder(new Corrector(y,predictedScaled,yTmp));
+  if (error <= 1.0) {
+    computeDerivatives(stepEnd,yTmp,yDot);
+    final double[] correctedScaled=new double[y0.length];
+    for (int j=0; j < y0.length; ++j) {
+      correctedScaled[j]=stepSize * yDot[j];
+    }
+    updateHighOrderDerivativesPhase2(predictedScaled,correctedScaled,nordsieckTmp);
+    interpolatorTmp.reinitialize(stepEnd,stepSize,correctedScaled,nordsieckTmp);
+    interpolatorTmp.storeTime(stepStart);
+    interpolatorTmp.shift();
+    interpolatorTmp.storeTime(stepEnd);
+    if (manager.evaluateStep(interpolatorTmp)) {
+      final double dt=manager.getEventTime() - stepStart;
+      if (Math.abs(dt) <= Math.ulp(stepStart)) {
+        loop=false;
+      }
+ else {
+        hNew=dt;
+        interpolator.rescale(hNew);
+      }
+    }
+ else {
+      scaled=correctedScaled;
+      nordsieck=nordsieckTmp;
+      interpolator.reinitialize(stepEnd,stepSize,scaled,nordsieck);
+      loop=false;
+    }
+  }
+ else {
+    final double factor=computeStepGrowShrinkFactor(error);
+    hNew=filterStep(stepSize * factor,forward,false);
+    interpolator.rescale(hNew);
+  }
+}
+Seed:
+boolean lastStep=false;
+**************************************************
+79 Delete /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 310
+Faulty:
+hNew=filterStep(stepSize * factor,forward,false);
+Seed:
+this.scalRelativeTolerance=0;
+**************************************************
+80 InsertBefore /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 243
+Faulty:
+while (!lastStep) {
+  interpolator.shift();
+  double error=0;
+  for (boolean loop=true; loop; ) {
+    stepSize=hNew;
+    final double stepEnd=stepStart + stepSize;
+    interpolator.setInterpolatedTime(stepEnd);
+    System.arraycopy(interpolator.getInterpolatedState(),0,yTmp,0,y0.length);
+    computeDerivatives(stepEnd,yTmp,yDot);
+    final double[] predictedScaled=new double[y0.length];
+    for (int j=0; j < y0.length; ++j) {
+      predictedScaled[j]=stepSize * yDot[j];
+    }
+    final Array2DRowRealMatrix nordsieckTmp=updateHighOrderDerivativesPhase1(nordsieck);
+    updateHighOrderDerivativesPhase2(scaled,predictedScaled,nordsieckTmp);
+    error=nordsieckTmp.walkInOptimizedOrder(new Corrector(y,predictedScaled,yTmp));
+    if (error <= 1.0) {
+      computeDerivatives(stepEnd,yTmp,yDot);
+      final double[] correctedScaled=new double[y0.length];
+      for (int j=0; j < y0.length; ++j) {
+        correctedScaled[j]=stepSize * yDot[j];
+      }
+      updateHighOrderDerivativesPhase2(predictedScaled,correctedScaled,nordsieckTmp);
+      interpolatorTmp.reinitialize(stepEnd,stepSize,correctedScaled,nordsieckTmp);
+      interpolatorTmp.storeTime(stepStart);
+      interpolatorTmp.shift();
+      interpolatorTmp.storeTime(stepEnd);
+      if (manager.evaluateStep(interpolatorTmp)) {
+        final double dt=manager.getEventTime() - stepStart;
+        if (Math.abs(dt) <= Math.ulp(stepStart)) {
+          loop=false;
+        }
+ else {
+          hNew=dt;
+          interpolator.rescale(hNew);
+        }
+      }
+ else {
+        scaled=correctedScaled;
+        nordsieck=nordsieckTmp;
+        interpolator.reinitialize(stepEnd,stepSize,scaled,nordsieck);
+        loop=false;
+      }
+    }
+ else {
+      final double factor=computeStepGrowShrinkFactor(error);
+      hNew=filterStep(stepSize * factor,forward,false);
+      interpolator.rescale(hNew);
+    }
+  }
+  final double nextStep=stepStart + stepSize;
+  System.arraycopy(yTmp,0,y,0,n);
+  interpolator.storeTime(nextStep);
+  manager.stepAccepted(nextStep,y);
+  lastStep=manager.stop();
+  for (  StepHandler handler : stepHandlers) {
+    interpolator.setInterpolatedTime(nextStep);
+    handler.handleStep(interpolator,lastStep);
+  }
+  stepStart=nextStep;
+  if (!lastStep && manager.reset(stepStart,y)) {
+    start(stepStart,y,t);
+    interpolator.reinitialize(stepStart,stepSize,scaled,nordsieck);
+  }
+  if (!lastStep) {
+    stepSize=filterStep(stepSize,forward,true);
+    final double factor=computeStepGrowShrinkFactor(error);
+    final double scaledH=stepSize * factor;
+    final double nextT=stepStart + scaledH;
+    final boolean nextIsLast=forward ? (nextT >= t) : (nextT <= t);
+    hNew=filterStep(scaledH,forward,nextIsLast);
+    interpolator.rescale(hNew);
+  }
+}
+Seed:
+final double tol=(vecRelativeTolerance == null) ? scalRelativeTolerance : vecRelativeTolerance[0];
+**************************************************
+81 InsertBefore /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 282
+Faulty:
+updateHighOrderDerivativesPhase2(predictedScaled,correctedScaled,nordsieckTmp);
+Seed:
+stepSize=Double.NaN;
+**************************************************
+82 InsertBefore /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdaptiveStepsizeIntegrator.java 292
+Faulty:
+filteredH=maxStep;
+Seed:
+this.initialStep=-1.0;
+**************************************************
+83 Delete /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 264
+Faulty:
+predictedScaled[j]=stepSize * yDot[j];
+Seed:
+final double[] predictedScaled=new double[y0.length];
+**************************************************
+84 Replace /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 286
+Faulty:
+interpolatorTmp.storeTime(stepStart);
+Seed:
+final double dt=eventsHandlersManager.getEventTime() - stepStart;
+**************************************************
+85 InsertBefore /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 279
+Faulty:
+for (int j=0; j < y0.length; ++j) {
+  correctedScaled[j]=stepSize * yDot[j];
+}
+Seed:
+final double tol=(vecRelativeTolerance == null) ? scalRelativeTolerance : vecRelativeTolerance[0];
+**************************************************
+86 Replace /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 246
+Faulty:
+interpolator.shift();
+Seed:
+if (!lastStep && manager.reset(stepStart,y)) {
+  start(stepStart,y,t);
+  interpolator.reinitialize(stepStart,stepSize,scaled,nordsieck);
+}
+**************************************************
+87 Replace /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 310
+Faulty:
+hNew=filterStep(stepSize * factor,forward,false);
+Seed:
+return 8;
+**************************************************
+88 Delete /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 246
+Faulty:
+interpolator.shift();
+Seed:
+interpolator.shift();
+**************************************************
+89 InsertBefore /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 237
+Faulty:
+interpolator.storeTime(stepStart);
+Seed:
+stepStart=t0;
+**************************************************
+90 Replace /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 291
+Faulty:
+if (Math.abs(dt) <= Math.ulp(stepStart)) {
+  loop=false;
+}
+ else {
+  hNew=dt;
+  interpolator.rescale(hNew);
+}
+Seed:
+nordsieck=nordsieckTmp;
+**************************************************
+91 InsertBefore /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 282
+Faulty:
+updateHighOrderDerivativesPhase2(predictedScaled,correctedScaled,nordsieckTmp);
+Seed:
+double maxError=Double.MAX_VALUE;
+**************************************************
+92 Replace /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 246
+Faulty:
+interpolator.shift();
+Seed:
+boolean firstTime=true;
+**************************************************
+93 Replace /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 256
+Faulty:
+System.arraycopy(interpolator.getInterpolatedState(),0,yTmp,0,y0.length);
+Seed:
+System.arraycopy(y0,0,y,0,y0.length);
+**************************************************
+94 InsertBefore /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 311
+Faulty:
+interpolator.rescale(hNew);
+Seed:
+return new DormandPrince54StepInterpolator(this);
+**************************************************
+95 InsertBefore /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 357
+Faulty:
+stepStart=Double.NaN;
+Seed:
+while (!lastStep) {
+  interpolator.shift();
+  double error=0;
+  for (boolean loop=true; loop; ) {
+    stepSize=hNew;
+    final double stepEnd=stepStart + stepSize;
+    interpolator.setInterpolatedTime(stepEnd);
+    System.arraycopy(interpolator.getInterpolatedState(),0,yTmp,0,y0.length);
+    computeDerivatives(stepEnd,yTmp,yDot);
+    final double[] predictedScaled=new double[y0.length];
+    for (int j=0; j < y0.length; ++j) {
+      predictedScaled[j]=stepSize * yDot[j];
+    }
+    final Array2DRowRealMatrix nordsieckTmp=updateHighOrderDerivativesPhase1(nordsieck);
+    updateHighOrderDerivativesPhase2(scaled,predictedScaled,nordsieckTmp);
+    error=nordsieckTmp.walkInOptimizedOrder(new Corrector(y,predictedScaled,yTmp));
+    if (error <= 1.0) {
+      computeDerivatives(stepEnd,yTmp,yDot);
+      final double[] correctedScaled=new double[y0.length];
+      for (int j=0; j < y0.length; ++j) {
+        correctedScaled[j]=stepSize * yDot[j];
+      }
+      updateHighOrderDerivativesPhase2(predictedScaled,correctedScaled,nordsieckTmp);
+      interpolatorTmp.reinitialize(stepEnd,stepSize,correctedScaled,nordsieckTmp);
+      interpolatorTmp.storeTime(stepStart);
+      interpolatorTmp.shift();
+      interpolatorTmp.storeTime(stepEnd);
+      if (manager.evaluateStep(interpolatorTmp)) {
+        final double dt=manager.getEventTime() - stepStart;
+        if (Math.abs(dt) <= Math.ulp(stepStart)) {
+          loop=false;
+        }
+ else {
+          hNew=dt;
+          interpolator.rescale(hNew);
+        }
+      }
+ else {
+        scaled=correctedScaled;
+        nordsieck=nordsieckTmp;
+        interpolator.reinitialize(stepEnd,stepSize,scaled,nordsieck);
+        loop=false;
+      }
+    }
+ else {
+      final double factor=computeStepGrowShrinkFactor(error);
+      hNew=filterStep(stepSize * factor,forward,false);
+      interpolator.rescale(hNew);
+    }
+  }
+  final double nextStep=stepStart + stepSize;
+  System.arraycopy(yTmp,0,y,0,n);
+  interpolator.storeTime(nextStep);
+  manager.stepAccepted(nextStep,y);
+  lastStep=manager.stop();
+  for (  StepHandler handler : stepHandlers) {
+    interpolator.setInterpolatedTime(nextStep);
+    handler.handleStep(interpolator,lastStep);
+  }
+  stepStart=nextStep;
+  if (!lastStep && manager.reset(stepStart,y)) {
+    start(stepStart,y,t);
+    interpolator.reinitialize(stepStart,stepSize,scaled,nordsieck);
+  }
+  if (!lastStep) {
+    stepSize=filterStep(stepSize,forward,true);
+    final double factor=computeStepGrowShrinkFactor(error);
+    final double scaledH=stepSize * factor;
+    final double nextT=stepStart + scaledH;
+    final boolean nextIsLast=forward ? (nextT >= t) : (nextT <= t);
+    hNew=filterStep(scaledH,forward,nextIsLast);
+    interpolator.rescale(hNew);
+  }
+}
+**************************************************
+96 Delete /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 291
+Faulty:
+if (Math.abs(dt) <= Math.ulp(stepStart)) {
+  loop=false;
+}
+ else {
+  hNew=dt;
+  interpolator.rescale(hNew);
+}
+Seed:
+setMaxGrowth(10.0);
+**************************************************
+97 InsertBefore /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 282
+Faulty:
+updateHighOrderDerivativesPhase2(predictedScaled,correctedScaled,nordsieckTmp);
+Seed:
+stepSize=Double.NaN;
+**************************************************
+98 InsertBefore /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 239
+Faulty:
+double hNew=stepSize;
+Seed:
+stepSize=t - stepStart;
+**************************************************
+99 Replace /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 249
+Faulty:
+for (boolean loop=true; loop; ) {
+  stepSize=hNew;
+  final double stepEnd=stepStart + stepSize;
+  interpolator.setInterpolatedTime(stepEnd);
+  System.arraycopy(interpolator.getInterpolatedState(),0,yTmp,0,y0.length);
+  computeDerivatives(stepEnd,yTmp,yDot);
+  final double[] predictedScaled=new double[y0.length];
+  for (int j=0; j < y0.length; ++j) {
+    predictedScaled[j]=stepSize * yDot[j];
+  }
+  final Array2DRowRealMatrix nordsieckTmp=updateHighOrderDerivativesPhase1(nordsieck);
+  updateHighOrderDerivativesPhase2(scaled,predictedScaled,nordsieckTmp);
+  error=nordsieckTmp.walkInOptimizedOrder(new Corrector(y,predictedScaled,yTmp));
+  if (error <= 1.0) {
+    computeDerivatives(stepEnd,yTmp,yDot);
+    final double[] correctedScaled=new double[y0.length];
+    for (int j=0; j < y0.length; ++j) {
+      correctedScaled[j]=stepSize * yDot[j];
+    }
+    updateHighOrderDerivativesPhase2(predictedScaled,correctedScaled,nordsieckTmp);
+    interpolatorTmp.reinitialize(stepEnd,stepSize,correctedScaled,nordsieckTmp);
+    interpolatorTmp.storeTime(stepStart);
+    interpolatorTmp.shift();
+    interpolatorTmp.storeTime(stepEnd);
+    if (manager.evaluateStep(interpolatorTmp)) {
+      final double dt=manager.getEventTime() - stepStart;
+      if (Math.abs(dt) <= Math.ulp(stepStart)) {
+        loop=false;
+      }
+ else {
+        hNew=dt;
+        interpolator.rescale(hNew);
+      }
+    }
+ else {
+      scaled=correctedScaled;
+      nordsieck=nordsieckTmp;
+      interpolator.reinitialize(stepEnd,stepSize,scaled,nordsieck);
+      loop=false;
+    }
+  }
+ else {
+    final double factor=computeStepGrowShrinkFactor(error);
+    hNew=filterStep(stepSize * factor,forward,false);
+    interpolator.rescale(hNew);
+  }
+}
+Seed:
+final double[] yTmpDot=new double[y0.length];
+**************************************************
+100 Replace /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 291
+Faulty:
+if (Math.abs(dt) <= Math.ulp(stepStart)) {
+  loop=false;
+}
+ else {
+  hNew=dt;
+  interpolator.rescale(hNew);
+}
+Seed:
+return false;
+**************************************************
+101 InsertBefore /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 255
+Faulty:
+interpolator.setInterpolatedTime(stepEnd);
+Seed:
+boolean lastStep=false;
+**************************************************
+102 InsertBefore /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 251
+Faulty:
+stepSize=hNew;
+Seed:
+interpolator.storeTime(stepStart + stepSize);
+**************************************************
+103 Replace /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 357
+Faulty:
+stepStart=Double.NaN;
+Seed:
+interpolator.reinitialize(y,forward);
+**************************************************
+104 Replace /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 286
+Faulty:
+interpolatorTmp.storeTime(stepStart);
+Seed:
+interpolatorTmp.storeTime(stepEnd);
+**************************************************
+105 Replace /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 282
+Faulty:
+updateHighOrderDerivativesPhase2(predictedScaled,correctedScaled,nordsieckTmp);
+Seed:
+lastStep=manager.stop();
+**************************************************
+106 InsertBefore /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 248
+Faulty:
+double error=0;
+Seed:
+final double[] scale=new double[y0.length];
+**************************************************
+107 InsertBefore /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 357
+Faulty:
+stepStart=Double.NaN;
+Seed:
+while (!lastStep) {
+  interpolator.shift();
+  double error=0;
+  for (boolean loop=true; loop; ) {
+    stepSize=hNew;
+    final double stepEnd=stepStart + stepSize;
+    interpolator.setInterpolatedTime(stepEnd);
+    System.arraycopy(interpolator.getInterpolatedState(),0,yTmp,0,y0.length);
+    computeDerivatives(stepEnd,yTmp,yDot);
+    final double[] predictedScaled=new double[y0.length];
+    for (int j=0; j < y0.length; ++j) {
+      predictedScaled[j]=stepSize * yDot[j];
+    }
+    final Array2DRowRealMatrix nordsieckTmp=updateHighOrderDerivativesPhase1(nordsieck);
+    updateHighOrderDerivativesPhase2(scaled,predictedScaled,nordsieckTmp);
+    error=nordsieckTmp.walkInOptimizedOrder(new Corrector(y,predictedScaled,yTmp));
+    if (error <= 1.0) {
+      computeDerivatives(stepEnd,yTmp,yDot);
+      final double[] correctedScaled=new double[y0.length];
+      for (int j=0; j < y0.length; ++j) {
+        correctedScaled[j]=stepSize * yDot[j];
+      }
+      updateHighOrderDerivativesPhase2(predictedScaled,correctedScaled,nordsieckTmp);
+      interpolatorTmp.reinitialize(stepEnd,stepSize,correctedScaled,nordsieckTmp);
+      interpolatorTmp.storeTime(stepStart);
+      interpolatorTmp.shift();
+      interpolatorTmp.storeTime(stepEnd);
+      if (manager.evaluateStep(interpolatorTmp)) {
+        final double dt=manager.getEventTime() - stepStart;
+        if (Math.abs(dt) <= Math.ulp(stepStart)) {
+          loop=false;
+        }
+ else {
+          hNew=dt;
+          interpolator.rescale(hNew);
+        }
+      }
+ else {
+        scaled=correctedScaled;
+        nordsieck=nordsieckTmp;
+        interpolator.reinitialize(stepEnd,stepSize,scaled,nordsieck);
+        loop=false;
+      }
+    }
+ else {
+      final double factor=computeStepGrowShrinkFactor(error);
+      hNew=filterStep(stepSize * factor,forward,false);
+      interpolator.rescale(hNew);
+    }
+  }
+  final double nextStep=stepStart + stepSize;
+  System.arraycopy(yTmp,0,y,0,n);
+  interpolator.storeTime(nextStep);
+  manager.stepAccepted(nextStep,y);
+  lastStep=manager.stop();
+  for (  StepHandler handler : stepHandlers) {
+    interpolator.setInterpolatedTime(nextStep);
+    handler.handleStep(interpolator,lastStep);
+  }
+  stepStart=nextStep;
+  if (!lastStep && manager.reset(stepStart,y)) {
+    start(stepStart,y,t);
+    interpolator.reinitialize(stepStart,stepSize,scaled,nordsieck);
+  }
+  if (!lastStep) {
+    stepSize=filterStep(stepSize,forward,true);
+    final double factor=computeStepGrowShrinkFactor(error);
+    final double scaledH=stepSize * factor;
+    final double nextT=stepStart + scaledH;
+    final boolean nextIsLast=forward ? (nextT >= t) : (nextT <= t);
+    hNew=filterStep(scaledH,forward,nextIsLast);
+    interpolator.rescale(hNew);
+  }
+}
+**************************************************
+108 Delete /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 291
+Faulty:
+if (Math.abs(dt) <= Math.ulp(stepStart)) {
+  loop=false;
+}
+ else {
+  hNew=dt;
+  interpolator.rescale(hNew);
+}
+Seed:
+setMaxGrowth(10.0);
+**************************************************
+109 InsertBefore /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 248
+Faulty:
+double error=0;
+Seed:
+final double[] scale=new double[y0.length];
+**************************************************
+110 InsertBefore /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 357
+Faulty:
+stepStart=Double.NaN;
+Seed:
+while (!lastStep) {
+  interpolator.shift();
+  double error=0;
+  for (boolean loop=true; loop; ) {
+    stepSize=hNew;
+    final double stepEnd=stepStart + stepSize;
+    interpolator.setInterpolatedTime(stepEnd);
+    System.arraycopy(interpolator.getInterpolatedState(),0,yTmp,0,y0.length);
+    computeDerivatives(stepEnd,yTmp,yDot);
+    final double[] predictedScaled=new double[y0.length];
+    for (int j=0; j < y0.length; ++j) {
+      predictedScaled[j]=stepSize * yDot[j];
+    }
+    final Array2DRowRealMatrix nordsieckTmp=updateHighOrderDerivativesPhase1(nordsieck);
+    updateHighOrderDerivativesPhase2(scaled,predictedScaled,nordsieckTmp);
+    error=nordsieckTmp.walkInOptimizedOrder(new Corrector(y,predictedScaled,yTmp));
+    if (error <= 1.0) {
+      computeDerivatives(stepEnd,yTmp,yDot);
+      final double[] correctedScaled=new double[y0.length];
+      for (int j=0; j < y0.length; ++j) {
+        correctedScaled[j]=stepSize * yDot[j];
+      }
+      updateHighOrderDerivativesPhase2(predictedScaled,correctedScaled,nordsieckTmp);
+      interpolatorTmp.reinitialize(stepEnd,stepSize,correctedScaled,nordsieckTmp);
+      interpolatorTmp.storeTime(stepStart);
+      interpolatorTmp.shift();
+      interpolatorTmp.storeTime(stepEnd);
+      if (manager.evaluateStep(interpolatorTmp)) {
+        final double dt=manager.getEventTime() - stepStart;
+        if (Math.abs(dt) <= Math.ulp(stepStart)) {
+          loop=false;
+        }
+ else {
+          hNew=dt;
+          interpolator.rescale(hNew);
+        }
+      }
+ else {
+        scaled=correctedScaled;
+        nordsieck=nordsieckTmp;
+        interpolator.reinitialize(stepEnd,stepSize,scaled,nordsieck);
+        loop=false;
+      }
+    }
+ else {
+      final double factor=computeStepGrowShrinkFactor(error);
+      hNew=filterStep(stepSize * factor,forward,false);
+      interpolator.rescale(hNew);
+    }
+  }
+  final double nextStep=stepStart + stepSize;
+  System.arraycopy(yTmp,0,y,0,n);
+  interpolator.storeTime(nextStep);
+  manager.stepAccepted(nextStep,y);
+  lastStep=manager.stop();
+  for (  StepHandler handler : stepHandlers) {
+    interpolator.setInterpolatedTime(nextStep);
+    handler.handleStep(interpolator,lastStep);
+  }
+  stepStart=nextStep;
+  if (!lastStep && manager.reset(stepStart,y)) {
+    start(stepStart,y,t);
+    interpolator.reinitialize(stepStart,stepSize,scaled,nordsieck);
+  }
+  if (!lastStep) {
+    stepSize=filterStep(stepSize,forward,true);
+    final double factor=computeStepGrowShrinkFactor(error);
+    final double scaledH=stepSize * factor;
+    final double nextT=stepStart + scaledH;
+    final boolean nextIsLast=forward ? (nextT >= t) : (nextT <= t);
+    hNew=filterStep(scaledH,forward,nextIsLast);
+    interpolator.rescale(hNew);
+  }
+}
+**************************************************
+111 Delete /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 291
+Faulty:
+if (Math.abs(dt) <= Math.ulp(stepStart)) {
+  loop=false;
+}
+ else {
+  hNew=dt;
+  interpolator.rescale(hNew);
+}
+Seed:
+setMaxGrowth(10.0);
+**************************************************
+112 InsertBefore /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 282
+Faulty:
+updateHighOrderDerivativesPhase2(predictedScaled,correctedScaled,nordsieckTmp);
+Seed:
+stepSize=Double.NaN;
+**************************************************
+113 InsertBefore /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 239
+Faulty:
+double hNew=stepSize;
+Seed:
+stepSize=t - stepStart;
+**************************************************
+114 Replace /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 249
+Faulty:
+for (boolean loop=true; loop; ) {
+  stepSize=hNew;
+  final double stepEnd=stepStart + stepSize;
+  interpolator.setInterpolatedTime(stepEnd);
+  System.arraycopy(interpolator.getInterpolatedState(),0,yTmp,0,y0.length);
+  computeDerivatives(stepEnd,yTmp,yDot);
+  final double[] predictedScaled=new double[y0.length];
+  for (int j=0; j < y0.length; ++j) {
+    predictedScaled[j]=stepSize * yDot[j];
+  }
+  final Array2DRowRealMatrix nordsieckTmp=updateHighOrderDerivativesPhase1(nordsieck);
+  updateHighOrderDerivativesPhase2(scaled,predictedScaled,nordsieckTmp);
+  error=nordsieckTmp.walkInOptimizedOrder(new Corrector(y,predictedScaled,yTmp));
+  if (error <= 1.0) {
+    computeDerivatives(stepEnd,yTmp,yDot);
+    final double[] correctedScaled=new double[y0.length];
+    for (int j=0; j < y0.length; ++j) {
+      correctedScaled[j]=stepSize * yDot[j];
+    }
+    updateHighOrderDerivativesPhase2(predictedScaled,correctedScaled,nordsieckTmp);
+    interpolatorTmp.reinitialize(stepEnd,stepSize,correctedScaled,nordsieckTmp);
+    interpolatorTmp.storeTime(stepStart);
+    interpolatorTmp.shift();
+    interpolatorTmp.storeTime(stepEnd);
+    if (manager.evaluateStep(interpolatorTmp)) {
+      final double dt=manager.getEventTime() - stepStart;
+      if (Math.abs(dt) <= Math.ulp(stepStart)) {
+        loop=false;
+      }
+ else {
+        hNew=dt;
+        interpolator.rescale(hNew);
+      }
+    }
+ else {
+      scaled=correctedScaled;
+      nordsieck=nordsieckTmp;
+      interpolator.reinitialize(stepEnd,stepSize,scaled,nordsieck);
+      loop=false;
+    }
+  }
+ else {
+    final double factor=computeStepGrowShrinkFactor(error);
+    hNew=filterStep(stepSize * factor,forward,false);
+    interpolator.rescale(hNew);
+  }
+}
+Seed:
+final double[] yTmpDot=new double[y0.length];
+**************************************************
+115 Replace /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 291
+Faulty:
+if (Math.abs(dt) <= Math.ulp(stepStart)) {
+  loop=false;
+}
+ else {
+  hNew=dt;
+  interpolator.rescale(hNew);
+}
+Seed:
+return false;
+**************************************************
+116 Delete /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 275
+Faulty:
+computeDerivatives(stepEnd,yTmp,yDot);
+Seed:
+final GraggBulirschStoerStepInterpolator gbsInterpolator=(GraggBulirschStoerStepInterpolator)interpolator;
+**************************************************
+117 Delete /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 256
+Faulty:
+System.arraycopy(interpolator.getInterpolatedState(),0,yTmp,0,y0.length);
+Seed:
+if (error <= 1.0) {
+  final double stepEnd=stepStart + stepSize;
+  interpolator.setInterpolatedTime(stepEnd);
+  System.arraycopy(interpolator.getInterpolatedState(),0,yTmp,0,y0.length);
+  computeDerivatives(stepEnd,yTmp,yDot);
+  final double[] predictedScaled=new double[y0.length];
+  for (int j=0; j < y0.length; ++j) {
+    predictedScaled[j]=stepSize * yDot[j];
+  }
+  final Array2DRowRealMatrix nordsieckTmp=updateHighOrderDerivativesPhase1(nordsieck);
+  updateHighOrderDerivativesPhase2(scaled,predictedScaled,nordsieckTmp);
+  interpolatorTmp.reinitialize(stepEnd,stepSize,predictedScaled,nordsieckTmp);
+  interpolatorTmp.storeTime(stepStart);
+  interpolatorTmp.shift();
+  interpolatorTmp.storeTime(stepEnd);
+  if (manager.evaluateStep(interpolatorTmp)) {
+    final double dt=manager.getEventTime() - stepStart;
+    if (Math.abs(dt) <= Math.ulp(stepStart)) {
+      loop=false;
+    }
+ else {
+      hNew=dt;
+      interpolator.rescale(hNew);
+    }
+  }
+ else {
+    scaled=predictedScaled;
+    nordsieck=nordsieckTmp;
+    interpolator.reinitialize(stepEnd,stepSize,scaled,nordsieck);
+    loop=false;
+  }
+}
+ else {
+  final double factor=computeStepGrowShrinkFactor(error);
+  hNew=filterStep(stepSize * factor,forward,false);
+  interpolator.rescale(hNew);
+}
+**************************************************
+118 InsertBefore /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 359
+Faulty:
+return stopTime;
+Seed:
+System.arraycopy(yTmp,0,y,0,y0.length);
+**************************************************
+119 Delete /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 262
+Faulty:
+final double[] predictedScaled=new double[y0.length];
+Seed:
+return new GillStepInterpolator(this);
+**************************************************
+120 InsertBefore /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 359
+Faulty:
+return stopTime;
+Seed:
+if (!forward) {
+  hNew=-hNew;
+}
+**************************************************
+121 InsertBefore /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 285
+Faulty:
+interpolatorTmp.reinitialize(stepEnd,stepSize,correctedScaled,nordsieckTmp);
+Seed:
+this.vecAbsoluteTolerance=vecAbsoluteTolerance.clone();
+**************************************************
+122 Delete /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 311
+Faulty:
+interpolator.rescale(hNew);
+Seed:
+loop=false;
+**************************************************
+123 Delete /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 310
+Faulty:
+hNew=filterStep(stepSize * factor,forward,false);
+Seed:
+nordsieck=nordsieckTmp;
+**************************************************
+124 Delete /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 272
+Faulty:
+if (error <= 1.0) {
+  computeDerivatives(stepEnd,yTmp,yDot);
+  final double[] correctedScaled=new double[y0.length];
+  for (int j=0; j < y0.length; ++j) {
+    correctedScaled[j]=stepSize * yDot[j];
+  }
+  updateHighOrderDerivativesPhase2(predictedScaled,correctedScaled,nordsieckTmp);
+  interpolatorTmp.reinitialize(stepEnd,stepSize,correctedScaled,nordsieckTmp);
+  interpolatorTmp.storeTime(stepStart);
+  interpolatorTmp.shift();
+  interpolatorTmp.storeTime(stepEnd);
+  if (manager.evaluateStep(interpolatorTmp)) {
+    final double dt=manager.getEventTime() - stepStart;
+    if (Math.abs(dt) <= Math.ulp(stepStart)) {
+      loop=false;
+    }
+ else {
+      hNew=dt;
+      interpolator.rescale(hNew);
+    }
+  }
+ else {
+    scaled=correctedScaled;
+    nordsieck=nordsieckTmp;
+    interpolator.reinitialize(stepEnd,stepSize,scaled,nordsieck);
+    loop=false;
+  }
+}
+ else {
+  final double factor=computeStepGrowShrinkFactor(error);
+  hNew=filterStep(stepSize * factor,forward,false);
+  interpolator.rescale(hNew);
+}
+Seed:
+return new MidpointStepInterpolator(this);
+**************************************************
+125 Delete /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 263
+Faulty:
+for (int j=0; j < y0.length; ++j) {
+  predictedScaled[j]=stepSize * yDot[j];
+}
+Seed:
+final double[] yDot=new double[n];
+**************************************************
+126 InsertBefore /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 248
+Faulty:
+double error=0;
+Seed:
+final double[] scale=new double[y0.length];
+**************************************************
+127 InsertBefore /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 357
+Faulty:
+stepStart=Double.NaN;
+Seed:
+while (!lastStep) {
+  interpolator.shift();
+  double error=0;
+  for (boolean loop=true; loop; ) {
+    stepSize=hNew;
+    final double stepEnd=stepStart + stepSize;
+    interpolator.setInterpolatedTime(stepEnd);
+    System.arraycopy(interpolator.getInterpolatedState(),0,yTmp,0,y0.length);
+    computeDerivatives(stepEnd,yTmp,yDot);
+    final double[] predictedScaled=new double[y0.length];
+    for (int j=0; j < y0.length; ++j) {
+      predictedScaled[j]=stepSize * yDot[j];
+    }
+    final Array2DRowRealMatrix nordsieckTmp=updateHighOrderDerivativesPhase1(nordsieck);
+    updateHighOrderDerivativesPhase2(scaled,predictedScaled,nordsieckTmp);
+    error=nordsieckTmp.walkInOptimizedOrder(new Corrector(y,predictedScaled,yTmp));
+    if (error <= 1.0) {
+      computeDerivatives(stepEnd,yTmp,yDot);
+      final double[] correctedScaled=new double[y0.length];
+      for (int j=0; j < y0.length; ++j) {
+        correctedScaled[j]=stepSize * yDot[j];
+      }
+      updateHighOrderDerivativesPhase2(predictedScaled,correctedScaled,nordsieckTmp);
+      interpolatorTmp.reinitialize(stepEnd,stepSize,correctedScaled,nordsieckTmp);
+      interpolatorTmp.storeTime(stepStart);
+      interpolatorTmp.shift();
+      interpolatorTmp.storeTime(stepEnd);
+      if (manager.evaluateStep(interpolatorTmp)) {
+        final double dt=manager.getEventTime() - stepStart;
+        if (Math.abs(dt) <= Math.ulp(stepStart)) {
+          loop=false;
+        }
+ else {
+          hNew=dt;
+          interpolator.rescale(hNew);
+        }
+      }
+ else {
+        scaled=correctedScaled;
+        nordsieck=nordsieckTmp;
+        interpolator.reinitialize(stepEnd,stepSize,scaled,nordsieck);
+        loop=false;
+      }
+    }
+ else {
+      final double factor=computeStepGrowShrinkFactor(error);
+      hNew=filterStep(stepSize * factor,forward,false);
+      interpolator.rescale(hNew);
+    }
+  }
+  final double nextStep=stepStart + stepSize;
+  System.arraycopy(yTmp,0,y,0,n);
+  interpolator.storeTime(nextStep);
+  manager.stepAccepted(nextStep,y);
+  lastStep=manager.stop();
+  for (  StepHandler handler : stepHandlers) {
+    interpolator.setInterpolatedTime(nextStep);
+    handler.handleStep(interpolator,lastStep);
+  }
+  stepStart=nextStep;
+  if (!lastStep && manager.reset(stepStart,y)) {
+    start(stepStart,y,t);
+    interpolator.reinitialize(stepStart,stepSize,scaled,nordsieck);
+  }
+  if (!lastStep) {
+    stepSize=filterStep(stepSize,forward,true);
+    final double factor=computeStepGrowShrinkFactor(error);
+    final double scaledH=stepSize * factor;
+    final double nextT=stepStart + scaledH;
+    final boolean nextIsLast=forward ? (nextT >= t) : (nextT <= t);
+    hNew=filterStep(scaledH,forward,nextIsLast);
+    interpolator.rescale(hNew);
+  }
+}
+**************************************************
+128 Delete /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 291
+Faulty:
+if (Math.abs(dt) <= Math.ulp(stepStart)) {
+  loop=false;
+}
+ else {
+  hNew=dt;
+  interpolator.rescale(hNew);
+}
+Seed:
+setMaxGrowth(10.0);
+**************************************************
+129 InsertBefore /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 282
+Faulty:
+updateHighOrderDerivativesPhase2(predictedScaled,correctedScaled,nordsieckTmp);
+Seed:
+stepSize=Double.NaN;
+**************************************************
+130 InsertBefore /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 239
+Faulty:
+double hNew=stepSize;
+Seed:
+stepSize=t - stepStart;
+**************************************************
+131 Replace /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 249
+Faulty:
+for (boolean loop=true; loop; ) {
+  stepSize=hNew;
+  final double stepEnd=stepStart + stepSize;
+  interpolator.setInterpolatedTime(stepEnd);
+  System.arraycopy(interpolator.getInterpolatedState(),0,yTmp,0,y0.length);
+  computeDerivatives(stepEnd,yTmp,yDot);
+  final double[] predictedScaled=new double[y0.length];
+  for (int j=0; j < y0.length; ++j) {
+    predictedScaled[j]=stepSize * yDot[j];
+  }
+  final Array2DRowRealMatrix nordsieckTmp=updateHighOrderDerivativesPhase1(nordsieck);
+  updateHighOrderDerivativesPhase2(scaled,predictedScaled,nordsieckTmp);
+  error=nordsieckTmp.walkInOptimizedOrder(new Corrector(y,predictedScaled,yTmp));
+  if (error <= 1.0) {
+    computeDerivatives(stepEnd,yTmp,yDot);
+    final double[] correctedScaled=new double[y0.length];
+    for (int j=0; j < y0.length; ++j) {
+      correctedScaled[j]=stepSize * yDot[j];
+    }
+    updateHighOrderDerivativesPhase2(predictedScaled,correctedScaled,nordsieckTmp);
+    interpolatorTmp.reinitialize(stepEnd,stepSize,correctedScaled,nordsieckTmp);
+    interpolatorTmp.storeTime(stepStart);
+    interpolatorTmp.shift();
+    interpolatorTmp.storeTime(stepEnd);
+    if (manager.evaluateStep(interpolatorTmp)) {
+      final double dt=manager.getEventTime() - stepStart;
+      if (Math.abs(dt) <= Math.ulp(stepStart)) {
+        loop=false;
+      }
+ else {
+        hNew=dt;
+        interpolator.rescale(hNew);
+      }
+    }
+ else {
+      scaled=correctedScaled;
+      nordsieck=nordsieckTmp;
+      interpolator.reinitialize(stepEnd,stepSize,scaled,nordsieck);
+      loop=false;
+    }
+  }
+ else {
+    final double factor=computeStepGrowShrinkFactor(error);
+    hNew=filterStep(stepSize * factor,forward,false);
+    interpolator.rescale(hNew);
+  }
+}
+Seed:
+final double[] yTmpDot=new double[y0.length];
+**************************************************
+132 Replace /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 291
+Faulty:
+if (Math.abs(dt) <= Math.ulp(stepStart)) {
+  loop=false;
+}
+ else {
+  hNew=dt;
+  interpolator.rescale(hNew);
+}
+Seed:
+return false;
+**************************************************
+133 Delete /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 275
+Faulty:
+computeDerivatives(stepEnd,yTmp,yDot);
+Seed:
+final GraggBulirschStoerStepInterpolator gbsInterpolator=(GraggBulirschStoerStepInterpolator)interpolator;
+**************************************************
+134 Delete /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 256
+Faulty:
+System.arraycopy(interpolator.getInterpolatedState(),0,yTmp,0,y0.length);
+Seed:
+if (error <= 1.0) {
+  final double stepEnd=stepStart + stepSize;
+  interpolator.setInterpolatedTime(stepEnd);
+  System.arraycopy(interpolator.getInterpolatedState(),0,yTmp,0,y0.length);
+  computeDerivatives(stepEnd,yTmp,yDot);
+  final double[] predictedScaled=new double[y0.length];
+  for (int j=0; j < y0.length; ++j) {
+    predictedScaled[j]=stepSize * yDot[j];
+  }
+  final Array2DRowRealMatrix nordsieckTmp=updateHighOrderDerivativesPhase1(nordsieck);
+  updateHighOrderDerivativesPhase2(scaled,predictedScaled,nordsieckTmp);
+  interpolatorTmp.reinitialize(stepEnd,stepSize,predictedScaled,nordsieckTmp);
+  interpolatorTmp.storeTime(stepStart);
+  interpolatorTmp.shift();
+  interpolatorTmp.storeTime(stepEnd);
+  if (manager.evaluateStep(interpolatorTmp)) {
+    final double dt=manager.getEventTime() - stepStart;
+    if (Math.abs(dt) <= Math.ulp(stepStart)) {
+      loop=false;
+    }
+ else {
+      hNew=dt;
+      interpolator.rescale(hNew);
+    }
+  }
+ else {
+    scaled=predictedScaled;
+    nordsieck=nordsieckTmp;
+    interpolator.reinitialize(stepEnd,stepSize,scaled,nordsieck);
+    loop=false;
+  }
+}
+ else {
+  final double factor=computeStepGrowShrinkFactor(error);
+  hNew=filterStep(stepSize * factor,forward,false);
+  interpolator.rescale(hNew);
+}
+**************************************************
+135 Delete /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 262
+Faulty:
+final double[] predictedScaled=new double[y0.length];
+Seed:
+final Array2DRowRealMatrix nordsieckTmp=updateHighOrderDerivativesPhase1(nordsieck);
+**************************************************
+136 Delete /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 263
+Faulty:
+for (int j=0; j < y0.length; ++j) {
+  predictedScaled[j]=stepSize * yDot[j];
+}
+Seed:
+stepSize=t - stepStart;
+**************************************************
+137 Delete /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 282
+Faulty:
+updateHighOrderDerivativesPhase2(predictedScaled,correctedScaled,nordsieckTmp);
+Seed:
+setMaxGrowth(10.0);
+**************************************************
+138 Replace /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 310
+Faulty:
+hNew=filterStep(stepSize * factor,forward,false);
+Seed:
+double yDotOnScale2=0;
+**************************************************
+139 Delete /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 243
+Faulty:
+while (!lastStep) {
+  interpolator.shift();
+  double error=0;
+  for (boolean loop=true; loop; ) {
+    stepSize=hNew;
+    final double stepEnd=stepStart + stepSize;
+    interpolator.setInterpolatedTime(stepEnd);
+    System.arraycopy(interpolator.getInterpolatedState(),0,yTmp,0,y0.length);
+    computeDerivatives(stepEnd,yTmp,yDot);
+    final double[] predictedScaled=new double[y0.length];
+    for (int j=0; j < y0.length; ++j) {
+      predictedScaled[j]=stepSize * yDot[j];
+    }
+    final Array2DRowRealMatrix nordsieckTmp=updateHighOrderDerivativesPhase1(nordsieck);
+    updateHighOrderDerivativesPhase2(scaled,predictedScaled,nordsieckTmp);
+    error=nordsieckTmp.walkInOptimizedOrder(new Corrector(y,predictedScaled,yTmp));
+    if (error <= 1.0) {
+      computeDerivatives(stepEnd,yTmp,yDot);
+      final double[] correctedScaled=new double[y0.length];
+      for (int j=0; j < y0.length; ++j) {
+        correctedScaled[j]=stepSize * yDot[j];
+      }
+      updateHighOrderDerivativesPhase2(predictedScaled,correctedScaled,nordsieckTmp);
+      interpolatorTmp.reinitialize(stepEnd,stepSize,correctedScaled,nordsieckTmp);
+      interpolatorTmp.storeTime(stepStart);
+      interpolatorTmp.shift();
+      interpolatorTmp.storeTime(stepEnd);
+      if (manager.evaluateStep(interpolatorTmp)) {
+        final double dt=manager.getEventTime() - stepStart;
+        if (Math.abs(dt) <= Math.ulp(stepStart)) {
+          loop=false;
+        }
+ else {
+          hNew=dt;
+          interpolator.rescale(hNew);
+        }
+      }
+ else {
+        scaled=correctedScaled;
+        nordsieck=nordsieckTmp;
+        interpolator.reinitialize(stepEnd,stepSize,scaled,nordsieck);
+        loop=false;
+      }
+    }
+ else {
+      final double factor=computeStepGrowShrinkFactor(error);
+      hNew=filterStep(stepSize * factor,forward,false);
+      interpolator.rescale(hNew);
+    }
+  }
+  final double nextStep=stepStart + stepSize;
+  System.arraycopy(yTmp,0,y,0,n);
+  interpolator.storeTime(nextStep);
+  manager.stepAccepted(nextStep,y);
+  lastStep=manager.stop();
+  for (  StepHandler handler : stepHandlers) {
+    interpolator.setInterpolatedTime(nextStep);
+    handler.handleStep(interpolator,lastStep);
+  }
+  stepStart=nextStep;
+  if (!lastStep && manager.reset(stepStart,y)) {
+    start(stepStart,y,t);
+    interpolator.reinitialize(stepStart,stepSize,scaled,nordsieck);
+  }
+  if (!lastStep) {
+    stepSize=filterStep(stepSize,forward,true);
+    final double factor=computeStepGrowShrinkFactor(error);
+    final double scaledH=stepSize * factor;
+    final double nextT=stepStart + scaledH;
+    final boolean nextIsLast=forward ? (nextT >= t) : (nextT <= t);
+    hNew=filterStep(scaledH,forward,nextIsLast);
+    interpolator.rescale(hNew);
+  }
+}
+Seed:
+setInterpolationControl(true,-1);
+**************************************************
+140 InsertBefore /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 357
+Faulty:
+stepStart=Double.NaN;
+Seed:
+while (!lastStep) {
+  interpolator.shift();
+  double error=0;
+  for (boolean loop=true; loop; ) {
+    stepSize=hNew;
+    final double stepEnd=stepStart + stepSize;
+    interpolator.setInterpolatedTime(stepEnd);
+    System.arraycopy(interpolator.getInterpolatedState(),0,yTmp,0,y0.length);
+    computeDerivatives(stepEnd,yTmp,yDot);
+    final double[] predictedScaled=new double[y0.length];
+    for (int j=0; j < y0.length; ++j) {
+      predictedScaled[j]=stepSize * yDot[j];
+    }
+    final Array2DRowRealMatrix nordsieckTmp=updateHighOrderDerivativesPhase1(nordsieck);
+    updateHighOrderDerivativesPhase2(scaled,predictedScaled,nordsieckTmp);
+    error=nordsieckTmp.walkInOptimizedOrder(new Corrector(y,predictedScaled,yTmp));
+    if (error <= 1.0) {
+      computeDerivatives(stepEnd,yTmp,yDot);
+      final double[] correctedScaled=new double[y0.length];
+      for (int j=0; j < y0.length; ++j) {
+        correctedScaled[j]=stepSize * yDot[j];
+      }
+      updateHighOrderDerivativesPhase2(predictedScaled,correctedScaled,nordsieckTmp);
+      interpolatorTmp.reinitialize(stepEnd,stepSize,correctedScaled,nordsieckTmp);
+      interpolatorTmp.storeTime(stepStart);
+      interpolatorTmp.shift();
+      interpolatorTmp.storeTime(stepEnd);
+      if (manager.evaluateStep(interpolatorTmp)) {
+        final double dt=manager.getEventTime() - stepStart;
+        if (Math.abs(dt) <= Math.ulp(stepStart)) {
+          loop=false;
+        }
+ else {
+          hNew=dt;
+          interpolator.rescale(hNew);
+        }
+      }
+ else {
+        scaled=correctedScaled;
+        nordsieck=nordsieckTmp;
+        interpolator.reinitialize(stepEnd,stepSize,scaled,nordsieck);
+        loop=false;
+      }
+    }
+ else {
+      final double factor=computeStepGrowShrinkFactor(error);
+      hNew=filterStep(stepSize * factor,forward,false);
+      interpolator.rescale(hNew);
+    }
+  }
+  final double nextStep=stepStart + stepSize;
+  System.arraycopy(yTmp,0,y,0,n);
+  interpolator.storeTime(nextStep);
+  manager.stepAccepted(nextStep,y);
+  lastStep=manager.stop();
+  for (  StepHandler handler : stepHandlers) {
+    interpolator.setInterpolatedTime(nextStep);
+    handler.handleStep(interpolator,lastStep);
+  }
+  stepStart=nextStep;
+  if (!lastStep && manager.reset(stepStart,y)) {
+    start(stepStart,y,t);
+    interpolator.reinitialize(stepStart,stepSize,scaled,nordsieck);
+  }
+  if (!lastStep) {
+    stepSize=filterStep(stepSize,forward,true);
+    final double factor=computeStepGrowShrinkFactor(error);
+    final double scaledH=stepSize * factor;
+    final double nextT=stepStart + scaledH;
+    final boolean nextIsLast=forward ? (nextT >= t) : (nextT <= t);
+    hNew=filterStep(scaledH,forward,nextIsLast);
+    interpolator.rescale(hNew);
+  }
+}
+**************************************************
+141 Delete /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 291
+Faulty:
+if (Math.abs(dt) <= Math.ulp(stepStart)) {
+  loop=false;
+}
+ else {
+  hNew=dt;
+  interpolator.rescale(hNew);
+}
+Seed:
+setMaxGrowth(10.0);
+**************************************************
+142 InsertBefore /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 282
+Faulty:
+updateHighOrderDerivativesPhase2(predictedScaled,correctedScaled,nordsieckTmp);
+Seed:
+stepSize=Double.NaN;
+**************************************************
+143 InsertBefore /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdaptiveStepsizeIntegrator.java 292
+Faulty:
+filteredH=maxStep;
+Seed:
+this.initialStep=-1.0;
+**************************************************
+144 Replace /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 249
+Faulty:
+for (boolean loop=true; loop; ) {
+  stepSize=hNew;
+  final double stepEnd=stepStart + stepSize;
+  interpolator.setInterpolatedTime(stepEnd);
+  System.arraycopy(interpolator.getInterpolatedState(),0,yTmp,0,y0.length);
+  computeDerivatives(stepEnd,yTmp,yDot);
+  final double[] predictedScaled=new double[y0.length];
+  for (int j=0; j < y0.length; ++j) {
+    predictedScaled[j]=stepSize * yDot[j];
+  }
+  final Array2DRowRealMatrix nordsieckTmp=updateHighOrderDerivativesPhase1(nordsieck);
+  updateHighOrderDerivativesPhase2(scaled,predictedScaled,nordsieckTmp);
+  error=nordsieckTmp.walkInOptimizedOrder(new Corrector(y,predictedScaled,yTmp));
+  if (error <= 1.0) {
+    computeDerivatives(stepEnd,yTmp,yDot);
+    final double[] correctedScaled=new double[y0.length];
+    for (int j=0; j < y0.length; ++j) {
+      correctedScaled[j]=stepSize * yDot[j];
+    }
+    updateHighOrderDerivativesPhase2(predictedScaled,correctedScaled,nordsieckTmp);
+    interpolatorTmp.reinitialize(stepEnd,stepSize,correctedScaled,nordsieckTmp);
+    interpolatorTmp.storeTime(stepStart);
+    interpolatorTmp.shift();
+    interpolatorTmp.storeTime(stepEnd);
+    if (manager.evaluateStep(interpolatorTmp)) {
+      final double dt=manager.getEventTime() - stepStart;
+      if (Math.abs(dt) <= Math.ulp(stepStart)) {
+        loop=false;
+      }
+ else {
+        hNew=dt;
+        interpolator.rescale(hNew);
+      }
+    }
+ else {
+      scaled=correctedScaled;
+      nordsieck=nordsieckTmp;
+      interpolator.reinitialize(stepEnd,stepSize,scaled,nordsieck);
+      loop=false;
+    }
+  }
+ else {
+    final double factor=computeStepGrowShrinkFactor(error);
+    hNew=filterStep(stepSize * factor,forward,false);
+    interpolator.rescale(hNew);
+  }
+}
+Seed:
+final double[] yDot0=new double[y0.length];
+**************************************************
+145 Replace /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 264
+Faulty:
+predictedScaled[j]=stepSize * yDot[j];
+Seed:
+double hNew=stepSize;
+**************************************************
+146 InsertBefore /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 285
+Faulty:
+interpolatorTmp.reinitialize(stepEnd,stepSize,correctedScaled,nordsieckTmp);
+Seed:
+interpolator.reinitialize(stepStart,stepSize,scaled,nordsieck);
+**************************************************
+147 Replace /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 285
+Faulty:
+interpolatorTmp.reinitialize(stepEnd,stepSize,correctedScaled,nordsieckTmp);
+Seed:
+final double tol=(vecRelativeTolerance == null) ? scalRelativeTolerance : vecRelativeTolerance[0];
+**************************************************
+148 Replace /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 278
+Faulty:
+final double[] correctedScaled=new double[y0.length];
+Seed:
+double maxError=Double.MAX_VALUE;
+**************************************************
+149 Delete /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 291
+Faulty:
+if (Math.abs(dt) <= Math.ulp(stepStart)) {
+  loop=false;
+}
+ else {
+  hNew=dt;
+  interpolator.rescale(hNew);
+}
+Seed:
+double yOnScale2=0;
+**************************************************
+150 InsertBefore /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 272
+Faulty:
+if (error <= 1.0) {
+  computeDerivatives(stepEnd,yTmp,yDot);
+  final double[] correctedScaled=new double[y0.length];
+  for (int j=0; j < y0.length; ++j) {
+    correctedScaled[j]=stepSize * yDot[j];
+  }
+  updateHighOrderDerivativesPhase2(predictedScaled,correctedScaled,nordsieckTmp);
+  interpolatorTmp.reinitialize(stepEnd,stepSize,correctedScaled,nordsieckTmp);
+  interpolatorTmp.storeTime(stepStart);
+  interpolatorTmp.shift();
+  interpolatorTmp.storeTime(stepEnd);
+  if (manager.evaluateStep(interpolatorTmp)) {
+    final double dt=manager.getEventTime() - stepStart;
+    if (Math.abs(dt) <= Math.ulp(stepStart)) {
+      loop=false;
+    }
+ else {
+      hNew=dt;
+      interpolator.rescale(hNew);
+    }
+  }
+ else {
+    scaled=correctedScaled;
+    nordsieck=nordsieckTmp;
+    interpolator.reinitialize(stepEnd,stepSize,scaled,nordsieck);
+    loop=false;
+  }
+}
+ else {
+  final double factor=computeStepGrowShrinkFactor(error);
+  hNew=filterStep(stepSize * factor,forward,false);
+  interpolator.rescale(hNew);
+}
+Seed:
+final double nextT=stepStart + stepSize;
+**************************************************
+151 Replace /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 285
+Faulty:
+interpolatorTmp.reinitialize(stepEnd,stepSize,correctedScaled,nordsieckTmp);
+Seed:
+interpolator.shift();
+**************************************************
+152 Replace /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 290
+Faulty:
+final double dt=manager.getEventTime() - stepStart;
+Seed:
+setMinReduction(0.2);
+**************************************************
+153 InsertBefore /home/rtx/repair/d4j/Math/74b/src/main/java/org/apache/commons/math/ode/nonstiff/AdamsMoultonIntegrator.java 310
+Faulty:
+hNew=filterStep(stepSize * factor,forward,false);
+Seed:
+return new HighamHall54StepInterpolator(this);
+**************************************************
+Evaluations: 1961
+EstimatedTime: 1093801

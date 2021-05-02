@@ -1,0 +1,28 @@
+1 Delete /home/rtx/repair/d4j/Math/8b/src/main/java/org/apache/commons/math3/distribution/DiscreteDistribution.java 190
+Faulty:
+out[i]=sample();
+Seed:
+double value=0;
+**************************************************
+2 Delete /home/rtx/repair/d4j/Math/8b/src/main/java/org/apache/commons/math3/distribution/DiscreteDistribution.java 189
+Faulty:
+for (int i=0; i < sampleSize; i++) {
+  out[i]=sample();
+}
+Seed:
+final double mu=getNumericalMean();
+**************************************************
+3 Replace /home/rtx/repair/d4j/Math/8b/src/main/java/org/apache/commons/math3/distribution/DiscreteDistribution.java 190
+Faulty:
+out[i]=sample();
+Seed:
+final double numeratorDF=getNumeratorDegreesOfFreedom();
+**************************************************
+4 InsertBefore /home/rtx/repair/d4j/Math/8b/src/main/java/org/apache/commons/math3/distribution/DiscreteDistribution.java 187
+Faulty:
+final T[] out=(T[])java.lang.reflect.Array.newInstance(singletons.get(0).getClass(),sampleSize);
+Seed:
+double result=Double.NaN;
+**************************************************
+Evaluations: 1009
+EstimatedTime: 200738

@@ -1,0 +1,28 @@
+1 Replace /home/ubuntu/rtx/d4j/Math/95b/src/java/org/apache/commons/math/distribution/FDistributionImpl.java 148
+Faulty:
+return ret;
+Seed:
+return 0;
+**************************************************
+2 Delete /home/ubuntu/rtx/d4j/Math/95b/src/java/org/apache/commons/math/distribution/FDistributionImpl.java 147
+Faulty:
+ret=d / (d - 2.0);
+Seed:
+return Double.NEGATIVE_INFINITY;
+**************************************************
+3 Replace /home/ubuntu/rtx/d4j/Math/95b/src/java/org/apache/commons/math/distribution/FDistributionImpl.java 148
+Faulty:
+return ret;
+Seed:
+return 0;
+**************************************************
+4 InsertBefore /home/ubuntu/rtx/d4j/Math/95b/src/java/org/apache/commons/math/analysis/UnivariateRealSolverUtils.java 171
+Faulty:
+if (function == null) {
+  throw new IllegalArgumentException("function is null.");
+}
+Seed:
+double g=0;
+**************************************************
+Evaluations: 1178
+EstimatedTime: 552731

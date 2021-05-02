@@ -1,0 +1,62 @@
+1 InsertBefore /home/ubuntu/rtx/d4j/Math/95b/src/java/org/apache/commons/math/distribution/FDistributionImpl.java 147
+Faulty:
+ret=d / (d - 2.0);
+Seed:
+ret=0.5;
+**************************************************
+2 InsertBefore /home/ubuntu/rtx/d4j/Math/95b/src/java/org/apache/commons/math/distribution/FDistributionImpl.java 147
+Faulty:
+ret=d / (d - 2.0);
+Seed:
+ret=0.5;
+**************************************************
+3 InsertBefore /home/ubuntu/rtx/d4j/Math/95b/src/java/org/apache/commons/math/distribution/FDistributionImpl.java 147
+Faulty:
+ret=d / (d - 2.0);
+Seed:
+ret=0.5;
+**************************************************
+4 Delete /home/ubuntu/rtx/d4j/Math/95b/src/java/org/apache/commons/math/distribution/FDistributionImpl.java 147
+Faulty:
+ret=d / (d - 2.0);
+Seed:
+return getLowerDomain(getPopulationSize(),getNumberOfSuccesses(),getSampleSize());
+**************************************************
+5 InsertBefore /home/ubuntu/rtx/d4j/Math/95b/src/java/org/apache/commons/math/distribution/FDistributionImpl.java 100
+Faulty:
+if (p == 0) {
+  return 0d;
+}
+Seed:
+if (p == 1) {
+  return Double.POSITIVE_INFINITY;
+}
+**************************************************
+6 Replace /home/ubuntu/rtx/d4j/Math/95b/src/java/org/apache/commons/math/distribution/AbstractContinuousDistribution.java 67
+Faulty:
+UnivariateRealFunction rootFindingFunction=new UnivariateRealFunction(){
+  public double value(  double x) throws FunctionEvaluationException {
+    try {
+      return cumulativeProbability(x) - p;
+    }
+ catch (    MathException ex) {
+      throw new FunctionEvaluationException(x,ex.getPattern(),ex.getArguments(),ex);
+    }
+  }
+}
+;
+Seed:
+UnivariateRealFunction rootFindingFunction=new UnivariateRealFunction(){
+  public double value(  double x) throws FunctionEvaluationException {
+    try {
+      return cumulativeProbability(x) - p;
+    }
+ catch (    MathException ex) {
+      throw new FunctionEvaluationException(x,ex.getPattern(),ex.getArguments(),ex);
+    }
+  }
+}
+;
+**************************************************
+Evaluations: 1337
+EstimatedTime: 606059

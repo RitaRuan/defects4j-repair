@@ -1,0 +1,73 @@
+1 Delete /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1544
+Faulty:
+b2=work[nn - 13] / work[nn - 15];
+Seed:
+int lastPos=0;
+**************************************************
+2 Delete /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1484
+Faulty:
+b2=work[nn - 5] / work[nn - 7];
+Seed:
+double z=1;
+**************************************************
+3 Delete /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1101
+Faulty:
+tType-=11;
+Seed:
+throw MathRuntimeException.createArithmeticException("zero norm");
+**************************************************
+4 Delete /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1509
+Faulty:
+return;
+Seed:
+tType=-10;
+**************************************************
+5 Delete /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1544
+Faulty:
+b2=work[nn - 13] / work[nn - 15];
+Seed:
+if (!isNonSingular()) {
+  throw new SingularMatrixException();
+}
+**************************************************
+6 InsertBefore /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1101
+Faulty:
+tType-=11;
+Seed:
+List<Integer> splitIndices=computeSplits();
+**************************************************
+7 Replace /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1517
+Faulty:
+a2=cnst3 * a2;
+Seed:
+int mBlockIndex=0;
+**************************************************
+8 Delete /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1513
+Faulty:
+if (100 * Math.max(b2,b1) < a2 || cnst1 < a2) {
+  break;
+}
+Seed:
+for (int i4=nn - 17; i4 >= 4 * start + 2 + pingPong; i4-=4) {
+  if (b2 == 0.0) {
+    break;
+  }
+  b1=b2;
+  if (work[i4] > work[i4 - 2]) {
+    return;
+  }
+  b2=b2 * (work[i4] / work[i4 - 2]);
+  a2=a2 + b2;
+  if (100 * Math.max(b2,b1) < a2 || cnst1 < a2) {
+    break;
+  }
+}
+**************************************************
+9 InsertBefore /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1479
+Faulty:
+gam=dN;
+Seed:
+lowerSpectra=Double.POSITIVE_INFINITY;
+**************************************************
+Evaluations: 275
+EstimatedTime: 102169

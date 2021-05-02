@@ -1,0 +1,25 @@
+1 Replace /home/ubuntu/rtx/d4j/Math/95b/src/java/org/apache/commons/math/distribution/FDistributionImpl.java 147
+Faulty:
+ret=d / (d - 2.0);
+Seed:
+ret=0.0;
+**************************************************
+2 Replace /home/ubuntu/rtx/d4j/Math/95b/src/java/org/apache/commons/math/distribution/FDistributionImpl.java 147
+Faulty:
+ret=d / (d - 2.0);
+Seed:
+ret=0.0;
+**************************************************
+3 Delete /home/ubuntu/rtx/d4j/Math/95b/src/java/org/apache/commons/math/distribution/FDistributionImpl.java 145
+Faulty:
+double d=getDenominatorDegreesOfFreedom();
+Seed:
+if (p < .5) {
+  ret=-Double.MAX_VALUE;
+}
+ else {
+  ret=getMean();
+}
+**************************************************
+Evaluations: 1030
+EstimatedTime: 468980

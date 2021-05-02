@@ -1,0 +1,58 @@
+1 InsertBefore /home/ubuntu/rtx/d4j/Math/103b/src/java/org/apache/commons/math/special/Gamma.java 180
+Faulty:
+throw new MaxIterationsExceededException(maxIterations);
+Seed:
+while (Math.abs(an) > epsilon && n < maxIterations) {
+  n=n + 1.0;
+  an=an * (x / (a + n));
+  sum=sum + an;
+}
+**************************************************
+2 InsertBefore /home/ubuntu/rtx/d4j/Math/103b/src/java/org/apache/commons/math/special/Erf.java 56
+Faulty:
+double ret=Gamma.regularizedGammaP(0.5,x * x,1.0e-15,10000);
+Seed:
+double n=0.0;
+**************************************************
+3 InsertBefore /home/ubuntu/rtx/d4j/Math/103b/src/java/org/apache/commons/math/special/Erf.java 57
+Faulty:
+if (x < 0) {
+  ret=-ret;
+}
+Seed:
+double sum=0.0;
+**************************************************
+4 InsertBefore /home/ubuntu/rtx/d4j/Math/103b/src/java/org/apache/commons/math/special/Gamma.java 180
+Faulty:
+throw new MaxIterationsExceededException(maxIterations);
+Seed:
+while (Math.abs(an) > epsilon && n < maxIterations) {
+  n=n + 1.0;
+  an=an * (x / (a + n));
+  sum=sum + an;
+}
+**************************************************
+5 InsertBefore /home/ubuntu/rtx/d4j/Math/103b/src/java/org/apache/commons/math/special/Gamma.java 180
+Faulty:
+throw new MaxIterationsExceededException(maxIterations);
+Seed:
+while (Math.abs(an) > epsilon && n < maxIterations) {
+  n=n + 1.0;
+  an=an * (x / (a + n));
+  sum=sum + an;
+}
+**************************************************
+6 Replace /home/ubuntu/rtx/d4j/Math/103b/src/java/org/apache/commons/math/special/Gamma.java 180
+Faulty:
+throw new MaxIterationsExceededException(maxIterations);
+Seed:
+ret=1.0;
+**************************************************
+7 Replace /home/ubuntu/rtx/d4j/Math/103b/src/java/org/apache/commons/math/special/Erf.java 58
+Faulty:
+ret=-ret;
+Seed:
+ret=-ret;
+**************************************************
+Evaluations: 1490
+EstimatedTime: 703438

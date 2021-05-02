@@ -1,0 +1,10 @@
+--- com.fasterxml.jackson.dataformat.xml.util.XmlRootNameLookup
++++ com.fasterxml.jackson.dataformat.xml.util.XmlRootNameLookup
+@@ -49,7 +49,6 @@
+             name = _rootNames.get(key);
+         }
+         if (name != null) {
+-            return name;
+         }
+         name = _findRootName(rootType, config);
+         synchronized (_rootNames) {

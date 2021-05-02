@@ -1,0 +1,52 @@
+1 Delete /home/ubuntu/rtx/d4j/Jsoup/90b/src/main/java/org/jsoup/helper/HttpConnection.java 389
+Faulty:
+if (!looksLikeUtf8(bytes)) return val;
+Seed:
+return false;
+**************************************************
+2 Replace /home/ubuntu/rtx/d4j/Jsoup/90b/src/main/java/org/jsoup/helper/HttpConnection.java 427
+Faulty:
+o=input[i];
+Seed:
+end=i + 2;
+**************************************************
+3 Delete /home/ubuntu/rtx/d4j/Jsoup/90b/src/main/java/org/jsoup/helper/HttpConnection.java 389
+Faulty:
+if (!looksLikeUtf8(bytes)) return val;
+Seed:
+return false;
+**************************************************
+4 Delete /home/ubuntu/rtx/d4j/Jsoup/90b/src/main/java/org/jsoup/helper/HttpConnection.java 389
+Faulty:
+if (!looksLikeUtf8(bytes)) return val;
+Seed:
+return false;
+**************************************************
+5 Delete /home/ubuntu/rtx/d4j/Jsoup/90b/src/main/java/org/jsoup/helper/HttpConnection.java 389
+Faulty:
+if (!looksLikeUtf8(bytes)) return val;
+Seed:
+return false;
+**************************************************
+6 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/90b/src/main/java/org/jsoup/helper/HttpConnection.java 417
+Faulty:
+end=i + 2;
+Seed:
+if (input.length >= 3 && (input[0] & 0xFF) == 0xEF && (input[1] & 0xFF) == 0xBB & (input[2] & 0xFF) == 0xBF) {
+  i=3;
+}
+**************************************************
+7 Delete /home/ubuntu/rtx/d4j/Jsoup/90b/src/main/java/org/jsoup/helper/HttpConnection.java 389
+Faulty:
+if (!looksLikeUtf8(bytes)) return val;
+Seed:
+return false;
+**************************************************
+8 Replace /home/ubuntu/rtx/d4j/Jsoup/90b/src/main/java/org/jsoup/helper/HttpConnection.java 426
+Faulty:
+i++;
+Seed:
+Document doc=null;
+**************************************************
+Evaluations: 743
+EstimatedTime: 663085

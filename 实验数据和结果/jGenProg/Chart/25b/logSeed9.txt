@@ -1,0 +1,57 @@
+Astor Output:
+
+General stats:
+EXECUTION_IDENTIFIER=
+TOTAL_TIME=30.059
+NR_GENERATIONS=24
+NR_RIGHT_COMPILATIONS=17
+NR_FAILLING_COMPILATIONS=7
+NR_ERRONEOUS_VARIANCES=null
+NR_FAILING_VALIDATION_PROCESS=null
+OUTPUT_STATUS=STOP_BY_PATCH_FOUND
+
+Patch stats:
+
+Patch 1
+VARIANT_ID=48
+TIME=30
+VALIDATION=|true|0|3243|[]|
+GENERATION=24
+FOLDER_SOLUTION_CODE=/home/rtx/d4j/Chart/25b/jgenprog/variantSeed9/AstorMain-25b//src//variant-48
+--Patch Hunk #1
+OPERATOR=InsertAfterOp
+
+LOCATION=org.jfree.data.statistics.DefaultStatisticalCategoryDataset
+
+PATH=/home/rtx/d4j/Chart/25b/source/org/jfree/data/statistics/DefaultStatisticalCategoryDataset.java
+
+MODIFIED_FILE_PATH=/home/rtx/d4j/Chart/25b/jgenprog/variantSeed9/AstorMain-25b//src//variant-48/org/jfree/data/statistics/DefaultStatisticalCategoryDataset.java
+
+LINE=304
+
+SUSPICIOUNESS=0.596
+
+MP_RANKING=98
+
+ORIGINAL_CODE=if (mean != null) {
+	m = mean.doubleValue();
+}
+
+BUGGY_CODE_TYPE=CtIfImpl|CtBlockImpl
+
+PATCH_HUNK_CODE=this.data = new org.jfree.data.KeyedObjects2D()
+
+PATCH_HUNK_TYPE=CtAssignmentImpl|CtBlockImpl
+
+INGREDIENT_SCOPE=PACKAGE
+
+INGREDIENT_PARENT=this.data = new org.jfree.data.KeyedObjects2D()
+
+PATCH_DIFF_ORIG=--- /source/org/jfree/data/statistics/DefaultStatisticalCategoryDataset.java
++++ /source/org/jfree/data/statistics/DefaultStatisticalCategoryDataset.java
+@@ -306 +306 @@
+-		}
++		} 		this.data = new org.jfree.data.KeyedObjects2D();
+
+
+

@@ -1,0 +1,47 @@
+1 Replace /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1537
+Faulty:
+if (work[np - 8] > b2 || work[np - 4] > b1) {
+  return;
+}
+Seed:
+if (work[nn - 9] > work[nn - 11]) {
+  return;
+}
+**************************************************
+2 Delete /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1504
+Faulty:
+if (b2 == 0.0) {
+  break;
+}
+Seed:
+if (work[nn - 9] > work[nn - 11]) {
+  return;
+}
+**************************************************
+3 Delete /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1544
+Faulty:
+b2=work[nn - 13] / work[nn - 15];
+Seed:
+boolean infiniteFound=false;
+**************************************************
+4 Replace /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1503
+Faulty:
+for (int i4=np; i4 >= 4 * start + 2 + pingPong; i4-=4) {
+  if (b2 == 0.0) {
+    break;
+  }
+  b1=b2;
+  if (work[i4] > work[i4 - 2]) {
+    return;
+  }
+  b2=b2 * (work[i4] / work[i4 - 2]);
+  a2=a2 + b2;
+  if (100 * Math.max(b2,b1) < a2 || cnst1 < a2) {
+    break;
+  }
+}
+Seed:
+tType=-10;
+**************************************************
+Evaluations: 134
+EstimatedTime: 53969

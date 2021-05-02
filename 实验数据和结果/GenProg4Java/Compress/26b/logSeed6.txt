@@ -1,0 +1,2141 @@
+1 [main] DEBUG clegoues.genprog4java.fitness.Fitness  - parsing granularity, value: class
+26 [main] DEBUG clegoues.genprog4java.fitness.Fitness  - parsing granularity, value: class
+#Sun Feb 21 16:35:35 CST 2021
+negativeTestWeight=2.0
+classSourceFolder=/home/rtx/repair/d4j/Compress/26b/target/classes
+model=default
+sampleStrategy=variant
+srcClassPath=/home/rtx/repair/d4j/Compress/26b/target/classes\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/tukaani/xz/1.5/xz-1.5.jar
+sourceVersion=1.8
+popsize=40
+regenPaths=false
+posCoverageFile=coverage.path.pos
+continue=false
+edits=APPEND;DELETE;REPLACE
+negCoverageFile=coverage.path.neg
+workingDir=/home/rtx/repair/d4j/Compress/26b/
+clearTestCache=false
+skipFailedSanity=false
+sample=0.1 
+oracleGenome=
+testGranularity=class
+justTestingFaultLoc=false
+faultLocStrategy=standardPathFile
+crossp=0.5
+pMutation=1
+generations=10
+positiveTests=/home/rtx/repair/d4j/Compress/26b/pos.tests
+javaVM=/home/rtx/java/jdk1.8.0_271/jre/bin/java
+seed=6
+negativePathWeight=0.35
+compileCommand=
+fixStrategy=classScope
+allowCoverageFail=false
+targetClassName=/home/rtx/repair/d4j/Compress/26b/bugfiles.txt
+javaRuntime=java.lang.Runtime@6576fe71
+classTestFolder=
+modelPath=OVERALLModel.txt
+sanity=yes
+positivePathWeight=0.65
+jacocoPath=/home/rtx/eclipse-workspace/genprog4java/lib/jacocoagent.jar
+negativeTests=/home/rtx/repair/d4j/Compress/26b/neg.tests
+pathToFileHumanInjectedFaultLoc=fileHumanInjectedFaultLoc.txt
+outputDir=/home/rtx/repair/d4j/Compress/26b/genprog4java/variantSeed6/
+testClassPath=/home/rtx/repair/defects4j/framework/projects/Compress/lib/junit/junit/4.11/junit-4.11.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/tukaani/xz/1.5/xz-1.5.jar\:/home/rtx/repair/d4j/Compress/26b/target/classes\:/home/rtx/repair/d4j/Compress/26b/target/test-classes\:/home/rtx/repair/defects4j/framework/projects/lib/junit-4.11.jar\:/home/rtx/repair/d4j/Compress/26b/${dependency.jar}\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/com/github/luben/zstd-jni/1.3.1-1/zstd-jni-1.3.1-1.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/com/github/luben/zstd-jni/1.3.3-1/zstd-jni-1.3.3-1.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/junit/junit/3.8.2/junit-3.8.2.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/junit/junit/4.10/junit-4.10.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/junit/junit/4.12/junit-4.12.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/junit/junit/4.8.2/junit-4.8.2.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/com/github/luben/zstd-jni/1.3.1-1/zstd-jni-1.3.1-1.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/com/github/luben/zstd-jni/1.3.3-1/zstd-jni-1.3.3-1.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/junit/junit/3.8.2/junit-3.8.2.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/junit/junit/4.10/junit-4.10.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/junit/junit/4.11/junit-4.11.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/junit/junit/4.12/junit-4.12.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/junit/junit/4.8.2/junit-4.8.2.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/brotli/dec/0.1.1/dec-0.1.1.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/brotli/dec/0.1.2/dec-0.1.2.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/javassist/javassist/3.20.0-GA/javassist-3.20.0-GA.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/javassist/javassist/3.21.0-GA/javassist-3.21.0-GA.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/mockito/mockito-core/1.10.19/mockito-core-1.10.19.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/objenesis/objenesis/2.1/objenesis-2.1.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/objenesis/objenesis/2.6/objenesis-2.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-api-mockito-common/1.6.6/powermock-api-mockito-common-1.6.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-api-mockito-common/1.7.0/powermock-api-mockito-common-1.7.0.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-api-mockito-common/1.7.3/powermock-api-mockito-common-1.7.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-api-mockito/1.6.4/powermock-api-mockito-1.6.4.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-api-mockito/1.6.6/powermock-api-mockito-1.6.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-api-mockito/1.7.0/powermock-api-mockito-1.7.0.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-api-mockito/1.7.3/powermock-api-mockito-1.7.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-api-support/1.6.4/powermock-api-support-1.6.4.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-api-support/1.6.6/powermock-api-support-1.6.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-api-support/1.7.0/powermock-api-support-1.7.0.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-api-support/1.7.3/powermock-api-support-1.7.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-core/1.6.4/powermock-core-1.6.4.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-core/1.6.6/powermock-core-1.6.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-core/1.7.0/powermock-core-1.7.0.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-core/1.7.3/powermock-core-1.7.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-module-junit4-common/1.6.4/powermock-module-junit4-common-1.6.4.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-module-junit4-common/1.6.6/powermock-module-junit4-common-1.6.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-module-junit4-common/1.7.0/powermock-module-junit4-common-1.7.0.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-module-junit4-common/1.7.3/powermock-module-junit4-common-1.7.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-module-junit4/1.6.4/powermock-module-junit4-1.6.4.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-module-junit4/1.6.6/powermock-module-junit4-1.6.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-module-junit4/1.7.0/powermock-module-junit4-1.7.0.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-module-junit4/1.7.3/powermock-module-junit4-1.7.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-reflect/1.6.4/powermock-reflect-1.6.4.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-reflect/1.6.6/powermock-reflect-1.6.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-reflect/1.7.0/powermock-reflect-1.7.0.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-reflect/1.7.3/powermock-reflect-1.7.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/tukaani/xz/1.0/xz-1.0.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/tukaani/xz/1.2/xz-1.2.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/tukaani/xz/1.3/xz-1.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/tukaani/xz/1.4/xz-1.4.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/tukaani/xz/1.5/xz-1.5.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/tukaani/xz/1.6/xz-1.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/tukaani/xz/1.8/xz-1.8.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/zstd-jni-1.3.4-3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/brotli/dec/0.1.1/dec-0.1.1.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/brotli/dec/0.1.2/dec-0.1.2.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/javassist/javassist/3.20.0-GA/javassist-3.20.0-GA.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/javassist/javassist/3.21.0-GA/javassist-3.21.0-GA.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/mockito/mockito-core/1.10.19/mockito-core-1.10.19.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/objenesis/objenesis/2.1/objenesis-2.1.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/objenesis/objenesis/2.6/objenesis-2.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-api-mockito-common/1.6.6/powermock-api-mockito-common-1.6.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-api-mockito-common/1.7.0/powermock-api-mockito-common-1.7.0.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-api-mockito-common/1.7.3/powermock-api-mockito-common-1.7.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-api-mockito/1.6.4/powermock-api-mockito-1.6.4.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-api-mockito/1.6.6/powermock-api-mockito-1.6.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-api-mockito/1.7.0/powermock-api-mockito-1.7.0.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-api-mockito/1.7.3/powermock-api-mockito-1.7.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-api-support/1.6.4/powermock-api-support-1.6.4.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-api-support/1.6.6/powermock-api-support-1.6.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-api-support/1.7.0/powermock-api-support-1.7.0.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-api-support/1.7.3/powermock-api-support-1.7.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-core/1.6.4/powermock-core-1.6.4.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-core/1.6.6/powermock-core-1.6.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-core/1.7.0/powermock-core-1.7.0.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-core/1.7.3/powermock-core-1.7.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-module-junit4-common/1.6.4/powermock-module-junit4-common-1.6.4.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-module-junit4-common/1.6.6/powermock-module-junit4-common-1.6.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-module-junit4-common/1.7.0/powermock-module-junit4-common-1.7.0.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-module-junit4-common/1.7.3/powermock-module-junit4-common-1.7.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-module-junit4/1.6.4/powermock-module-junit4-1.6.4.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-module-junit4/1.6.6/powermock-module-junit4-1.6.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-module-junit4/1.7.0/powermock-module-junit4-1.7.0.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-module-junit4/1.7.3/powermock-module-junit4-1.7.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-reflect/1.6.4/powermock-reflect-1.6.4.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-reflect/1.6.6/powermock-reflect-1.6.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-reflect/1.7.0/powermock-reflect-1.7.0.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-reflect/1.7.3/powermock-reflect-1.7.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/tukaani/xz/1.0/xz-1.0.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/tukaani/xz/1.2/xz-1.2.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/tukaani/xz/1.3/xz-1.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/tukaani/xz/1.4/xz-1.4.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/tukaani/xz/1.6/xz-1.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/tukaani/xz/1.8/xz-1.8.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/zstd-jni-1.3.4-3.jar
+faultStrategy=classScope
+sourceDir=src/main/java
+checkSpace=false
+search=gp
+globalExtension=.java
+faultSpaceSubSet=1/5
+maxVariants=50
+libs=/home/rtx/eclipse-workspace/genprog4java/lib/junittestrunner.jar\:/home/rtx/eclipse-workspace/genprog4java/lib/commons-cli-20040117.000000.jar\:/home/rtx/eclipse-workspace/genprog4java/lib/junit-4.12.jar\:/home/rtx/eclipse-workspace/genprog4java/lib/hamcrest-core-1.3.jar\:/home/rtx/eclipse-workspace/genprog4java/lib/log4j-1.2.17.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/junit/junit/4.11/junit-4.11.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/tukaani/xz/1.5/xz-1.5.jar\:/home/rtx/repair/d4j/Compress/26b/target/classes\:/home/rtx/repair/d4j/Compress/26b/target/test-classes\:/home/rtx/repair/defects4j/framework/projects/lib/junit-4.11.jar\:/home/rtx/repair/d4j/Compress/26b/${dependency.jar}\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/com/github/luben/zstd-jni/1.3.1-1/zstd-jni-1.3.1-1.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/com/github/luben/zstd-jni/1.3.3-1/zstd-jni-1.3.3-1.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/junit/junit/3.8.2/junit-3.8.2.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/junit/junit/4.10/junit-4.10.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/junit/junit/4.12/junit-4.12.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/junit/junit/4.8.2/junit-4.8.2.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/com/github/luben/zstd-jni/1.3.1-1/zstd-jni-1.3.1-1.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/com/github/luben/zstd-jni/1.3.3-1/zstd-jni-1.3.3-1.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/junit/junit/3.8.2/junit-3.8.2.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/junit/junit/4.10/junit-4.10.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/junit/junit/4.11/junit-4.11.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/junit/junit/4.12/junit-4.12.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/junit/junit/4.8.2/junit-4.8.2.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/brotli/dec/0.1.1/dec-0.1.1.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/brotli/dec/0.1.2/dec-0.1.2.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/javassist/javassist/3.20.0-GA/javassist-3.20.0-GA.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/javassist/javassist/3.21.0-GA/javassist-3.21.0-GA.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/mockito/mockito-core/1.10.19/mockito-core-1.10.19.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/objenesis/objenesis/2.1/objenesis-2.1.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/objenesis/objenesis/2.6/objenesis-2.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-api-mockito-common/1.6.6/powermock-api-mockito-common-1.6.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-api-mockito-common/1.7.0/powermock-api-mockito-common-1.7.0.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-api-mockito-common/1.7.3/powermock-api-mockito-common-1.7.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-api-mockito/1.6.4/powermock-api-mockito-1.6.4.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-api-mockito/1.6.6/powermock-api-mockito-1.6.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-api-mockito/1.7.0/powermock-api-mockito-1.7.0.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-api-mockito/1.7.3/powermock-api-mockito-1.7.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-api-support/1.6.4/powermock-api-support-1.6.4.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-api-support/1.6.6/powermock-api-support-1.6.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-api-support/1.7.0/powermock-api-support-1.7.0.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-api-support/1.7.3/powermock-api-support-1.7.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-core/1.6.4/powermock-core-1.6.4.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-core/1.6.6/powermock-core-1.6.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-core/1.7.0/powermock-core-1.7.0.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-core/1.7.3/powermock-core-1.7.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-module-junit4-common/1.6.4/powermock-module-junit4-common-1.6.4.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-module-junit4-common/1.6.6/powermock-module-junit4-common-1.6.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-module-junit4-common/1.7.0/powermock-module-junit4-common-1.7.0.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-module-junit4-common/1.7.3/powermock-module-junit4-common-1.7.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-module-junit4/1.6.4/powermock-module-junit4-1.6.4.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-module-junit4/1.6.6/powermock-module-junit4-1.6.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-module-junit4/1.7.0/powermock-module-junit4-1.7.0.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-module-junit4/1.7.3/powermock-module-junit4-1.7.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-reflect/1.6.4/powermock-reflect-1.6.4.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-reflect/1.6.6/powermock-reflect-1.6.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-reflect/1.7.0/powermock-reflect-1.7.0.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-reflect/1.7.3/powermock-reflect-1.7.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/tukaani/xz/1.0/xz-1.0.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/tukaani/xz/1.2/xz-1.2.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/tukaani/xz/1.3/xz-1.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/tukaani/xz/1.4/xz-1.4.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/tukaani/xz/1.5/xz-1.5.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/tukaani/xz/1.6/xz-1.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/org/tukaani/xz/1.8/xz-1.8.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/lib/zstd-jni-1.3.4-3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/brotli/dec/0.1.1/dec-0.1.1.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/brotli/dec/0.1.2/dec-0.1.2.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/javassist/javassist/3.20.0-GA/javassist-3.20.0-GA.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/javassist/javassist/3.21.0-GA/javassist-3.21.0-GA.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/mockito/mockito-core/1.10.19/mockito-core-1.10.19.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/objenesis/objenesis/2.1/objenesis-2.1.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/objenesis/objenesis/2.6/objenesis-2.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-api-mockito-common/1.6.6/powermock-api-mockito-common-1.6.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-api-mockito-common/1.7.0/powermock-api-mockito-common-1.7.0.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-api-mockito-common/1.7.3/powermock-api-mockito-common-1.7.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-api-mockito/1.6.4/powermock-api-mockito-1.6.4.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-api-mockito/1.6.6/powermock-api-mockito-1.6.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-api-mockito/1.7.0/powermock-api-mockito-1.7.0.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-api-mockito/1.7.3/powermock-api-mockito-1.7.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-api-support/1.6.4/powermock-api-support-1.6.4.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-api-support/1.6.6/powermock-api-support-1.6.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-api-support/1.7.0/powermock-api-support-1.7.0.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-api-support/1.7.3/powermock-api-support-1.7.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-core/1.6.4/powermock-core-1.6.4.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-core/1.6.6/powermock-core-1.6.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-core/1.7.0/powermock-core-1.7.0.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-core/1.7.3/powermock-core-1.7.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-module-junit4-common/1.6.4/powermock-module-junit4-common-1.6.4.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-module-junit4-common/1.6.6/powermock-module-junit4-common-1.6.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-module-junit4-common/1.7.0/powermock-module-junit4-common-1.7.0.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-module-junit4-common/1.7.3/powermock-module-junit4-common-1.7.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-module-junit4/1.6.4/powermock-module-junit4-1.6.4.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-module-junit4/1.6.6/powermock-module-junit4-1.6.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-module-junit4/1.7.0/powermock-module-junit4-1.7.0.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-module-junit4/1.7.3/powermock-module-junit4-1.7.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-reflect/1.6.4/powermock-reflect-1.6.4.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-reflect/1.6.6/powermock-reflect-1.6.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-reflect/1.7.0/powermock-reflect-1.7.0.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/powermock/powermock-reflect/1.7.3/powermock-reflect-1.7.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/tukaani/xz/1.0/xz-1.0.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/tukaani/xz/1.2/xz-1.2.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/tukaani/xz/1.3/xz-1.3.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/tukaani/xz/1.4/xz-1.4.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/tukaani/xz/1.6/xz-1.6.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/tukaani/xz/1.8/xz-1.8.jar\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/zstd-jni-1.3.4-3.jar\:/home/rtx/repair/d4j/Compress/26b/target/classes\:/home/rtx/repair/defects4j/framework/projects/Compress/lib/org/tukaani/xz/1.5/xz-1.5.jar
+crossover=onepoint
+100 [main] INFO clegoues.genprog4java.main.Main  - Configuration file loaded
+3113 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - loaded from source clegoues.genprog4java.java.ClassInfo@777c85f9
+3114 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - sanity checking begins
+3585 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 1 out of 40
+3846 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+3846 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 2 out of 40
+4109 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+4109 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 3 out of 40
+4377 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+4377 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 4 out of 40
+4660 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+4660 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 5 out of 40
+4911 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+4911 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 6 out of 40
+5202 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+5203 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 7 out of 40
+5455 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+5456 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 8 out of 40
+5693 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+5694 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 9 out of 40
+5947 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+5948 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 10 out of 40
+6199 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+6199 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 11 out of 40
+6449 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+6449 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 12 out of 40
+6737 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+6737 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 13 out of 40
+6968 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+6968 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 14 out of 40
+7185 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+7185 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 15 out of 40
+7418 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+7418 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 16 out of 40
+7639 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+7639 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 17 out of 40
+7872 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+7872 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 18 out of 40
+8099 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+8099 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 19 out of 40
+8350 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+8351 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 20 out of 40
+11292 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+11292 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 21 out of 40
+11502 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+11503 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 22 out of 40
+11717 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+11718 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 23 out of 40
+11969 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+11969 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 24 out of 40
+12237 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+12237 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 25 out of 40
+12470 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+12470 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 26 out of 40
+12738 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+12738 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 27 out of 40
+13042 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+13042 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 28 out of 40
+13367 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+13367 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 29 out of 40
+13615 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+13616 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 30 out of 40
+13893 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+13893 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 31 out of 40
+14371 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+14372 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 32 out of 40
+14678 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+14678 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 33 out of 40
+15027 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+15027 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 34 out of 40
+15396 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+15396 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 35 out of 40
+15681 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+15681 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 36 out of 40
+16092 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+16092 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 37 out of 40
+16466 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+16467 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 38 out of 40
+16746 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+16746 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 39 out of 40
+17107 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+17108 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 40 out of 40
+17409 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+17410 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - 	n1: 
+17640 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - false (0)
+
+17640 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - 	n2: 
+17861 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - false (0)
+
+17861 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - sanity checking completed (time taken = 14747)
+17861 [main] INFO clegoues.genprog4java.localization.DefaultLocalization  - Start Fault Localization
+17876 [main] INFO clegoues.genprog4java.localization.DefaultLocalization  - Finish Fault Localization
+17876 [main] INFO clegoues.genprog4java.Search.Search  - search: genetic algorithm begins
+
+19479 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 4.0 original (stored at: variant0)
+21224 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 3.0 StmtDelete(33) (stored at: variant1)
+23179 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 3.0 StmtDelete(7) (stored at: variant2)
+23278 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:142: error: break outside switch or loop
+			break;
+			^
+1 error
+
+23278 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(25,18) at variant3 fails to compile
+
+23278 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtReplace(25,18) (stored at: variant3)
+25115 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 4.0 StmtDelete(42) (stored at: variant4)
+26707 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 4.0 StmtReplace(19,19) (stored at: variant5)
+26779 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:145: error: unreachable statement
+			if (len < 0 || offset < 0 || len + offset > b.length) {
+			^
+1 error
+
+26779 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(26,25) at variant6 fails to compile
+
+26780 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtAppend(26,25) (stored at: variant6)
+26855 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:99: error: cannot find symbol
+            if (skipped == 0) {
+                ^
+  symbol:   variable skipped
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:102: error: cannot find symbol
+            numToSkip -= skipped;
+                         ^
+  symbol:   variable skipped
+  location: class IOUtils
+2 errors
+
+26855 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(16) at variant7 fails to compile
+
+26855 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtDelete(16) (stored at: variant7)
+26916 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:80: error: unreachable statement
+        return count;
+        ^
+1 error
+
+26916 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(7,26) at variant8 fails to compile
+
+26916 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtAppend(7,26) (stored at: variant8)
+315651 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 1.0 StmtDelete(31) (stored at: variant9)
+315697 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:78: error: unreachable statement
+            count += n;
+            ^
+1 error
+
+315698 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(9,26) at variant10 fails to compile
+
+315698 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtAppend(9,26) (stored at: variant10)
+315734 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:105: error: cannot find symbol
+        return available - numToSkip;
+               ^
+  symbol:   variable available
+  location: class IOUtils
+1 error
+
+315734 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(13) at variant11 fails to compile
+
+315734 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtDelete(13) (stored at: variant11)
+316778 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 4.0 StmtReplace(9,9) (stored at: variant12)
+316829 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:178: error: break outside switch or loop
+				break;
+				^
+1 error
+
+316830 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(39,33) at variant13 fails to compile
+
+316830 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtAppend(39,33) (stored at: variant13)
+316906 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:142: error: break outside switch or loop
+			break;
+			^
+1 error
+
+316906 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(26,18) at variant14 fails to compile
+
+316907 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtReplace(26,18) (stored at: variant14)
+316960 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:73: error: unreachable statement
+            count += n;
+            ^
+1 error
+
+316961 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(9,34) at variant15 fails to compile
+
+316961 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtReplace(9,34) (stored at: variant15)
+318247 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 3.0 StmtAppend(20,19) (stored at: variant16)
+319382 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 4.0 StmtReplace(10,2) (stored at: variant17)
+320553 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 1.0 StmtReplace(8,26) (stored at: variant18)
+321710 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 3.0 StmtAppend(29,35) (stored at: variant19)
+321743 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:72: error: break outside switch or loop
+			break;
+			^
+1 error
+
+321743 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(7,33) at variant20 fails to compile
+
+321743 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtReplace(7,33) (stored at: variant20)
+321772 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:150: error: unreachable statement
+					count += x;
+					^
+1 error
+
+321772 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(34,35) at variant21 fails to compile
+
+321772 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtAppend(34,35) (stored at: variant21)
+321824 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:178: error: break outside switch or loop
+				break;
+				^
+1 error
+
+321824 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(39,18) at variant22 fails to compile
+
+321824 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtAppend(39,18) (stored at: variant22)
+323381 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 3.0 StmtDelete(9) (stored at: variant23)
+516151 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 3.0 StmtDelete(17) (stored at: variant24)
+519747 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 3.0 StmtReplace(43,26) (stored at: variant25)
+520834 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 3.0 StmtDelete(32) (stored at: variant26)
+520860 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:150: error: unreachable statement
+					if (x == -1) {
+					^
+1 error
+
+520860 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(34,32) at variant27 fails to compile
+
+520860 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtAppend(34,32) (stored at: variant27)
+520885 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:73: error: unreachable statement
+            count += n;
+            ^
+1 error
+
+520885 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(9,34) at variant28 fails to compile
+
+520885 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtReplace(9,34) (stored at: variant28)
+522113 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 4.0 StmtReplace(33,33) (stored at: variant29)
+522138 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:101: error: cannot find symbol
+            if (skipped == 0) {
+                ^
+  symbol:   variable skipped
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:104: error: cannot find symbol
+            numToSkip -= skipped;
+                         ^
+  symbol:   variable skipped
+  location: class IOUtils
+2 errors
+
+522138 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(16,19) at variant30 fails to compile
+
+522138 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtAppend(16,19) (stored at: variant30)
+523321 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 4.0 StmtReplace(18,19) (stored at: variant31)
+523344 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:145: error: break outside switch or loop
+        break;
+        ^
+1 error
+
+523344 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(29,19) at variant32 fails to compile
+
+523344 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtReplace(29,19) (stored at: variant32)
+523369 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:99: error: unreachable statement
+            numToSkip -= skipped;
+            ^
+1 error
+
+523369 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(17,34) at variant33 fails to compile
+
+523369 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtReplace(17,34) (stored at: variant33)
+523393 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:180: error: cannot find symbol
+        copy(input, output);
+                    ^
+  symbol:   variable output
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:181: error: cannot find symbol
+        return output.toByteArray();
+               ^
+  symbol:   variable output
+  location: class IOUtils
+2 errors
+
+523393 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(38,26) at variant34 fails to compile
+
+523393 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtAppend(38,26) (stored at: variant34)
+525214 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 3.0 StmtReplace(20,33) (stored at: variant35)
+526381 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 3.0 StmtDelete(20) (stored at: variant36)
+527623 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 4.0 StmtAppend(29,25) (stored at: variant37)
+527645 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:155: error: unreachable statement
+            count += x;
+            ^
+1 error
+
+527645 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(32,26) at variant38 fails to compile
+
+527645 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtAppend(32,26) (stored at: variant38)
+527671 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:113: error: cannot find symbol
+        return available - numToSkip;
+               ^
+  symbol:   variable available
+  location: class IOUtils
+1 error
+
+527671 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(13,14) at variant39 fails to compile
+
+527671 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtAppend(13,14) (stored at: variant39)
+527671 [main] INFO clegoues.genprog4java.Search.Search  - search: generation1
+528200 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:186: error: unreported exception IOException; must be caught or declared to be thrown
+			c.close();
+			       ^
+1 error
+
+528201 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(43,46) at variant40 fails to compile
+
+528201 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(43,46) (stored at: variant40)
+528230 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:99: error: cannot find symbol
+            if (skipped == 0) {
+                ^
+  symbol:   variable skipped
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:102: error: cannot find symbol
+            numToSkip -= skipped;
+                         ^
+  symbol:   variable skipped
+  location: class IOUtils
+2 errors
+
+528230 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(10,2) StmtDelete(16) at variant41 fails to compile
+
+528230 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(10,2) StmtDelete(16) (stored at: variant41)
+529607 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 4.0 StmtAppend(29,25) StmtDelete(43) (stored at: variant42)
+531092 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 4.0 StmtDelete(32) StmtAppend(25,25) (stored at: variant43)
+532495 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 2.0 StmtDelete(42) StmtDelete(7) (stored at: variant44)
+533713 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 1.0 StmtAppend(29,25) StmtReplace(7,8) (stored at: variant45)
+534872 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 4.0 StmtReplace(9,9) StmtReplace(15,33) (stored at: variant46)
+534894 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:106: error: cannot find symbol
+        return available - numToSkip;
+               ^
+  symbol:   variable available
+  location: class IOUtils
+1 error
+
+534895 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(42) StmtReplace(13,26) at variant47 fails to compile
+
+534895 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(42) StmtReplace(13,26) (stored at: variant47)
+534917 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:155: error: unreachable statement
+            count += x;
+            ^
+1 error
+
+534917 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(33,33) StmtAppend(32,18) at variant48 fails to compile
+
+534917 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(33,33) StmtAppend(32,18) (stored at: variant48)
+536179 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 4.0 StmtDelete(42) StmtReplace(33,18) (stored at: variant49)
+536202 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:97: error: break outside switch or loop
+			break;
+			^
+1 error
+
+536202 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(42) StmtReplace(14,33) at variant50 fails to compile
+
+536202 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(42) StmtReplace(14,33) (stored at: variant50)
+536236 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:147: error: cannot find symbol
+        while (count != len) {
+               ^
+  symbol:   variable count
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:148: error: cannot find symbol
+            x = input.read(b, offset + count, len - count);
+            ^
+  symbol:   variable x
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:148: error: cannot find symbol
+            x = input.read(b, offset + count, len - count);
+                                       ^
+  symbol:   variable count
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:148: error: cannot find symbol
+            x = input.read(b, offset + count, len - count);
+                                                    ^
+  symbol:   variable count
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:149: error: cannot find symbol
+            if (x == -1) {
+                ^
+  symbol:   variable x
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:152: error: cannot find symbol
+            count += x;
+            ^
+  symbol:   variable count
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:152: error: cannot find symbol
+            count += x;
+                     ^
+  symbol:   variable x
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:154: error: cannot find symbol
+        return count;
+               ^
+  symbol:   variable count
+  location: class IOUtils
+8 errors
+
+536236 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(28,26) at variant51 fails to compile
+
+536236 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(28,26) (stored at: variant51)
+537294 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 4.0 StmtDelete(42) StmtDelete(42) (stored at: variant52)
+537318 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:74: error: cannot find symbol
+            count += n;
+            ^
+  symbol:   variable count
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:76: error: cannot find symbol
+        return count;
+               ^
+  symbol:   variable count
+  location: class IOUtils
+2 errors
+
+537319 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(33,33) StmtDelete(6) at variant53 fails to compile
+
+537319 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(33,33) StmtDelete(6) (stored at: variant53)
+537341 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:104: error: unreachable statement
+            numToSkip -= skipped;
+            ^
+1 error
+
+537341 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(42) StmtAppend(17,34) at variant54 fails to compile
+
+537342 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(42) StmtAppend(17,34) (stored at: variant54)
+541443 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 4.0 StmtAppend(29,25) StmtAppend(8,19) (stored at: variant55)
+542664 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 2.0 StmtReplace(18,19) StmtDelete(8) (stored at: variant56)
+542686 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:189: error: exception IOException is never thrown in body of corresponding try statement
+            } catch (IOException ignored) { // NOPMD
+              ^
+1 error
+
+542686 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(33,33) StmtDelete(46) at variant57 fails to compile
+
+542686 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(33,33) StmtDelete(46) (stored at: variant57)
+639912 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 4.0 StmtReplace(33,33) StmtDelete(19) (stored at: variant58)
+639939 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:105: error: cannot find symbol
+        return available - numToSkip;
+               ^
+  symbol:   variable available
+  location: class IOUtils
+1 error
+
+639940 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(13) StmtDelete(46) at variant59 fails to compile
+
+639940 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(13) StmtDelete(46) (stored at: variant59)
+641407 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 2.0 StmtDelete(42) StmtReplace(7,8) (stored at: variant60)
+641432 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:141: error: break outside switch or loop
+			break;
+			^
+1 error
+
+641432 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(17) StmtReplace(26,18) at variant61 fails to compile
+
+641433 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(17) StmtReplace(26,18) (stored at: variant61)
+641461 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:99: error: cannot find symbol
+            if (skipped == 0) {
+                ^
+  symbol:   variable skipped
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:102: error: cannot find symbol
+            numToSkip -= skipped;
+                         ^
+  symbol:   variable skipped
+  location: class IOUtils
+2 errors
+
+641461 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(42) StmtDelete(16) at variant62 fails to compile
+
+641461 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(42) StmtDelete(16) (stored at: variant62)
+641492 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:76: error: cannot find symbol
+        return count;
+               ^
+  symbol:   variable count
+  location: class IOUtils
+1 error
+
+641493 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(10,2) StmtDelete(6) at variant63 fails to compile
+
+641493 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(10,2) StmtDelete(6) (stored at: variant63)
+641529 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:146: error: break outside switch or loop
+				break;
+				^
+1 error
+
+641529 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(19,19) StmtAppend(26,18) at variant64 fails to compile
+
+641529 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(19,19) StmtAppend(26,18) (stored at: variant64)
+641556 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:97: error: break outside switch or loop
+			break;
+			^
+1 error
+
+641556 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(9,9) StmtReplace(14,33) at variant65 fails to compile
+
+641557 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(9,9) StmtReplace(14,33) (stored at: variant65)
+641585 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:142: error: break outside switch or loop
+			break;
+			^
+1 error
+
+641585 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(9,9) StmtReplace(25,33) at variant66 fails to compile
+
+641585 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(9,9) StmtReplace(25,33) (stored at: variant66)
+643273 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 4.0 StmtReplace(18,33) (stored at: variant67)
+644552 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 3.0 StmtReplace(18,19) StmtReplace(15,33) (stored at: variant68)
+644583 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:99: error: cannot find symbol
+            if (skipped == 0) {
+                ^
+  symbol:   variable skipped
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:102: error: cannot find symbol
+            numToSkip -= skipped;
+                         ^
+  symbol:   variable skipped
+  location: class IOUtils
+2 errors
+
+644583 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(33,33) StmtDelete(16) at variant69 fails to compile
+
+644583 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(33,33) StmtDelete(16) (stored at: variant69)
+644616 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:72: error: cannot find symbol
+        while (-1 != (n = input.read(buffer))) {
+                                     ^
+  symbol:   variable buffer
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:73: error: cannot find symbol
+            output.write(buffer, 0, n);
+                         ^
+  symbol:   variable buffer
+  location: class IOUtils
+2 errors
+
+644616 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(42) StmtDelete(4) at variant70 fails to compile
+
+644616 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(42) StmtDelete(4) (stored at: variant70)
+644648 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:178: error: break outside switch or loop
+				break;
+				^
+1 error
+
+644648 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(39,18) at variant71 fails to compile
+
+644648 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(39,18) (stored at: variant71)
+645346 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 4.0 StmtReplace(43,26) StmtReplace(10,10) (stored at: variant72)
+646785 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 2.0 StmtDelete(33) StmtDelete(9) (stored at: variant73)
+648030 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 4.0 StmtReplace(33,33) StmtDelete(26) (stored at: variant74)
+649867 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 2.0 StmtReplace(33,33) StmtDelete(14) (stored at: variant75)
+651381 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 3.0 StmtDelete(33) StmtDelete(25) (stored at: variant76)
+651415 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:151: error: cannot find symbol
+			while (count != len) {
+			       ^
+  symbol:   variable count
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:152: error: cannot find symbol
+				x = input.read(b, offset + count, len - count);
+				^
+  symbol:   variable x
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:152: error: cannot find symbol
+				x = input.read(b, offset + count, len - count);
+				                           ^
+  symbol:   variable count
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:152: error: cannot find symbol
+				x = input.read(b, offset + count, len - count);
+				                                        ^
+  symbol:   variable count
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:153: error: cannot find symbol
+				if (x == -1) {
+				    ^
+  symbol:   variable x
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:156: error: cannot find symbol
+				count += x;
+				^
+  symbol:   variable count
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:156: error: cannot find symbol
+				count += x;
+				         ^
+  symbol:   variable x
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:158: error: cannot find symbol
+			count += x;
+			^
+  symbol:   variable count
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:158: error: cannot find symbol
+			count += x;
+			         ^
+  symbol:   variable x
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:160: error: cannot find symbol
+        return count;
+               ^
+  symbol:   variable count
+  location: class IOUtils
+10 errors
+
+651415 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(29,35) StmtAppend(28,26) at variant77 fails to compile
+
+651415 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(29,35) StmtAppend(28,26) (stored at: variant77)
+652665 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 3.0 StmtReplace(10,2) StmtReplace(26,25) (stored at: variant78)
+652688 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:99: error: cannot find symbol
+            if (skipped == 0)
+                ^
+  symbol:   variable skipped
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:101: error: cannot find symbol
+            numToSkip -= skipped;
+                         ^
+  symbol:   variable skipped
+  location: class IOUtils
+2 errors
+
+652688 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(18,19) StmtDelete(16) at variant79 fails to compile
+
+652688 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(18,19) StmtDelete(16) (stored at: variant79)
+652707 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:180: error: cannot find symbol
+        copy(input, output);
+                    ^
+  symbol:   variable output
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:181: error: cannot find symbol
+        return output.toByteArray();
+               ^
+  symbol:   variable output
+  location: class IOUtils
+2 errors
+
+652708 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(38,26) at variant80 fails to compile
+
+652708 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(38,26) (stored at: variant80)
+653866 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(35) (stored at: variant81)
+653884 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:97: error: break outside switch or loop
+			break;
+			^
+1 error
+
+653885 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(14,33) at variant82 fails to compile
+
+653885 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(14,33) (stored at: variant82)
+653905 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:154: error: break outside switch or loop
+				break;
+				^
+1 error
+
+653905 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(29,18) at variant83 fails to compile
+
+653905 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(29,18) (stored at: variant83)
+653923 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:106: error: unreachable statement
+            numToSkip -= skipped;
+            ^
+1 error
+
+653924 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(17,33) at variant84 fails to compile
+
+653924 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(17,33) (stored at: variant84)
+653945 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:98: error: break outside switch or loop
+				break;
+				^
+org/apache/commons/compress/utils/IOUtils.java:110: error: cannot find symbol
+        return available - numToSkip;
+               ^
+  symbol:   variable available
+  location: class IOUtils
+2 errors
+
+653945 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(13,15) at variant85 fails to compile
+
+653945 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(13,15) (stored at: variant85)
+655072 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 4.0 StmtReplace(43,42) (stored at: variant86)
+655974 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 4.0 StmtAppend(20,34) (stored at: variant87)
+656701 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 4.0 StmtDelete(42) (stored at: variant88)
+656779 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:147: error: cannot find symbol
+        while (count != len) {
+               ^
+  symbol:   variable count
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:148: error: cannot find symbol
+            x = input.read(b, offset + count, len - count);
+            ^
+  symbol:   variable x
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:148: error: cannot find symbol
+            x = input.read(b, offset + count, len - count);
+                                       ^
+  symbol:   variable count
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:148: error: cannot find symbol
+            x = input.read(b, offset + count, len - count);
+                                                    ^
+  symbol:   variable count
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:149: error: cannot find symbol
+            if (x == -1) {
+                ^
+  symbol:   variable x
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:152: error: cannot find symbol
+            count += x;
+            ^
+  symbol:   variable count
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:152: error: cannot find symbol
+            count += x;
+                     ^
+  symbol:   variable x
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:154: error: cannot find symbol
+        return count;
+               ^
+  symbol:   variable count
+  location: class IOUtils
+8 errors
+
+656779 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(28,25) at variant89 fails to compile
+
+656779 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(28,25) (stored at: variant89)
+1041027 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(30,32) (stored at: variant90)
+1045326 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 4.0 StmtAppend(35,34) (stored at: variant91)
+1045345 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:152: error: unreachable statement
+            if (x == -1) {
+            ^
+1 error
+
+1045346 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(31,26) at variant92 fails to compile
+
+1045346 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(31,26) (stored at: variant92)
+1046500 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 4.0 StmtAppend(30,31) (stored at: variant93)
+1046518 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:97: error: break outside switch or loop
+			break;
+			^
+1 error
+
+1046518 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(14,18) at variant94 fails to compile
+
+1046518 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(14,18) (stored at: variant94)
+1046537 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:146: error: break outside switch or loop
+				break;
+				^
+1 error
+
+1046537 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(26,18) at variant95 fails to compile
+
+1046537 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(26,18) (stored at: variant95)
+1430771 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(30,35) (stored at: variant96)
+1430800 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:104: error: break outside switch or loop
+			break;
+			^
+1 error
+
+1430800 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(14,19) at variant97 fails to compile
+
+1430800 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(14,19) (stored at: variant97)
+1527642 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 4.0 StmtDelete(18) (stored at: variant98)
+1528860 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 4.0 StmtAppend(8,18) (stored at: variant99)
+1528883 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:106: error: unreachable statement
+            numToSkip -= skipped;
+            ^
+1 error
+
+1528883 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(17,18) at variant100 fails to compile
+
+1528883 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(17,18) (stored at: variant100)
+1529959 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 2.0 StmtDelete(7) (stored at: variant101)
+1529994 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:146: error: cannot find symbol
+        while (count != len) {
+               ^
+  symbol:   variable count
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:147: error: cannot find symbol
+            x = input.read(b, offset + count, len - count);
+            ^
+  symbol:   variable x
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:147: error: cannot find symbol
+            x = input.read(b, offset + count, len - count);
+                                       ^
+  symbol:   variable count
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:147: error: cannot find symbol
+            x = input.read(b, offset + count, len - count);
+                                                    ^
+  symbol:   variable count
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:148: error: cannot find symbol
+            if (x == -1) {
+                ^
+  symbol:   variable x
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:151: error: cannot find symbol
+            count += x;
+            ^
+  symbol:   variable count
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:151: error: cannot find symbol
+            count += x;
+                     ^
+  symbol:   variable x
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:153: error: cannot find symbol
+        return count;
+               ^
+  symbol:   variable count
+  location: class IOUtils
+8 errors
+
+1529994 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(28) at variant102 fails to compile
+
+1529994 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(28) (stored at: variant102)
+1530808 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 4.0 StmtDelete(7) (stored at: variant103)
+1530808 [main] INFO clegoues.genprog4java.Search.Search  - search: generation2
+1530838 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:99: error: cannot find symbol
+            if (skipped == 0) {
+                ^
+  symbol:   variable skipped
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:102: error: cannot find symbol
+            numToSkip -= skipped;
+                         ^
+  symbol:   variable skipped
+  location: class IOUtils
+2 errors
+
+1530869 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:99: error: cannot find symbol
+            if (skipped == 0) {
+                ^
+  symbol:   variable skipped
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:102: error: cannot find symbol
+            numToSkip -= skipped;
+                         ^
+  symbol:   variable skipped
+  location: class IOUtils
+2 errors
+
+1530950 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:99: error: cannot find symbol
+            if (skipped == 0) {
+                ^
+  symbol:   variable skipped
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:102: error: cannot find symbol
+            numToSkip -= skipped;
+                         ^
+  symbol:   variable skipped
+  location: class IOUtils
+2 errors
+
+1530975 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:99: error: cannot find symbol
+            if (skipped == 0) {
+                ^
+  symbol:   variable skipped
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:102: error: cannot find symbol
+            numToSkip -= skipped;
+                         ^
+  symbol:   variable skipped
+  location: class IOUtils
+2 errors
+
+1531004 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:99: error: cannot find symbol
+            if (skipped == 0) {
+                ^
+  symbol:   variable skipped
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:102: error: cannot find symbol
+            numToSkip -= skipped;
+                         ^
+  symbol:   variable skipped
+  location: class IOUtils
+2 errors
+
+1531035 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:99: error: cannot find symbol
+            if (skipped == 0) {
+                ^
+  symbol:   variable skipped
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:102: error: cannot find symbol
+            numToSkip -= skipped;
+                         ^
+  symbol:   variable skipped
+  location: class IOUtils
+2 errors
+
+1531065 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:99: error: cannot find symbol
+            if (skipped == 0) {
+                ^
+  symbol:   variable skipped
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:102: error: cannot find symbol
+            numToSkip -= skipped;
+                         ^
+  symbol:   variable skipped
+  location: class IOUtils
+2 errors
+
+1531094 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:99: error: cannot find symbol
+            if (skipped == 0) {
+                ^
+  symbol:   variable skipped
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:102: error: cannot find symbol
+            numToSkip -= skipped;
+                         ^
+  symbol:   variable skipped
+  location: class IOUtils
+2 errors
+
+1531126 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:99: error: cannot find symbol
+            if (skipped == 0) {
+                ^
+  symbol:   variable skipped
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:102: error: cannot find symbol
+            numToSkip -= skipped;
+                         ^
+  symbol:   variable skipped
+  location: class IOUtils
+2 errors
+
+1531159 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:99: error: cannot find symbol
+            if (skipped == 0) {
+                ^
+  symbol:   variable skipped
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:102: error: cannot find symbol
+            numToSkip -= skipped;
+                         ^
+  symbol:   variable skipped
+  location: class IOUtils
+2 errors
+
+1531186 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:99: error: cannot find symbol
+            if (skipped == 0) {
+                ^
+  symbol:   variable skipped
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:102: error: cannot find symbol
+            numToSkip -= skipped;
+                         ^
+  symbol:   variable skipped
+  location: class IOUtils
+2 errors
+
+1531219 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:99: error: cannot find symbol
+            if (skipped == 0) {
+                ^
+  symbol:   variable skipped
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:102: error: cannot find symbol
+            numToSkip -= skipped;
+                         ^
+  symbol:   variable skipped
+  location: class IOUtils
+2 errors
+
+1531258 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:99: error: cannot find symbol
+            if (skipped == 0) {
+                ^
+  symbol:   variable skipped
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:102: error: cannot find symbol
+            numToSkip -= skipped;
+                         ^
+  symbol:   variable skipped
+  location: class IOUtils
+2 errors
+
+1531291 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:99: error: cannot find symbol
+            if (skipped == 0) {
+                ^
+  symbol:   variable skipped
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:102: error: cannot find symbol
+            numToSkip -= skipped;
+                         ^
+  symbol:   variable skipped
+  location: class IOUtils
+2 errors
+
+1531316 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:99: error: cannot find symbol
+            if (skipped == 0) {
+                ^
+  symbol:   variable skipped
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:102: error: cannot find symbol
+            numToSkip -= skipped;
+                         ^
+  symbol:   variable skipped
+  location: class IOUtils
+2 errors
+
+1531343 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:99: error: cannot find symbol
+            if (skipped == 0) {
+                ^
+  symbol:   variable skipped
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:102: error: cannot find symbol
+            numToSkip -= skipped;
+                         ^
+  symbol:   variable skipped
+  location: class IOUtils
+2 errors
+
+1531370 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:99: error: cannot find symbol
+            if (skipped == 0) {
+                ^
+  symbol:   variable skipped
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:102: error: cannot find symbol
+            numToSkip -= skipped;
+                         ^
+  symbol:   variable skipped
+  location: class IOUtils
+2 errors
+
+1531398 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:99: error: cannot find symbol
+            if (skipped == 0) {
+                ^
+  symbol:   variable skipped
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:102: error: cannot find symbol
+            numToSkip -= skipped;
+                         ^
+  symbol:   variable skipped
+  location: class IOUtils
+2 errors
+
+1531430 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:99: error: cannot find symbol
+            if (skipped == 0) {
+                ^
+  symbol:   variable skipped
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:102: error: cannot find symbol
+            numToSkip -= skipped;
+                         ^
+  symbol:   variable skipped
+  location: class IOUtils
+2 errors
+
+1531452 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:99: error: cannot find symbol
+            if (skipped == 0) {
+                ^
+  symbol:   variable skipped
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:102: error: cannot find symbol
+            numToSkip -= skipped;
+                         ^
+  symbol:   variable skipped
+  location: class IOUtils
+2 errors
+
+1531471 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:99: error: cannot find symbol
+            if (skipped == 0) {
+                ^
+  symbol:   variable skipped
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:102: error: cannot find symbol
+            numToSkip -= skipped;
+                         ^
+  symbol:   variable skipped
+  location: class IOUtils
+2 errors
+
+1532609 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 4.0 StmtDelete(42) StmtReplace(33,18) StmtReplace(33,19) (stored at: variant104)
+1628889 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 3.0 StmtDelete(18) StmtReplace(34,34) (stored at: variant105)
+1630372 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 4.0 StmtAppend(29,25) StmtDelete(43) StmtReplace(18,18) (stored at: variant106)
+1631879 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 2.0 StmtReplace(43,26) StmtReplace(10,10) StmtReplace(30,19) (stored at: variant107)
+1632938 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(7) StmtAppend(9,9) (stored at: variant108)
+1632967 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:76: error: cannot find symbol
+        while (-1 != (n = input.read(buffer))) {
+                      ^
+  symbol:   variable n
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:77: error: cannot find symbol
+            output.write(buffer, 0, n);
+                                    ^
+  symbol:   variable n
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:78: error: cannot find symbol
+            count += n;
+                     ^
+  symbol:   variable n
+  location: class IOUtils
+3 errors
+
+1632967 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(43,42) StmtAppend(5,26) at variant109 fails to compile
+
+1632967 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(43,42) StmtAppend(5,26) (stored at: variant109)
+1634457 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 2.0 StmtDelete(7) StmtDelete(34) (stored at: variant110)
+1634479 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:192: error: exception IOException is never thrown in body of corresponding try statement
+            } catch (IOException ignored) { // NOPMD
+              ^
+1 error
+
+1634479 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(35,34) StmtDelete(46) at variant111 fails to compile
+
+1634479 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtAppend(35,34) StmtDelete(46) (stored at: variant111)
+1634501 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:145: error: break outside switch or loop
+        break;
+        ^
+1 error
+
+1634501 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(42) StmtReplace(33,18) StmtReplace(29,19) at variant112 fails to compile
+
+1634501 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(42) StmtReplace(33,18) StmtReplace(29,19) (stored at: variant112)
+1634533 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:103: error: cannot find symbol
+            if (skipped == 0) {
+                ^
+  symbol:   variable skipped
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:106: error: cannot find symbol
+            numToSkip -= skipped;
+                         ^
+  symbol:   variable skipped
+  location: class IOUtils
+2 errors
+
+1634534 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(32) StmtAppend(25,25) StmtAppend(16,26) at variant113 fails to compile
+
+1634534 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(32) StmtAppend(25,25) StmtAppend(16,26) (stored at: variant113)
+1634563 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:142: error: break outside switch or loop
+			break;
+			^
+1 error
+
+1634564 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(33,33) StmtDelete(26) StmtReplace(25,18) at variant114 fails to compile
+
+1634564 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(33,33) StmtDelete(26) StmtReplace(25,18) (stored at: variant114)
+1634597 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:101: error: unreachable statement
+					{
+					^
+1 error
+
+1634598 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(42) StmtReplace(33,18) StmtAppend(19,26) at variant115 fails to compile
+
+1634598 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(42) StmtReplace(33,18) StmtAppend(19,26) (stored at: variant115)
+1634628 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:177: error: break outside switch or loop
+				break;
+				^
+org/apache/commons/compress/utils/IOUtils.java:180: error: cannot find symbol
+        copy(input, output);
+                    ^
+  symbol:   variable output
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:181: error: cannot find symbol
+        return output.toByteArray();
+               ^
+  symbol:   variable output
+  location: class IOUtils
+3 errors
+
+1634628 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(18,33) StmtAppend(38,18) at variant116 fails to compile
+
+1634628 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(18,33) StmtAppend(38,18) (stored at: variant116)
+1827321 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 3.0 StmtDelete(18) StmtDelete(43) (stored at: variant117)
+1828478 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 4.0 StmtAppend(29,25) StmtAppend(8,19) StmtDelete(10) (stored at: variant118)
+1828496 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:146: error: break outside switch or loop
+				break;
+				^
+1 error
+
+1828497 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(35,34) StmtAppend(25,18) at variant119 fails to compile
+
+1828497 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtAppend(35,34) StmtAppend(25,18) (stored at: variant119)
+1829606 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 2.0 StmtReplace(9,9) StmtReplace(15,33) StmtAppend(42,26) (stored at: variant120)
+1829628 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:146: error: break outside switch or loop
+				break;
+				^
+1 error
+
+1829628 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(43,42) StmtAppend(25,18) at variant121 fails to compile
+
+1829628 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(43,42) StmtAppend(25,18) (stored at: variant121)
+2022386 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 3.0 StmtReplace(33,33) StmtDelete(19) StmtDelete(18) (stored at: variant122)
+2023466 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 4.0 StmtAppend(30,31) StmtReplace(25,25) (stored at: variant123)
+2023485 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:192: error: exception IOException is never thrown in body of corresponding try statement
+            } catch (IOException ignored) { // NOPMD
+              ^
+1 error
+
+2023486 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(18) StmtReplace(46,42) at variant124 fails to compile
+
+2023486 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(18) StmtReplace(46,42) (stored at: variant124)
+2023503 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:99: error: cannot find symbol
+            if (skipped == 0) {
+                ^
+  symbol:   variable skipped
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:101: error: cannot find symbol
+            numToSkip -= skipped;
+                         ^
+  symbol:   variable skipped
+  location: class IOUtils
+2 errors
+
+2023503 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(18) StmtDelete(16) at variant125 fails to compile
+
+2023503 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(18) StmtDelete(16) (stored at: variant125)
+2023529 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:149: error: cannot find symbol
+        while (count != len) {
+               ^
+  symbol:   variable count
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:150: error: cannot find symbol
+            x = input.read(b, offset + count, len - count);
+            ^
+  symbol:   variable x
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:150: error: cannot find symbol
+            x = input.read(b, offset + count, len - count);
+                                       ^
+  symbol:   variable count
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:150: error: cannot find symbol
+            x = input.read(b, offset + count, len - count);
+                                                    ^
+  symbol:   variable count
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:151: error: cannot find symbol
+            if (x == -1) {
+                ^
+  symbol:   variable x
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:154: error: cannot find symbol
+            count += x;
+            ^
+  symbol:   variable count
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:154: error: cannot find symbol
+            count += x;
+                     ^
+  symbol:   variable x
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:156: error: cannot find symbol
+        return count;
+               ^
+  symbol:   variable count
+  location: class IOUtils
+8 errors
+
+2023529 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(20,34) StmtDelete(28) at variant126 fails to compile
+
+2023529 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtAppend(20,34) StmtDelete(28) (stored at: variant126)
+2023584 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:98: error: break outside switch or loop
+				break;
+				^
+org/apache/commons/compress/utils/IOUtils.java:106: error: cannot find symbol
+        return available - numToSkip;
+               ^
+  symbol:   variable available
+  location: class IOUtils
+2 errors
+
+2023584 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(9,9) StmtReplace(15,33) StmtReplace(13,15) at variant127 fails to compile
+
+2023584 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(9,9) StmtReplace(15,33) StmtReplace(13,15) (stored at: variant127)
+2024666 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(42) StmtDelete(42) StmtDelete(29) (stored at: variant128)
+2024684 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:182: error: break outside switch or loop
+				break;
+				^
+org/apache/commons/compress/utils/IOUtils.java:185: error: cannot find symbol
+        copy(input, output);
+                    ^
+  symbol:   variable output
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:186: error: cannot find symbol
+        return output.toByteArray();
+               ^
+  symbol:   variable output
+  location: class IOUtils
+3 errors
+
+2024684 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(8,18) StmtAppend(38,33) at variant129 fails to compile
+
+2024684 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtAppend(8,18) StmtAppend(38,33) (stored at: variant129)
+2025827 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 3.0 StmtAppend(35,34) StmtDelete(32) (stored at: variant130)
+2025846 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:104: error: break outside switch or loop
+			break;
+			^
+1 error
+
+2025846 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(18) StmtAppend(14,34) at variant131 fails to compile
+
+2025846 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(18) StmtAppend(14,34) (stored at: variant131)
+2025867 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:150: error: unreachable statement
+            if (x == -1) {
+            ^
+1 error
+
+2025867 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(43,42) StmtAppend(31,19) at variant132 fails to compile
+
+2025867 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(43,42) StmtAppend(31,19) (stored at: variant132)
+2027122 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(33,33) StmtDelete(26) StmtAppend(30,35) (stored at: variant133)
+2027141 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:150: error: unreachable statement
+					{
+					^
+1 error
+
+2027141 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(43,26) StmtReplace(10,10) StmtAppend(34,33) at variant134 fails to compile
+
+2027141 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(43,26) StmtReplace(10,10) StmtAppend(34,33) (stored at: variant134)
+2027161 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:197: error: unreported exception IOException; must be caught or declared to be thrown
+			c.close();
+			       ^
+1 error
+
+2027161 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(29,25) StmtDelete(43) StmtAppend(43,46) at variant135 fails to compile
+
+2027162 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtAppend(29,25) StmtDelete(43) StmtAppend(43,46) (stored at: variant135)
+2219872 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 1.0 StmtReplace(33,33) StmtDelete(19) StmtReplace(35,30) (stored at: variant136)
+2412457 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 3.0 StmtReplace(33,33) StmtDelete(19) StmtDelete(43) (stored at: variant137)
+2412486 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:101: error: unreachable statement
+					{
+					^
+1 error
+
+2412486 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(32) StmtAppend(25,25) StmtAppend(19,33) at variant138 fails to compile
+
+2412486 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(32) StmtAppend(25,25) StmtAppend(19,33) (stored at: variant138)
+2412512 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:72: error: cannot find symbol
+        while (-1 != (n = input.read(buffer))) {
+                      ^
+  symbol:   variable n
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:73: error: cannot find symbol
+            output.write(buffer, 0, n);
+                                    ^
+  symbol:   variable n
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:74: error: cannot find symbol
+            count += n;
+                     ^
+  symbol:   variable n
+  location: class IOUtils
+3 errors
+
+2412512 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(18,33) StmtDelete(5) at variant139 fails to compile
+
+2412512 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(18,33) StmtDelete(5) (stored at: variant139)
+2413391 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 4.0 StmtAppend(30,31) StmtDelete(34) (stored at: variant140)
+2413422 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:189: error: break outside switch or loop
+				break;
+				^
+1 error
+
+2413422 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(9,9) StmtReplace(15,33) StmtAppend(42,33) at variant141 fails to compile
+
+2413422 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(9,9) StmtReplace(15,33) StmtAppend(42,33) (stored at: variant141)
+2414376 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 3.0 StmtDelete(7) StmtDelete(25) (stored at: variant142)
+2414451 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:99: error: cannot find symbol
+            if (skipped == 0) {
+                ^
+  symbol:   variable skipped
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:102: error: cannot find symbol
+            numToSkip -= skipped;
+                         ^
+  symbol:   variable skipped
+  location: class IOUtils
+2 errors
+
+2414451 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(35,34) StmtDelete(16) at variant143 fails to compile
+
+2414451 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtAppend(35,34) StmtDelete(16) (stored at: variant143)
+2414474 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:100: error: cannot find symbol
+            if (skipped == 0) {
+                ^
+  symbol:   variable skipped
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:103: error: cannot find symbol
+            numToSkip -= skipped;
+                         ^
+  symbol:   variable skipped
+  location: class IOUtils
+2 errors
+
+2414474 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(16,26) at variant144 fails to compile
+
+2414474 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(16,26) (stored at: variant144)
+2415527 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 1.0 StmtReplace(33,18) StmtReplace(35,18) (stored at: variant145)
+2415547 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:142: error: break outside switch or loop
+			break;
+			^
+1 error
+
+2415548 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(26,18) at variant146 fails to compile
+
+2415548 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(26,18) (stored at: variant146)
+2416509 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 2.0 StmtDelete(43) StmtAppend(10,9) (stored at: variant147)
+2416532 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:99: error: unreachable statement
+            numToSkip -= skipped;
+            ^
+1 error
+
+2416532 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(17,19) at variant148 fails to compile
+
+2416532 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(17,19) (stored at: variant148)
+2417561 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 3.0 StmtDelete(42) StmtReplace(20,33) (stored at: variant149)
+2417582 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:146: error: break outside switch or loop
+				break;
+				^
+1 error
+
+2417582 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(26,33) at variant150 fails to compile
+
+2417582 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtAppend(26,33) (stored at: variant150)
+2421246 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 4.0 StmtDelete(39) (stored at: variant151)
+2421275 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:142: error: break outside switch or loop
+			break;
+			^
+1 error
+
+2421275 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(42) StmtReplace(25,33) at variant152 fails to compile
+
+2421275 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(42) StmtReplace(25,33) (stored at: variant152)
+2422275 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 4.0 StmtReplace(34,30) (stored at: variant153)
+2519030 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 4.0 StmtDelete(19) StmtAppend(7,10) (stored at: variant154)
+2519046 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:100: error: cannot find symbol
+            if (skipped == 0) {
+                ^
+  symbol:   variable skipped
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:103: error: cannot find symbol
+            numToSkip -= skipped;
+                         ^
+  symbol:   variable skipped
+  location: class IOUtils
+2 errors
+
+2519047 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(16,26) at variant155 fails to compile
+
+2519047 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(16,26) (stored at: variant155)
+2520153 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 3.0 StmtDelete(19) StmtDelete(14) (stored at: variant156)
+2521197 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 3.0 StmtReplace(15,26) (stored at: variant157)
+2521216 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:72: error: break outside switch or loop
+				break;
+				^
+org/apache/commons/compress/utils/IOUtils.java:76: error: cannot find symbol
+        while (-1 != (n = input.read(buffer))) {
+                      ^
+  symbol:   variable n
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:77: error: cannot find symbol
+            output.write(buffer, 0, n);
+                                    ^
+  symbol:   variable n
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:78: error: cannot find symbol
+            count += n;
+                     ^
+  symbol:   variable n
+  location: class IOUtils
+4 errors
+
+2521216 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(29,25) StmtAppend(25,25) StmtAppend(5,18) at variant158 fails to compile
+
+2521216 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtAppend(29,25) StmtAppend(25,25) StmtAppend(5,18) (stored at: variant158)
+2522141 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 1.0 StmtReplace(35,33) (stored at: variant159)
+2522159 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:72: error: cannot find symbol
+        while (-1 != (n = input.read(buffer))) {
+                                     ^
+  symbol:   variable buffer
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:73: error: cannot find symbol
+            output.write(buffer, 0, n);
+                         ^
+  symbol:   variable buffer
+  location: class IOUtils
+2 errors
+
+2522159 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(4) at variant160 fails to compile
+
+2522159 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(4) (stored at: variant160)
+2523134 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 4.0 StmtReplace(15,33) StmtAppend(9,10) (stored at: variant161)
+2524088 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 4.0 StmtReplace(15,33) StmtDelete(18) (stored at: variant162)
+2524723 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 3.0 StmtDelete(18) (stored at: variant163)
+2524739 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:70: error: break outside switch or loop
+			break;
+			^
+org/apache/commons/compress/utils/IOUtils.java:73: error: cannot find symbol
+        while (-1 != (n = input.read(buffer))) {
+                      ^
+  symbol:   variable n
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:74: error: cannot find symbol
+            output.write(buffer, 0, n);
+                                    ^
+  symbol:   variable n
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:75: error: cannot find symbol
+            count += n;
+                     ^
+  symbol:   variable n
+  location: class IOUtils
+4 errors
+
+2524739 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(5,33) at variant164 fails to compile
+
+2524739 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtReplace(5,33) (stored at: variant164)
+2524760 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:143: error: break outside switch or loop
+			break;
+			^
+1 error
+
+2524761 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(19) StmtReplace(26,33) at variant165 fails to compile
+
+2524761 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtDelete(19) StmtReplace(26,33) (stored at: variant165)
+2524785 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:76: error: cannot find symbol
+            count += n;
+            ^
+  symbol:   variable count
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:78: error: cannot find symbol
+        return count;
+               ^
+  symbol:   variable count
+  location: class IOUtils
+2 errors
+
+2524785 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(6,9) at variant166 fails to compile
+
+2524785 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 0.0 StmtAppend(6,9) (stored at: variant166)
+2525765 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 2 4.0 StmtAppend(10,33) (stored at: variant167)
+2525765 [main] INFO clegoues.genprog4java.Search.Search  - search: generation3
+2526254 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:149: error: unreachable statement
+            if (x == -1) {
+            ^
+1 error
+
+2526255 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(39) StmtReplace(31,33) at variant168 fails to compile
+
+2526255 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(39) StmtReplace(31,33) (stored at: variant168)
+2527305 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 4.0 StmtDelete(42) StmtReplace(33,18) StmtReplace(33,19) StmtReplace(19,33) (stored at: variant169)
+2527321 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:176: error: cannot find symbol
+        copy(input, output);
+                    ^
+  symbol:   variable output
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:177: error: cannot find symbol
+        return output.toByteArray();
+               ^
+  symbol:   variable output
+  location: class IOUtils
+2 errors
+
+2527321 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(15,33) StmtDelete(18) StmtAppend(38,26) at variant170 fails to compile
+
+2527321 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(15,33) StmtDelete(18) StmtAppend(38,26) (stored at: variant170)
+2528283 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 3.0 StmtReplace(15,33) StmtAppend(9,10) StmtDelete(16) (stored at: variant171)
+2625145 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 3.0 StmtDelete(18) StmtDelete(43) StmtReplace(8,9) (stored at: variant172)
+2626187 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 2.0 StmtReplace(15,33) StmtAppend(9,10) StmtReplace(30,30) (stored at: variant173)
+2627226 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 4.0 StmtReplace(33,33) StmtDelete(19) StmtDelete(18) StmtAppend(20,26) (stored at: variant174)
+2628095 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 4.0 StmtAppend(30,31) StmtDelete(34) StmtDelete(31) (stored at: variant175)
+2628727 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 3.0 StmtAppend(29,25) StmtAppend(8,19) StmtDelete(10) StmtAppend(33,19) (stored at: variant176)
+2629804 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(9,9) StmtReplace(15,33) StmtAppend(42,26) StmtReplace(32,35) (stored at: variant177)
+2629821 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:156: error: unreachable statement
+            if (x == -1) {
+            ^
+1 error
+
+2629822 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(19) StmtAppend(7,10) StmtAppend(31,18) at variant178 fails to compile
+
+2629822 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(19) StmtAppend(7,10) StmtAppend(31,18) (stored at: variant178)
+2629839 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:180: error: unreachable statement
+        return output.toByteArray();
+        ^
+1 error
+
+2629839 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(15,33) StmtAppend(9,10) StmtAppend(39,26) at variant179 fails to compile
+
+2629839 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(15,33) StmtAppend(9,10) StmtAppend(39,26) (stored at: variant179)
+2629864 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:180: error: unreachable statement
+        return output.toByteArray();
+        ^
+1 error
+
+2629864 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(15,33) StmtAppend(9,10) StmtAppend(39,26) at variant180 fails to compile
+
+2629864 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(15,33) StmtAppend(9,10) StmtAppend(39,26) (stored at: variant180)
+2629884 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:178: error: cannot find symbol
+        return output.toByteArray();
+               ^
+  symbol:   variable output
+  location: class IOUtils
+1 error
+
+2629884 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(39) StmtDelete(38) at variant181 fails to compile
+
+2629884 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(39) StmtDelete(38) (stored at: variant181)
+2630621 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 4.0 StmtAppend(29,25) StmtAppend(8,19) StmtDelete(10) StmtAppend(32,34) (stored at: variant182)
+2631497 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 4.0 StmtDelete(42) StmtReplace(33,18) StmtReplace(33,19) StmtDelete(34) (stored at: variant183)
+2632566 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 3.0 StmtAppend(10,33) StmtReplace(15,26) (stored at: variant184)
+2633415 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 4.0 StmtDelete(18) StmtDelete(17) (stored at: variant185)
+2633431 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:154: error: break outside switch or loop
+				break;
+				^
+1 error
+
+2633431 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(39) StmtAppend(29,32) at variant186 fails to compile
+
+2633431 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(39) StmtAppend(29,32) (stored at: variant186)
+2634402 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 2.0 StmtDelete(39) StmtReplace(33,26) (stored at: variant187)
+2634421 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:148: error: cannot find symbol
+			while (count != len) {
+			       ^
+  symbol:   variable count
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:149: error: cannot find symbol
+				x = input.read(b, offset + count, len - count);
+				^
+  symbol:   variable x
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:149: error: cannot find symbol
+				x = input.read(b, offset + count, len - count);
+				                           ^
+  symbol:   variable count
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:149: error: cannot find symbol
+				x = input.read(b, offset + count, len - count);
+				                                        ^
+  symbol:   variable count
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:150: error: cannot find symbol
+				if (x == -1) {
+				    ^
+  symbol:   variable x
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:153: error: cannot find symbol
+				count += x;
+				^
+  symbol:   variable count
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:153: error: cannot find symbol
+				count += x;
+				         ^
+  symbol:   variable x
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:159: error: cannot find symbol
+        return count;
+               ^
+  symbol:   variable count
+  location: class IOUtils
+8 errors
+
+2634421 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(29,25) StmtDelete(43) StmtReplace(18,18) StmtReplace(28,25) at variant188 fails to compile
+
+2634421 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtAppend(29,25) StmtDelete(43) StmtReplace(18,18) StmtReplace(28,25) (stored at: variant188)
+2634436 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:147: error: unreachable statement
+            count += x;
+            ^
+1 error
+
+2634436 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(7) StmtDelete(25) StmtReplace(32,33) at variant189 fails to compile
+
+2634436 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(7) StmtDelete(25) StmtReplace(32,33) (stored at: variant189)
+2635215 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 4.0 StmtAppend(29,25) StmtDelete(43) StmtReplace(18,18) StmtDelete(32) (stored at: variant190)
+2635231 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:72: error: cannot find symbol
+        while (-1 != (n = input.read(buffer))) {
+                                     ^
+  symbol:   variable buffer
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:73: error: cannot find symbol
+            output.write(buffer, 0, n);
+                         ^
+  symbol:   variable buffer
+  location: class IOUtils
+2 errors
+
+2635231 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(42) StmtReplace(33,18) StmtReplace(33,19) StmtDelete(4) at variant191 fails to compile
+
+2635231 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(42) StmtReplace(33,18) StmtReplace(33,19) StmtDelete(4) (stored at: variant191)
+2635247 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:189: error: exception IOException is never thrown in body of corresponding try statement
+            } catch (IOException ignored) { // NOPMD
+              ^
+1 error
+
+2635247 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(15,33) StmtDelete(18) StmtReplace(46,43) at variant192 fails to compile
+
+2635247 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(15,33) StmtDelete(18) StmtReplace(46,43) (stored at: variant192)
+2635263 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:176: error: break outside switch or loop
+				break;
+				^
+org/apache/commons/compress/utils/IOUtils.java:179: error: cannot find symbol
+        copy(input, output);
+                    ^
+  symbol:   variable output
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:180: error: cannot find symbol
+        return output.toByteArray();
+               ^
+  symbol:   variable output
+  location: class IOUtils
+3 errors
+
+2635263 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(15,33) StmtAppend(9,10) StmtAppend(38,33) at variant193 fails to compile
+
+2635263 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(15,33) StmtAppend(9,10) StmtAppend(38,33) (stored at: variant193)
+2635280 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:71: error: break outside switch or loop
+			break;
+			^
+org/apache/commons/compress/utils/IOUtils.java:75: error: cannot find symbol
+            count += n;
+            ^
+  symbol:   variable count
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:77: error: cannot find symbol
+        return count;
+               ^
+  symbol:   variable count
+  location: class IOUtils
+3 errors
+
+2635280 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(42) StmtReplace(33,18) StmtReplace(33,19) StmtReplace(6,18) at variant194 fails to compile
+
+2635280 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(42) StmtReplace(33,18) StmtReplace(33,19) StmtReplace(6,18) (stored at: variant194)
+2635299 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:200: error: unreported exception IOException; must be caught or declared to be thrown
+			c.close();
+			       ^
+1 error
+
+2635299 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(29,25) StmtAppend(8,19) StmtDelete(10) StmtAppend(42,46) at variant195 fails to compile
+
+2635299 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtAppend(29,25) StmtAppend(8,19) StmtDelete(10) StmtAppend(42,46) (stored at: variant195)
+2923759 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 1.0 StmtReplace(15,26) StmtDelete(30) (stored at: variant196)
+2924698 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 4.0 StmtReplace(34,30) StmtAppend(8,33) (stored at: variant197)
+2925796 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 4.0 StmtAppend(29,25) StmtDelete(43) StmtReplace(18,18) StmtDelete(42) (stored at: variant198)
+2926485 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 4.0 StmtReplace(34,30) StmtAppend(8,18) (stored at: variant199)
+2926501 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:172: error: break outside switch or loop
+			break;
+			^
+org/apache/commons/compress/utils/IOUtils.java:174: error: cannot find symbol
+        copy(input, output);
+                    ^
+  symbol:   variable output
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:175: error: cannot find symbol
+        return output.toByteArray();
+               ^
+  symbol:   variable output
+  location: class IOUtils
+3 errors
+
+2926501 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(7) StmtDelete(25) StmtReplace(38,33) at variant200 fails to compile
+
+2926501 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(7) StmtDelete(25) StmtReplace(38,33) (stored at: variant200)
+2926517 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:101: error: break outside switch or loop
+				break;
+				^
+org/apache/commons/compress/utils/IOUtils.java:113: error: cannot find symbol
+        return available - numToSkip;
+               ^
+  symbol:   variable available
+  location: class IOUtils
+2 errors
+
+2926517 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(19) StmtAppend(7,10) StmtAppend(13,33) at variant201 fails to compile
+
+2926518 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(19) StmtAppend(7,10) StmtAppend(13,33) (stored at: variant201)
+2926534 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:183: error: cannot find symbol
+        copy(input, output);
+                    ^
+  symbol:   variable output
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:184: error: cannot find symbol
+        return output.toByteArray();
+               ^
+  symbol:   variable output
+  location: class IOUtils
+2 errors
+
+2926534 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(34,30) StmtReplace(38,26) at variant202 fails to compile
+
+2926534 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(34,30) StmtReplace(38,26) (stored at: variant202)
+2926964 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 4.0 StmtReplace(15,33) StmtDelete(18) StmtDelete(18) (stored at: variant203)
+2927980 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 3.0 StmtAppend(29,25) StmtDelete(43) StmtReplace(18,18) StmtAppend(10,18) (stored at: variant204)
+3120668 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 3.0 StmtReplace(33,33) StmtDelete(19) StmtDelete(43) StmtDelete(18) (stored at: variant205)
+3121869 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 1.0 StmtReplace(35,33) StmtAppend(15,33) (stored at: variant206)
+3125539 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 4.0 StmtAppend(30,31) StmtDelete(34) StmtReplace(9,9) (stored at: variant207)
+3126678 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 4.0 StmtReplace(33,33) StmtReplace(33,19) StmtReplace(34,26) (stored at: variant208)
+3126702 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:108: error: cannot find symbol
+        return available - numToSkip;
+               ^
+  symbol:   variable available
+  location: class IOUtils
+1 error
+
+3126703 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(42) StmtDelete(18) StmtAppend(13,26) at variant209 fails to compile
+
+3126703 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(42) StmtDelete(18) StmtAppend(13,26) (stored at: variant209)
+3126727 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:142: error: break outside switch or loop
+			break;
+			^
+1 error
+
+3126728 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(26,18) at variant210 fails to compile
+
+3126728 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(26,18) (stored at: variant210)
+3126759 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:146: error: cannot find symbol
+        while (count != len) {
+               ^
+  symbol:   variable count
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:147: error: cannot find symbol
+            x = input.read(b, offset + count, len - count);
+            ^
+  symbol:   variable x
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:147: error: cannot find symbol
+            x = input.read(b, offset + count, len - count);
+                                       ^
+  symbol:   variable count
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:147: error: cannot find symbol
+            x = input.read(b, offset + count, len - count);
+                                                    ^
+  symbol:   variable count
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:148: error: cannot find symbol
+            if (x == -1) {
+                ^
+  symbol:   variable x
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:151: error: cannot find symbol
+            count += x;
+            ^
+  symbol:   variable count
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:151: error: cannot find symbol
+            count += x;
+                     ^
+  symbol:   variable x
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:153: error: cannot find symbol
+        return count;
+               ^
+  symbol:   variable count
+  location: class IOUtils
+8 errors
+
+3126759 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(15,33) StmtAppend(42,26) StmtAppend(28,26) at variant211 fails to compile
+
+3126759 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(15,33) StmtAppend(42,26) StmtAppend(28,26) (stored at: variant211)
+3127924 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 3.0 StmtAppend(42,26) (stored at: variant212)
+3127947 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:106: error: cannot find symbol
+        return available - numToSkip;
+               ^
+  symbol:   variable available
+  location: class IOUtils
+1 error
+
+3127947 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(19) StmtDelete(13) at variant213 fails to compile
+
+3127948 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(19) StmtDelete(13) (stored at: variant213)
+3127978 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:72: error: break outside switch or loop
+				break;
+				^
+org/apache/commons/compress/utils/IOUtils.java:76: error: cannot find symbol
+        while (-1 != (n = input.read(buffer))) {
+                      ^
+  symbol:   variable n
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:77: error: cannot find symbol
+            output.write(buffer, 0, n);
+                                    ^
+  symbol:   variable n
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:78: error: cannot find symbol
+            count += n;
+                     ^
+  symbol:   variable n
+  location: class IOUtils
+4 errors
+
+3127978 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(42) StmtReplace(33,18) StmtAppend(5,18) at variant214 fails to compile
+
+3127978 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(42) StmtReplace(33,18) StmtAppend(5,18) (stored at: variant214)
+3128000 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:72: error: cannot find symbol
+        while (-1 != (n = input.read(buffer))) {
+                                     ^
+  symbol:   variable buffer
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:73: error: cannot find symbol
+            output.write(buffer, 0, n);
+                         ^
+  symbol:   variable buffer
+  location: class IOUtils
+2 errors
+
+3128000 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(15,33) StmtDelete(4) at variant215 fails to compile
+
+3128000 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(15,33) StmtDelete(4) (stored at: variant215)
+3128025 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:147: error: cannot find symbol
+        while (count != len) {
+               ^
+  symbol:   variable count
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:148: error: cannot find symbol
+            x = input.read(b, offset + count, len - count);
+            ^
+  symbol:   variable x
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:148: error: cannot find symbol
+            x = input.read(b, offset + count, len - count);
+                                       ^
+  symbol:   variable count
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:148: error: cannot find symbol
+            x = input.read(b, offset + count, len - count);
+                                                    ^
+  symbol:   variable count
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:149: error: cannot find symbol
+            if (x == -1) {
+                ^
+  symbol:   variable x
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:152: error: cannot find symbol
+            count += x;
+            ^
+  symbol:   variable count
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:152: error: cannot find symbol
+            count += x;
+                     ^
+  symbol:   variable x
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:154: error: cannot find symbol
+        return count;
+               ^
+  symbol:   variable count
+  location: class IOUtils
+8 errors
+
+3128026 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(28,26) at variant216 fails to compile
+
+3128026 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtReplace(28,26) (stored at: variant216)
+3128056 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:146: error: cannot find symbol
+        while (count != len) {
+               ^
+  symbol:   variable count
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:147: error: cannot find symbol
+            x = input.read(b, offset + count, len - count);
+            ^
+  symbol:   variable x
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:147: error: cannot find symbol
+            x = input.read(b, offset + count, len - count);
+                                       ^
+  symbol:   variable count
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:147: error: cannot find symbol
+            x = input.read(b, offset + count, len - count);
+                                                    ^
+  symbol:   variable count
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:148: error: cannot find symbol
+            if (x == -1) {
+                ^
+  symbol:   variable x
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:151: error: cannot find symbol
+            count += x;
+            ^
+  symbol:   variable count
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:151: error: cannot find symbol
+            count += x;
+                     ^
+  symbol:   variable x
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:153: error: cannot find symbol
+        return count;
+               ^
+  symbol:   variable count
+  location: class IOUtils
+8 errors
+
+3128056 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(28) at variant217 fails to compile
+
+3128056 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 3 0.0 StmtDelete(28) (stored at: variant217)
+3128056 [main] INFO clegoues.genprog4java.Search.Search  - search: generation4
+3129622 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 2.0 StmtReplace(33,33) StmtReplace(33,19) StmtReplace(34,26) StmtDelete(7) (stored at: variant218)
+3129640 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:74: error: cannot find symbol
+            count += n;
+            ^
+  symbol:   variable count
+  location: class IOUtils
+org/apache/commons/compress/utils/IOUtils.java:76: error: cannot find symbol
+        return count;
+               ^
+  symbol:   variable count
+  location: class IOUtils
+2 errors
+
+3129640 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(18) StmtDelete(17) StmtDelete(6) at variant219 fails to compile
+
+3129640 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(18) StmtDelete(17) StmtDelete(6) (stored at: variant219)
+3130341 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 3.0 StmtAppend(29,25) StmtAppend(8,19) StmtDelete(10) StmtAppend(32,34) StmtDelete(9) (stored at: variant220)
+3514541 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(15,33) StmtDelete(18) StmtDelete(18) StmtDelete(30) (stored at: variant221)
+3515607 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 1.0 StmtDelete(42) StmtReplace(33,18) StmtReplace(33,19) StmtDelete(34) StmtDelete(29) (stored at: variant222)
+3515629 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:101: error: unreachable statement
+            numToSkip -= skipped;
+            ^
+1 error
+
+3515629 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(29,25) StmtDelete(43) StmtReplace(18,18) StmtDelete(42) StmtReplace(17,26) at variant223 fails to compile
+
+3515629 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtAppend(29,25) StmtDelete(43) StmtReplace(18,18) StmtDelete(42) StmtReplace(17,26) (stored at: variant223)
+3515650 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:153: error: unreachable statement
+				if (len < 0 || offset < 0 || len + offset > b.length) {
+				^
+1 error
+
+3515651 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(42) StmtReplace(33,18) StmtReplace(33,19) StmtReplace(19,33) StmtAppend(33,25) at variant224 fails to compile
+
+3515651 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(42) StmtReplace(33,18) StmtReplace(33,19) StmtReplace(19,33) StmtAppend(33,25) (stored at: variant224)
+3515673 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:201: error: exception IOException is never thrown in body of corresponding try statement
+            } catch (IOException ignored) { // NOPMD
+              ^
+1 error
+
+3515673 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(34,30) StmtAppend(8,18) StmtReplace(46,26) at variant225 fails to compile
+
+3515673 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(34,30) StmtAppend(8,18) StmtReplace(46,26) (stored at: variant225)
+3517066 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 4.0 StmtAppend(30,31) StmtDelete(34) StmtReplace(9,9) StmtDelete(20) (stored at: variant226)
+3517088 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:156: error: unreachable statement
+				{
+				^
+1 error
+
+3517088 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(34,30) StmtAppend(8,18) StmtAppend(33,30) at variant227 fails to compile
+
+3517089 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtReplace(34,30) StmtAppend(8,18) StmtAppend(33,30) (stored at: variant227)
+3517110 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/apache/commons/compress/utils/IOUtils.java:105: error: cannot find symbol
+        return available - numToSkip;
+               ^
+  symbol:   variable available
+  location: class IOUtils
+1 error
+
+3517110 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(42) StmtReplace(33,18) StmtReplace(33,19) StmtDelete(34) StmtDelete(13) at variant228 fails to compile
+
+3517111 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 0.0 StmtDelete(42) StmtReplace(33,18) StmtReplace(33,19) StmtDelete(34) StmtDelete(13) (stored at: variant228)
+3517676 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 4 3.0 StmtReplace(15,33) StmtDelete(18) StmtDelete(18) StmtReplace(19,33) (stored at: variant229)

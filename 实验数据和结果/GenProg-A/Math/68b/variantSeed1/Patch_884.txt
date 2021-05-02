@@ -1,0 +1,30 @@
+1 Delete /home/rtx/repair/d4j/Math/68b/src/main/java/org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java 607
+Faulty:
+if (fp < 0) {
+  paru=Math.min(paru,lmPar);
+}
+Seed:
+rank=solvedCols;
+**************************************************
+2 InsertBefore /home/rtx/repair/d4j/Math/68b/src/main/java/org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java 514
+Faulty:
+sum2=0;
+Seed:
+this.parRelativeTolerance=parRelativeTolerance;
+**************************************************
+3 InsertBefore /home/rtx/repair/d4j/Math/68b/src/main/java/org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java 522
+Faulty:
+work1[pj]=s;
+Seed:
+double norm2=0;
+**************************************************
+4 InsertBefore /home/rtx/repair/d4j/Math/68b/src/main/java/org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java 404
+Faulty:
+int pj=permutation[j];
+Seed:
+if (((Math.abs(actRed) <= costRelativeTolerance) && (preRed <= costRelativeTolerance) && (ratio <= 2.0)) || (delta <= parRelativeTolerance * xNorm)) {
+  return new VectorialPointValuePair(point,objective);
+}
+**************************************************
+Evaluations: 1263
+EstimatedTime: 324371

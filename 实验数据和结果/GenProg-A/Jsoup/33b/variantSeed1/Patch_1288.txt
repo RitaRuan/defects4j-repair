@@ -1,0 +1,59 @@
+1 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/33b/src/main/java/org/jsoup/parser/HtmlTreeBuilder.java 187
+Faulty:
+if (tag.isKnownTag()) {
+  if (tag.isSelfClosing())   tokeniser.acknowledgeSelfClosingFlag();
+}
+ else {
+  tag.setSelfClosing();
+  tokeniser.acknowledgeSelfClosingFlag();
+}
+Seed:
+tokeniser=new Tokeniser(reader,errors);
+**************************************************
+2 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/33b/src/main/java/org/jsoup/parser/HtmlTreeBuilder.java 187
+Faulty:
+if (tag.isKnownTag()) {
+  if (tag.isSelfClosing())   tokeniser.acknowledgeSelfClosingFlag();
+}
+ else {
+  tag.setSelfClosing();
+  tokeniser.acknowledgeSelfClosingFlag();
+}
+Seed:
+tokeniser=new Tokeniser(reader,errors);
+**************************************************
+3 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/33b/src/main/java/org/jsoup/parser/HtmlTreeBuilder.java 161
+Faulty:
+stack.add(el);
+Seed:
+if (stack.peekLast().nodeName().equals("td") && !state.name().equals("InCell")) Validate.isFalse(true,"pop td not in cell");
+**************************************************
+4 Delete /home/ubuntu/rtx/d4j/Jsoup/33b/src/main/java/org/jsoup/parser/HtmlTreeBuilder.java 99
+Faulty:
+currentToken=token;
+Seed:
+clearStackToContext("tr");
+**************************************************
+5 Delete /home/ubuntu/rtx/d4j/Jsoup/33b/src/main/java/org/jsoup/parser/HtmlTreeBuilder.java 188
+Faulty:
+if (tag.isSelfClosing()) tokeniser.acknowledgeSelfClosingFlag();
+Seed:
+if (errors.canAddError()) errors.add(new ParseError(reader.pos(),"Unexpected token [%s] when in state [%s]",currentToken.tokenType(),state));
+**************************************************
+6 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/33b/src/main/java/org/jsoup/parser/HtmlTreeBuilder.java 161
+Faulty:
+stack.add(el);
+Seed:
+transition(HtmlTreeBuilderState.InCell);
+**************************************************
+7 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/33b/src/main/java/org/jsoup/parser/Tokeniser.java 188
+Faulty:
+dataBuffer=new StringBuilder();
+Seed:
+if (!selfClosingFlagAcknowledged) {
+  error("Self closing flag not acknowledged");
+  selfClosingFlagAcknowledged=true;
+}
+**************************************************
+Evaluations: 1557
+EstimatedTime: 1710434

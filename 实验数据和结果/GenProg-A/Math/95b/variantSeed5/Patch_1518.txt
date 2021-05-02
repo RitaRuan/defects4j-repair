@@ -1,0 +1,105 @@
+1 Replace /home/ubuntu/rtx/d4j/Math/95b/src/java/org/apache/commons/math/distribution/FDistributionImpl.java 148
+Faulty:
+return ret;
+Seed:
+return 1;
+**************************************************
+2 InsertBefore /home/ubuntu/rtx/d4j/Math/95b/src/java/org/apache/commons/math/analysis/UnivariateRealSolverUtils.java 179
+Faulty:
+throw new IllegalArgumentException("Invalid endpoint parameters:  lowerBound=" + lowerBound + " initial="+ initial+ " upperBound="+ upperBound);
+Seed:
+if (initial < lowerBound || initial > upperBound || lowerBound >= upperBound) {
+  throw new IllegalArgumentException("Invalid endpoint parameters:  lowerBound=" + lowerBound + " initial="+ initial+ " upperBound="+ upperBound);
+}
+**************************************************
+3 Delete /home/ubuntu/rtx/d4j/Math/95b/src/java/org/apache/commons/math/distribution/FDistributionImpl.java 147
+Faulty:
+ret=d / (d - 2.0);
+Seed:
+if (p == 0) {
+  return 0;
+}
+ else if (p == 1) {
+  return 1;
+}
+ else {
+  return super.inverseCumulativeProbability(p);
+}
+**************************************************
+4 Replace /home/ubuntu/rtx/d4j/Math/95b/src/java/org/apache/commons/math/distribution/FDistributionImpl.java 148
+Faulty:
+return ret;
+Seed:
+return 1;
+**************************************************
+5 InsertBefore /home/ubuntu/rtx/d4j/Math/95b/src/java/org/apache/commons/math/distribution/FDistributionImpl.java 132
+Faulty:
+return Double.MAX_VALUE;
+Seed:
+if (p == 0) {
+  return 0d;
+}
+**************************************************
+6 Delete /home/ubuntu/rtx/d4j/Math/95b/src/java/org/apache/commons/math/distribution/FDistributionImpl.java 147
+Faulty:
+ret=d / (d - 2.0);
+Seed:
+if (p == 0) {
+  return 0;
+}
+ else if (p == 1) {
+  return 1;
+}
+ else {
+  return super.inverseCumulativeProbability(p);
+}
+**************************************************
+7 InsertBefore /home/ubuntu/rtx/d4j/Math/95b/src/java/org/apache/commons/math/distribution/FDistributionImpl.java 132
+Faulty:
+return Double.MAX_VALUE;
+Seed:
+if (p == 0) {
+  return 0d;
+}
+**************************************************
+8 Delete /home/ubuntu/rtx/d4j/Math/95b/src/java/org/apache/commons/math/distribution/FDistributionImpl.java 147
+Faulty:
+ret=d / (d - 2.0);
+Seed:
+if (p == 0) {
+  return 0;
+}
+ else if (p == 1) {
+  return 1;
+}
+ else {
+  return super.inverseCumulativeProbability(p);
+}
+**************************************************
+9 Delete /home/ubuntu/rtx/d4j/Math/95b/src/java/org/apache/commons/math/distribution/FDistributionImpl.java 145
+Faulty:
+double d=getDenominatorDegreesOfFreedom();
+Seed:
+if (p == 1.0) {
+  ret=Double.POSITIVE_INFINITY;
+}
+ else {
+  ret=-getMean() * Math.log(1.0 - p);
+}
+**************************************************
+10 InsertBefore /home/ubuntu/rtx/d4j/Math/95b/src/java/org/apache/commons/math/analysis/UnivariateRealSolverUtils.java 174
+Faulty:
+if (maximumIterations <= 0) {
+  throw new IllegalArgumentException("bad value for maximumIterations: " + maximumIterations);
+}
+Seed:
+double coefficients[]=new double[4];
+**************************************************
+11 InsertBefore /home/ubuntu/rtx/d4j/Math/95b/src/java/org/apache/commons/math/distribution/FDistributionImpl.java 148
+Faulty:
+return ret;
+Seed:
+setNumeratorDegreesOfFreedom(numeratorDegreesOfFreedom);
+**************************************************
+Evaluations: 1910
+EstimatedTime: 912244

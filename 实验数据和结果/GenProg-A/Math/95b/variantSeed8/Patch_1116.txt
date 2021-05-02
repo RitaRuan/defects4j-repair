@@ -1,0 +1,32 @@
+1 InsertBefore /home/ubuntu/rtx/d4j/Math/95b/src/java/org/apache/commons/math/distribution/FDistributionImpl.java 147
+Faulty:
+ret=d / (d - 2.0);
+Seed:
+ret=0.5;
+**************************************************
+2 Delete /home/ubuntu/rtx/d4j/Math/95b/src/java/org/apache/commons/math/distribution/FDistributionImpl.java 147
+Faulty:
+ret=d / (d - 2.0);
+Seed:
+return getLowerDomain(getPopulationSize(),getNumberOfSuccesses(),getSampleSize());
+**************************************************
+3 Delete /home/ubuntu/rtx/d4j/Math/95b/src/java/org/apache/commons/math/distribution/FDistributionImpl.java 147
+Faulty:
+ret=d / (d - 2.0);
+Seed:
+return getLowerDomain(getPopulationSize(),getNumberOfSuccesses(),getSampleSize());
+**************************************************
+4 InsertBefore /home/ubuntu/rtx/d4j/Math/95b/src/java/org/apache/commons/math/distribution/FDistributionImpl.java 184
+Faulty:
+this.denominatorDegreesOfFreedom=degreesOfFreedom;
+Seed:
+double m=getDenominatorDegreesOfFreedom();
+**************************************************
+5 Replace /home/ubuntu/rtx/d4j/Math/95b/src/java/org/apache/commons/math/distribution/FDistributionImpl.java 132
+Faulty:
+return Double.MAX_VALUE;
+Seed:
+return Integer.MAX_VALUE - 1;
+**************************************************
+Evaluations: 1483
+EstimatedTime: 677899

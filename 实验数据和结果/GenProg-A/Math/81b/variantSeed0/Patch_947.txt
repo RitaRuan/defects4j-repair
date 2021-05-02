@@ -1,0 +1,412 @@
+1 Delete /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1544
+Faulty:
+b2=work[nn - 13] / work[nn - 15];
+Seed:
+int outBlockIndex=0;
+**************************************************
+2 Replace /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1507
+Faulty:
+b1=b2;
+Seed:
+double sum=0;
+**************************************************
+3 Delete /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1509
+Faulty:
+return;
+Seed:
+return copy().mapFloorToSelf();
+**************************************************
+4 Replace /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1095
+Faulty:
+if (tType < -22) {
+  tau=0.0;
+}
+ else if (dMin1 > 0.0) {
+  tau=(tau + dMin) * (1.0 - 2.0 * MathUtils.EPSILON);
+  tType-=11;
+}
+ else {
+  tau*=0.25;
+  tType-=12;
+}
+Seed:
+tau=g * dMin;
+**************************************************
+5 Delete /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1586
+Faulty:
+if (dMin1 == dN1 && dMin2 == dN2) {
+  tType=-7;
+  double s=0.333 * dMin1;
+  if (work[nn - 5] > work[nn - 7]) {
+    return;
+  }
+  double b1=work[nn - 5] / work[nn - 7];
+  double b2=b1;
+  if (b2 != 0.0) {
+    for (int i4=4 * end - 10 + pingPong; i4 >= 4 * start + 2 + pingPong; i4-=4) {
+      final double oldB1=b1;
+      if (work[i4] > work[i4 - 2]) {
+        return;
+      }
+      b1=b1 * (work[i4] / work[i4 - 2]);
+      b2=b2 + b1;
+      if (100 * Math.max(b1,oldB1) < b2) {
+        break;
+      }
+    }
+  }
+  b2=Math.sqrt(cnst3 * b2);
+  final double a2=dMin1 / (1 + b2 * b2);
+  final double gap2=0.5 * dMin2 - a2;
+  if (gap2 > 0.0 && gap2 > b2 * a2) {
+    tau=Math.max(s,a2 * (1 - cnst2 * a2 * (b2 / gap2)* b2));
+  }
+ else {
+    tau=Math.max(s,a2 * (1 - cnst2 * b2));
+    tType=-8;
+  }
+}
+ else {
+  tau=0.25 * dMin1;
+  if (dMin1 == dN1) {
+    tau=0.5 * dMin1;
+  }
+  tType=-9;
+}
+Seed:
+pingPong=0;
+**************************************************
+6 InsertBefore /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1622
+Faulty:
+if (dMin1 == dN1) {
+  tau=0.5 * dMin1;
+}
+Seed:
+double s=0.25 * dMin;
+**************************************************
+7 Replace /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1474
+Faulty:
+tType=-4;
+Seed:
+double determinant=1.0;
+**************************************************
+8 InsertBefore /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1101
+Faulty:
+tType-=11;
+Seed:
+return copy().mapFloorToSelf();
+**************************************************
+9 Replace /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1508
+Faulty:
+if (work[i4] > work[i4 - 2]) {
+  return;
+}
+Seed:
+dMin=Math.min(dMin,dN);
+**************************************************
+10 InsertBefore /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1475
+Faulty:
+double s=0.25 * dMin;
+Seed:
+this.eigenvectors=eigenvectors;
+**************************************************
+11 Delete /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1520
+Faulty:
+if (a2 < cnst1) {
+  s=gam * (1 - Math.sqrt(a2)) / (1 + a2);
+}
+Seed:
+return walkInColumnOrder(new RealMatrixPreservingVisitor(){
+  /** 
+ * Last row index. 
+ */
+  private double endRow;
+  /** 
+ * Sum of absolute values on one column. 
+ */
+  private double columnSum;
+  /** 
+ * Maximal sum across all columns. 
+ */
+  private double maxColSum;
+  /** 
+ * {@inheritDoc} 
+ */
+  public void start(  final int rows,  final int columns,  final int startRow,  final int endRow,  final int startColumn,  final int endColumn){
+    this.endRow=endRow;
+    columnSum=0;
+    maxColSum=0;
+  }
+  /** 
+ * {@inheritDoc} 
+ */
+  public void visit(  final int row,  final int column,  final double value){
+    columnSum+=Math.abs(value);
+    if (row == endRow) {
+      maxColSum=Math.max(maxColSum,columnSum);
+      columnSum=0;
+    }
+  }
+  /** 
+ * {@inheritDoc} 
+ */
+  public double end(){
+    return maxColSum;
+  }
+}
+);
+**************************************************
+12 Replace /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1507
+Faulty:
+b1=b2;
+Seed:
+double sum=0;
+**************************************************
+13 Delete /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1621
+Faulty:
+tau=0.25 * dMin1;
+Seed:
+return copy().mapTanhToSelf();
+**************************************************
+14 InsertBefore /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1543
+Faulty:
+if (end - start > 2) {
+  b2=work[nn - 13] / work[nn - 15];
+  a2=a2 + b2;
+  for (int i4=nn - 17; i4 >= 4 * start + 2 + pingPong; i4-=4) {
+    if (b2 == 0.0) {
+      break;
+    }
+    b1=b2;
+    if (work[i4] > work[i4 - 2]) {
+      return;
+    }
+    b2=b2 * (work[i4] / work[i4 - 2]);
+    a2=a2 + b2;
+    if (100 * Math.max(b2,b1) < a2 || cnst1 < a2) {
+      break;
+    }
+  }
+  a2=cnst3 * a2;
+}
+Seed:
+double upper=Double.NEGATIVE_INFINITY;
+**************************************************
+15 Delete /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1544
+Faulty:
+b2=work[nn - 13] / work[nn - 15];
+Seed:
+int outBlockIndex=0;
+**************************************************
+16 Replace /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1507
+Faulty:
+b1=b2;
+Seed:
+double sum=0;
+**************************************************
+17 Delete /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1509
+Faulty:
+return;
+Seed:
+return copy().mapFloorToSelf();
+**************************************************
+18 Replace /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1095
+Faulty:
+if (tType < -22) {
+  tau=0.0;
+}
+ else if (dMin1 > 0.0) {
+  tau=(tau + dMin) * (1.0 - 2.0 * MathUtils.EPSILON);
+  tType-=11;
+}
+ else {
+  tau*=0.25;
+  tType-=12;
+}
+Seed:
+tau=g * dMin;
+**************************************************
+19 Delete /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1586
+Faulty:
+if (dMin1 == dN1 && dMin2 == dN2) {
+  tType=-7;
+  double s=0.333 * dMin1;
+  if (work[nn - 5] > work[nn - 7]) {
+    return;
+  }
+  double b1=work[nn - 5] / work[nn - 7];
+  double b2=b1;
+  if (b2 != 0.0) {
+    for (int i4=4 * end - 10 + pingPong; i4 >= 4 * start + 2 + pingPong; i4-=4) {
+      final double oldB1=b1;
+      if (work[i4] > work[i4 - 2]) {
+        return;
+      }
+      b1=b1 * (work[i4] / work[i4 - 2]);
+      b2=b2 + b1;
+      if (100 * Math.max(b1,oldB1) < b2) {
+        break;
+      }
+    }
+  }
+  b2=Math.sqrt(cnst3 * b2);
+  final double a2=dMin1 / (1 + b2 * b2);
+  final double gap2=0.5 * dMin2 - a2;
+  if (gap2 > 0.0 && gap2 > b2 * a2) {
+    tau=Math.max(s,a2 * (1 - cnst2 * a2 * (b2 / gap2)* b2));
+  }
+ else {
+    tau=Math.max(s,a2 * (1 - cnst2 * b2));
+    tType=-8;
+  }
+}
+ else {
+  tau=0.25 * dMin1;
+  if (dMin1 == dN1) {
+    tau=0.5 * dMin1;
+  }
+  tType=-9;
+}
+Seed:
+pingPong=0;
+**************************************************
+20 InsertBefore /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1095
+Faulty:
+if (tType < -22) {
+  tau=0.0;
+}
+ else if (dMin1 > 0.0) {
+  tau=(tau + dMin) * (1.0 - 2.0 * MathUtils.EPSILON);
+  tType-=11;
+}
+ else {
+  tau*=0.25;
+  tType-=12;
+}
+Seed:
+int lastPos=0;
+**************************************************
+21 Delete /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1520
+Faulty:
+if (a2 < cnst1) {
+  s=gam * (1 - Math.sqrt(a2)) / (1 + a2);
+}
+Seed:
+np=nn - 2 * pingPong;
+**************************************************
+22 Delete /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1509
+Faulty:
+return;
+Seed:
+return copy().mapFloorToSelf();
+**************************************************
+23 Replace /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1095
+Faulty:
+if (tType < -22) {
+  tau=0.0;
+}
+ else if (dMin1 > 0.0) {
+  tau=(tau + dMin) * (1.0 - 2.0 * MathUtils.EPSILON);
+  tType-=11;
+}
+ else {
+  tau*=0.25;
+  tType-=12;
+}
+Seed:
+tau=g * dMin;
+**************************************************
+24 Replace /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1507
+Faulty:
+b1=b2;
+Seed:
+double sum=0;
+**************************************************
+25 Delete /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1511
+Faulty:
+b2=b2 * (work[i4] / work[i4 - 2]);
+Seed:
+double b2=b1;
+**************************************************
+26 InsertBefore /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1625
+Faulty:
+tType=-9;
+Seed:
+if (dMin1 == dN1 && dMin2 == dN2) {
+  tType=-7;
+  double s=0.333 * dMin1;
+  if (work[nn - 5] > work[nn - 7]) {
+    return;
+  }
+  double b1=work[nn - 5] / work[nn - 7];
+  double b2=b1;
+  if (b2 != 0.0) {
+    for (int i4=4 * end - 10 + pingPong; i4 >= 4 * start + 2 + pingPong; i4-=4) {
+      final double oldB1=b1;
+      if (work[i4] > work[i4 - 2]) {
+        return;
+      }
+      b1=b1 * (work[i4] / work[i4 - 2]);
+      b2=b2 + b1;
+      if (100 * Math.max(b1,oldB1) < b2) {
+        break;
+      }
+    }
+  }
+  b2=Math.sqrt(cnst3 * b2);
+  final double a2=dMin1 / (1 + b2 * b2);
+  final double gap2=0.5 * dMin2 - a2;
+  if (gap2 > 0.0 && gap2 > b2 * a2) {
+    tau=Math.max(s,a2 * (1 - cnst2 * a2 * (b2 / gap2)* b2));
+  }
+ else {
+    tau=Math.max(s,a2 * (1 - cnst2 * b2));
+    tType=-8;
+  }
+}
+ else {
+  tau=0.25 * dMin1;
+  if (dMin1 == dN1) {
+    tau=0.5 * dMin1;
+  }
+  tType=-9;
+}
+**************************************************
+27 Delete /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1520
+Faulty:
+if (a2 < cnst1) {
+  s=gam * (1 - Math.sqrt(a2)) / (1 + a2);
+}
+Seed:
+dMin1=-work[4 * start + pingPong];
+**************************************************
+28 InsertBefore /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1625
+Faulty:
+tType=-9;
+Seed:
+squaredSecondary=new double[secondary.length];
+**************************************************
+29 InsertBefore /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1520
+Faulty:
+if (a2 < cnst1) {
+  s=gam * (1 - Math.sqrt(a2)) / (1 + a2);
+}
+Seed:
+b2=work[nn - 9] / work[nn - 11];
+**************************************************
+30 InsertBefore /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1507
+Faulty:
+b1=b2;
+Seed:
+b2=work[np - 2];
+**************************************************
+31 Replace /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1529
+Faulty:
+tType=-5;
+Seed:
+if (dMin1 == dN1) {
+  tau=0.5 * dMin1;
+}
+**************************************************
+Evaluations: 1238
+EstimatedTime: 435908

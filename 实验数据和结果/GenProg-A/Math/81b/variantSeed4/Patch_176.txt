@@ -1,0 +1,46 @@
+1 Delete /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1484
+Faulty:
+b2=work[nn - 5] / work[nn - 7];
+Seed:
+final double gap2=work[nn - 7] + work[nn - 9] - Math.sqrt(work[nn - 11]) * Math.sqrt(work[nn - 9]) - a2;
+**************************************************
+2 Delete /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1621
+Faulty:
+tau=0.25 * dMin1;
+Seed:
+findEigenVectors();
+**************************************************
+3 Delete /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1513
+Faulty:
+if (100 * Math.max(b2,b1) < a2 || cnst1 < a2) {
+  break;
+}
+Seed:
+final double oldB1=b1;
+**************************************************
+4 InsertBefore /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1093
+Faulty:
+if (dMin < 0.0) {
+  if (tType < -22) {
+    tau=0.0;
+  }
+ else   if (dMin1 > 0.0) {
+    tau=(tau + dMin) * (1.0 - 2.0 * MathUtils.EPSILON);
+    tType-=11;
+  }
+ else {
+    tau*=0.25;
+    tType-=12;
+  }
+}
+ else if (Double.isNaN(dMin)) {
+  tau=0.0;
+}
+ else {
+  loop=false;
+}
+Seed:
+int dataPos=0;
+**************************************************
+Evaluations: 239
+EstimatedTime: 85714

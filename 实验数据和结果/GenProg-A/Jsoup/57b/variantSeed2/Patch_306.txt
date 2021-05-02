@@ -1,0 +1,45 @@
+1 Replace /home/ubuntu/rtx/d4j/Jsoup/57b/src/main/java/org/jsoup/nodes/Attributes.java 122
+Faulty:
+for (Iterator<String> it=attributes.keySet().iterator(); it.hasNext(); ) {
+  String attrKey=it.next();
+  if (attrKey.equalsIgnoreCase(key))   attributes.remove(attrKey);
+}
+Seed:
+remove(key);
+**************************************************
+2 Replace /home/ubuntu/rtx/d4j/Jsoup/57b/src/main/java/org/jsoup/nodes/Attributes.java 122
+Faulty:
+for (Iterator<String> it=attributes.keySet().iterator(); it.hasNext(); ) {
+  String attrKey=it.next();
+  if (attrKey.equalsIgnoreCase(key))   attributes.remove(attrKey);
+}
+Seed:
+remove(key);
+**************************************************
+3 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/57b/src/main/java/org/jsoup/nodes/Node.java 128
+Faulty:
+attributes.removeIgnoreCase(attributeKey);
+Seed:
+int i=0;
+**************************************************
+4 Delete /home/ubuntu/rtx/d4j/Jsoup/57b/src/main/java/org/jsoup/nodes/Attributes.java 123
+Faulty:
+String attrKey=it.next();
+Seed:
+if (tagName().equals("textarea")) return text();
+ else return attr("value");
+**************************************************
+5 Delete /home/ubuntu/rtx/d4j/Jsoup/57b/src/main/java/org/jsoup/nodes/Attributes.java 120
+Faulty:
+if (attributes == null) return;
+Seed:
+return "#document";
+**************************************************
+6 Replace /home/ubuntu/rtx/d4j/Jsoup/57b/src/main/java/org/jsoup/nodes/Attributes.java 123
+Faulty:
+String attrKey=it.next();
+Seed:
+OutputSettings.Syntax syntax=outputSettings().syntax();
+**************************************************
+Evaluations: 358
+EstimatedTime: 320934

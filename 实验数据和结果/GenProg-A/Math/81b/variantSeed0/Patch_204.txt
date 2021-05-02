@@ -1,0 +1,290 @@
+1 Delete /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1520
+Faulty:
+if (a2 < cnst1) {
+  s=gam * (1 - Math.sqrt(a2)) / (1 + a2);
+}
+Seed:
+return walkInColumnOrder(new RealMatrixPreservingVisitor(){
+  /** 
+ * Last row index. 
+ */
+  private double endRow;
+  /** 
+ * Sum of absolute values on one column. 
+ */
+  private double columnSum;
+  /** 
+ * Maximal sum across all columns. 
+ */
+  private double maxColSum;
+  /** 
+ * {@inheritDoc} 
+ */
+  public void start(  final int rows,  final int columns,  final int startRow,  final int endRow,  final int startColumn,  final int endColumn){
+    this.endRow=endRow;
+    columnSum=0;
+    maxColSum=0;
+  }
+  /** 
+ * {@inheritDoc} 
+ */
+  public void visit(  final int row,  final int column,  final double value){
+    columnSum+=Math.abs(value);
+    if (row == endRow) {
+      maxColSum=Math.max(maxColSum,columnSum);
+      columnSum=0;
+    }
+  }
+  /** 
+ * {@inheritDoc} 
+ */
+  public double end(){
+    return maxColSum;
+  }
+}
+);
+**************************************************
+2 Replace /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1507
+Faulty:
+b1=b2;
+Seed:
+double sum=0;
+**************************************************
+3 InsertBefore /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1479
+Faulty:
+gam=dN;
+Seed:
+int dimension=0;
+**************************************************
+4 Delete /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1520
+Faulty:
+if (a2 < cnst1) {
+  s=gam * (1 - Math.sqrt(a2)) / (1 + a2);
+}
+Seed:
+return walkInColumnOrder(new RealMatrixPreservingVisitor(){
+  /** 
+ * Last row index. 
+ */
+  private double endRow;
+  /** 
+ * Sum of absolute values on one column. 
+ */
+  private double columnSum;
+  /** 
+ * Maximal sum across all columns. 
+ */
+  private double maxColSum;
+  /** 
+ * {@inheritDoc} 
+ */
+  public void start(  final int rows,  final int columns,  final int startRow,  final int endRow,  final int startColumn,  final int endColumn){
+    this.endRow=endRow;
+    columnSum=0;
+    maxColSum=0;
+  }
+  /** 
+ * {@inheritDoc} 
+ */
+  public void visit(  final int row,  final int column,  final double value){
+    columnSum+=Math.abs(value);
+    if (row == endRow) {
+      maxColSum=Math.max(maxColSum,columnSum);
+      columnSum=0;
+    }
+  }
+  /** 
+ * {@inheritDoc} 
+ */
+  public double end(){
+    return maxColSum;
+  }
+}
+);
+**************************************************
+5 Replace /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1507
+Faulty:
+b1=b2;
+Seed:
+double sum=0;
+**************************************************
+6 Delete /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1621
+Faulty:
+tau=0.25 * dMin1;
+Seed:
+return copy().mapTanhToSelf();
+**************************************************
+7 Delete /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1509
+Faulty:
+return;
+Seed:
+return copy().mapFloorToSelf();
+**************************************************
+8 Replace /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1095
+Faulty:
+if (tType < -22) {
+  tau=0.0;
+}
+ else if (dMin1 > 0.0) {
+  tau=(tau + dMin) * (1.0 - 2.0 * MathUtils.EPSILON);
+  tType-=11;
+}
+ else {
+  tau*=0.25;
+  tType-=12;
+}
+Seed:
+tau=g * dMin;
+**************************************************
+9 Delete /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1520
+Faulty:
+if (a2 < cnst1) {
+  s=gam * (1 - Math.sqrt(a2)) / (1 + a2);
+}
+Seed:
+return walkInColumnOrder(new RealMatrixPreservingVisitor(){
+  /** 
+ * Last row index. 
+ */
+  private double endRow;
+  /** 
+ * Sum of absolute values on one column. 
+ */
+  private double columnSum;
+  /** 
+ * Maximal sum across all columns. 
+ */
+  private double maxColSum;
+  /** 
+ * {@inheritDoc} 
+ */
+  public void start(  final int rows,  final int columns,  final int startRow,  final int endRow,  final int startColumn,  final int endColumn){
+    this.endRow=endRow;
+    columnSum=0;
+    maxColSum=0;
+  }
+  /** 
+ * {@inheritDoc} 
+ */
+  public void visit(  final int row,  final int column,  final double value){
+    columnSum+=Math.abs(value);
+    if (row == endRow) {
+      maxColSum=Math.max(maxColSum,columnSum);
+      columnSum=0;
+    }
+  }
+  /** 
+ * {@inheritDoc} 
+ */
+  public double end(){
+    return maxColSum;
+  }
+}
+);
+**************************************************
+10 Replace /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1507
+Faulty:
+b1=b2;
+Seed:
+double sum=0;
+**************************************************
+11 Delete /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1520
+Faulty:
+if (a2 < cnst1) {
+  s=gam * (1 - Math.sqrt(a2)) / (1 + a2);
+}
+Seed:
+return walkInColumnOrder(new RealMatrixPreservingVisitor(){
+  /** 
+ * Last row index. 
+ */
+  private double endRow;
+  /** 
+ * Sum of absolute values on one column. 
+ */
+  private double columnSum;
+  /** 
+ * Maximal sum across all columns. 
+ */
+  private double maxColSum;
+  /** 
+ * {@inheritDoc} 
+ */
+  public void start(  final int rows,  final int columns,  final int startRow,  final int endRow,  final int startColumn,  final int endColumn){
+    this.endRow=endRow;
+    columnSum=0;
+    maxColSum=0;
+  }
+  /** 
+ * {@inheritDoc} 
+ */
+  public void visit(  final int row,  final int column,  final double value){
+    columnSum+=Math.abs(value);
+    if (row == endRow) {
+      maxColSum=Math.max(maxColSum,columnSum);
+      columnSum=0;
+    }
+  }
+  /** 
+ * {@inheritDoc} 
+ */
+  public double end(){
+    return maxColSum;
+  }
+}
+);
+**************************************************
+12 Replace /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1507
+Faulty:
+b1=b2;
+Seed:
+double sum=0;
+**************************************************
+13 Delete /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1621
+Faulty:
+tau=0.25 * dMin1;
+Seed:
+return copy().mapTanhToSelf();
+**************************************************
+14 Delete /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1509
+Faulty:
+return;
+Seed:
+return copy().mapFloorToSelf();
+**************************************************
+15 Replace /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1095
+Faulty:
+if (tType < -22) {
+  tau=0.0;
+}
+ else if (dMin1 > 0.0) {
+  tau=(tau + dMin) * (1.0 - 2.0 * MathUtils.EPSILON);
+  tType-=11;
+}
+ else {
+  tau*=0.25;
+  tType-=12;
+}
+Seed:
+tau=g * dMin;
+**************************************************
+16 Delete /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1508
+Faulty:
+if (work[i4] > work[i4 - 2]) {
+  return;
+}
+Seed:
+SparseFieldVector<T> res=new SparseFieldVector<T>(this);
+**************************************************
+17 Delete /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1513
+Faulty:
+if (100 * Math.max(b2,b1) < a2 || cnst1 < a2) {
+  break;
+}
+Seed:
+if (work[nn - 5] > work[nn - 7]) {
+  return;
+}
+**************************************************
+Evaluations: 323
+EstimatedTime: 143395

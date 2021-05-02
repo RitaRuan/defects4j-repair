@@ -1,0 +1,78 @@
+1 Replace /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1520
+Faulty:
+if (a2 < cnst1) {
+  s=gam * (1 - Math.sqrt(a2)) / (1 + a2);
+}
+Seed:
+int h=3542;
+**************************************************
+2 Delete /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1512
+Faulty:
+a2=a2 + b2;
+Seed:
+dMin=Math.min(dMin,dN);
+**************************************************
+3 Delete /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1621
+Faulty:
+tau=0.25 * dMin1;
+Seed:
+return walkInColumnOrder(new RealMatrixPreservingVisitor(){
+  /** 
+ * Last row index. 
+ */
+  private double endRow;
+  /** 
+ * Sum of absolute values on one column. 
+ */
+  private double columnSum;
+  /** 
+ * Maximal sum across all columns. 
+ */
+  private double maxColSum;
+  /** 
+ * {@inheritDoc} 
+ */
+  public void start(  final int rows,  final int columns,  final int startRow,  final int endRow,  final int startColumn,  final int endColumn){
+    this.endRow=endRow;
+    columnSum=0;
+    maxColSum=0;
+  }
+  /** 
+ * {@inheritDoc} 
+ */
+  public void visit(  final int row,  final int column,  final double value){
+    columnSum+=Math.abs(value);
+    if (row == endRow) {
+      maxColSum=Math.max(maxColSum,columnSum);
+      columnSum=0;
+    }
+  }
+  /** 
+ * {@inheritDoc} 
+ */
+  public double end(){
+    return maxColSum;
+  }
+}
+);
+**************************************************
+4 Delete /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1621
+Faulty:
+tau=0.25 * dMin1;
+Seed:
+dN2=0;
+**************************************************
+5 Delete /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1511
+Faulty:
+b2=b2 * (work[i4] / work[i4 - 2]);
+Seed:
+throw new MatrixIndexException("empty selected row index array");
+**************************************************
+6 Delete /home/rtx/repair/d4j/Math/81b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java 1509
+Faulty:
+return;
+Seed:
+work=new double[6 * main.length];
+**************************************************
+Evaluations: 434
+EstimatedTime: 136821

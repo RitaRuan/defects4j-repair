@@ -1,0 +1,60 @@
+1 Replace /home/rtx/d4j/JacksonCore/11b/src/main/java/com/fasterxml/jackson/core/sym/ByteQuadsCanonicalizer.java 642
+Faulty:
+if ((q1 == hashArea[offset]) && (1 == hashArea[offset + 3])) {
+  return _names[offset >> 2];
+}
+Seed:
+_hashArea[offset + 3]=3;
+**************************************************
+2 InsertBefore /home/rtx/d4j/JacksonCore/11b/src/main/java/com/fasterxml/jackson/core/sym/ByteQuadsCanonicalizer.java 635
+Faulty:
+return null;
+Seed:
+_reportTooManyCollisions();
+**************************************************
+3 InsertBefore /home/rtx/d4j/JacksonCore/11b/src/main/java/com/fasterxml/jackson/core/sym/ByteQuadsCanonicalizer.java 497
+Faulty:
+return _findSecondary(offset,q1);
+Seed:
+_hashArea[offset + 3]=1;
+**************************************************
+4 InsertBefore /home/rtx/d4j/JacksonCore/11b/src/main/java/com/fasterxml/jackson/core/sym/ByteQuadsCanonicalizer.java 634
+Faulty:
+if (len == 0) {
+  return null;
+}
+Seed:
+final String[] oldNames=_names;
+**************************************************
+5 InsertBefore /home/rtx/d4j/JacksonCore/11b/src/main/java/com/fasterxml/jackson/core/sym/ByteQuadsCanonicalizer.java 642
+Faulty:
+if ((q1 == hashArea[offset]) && (1 == hashArea[offset + 3])) {
+  return _names[offset >> 2];
+}
+Seed:
+_needRehash=true;
+**************************************************
+6 Delete /home/rtx/d4j/JacksonCore/11b/src/main/java/com/fasterxml/jackson/core/sym/ByteQuadsCanonicalizer.java 629
+Faulty:
+for (int end=offset + bucketSize; offset < end; offset+=4) {
+  int len=hashArea[offset + 3];
+  if ((q1 == hashArea[offset]) && (1 == len)) {
+    return _names[offset >> 2];
+  }
+  if (len == 0) {
+    return null;
+  }
+}
+Seed:
+return (_spilloverEnd - _spilloverStart()) >> 2;
+**************************************************
+7 Delete /home/rtx/d4j/JacksonCore/11b/src/main/java/com/fasterxml/jackson/core/sym/ByteQuadsCanonicalizer.java 1183
+Faulty:
+if (_hashSize <= 1024) {
+  return;
+}
+Seed:
+return 4;
+**************************************************
+Evaluations: 216
+EstimatedTime: 798800

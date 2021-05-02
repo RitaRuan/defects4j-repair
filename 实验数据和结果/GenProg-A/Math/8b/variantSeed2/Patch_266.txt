@@ -1,0 +1,43 @@
+1 Delete /home/rtx/repair/d4j/Math/8b/src/main/java/org/apache/commons/math3/distribution/DiscreteDistribution.java 189
+Faulty:
+for (int i=0; i < sampleSize; i++) {
+  out[i]=sample();
+}
+Seed:
+final double u=random.nextDouble();
+**************************************************
+2 InsertBefore /home/rtx/repair/d4j/Math/8b/src/main/java/org/apache/commons/math3/distribution/DiscreteDistribution.java 190
+Faulty:
+out[i]=sample();
+Seed:
+double qr=0;
+**************************************************
+3 Delete /home/rtx/repair/d4j/Math/8b/src/main/java/org/apache/commons/math3/distribution/DiscreteDistribution.java 189
+Faulty:
+for (int i=0; i < sampleSize; i++) {
+  out[i]=sample();
+}
+Seed:
+final double u=random.nextDouble();
+**************************************************
+4 InsertBefore /home/rtx/repair/d4j/Math/8b/src/main/java/org/apache/commons/math3/distribution/DiscreteDistribution.java 160
+Faulty:
+for (int i=0; i < probabilities.length; i++) {
+  sum+=probabilities[i];
+  if (randomValue < sum) {
+    return singletons.get(i);
+  }
+}
+Seed:
+double r=1.0d;
+**************************************************
+5 InsertBefore /home/rtx/repair/d4j/Math/8b/src/main/java/org/apache/commons/math3/util/MathArrays.java 1262
+Faulty:
+if (!Double.isNaN(values[i])) {
+  sum+=values[i];
+}
+Seed:
+double logSum=0;
+**************************************************
+Evaluations: 344
+EstimatedTime: 73148

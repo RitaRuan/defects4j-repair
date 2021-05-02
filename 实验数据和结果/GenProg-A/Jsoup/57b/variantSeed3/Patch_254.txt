@@ -1,0 +1,18 @@
+1 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/57b/src/main/java/org/jsoup/nodes/Attributes.java 122
+Faulty:
+for (Iterator<String> it=attributes.keySet().iterator(); it.hasNext(); ) {
+  String attrKey=it.next();
+  if (attrKey.equalsIgnoreCase(key))   attributes.remove(attrKey);
+}
+Seed:
+attributes.remove(key);
+**************************************************
+2 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/57b/src/main/java/org/jsoup/parser/Token.java 109
+Faulty:
+if (hasEmptyAttributeValue) attribute=new Attribute(pendingAttributeName,"");
+ else attribute=new BooleanAttribute(pendingAttributeName);
+Seed:
+int charval=-1;
+**************************************************
+Evaluations: 357
+EstimatedTime: 314004

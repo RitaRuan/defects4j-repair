@@ -1,0 +1,633 @@
+0 [main] DEBUG clegoues.genprog4java.fitness.Fitness  - parsing granularity, value: class
+30 [main] DEBUG clegoues.genprog4java.fitness.Fitness  - parsing granularity, value: class
+#Fri Mar 05 01:05:52 CST 2021
+negativeTestWeight=2.0
+classSourceFolder=/home/rtx/repair/d4j/Jsoup/57b/target/classes
+model=default
+sampleStrategy=variant
+srcClassPath=/home/rtx/repair/d4j/Jsoup/57b/target/classes
+sourceVersion=1.8
+popsize=40
+regenPaths=false
+posCoverageFile=coverage.path.pos
+continue=false
+edits=APPEND;DELETE;REPLACE
+negCoverageFile=coverage.path.neg
+workingDir=/home/rtx/repair/d4j/Jsoup/57b/
+clearTestCache=false
+skipFailedSanity=false
+sample=0.1 
+oracleGenome=
+testGranularity=class
+justTestingFaultLoc=false
+faultLocStrategy=standardPathFile
+crossp=0.5
+pMutation=1
+generations=10
+positiveTests=/home/rtx/repair/d4j/Jsoup/57b/pos.tests
+javaVM=/home/rtx/java/jdk1.8.0_271/jre/bin/java
+seed=4
+negativePathWeight=0.35
+compileCommand=
+fixStrategy=classScope
+allowCoverageFail=false
+targetClassName=/home/rtx/repair/d4j/Jsoup/57b/bugfiles.txt
+javaRuntime=java.lang.Runtime@6576fe71
+classTestFolder=
+modelPath=OVERALLModel.txt
+sanity=yes
+positivePathWeight=0.65
+jacocoPath=/home/rtx/eclipse-workspace/genprog4java/lib/jacocoagent.jar
+negativeTests=/home/rtx/repair/d4j/Jsoup/57b/neg.tests
+pathToFileHumanInjectedFaultLoc=fileHumanInjectedFaultLoc.txt
+outputDir=/home/rtx/repair/d4j/Jsoup/57b/genprog4java/variantSeed4/
+testClassPath=/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/junit/junit/4.12/junit-4.12.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/com/google/code/gson/gson/2.7/gson-2.7.jar\:/home/rtx/repair/d4j/Jsoup/57b/target/classes\:/home/rtx/repair/d4j/Jsoup/57b/target/test-classes\:/home/rtx/repair/defects4j/framework/projects/lib/junit-4.11.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/commons-lang/commons-lang/2.4/commons-lang-2.4.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/junit/junit/4.5/junit-4.5.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/com/google/code/gson/gson/2.7/gson-2.7.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/commons-lang/commons-lang/2.4/commons-lang-2.4.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/junit/junit/4.12/junit-4.12.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/junit/junit/4.5/junit-4.5.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-http/9.2.22.v20170606/jetty-http-9.2.22.v20170606.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-http/9.2.26.v20180806/jetty-http-9.2.26.v20180806.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-http/9.2.28.v20190418/jetty-http-9.2.28.v20190418.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-io/9.2.22.v20170606/jetty-io-9.2.22.v20170606.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-io/9.2.26.v20180806/jetty-io-9.2.26.v20180806.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-io/9.2.28.v20190418/jetty-io-9.2.28.v20190418.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-security/9.2.22.v20170606/jetty-security-9.2.22.v20170606.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-security/9.2.26.v20180806/jetty-security-9.2.26.v20180806.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-security/9.2.28.v20190418/jetty-security-9.2.28.v20190418.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-server/9.2.22.v20170606/jetty-server-9.2.22.v20170606.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-server/9.2.26.v20180806/jetty-server-9.2.26.v20180806.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-server/9.2.28.v20190418/jetty-server-9.2.28.v20190418.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-servlet/9.2.22.v20170606/jetty-servlet-9.2.22.v20170606.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-servlet/9.2.26.v20180806/jetty-servlet-9.2.26.v20180806.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-servlet/9.2.28.v20190418/jetty-servlet-9.2.28.v20190418.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-util/9.2.22.v20170606/jetty-util-9.2.22.v20170606.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-util/9.2.26.v20180806/jetty-util-9.2.26.v20180806.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-util/9.2.28.v20190418/jetty-util-9.2.28.v20190418.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-http/9.2.22.v20170606/jetty-http-9.2.22.v20170606.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-http/9.2.26.v20180806/jetty-http-9.2.26.v20180806.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-http/9.2.28.v20190418/jetty-http-9.2.28.v20190418.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-io/9.2.22.v20170606/jetty-io-9.2.22.v20170606.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-io/9.2.26.v20180806/jetty-io-9.2.26.v20180806.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-io/9.2.28.v20190418/jetty-io-9.2.28.v20190418.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-security/9.2.22.v20170606/jetty-security-9.2.22.v20170606.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-security/9.2.26.v20180806/jetty-security-9.2.26.v20180806.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-security/9.2.28.v20190418/jetty-security-9.2.28.v20190418.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-server/9.2.22.v20170606/jetty-server-9.2.22.v20170606.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-server/9.2.26.v20180806/jetty-server-9.2.26.v20180806.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-server/9.2.28.v20190418/jetty-server-9.2.28.v20190418.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-servlet/9.2.22.v20170606/jetty-servlet-9.2.22.v20170606.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-servlet/9.2.26.v20180806/jetty-servlet-9.2.26.v20180806.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-servlet/9.2.28.v20190418/jetty-servlet-9.2.28.v20190418.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-util/9.2.22.v20170606/jetty-util-9.2.22.v20170606.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-util/9.2.26.v20180806/jetty-util-9.2.26.v20180806.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-util/9.2.28.v20190418/jetty-util-9.2.28.v20190418.jar
+faultStrategy=classScope
+sourceDir=src/main/java
+checkSpace=false
+search=gp
+globalExtension=.java
+faultSpaceSubSet=1/5
+maxVariants=50
+libs=/home/rtx/eclipse-workspace/genprog4java/lib/junittestrunner.jar\:/home/rtx/eclipse-workspace/genprog4java/lib/commons-cli-20040117.000000.jar\:/home/rtx/eclipse-workspace/genprog4java/lib/junit-4.12.jar\:/home/rtx/eclipse-workspace/genprog4java/lib/hamcrest-core-1.3.jar\:/home/rtx/eclipse-workspace/genprog4java/lib/log4j-1.2.17.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/junit/junit/4.12/junit-4.12.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/com/google/code/gson/gson/2.7/gson-2.7.jar\:/home/rtx/repair/d4j/Jsoup/57b/target/classes\:/home/rtx/repair/d4j/Jsoup/57b/target/test-classes\:/home/rtx/repair/defects4j/framework/projects/lib/junit-4.11.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/commons-lang/commons-lang/2.4/commons-lang-2.4.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/junit/junit/4.5/junit-4.5.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/com/google/code/gson/gson/2.7/gson-2.7.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/commons-lang/commons-lang/2.4/commons-lang-2.4.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/junit/junit/4.12/junit-4.12.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/junit/junit/4.5/junit-4.5.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-http/9.2.22.v20170606/jetty-http-9.2.22.v20170606.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-http/9.2.26.v20180806/jetty-http-9.2.26.v20180806.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-http/9.2.28.v20190418/jetty-http-9.2.28.v20190418.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-io/9.2.22.v20170606/jetty-io-9.2.22.v20170606.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-io/9.2.26.v20180806/jetty-io-9.2.26.v20180806.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-io/9.2.28.v20190418/jetty-io-9.2.28.v20190418.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-security/9.2.22.v20170606/jetty-security-9.2.22.v20170606.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-security/9.2.26.v20180806/jetty-security-9.2.26.v20180806.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-security/9.2.28.v20190418/jetty-security-9.2.28.v20190418.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-server/9.2.22.v20170606/jetty-server-9.2.22.v20170606.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-server/9.2.26.v20180806/jetty-server-9.2.26.v20180806.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-server/9.2.28.v20190418/jetty-server-9.2.28.v20190418.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-servlet/9.2.22.v20170606/jetty-servlet-9.2.22.v20170606.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-servlet/9.2.26.v20180806/jetty-servlet-9.2.26.v20180806.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-servlet/9.2.28.v20190418/jetty-servlet-9.2.28.v20190418.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-util/9.2.22.v20170606/jetty-util-9.2.22.v20170606.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-util/9.2.26.v20180806/jetty-util-9.2.26.v20180806.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-util/9.2.28.v20190418/jetty-util-9.2.28.v20190418.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/lib/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-http/9.2.22.v20170606/jetty-http-9.2.22.v20170606.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-http/9.2.26.v20180806/jetty-http-9.2.26.v20180806.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-http/9.2.28.v20190418/jetty-http-9.2.28.v20190418.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-io/9.2.22.v20170606/jetty-io-9.2.22.v20170606.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-io/9.2.26.v20180806/jetty-io-9.2.26.v20180806.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-io/9.2.28.v20190418/jetty-io-9.2.28.v20190418.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-security/9.2.22.v20170606/jetty-security-9.2.22.v20170606.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-security/9.2.26.v20180806/jetty-security-9.2.26.v20180806.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-security/9.2.28.v20190418/jetty-security-9.2.28.v20190418.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-server/9.2.22.v20170606/jetty-server-9.2.22.v20170606.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-server/9.2.26.v20180806/jetty-server-9.2.26.v20180806.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-server/9.2.28.v20190418/jetty-server-9.2.28.v20190418.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-servlet/9.2.22.v20170606/jetty-servlet-9.2.22.v20170606.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-servlet/9.2.26.v20180806/jetty-servlet-9.2.26.v20180806.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-servlet/9.2.28.v20190418/jetty-servlet-9.2.28.v20190418.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-util/9.2.22.v20170606/jetty-util-9.2.22.v20170606.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-util/9.2.26.v20180806/jetty-util-9.2.26.v20180806.jar\:/home/rtx/repair/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-util/9.2.28.v20190418/jetty-util-9.2.28.v20190418.jar\:/home/rtx/repair/d4j/Jsoup/57b/target/classes
+crossover=onepoint
+121 [main] INFO clegoues.genprog4java.main.Main  - Configuration file loaded
+Deserialized fitnessCache HashMap
+25138 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - loaded from source clegoues.genprog4java.java.ClassInfo@9977498
+25138 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - sanity checking begins
+25836 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 1 out of 20
+26170 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+26170 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 2 out of 20
+26393 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+26393 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 3 out of 20
+26662 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+26663 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 4 out of 20
+27137 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+27137 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 5 out of 20
+27636 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+27636 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 6 out of 20
+27888 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+27888 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 7 out of 20
+28124 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+28124 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 8 out of 20
+28516 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+28516 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 9 out of 20
+28780 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+28780 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 10 out of 20
+29056 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+29056 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 11 out of 20
+29346 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+29346 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 12 out of 20
+29640 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+29640 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 13 out of 20
+29932 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+29932 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 14 out of 20
+30209 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+30209 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 15 out of 20
+30645 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+30646 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 16 out of 20
+30918 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+30918 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 17 out of 20
+31233 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+31234 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 18 out of 20
+31603 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+31603 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 19 out of 20
+31914 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+31914 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - Checking test number 20 out of 20
+32219 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - true (1)
+
+32219 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - 	n1: 
+32543 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - false (0)
+
+32543 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - sanity checking completed (time taken = 7405)
+32544 [main] INFO clegoues.genprog4java.localization.DefaultLocalization  - Start Fault Localization
+32561 [main] INFO clegoues.genprog4java.localization.DefaultLocalization  - Finish Fault Localization
+32561 [main] INFO clegoues.genprog4java.Search.Search  - search: genetic algorithm begins
+
+33352 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 2.0 original (stored at: variant0)
+33497 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Attributes.java:266: error: incompatible types: missing return value
+			return;
+			^
+1 error
+
+33497 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(104,34) at variant1 fails to compile
+
+33497 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtReplace(104,34) (stored at: variant1)
+34367 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 2.0 StmtAppend(8,28) (stored at: variant2)
+34445 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Attributes.java:232: error: incompatible types: unexpected return value
+					return new Attributes();
+					       ^
+1 error
+
+34445 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(90,104) at variant3 fails to compile
+
+34445 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtAppend(90,104) (stored at: variant3)
+34536 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Attributes.java:44: error: cannot find symbol
+        clone = (Attributes) super.clone();
+        ^
+  symbol:   variable clone
+  location: class Attributes
+1 error
+
+34536 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(1,109) at variant4 fails to compile
+
+34536 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtReplace(1,109) (stored at: variant4)
+34607 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Attributes.java:230: error: incompatible types: unexpected return value
+            {attribute.html(accum,out);{return Collections.<Attribute>emptyList().iterator();}}
+                                                                                          ^
+1 error
+
+34608 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(91,63) at variant5 fails to compile
+
+34608 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtAppend(91,63) (stored at: variant5)
+34678 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Attributes.java:224: error: incompatible types: unexpected return value
+        {if (attributes == null)return;if (attributes == null || attributes.isEmpty()){return Collections.<Attribute>emptyList().iterator();}}
+                                                                                                                                         ^
+1 error
+
+34679 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(85,62) at variant6 fails to compile
+
+34679 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtAppend(85,62) (stored at: variant6)
+34754 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Attributes.java:230: error: incompatible types: unexpected return value
+				return 0;
+				       ^
+1 error
+
+34754 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(90,52) at variant7 fails to compile
+
+34755 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtReplace(90,52) (stored at: variant7)
+34829 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Attributes.java:252: error: cannot find symbol
+        return !(attributes != null ? !attributes.equals(that.attributes) : that.attributes != null);
+                                                         ^
+  symbol:   variable that
+  location: class Attributes
+org/jsoup/nodes/Attributes.java:252: error: cannot find symbol
+        return !(attributes != null ? !attributes.equals(that.attributes) : that.attributes != null);
+                                                                            ^
+  symbol:   variable that
+  location: class Attributes
+2 errors
+
+34829 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(99) at variant8 fails to compile
+
+34829 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtDelete(99) (stored at: variant8)
+35688 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 2.0 StmtDelete(39) (stored at: variant9)
+36122 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtDelete(62) (stored at: variant10)
+36171 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Attributes.java:253: error: missing return statement
+    }
+    ^
+1 error
+
+36171 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(100) at variant11 fails to compile
+
+36171 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtDelete(100) (stored at: variant11)
+36223 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Attributes.java:68: error: incompatible types: Attributes cannot be converted to String
+			return new Attributes();
+			       ^
+1 error
+
+36223 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(14,104) at variant12 fails to compile
+
+36224 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtReplace(14,104) (stored at: variant12)
+36275 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Attributes.java:178: error: unreachable statement
+        return attributes.values().iterator();
+        ^
+1 error
+
+36275 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(62,63) at variant13 fails to compile
+
+36275 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtAppend(62,63) (stored at: variant13)
+36331 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Attributes.java:124: error: cannot find symbol
+            if (attrKey.equalsIgnoreCase(key))
+                ^
+  symbol:   variable attrKey
+  location: class Attributes
+org/jsoup/nodes/Attributes.java:125: error: cannot find symbol
+                attributes.remove(attrKey);
+                                  ^
+  symbol:   variable attrKey
+  location: class Attributes
+2 errors
+
+36331 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(38,20) at variant14 fails to compile
+
+36331 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtReplace(38,20) (stored at: variant14)
+36375 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Attributes.java:214: error: cannot find symbol
+        {StringBuilder accum=new StringBuilder();clone.attributes=new LinkedHashMap<String, Attribute>(attributes.size());}
+                                                 ^
+  symbol:   variable clone
+  location: class Attributes
+org/jsoup/nodes/Attributes.java:216: error: cannot find symbol
+            html(accum, (new Document("")).outputSettings()); // output settings a bit funky, but this html() seldom used
+                 ^
+  symbol:   variable accum
+  location: class Attributes
+org/jsoup/nodes/Attributes.java:220: error: cannot find symbol
+        return accum.toString();
+               ^
+  symbol:   variable accum
+  location: class Attributes
+3 errors
+
+36375 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(77,112) at variant15 fails to compile
+
+36375 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtAppend(77,112) (stored at: variant15)
+37222 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 2.0 StmtDelete(58) (stored at: variant16)
+37886 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 2.0 StmtDelete(97) (stored at: variant17)
+37942 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Attributes.java:151: error: incompatible types: missing return value
+					return;
+					^
+1 error
+
+37943 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(48,29) at variant18 fails to compile
+
+37943 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtAppend(48,29) (stored at: variant18)
+39218 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtDelete(44) (stored at: variant19)
+39263 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Attributes.java:51: error: incompatible types: Attributes cannot be converted to String
+			return new Attributes();
+			       ^
+1 error
+
+39263 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(5,104) at variant20 fails to compile
+
+39263 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtReplace(5,104) (stored at: variant20)
+39611 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 2.0 StmtDelete(34) (stored at: variant21)
+40697 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 2.0 StmtReplace(28,25) (stored at: variant22)
+40739 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Attributes.java:231: error: cannot find symbol
+				clone = (Attributes) super.clone();
+				^
+  symbol:   variable clone
+  location: class Attributes
+1 error
+
+40739 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(90,109) at variant23 fails to compile
+
+40739 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtAppend(90,109) (stored at: variant23)
+41751 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 2.0 StmtAppend(2,4) (stored at: variant24)
+41786 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Attributes.java:68: error: missing return statement
+    }
+    ^
+1 error
+
+41786 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(14,24) at variant25 fails to compile
+
+41786 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtReplace(14,24) (stored at: variant25)
+41819 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Attributes.java:276: error: unreported exception CloneNotSupportedException; must be caught or declared to be thrown
+			clone = (Attributes) super.clone();
+			                                ^
+1 error
+
+41820 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(114,109) at variant26 fails to compile
+
+41820 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtReplace(114,109) (stored at: variant26)
+42368 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 2.0 StmtDelete(87) (stored at: variant27)
+42399 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Attributes.java:270: error: incompatible types: int cannot be converted to Attributes
+            return 0;
+                   ^
+1 error
+
+42399 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(109,53) at variant28 fails to compile
+
+42399 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtReplace(109,53) (stored at: variant28)
+43374 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 2.0 StmtDelete(59) (stored at: variant29)
+43402 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Attributes.java:63: error: incompatible types: Iterator<Attribute> cannot be converted to String
+        if (attributes == null || attributes.isEmpty()){return Collections.<Attribute>emptyList().iterator();}
+                                                                                                          ^
+1 error
+
+43402 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(10,62) at variant30 fails to compile
+
+43402 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtReplace(10,62) (stored at: variant30)
+44380 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 1.0 StmtReplace(17,36) (stored at: variant31)
+44412 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Attributes.java:189: error: incompatible types: Iterator<Attribute> cannot be converted to List<Attribute>
+        {return Collections.<Attribute>emptyList().iterator();}
+                                                           ^
+1 error
+
+44412 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(67,63) at variant32 fails to compile
+
+44412 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtReplace(67,63) (stored at: variant32)
+44415 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtDelete(48) (stored at: )
+44449 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Attributes.java:265: error: incompatible types: Iterator<Attribute> cannot be converted to Attributes
+        if (attributes == null)if (attributes == null || attributes.isEmpty()){return Collections.<Attribute>emptyList().iterator();}
+                                                                                                                                 ^
+1 error
+
+44449 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(105,62) at variant33 fails to compile
+
+44450 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtReplace(105,62) (stored at: variant33)
+45373 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 2.0 StmtReplace(58,24) (stored at: variant34)
+45404 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Attributes.java:251: error: package clone does not exist
+        for (Attribute attribute:this)clone.attributes.put(attribute.getKey(),attribute.clone());
+                                           ^
+1 error
+
+45405 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(100,113) at variant35 fails to compile
+
+45405 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtReplace(100,113) (stored at: variant35)
+45451 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Attributes.java:273: error: incompatible types: String cannot be converted to Attributes
+					return "";
+					       ^
+1 error
+
+45452 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(109,8) at variant36 fails to compile
+
+45452 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 0.0 StmtAppend(109,8) (stored at: variant36)
+46281 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 1.0 StmtReplace(3,28) (stored at: variant37)
+47023 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 0 1.0 StmtDelete(87) (stored at: variant38)
+47024 [main] INFO clegoues.genprog4java.Search.Search  - search: generation1
+47821 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Attributes.java:122: error: incompatible types: unexpected return value
+        for (Iterator<String> it = attributes.keySet().iterator(); it.hasNext(); ) for (String attrKey:attributes.keySet()){if (attrKey.equalsIgnoreCase(key))return true;}
+                                                                                                                                                                     ^
+1 error
+
+47822 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(97) StmtReplace(37,46) at variant39 fails to compile
+
+47822 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(97) StmtReplace(37,46) (stored at: variant39)
+47865 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Attributes.java:217: error: cannot find symbol
+            html(accum, (new Document("")).outputSettings()); // output settings a bit funky, but this html() seldom used
+                 ^
+  symbol:   variable accum
+  location: class Attributes
+org/jsoup/nodes/Attributes.java:221: error: cannot find symbol
+        return accum.toString();
+               ^
+  symbol:   variable accum
+  location: class Attributes
+2 errors
+
+47865 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(34) StmtDelete(77) at variant40 fails to compile
+
+47865 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(34) StmtDelete(77) (stored at: variant40)
+48989 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(28,25) StmtReplace(47,25) (stored at: variant41)
+50052 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(34) StmtDelete(64) (stored at: variant42)
+50931 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 2.0 StmtDelete(97) StmtDelete(104) (stored at: variant43)
+50961 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Attributes.java:231: error: cannot find symbol
+            attribute.html(accum, out);
+            ^
+  symbol:   variable attribute
+  location: class Attributes
+1 error
+
+50961 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(17,36) StmtDelete(89) at variant44 fails to compile
+
+50961 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(17,36) StmtDelete(89) (stored at: variant44)
+50993 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Attributes.java:216: error: incompatible types: Attributes cannot be converted to String
+				return new Attributes();
+				       ^
+org/jsoup/nodes/Attributes.java:219: error: cannot find symbol
+            html(accum, (new Document("")).outputSettings()); // output settings a bit funky, but this html() seldom used
+                 ^
+  symbol:   variable accum
+  location: class Attributes
+org/jsoup/nodes/Attributes.java:223: error: cannot find symbol
+        return accum.toString();
+               ^
+  symbol:   variable accum
+  location: class Attributes
+3 errors
+
+50993 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(58,24) StmtAppend(77,104) at variant45 fails to compile
+
+50993 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(58,24) StmtAppend(77,104) (stored at: variant45)
+51961 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 2.0 StmtDelete(34) StmtAppend(60,85) (stored at: variant46)
+51999 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Attributes.java:278: error: incompatible types: missing return value
+				return;
+				^
+1 error
+
+52000 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(58) StmtAppend(114,85) at variant47 fails to compile
+
+52000 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(58) StmtAppend(114,85) (stored at: variant47)
+52049 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Attributes.java:196: error: cannot find symbol
+				return attr != null ? attr.getValue() : "";
+				       ^
+  symbol:   variable attr
+  location: class Attributes
+org/jsoup/nodes/Attributes.java:196: error: cannot find symbol
+				return attr != null ? attr.getValue() : "";
+				                      ^
+  symbol:   variable attr
+  location: class Attributes
+org/jsoup/nodes/Attributes.java:196: error: incompatible types: bad type in conditional expression
+				return attr != null ? attr.getValue() : "";
+				                                        ^
+    String cannot be converted to List<Attribute>
+3 errors
+
+52049 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(72,5) at variant48 fails to compile
+
+52049 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(72,5) (stored at: variant48)
+53193 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 2.0 StmtDelete(59) StmtDelete(98) (stored at: variant49)
+53224 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Attributes.java:100: error: cannot find symbol
+        clone.attributes=new LinkedHashMap<String, Attribute>(attributes.size());
+        ^
+  symbol:   variable clone
+  location: class Attributes
+1 error
+
+53224 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(26,112) at variant50 fails to compile
+
+53224 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(26,112) (stored at: variant50)
+54040 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 2.0 StmtAppend(2,4) StmtDelete(67) (stored at: variant51)
+54068 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Attributes.java:215: error: incompatible types: int cannot be converted to String
+			return 0;
+			       ^
+org/jsoup/nodes/Attributes.java:217: error: cannot find symbol
+            html(accum, (new Document("")).outputSettings()); // output settings a bit funky, but this html() seldom used
+                 ^
+  symbol:   variable accum
+  location: class Attributes
+org/jsoup/nodes/Attributes.java:221: error: cannot find symbol
+        return accum.toString();
+               ^
+  symbol:   variable accum
+  location: class Attributes
+3 errors
+
+54068 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(97) StmtReplace(77,52) at variant52 fails to compile
+
+54068 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(97) StmtReplace(77,52) (stored at: variant52)
+55009 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 1.0 StmtDelete(87) StmtReplace(46,33) (stored at: variant53)
+55047 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Attributes.java:255: error: incompatible types: String cannot be converted to boolean
+			return "";
+			       ^
+1 error
+
+55048 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(2,4) StmtReplace(100,2) at variant54 fails to compile
+
+55048 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(2,4) StmtReplace(100,2) (stored at: variant54)
+55087 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Attributes.java:122: error: cannot find symbol
+        put(attr);
+            ^
+  symbol:   variable attr
+  location: class Attributes
+1 error
+
+55087 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(8,28) StmtReplace(33,17) at variant55 fails to compile
+
+55087 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(8,28) StmtReplace(33,17) (stored at: variant55)
+56052 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 2.0 StmtDelete(39) StmtDelete(46) (stored at: variant56)
+56995 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(58) StmtAppend(62,25) (stored at: variant57)
+58057 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(34) StmtDelete(59) (stored at: variant58)
+58084 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Attributes.java:161: error: cannot find symbol
+			put(attr);
+			    ^
+  symbol:   variable attr
+  location: class Attributes
+1 error
+
+58084 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(52,17) at variant59 fails to compile
+
+58084 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(52,17) (stored at: variant59)
+58114 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Attributes.java:66: error: incompatible types: no instance(s) of type variable(s) T exist so that List<T> conforms to String
+					return Collections.emptyList();
+					                            ^
+  where T is a type-variable:
+    T extends Object declared in method <T>emptyList()
+1 error
+
+58114 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(59) StmtReplace(13,67) at variant60 fails to compile
+
+58114 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(59) StmtReplace(13,67) (stored at: variant60)
+58139 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Attributes.java:109: error: incompatible types: unexpected return value
+        for (String attrKey:attributes.keySet()){if (attrKey.equalsIgnoreCase(key))return attributes.get(attrKey).getValue();}
+                                                                                                                          ^
+1 error
+
+58139 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(87) StmtReplace(29,10) at variant61 fails to compile
+
+58139 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(87) StmtReplace(29,10) (stored at: variant61)
+58448 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 2.0 StmtDelete(7) (stored at: variant62)
+59490 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(2,4) StmtReplace(8,20) (stored at: variant63)
+60490 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 1.0 StmtAppend(8,28) StmtDelete(59) (stored at: variant64)
+60516 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Attributes.java:215: error: incompatible types: int cannot be converted to String
+			return 0;
+			       ^
+org/jsoup/nodes/Attributes.java:217: error: cannot find symbol
+            html(accum, (new Document("")).outputSettings()); // output settings a bit funky, but this html() seldom used
+                 ^
+  symbol:   variable accum
+  location: class Attributes
+org/jsoup/nodes/Attributes.java:221: error: cannot find symbol
+        return accum.toString();
+               ^
+  symbol:   variable accum
+  location: class Attributes
+3 errors
+
+60516 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(34) StmtReplace(77,52) at variant65 fails to compile
+
+60517 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(34) StmtReplace(77,52) (stored at: variant65)
+60563 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Attributes.java:77: error: cannot find symbol
+        put(attr);
+            ^
+  symbol:   variable attr
+  location: class Attributes
+1 error
+
+60563 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(34) StmtAppend(16,36) at variant66 fails to compile
+
+60563 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(34) StmtAppend(16,36) (stored at: variant66)
+60599 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Attributes.java:79: error: incompatible types: unexpected return value
+        {Attribute attr=new Attribute(key,value);if (attributes == null || attributes.isEmpty()){return Collections.<Attribute>emptyList().iterator();}}
+                                                                                                                                                   ^
+org/jsoup/nodes/Attributes.java:80: error: cannot find symbol
+        put(attr);
+            ^
+  symbol:   variable attr
+  location: class Attributes
+2 errors
+
+60599 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(8,28) StmtAppend(16,62) at variant67 fails to compile
+
+60599 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(8,28) StmtAppend(16,62) (stored at: variant67)
+61735 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 2.0 StmtDelete(34) StmtAppend(80,8) (stored at: variant68)
+61765 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Attributes.java:152: error: missing return statement
+    }
+    ^
+1 error
+
+61765 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(87) StmtDelete(50) at variant69 fails to compile
+
+61765 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(87) StmtDelete(50) (stored at: variant69)
+61800 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Attributes.java:49: error: cannot find symbol
+			put(attr);
+			    ^
+  symbol:   variable attr
+  location: class Attributes
+1 error
+
+61801 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(34) StmtAppend(2,17) at variant70 fails to compile
+
+61801 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(34) StmtAppend(2,17) (stored at: variant70)
+63426 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 1.0 StmtDelete(97) StmtReplace(48,45) (stored at: variant71)
+63482 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Attributes.java:115: error: cannot find symbol
+			put(attr);
+			    ^
+  symbol:   variable attr
+  location: class Attributes
+1 error
+
+63482 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(2,4) StmtAppend(29,17) at variant72 fails to compile
+
+63482 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(2,4) StmtAppend(29,17) (stored at: variant72)
+65080 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 2.0 StmtDelete(39) StmtAppend(59,34) (stored at: variant73)
+66352 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 2.0 StmtDelete(87) StmtReplace(112,104) (stored at: variant74)
+66384 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Attributes.java:150: error: cannot find symbol
+				clone = (Attributes) super.clone();
+				^
+  symbol:   variable clone
+  location: class Attributes
+1 error
+
+66385 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtDelete(97) StmtAppend(48,109) at variant75 fails to compile
+
+66385 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(97) StmtAppend(48,109) (stored at: variant75)
+66417 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Attributes.java:98: error: incompatible types: unexpected return value
+			return new Attributes();
+			       ^
+1 error
+
+66418 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtReplace(58,24) StmtReplace(23,104) at variant76 fails to compile
+
+66418 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtReplace(58,24) StmtReplace(23,104) (stored at: variant76)
+67385 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 2.0 StmtReplace(58,24) StmtDelete(95) (stored at: variant77)
+67414 [main] ERROR clegoues.genprog4java.rep.JavaRepresentation  - org/jsoup/nodes/Attributes.java:174: error: cannot find symbol
+			clone = (Attributes) super.clone();
+			^
+  symbol:   variable clone
+  location: class Attributes
+1 error
+
+67414 [main] INFO clegoues.genprog4java.rep.CachingRepresentation  - StmtAppend(2,4) StmtReplace(59,109) at variant78 fails to compile
+
+67414 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtAppend(2,4) StmtReplace(59,109) (stored at: variant78)
+68238 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 0.0 StmtDelete(47) (stored at: variant79)
+75094 [main] INFO clegoues.genprog4java.fitness.Fitness  - 	 gen: 1 60.0 StmtReplace(33,31) (stored at: variant80)
+75095 [main] INFO clegoues.genprog4java.Search.Search  - 
+Repair Found: StmtReplace(33,31) (in variant80)
+
+75197 [main] INFO clegoues.genprog4java.fitness.Fitness  - Serialized test cache to file testcache.ser
+75197 [main] INFO clegoues.genprog4java.main.Main  - 
+Total elapsed time: 75
+

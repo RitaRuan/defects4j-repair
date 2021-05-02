@@ -1,0 +1,40 @@
+1 InsertBefore /home/ubuntu/rtx/d4j/Math/95b/src/java/org/apache/commons/math/distribution/FDistributionImpl.java 147
+Faulty:
+ret=d / (d - 2.0);
+Seed:
+ret=0.5;
+**************************************************
+2 InsertBefore /home/ubuntu/rtx/d4j/Math/95b/src/java/org/apache/commons/math/distribution/FDistributionImpl.java 100
+Faulty:
+if (p == 0) {
+  return 0d;
+}
+Seed:
+setNumeratorDegreesOfFreedom(numeratorDegreesOfFreedom);
+**************************************************
+3 InsertBefore /home/ubuntu/rtx/d4j/Math/95b/src/java/org/apache/commons/math/distribution/FDistributionImpl.java 147
+Faulty:
+ret=d / (d - 2.0);
+Seed:
+ret=0.5;
+**************************************************
+4 InsertBefore /home/ubuntu/rtx/d4j/Math/95b/src/java/org/apache/commons/math/distribution/FDistributionImpl.java 147
+Faulty:
+ret=d / (d - 2.0);
+Seed:
+ret=0.5;
+**************************************************
+5 Delete /home/ubuntu/rtx/d4j/Math/95b/src/java/org/apache/commons/math/distribution/FDistributionImpl.java 147
+Faulty:
+ret=d / (d - 2.0);
+Seed:
+return getLowerDomain(getPopulationSize(),getNumberOfSuccesses(),getSampleSize());
+**************************************************
+6 InsertBefore /home/ubuntu/rtx/d4j/Math/95b/src/java/org/apache/commons/math/analysis/UnivariateRealSolverUtils.java 179
+Faulty:
+throw new IllegalArgumentException("Invalid endpoint parameters:  lowerBound=" + lowerBound + " initial="+ initial+ " upperBound="+ upperBound);
+Seed:
+factory=UnivariateRealSolverFactory.newInstance();
+**************************************************
+Evaluations: 1697
+EstimatedTime: 778465

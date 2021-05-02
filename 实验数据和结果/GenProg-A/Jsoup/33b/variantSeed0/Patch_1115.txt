@@ -1,0 +1,32 @@
+1 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/33b/src/main/java/org/jsoup/parser/HtmlTreeBuilder.java 163
+Faulty:
+return el;
+Seed:
+tokeniser.transition(TokeniserState.Data);
+**************************************************
+2 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/33b/src/main/java/org/jsoup/parser/HtmlTreeBuilder.java 163
+Faulty:
+return el;
+Seed:
+tokeniser.transition(TokeniserState.Data);
+**************************************************
+3 Delete /home/ubuntu/rtx/d4j/Jsoup/33b/src/main/java/org/jsoup/parser/Tokeniser.java 192
+Faulty:
+if (lastStartTag == null) return false;
+Seed:
+pop();
+**************************************************
+4 InsertBefore /home/ubuntu/rtx/d4j/Jsoup/33b/src/main/java/org/jsoup/parser/HtmlTreeBuilder.java 187
+Faulty:
+if (tag.isKnownTag()) {
+  if (tag.isSelfClosing())   tokeniser.acknowledgeSelfClosingFlag();
+}
+ else {
+  tag.setSelfClosing();
+  tokeniser.acknowledgeSelfClosingFlag();
+}
+Seed:
+int size=formattingElements.size();
+**************************************************
+Evaluations: 1498
+EstimatedTime: 1687952

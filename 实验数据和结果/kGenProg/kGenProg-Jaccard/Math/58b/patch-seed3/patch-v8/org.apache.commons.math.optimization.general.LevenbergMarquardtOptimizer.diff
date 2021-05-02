@@ -1,0 +1,12 @@
+--- org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer
++++ org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer
+@@ -616,9 +616,6 @@
+                 paru = FastMath.min(paru, lmPar);
+             }
+ 
+-            // compute an improved estimate for lmPar
+-            lmPar = FastMath.max(parl, lmPar + correction);
+-
+         }
+     }
+ 

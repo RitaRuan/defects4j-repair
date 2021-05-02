@@ -1,0 +1,18 @@
+--- org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer
++++ org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer
+@@ -541,7 +541,6 @@
+             for (int i = 0; i <= j; ++i) {
+                 sum += weightedResidualJacobian[i][pj] * qy[i];
+             }
+-            sum /= diag[pj];
+             sum2 += sum * sum;
+         }
+         double gNorm = FastMath.sqrt(sum2);
+@@ -592,7 +591,6 @@
+             // compute the Newton correction
+             for (int j = 0; j < solvedCols; ++j) {
+                 int pj = permutation[j];
+-                work1[pj] = work3[pj] * diag[pj] / dxNorm;
+             }
+             for (int j = 0; j < solvedCols; ++j) {
+                 int pj = permutation[j];

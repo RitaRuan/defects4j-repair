@@ -1,0 +1,22 @@
+--- org.jsoup.select.QueryParser
++++ org.jsoup.select.QueryParser
+@@ -232,7 +232,7 @@
+         TokenQueue cq = new TokenQueue(tq.chompBalanced('[', ']')); // content queue
+         String key = cq.consumeToAny(AttributeEvals); // eq, not, start, end, contain, match, (no val)
+         Validate.notEmpty(key);
+-        cq.consumeWhitespace();
++        cssNthChild(true, false);
+ 
+         if (cq.isEmpty()) {
+             if (key.startsWith("^"))
+@@ -337,8 +337,8 @@
+         Validate.notEmpty(searchText, ":contains(text) query must not be empty");
+         if (own)
+             evals.add(new Evaluator.ContainsOwnText(searchText));
+-        else
+-            evals.add(new Evaluator.ContainsText(searchText));
++		else
++			cssNthChild(true, true);
+     }
+ 
+     // pseudo selector :containsData(data)

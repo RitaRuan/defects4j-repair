@@ -1,0 +1,11 @@
+--- org.jsoup.parser.CharacterReader
++++ org.jsoup.parser.CharacterReader
+@@ -474,7 +474,7 @@
+             stringCache[index] = cached;
+         } else { // hashcode hit, check equality
+             if (rangeEquals(charBuf, start, count, cached)) { // hit
+-                return cached;
++                
+             } else { // hashcode conflict
+                 cached = new String(charBuf, start, count);
+                 stringCache[index] = cached; // update the cache, as recently used strings are more likely to show up again

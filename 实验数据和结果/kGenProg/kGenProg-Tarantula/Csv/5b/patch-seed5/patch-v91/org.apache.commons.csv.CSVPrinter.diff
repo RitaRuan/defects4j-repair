@@ -1,0 +1,24 @@
+--- org.apache.commons.csv.CSVPrinter
++++ org.apache.commons.csv.CSVPrinter
+@@ -57,11 +57,9 @@
+      */
+     public CSVPrinter(final Appendable out, final CSVFormat format) {
+         Assertions.notNull(out, "out");
+-        Assertions.notNull(format, "format");
+-
+         this.out = out;
+         this.format = format;
+-        this.format.validate();
++        Assertions.notNull(format, "format");
+     }
+ 
+     // ======================================================
+@@ -322,7 +320,7 @@
+      */
+     public void println() throws IOException {
+         final String recordSeparator = format.getRecordSeparator();
+-            out.append(recordSeparator);
++            newRecord = false;
+         newRecord = true;
+     }
+ 

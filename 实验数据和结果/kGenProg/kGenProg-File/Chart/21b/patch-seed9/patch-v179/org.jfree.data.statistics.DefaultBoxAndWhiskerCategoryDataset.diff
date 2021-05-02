@@ -1,0 +1,18 @@
+--- org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset
++++ org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset
+@@ -107,7 +107,6 @@
+         this.data = new KeyedObjects2D();
+         this.minimumRangeValue = Double.NaN;
+         this.minimumRangeValueRow = -1;
+-        this.minimumRangeValueColumn = -1;
+         this.maximumRangeValue = Double.NaN;
+         this.maximumRangeValueRow = -1;
+         this.maximumRangeValueColumn = -1;
+@@ -171,7 +170,6 @@
+             }
+             else if (maxval > this.maximumRangeValue) {
+                 this.maximumRangeValue = maxval;
+-                this.maximumRangeValueRow = r;
+                 this.maximumRangeValueColumn = c;
+             }
+         

@@ -1,0 +1,121 @@
+RUNNING THE BUG: Compress 35, WITH THE SEED: 4
+2021-03-19 21:43:21 [main] [INFO]  KGenProgMain - 
+==================== kGenProg Configuration ====================
+configPath = kgenprog.toml
+rootDir = . (set by command line)
+productPaths = [src/main/java] (set by command line)
+testPaths = [src/test/java] (set by command line)
+classPaths = [/home/ubuntu/rtx/defects4j/framework/projects/Compress/lib/org/tukaani/xz/1.4/xz-1.4.jar, /home/ubuntu/rtx/defects4j/framework/projects/Compress/lib/junit/junit/4.11/junit-4.11.jar, /home/ubuntu/rtx/defects4j/framework/projects/Compress/lib/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar, /home/ubuntu/rtx/defects4j/framework/projects/Compress/lib/org/tukaani/xz/1.4/xz-1.4.jar, /home/ubuntu/rtx/defects4j/framework/projects/lib/junit-4.11.jar, /home/ubuntu/rtx/defects4j/framework/projects/Compress/lib/com/github/luben/zstd-jni/1.3.1-1/zstd-jni-1.3.1-1.jar, /home/ubuntu/rtx/defects4j/framework/projects/Compress/lib/com/github/luben/zstd-jni/1.3.3-1/zstd-jni-1.3.3-1.jar, /home/ubuntu/rtx/defects4j/framework/projects/Compress/lib/junit/junit/3.8.2/junit-3.8.2.jar, /home/ubuntu/rtx/defects4j/framework/projects/Compress/lib/junit/junit/4.10/junit-4.10.jar, /home/ubuntu/rtx/defects4j/framework/projects/Compress/lib/junit/junit/4.12/junit-4.12.jar, /home/ubuntu/rtx/defects4j/framework/projects/Compress/lib/junit/junit/4.8.2/junit-4.8.2.jar, /home/ubuntu/rtx/defects4j/framework/projects/Compress/lib/lib/com/github/luben/zstd-jni/1.3.1-1/zstd-jni-1.3.1-1.jar, /home/ubuntu/rtx/defects4j/framework/projects/Compress/lib/lib/com/github/luben/zstd-jni/1.3.3-1/zstd-jni-1.3.3-1.jar, /home/ubuntu/rtx/defects4j/framework/projects/Compress/lib/lib/junit/junit/3.8.2/junit-3.8.2.jar, /home/ubuntu/rtx/defects4j/framework/projects/Compress/lib/lib/junit/junit/4.10/junit-4.10.jar, /home/ubuntu/rtx/defects4j/framework/projects/Compress/lib/lib/junit/junit/4.11/junit-4.11.jar, /home/ubuntu/rtx/defects4j/framework/projects/Compress/lib/lib/junit/junit/4.12/junit-4.12.jar, /home/ubuntu/rtx/defects4j/framework/projects/Compress/lib/lib/junit/junit/4.8.2/junit-4.8.2.jar, /home/ubuntu/rtx/defects4j/framework/projects/Compress/lib/lib/org/brotli/dec/0.1.1/dec-0.1.1.jar, /home/ubuntu/rtx/defects4j/framework/projects/Compress/lib/lib/org/brotli/dec/0.1.2/dec-0.1.2.jar, /home/ubuntu/rtx/defects4j/framework/projects/Compress/lib/lib/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar, /home/ubuntu/rtx/defects4j/framework/projects/Compress/lib/lib/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar, /home/ubuntu/rtx/defects4j/framework/projects/Compress/lib/lib/org/javassist/javassist/3.20.0-GA/javassist-3.20.0-GA.jar, /home/ubuntu/rtx/defects4j/framework/projects/Compress/lib/lib/org/javassist/javassist/3.21.0-GA/javassist-3.21.0-GA.jar, /home/ubuntu/rtx/defects4j/framework/projects/Compress/lib/lib/org/mockito/mockito-core/1.10.19/mockito-core-1.10.19.jar, /home/ubuntu/rtx/defects4j/framework/projects/Compress/lib/lib/org/objenesis/objenesis/2.1/objenesis-2.1.jar, /home/ubuntu/rtx/defects4j/framework/projects/Compress/lib/lib/org/objenesis/objenesis/2.6/objenesis-2.6.jar, /home/ubuntu/rtx/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-api-mockito-common/1.6.6/powermock-api-mockito-common-1.6.6.jar, /home/ubuntu/rtx/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-api-mockito-common/1.7.0/powermock-api-mockito-common-1.7.0.jar, /home/ubuntu/rtx/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-api-mockito-common/1.7.3/powermock-api-mockito-common-1.7.3.jar, /home/ubuntu/rtx/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-api-mockito/1.6.4/powermock-api-mockito-1.6.4.jar, /home/ubuntu/rtx/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-api-mockito/1.6.6/powermock-api-mockito-1.6.6.jar, /home/ubuntu/rtx/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-api-mockito/1.7.0/powermock-api-mockito-1.7.0.jar, /home/ubuntu/rtx/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-api-mockito/1.7.3/powermock-api-mockito-1.7.3.jar, /home/ubuntu/rtx/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-api-support/1.6.4/powermock-api-support-1.6.4.jar, /home/ubuntu/rtx/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-api-support/1.6.6/powermock-api-support-1.6.6.jar, /home/ubuntu/rtx/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-api-support/1.7.0/powermock-api-support-1.7.0.jar, /home/ubuntu/rtx/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-api-support/1.7.3/powermock-api-support-1.7.3.jar, /home/ubuntu/rtx/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-core/1.6.4/powermock-core-1.6.4.jar, /home/ubuntu/rtx/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-core/1.6.6/powermock-core-1.6.6.jar, /home/ubuntu/rtx/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-core/1.7.0/powermock-core-1.7.0.jar, /home/ubuntu/rtx/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-core/1.7.3/powermock-core-1.7.3.jar, /home/ubuntu/rtx/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-module-junit4-common/1.6.4/powermock-module-junit4-common-1.6.4.jar, /home/ubuntu/rtx/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-module-junit4-common/1.6.6/powermock-module-junit4-common-1.6.6.jar, /home/ubuntu/rtx/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-module-junit4-common/1.7.0/powermock-module-junit4-common-1.7.0.jar, /home/ubuntu/rtx/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-module-junit4-common/1.7.3/powermock-module-junit4-common-1.7.3.jar, /home/ubuntu/rtx/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-module-junit4/1.6.4/powermock-module-junit4-1.6.4.jar, /home/ubuntu/rtx/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-module-junit4/1.6.6/powermock-module-junit4-1.6.6.jar, /home/ubuntu/rtx/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-module-junit4/1.7.0/powermock-module-junit4-1.7.0.jar, /home/ubuntu/rtx/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-module-junit4/1.7.3/powermock-module-junit4-1.7.3.jar, /home/ubuntu/rtx/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-reflect/1.6.4/powermock-reflect-1.6.4.jar, /home/ubuntu/rtx/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-reflect/1.6.6/powermock-reflect-1.6.6.jar, /home/ubuntu/rtx/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-reflect/1.7.0/powermock-reflect-1.7.0.jar, /home/ubuntu/rtx/defects4j/framework/projects/Compress/lib/lib/org/powermock/powermock-reflect/1.7.3/powermock-reflect-1.7.3.jar, /home/ubuntu/rtx/defects4j/framework/projects/Compress/lib/lib/org/tukaani/xz/1.0/xz-1.0.jar, /home/ubuntu/rtx/defects4j/framework/projects/Compress/lib/lib/org/tukaani/xz/1.2/xz-1.2.jar, /home/ubuntu/rtx/defects4j/framework/projects/Compress/lib/lib/org/tukaani/xz/1.3/xz-1.3.jar, /home/ubuntu/rtx/defects4j/framework/projects/Compress/lib/lib/org/tukaani/xz/1.4/xz-1.4.jar, /home/ubuntu/rtx/defects4j/framework/projects/Compress/lib/lib/org/tukaani/xz/1.5/xz-1.5.jar, /home/ubuntu/rtx/defects4j/framework/projects/Compress/lib/lib/org/tukaani/xz/1.6/xz-1.6.jar, /home/ubuntu/rtx/defects4j/framework/projects/Compress/lib/lib/org/tukaani/xz/1.8/xz-1.8.jar, /home/ubuntu/rtx/defects4j/framework/projects/Compress/lib/lib/zstd-jni-1.3.4-3.jar, /home/ubuntu/rtx/defects4j/framework/projects/Compress/lib/org/brotli/dec/0.1.1/dec-0.1.1.jar, /home/ubuntu/rtx/defects4j/framework/projects/Compress/lib/org/brotli/dec/0.1.2/dec-0.1.2.jar, /home/ubuntu/rtx/defects4j/framework/projects/Compress/lib/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar, /home/ubuntu/rtx/defects4j/framework/projects/Compress/lib/org/javassist/javassist/3.20.0-GA/javassist-3.20.0-GA.jar, /home/ubuntu/rtx/defects4j/framework/projects/Compress/lib/org/javassist/javassist/3.21.0-GA/javassist-3.21.0-GA.jar, /home/ubuntu/rtx/defects4j/framework/projects/Compress/lib/org/mockito/mockito-core/1.10.19/mockito-core-1.10.19.jar, /home/ubuntu/rtx/defects4j/framework/projects/Compress/lib/org/objenesis/objenesis/2.1/objenesis-2.1.jar, /home/ubuntu/rtx/defects4j/framework/projects/Compress/lib/org/objenesis/objenesis/2.6/objenesis-2.6.jar, /home/ubuntu/rtx/defects4j/framework/projects/Compress/lib/org/powermock/powermock-api-mockito-common/1.6.6/powermock-api-mockito-common-1.6.6.jar, /home/ubuntu/rtx/defects4j/framework/projects/Compress/lib/org/powermock/powermock-api-mockito-common/1.7.0/powermock-api-mockito-common-1.7.0.jar, /home/ubuntu/rtx/defects4j/framework/projects/Compress/lib/org/powermock/powermock-api-mockito-common/1.7.3/powermock-api-mockito-common-1.7.3.jar, /home/ubuntu/rtx/defects4j/framework/projects/Compress/lib/org/powermock/powermock-api-mockito/1.6.4/powermock-api-mockito-1.6.4.jar, /home/ubuntu/rtx/defects4j/framework/projects/Compress/lib/org/powermock/powermock-api-mockito/1.6.6/powermock-api-mockito-1.6.6.jar, /home/ubuntu/rtx/defects4j/framework/projects/Compress/lib/org/powermock/powermock-api-mockito/1.7.0/powermock-api-mockito-1.7.0.jar, /home/ubuntu/rtx/defects4j/framework/projects/Compress/lib/org/powermock/powermock-api-mockito/1.7.3/powermock-api-mockito-1.7.3.jar, /home/ubuntu/rtx/defects4j/framework/projects/Compress/lib/org/powermock/powermock-api-support/1.6.4/powermock-api-support-1.6.4.jar, /home/ubuntu/rtx/defects4j/framework/projects/Compress/lib/org/powermock/powermock-api-support/1.6.6/powermock-api-support-1.6.6.jar, /home/ubuntu/rtx/defects4j/framework/projects/Compress/lib/org/powermock/powermock-api-support/1.7.0/powermock-api-support-1.7.0.jar, /home/ubuntu/rtx/defects4j/framework/projects/Compress/lib/org/powermock/powermock-api-support/1.7.3/powermock-api-support-1.7.3.jar, /home/ubuntu/rtx/defects4j/framework/projects/Compress/lib/org/powermock/powermock-core/1.6.4/powermock-core-1.6.4.jar, /home/ubuntu/rtx/defects4j/framework/projects/Compress/lib/org/powermock/powermock-core/1.6.6/powermock-core-1.6.6.jar, /home/ubuntu/rtx/defects4j/framework/projects/Compress/lib/org/powermock/powermock-core/1.7.0/powermock-core-1.7.0.jar, /home/ubuntu/rtx/defects4j/framework/projects/Compress/lib/org/powermock/powermock-core/1.7.3/powermock-core-1.7.3.jar, /home/ubuntu/rtx/defects4j/framework/projects/Compress/lib/org/powermock/powermock-module-junit4-common/1.6.4/powermock-module-junit4-common-1.6.4.jar, /home/ubuntu/rtx/defects4j/framework/projects/Compress/lib/org/powermock/powermock-module-junit4-common/1.6.6/powermock-module-junit4-common-1.6.6.jar, /home/ubuntu/rtx/defects4j/framework/projects/Compress/lib/org/powermock/powermock-module-junit4-common/1.7.0/powermock-module-junit4-common-1.7.0.jar, /home/ubuntu/rtx/defects4j/framework/projects/Compress/lib/org/powermock/powermock-module-junit4-common/1.7.3/powermock-module-junit4-common-1.7.3.jar, /home/ubuntu/rtx/defects4j/framework/projects/Compress/lib/org/powermock/powermock-module-junit4/1.6.4/powermock-module-junit4-1.6.4.jar, /home/ubuntu/rtx/defects4j/framework/projects/Compress/lib/org/powermock/powermock-module-junit4/1.6.6/powermock-module-junit4-1.6.6.jar, /home/ubuntu/rtx/defects4j/framework/projects/Compress/lib/org/powermock/powermock-module-junit4/1.7.0/powermock-module-junit4-1.7.0.jar, /home/ubuntu/rtx/defects4j/framework/projects/Compress/lib/org/powermock/powermock-module-junit4/1.7.3/powermock-module-junit4-1.7.3.jar, /home/ubuntu/rtx/defects4j/framework/projects/Compress/lib/org/powermock/powermock-reflect/1.6.4/powermock-reflect-1.6.4.jar, /home/ubuntu/rtx/defects4j/framework/projects/Compress/lib/org/powermock/powermock-reflect/1.6.6/powermock-reflect-1.6.6.jar, /home/ubuntu/rtx/defects4j/framework/projects/Compress/lib/org/powermock/powermock-reflect/1.7.0/powermock-reflect-1.7.0.jar, /home/ubuntu/rtx/defects4j/framework/projects/Compress/lib/org/powermock/powermock-reflect/1.7.3/powermock-reflect-1.7.3.jar, /home/ubuntu/rtx/defects4j/framework/projects/Compress/lib/org/tukaani/xz/1.0/xz-1.0.jar, /home/ubuntu/rtx/defects4j/framework/projects/Compress/lib/org/tukaani/xz/1.2/xz-1.2.jar, /home/ubuntu/rtx/defects4j/framework/projects/Compress/lib/org/tukaani/xz/1.3/xz-1.3.jar, /home/ubuntu/rtx/defects4j/framework/projects/Compress/lib/org/tukaani/xz/1.5/xz-1.5.jar, /home/ubuntu/rtx/defects4j/framework/projects/Compress/lib/org/tukaani/xz/1.6/xz-1.6.jar, /home/ubuntu/rtx/defects4j/framework/projects/Compress/lib/org/tukaani/xz/1.8/xz-1.8.jar, /home/ubuntu/rtx/defects4j/framework/projects/Compress/lib/zstd-jni-1.3.4-3.jar] (set by command line)
+executionTests = [org.apache.commons.compress.DetectArchiverTestCase] (set by command line)
+outDir = /home/ubuntu/rtx/d4j/Compress/35b/kGenProg-Jaccard/patch-seed4 (set by command line)
+logLevel = INFO
+mutationGeneratingCount = 10
+crossoverGeneratingCount = 10
+headcount = 10
+maxGeneration = 10
+timeLimit = PT1M
+testTimeLimit = PT10S
+requiredSolutionsCount = 1
+randomSeed = 4 (set by command line)
+scope = PACKAGE
+faultLocalization = Jaccard (set by command line)
+mutationType = Simple
+crossoverType = Random
+firstVariantSelectionStrategy = Random
+secondVariantSelectionStrategy = Random
+isPatchOutput = true
+isHistoryRecord = false
+currentDirectory = /home/ubuntu/rtx/d4j/Compress/35b
+version = 1.8.0
+================================================================
+2021-03-19 21:43:31 [main] [INFO]  KGenProgMain - initial failed tests (4/7)
+org.apache.commons.compress.DetectArchiverTestCase.testDetection: couldn't find bla.arorg.apache.commons.compress.DetectArchiverTestCase.testCOMPRESS335: couldn't find COMPRESS-335.tarorg.apache.commons.compress.DetectArchiverTestCase.testDetectionNotArchive: couldn't find test.txtorg.apache.commons.compress.DetectArchiverTestCase.testCOMPRESS117: couldn't find COMPRESS-117.tar
+2021-03-19 21:43:32 [main] [INFO]  KGenProgMain - GA started
+2021-03-19 21:43:32 [main] [INFO]  KGenProgMain - entered the era of 1st generation.
+2021-03-19 21:43:32 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 0 seconds
+Variants: generated 0, build-succeeded 0, build-failed 0, syntax-invalid 0, redundant 0
+Fitness: max --, min --, ave NaN
+----------------------------------------------------------------
+
+2021-03-19 21:43:32 [main] [INFO]  KGenProgMain - entered the era of 2nd generation.
+2021-03-19 21:43:32 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 0 seconds
+Variants: generated 0, build-succeeded 0, build-failed 0, syntax-invalid 0, redundant 0
+Fitness: max --, min --, ave NaN
+----------------------------------------------------------------
+
+2021-03-19 21:43:32 [main] [INFO]  KGenProgMain - entered the era of 3rd generation.
+2021-03-19 21:43:32 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 0 seconds
+Variants: generated 0, build-succeeded 0, build-failed 0, syntax-invalid 0, redundant 0
+Fitness: max --, min --, ave NaN
+----------------------------------------------------------------
+
+2021-03-19 21:43:32 [main] [INFO]  KGenProgMain - entered the era of 4th generation.
+2021-03-19 21:43:32 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 0 seconds
+Variants: generated 0, build-succeeded 0, build-failed 0, syntax-invalid 0, redundant 0
+Fitness: max --, min --, ave NaN
+----------------------------------------------------------------
+
+2021-03-19 21:43:32 [main] [INFO]  KGenProgMain - entered the era of 5th generation.
+2021-03-19 21:43:32 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 0 seconds
+Variants: generated 0, build-succeeded 0, build-failed 0, syntax-invalid 0, redundant 0
+Fitness: max --, min --, ave NaN
+----------------------------------------------------------------
+
+2021-03-19 21:43:32 [main] [INFO]  KGenProgMain - entered the era of 6th generation.
+2021-03-19 21:43:32 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 0 seconds
+Variants: generated 0, build-succeeded 0, build-failed 0, syntax-invalid 0, redundant 0
+Fitness: max --, min --, ave NaN
+----------------------------------------------------------------
+
+2021-03-19 21:43:32 [main] [INFO]  KGenProgMain - entered the era of 7th generation.
+2021-03-19 21:43:32 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 0 seconds
+Variants: generated 0, build-succeeded 0, build-failed 0, syntax-invalid 0, redundant 0
+Fitness: max --, min --, ave NaN
+----------------------------------------------------------------
+
+2021-03-19 21:43:32 [main] [INFO]  KGenProgMain - entered the era of 8th generation.
+2021-03-19 21:43:32 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 0 seconds
+Variants: generated 0, build-succeeded 0, build-failed 0, syntax-invalid 0, redundant 0
+Fitness: max --, min --, ave NaN
+----------------------------------------------------------------
+
+2021-03-19 21:43:32 [main] [INFO]  KGenProgMain - entered the era of 9th generation.
+2021-03-19 21:43:32 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 0 seconds
+Variants: generated 0, build-succeeded 0, build-failed 0, syntax-invalid 0, redundant 0
+Fitness: max --, min --, ave NaN
+----------------------------------------------------------------
+
+2021-03-19 21:43:32 [main] [INFO]  KGenProgMain - entered the era of 10th generation.
+2021-03-19 21:43:32 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 0 seconds
+Variants: generated 0, build-succeeded 0, build-failed 0, syntax-invalid 0, redundant 0
+Fitness: max --, min --, ave NaN
+----------------------------------------------------------------
+
+2021-03-19 21:43:32 [main] [INFO]  KGenProgMain - GA stopped
+2021-03-19 21:43:32 [main] [INFO]  KGenProgMain - Summary
+Reached generation = 10
+Generated variants = 0
+Syntax valid variants = 0
+Build succeeded variants = 0
+Time elapsed = 0 seconds
+Exit status = FAILURE (maximum generation)

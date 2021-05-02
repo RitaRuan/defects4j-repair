@@ -1,0 +1,20 @@
+--- org.apache.commons.math3.complex.Complex
++++ org.apache.commons.math3.complex.Complex
+@@ -246,7 +246,7 @@
+     public Complex divide(Complex divisor)
+         throws NullArgumentException {
+         MathUtils.checkNotNull(divisor);
+-        if (isNaN || divisor.isNaN) {
++        if (isNaN) {
+             return NaN;
+         }
+ 
+@@ -337,7 +337,7 @@
+      */
+     @Override
+     public boolean equals(Object other) {
+-        if (this == other) {
++        if (isNaN) {
+             return true;
+         }
+         if (other instanceof Complex){

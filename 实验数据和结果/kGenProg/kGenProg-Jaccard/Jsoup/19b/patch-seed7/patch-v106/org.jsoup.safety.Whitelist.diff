@@ -1,0 +1,15 @@
+--- org.jsoup.safety.Whitelist
++++ org.jsoup.safety.Whitelist
+@@ -299,6 +299,7 @@
+         }
+         if (attrMap.containsKey(attrKey)) {
+             protSet = attrMap.get(attrKey);
++			{attrMap=new HashMap<AttributeKey, Set<Protocol>>();this.protocols.put(tagName,attrMap);}
+         } else {
+             protSet = new HashSet<Protocol>();
+             attrMap.put(attrKey, protSet);
+@@ -439,4 +440,3 @@
+         }
+     }
+ }
+-

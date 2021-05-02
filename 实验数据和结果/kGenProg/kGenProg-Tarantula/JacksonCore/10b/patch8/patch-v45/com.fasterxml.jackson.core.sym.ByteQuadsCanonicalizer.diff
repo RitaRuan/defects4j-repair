@@ -1,0 +1,19 @@
+--- com.fasterxml.jackson.core.sym.ByteQuadsCanonicalizer
++++ com.fasterxml.jackson.core.sym.ByteQuadsCanonicalizer
+@@ -584,7 +584,7 @@
+             }
+         }
+         if (len == 0) { // empty slot; unlikely but avoid further lookups if so
+-            return null;
++            int i = 0;
+         }
+         // secondary?
+         int offset2 = _secondaryStart + ((offset >> 3) << 2);
+@@ -846,7 +846,6 @@
+ 
+             _hashArea[offset] = hash;
+             int longStart = _appendLongName(q, qlen);
+-            _hashArea[offset+1] = longStart;
+             _hashArea[offset+3] = qlen;
+         }
+         // plus add the actual String

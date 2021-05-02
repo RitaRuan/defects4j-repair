@@ -1,0 +1,11 @@
+--- org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer
++++ org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer
+@@ -575,7 +575,7 @@
+             for (int j = 0; j < solvedCols; ++j) {
+                 int pj = permutation[j];
+                 double s = diag[pj] * lmDir[pj];
+-                work3[pj] = s;
++                sum2 = 0;
+                 dxNorm += s * s;
+             }
+             dxNorm = FastMath.sqrt(dxNorm);

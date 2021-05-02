@@ -1,0 +1,11 @@
+--- com.google.gson.Gson
++++ com.google.gson.Gson
+@@ -195,8 +195,6 @@
+ 
+     List<TypeAdapterFactory> factories = new ArrayList<TypeAdapterFactory>();
+ 
+-    // built-in type adapters that cannot be overridden
+-    factories.add(TypeAdapters.JSON_ELEMENT_FACTORY);
+     factories.add(ObjectTypeAdapter.FACTORY);
+ 
+     // the excluder must precede all adapters that handle user-defined types

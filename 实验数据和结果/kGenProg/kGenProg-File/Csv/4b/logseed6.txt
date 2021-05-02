@@ -1,0 +1,89 @@
+RUNNING THE BUG: Csv 4, WITH THE SEED: 6
+2021-03-27 23:41:32 [main] [INFO]  KGenProgMain - 
+==================== kGenProg Configuration ====================
+configPath = kgenprog.toml
+rootDir = . (set by command line)
+productPaths = [src/main/java] (set by command line)
+testPaths = [src/test/java] (set by command line)
+classPaths = [/home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/junit/junit/4.11/junit-4.11.jar, /home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar, /home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/commons-io/commons-io/2.2/commons-io-2.2.jar, /home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/com/h2database/h2/1.3.168/h2-1.3.168.jar, /home/ubuntu/rtx/defects4j/framework/projects/lib/junit-4.11.jar, /home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/com/csvreader/1.0/javacsv.jar, /home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/com/generationjava/io/1.0/gj-csv-1.0.jar, /home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/com/h2database/h2/1.4.180/h2-1.4.180.jar, /home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/com/h2database/h2/1.4.181/h2-1.4.181.jar, /home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/com/h2database/h2/1.4.182/h2-1.4.182.jar, /home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/com/h2database/h2/1.4.196/h2-1.4.196.jar, /home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/com/h2database/h2/1.4.198/h2-1.4.198.jar, /home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/com/opencsv/4.0/opencsv-4.0.jar, /home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/commons-io/commons-io/2.4/commons-io-2.4.jar, /home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/commons-io/commons-io/2.5/commons-io-2.5.jar, /home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/commons-io/commons-io/2.6/commons-io-2.6.jar, /home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/junit/junit/3.8.1/junit-3.8.1.jar, /home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/junit/junit/4.10/junit-4.10.jar, /home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/junit/junit/4.12/junit-4.12.jar, /home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/lib/com/csvreader/1.0/javacsv.jar, /home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/lib/com/generationjava/io/1.0/gj-csv-1.0.jar, /home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/lib/com/h2database/h2/1.3.168/h2-1.3.168.jar, /home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/lib/com/h2database/h2/1.4.180/h2-1.4.180.jar, /home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/lib/com/h2database/h2/1.4.181/h2-1.4.181.jar, /home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/lib/com/h2database/h2/1.4.182/h2-1.4.182.jar, /home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/lib/com/h2database/h2/1.4.196/h2-1.4.196.jar, /home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/lib/com/h2database/h2/1.4.198/h2-1.4.198.jar, /home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/lib/com/opencsv/4.0/opencsv-4.0.jar, /home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/lib/commons-io/commons-io/2.2/commons-io-2.2.jar, /home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/lib/commons-io/commons-io/2.4/commons-io-2.4.jar, /home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/lib/commons-io/commons-io/2.5/commons-io-2.5.jar, /home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/lib/commons-io/commons-io/2.6/commons-io-2.6.jar, /home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/lib/junit/junit/3.8.1/junit-3.8.1.jar, /home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/lib/junit/junit/4.10/junit-4.10.jar, /home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/lib/junit/junit/4.11/junit-4.11.jar, /home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/lib/junit/junit/4.12/junit-4.12.jar, /home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/lib/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.jar, /home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/lib/org/apache/commons/commons-lang3/3.6/commons-lang3-3.6.jar, /home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/lib/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar, /home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/lib/org/apache/commons/commons-lang3/3.8.1/commons-lang3-3.8.1.jar, /home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/lib/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar, /home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/lib/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar, /home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/lib/org/mockito/mockito-all/1.10.19/mockito-all-1.10.19.jar, /home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/lib/org/mockito/mockito-all/1.9.5/mockito-all-1.9.5.jar, /home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/lib/org/openjdk/jmh/1.21/jmh-core-1.21.jar, /home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/lib/org/skife/csv/1.0/csv-1.0.jar, /home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/lib/org/supercsv/2.4.0/super-csv-2.4.0.jar, /home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.jar, /home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/org/apache/commons/commons-lang3/3.6/commons-lang3-3.6.jar, /home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar, /home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/org/apache/commons/commons-lang3/3.8.1/commons-lang3-3.8.1.jar, /home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar, /home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/org/mockito/mockito-all/1.10.19/mockito-all-1.10.19.jar, /home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/org/mockito/mockito-all/1.9.5/mockito-all-1.9.5.jar, /home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/org/openjdk/jmh/1.21/jmh-core-1.21.jar, /home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/org/skife/csv/1.0/csv-1.0.jar, /home/ubuntu/rtx/defects4j/framework/projects/Csv/lib/org/supercsv/2.4.0/super-csv-2.4.0.jar] (set by command line)
+executionTests = [org.apache.commons.csv.CSVParserTest] (set by command line)
+outDir = /home/ubuntu/rtx/d4j/Csv/4b/kGenProg-FILE/patch-seed6 (set by command line)
+logLevel = INFO
+mutationGeneratingCount = 10
+crossoverGeneratingCount = 10
+headcount = 10
+maxGeneration = 10
+timeLimit = PT1M
+testTimeLimit = PT10S
+requiredSolutionsCount = 1
+randomSeed = 6 (set by command line)
+scope = FILE (set by command line)
+faultLocalization = Ochiai
+mutationType = Simple
+crossoverType = Random
+firstVariantSelectionStrategy = Random
+secondVariantSelectionStrategy = Random
+isPatchOutput = true
+isHistoryRecord = false
+currentDirectory = /home/ubuntu/rtx/d4j/Csv/4b
+version = 1.8.0
+================================================================
+2021-03-27 23:41:36 [main] [INFO]  KGenProgMain - initial failed tests (1/48)
+org.apache.commons.csv.CSVParserTest.testNoHeaderMap: null
+2021-03-27 23:41:36 [main] [INFO]  KGenProgMain - GA started
+2021-03-27 23:41:36 [main] [INFO]  KGenProgMain - entered the era of 1st generation.
+2021-03-27 23:41:38 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 1 seconds
+Variants: generated 10, build-succeeded 2, build-failed 6, syntax-invalid 2, redundant 0
+Fitness: max 0.958(1), min 0.229(1), ave 0.594
+----------------------------------------------------------------
+
+2021-03-27 23:41:38 [main] [INFO]  KGenProgMain - entered the era of 2nd generation.
+2021-03-27 23:41:40 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 3 seconds
+Variants: generated 10, build-succeeded 3, build-failed 4, syntax-invalid 1, redundant 2
+Fitness: max 0.979(1), min 0.208(1), ave 0.681
+----------------------------------------------------------------
+
+2021-03-27 23:41:40 [main] [INFO]  KGenProgMain - entered the era of 3rd generation.
+2021-03-27 23:42:02 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 25 seconds
+Variants: generated 10, build-succeeded 1, build-failed 5, syntax-invalid 1, redundant 3
+Fitness: max 0.542(1), min 0.542(1), ave 0.542
+----------------------------------------------------------------
+
+2021-03-27 23:42:02 [main] [INFO]  KGenProgMain - entered the era of 4th generation.
+2021-03-27 23:42:23 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 46 seconds
+Variants: generated 20, build-succeeded 5, build-failed 7, syntax-invalid 1, redundant 7
+Fitness: max 0.958(2), min 0.208(1), ave 0.583
+----------------------------------------------------------------
+
+2021-03-27 23:42:23 [main] [INFO]  KGenProgMain - entered the era of 5th generation.
+2021-03-27 23:42:24 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 47 seconds
+Variants: generated 20, build-succeeded 2, build-failed 6, syntax-invalid 3, redundant 9
+Fitness: max 0.958(1), min 0.938(1), ave 0.948
+----------------------------------------------------------------
+
+2021-03-27 23:42:24 [main] [INFO]  KGenProgMain - entered the era of 6th generation.
+2021-03-27 23:42:46 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 1 minutes 9 seconds
+Variants: generated 20, build-succeeded 4, build-failed 5, syntax-invalid 3, redundant 8
+Fitness: max 0.958(1), min 0.542(1), ave 0.786
+----------------------------------------------------------------
+
+2021-03-27 23:42:46 [main] [INFO]  KGenProgMain - GA stopped
+2021-03-27 23:42:46 [main] [INFO]  KGenProgMain - Summary
+Reached generation = 6
+Generated variants = 90
+Syntax valid variants = 79
+Build succeeded variants = 17
+Time elapsed = 1 minutes 9 seconds
+Exit status = FAILURE (time limit)

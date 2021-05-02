@@ -1,0 +1,20 @@
+--- com.google.gson.Gson
++++ com.google.gson.Gson
+@@ -197,7 +197,8 @@
+ 
+     // built-in type adapters that cannot be overridden
+     factories.add(TypeAdapters.JSON_ELEMENT_FACTORY);
+-    factories.add(ObjectTypeAdapter.FACTORY);
++    factories.add(TypeAdapters.STRING_BUFFER_FACTORY);
++	factories.add(ObjectTypeAdapter.FACTORY);
+ 
+     // the excluder must precede all adapters that handle user-defined types
+     factories.add(excluder);
+@@ -228,7 +229,6 @@
+     factories.add(TypeAdapters.STRING_BUFFER_FACTORY);
+     factories.add(TypeAdapters.newFactory(BigDecimal.class, TypeAdapters.BIG_DECIMAL));
+     factories.add(TypeAdapters.newFactory(BigInteger.class, TypeAdapters.BIG_INTEGER));
+-    factories.add(TypeAdapters.URL_FACTORY);
+     factories.add(TypeAdapters.URI_FACTORY);
+     factories.add(TypeAdapters.UUID_FACTORY);
+     factories.add(TypeAdapters.CURRENCY_FACTORY);

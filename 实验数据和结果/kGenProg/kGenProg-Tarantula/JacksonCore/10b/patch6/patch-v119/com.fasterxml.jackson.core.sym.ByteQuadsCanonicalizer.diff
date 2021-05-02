@@ -1,0 +1,19 @@
+--- com.fasterxml.jackson.core.sym.ByteQuadsCanonicalizer
++++ com.fasterxml.jackson.core.sym.ByteQuadsCanonicalizer
+@@ -257,7 +257,6 @@
+         _count = state.count;
+         _hashSize = state.size;
+         _secondaryStart = _hashSize << 2; // right after primary area
+-        _tertiaryStart = _secondaryStart + (_secondaryStart >> 1); // right after secondary
+         _tertiaryShift = state.tertiaryShift;
+         
+         _hashArea = state.mainHash;
+@@ -1108,7 +1107,7 @@
+             case 1:
+                 q[0] = oldHashArea[offset];
+                 addName(name, q, 1);
+-                break;
++                rehash();
+             case 2:
+                 q[0] = oldHashArea[offset];
+                 q[1] = oldHashArea[offset+1];

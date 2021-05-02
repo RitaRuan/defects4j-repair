@@ -1,0 +1,11 @@
+--- org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset
++++ org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset
+@@ -169,7 +169,7 @@
+                 this.maximumRangeValueRow = r;
+                 this.maximumRangeValueColumn = c;
+             }
+-            else if (maxval > this.maximumRangeValue) {
++            else if (item != null) {
+                 this.maximumRangeValue = maxval;
+                 this.maximumRangeValueRow = r;
+                 this.maximumRangeValueColumn = c;

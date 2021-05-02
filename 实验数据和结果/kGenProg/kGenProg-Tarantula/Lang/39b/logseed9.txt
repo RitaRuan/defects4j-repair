@@ -1,0 +1,107 @@
+RUNNING THE BUG: Lang 39, WITH THE SEED: 9
+2021-03-25 22:08:57 [main] [INFO]  KGenProgMain - 
+==================== kGenProg Configuration ====================
+configPath = kgenprog.toml
+rootDir = . (set by command line)
+productPaths = [src/java] (set by command line)
+testPaths = [src/test] (set by command line)
+classPaths = [/home/ubuntu/rtx/defects4j/framework/projects/lib/junit-4.11.jar, /home/ubuntu/rtx/defects4j/framework/projects/Lang/lib/easymock.jar, /home/ubuntu/rtx/defects4j/framework/projects/Lang/lib/commons-io.jar, /home/ubuntu/rtx/defects4j/framework/projects/Lang/lib/cglib.jar, /home/ubuntu/rtx/defects4j/framework/projects/Lang/lib/asm.jar] (set by command line)
+executionTests = [org.apache.commons.lang3.StringUtilsTest] (set by command line)
+outDir = /home/ubuntu/rtx/d4j/Lang/39b/kGenProg-Tarantula/patch-seed9 (set by command line)
+logLevel = INFO
+mutationGeneratingCount = 10
+crossoverGeneratingCount = 10
+headcount = 10
+maxGeneration = 10
+timeLimit = PT1M
+testTimeLimit = PT10S
+requiredSolutionsCount = 1
+randomSeed = 9 (set by command line)
+scope = PACKAGE
+faultLocalization = Tarantula (set by command line)
+mutationType = Simple
+crossoverType = Random
+firstVariantSelectionStrategy = Random
+secondVariantSelectionStrategy = Random
+isPatchOutput = true
+isHistoryRecord = false
+currentDirectory = /home/ubuntu/rtx/d4j/Lang/39b
+version = 1.8.0
+================================================================
+2021-03-25 22:09:12 [main] [INFO]  KGenProgMain - initial failed tests (1/66)
+org.apache.commons.lang3.StringUtilsTest.testReplace_StringStringArrayStringArray: null
+2021-03-25 22:09:13 [main] [INFO]  KGenProgMain - GA started
+2021-03-25 22:09:13 [main] [INFO]  KGenProgMain - entered the era of 1st generation.
+2021-03-25 22:09:16 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 2 seconds
+Variants: generated 10, build-succeeded 0, build-failed 8, syntax-invalid 1, redundant 1
+Fitness: max --, min --, ave NaN
+----------------------------------------------------------------
+
+2021-03-25 22:09:16 [main] [INFO]  KGenProgMain - entered the era of 2nd generation.
+2021-03-25 22:09:17 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 4 seconds
+Variants: generated 10, build-succeeded 0, build-failed 7, syntax-invalid 2, redundant 1
+Fitness: max --, min --, ave NaN
+----------------------------------------------------------------
+
+2021-03-25 22:09:17 [main] [INFO]  KGenProgMain - entered the era of 3rd generation.
+2021-03-25 22:09:20 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 6 seconds
+Variants: generated 10, build-succeeded 1, build-failed 8, syntax-invalid 1, redundant 0
+Fitness: max 0.97(1), min 0.97(1), ave 0.97
+----------------------------------------------------------------
+
+2021-03-25 22:09:20 [main] [INFO]  KGenProgMain - entered the era of 4th generation.
+2021-03-25 22:09:23 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 9 seconds
+Variants: generated 10, build-succeeded 0, build-failed 9, syntax-invalid 1, redundant 0
+Fitness: max --, min --, ave NaN
+----------------------------------------------------------------
+
+2021-03-25 22:09:23 [main] [INFO]  KGenProgMain - entered the era of 5th generation.
+2021-03-25 22:09:24 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 11 seconds
+Variants: generated 6, build-succeeded 1, build-failed 4, syntax-invalid 1, redundant 0
+Fitness: max 1(1), min 1(1), ave 1
+----------------------------------------------------------------
+
+2021-03-25 22:09:24 [main] [INFO]  KGenProgMain - GA stopped
+2021-03-25 22:09:25 [main] [INFO]  PatchLogExporter - patch (v46)
+--- org.apache.commons.lang3.builder.CompareToBuilder
++++ org.apache.commons.lang3.builder.CompareToBuilder
+@@ -1043,4 +1043,3 @@
+     }
+ 
+ }
+-
+2021-03-25 22:09:25 [main] [INFO]  PatchLogExporter - patch (v46)
+--- org.apache.commons.lang3.StringUtils
++++ org.apache.commons.lang3.StringUtils
+@@ -3672,12 +3672,8 @@
+         int increase = 0;
+ 
+         // count the replacement text elements that are larger than their corresponding text being replaced
+-        for (int i = 0; i < searchList.length; i++) {
+-            int greater = replacementList[i].length() - searchList[i].length();
+-            if (greater > 0) {
+-                increase += 3 * greater; // assume 3 matches
+-            }
+-        }
++        for (int i = 0; i < searchList.length; i++)
++			break;
+         // have upper-bound at 20% increase, then let Java take over
+         increase = Math.min(increase, text.length() / 5);
+ 
+2021-03-25 22:09:25 [main] [INFO]  KGenProgMain - Summary
+Reached generation = 5
+Generated variants = 46
+Syntax valid variants = 40
+Build succeeded variants = 2
+Time elapsed = 11 seconds
+Exit status = SUCCESS

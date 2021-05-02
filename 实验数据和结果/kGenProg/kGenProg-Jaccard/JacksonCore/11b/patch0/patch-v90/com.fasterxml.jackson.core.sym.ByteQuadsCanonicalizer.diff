@@ -1,0 +1,18 @@
+--- com.fasterxml.jackson.core.sym.ByteQuadsCanonicalizer
++++ com.fasterxml.jackson.core.sym.ByteQuadsCanonicalizer
+@@ -257,7 +257,6 @@
+         _count = state.count;
+         _hashSize = state.size;
+         _secondaryStart = _hashSize << 2; // right after primary area
+-        _tertiaryStart = _secondaryStart + (_secondaryStart >> 1); // right after secondary
+         _tertiaryShift = state.tertiaryShift;
+         
+         _hashArea = state.mainHash;
+@@ -822,7 +821,6 @@
+         {
+                 offset = _findOffsetForAdd(calcHash(q[0]));
+                 _hashArea[offset] = q[0];
+-                _hashArea[offset+3] = 1;
+             }
+             break;
+         case 2:

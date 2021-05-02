@@ -1,0 +1,29 @@
+--- com.fasterxml.jackson.core.sym.ByteQuadsCanonicalizer
++++ com.fasterxml.jackson.core.sym.ByteQuadsCanonicalizer
+@@ -584,7 +584,7 @@
+             }
+         }
+         if (len == 0) { // empty slot; unlikely but avoid further lookups if so
+-            return null;
++            _spilloverEnd += 4;
+         }
+         // secondary?
+         int offset2 = _secondaryStart + ((offset >> 3) << 2);
+@@ -632,7 +632,6 @@
+                 return _names[offset >> 2];
+             }
+             if (len == 0) {
+-                return null;
+             }
+         }
+         // but if tertiary full, check out spill-over area as last resort
+@@ -1108,8 +1107,7 @@
+             case 1:
+                 q[0] = oldHashArea[offset];
+                 addName(name, q, 1);
+-                break;
+-            case 2:
++			case 2:
+                 q[0] = oldHashArea[offset];
+                 q[1] = oldHashArea[offset+1];
+                 addName(name, q, 2);

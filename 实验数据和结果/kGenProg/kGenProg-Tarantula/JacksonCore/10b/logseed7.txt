@@ -1,0 +1,140 @@
+RUNNING THE BUG: JacksonCore 10, WITH THE SEED: 7
+2021-04-01 07:23:22 [main] [INFO]  KGenProgMain - 
+==================== kGenProg Configuration ====================
+configPath = kgenprog.toml
+rootDir = . (set by command line)
+productPaths = [src/main/java] (set by command line)
+testPaths = [src/test/java] (set by command line)
+classPaths = [/home/rtx/repair/defects4j/framework/projects/JacksonCore/lib/junit/junit/4.8.2/junit-4.8.2.jar, /home/rtx/repair/defects4j/framework/projects/lib/junit-4.11.jar, /home/rtx/repair/defects4j/framework/projects/JacksonCore/lib/junit/junit/4.11/junit-4.11.jar, /home/rtx/repair/defects4j/framework/projects/JacksonCore/lib/junit/junit/4.12/junit-4.12.jar, /home/rtx/repair/defects4j/framework/projects/JacksonCore/lib/lib/junit/junit/4.11/junit-4.11.jar, /home/rtx/repair/defects4j/framework/projects/JacksonCore/lib/lib/junit/junit/4.12/junit-4.12.jar, /home/rtx/repair/defects4j/framework/projects/JacksonCore/lib/lib/junit/junit/4.8.2/junit-4.8.2.jar, /home/rtx/repair/defects4j/framework/projects/JacksonCore/lib/lib/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar, /home/rtx/repair/defects4j/framework/projects/JacksonCore/lib/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar] (set by command line)
+executionTests = [com.fasterxml.jackson.core.sym.TestByteBasedSymbols] (set by command line)
+outDir = /home/rtx/repair/d4j/JacksonCore/10b/kGenProg-Tarantula/patch7 (set by command line)
+logLevel = INFO
+mutationGeneratingCount = 10
+crossoverGeneratingCount = 10
+headcount = 10
+maxGeneration = 10
+timeLimit = PT1M
+testTimeLimit = PT10S
+requiredSolutionsCount = 1
+randomSeed = 7 (set by command line)
+scope = PACKAGE
+faultLocalization = Tarantula (set by command line)
+mutationType = Simple
+crossoverType = Random
+firstVariantSelectionStrategy = Random
+secondVariantSelectionStrategy = Random
+isPatchOutput = true
+isHistoryRecord = false
+currentDirectory = /home/rtx/repair/d4j/JacksonCore/10b
+version = 1.8.0
+================================================================
+2021-04-01 07:23:28 [main] [INFO]  KGenProgMain - initial failed tests (1/3)
+com.fasterxml.jackson.core.sym.TestByteBasedSymbols.testIssue207: null
+2021-04-01 07:23:28 [main] [INFO]  KGenProgMain - GA started
+2021-04-01 07:23:28 [main] [INFO]  KGenProgMain - entered the era of 1st generation.
+2021-04-01 07:23:30 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 1 seconds
+Variants: generated 10, build-succeeded 1, build-failed 7, syntax-invalid 0, redundant 2
+Fitness: max 0.667(1), min 0.667(1), ave 0.667
+----------------------------------------------------------------
+
+2021-04-01 07:23:30 [main] [INFO]  KGenProgMain - entered the era of 2nd generation.
+2021-04-01 07:23:31 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 3 seconds
+Variants: generated 10, build-succeeded 0, build-failed 9, syntax-invalid 0, redundant 1
+Fitness: max --, min --, ave NaN
+----------------------------------------------------------------
+
+2021-04-01 07:23:31 [main] [INFO]  KGenProgMain - entered the era of 3rd generation.
+2021-04-01 07:23:32 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 4 seconds
+Variants: generated 10, build-succeeded 2, build-failed 5, syntax-invalid 3, redundant 0
+Fitness: max 0.667(2), min 0.667(2), ave 0.667
+----------------------------------------------------------------
+
+2021-04-01 07:23:33 [main] [INFO]  KGenProgMain - entered the era of 4th generation.
+2021-04-01 07:23:34 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 6 seconds
+Variants: generated 11, build-succeeded 1, build-failed 8, syntax-invalid 1, redundant 1
+Fitness: max 1(1), min 1(1), ave 1
+----------------------------------------------------------------
+
+2021-04-01 07:23:34 [main] [INFO]  KGenProgMain - GA stopped
+2021-04-01 07:23:34 [main] [INFO]  PatchLogExporter - patch (v41)
+--- com.fasterxml.jackson.core.sym.ByteQuadsCanonicalizer
++++ com.fasterxml.jackson.core.sym.ByteQuadsCanonicalizer
+@@ -770,7 +770,6 @@
+         _hashArea[offset] = q1;
+         _hashArea[offset+3] = 1;
+         _names[offset >> 2] = name;
+-        ++_count;
+         _verifyNeedForRehash();
+         return name;
+     }
+@@ -1040,7 +1039,6 @@
+ 
+         for (int i = 3; i < qlen; ++i) {
+             int next = q[i];
+-            next = next ^ (next >> 21);
+             hash += next;
+         }
+         hash *= MULT2;
+2021-04-01 07:23:34 [main] [INFO]  PatchLogExporter - patch (v41)
+--- com.fasterxml.jackson.core.io.CharTypes
++++ com.fasterxml.jackson.core.io.CharTypes
+@@ -256,4 +256,3 @@
+         return (byte[]) HB.clone();
+     }
+ }
+-
+2021-04-01 07:23:34 [main] [INFO]  PatchLogExporter - patch (v41)
+--- com.fasterxml.jackson.core.Base64Variant
++++ com.fasterxml.jackson.core.Base64Variant
+@@ -590,4 +590,3 @@
+         throw new IllegalArgumentException("Unexpected end-of-String in base64 content");
+     }
+ }
+-
+2021-04-01 07:23:34 [main] [INFO]  PatchLogExporter - patch (v41)
+--- com.fasterxml.jackson.core.util.ByteArrayBuilder
++++ com.fasterxml.jackson.core.util.ByteArrayBuilder
+@@ -241,4 +241,3 @@
+     }
+ 
+ }
+-
+2021-04-01 07:23:34 [main] [INFO]  PatchLogExporter - patch (v41)
+--- com.fasterxml.jackson.core.PrettyPrinter
++++ com.fasterxml.jackson.core.PrettyPrinter
+@@ -174,4 +174,3 @@
+     void beforeObjectEntries(JsonGenerator gen)
+         throws IOException, JsonGenerationException;
+ }
+-
+2021-04-01 07:23:34 [main] [INFO]  PatchLogExporter - patch (v41)
+--- com.fasterxml.jackson.core.type.TypeReference
++++ com.fasterxml.jackson.core.type.TypeReference
+@@ -55,4 +55,3 @@
+     public int compareTo(TypeReference<T> o) { return 0; }
+     // just need an implementation, not a good one... hence ^^^
+ }
+-
+2021-04-01 07:23:34 [main] [INFO]  PatchLogExporter - patch (v41)
+--- com.fasterxml.jackson.core.util.InternCache
++++ com.fasterxml.jackson.core.util.InternCache
+@@ -61,4 +61,3 @@
+         return result;
+     }
+ }
+-
+2021-04-01 07:23:34 [main] [INFO]  KGenProgMain - Summary
+Reached generation = 4
+Generated variants = 41
+Syntax valid variants = 37
+Build succeeded variants = 4
+Time elapsed = 6 seconds
+Exit status = SUCCESS

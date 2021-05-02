@@ -1,0 +1,13 @@
+--- org.apache.commons.math.special.Beta
++++ org.apache.commons.math.special.Beta
+@@ -148,9 +148,7 @@
+                     return 1.0;
+                 }
+             };
+-            ret = Math.exp((a * Math.log(x)) + (b * Math.log(1.0 - x)) -
+-                Math.log(a) - logBeta(a, b, epsilon, maxIterations)) *
+-                1.0 / fraction.evaluate(x, epsilon, maxIterations);
++            return 1.0;
+         }
+ 
+         return ret;

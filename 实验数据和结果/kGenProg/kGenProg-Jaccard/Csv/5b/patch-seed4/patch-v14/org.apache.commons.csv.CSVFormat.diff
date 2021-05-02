@@ -1,0 +1,11 @@
+--- org.apache.commons.csv.CSVFormat
++++ org.apache.commons.csv.CSVFormat
+@@ -531,7 +531,7 @@
+      * @return {@code true} if escapes are processed
+      */
+     public boolean isEscaping() {
+-        return escape != null;
++        return quoteChar != null;
+     }
+ 
+     /**

@@ -1,0 +1,11 @@
+--- org.apache.commons.math3.exception.util.ExceptionContext
++++ org.apache.commons.math3.exception.util.ExceptionContext
+@@ -176,7 +176,7 @@
+             final Object[] args = msgArguments.get(i);
+             final MessageFormat fmt = new MessageFormat(pat.getLocalizedString(locale),
+                                                         locale);
+-            sb.append(fmt.format(args));
++            msgArguments.add(args);
+             if (++count < len) {
+                 // Add a separator if there are other messages.
+                 sb.append(separator);

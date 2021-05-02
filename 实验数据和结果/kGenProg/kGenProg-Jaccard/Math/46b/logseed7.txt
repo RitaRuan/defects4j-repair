@@ -1,0 +1,105 @@
+RUNNING THE BUG: Math 46, WITH THE SEED: 7
+2021-03-22 12:22:58 [main] [INFO]  KGenProgMain - 
+==================== kGenProg Configuration ====================
+configPath = kgenprog.toml
+rootDir = . (set by command line)
+productPaths = [src/main/java] (set by command line)
+testPaths = [src/test/java] (set by command line)
+classPaths = [/home/ubuntu/rtx/defects4j/framework/projects/lib/junit-4.11.jar, /home/ubuntu/rtx/defects4j/framework/projects/Lang/lib/easymock.jar, /home/ubuntu/rtx/defects4j/framework/projects/Lang/lib/commons-io.jar, /home/ubuntu/rtx/defects4j/framework/projects/Lang/lib/cglib.jar, /home/ubuntu/rtx/defects4j/framework/projects/Lang/lib/asm.jar, /home/ubuntu/rtx/defects4j/framework/projects/lib/junit-4.11.jar, /home/ubuntu/rtx/defects4j/framework/projects/Lang/lib/cglib.jar, /home/ubuntu/rtx/defects4j/framework/projects/Lang/lib/asm.jar, /home/ubuntu/rtx/defects4j/framework/projects/Lang/lib/easymock.jar, /home/ubuntu/rtx/defects4j/framework/projects/Lang/lib/commons-io.jar] (set by command line)
+executionTests = [org.apache.commons.math.complex.ComplexTest] (set by command line)
+outDir = /home/ubuntu/rtx/d4j/Math/46b/kGenProg-Jaccard/patch-seed7 (set by command line)
+logLevel = INFO
+mutationGeneratingCount = 10
+crossoverGeneratingCount = 10
+headcount = 10
+maxGeneration = 10
+timeLimit = PT1M
+testTimeLimit = PT10S
+requiredSolutionsCount = 1
+randomSeed = 7 (set by command line)
+scope = PACKAGE
+faultLocalization = Jaccard (set by command line)
+mutationType = Simple
+crossoverType = Random
+firstVariantSelectionStrategy = Random
+secondVariantSelectionStrategy = Random
+isPatchOutput = true
+isHistoryRecord = false
+currentDirectory = /home/ubuntu/rtx/d4j/Math/46b
+version = 1.8.0
+================================================================
+2021-03-22 12:23:20 [main] [INFO]  KGenProgMain - initial failed tests (2/116)
+org.apache.commons.math.complex.ComplexTest.testDivideZero: expected:<(Infinity, Infinity)> but was:<(NaN, NaN)>org.apache.commons.math.complex.ComplexTest.testAtanI: null
+2021-03-22 12:23:21 [main] [INFO]  KGenProgMain - GA started
+2021-03-22 12:23:21 [main] [INFO]  KGenProgMain - entered the era of 1st generation.
+2021-03-22 12:23:24 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 3 seconds
+Variants: generated 10, build-succeeded 1, build-failed 4, syntax-invalid 0, redundant 5
+Fitness: max 0.991(1), min 0.991(1), ave 0.991
+----------------------------------------------------------------
+
+2021-03-22 12:23:24 [main] [INFO]  KGenProgMain - entered the era of 2nd generation.
+2021-03-22 12:23:29 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 7 seconds
+Variants: generated 10, build-succeeded 2, build-failed 4, syntax-invalid 1, redundant 3
+Fitness: max 0.991(1), min 0.957(1), ave 0.974
+----------------------------------------------------------------
+
+2021-03-22 12:23:29 [main] [INFO]  KGenProgMain - entered the era of 3rd generation.
+2021-03-22 12:23:32 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 11 seconds
+Variants: generated 10, build-succeeded 1, build-failed 7, syntax-invalid 0, redundant 2
+Fitness: max 0.983(1), min 0.983(1), ave 0.983
+----------------------------------------------------------------
+
+2021-03-22 12:23:32 [main] [INFO]  KGenProgMain - entered the era of 4th generation.
+2021-03-22 12:23:33 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 12 seconds
+Variants: generated 10, build-succeeded 0, build-failed 4, syntax-invalid 2, redundant 4
+Fitness: max --, min --, ave NaN
+----------------------------------------------------------------
+
+2021-03-22 12:23:33 [main] [INFO]  KGenProgMain - entered the era of 5th generation.
+2021-03-22 12:23:36 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 14 seconds
+Variants: generated 10, build-succeeded 1, build-failed 5, syntax-invalid 1, redundant 3
+Fitness: max 0.991(1), min 0.991(1), ave 0.991
+----------------------------------------------------------------
+
+2021-03-22 12:23:36 [main] [INFO]  KGenProgMain - entered the era of 6th generation.
+2021-03-22 12:23:40 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 19 seconds
+Variants: generated 20, build-succeeded 2, build-failed 5, syntax-invalid 0, redundant 13
+Fitness: max 0.991(1), min 0.983(1), ave 0.987
+----------------------------------------------------------------
+
+2021-03-22 12:23:40 [main] [INFO]  KGenProgMain - entered the era of 7th generation.
+2021-03-22 12:23:48 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 27 seconds
+Variants: generated 20, build-succeeded 3, build-failed 5, syntax-invalid 2, redundant 10
+Fitness: max 0.983(1), min 0.957(1), ave 0.968
+----------------------------------------------------------------
+
+2021-03-22 12:23:48 [main] [INFO]  KGenProgMain - entered the era of 8th generation.
+2021-03-22 12:24:24 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 1 minutes 3 seconds
+Variants: generated 20, build-succeeded 9, build-failed 4, syntax-invalid 1, redundant 6
+Fitness: max 0.991(3), min 0.957(1), ave 0.98
+----------------------------------------------------------------
+
+2021-03-22 12:24:24 [main] [INFO]  KGenProgMain - GA stopped
+2021-03-22 12:24:24 [main] [INFO]  KGenProgMain - Summary
+Reached generation = 8
+Generated variants = 110
+Syntax valid variants = 103
+Build succeeded variants = 19
+Time elapsed = 1 minutes 3 seconds
+Exit status = FAILURE (time limit)

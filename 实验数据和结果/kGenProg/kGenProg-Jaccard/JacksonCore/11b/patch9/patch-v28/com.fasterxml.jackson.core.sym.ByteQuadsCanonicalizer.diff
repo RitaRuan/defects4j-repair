@@ -1,0 +1,10 @@
+--- com.fasterxml.jackson.core.sym.ByteQuadsCanonicalizer
++++ com.fasterxml.jackson.core.sym.ByteQuadsCanonicalizer
+@@ -470,6 +470,7 @@
+         int offset = _calcOffset(calcHash(q1));
+         // first: primary match?
+         final int[] hashArea = _hashArea;
++		_count = 0;
+ 
+         int len = hashArea[offset+3];
+ 

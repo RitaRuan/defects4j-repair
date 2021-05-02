@@ -1,0 +1,34 @@
+--- com.google.gson.internal.bind.ReflectiveTypeAdapterFactory
++++ com.google.gson.internal.bind.ReflectiveTypeAdapterFactory
+@@ -148,29 +148,8 @@
+     Type declaredType = type.getType();
+     while (raw != Object.class) {
+       Field[] fields = raw.getDeclaredFields();
+-      for (Field field : fields) {
+-        boolean serialize = excludeField(field, true);
+-        boolean deserialize = excludeField(field, false);
+-        if (!serialize && !deserialize) {
+-          continue;
+-        }
+-        field.setAccessible(true);
+-        Type fieldType = $Gson$Types.resolve(type.getType(), raw, field.getGenericType());
+-        List<String> fieldNames = getFieldNames(field);
+-        BoundField previous = null;
+-        for (int i = 0, size = fieldNames.size(); i < size; ++i) {
+-          String name = fieldNames.get(i);
+-          if (i != 0) serialize = false; // only serialize the default name
+-          BoundField boundField = createBoundField(context, field, name,
+-              TypeToken.get(fieldType), serialize, deserialize);
+-          BoundField replaced = result.put(name, boundField);
+-          if (previous == null) previous = replaced;
+-        }
+-        if (previous != null) {
+-          throw new IllegalArgumentException(declaredType
+-              + " declares multiple JSON fields named " + previous.name);
+-        }
+-      }
++      for (Field field : fields)
++		type = TypeToken.get($Gson$Types.resolve(type.getType(), raw, raw.getGenericSuperclass()));
+       type = TypeToken.get($Gson$Types.resolve(type.getType(), raw, raw.getGenericSuperclass()));
+       raw = type.getRawType();
+     }

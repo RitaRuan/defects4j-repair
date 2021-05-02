@@ -1,0 +1,22 @@
+--- com.fasterxml.jackson.core.io.NumberInput
++++ com.fasterxml.jackson.core.io.NumberInput
+@@ -75,9 +75,8 @@
+             if (len == 1 || len > 10) {
+                 return Integer.parseInt(s);
+             }
+-            c = s.charAt(offset++);
+         } else {
+-            if (len > 9) {
++            if (c > '9' || c < '0') {
+                 return Integer.parseInt(s);
+             }
+         }
+@@ -87,7 +86,7 @@
+         int num = c - '0';
+         if (offset < len) {
+             c = s.charAt(offset++);
+-            if (c > '9' || c < '0') {
++            if (c == '+') {
+                 return Integer.parseInt(s);
+             }
+             num = (num * 10) + (c - '0');

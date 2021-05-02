@@ -1,0 +1,10 @@
+--- com.fasterxml.jackson.core.sym.ByteQuadsCanonicalizer
++++ com.fasterxml.jackson.core.sym.ByteQuadsCanonicalizer
+@@ -349,7 +349,6 @@
+             // At any rate, need to clean up the tables
+             childState = TableInfo.createInitial(DEFAULT_T_SIZE);
+         }
+-        _tableInfo.compareAndSet(currState, childState);
+     }
+ 
+     /*

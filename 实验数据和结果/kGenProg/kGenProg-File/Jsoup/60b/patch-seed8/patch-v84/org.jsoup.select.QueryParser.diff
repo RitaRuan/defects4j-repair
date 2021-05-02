@@ -1,0 +1,11 @@
+--- org.jsoup.select.QueryParser
++++ org.jsoup.select.QueryParser
+@@ -44,8 +44,6 @@
+      * @return Evaluator
+      */
+     Evaluator parse() {
+-        tq.consumeWhitespace();
+-
+         if (tq.matchesAny(combinators)) { // if starts with a combinator, use root as elements
+             evals.add(new StructuralEvaluator.Root());
+             combinator(tq.consume());

@@ -1,0 +1,189 @@
+RUNNING THE BUG: Math 32, WITH THE SEED: 5
+2021-03-22 03:25:26 [main] [INFO]  KGenProgMain - 
+==================== kGenProg Configuration ====================
+configPath = kgenprog.toml
+rootDir = . (set by command line)
+productPaths = [src/main/java] (set by command line)
+testPaths = [src/test/java] (set by command line)
+classPaths = [/home/ubuntu/rtx/defects4j/framework/projects/lib/junit-4.11.jar, /home/ubuntu/rtx/defects4j/framework/projects/Lang/lib/easymock.jar, /home/ubuntu/rtx/defects4j/framework/projects/Lang/lib/commons-io.jar, /home/ubuntu/rtx/defects4j/framework/projects/Lang/lib/cglib.jar, /home/ubuntu/rtx/defects4j/framework/projects/Lang/lib/asm.jar, /home/ubuntu/rtx/defects4j/framework/projects/lib/junit-4.11.jar, /home/ubuntu/rtx/defects4j/framework/projects/Lang/lib/cglib.jar, /home/ubuntu/rtx/defects4j/framework/projects/Lang/lib/asm.jar, /home/ubuntu/rtx/defects4j/framework/projects/Lang/lib/easymock.jar, /home/ubuntu/rtx/defects4j/framework/projects/Lang/lib/commons-io.jar] (set by command line)
+executionTests = [org.apache.commons.math3.geometry.euclidean.threed.PolyhedronsSetTest] (set by command line)
+outDir = /home/ubuntu/rtx/d4j/Math/32b/kGenProg-Jaccard/patch-seed5 (set by command line)
+logLevel = INFO
+mutationGeneratingCount = 10
+crossoverGeneratingCount = 10
+headcount = 10
+maxGeneration = 10
+timeLimit = PT1M
+testTimeLimit = PT10S
+requiredSolutionsCount = 1
+randomSeed = 5 (set by command line)
+scope = PACKAGE
+faultLocalization = Jaccard (set by command line)
+mutationType = Simple
+crossoverType = Random
+firstVariantSelectionStrategy = Random
+secondVariantSelectionStrategy = Random
+isPatchOutput = true
+isHistoryRecord = false
+currentDirectory = /home/ubuntu/rtx/d4j/Math/32b
+version = 1.8.0
+================================================================
+2021-03-22 03:25:48 [main] [INFO]  KGenProgMain - initial failed tests (1/6)
+org.apache.commons.math3.geometry.euclidean.threed.PolyhedronsSetTest.testIssue780: class org.apache.commons.math3.geometry.partitioning.BoundaryAttribute cannot be cast to class java.lang.Boolean (org.apache.commons.math3.geometry.partitioning.BoundaryAttribute is in unnamed module of loader jp.kusumotolab.kgenprog.project.test.SkippingMemoryClassLoader @15d2dd19; java.lang.Boolean is in module java.base of loader 'bootstrap')
+2021-03-22 03:25:49 [main] [INFO]  KGenProgMain - GA started
+2021-03-22 03:25:49 [main] [INFO]  KGenProgMain - entered the era of 1st generation.
+2021-03-22 03:25:54 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 4 seconds
+Variants: generated 10, build-succeeded 2, build-failed 8, syntax-invalid 0, redundant 0
+Fitness: max 0.833(2), min 0.833(2), ave 0.833
+----------------------------------------------------------------
+
+2021-03-22 03:25:54 [main] [INFO]  KGenProgMain - entered the era of 2nd generation.
+2021-03-22 03:25:58 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 9 seconds
+Variants: generated 10, build-succeeded 2, build-failed 7, syntax-invalid 0, redundant 1
+Fitness: max 0.833(2), min 0.833(2), ave 0.833
+----------------------------------------------------------------
+
+2021-03-22 03:25:58 [main] [INFO]  KGenProgMain - entered the era of 3rd generation.
+2021-03-22 03:26:01 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 12 seconds
+Variants: generated 10, build-succeeded 1, build-failed 6, syntax-invalid 2, redundant 1
+Fitness: max 0.833(1), min 0.833(1), ave 0.833
+----------------------------------------------------------------
+
+2021-03-22 03:26:01 [main] [INFO]  KGenProgMain - entered the era of 4th generation.
+2021-03-22 03:26:03 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 13 seconds
+Variants: generated 10, build-succeeded 0, build-failed 8, syntax-invalid 1, redundant 1
+Fitness: max --, min --, ave NaN
+----------------------------------------------------------------
+
+2021-03-22 03:26:03 [main] [INFO]  KGenProgMain - entered the era of 5th generation.
+2021-03-22 03:26:07 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 18 seconds
+Variants: generated 10, build-succeeded 2, build-failed 8, syntax-invalid 0, redundant 0
+Fitness: max 0.667(2), min 0.667(2), ave 0.667
+----------------------------------------------------------------
+
+2021-03-22 03:26:07 [main] [INFO]  KGenProgMain - entered the era of 6th generation.
+2021-03-22 03:26:19 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 30 seconds
+Variants: generated 20, build-succeeded 8, build-failed 8, syntax-invalid 0, redundant 4
+Fitness: max 0.833(3), min 0.667(5), ave 0.729
+----------------------------------------------------------------
+
+2021-03-22 03:26:19 [main] [INFO]  KGenProgMain - entered the era of 7th generation.
+2021-03-22 03:26:21 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 31 seconds
+Variants: generated 3, build-succeeded 1, build-failed 2, syntax-invalid 0, redundant 0
+Fitness: max 1(1), min 1(1), ave 1
+----------------------------------------------------------------
+
+2021-03-22 03:26:21 [main] [INFO]  KGenProgMain - GA stopped
+2021-03-22 03:26:21 [main] [INFO]  PatchLogExporter - patch (v73)
+--- org.apache.commons.math3.optimization.fitting.WeightedObservedPoint
++++ org.apache.commons.math3.optimization.fitting.WeightedObservedPoint
+@@ -72,4 +72,3 @@
+     }
+ 
+ }
+-
+2021-03-22 03:26:21 [main] [INFO]  PatchLogExporter - patch (v73)
+--- org.apache.commons.math3.ode.JacobianMatrices
++++ org.apache.commons.math3.ode.JacobianMatrices
+@@ -466,4 +466,3 @@
+     }
+ 
+ }
+-
+2021-03-22 03:26:21 [main] [INFO]  PatchLogExporter - patch (v73)
+--- org.apache.commons.math3.geometry.partitioning.AbstractRegion
++++ org.apache.commons.math3.geometry.partitioning.AbstractRegion
+@@ -210,8 +210,6 @@
+             }
+         }
+ 
+-        // recurse through lower levels
+-        insertCuts(node.getPlus(),  plusList);
+         insertCuts(node.getMinus(), minusList);
+ 
+     }
+@@ -456,6 +454,7 @@
+             } else {
+                 if (!isEmpty(node.getMinus())) {
+                     sides.rememberMinusFound();
++					node.setAttribute(Boolean.TRUE);
+                 }
+             }
+             if (!(sides.plusFound() && sides.minusFound())) {
+2021-03-22 03:26:21 [main] [INFO]  PatchLogExporter - patch (v73)
+--- org.apache.commons.math3.distribution.PascalDistribution
++++ org.apache.commons.math3.distribution.PascalDistribution
+@@ -194,4 +194,3 @@
+         return true;
+     }
+ }
+-
+2021-03-22 03:26:21 [main] [INFO]  PatchLogExporter - patch (v73)
+--- org.apache.commons.math3.special.Erf
++++ org.apache.commons.math3.special.Erf
+@@ -127,4 +127,3 @@
+                 erf(x2) - erf(x1);
+     }
+ }
+-
+2021-03-22 03:26:21 [main] [INFO]  PatchLogExporter - patch (v73)
+--- org.apache.commons.math3.distribution.ZipfDistribution
++++ org.apache.commons.math3.distribution.ZipfDistribution
+@@ -229,4 +229,3 @@
+         return true;
+     }
+ }
+-
+2021-03-22 03:26:21 [main] [INFO]  PatchLogExporter - patch (v73)
+--- org.apache.commons.math3.stat.correlation.StorelessBivariateCovariance
++++ org.apache.commons.math3.stat.correlation.StorelessBivariateCovariance
+@@ -118,4 +118,3 @@
+         }
+     }
+ }
+-
+2021-03-22 03:26:21 [main] [INFO]  PatchLogExporter - patch (v73)
+--- org.apache.commons.math3.stat.descriptive.AbstractUnivariateStatistic
++++ org.apache.commons.math3.stat.descriptive.AbstractUnivariateStatistic
+@@ -286,4 +286,3 @@
+         return test(values, begin, length, allowEmpty);
+     }
+ }
+-
+2021-03-22 03:26:21 [main] [INFO]  PatchLogExporter - patch (v73)
+--- org.apache.commons.math3.distribution.AbstractRealDistribution
++++ org.apache.commons.math3.distribution.AbstractRealDistribution
+@@ -226,4 +226,3 @@
+         return out;
+     }
+ }
+-
+2021-03-22 03:26:21 [main] [INFO]  PatchLogExporter - patch (v73)
+--- org.apache.commons.math3.distribution.WeibullDistribution
++++ org.apache.commons.math3.distribution.WeibullDistribution
+@@ -299,4 +299,3 @@
+         return true;
+     }
+ }
+-
+2021-03-22 03:26:21 [main] [INFO]  KGenProgMain - Summary
+Reached generation = 7
+Generated variants = 73
+Syntax valid variants = 70
+Build succeeded variants = 16
+Time elapsed = 32 seconds
+Exit status = SUCCESS

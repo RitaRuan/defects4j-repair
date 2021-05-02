@@ -1,0 +1,73 @@
+RUNNING THE BUG: JxPath 2, WITH THE SEED: 0
+2021-03-28 20:56:24 [main] [INFO]  KGenProgMain - 
+==================== kGenProg Configuration ====================
+configPath = kgenprog.toml
+rootDir = . (set by command line)
+productPaths = [src/java] (set by command line)
+testPaths = [src/test] (set by command line)
+classPaths = [/home/ubuntu/rtx/d4j/JxPath/2b/src/java, /home/ubuntu/rtx/d4j/JxPath/2b/target/lib/ant-1.5.jar, /home/ubuntu/rtx/d4j/JxPath/2b/target/lib/ant-optional-1.5.1.jar, /home/ubuntu/rtx/d4j/JxPath/2b/target/lib/ant-optional-1.5.jar, /home/ubuntu/rtx/d4j/JxPath/2b/target/lib/commons-beanutils-1.4.jar, /home/ubuntu/rtx/d4j/JxPath/2b/target/lib/commons-collections-2.0.jar, /home/ubuntu/rtx/d4j/JxPath/2b/target/lib/commons-logging-1.0.4.jar, /home/ubuntu/rtx/d4j/JxPath/2b/target/lib/jdom-1.0.jar, /home/ubuntu/rtx/d4j/JxPath/2b/target/lib/junit-3.8.1.jar, /home/ubuntu/rtx/d4j/JxPath/2b/target/lib/junit-3.8.jar, /home/ubuntu/rtx/d4j/JxPath/2b/target/lib/mockrunner-0.4.1.jar, /home/ubuntu/rtx/d4j/JxPath/2b/target/lib/servletapi-2.2.jar, /home/ubuntu/rtx/d4j/JxPath/2b/target/lib/xerces-1.2.3.jar, /home/ubuntu/rtx/d4j/JxPath/2b/target/lib/xml-apis-2.0.2.jar] (set by command line)
+executionTests = [org.apache.commons.jxpath.ri.compiler.ExtensionFunctionTest] (set by command line)
+outDir = /home/ubuntu/rtx/d4j/JxPath/2b/kGenProg-FILE/patch-seed0 (set by command line)
+logLevel = INFO
+mutationGeneratingCount = 10
+crossoverGeneratingCount = 10
+headcount = 10
+maxGeneration = 10
+timeLimit = PT1M
+testTimeLimit = PT10S
+requiredSolutionsCount = 1
+randomSeed = 0 (set by command line)
+scope = FILE (set by command line)
+faultLocalization = Ochiai
+mutationType = Simple
+crossoverType = Random
+firstVariantSelectionStrategy = Random
+secondVariantSelectionStrategy = Random
+isPatchOutput = true
+isHistoryRecord = false
+currentDirectory = /home/ubuntu/rtx/d4j/JxPath/2b
+version = 1.8.0
+================================================================
+2021-03-28 20:56:32 [main] [INFO]  KGenProgMain - initial failed tests (1/15)
+org.apache.commons.jxpath.ri.compiler.ExtensionFunctionTest.testNodeSetReturn: null
+2021-03-28 20:56:33 [main] [INFO]  KGenProgMain - GA started
+2021-03-28 20:56:33 [main] [INFO]  KGenProgMain - entered the era of 1st generation.
+2021-03-28 20:56:37 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 3 seconds
+Variants: generated 10, build-succeeded 3, build-failed 5, syntax-invalid 2, redundant 0
+Fitness: max 0.933(2), min 0.667(1), ave 0.844
+----------------------------------------------------------------
+
+2021-03-28 20:56:37 [main] [INFO]  KGenProgMain - entered the era of 2nd generation.
+2021-03-28 20:56:53 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 20 seconds
+Variants: generated 10, build-succeeded 4, build-failed 2, syntax-invalid 2, redundant 2
+Fitness: max 0.933(1), min 0.6(1), ave 0.817
+----------------------------------------------------------------
+
+2021-03-28 20:56:53 [main] [INFO]  KGenProgMain - entered the era of 3rd generation.
+2021-03-28 20:57:23 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 50 seconds
+Variants: generated 20, build-succeeded 6, build-failed 2, syntax-invalid 3, redundant 9
+Fitness: max 0.933(1), min 0.533(1), ave 0.778
+----------------------------------------------------------------
+
+2021-03-28 20:57:23 [main] [INFO]  KGenProgMain - entered the era of 4th generation.
+2021-03-28 20:57:48 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 1 minutes 15 seconds
+Variants: generated 20, build-succeeded 7, build-failed 5, syntax-invalid 1, redundant 7
+Fitness: max 0.933(1), min 0.533(1), ave 0.829
+----------------------------------------------------------------
+
+2021-03-28 20:57:48 [main] [INFO]  KGenProgMain - GA stopped
+2021-03-28 20:57:48 [main] [INFO]  KGenProgMain - Summary
+Reached generation = 4
+Generated variants = 60
+Syntax valid variants = 52
+Build succeeded variants = 20
+Time elapsed = 1 minutes 15 seconds
+Exit status = FAILURE (time limit)

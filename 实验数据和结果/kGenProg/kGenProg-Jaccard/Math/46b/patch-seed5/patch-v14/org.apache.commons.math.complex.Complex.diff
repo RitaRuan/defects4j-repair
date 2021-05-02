@@ -1,0 +1,21 @@
+--- org.apache.commons.math.complex.Complex
++++ org.apache.commons.math.complex.Complex
+@@ -256,8 +256,6 @@
+         }
+ 
+         if (divisor.isZero) {
+-            // return isZero ? NaN : INF; // See MATH-657
+-            return isZero ? NaN : INF;
+         }
+ 
+         if (divisor.isInfinite() && !isInfinite()) {
+@@ -293,8 +291,7 @@
+             return NaN;
+         }
+         if (divisor == 0d) {
+-            // return isZero ? NaN : INF; // See MATH-657
+-            return isZero ? NaN : INF;
++            return NaN;
+         }
+         if (Double.isInfinite(divisor)) {
+             return !isInfinite() ? ZERO : NaN;

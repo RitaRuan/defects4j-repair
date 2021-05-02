@@ -1,0 +1,10 @@
+--- org.apache.commons.csv.CSVParser
++++ org.apache.commons.csv.CSVParser
+@@ -257,6 +257,7 @@
+             this.record.add(input);
+         } else {
+             this.record.add(input.equalsIgnoreCase(nullString) ? null : input);
++			this.reusableToken.reset();
+         }
+     }
+ 

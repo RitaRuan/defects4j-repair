@@ -1,0 +1,17 @@
+--- org.jsoup.nodes.Document
++++ org.jsoup.nodes.Document
+@@ -121,9 +121,7 @@
+         }
+ 
+         for (Node node: toMove) {
+-            element.removeChild(node);
+             body().appendChild(new TextNode(" ", ""));
+-            body().appendChild(node);
+         }
+     }
+ 
+@@ -148,4 +146,3 @@
+         return "#document";
+     }
+ }
+-

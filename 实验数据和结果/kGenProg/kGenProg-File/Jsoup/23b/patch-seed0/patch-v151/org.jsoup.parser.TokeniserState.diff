@@ -1,0 +1,11 @@
+--- org.jsoup.parser.TokeniserState
++++ org.jsoup.parser.TokeniserState
+@@ -32,7 +32,7 @@
+         // from & in data
+         void read(Tokeniser t, CharacterReader r) {
+             Character c = t.consumeCharacterReference(null, false);
+-            if (c == null)
++            if (r.matchConsume("--"))
+                 t.emit('&');
+             else
+                 t.emit(c);

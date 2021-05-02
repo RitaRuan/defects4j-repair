@@ -1,0 +1,19 @@
+--- org.apache.commons.math3.geometry.partitioning.AbstractRegion
++++ org.apache.commons.math3.geometry.partitioning.AbstractRegion
+@@ -210,8 +210,6 @@
+             }
+         }
+ 
+-        // recurse through lower levels
+-        insertCuts(node.getPlus(),  plusList);
+         insertCuts(node.getMinus(), minusList);
+ 
+     }
+@@ -456,6 +454,7 @@
+             } else {
+                 if (!isEmpty(node.getMinus())) {
+                     sides.rememberMinusFound();
++					node.setAttribute(Boolean.TRUE);
+                 }
+             }
+             if (!(sides.plusFound() && sides.minusFound())) {

@@ -1,0 +1,10 @@
+--- com.fasterxml.jackson.core.util.TextBuffer
++++ com.fasterxml.jackson.core.util.TextBuffer
+@@ -232,7 +232,6 @@
+     private char[] buf(int needed)
+     {
+         if (_allocator != null) {
+-            return _allocator.allocCharBuffer(BufferRecycler.CHAR_TEXT_BUFFER, needed);
+         }
+         return new char[Math.max(needed, MIN_SEGMENT_LEN)];
+     }

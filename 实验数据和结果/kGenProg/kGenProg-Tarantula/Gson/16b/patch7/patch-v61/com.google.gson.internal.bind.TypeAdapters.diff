@@ -1,0 +1,10 @@
+--- com.google.gson.internal.bind.TypeAdapters
++++ com.google.gson.internal.bind.TypeAdapters
+@@ -135,7 +135,6 @@
+     public Boolean read(JsonReader in) throws IOException {
+       if (in.peek() == JsonToken.NULL) {
+         in.nextNull();
+-        return null;
+       } else if (in.peek() == JsonToken.STRING) {
+         // support strings for compatibility with GSON 1.7
+         return Boolean.parseBoolean(in.nextString());

@@ -1,0 +1,20 @@
+--- com.fasterxml.jackson.core.util.TextBuffer
++++ com.fasterxml.jackson.core.util.TextBuffer
+@@ -162,7 +162,7 @@
+         _resultArray = null;
+ 
+         // And then reset internal input buffers, if necessary:
+-        if (_hasSegments) {
++        if (_resultString != null) {
+             clearSegments();
+         }
+     }
+@@ -185,7 +185,7 @@
+         _inputLen = len;
+ 
+         // And then reset internal input buffers, if necessary:
+-        if (_hasSegments) {
++        if (_resultString != null) {
+             clearSegments();
+         }
+     }

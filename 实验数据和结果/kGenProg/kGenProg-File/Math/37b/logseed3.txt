@@ -1,0 +1,81 @@
+RUNNING THE BUG: Math 37, WITH THE SEED: 3
+2021-03-29 19:33:12 [main] [INFO]  KGenProgMain - 
+==================== kGenProg Configuration ====================
+configPath = kgenprog.toml
+rootDir = . (set by command line)
+productPaths = [src/main/java] (set by command line)
+testPaths = [src/test/java] (set by command line)
+classPaths = [/home/ubuntu/rtx/defects4j/framework/projects/lib/junit-4.11.jar, /home/ubuntu/rtx/defects4j/framework/projects/Math/lib/commons-discovery-0.5.jar] (set by command line)
+executionTests = [org.apache.commons.math.complex.ComplexTest] (set by command line)
+outDir = /home/ubuntu/rtx/d4j/Math/37b/kGenProg-FILE/patch-seed3 (set by command line)
+logLevel = INFO
+mutationGeneratingCount = 10
+crossoverGeneratingCount = 10
+headcount = 10
+maxGeneration = 10
+timeLimit = PT1M
+testTimeLimit = PT10S
+requiredSolutionsCount = 1
+randomSeed = 3 (set by command line)
+scope = FILE (set by command line)
+faultLocalization = Ochiai
+mutationType = Simple
+crossoverType = Random
+firstVariantSelectionStrategy = Random
+secondVariantSelectionStrategy = Random
+isPatchOutput = true
+isHistoryRecord = false
+currentDirectory = /home/ubuntu/rtx/d4j/Math/37b
+version = 1.8.0
+================================================================
+2021-03-29 19:33:34 [main] [INFO]  KGenProgMain - initial failed tests (4/123)
+org.apache.commons.math.complex.ComplexTest.testTanh: expected:<1.0> but was:<NaN>org.apache.commons.math.complex.ComplexTest.testTanInf: expected:<1.0> but was:<NaN>org.apache.commons.math.complex.ComplexTest.testTan: expected:<1.0> but was:<NaN>org.apache.commons.math.complex.ComplexTest.testTanhInf: expected:<1.0> but was:<NaN>
+2021-03-29 19:33:35 [main] [INFO]  KGenProgMain - GA started
+2021-03-29 19:33:35 [main] [INFO]  KGenProgMain - entered the era of 1st generation.
+2021-03-29 19:33:41 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 5 seconds
+Variants: generated 10, build-succeeded 2, build-failed 6, syntax-invalid 1, redundant 1
+Fitness: max 0.967(1), min 0.894(1), ave 0.931
+----------------------------------------------------------------
+
+2021-03-29 19:33:41 [main] [INFO]  KGenProgMain - entered the era of 2nd generation.
+2021-03-29 19:33:46 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 11 seconds
+Variants: generated 10, build-succeeded 2, build-failed 4, syntax-invalid 2, redundant 2
+Fitness: max 0.967(1), min 0.878(1), ave 0.923
+----------------------------------------------------------------
+
+2021-03-29 19:33:46 [main] [INFO]  KGenProgMain - entered the era of 3rd generation.
+2021-03-29 19:33:53 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 18 seconds
+Variants: generated 10, build-succeeded 2, build-failed 5, syntax-invalid 0, redundant 3
+Fitness: max 0.935(1), min 0.854(1), ave 0.894
+----------------------------------------------------------------
+
+2021-03-29 19:33:53 [main] [INFO]  KGenProgMain - entered the era of 4th generation.
+2021-03-29 19:34:21 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 45 seconds
+Variants: generated 20, build-succeeded 5, build-failed 6, syntax-invalid 4, redundant 5
+Fitness: max 0.927(1), min 0.862(1), ave 0.899
+----------------------------------------------------------------
+
+2021-03-29 19:34:21 [main] [INFO]  KGenProgMain - entered the era of 5th generation.
+2021-03-29 19:34:52 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 1 minutes 16 seconds
+Variants: generated 20, build-succeeded 4, build-failed 7, syntax-invalid 1, redundant 8
+Fitness: max 0.967(1), min 0.878(1), ave 0.915
+----------------------------------------------------------------
+
+2021-03-29 19:34:52 [main] [INFO]  KGenProgMain - GA stopped
+2021-03-29 19:34:52 [main] [INFO]  KGenProgMain - Summary
+Reached generation = 5
+Generated variants = 70
+Syntax valid variants = 62
+Build succeeded variants = 15
+Time elapsed = 1 minutes 16 seconds
+Exit status = FAILURE (time limit)

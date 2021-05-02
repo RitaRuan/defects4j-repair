@@ -1,0 +1,18 @@
+--- org.jsoup.parser.Token
++++ org.jsoup.parser.Token
+@@ -199,7 +199,6 @@
+         }
+         
+         final void setEmptyAttributeValue() {
+-            hasEmptyAttributeValue = true;
+         }
+ 
+         private void ensureAttributeValue() {
+@@ -215,7 +214,6 @@
+     final static class StartTag extends Tag {
+         StartTag() {
+             super();
+-            attributes = new Attributes();
+             type = TokenType.StartTag;
+         }
+ 

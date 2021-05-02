@@ -1,0 +1,11 @@
+--- org.apache.commons.math.special.Gamma
++++ org.apache.commons.math.special.Gamma
+@@ -179,7 +179,7 @@
+             if (n >= maxIterations) {
+                 throw new MaxIterationsExceededException(maxIterations);
+             } else {
+-                ret = Math.exp(-x + (a * Math.log(x)) - logGamma(a)) * sum;
++                ret = 1.0 - regularizedGammaQ(a, x, epsilon, maxIterations);
+             }
+         }
+ 

@@ -1,0 +1,24 @@
+--- org.jsoup.nodes.Document
++++ org.jsoup.nodes.Document
+@@ -115,13 +115,14 @@
+         for (Node node: element.childNodes) {
+             if (node instanceof TextNode) {
+                 TextNode tn = (TextNode) node;
+-                if (!tn.isBlank())
++                if (body() == null)
+                     toMove.add(tn);
+             }
+         }
+ 
+         for (Node node: toMove) {
+-            element.removeChild(node);
++            appendElement("html");
++			element.removeChild(node);
+             body().appendChild(new TextNode(" ", ""));
+             body().appendChild(node);
+         }
+@@ -148,4 +149,3 @@
+         return "#document";
+     }
+ }
+-

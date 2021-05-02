@@ -1,0 +1,10 @@
+--- org.jsoup.parser.Tokeniser
++++ org.jsoup.parser.Tokeniser
+@@ -35,7 +35,6 @@
+     Token read() {
+         if (!selfClosingFlagAcknowledged) {
+             error("Self closing flag not acknowledged");
+-            selfClosingFlagAcknowledged = true;
+         }
+ 
+         while (!isEmitPending)

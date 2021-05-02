@@ -1,0 +1,57 @@
+RUNNING THE BUG: Math 99, WITH THE SEED: 7
+2021-03-27 07:09:22 [main] [INFO]  KGenProgMain - 
+==================== kGenProg Configuration ====================
+configPath = kgenprog.toml
+rootDir = . (set by command line)
+productPaths = [src/java] (set by command line)
+testPaths = [src/test] (set by command line)
+classPaths = [/home/ubuntu/rtx/defects4j/framework/projects/lib/junit-4.11.jar, /home/ubuntu/rtx/defects4j/framework/projects/Lang/lib/easymock.jar, /home/ubuntu/rtx/defects4j/framework/projects/Lang/lib/commons-io.jar, /home/ubuntu/rtx/defects4j/framework/projects/Lang/lib/cglib.jar, /home/ubuntu/rtx/defects4j/framework/projects/Lang/lib/asm.jar] (set by command line)
+executionTests = [org.apache.commons.math.util.MathUtilsTest] (set by command line)
+outDir = /home/ubuntu/rtx/d4j/Math/99b/kGenProg-Tarantula/patch-seed7 (set by command line)
+logLevel = INFO
+mutationGeneratingCount = 10
+crossoverGeneratingCount = 10
+headcount = 10
+maxGeneration = 10
+timeLimit = PT1M
+testTimeLimit = PT10S
+requiredSolutionsCount = 1
+randomSeed = 7 (set by command line)
+scope = PACKAGE
+faultLocalization = Tarantula (set by command line)
+mutationType = Simple
+crossoverType = Random
+firstVariantSelectionStrategy = Random
+secondVariantSelectionStrategy = Random
+isPatchOutput = true
+isHistoryRecord = false
+currentDirectory = /home/ubuntu/rtx/d4j/Math/99b
+version = 1.8.0
+================================================================
+2021-03-27 07:09:36 [main] [INFO]  KGenProgMain - initial failed tests (2/44)
+org.apache.commons.math.util.MathUtilsTest.testLcm: nullorg.apache.commons.math.util.MathUtilsTest.testGcd: null
+2021-03-27 07:09:36 [main] [INFO]  KGenProgMain - GA started
+2021-03-27 07:09:36 [main] [INFO]  KGenProgMain - entered the era of 1st generation.
+2021-03-27 07:10:29 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 52 seconds
+Variants: generated 10, build-succeeded 2, build-failed 5, syntax-invalid 1, redundant 2
+Fitness: max 0.955(1), min 0.886(1), ave 0.92
+----------------------------------------------------------------
+
+2021-03-27 07:10:29 [main] [INFO]  KGenProgMain - entered the era of 2nd generation.
+2021-03-27 07:12:51 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 3 minutes 14 seconds
+Variants: generated 10, build-succeeded 3, build-failed 4, syntax-invalid 2, redundant 1
+Fitness: max 0.886(3), min 0.886(3), ave 0.886
+----------------------------------------------------------------
+
+2021-03-27 07:12:51 [main] [INFO]  KGenProgMain - GA stopped
+2021-03-27 07:12:51 [main] [INFO]  KGenProgMain - Summary
+Reached generation = 2
+Generated variants = 20
+Syntax valid variants = 17
+Build succeeded variants = 5
+Time elapsed = 3 minutes 14 seconds
+Exit status = FAILURE (time limit)

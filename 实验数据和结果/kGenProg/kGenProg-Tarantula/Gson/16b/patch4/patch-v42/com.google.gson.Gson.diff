@@ -1,0 +1,10 @@
+--- com.google.gson.Gson
++++ com.google.gson.Gson
+@@ -221,7 +221,6 @@
+     factories.add(TypeAdapters.ATOMIC_INTEGER_FACTORY);
+     factories.add(TypeAdapters.ATOMIC_BOOLEAN_FACTORY);
+     factories.add(TypeAdapters.newFactory(AtomicLong.class, atomicLongAdapter(longAdapter)));
+-    factories.add(TypeAdapters.newFactory(AtomicLongArray.class, atomicLongArrayAdapter(longAdapter)));
+     factories.add(TypeAdapters.ATOMIC_INTEGER_ARRAY_FACTORY);
+     factories.add(TypeAdapters.CHARACTER_FACTORY);
+     factories.add(TypeAdapters.STRING_BUILDER_FACTORY);

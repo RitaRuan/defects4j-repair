@@ -1,0 +1,121 @@
+RUNNING THE BUG: JacksonCore 4, WITH THE SEED: 3
+2021-04-01 07:10:42 [main] [INFO]  KGenProgMain - 
+==================== kGenProg Configuration ====================
+configPath = kgenprog.toml
+rootDir = . (set by command line)
+productPaths = [src/main/java] (set by command line)
+testPaths = [src/test/java] (set by command line)
+classPaths = [/home/rtx/repair/defects4j/framework/projects/JacksonCore/lib/junit/junit/4.8.2/junit-4.8.2.jar, /home/rtx/repair/defects4j/framework/projects/lib/junit-4.11.jar, /home/rtx/repair/defects4j/framework/projects/JacksonCore/lib/junit/junit/4.11/junit-4.11.jar, /home/rtx/repair/defects4j/framework/projects/JacksonCore/lib/junit/junit/4.12/junit-4.12.jar, /home/rtx/repair/defects4j/framework/projects/JacksonCore/lib/lib/junit/junit/4.11/junit-4.11.jar, /home/rtx/repair/defects4j/framework/projects/JacksonCore/lib/lib/junit/junit/4.12/junit-4.12.jar, /home/rtx/repair/defects4j/framework/projects/JacksonCore/lib/lib/junit/junit/4.8.2/junit-4.8.2.jar, /home/rtx/repair/defects4j/framework/projects/JacksonCore/lib/lib/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar, /home/rtx/repair/defects4j/framework/projects/JacksonCore/lib/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar] (set by command line)
+executionTests = [com.fasterxml.jackson.core.util.TestTextBuffer] (set by command line)
+outDir = /home/rtx/repair/d4j/JacksonCore/4b/kGenProg-Tarantula/patch3 (set by command line)
+logLevel = INFO
+mutationGeneratingCount = 10
+crossoverGeneratingCount = 10
+headcount = 10
+maxGeneration = 10
+timeLimit = PT1M
+testTimeLimit = PT10S
+requiredSolutionsCount = 1
+randomSeed = 3 (set by command line)
+scope = PACKAGE
+faultLocalization = Tarantula (set by command line)
+mutationType = Simple
+crossoverType = Random
+firstVariantSelectionStrategy = Random
+secondVariantSelectionStrategy = Random
+isPatchOutput = true
+isHistoryRecord = false
+currentDirectory = /home/rtx/repair/d4j/JacksonCore/4b
+version = 1.8.0
+================================================================
+2021-04-01 07:10:47 [main] [INFO]  KGenProgMain - initial failed tests (1/4)
+com.fasterxml.jackson.core.util.TestTextBuffer.testExpand: null
+2021-04-01 07:10:47 [main] [INFO]  KGenProgMain - GA started
+2021-04-01 07:10:47 [main] [INFO]  KGenProgMain - entered the era of 1st generation.
+2021-04-01 07:10:48 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 0 seconds
+Variants: generated 10, build-succeeded 1, build-failed 6, syntax-invalid 2, redundant 1
+Fitness: max 0.75(1), min 0.75(1), ave 0.75
+----------------------------------------------------------------
+
+2021-04-01 07:10:48 [main] [INFO]  KGenProgMain - entered the era of 2nd generation.
+2021-04-01 07:10:49 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 1 seconds
+Variants: generated 10, build-succeeded 2, build-failed 5, syntax-invalid 1, redundant 2
+Fitness: max 0.25(1), min 0(1), ave 0.125
+----------------------------------------------------------------
+
+2021-04-01 07:10:49 [main] [INFO]  KGenProgMain - entered the era of 3rd generation.
+2021-04-01 07:10:49 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 2 seconds
+Variants: generated 10, build-succeeded 1, build-failed 6, syntax-invalid 0, redundant 3
+Fitness: max 0.75(1), min 0.75(1), ave 0.75
+----------------------------------------------------------------
+
+2021-04-01 07:10:49 [main] [INFO]  KGenProgMain - entered the era of 4th generation.
+2021-04-01 07:10:50 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 2 seconds
+Variants: generated 20, build-succeeded 1, build-failed 9, syntax-invalid 0, redundant 10
+Fitness: max 0.25(1), min 0.25(1), ave 0.25
+----------------------------------------------------------------
+
+2021-04-01 07:10:50 [main] [INFO]  KGenProgMain - entered the era of 5th generation.
+2021-04-01 07:10:51 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 3 seconds
+Variants: generated 20, build-succeeded 4, build-failed 4, syntax-invalid 2, redundant 10
+Fitness: max 0.75(2), min 0.25(1), ave 0.562
+----------------------------------------------------------------
+
+2021-04-01 07:10:51 [main] [INFO]  KGenProgMain - entered the era of 6th generation.
+2021-04-01 07:10:52 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 4 seconds
+Variants: generated 20, build-succeeded 3, build-failed 6, syntax-invalid 2, redundant 9
+Fitness: max 0.75(2), min 0(1), ave 0.5
+----------------------------------------------------------------
+
+2021-04-01 07:10:52 [main] [INFO]  KGenProgMain - entered the era of 7th generation.
+2021-04-01 07:10:53 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 5 seconds
+Variants: generated 20, build-succeeded 3, build-failed 7, syntax-invalid 2, redundant 8
+Fitness: max 0.5(1), min 0(1), ave 0.25
+----------------------------------------------------------------
+
+2021-04-01 07:10:53 [main] [INFO]  KGenProgMain - entered the era of 8th generation.
+2021-04-01 07:10:54 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 6 seconds
+Variants: generated 20, build-succeeded 6, build-failed 6, syntax-invalid 2, redundant 6
+Fitness: max 0.75(2), min 0.25(2), ave 0.5
+----------------------------------------------------------------
+
+2021-04-01 07:10:54 [main] [INFO]  KGenProgMain - entered the era of 9th generation.
+2021-04-01 07:10:55 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 7 seconds
+Variants: generated 20, build-succeeded 2, build-failed 5, syntax-invalid 3, redundant 10
+Fitness: max 0.75(1), min 0(1), ave 0.375
+----------------------------------------------------------------
+
+2021-04-01 07:10:55 [main] [INFO]  KGenProgMain - entered the era of 10th generation.
+2021-04-01 07:10:55 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 7 seconds
+Variants: generated 20, build-succeeded 2, build-failed 8, syntax-invalid 2, redundant 8
+Fitness: max 0.75(2), min 0.75(2), ave 0.75
+----------------------------------------------------------------
+
+2021-04-01 07:10:55 [main] [INFO]  KGenProgMain - GA stopped
+2021-04-01 07:10:55 [main] [INFO]  KGenProgMain - Summary
+Reached generation = 10
+Generated variants = 170
+Syntax valid variants = 154
+Build succeeded variants = 25
+Time elapsed = 7 seconds
+Exit status = FAILURE (maximum generation)

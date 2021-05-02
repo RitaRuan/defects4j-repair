@@ -1,0 +1,18 @@
+--- org.jsoup.parser.CharacterReader
++++ org.jsoup.parser.CharacterReader
+@@ -104,13 +104,8 @@
+ 
+     String consumeLetterSequence() {
+         int start = pos;
+-        while (!isEmpty()) {
+-            char c = input.charAt(pos);
+-            if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
+-                pos++;
+-            else
+-                break;
+-        }
++        while (!isEmpty())
++			return consumeToEnd();
+ 
+         return input.substring(start, pos);
+     }

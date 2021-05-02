@@ -1,0 +1,11 @@
+--- com.google.gson.Gson
++++ com.google.gson.Gson
+@@ -213,8 +213,6 @@
+     factories.add(TypeAdapters.SHORT_FACTORY);
+     TypeAdapter<Number> longAdapter = longAdapter(longSerializationPolicy);
+     factories.add(TypeAdapters.newFactory(long.class, Long.class, longAdapter));
+-    factories.add(TypeAdapters.newFactory(double.class, Double.class,
+-            doubleAdapter(serializeSpecialFloatingPointValues)));
+     factories.add(TypeAdapters.newFactory(float.class, Float.class,
+             floatAdapter(serializeSpecialFloatingPointValues)));
+     factories.add(TypeAdapters.NUMBER_FACTORY);

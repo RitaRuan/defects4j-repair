@@ -1,0 +1,18 @@
+--- org.jsoup.nodes.Node
++++ org.jsoup.nodes.Node
+@@ -215,7 +215,6 @@
+     }
+ 
+     protected void replaceChild(Node out, Node in) {
+-        Validate.isTrue(out.parentNode == this);
+         Validate.notNull(in);
+         if (in.parentNode != null)
+             in.parentNode.removeChild(in);
+@@ -224,6 +223,7 @@
+         childNodes.set(index, in);
+         in.parentNode = this;
+         out.parentNode = null;
++		String id = attr("id");
+     }
+ 
+     protected void removeChild(Node out) {

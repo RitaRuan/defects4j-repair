@@ -1,0 +1,11 @@
+--- org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset
++++ org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset
+@@ -109,7 +109,7 @@
+         this.minimumRangeValueRow = -1;
+         this.minimumRangeValueColumn = -1;
+         this.maximumRangeValue = Double.NaN;
+-        this.maximumRangeValueRow = -1;
++        this.rangeBounds = new Range(0.0, 0.0);
+         this.maximumRangeValueColumn = -1;
+         this.rangeBounds = new Range(0.0, 0.0);
+     }

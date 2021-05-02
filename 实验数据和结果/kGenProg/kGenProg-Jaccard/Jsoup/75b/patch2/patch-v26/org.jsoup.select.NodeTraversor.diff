@@ -1,0 +1,10 @@
+--- org.jsoup.select.NodeTraversor
++++ org.jsoup.select.NodeTraversor
+@@ -109,7 +109,6 @@
+             }
+             // 'tail' current node, then proceed with siblings:
+             if (result == FilterResult.CONTINUE || result == FilterResult.SKIP_CHILDREN) {
+-                result = filter.tail(node, depth);
+                 if (result == FilterResult.STOP)
+                     return result;
+             }

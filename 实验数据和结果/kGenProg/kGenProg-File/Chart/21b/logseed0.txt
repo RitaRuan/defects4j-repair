@@ -1,0 +1,219 @@
+RUNNING THE BUG: Chart 21, WITH THE SEED: 0
+2021-03-27 16:15:30 [main] [INFO]  KGenProgMain - 
+==================== kGenProg Configuration ====================
+configPath = kgenprog.toml
+rootDir = . (set by command line)
+productPaths = [source] (set by command line)
+testPaths = [tests] (set by command line)
+classPaths = [/home/ubuntu/rtx/d4j/Chart/3b/lib/servlet.jar, /home/ubuntu/rtx/defects4j/framework/projects/lib/junit-4.11.jar] (set by command line)
+executionTests = [org.jfree.data.statistics.junit.DefaultBoxAndWhiskerCategoryDatasetTests] (set by command line)
+outDir = /home/ubuntu/rtx/d4j/Chart/21b/kGenProg-FILE/patch-seed0 (set by command line)
+logLevel = INFO
+mutationGeneratingCount = 10
+crossoverGeneratingCount = 10
+headcount = 10
+maxGeneration = 10
+timeLimit = PT1M
+testTimeLimit = PT10S
+requiredSolutionsCount = 1
+randomSeed = 0 (set by command line)
+scope = FILE (set by command line)
+faultLocalization = Ochiai
+mutationType = Simple
+crossoverType = Random
+firstVariantSelectionStrategy = Random
+secondVariantSelectionStrategy = Random
+isPatchOutput = true
+isHistoryRecord = false
+currentDirectory = /home/ubuntu/rtx/d4j/Chart/21b
+version = 1.8.0
+================================================================
+2021-03-27 16:15:49 [main] [INFO]  KGenProgMain - initial failed tests (1/8)
+org.jfree.data.statistics.junit.DefaultBoxAndWhiskerCategoryDatasetTests.testGetRangeBounds: null
+2021-03-27 16:15:50 [main] [INFO]  KGenProgMain - GA started
+2021-03-27 16:15:50 [main] [INFO]  KGenProgMain - entered the era of 1st generation.
+2021-03-27 16:15:53 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 2 seconds
+Variants: generated 10, build-succeeded 2, build-failed 8, syntax-invalid 0, redundant 0
+Fitness: max 0.875(2), min 0.875(2), ave 0.875
+----------------------------------------------------------------
+
+2021-03-27 16:15:53 [main] [INFO]  KGenProgMain - entered the era of 2nd generation.
+2021-03-27 16:15:55 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 4 seconds
+Variants: generated 8, build-succeeded 3, build-failed 1, syntax-invalid 1, redundant 3
+Fitness: max 1(1), min 0.625(1), ave 0.833
+----------------------------------------------------------------
+
+2021-03-27 16:15:55 [main] [INFO]  KGenProgMain - GA stopped
+2021-03-27 16:15:56 [main] [INFO]  PatchLogExporter - patch (v18)
+--- org.jfree.chart.needle.ShipNeedle
++++ org.jfree.chart.needle.ShipNeedle
+@@ -126,4 +126,3 @@
+     }
+ 
+ }
+-
+2021-03-27 16:15:56 [main] [INFO]  PatchLogExporter - patch (v18)
+--- org.jfree.chart.renderer.xy.CyclicXYItemRenderer
++++ org.jfree.chart.renderer.xy.CyclicXYItemRenderer
+@@ -505,5 +505,3 @@
+     }
+     
+ }
+-
+-
+2021-03-27 16:15:56 [main] [INFO]  PatchLogExporter - patch (v18)
+--- org.jfree.data.KeyedValueComparatorType
++++ org.jfree.data.KeyedValueComparatorType
+@@ -111,4 +111,3 @@
+         return this.name.hashCode();
+     }
+ }
+-
+2021-03-27 16:15:56 [main] [INFO]  PatchLogExporter - patch (v18)
+--- org.jfree.data.resources.DataPackageResources_es
++++ org.jfree.data.resources.DataPackageResources_es
+@@ -69,4 +69,3 @@
+     };
+ 
+ }
+-
+2021-03-27 16:15:56 [main] [INFO]  PatchLogExporter - patch (v18)
+--- org.jfree.data.xy.XYSeries
++++ org.jfree.data.xy.XYSeries
+@@ -691,4 +691,3 @@
+     }
+ 
+ }
+-
+2021-03-27 16:15:56 [main] [INFO]  PatchLogExporter - patch (v18)
+--- org.jfree.chart.needle.WindNeedle
++++ org.jfree.chart.needle.WindNeedle
+@@ -117,4 +117,3 @@
+     }
+ 
+ }
+-
+2021-03-27 16:15:56 [main] [INFO]  PatchLogExporter - patch (v18)
+--- org.jfree.chart.renderer.xy.XYAreaRenderer2
++++ org.jfree.chart.renderer.xy.XYAreaRenderer2
+@@ -447,4 +447,3 @@
+     }
+ 
+ }
+-
+2021-03-27 16:15:56 [main] [INFO]  PatchLogExporter - patch (v18)
+--- org.jfree.data.Range
++++ org.jfree.data.Range
+@@ -83,11 +83,7 @@
+      * @param upper  the upper bound (must be >= lower bound).
+      */
+     public Range(double lower, double upper) {
+-        if (lower > upper) {
+-            String msg = "Range(double, double): require lower (" + lower 
+-                + ") <= upper (" + upper + ").";
+-            throw new IllegalArgumentException(msg);
+-        }
++        if (lower > upper)
+         this.lower = lower;
+         this.upper = upper;
+     }
+2021-03-27 16:15:56 [main] [INFO]  PatchLogExporter - patch (v18)
+--- org.jfree.chart.needle.LineNeedle
++++ org.jfree.chart.needle.LineNeedle
+@@ -123,4 +123,3 @@
+     }
+     
+ }
+-
+2021-03-27 16:15:56 [main] [INFO]  PatchLogExporter - patch (v18)
+--- org.jfree.data.statistics.HistogramType
++++ org.jfree.data.statistics.HistogramType
+@@ -147,4 +147,3 @@
+     }
+ 
+ }
+-
+2021-03-27 16:15:56 [main] [INFO]  PatchLogExporter - patch (v18)
+--- org.jfree.chart.util.RefineryUtilities
++++ org.jfree.chart.util.RefineryUtilities
+@@ -308,5 +308,3 @@
+     }
+ 
+ }
+-
+-
+2021-03-27 16:15:56 [main] [INFO]  PatchLogExporter - patch (v18)
+--- org.jfree.chart.util.SerialUtilities
++++ org.jfree.chart.util.SerialUtilities
+@@ -570,4 +570,3 @@
+     }
+ 
+ }
+-
+2021-03-27 16:15:56 [main] [INFO]  PatchLogExporter - patch (v18)
+--- org.jfree.chart.util.StrokeList
++++ org.jfree.chart.util.StrokeList
+@@ -175,4 +175,3 @@
+     }
+ 
+ }
+-
+2021-03-27 16:15:56 [main] [INFO]  PatchLogExporter - patch (v18)
+--- org.jfree.data.statistics.StatisticalCategoryDataset
++++ org.jfree.data.statistics.StatisticalCategoryDataset
+@@ -96,4 +96,3 @@
+     public Number getStdDevValue(Comparable rowKey, Comparable columnKey);
+ 
+ }
+-
+2021-03-27 16:15:56 [main] [INFO]  PatchLogExporter - patch (v18)
+--- org.jfree.chart.title.TextTitle
++++ org.jfree.chart.title.TextTitle
+@@ -778,4 +778,3 @@
+     }
+ 
+ }
+-
+2021-03-27 16:15:56 [main] [INFO]  PatchLogExporter - patch (v18)
+--- org.jfree.chart.util.Layer
++++ org.jfree.chart.util.Layer
+@@ -110,4 +110,3 @@
+     }
+     
+ }
+-
+2021-03-27 16:15:56 [main] [INFO]  PatchLogExporter - patch (v18)
+--- org.jfree.chart.util.GradientPaintTransformType
++++ org.jfree.chart.util.GradientPaintTransformType
+@@ -153,4 +153,3 @@
+     }
+     
+ }
+-
+2021-03-27 16:15:56 [main] [INFO]  PatchLogExporter - patch (v18)
+--- org.jfree.chart.text.G2TextMeasurer
++++ org.jfree.chart.text.G2TextMeasurer
+@@ -82,4 +82,3 @@
+     }
+     
+ }
+-
+2021-03-27 16:15:56 [main] [INFO]  PatchLogExporter - patch (v18)
+--- org.jfree.chart.util.ShapeList
++++ org.jfree.chart.util.ShapeList
+@@ -174,4 +174,3 @@
+     }
+ 
+ }
+-
+2021-03-27 16:15:56 [main] [INFO]  KGenProgMain - Summary
+Reached generation = 2
+Generated variants = 18
+Syntax valid variants = 17
+Build succeeded variants = 5
+Time elapsed = 5 seconds
+Exit status = SUCCESS

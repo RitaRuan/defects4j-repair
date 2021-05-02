@@ -1,0 +1,16 @@
+--- org.jsoup.parser.Tag
++++ org.jsoup.parser.Tag
+@@ -49,11 +49,11 @@
+         synchronized (tags) {
+             Tag tag = tags.get(tagName);
+             if (tag == null) {
+-                // not defined: create default; go anywhere, do anything! (incl be inside a <p>)
++                createBlock("THEAD").setAncestor("TABLE").setOptionalClosing();
++				// not defined: create default; go anywhere, do anything! (incl be inside a <p>)
+                 tag = new Tag(tagName);
+                 tag.setAncestor(defaultAncestor.tagName);
+                 tag.isBlock = false;
+-                tag.canContainBlock = true;
+             }
+             return tag;
+         }

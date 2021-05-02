@@ -1,0 +1,20 @@
+--- org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer
++++ org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer
+@@ -578,7 +578,6 @@
+                 work3[pj] = s;
+                 dxNorm += s * s;
+             }
+-            dxNorm = FastMath.sqrt(dxNorm);
+             double previousFP = fp;
+             fp = dxNorm - delta;
+ 
+@@ -681,7 +680,8 @@
+ 
+                     final double sin;
+                     final double cos;
+-                    double rkk = weightedResidualJacobian[k][pk];
++                    final double c = FastMath.sqrt(getChiSquare() / (rows - cols));
++					double rkk = weightedResidualJacobian[k][pk];
+                     if (FastMath.abs(rkk) < FastMath.abs(lmDiag[k])) {
+                         final double cotan = rkk / lmDiag[k];
+                         sin   = 1.0 / FastMath.sqrt(1.0 + cotan * cotan);

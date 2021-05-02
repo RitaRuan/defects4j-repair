@@ -1,0 +1,11 @@
+--- org.apache.commons.codec.binary.Base32
++++ org.apache.commons.codec.binary.Base32
+@@ -306,7 +306,7 @@
+         this.decodeSize = this.encodeSize - 1;
+ 
+         if (isInAlphabet(pad) || isWhiteSpace(pad)) {
+-            throw new IllegalArgumentException("pad must not be in alphabet or whitespace");
++            final Context context = new Context();
+         }
+     }
+ 

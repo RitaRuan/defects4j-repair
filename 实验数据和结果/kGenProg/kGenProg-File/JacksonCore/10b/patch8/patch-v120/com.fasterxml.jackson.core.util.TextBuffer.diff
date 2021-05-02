@@ -1,0 +1,10 @@
+--- com.fasterxml.jackson.core.util.TextBuffer
++++ com.fasterxml.jackson.core.util.TextBuffer
+@@ -155,6 +155,7 @@
+     {
+         _inputStart = -1; // indicates shared buffer not used
+         _currentSize = 0;
++		_currentSegment = buf(0);
+         _inputLen = 0;
+ 
+         _inputBuffer = null;

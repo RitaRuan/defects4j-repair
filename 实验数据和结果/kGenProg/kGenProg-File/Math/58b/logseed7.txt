@@ -1,0 +1,101 @@
+RUNNING THE BUG: Math 58, WITH THE SEED: 7
+2021-03-30 01:40:56 [main] [INFO]  KGenProgMain - 
+==================== kGenProg Configuration ====================
+configPath = kgenprog.toml
+rootDir = . (set by command line)
+productPaths = [src/main/java] (set by command line)
+testPaths = [src/test/java] (set by command line)
+classPaths = [/home/ubuntu/rtx/defects4j/framework/projects/lib/junit-4.11.jar, /home/ubuntu/rtx/defects4j/framework/projects/Math/lib/commons-discovery-0.5.jar] (set by command line)
+executionTests = [org.apache.commons.math.optimization.fitting.GaussianFitterTest] (set by command line)
+outDir = /home/ubuntu/rtx/d4j/Math/58b/kGenProg-FILE/patch-seed7 (set by command line)
+logLevel = INFO
+mutationGeneratingCount = 10
+crossoverGeneratingCount = 10
+headcount = 10
+maxGeneration = 10
+timeLimit = PT1M
+testTimeLimit = PT10S
+requiredSolutionsCount = 1
+randomSeed = 7 (set by command line)
+scope = FILE (set by command line)
+faultLocalization = Ochiai
+mutationType = Simple
+crossoverType = Random
+firstVariantSelectionStrategy = Random
+secondVariantSelectionStrategy = Random
+isPatchOutput = true
+isHistoryRecord = false
+currentDirectory = /home/ubuntu/rtx/d4j/Math/58b
+version = 1.8.0
+================================================================
+2021-03-30 01:41:16 [main] [INFO]  KGenProgMain - initial failed tests (1/8)
+org.apache.commons.math.optimization.fitting.GaussianFitterTest.testMath519: -1.277 is smaller than, or equal to, the minimum (0)
+2021-03-30 01:41:17 [main] [INFO]  KGenProgMain - GA started
+2021-03-30 01:41:17 [main] [INFO]  KGenProgMain - entered the era of 1st generation.
+2021-03-30 01:41:22 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 5 seconds
+Variants: generated 10, build-succeeded 2, build-failed 6, syntax-invalid 1, redundant 1
+Fitness: max 0.875(2), min 0.875(2), ave 0.875
+----------------------------------------------------------------
+
+2021-03-30 01:41:22 [main] [INFO]  KGenProgMain - entered the era of 2nd generation.
+2021-03-30 01:41:37 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 20 seconds
+Variants: generated 7, build-succeeded 3, build-failed 2, syntax-invalid 0, redundant 2
+Fitness: max 1(1), min 0.875(2), ave 0.917
+----------------------------------------------------------------
+
+2021-03-30 01:41:37 [main] [INFO]  KGenProgMain - GA stopped
+2021-03-30 01:41:37 [main] [INFO]  PatchLogExporter - patch (v17)
+--- org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer
++++ org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer
+@@ -575,7 +575,7 @@
+             for (int j = 0; j < solvedCols; ++j) {
+                 int pj = permutation[j];
+                 double s = diag[pj] * lmDir[pj];
+-                work3[pj] = s;
++                sum2 = 0;
+                 dxNorm += s * s;
+             }
+             dxNorm = FastMath.sqrt(dxNorm);
+2021-03-30 01:41:37 [main] [INFO]  PatchLogExporter - patch (v17)
+--- org.apache.commons.math.special.Erf
++++ org.apache.commons.math.special.Erf
+@@ -89,4 +89,3 @@
+         return x < 0 ? 2 - ret : ret;
+     }
+ }
+-
+2021-03-30 01:41:37 [main] [INFO]  PatchLogExporter - patch (v17)
+--- org.apache.commons.math.optimization.direct.CMAESOptimizer
++++ org.apache.commons.math.optimization.direct.CMAESOptimizer
+@@ -1314,4 +1314,3 @@
+         return new Array2DRowRealMatrix(d, false);
+     }
+ }
+-
+2021-03-30 01:41:37 [main] [INFO]  PatchLogExporter - patch (v17)
+--- org.apache.commons.math.stat.descriptive.AbstractUnivariateStatistic
++++ org.apache.commons.math.stat.descriptive.AbstractUnivariateStatistic
+@@ -286,4 +286,3 @@
+         return test(values, begin, length, allowEmpty);
+     }
+ }
+-
+2021-03-30 01:41:37 [main] [INFO]  PatchLogExporter - patch (v17)
+--- org.apache.commons.math.optimization.fitting.WeightedObservedPoint
++++ org.apache.commons.math.optimization.fitting.WeightedObservedPoint
+@@ -72,4 +72,3 @@
+     }
+ 
+ }
+-
+2021-03-30 01:41:37 [main] [INFO]  KGenProgMain - Summary
+Reached generation = 2
+Generated variants = 17
+Syntax valid variants = 16
+Build succeeded variants = 5
+Time elapsed = 20 seconds
+Exit status = SUCCESS

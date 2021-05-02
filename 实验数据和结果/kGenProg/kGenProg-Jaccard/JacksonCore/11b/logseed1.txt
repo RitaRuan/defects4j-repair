@@ -1,0 +1,163 @@
+RUNNING THE BUG: JacksonCore 11, WITH THE SEED: 1
+2021-04-01 04:49:39 [main] [INFO]  KGenProgMain - 
+==================== kGenProg Configuration ====================
+configPath = kgenprog.toml
+rootDir = . (set by command line)
+productPaths = [src/main/java] (set by command line)
+testPaths = [src/test/java] (set by command line)
+classPaths = [/home/rtx/repair/defects4j/framework/projects/lib/junit-4.11.jar, /home/rtx/repair/defects4j/framework/projects/JacksonCore/lib/junit/junit/4.11/junit-4.11.jar, /home/rtx/repair/defects4j/framework/projects/JacksonCore/lib/junit/junit/4.12/junit-4.12.jar, /home/rtx/repair/defects4j/framework/projects/JacksonCore/lib/lib/junit/junit/4.11/junit-4.11.jar, /home/rtx/repair/defects4j/framework/projects/JacksonCore/lib/lib/junit/junit/4.12/junit-4.12.jar, /home/rtx/repair/defects4j/framework/projects/JacksonCore/lib/lib/junit/junit/4.8.2/junit-4.8.2.jar, /home/rtx/repair/defects4j/framework/projects/JacksonCore/lib/lib/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar, /home/rtx/repair/defects4j/framework/projects/JacksonCore/lib/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar] (set by command line)
+executionTests = [com.fasterxml.jackson.core.sym.SymbolsViaParserTest] (set by command line)
+outDir = /home/rtx/repair/d4j/JacksonCore/11b/kGenProg-Jaccard/patch1 (set by command line)
+logLevel = INFO
+mutationGeneratingCount = 10
+crossoverGeneratingCount = 10
+headcount = 10
+maxGeneration = 10
+timeLimit = PT1M
+testTimeLimit = PT10S
+requiredSolutionsCount = 1
+randomSeed = 1 (set by command line)
+scope = PACKAGE
+faultLocalization = Jaccard (set by command line)
+mutationType = Simple
+crossoverType = Random
+firstVariantSelectionStrategy = Random
+secondVariantSelectionStrategy = Random
+isPatchOutput = true
+isHistoryRecord = false
+currentDirectory = /home/rtx/repair/d4j/JacksonCore/11b
+version = 1.8.0
+================================================================
+2021-04-01 04:49:44 [main] [INFO]  KGenProgMain - initial failed tests (1/4)
+com.fasterxml.jackson.core.sym.SymbolsViaParserTest.testSymbolTableExpansionBytes: null
+2021-04-01 04:49:45 [main] [INFO]  KGenProgMain - GA started
+2021-04-01 04:49:45 [main] [INFO]  KGenProgMain - entered the era of 1st generation.
+2021-04-01 04:49:46 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 1 seconds
+Variants: generated 10, build-succeeded 1, build-failed 8, syntax-invalid 0, redundant 1
+Fitness: max 0.75(1), min 0.75(1), ave 0.75
+----------------------------------------------------------------
+
+2021-04-01 04:49:46 [main] [INFO]  KGenProgMain - entered the era of 2nd generation.
+2021-04-01 04:49:48 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 3 seconds
+Variants: generated 10, build-succeeded 1, build-failed 7, syntax-invalid 1, redundant 1
+Fitness: max 0.75(1), min 0.75(1), ave 0.75
+----------------------------------------------------------------
+
+2021-04-01 04:49:48 [main] [INFO]  KGenProgMain - entered the era of 3rd generation.
+2021-04-01 04:49:49 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 4 seconds
+Variants: generated 10, build-succeeded 1, build-failed 6, syntax-invalid 2, redundant 1
+Fitness: max 0.75(1), min 0.75(1), ave 0.75
+----------------------------------------------------------------
+
+2021-04-01 04:49:49 [main] [INFO]  KGenProgMain - entered the era of 4th generation.
+2021-04-01 04:49:50 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 5 seconds
+Variants: generated 20, build-succeeded 1, build-failed 8, syntax-invalid 2, redundant 9
+Fitness: max 0.75(1), min 0.75(1), ave 0.75
+----------------------------------------------------------------
+
+2021-04-01 04:49:50 [main] [INFO]  KGenProgMain - entered the era of 5th generation.
+2021-04-01 04:49:50 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 5 seconds
+Variants: generated 3, build-succeeded 1, build-failed 1, syntax-invalid 1, redundant 0
+Fitness: max 1(1), min 1(1), ave 1
+----------------------------------------------------------------
+
+2021-04-01 04:49:50 [main] [INFO]  KGenProgMain - GA stopped
+2021-04-01 04:49:51 [main] [INFO]  PatchLogExporter - patch (v53)
+--- com.fasterxml.jackson.core.sym.ByteQuadsCanonicalizer
++++ com.fasterxml.jackson.core.sym.ByteQuadsCanonicalizer
+@@ -822,7 +822,6 @@
+         {
+                 offset = _findOffsetForAdd(calcHash(q[0]));
+                 _hashArea[offset] = q[0];
+-                _hashArea[offset+3] = 1;
+             }
+             break;
+         case 2:
+2021-04-01 04:49:51 [main] [INFO]  PatchLogExporter - patch (v53)
+--- com.fasterxml.jackson.core.io.CharTypes
++++ com.fasterxml.jackson.core.io.CharTypes
+@@ -256,4 +256,3 @@
+         return (byte[]) HB.clone();
+     }
+ }
+-
+2021-04-01 04:49:51 [main] [INFO]  PatchLogExporter - patch (v53)
+--- com.fasterxml.jackson.core.Base64Variant
++++ com.fasterxml.jackson.core.Base64Variant
+@@ -590,4 +590,3 @@
+         throw new IllegalArgumentException("Unexpected end-of-String in base64 content");
+     }
+ }
+-
+2021-04-01 04:49:51 [main] [INFO]  PatchLogExporter - patch (v53)
+--- com.fasterxml.jackson.core.util.ByteArrayBuilder
++++ com.fasterxml.jackson.core.util.ByteArrayBuilder
+@@ -241,4 +241,3 @@
+     }
+ 
+ }
+-
+2021-04-01 04:49:51 [main] [INFO]  PatchLogExporter - patch (v53)
+--- com.fasterxml.jackson.core.io.IOContext
++++ com.fasterxml.jackson.core.io.IOContext
+@@ -106,7 +106,6 @@
+     }
+ 
+     public void setEncoding(JsonEncoding enc) {
+-        _encoding = enc;
+     }
+ 
+     /**
+2021-04-01 04:49:51 [main] [INFO]  PatchLogExporter - patch (v53)
+--- com.fasterxml.jackson.core.util.TextBuffer
++++ com.fasterxml.jackson.core.util.TextBuffer
+@@ -159,8 +159,6 @@
+ 
+         _inputBuffer = null;
+         _resultString = null;
+-        _resultArray = null;
+-
+         // And then reset internal input buffers, if necessary:
+         if (_hasSegments) {
+             clearSegments();
+2021-04-01 04:49:51 [main] [INFO]  PatchLogExporter - patch (v53)
+--- com.fasterxml.jackson.core.PrettyPrinter
++++ com.fasterxml.jackson.core.PrettyPrinter
+@@ -174,4 +174,3 @@
+     void beforeObjectEntries(JsonGenerator gen)
+         throws IOException, JsonGenerationException;
+ }
+-
+2021-04-01 04:49:51 [main] [INFO]  PatchLogExporter - patch (v53)
+--- com.fasterxml.jackson.core.type.TypeReference
++++ com.fasterxml.jackson.core.type.TypeReference
+@@ -55,4 +55,3 @@
+     public int compareTo(TypeReference<T> o) { return 0; }
+     // just need an implementation, not a good one... hence ^^^
+ }
+-
+2021-04-01 04:49:51 [main] [INFO]  PatchLogExporter - patch (v53)
+--- com.fasterxml.jackson.core.util.InternCache
++++ com.fasterxml.jackson.core.util.InternCache
+@@ -61,4 +61,3 @@
+         return result;
+     }
+ }
+-
+2021-04-01 04:49:51 [main] [INFO]  KGenProgMain - Summary
+Reached generation = 5
+Generated variants = 53
+Syntax valid variants = 47
+Build succeeded variants = 5
+Time elapsed = 6 seconds
+Exit status = SUCCESS

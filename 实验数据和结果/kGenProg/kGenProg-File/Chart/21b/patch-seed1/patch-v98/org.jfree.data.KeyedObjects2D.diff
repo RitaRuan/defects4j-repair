@@ -1,0 +1,12 @@
+--- org.jfree.data.KeyedObjects2D
++++ org.jfree.data.KeyedObjects2D
+@@ -267,7 +267,8 @@
+             throw new IllegalArgumentException("Null 'columnKey' argument.");
+         }
+         KeyedObjects row;
+-        int rowIndex = this.rowKeys.indexOf(rowKey);
++        Iterator iterator = this.rows.iterator();
++		int rowIndex = this.rowKeys.indexOf(rowKey);
+         if (rowIndex >= 0) {
+             row = (KeyedObjects) this.rows.get(rowIndex);
+         }

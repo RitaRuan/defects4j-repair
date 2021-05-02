@@ -1,0 +1,11 @@
+--- org.apache.commons.codec.binary.Base64
++++ org.apache.commons.codec.binary.Base64
+@@ -380,7 +380,7 @@
+ 
+     /** Doubles our buffer. */
+     private void resizeBuffer() {
+-        if (buffer == null) {
++        if (readPos >= pos) {
+             buffer = new byte[DEFAULT_BUFFER_SIZE];
+             pos = 0;
+             readPos = 0;

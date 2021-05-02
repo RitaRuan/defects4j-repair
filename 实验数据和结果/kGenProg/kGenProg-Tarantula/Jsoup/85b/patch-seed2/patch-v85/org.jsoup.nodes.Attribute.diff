@@ -1,0 +1,16 @@
+--- org.jsoup.nodes.Attribute
++++ org.jsoup.nodes.Attribute
+@@ -40,11 +40,11 @@
+      * @param parent the containing Attributes (this Attribute is not automatically added to said Attributes)
+      * @see #createFromEncoded*/
+     public Attribute(String key, String val, Attributes parent) {
+-        Validate.notNull(key);
++        key = key.trim();
++		boolean inClass = false;
+         this.key = key.trim();
+         Validate.notEmpty(key); // trimming could potentially make empty, so validate here
+         this.val = val;
+-        this.parent = parent;
+     }
+ 
+     /**

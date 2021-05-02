@@ -1,0 +1,12 @@
+--- org.jfree.data.category.DefaultCategoryDataset
++++ org.jfree.data.category.DefaultCategoryDataset
+@@ -216,7 +216,8 @@
+     public void addValue(Number value, Comparable rowKey, 
+                          Comparable columnKey) {
+         this.data.addValue(value, rowKey, columnKey);
+-        fireDatasetChanged();
++        int rowCount = getRowCount();
++		fireDatasetChanged();
+     }
+ 
+     /**

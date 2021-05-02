@@ -1,0 +1,121 @@
+RUNNING THE BUG: Math 90, WITH THE SEED: 5
+2021-03-30 09:24:33 [main] [INFO]  KGenProgMain - 
+==================== kGenProg Configuration ====================
+configPath = kgenprog.toml
+rootDir = . (set by command line)
+productPaths = [src/java] (set by command line)
+testPaths = [src/test] (set by command line)
+classPaths = [/home/ubuntu/rtx/defects4j/framework/projects/lib/junit-4.11.jar, /home/ubuntu/rtx/defects4j/framework/projects/Math/lib/commons-discovery-0.5.jar] (set by command line)
+executionTests = [org.apache.commons.math.stat.FrequencyTest] (set by command line)
+outDir = /home/ubuntu/rtx/d4j/Math/90b/kGenProg-FILE/patch-seed5 (set by command line)
+logLevel = INFO
+mutationGeneratingCount = 10
+crossoverGeneratingCount = 10
+headcount = 10
+maxGeneration = 10
+timeLimit = PT1M
+testTimeLimit = PT10S
+requiredSolutionsCount = 1
+randomSeed = 5 (set by command line)
+scope = FILE (set by command line)
+faultLocalization = Ochiai
+mutationType = Simple
+crossoverType = Random
+firstVariantSelectionStrategy = Random
+secondVariantSelectionStrategy = Random
+isPatchOutput = true
+isHistoryRecord = false
+currentDirectory = /home/ubuntu/rtx/d4j/Math/90b
+version = 1.8.0
+================================================================
+2021-03-30 09:24:48 [main] [INFO]  KGenProgMain - initial failed tests (1/7)
+org.apache.commons.math.stat.FrequencyTest.testAddNonComparable: null
+2021-03-30 09:24:48 [main] [INFO]  KGenProgMain - GA started
+2021-03-30 09:24:48 [main] [INFO]  KGenProgMain - entered the era of 1st generation.
+2021-03-30 09:24:50 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 1 seconds
+Variants: generated 10, build-succeeded 2, build-failed 6, syntax-invalid 0, redundant 2
+Fitness: max 0.857(1), min 0.714(1), ave 0.786
+----------------------------------------------------------------
+
+2021-03-30 09:24:50 [main] [INFO]  KGenProgMain - entered the era of 2nd generation.
+2021-03-30 09:24:51 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 2 seconds
+Variants: generated 10, build-succeeded 2, build-failed 5, syntax-invalid 1, redundant 2
+Fitness: max 0.571(1), min 0.429(1), ave 0.5
+----------------------------------------------------------------
+
+2021-03-30 09:24:51 [main] [INFO]  KGenProgMain - entered the era of 3rd generation.
+2021-03-30 09:24:52 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 3 seconds
+Variants: generated 20, build-succeeded 1, build-failed 5, syntax-invalid 4, redundant 10
+Fitness: max 0.286(1), min 0.286(1), ave 0.286
+----------------------------------------------------------------
+
+2021-03-30 09:24:52 [main] [INFO]  KGenProgMain - entered the era of 4th generation.
+2021-03-30 09:24:54 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 5 seconds
+Variants: generated 20, build-succeeded 2, build-failed 6, syntax-invalid 2, redundant 10
+Fitness: max 0.714(1), min 0.143(1), ave 0.429
+----------------------------------------------------------------
+
+2021-03-30 09:24:54 [main] [INFO]  KGenProgMain - entered the era of 5th generation.
+2021-03-30 09:24:56 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 7 seconds
+Variants: generated 20, build-succeeded 4, build-failed 8, syntax-invalid 0, redundant 8
+Fitness: max 0.857(1), min 0.143(1), ave 0.464
+----------------------------------------------------------------
+
+2021-03-30 09:24:56 [main] [INFO]  KGenProgMain - entered the era of 6th generation.
+2021-03-30 09:24:59 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 10 seconds
+Variants: generated 20, build-succeeded 9, build-failed 4, syntax-invalid 3, redundant 4
+Fitness: max 0.714(1), min 0.143(1), ave 0.46
+----------------------------------------------------------------
+
+2021-03-30 09:24:59 [main] [INFO]  KGenProgMain - entered the era of 7th generation.
+2021-03-30 09:25:02 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 13 seconds
+Variants: generated 20, build-succeeded 6, build-failed 9, syntax-invalid 1, redundant 4
+Fitness: max 0.714(2), min 0.429(3), ave 0.548
+----------------------------------------------------------------
+
+2021-03-30 09:25:02 [main] [INFO]  KGenProgMain - entered the era of 8th generation.
+2021-03-30 09:25:04 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 16 seconds
+Variants: generated 20, build-succeeded 7, build-failed 5, syntax-invalid 3, redundant 5
+Fitness: max 0.714(6), min 0.571(1), ave 0.694
+----------------------------------------------------------------
+
+2021-03-30 09:25:04 [main] [INFO]  KGenProgMain - entered the era of 9th generation.
+2021-03-30 09:25:06 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 17 seconds
+Variants: generated 20, build-succeeded 3, build-failed 5, syntax-invalid 3, redundant 9
+Fitness: max 0.571(3), min 0.571(3), ave 0.571
+----------------------------------------------------------------
+
+2021-03-30 09:25:06 [main] [INFO]  KGenProgMain - entered the era of 10th generation.
+2021-03-30 09:25:07 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 19 seconds
+Variants: generated 20, build-succeeded 4, build-failed 6, syntax-invalid 2, redundant 8
+Fitness: max 0.714(3), min 0.571(1), ave 0.679
+----------------------------------------------------------------
+
+2021-03-30 09:25:07 [main] [INFO]  KGenProgMain - GA stopped
+2021-03-30 09:25:07 [main] [INFO]  KGenProgMain - Summary
+Reached generation = 10
+Generated variants = 180
+Syntax valid variants = 161
+Build succeeded variants = 40
+Time elapsed = 19 seconds
+Exit status = FAILURE (maximum generation)

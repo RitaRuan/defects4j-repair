@@ -1,0 +1,65 @@
+RUNNING THE BUG: Codec 2, WITH THE SEED: 6
+2021-03-24 11:51:57 [main] [INFO]  KGenProgMain - 
+==================== kGenProg Configuration ====================
+configPath = kgenprog.toml
+rootDir = . (set by command line)
+productPaths = [src/java] (set by command line)
+testPaths = [src/test] (set by command line)
+classPaths = [/home/ubuntu/rtx/d4j/Chart/3b/lib/servlet.jar, /home/ubuntu/rtx/defects4j/framework/projects/lib/junit-4.11.jar] (set by command line)
+executionTests = [org.apache.commons.codec.binary.Base64InputStreamTest] (set by command line)
+outDir = /home/ubuntu/rtx/d4j/Codec/2b/kGenProg-Jaccard/patch-seed6 (set by command line)
+logLevel = INFO
+mutationGeneratingCount = 10
+crossoverGeneratingCount = 10
+headcount = 10
+maxGeneration = 10
+timeLimit = PT1M
+testTimeLimit = PT10S
+requiredSolutionsCount = 1
+randomSeed = 6 (set by command line)
+scope = PACKAGE
+faultLocalization = Tarantula (set by command line)
+mutationType = Simple
+crossoverType = Random
+firstVariantSelectionStrategy = Random
+secondVariantSelectionStrategy = Random
+isPatchOutput = true
+isHistoryRecord = false
+currentDirectory = /home/ubuntu/rtx/d4j/Codec/2b
+version = 1.8.0
+================================================================
+2021-03-24 11:52:03 [main] [INFO]  KGenProgMain - initial failed tests (1/3)
+org.apache.commons.codec.binary.Base64InputStreamTest.testBase64EmptyInputStream: null
+2021-03-24 11:52:03 [main] [INFO]  KGenProgMain - GA started
+2021-03-24 11:52:03 [main] [INFO]  KGenProgMain - entered the era of 1st generation.
+2021-03-24 11:52:56 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 52 seconds
+Variants: generated 10, build-succeeded 4, build-failed 5, syntax-invalid 0, redundant 1
+Fitness: max 0.333(1), min 0(3), ave 0.083
+----------------------------------------------------------------
+
+2021-03-24 11:52:56 [main] [INFO]  KGenProgMain - entered the era of 2nd generation.
+2021-03-24 11:52:57 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 53 seconds
+Variants: generated 10, build-succeeded 0, build-failed 7, syntax-invalid 3, redundant 0
+Fitness: max --, min --, ave NaN
+----------------------------------------------------------------
+
+2021-03-24 11:52:57 [main] [INFO]  KGenProgMain - entered the era of 3rd generation.
+2021-03-24 11:53:07 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 1 minutes 4 seconds
+Variants: generated 10, build-succeeded 1, build-failed 9, syntax-invalid 0, redundant 0
+Fitness: max 0(1), min 0(1), ave 0
+----------------------------------------------------------------
+
+2021-03-24 11:53:07 [main] [INFO]  KGenProgMain - GA stopped
+2021-03-24 11:53:07 [main] [INFO]  KGenProgMain - Summary
+Reached generation = 3
+Generated variants = 30
+Syntax valid variants = 27
+Build succeeded variants = 5
+Time elapsed = 1 minutes 4 seconds
+Exit status = FAILURE (time limit)

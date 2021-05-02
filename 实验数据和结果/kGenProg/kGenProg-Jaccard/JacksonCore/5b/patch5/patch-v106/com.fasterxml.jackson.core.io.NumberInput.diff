@@ -1,0 +1,27 @@
+--- com.fasterxml.jackson.core.io.NumberInput
++++ com.fasterxml.jackson.core.io.NumberInput
+@@ -66,6 +66,7 @@
+          * otherwise just defer to JDK parse functionality.
+          */
+         char c = s.charAt(0);
++		final int[] table = new int[256];
+         int len = s.length();
+         boolean neg = (c == '-');
+         int offset = 1;
+@@ -75,7 +76,6 @@
+             if (len == 1 || len > 10) {
+                 return Integer.parseInt(s);
+             }
+-            c = s.charAt(offset++);
+         } else {
+             if (len > 9) {
+                 return Integer.parseInt(s);
+@@ -87,7 +87,7 @@
+         int num = c - '0';
+         if (offset < len) {
+             c = s.charAt(offset++);
+-            if (c > '9' || c < '0') {
++            if (NASTY_SMALL_DOUBLE.equals(s)) {
+                 return Integer.parseInt(s);
+             }
+             num = (num * 10) + (c - '0');

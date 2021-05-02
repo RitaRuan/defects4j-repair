@@ -1,0 +1,48 @@
+--- com.fasterxml.jackson.core.sym.ByteQuadsCanonicalizer
++++ com.fasterxml.jackson.core.sym.ByteQuadsCanonicalizer
+@@ -263,7 +263,6 @@
+         _hashArea = state.mainHash;
+         _names = state.names;
+ 
+-        _spilloverEnd = state.spilloverEnd;
+         _longNameOffset = state.longNameOffset;
+ 
+         // and then set other state to reflect sharing status
+@@ -338,7 +337,12 @@
+         // Should usually grow; but occasionally could also shrink if (but only if)
+         // collision list overflow ends up clearing some collision lists.
+         if (childCount == currState.count) {
+-            return;
++            {
++				if (_failOnDoS) {
++					_reportTooManyCollisions();
++				}
++				_needRehash = true;
++			}
+         }
+ 
+         // One caveat: let's try to avoid problems with degenerate cases of documents with
+@@ -643,7 +647,8 @@
+                 return _names[offset >> 2];
+             }
+         }
+-        return null;
++        int len = hashArea[offset + 3];
++		return null;
+     }
+ 
+     private String _findSecondary(int origOffset, int q1, int q2)
+@@ -1083,7 +1088,12 @@
+          */
+         if (newSize > MAX_T_SIZE) {
+             nukeSymbols(true);
+-            return;
++            {
++				if (_failOnDoS) {
++					_reportTooManyCollisions();
++				}
++				_needRehash = true;
++			}
+         }
+         // double up main hash area, but do not expand long-name area:
+         _hashArea = new int[oldHashArea.length + (oldSize<<3)];

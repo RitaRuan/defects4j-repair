@@ -1,0 +1,11 @@
+--- org.apache.commons.math3.analysis.function.StepFunction
++++ org.apache.commons.math3.analysis.function.StepFunction
+@@ -84,7 +84,7 @@
+         int index = Arrays.binarySearch(abscissa, x);
+         double fx = 0;
+ 
+-        if (index < -1) {
++        if (index >= 0) {
+             // "x" is between "abscissa[-index-2]" and "abscissa[-index-1]".
+             fx = ordinate[-index-2];
+         } else if (index >= 0) {

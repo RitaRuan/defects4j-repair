@@ -1,0 +1,12 @@
+--- com.fasterxml.jackson.core.sym.ByteQuadsCanonicalizer
++++ com.fasterxml.jackson.core.sym.ByteQuadsCanonicalizer
+@@ -1045,8 +1045,7 @@
+         }
+         hash *= MULT2;
+         
+-        // and finally shuffle some more once done
+-        hash += (hash >>> 19);
++        hash += (hash >>> 16);
+         hash ^= (hash << 5);
+         return hash;
+     }

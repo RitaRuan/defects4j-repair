@@ -1,0 +1,16 @@
+--- org.jsoup.select.NodeTraversor
++++ org.jsoup.select.NodeTraversor
+@@ -108,11 +108,8 @@
+                 result = FilterResult.CONTINUE; // Parent was not pruned.
+             }
+             // 'tail' current node, then proceed with siblings:
+-            if (result == FilterResult.CONTINUE || result == FilterResult.SKIP_CHILDREN) {
+-                result = filter.tail(node, depth);
+-                if (result == FilterResult.STOP)
+-                    return result;
+-            }
++            if (result == FilterResult.CONTINUE || result == FilterResult.SKIP_CHILDREN)
++				depth--;
+             if (node == root)
+                 return result;
+             Node prev = node; // In case we need to remove it below.

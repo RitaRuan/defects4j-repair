@@ -1,0 +1,121 @@
+RUNNING THE BUG: Math 72, WITH THE SEED: 9
+2021-03-30 06:27:01 [main] [INFO]  KGenProgMain - 
+==================== kGenProg Configuration ====================
+configPath = kgenprog.toml
+rootDir = . (set by command line)
+productPaths = [src/main/java] (set by command line)
+testPaths = [src/test/java] (set by command line)
+classPaths = [/home/ubuntu/rtx/defects4j/framework/projects/lib/junit-4.11.jar, /home/ubuntu/rtx/defects4j/framework/projects/Math/lib/commons-discovery-0.5.jar] (set by command line)
+executionTests = [org.apache.commons.math.analysis.solvers.BrentSolverTest] (set by command line)
+outDir = /home/ubuntu/rtx/d4j/Math/72b/kGenProg-FILE/patch-seed9 (set by command line)
+logLevel = INFO
+mutationGeneratingCount = 10
+crossoverGeneratingCount = 10
+headcount = 10
+maxGeneration = 10
+timeLimit = PT1M
+testTimeLimit = PT10S
+requiredSolutionsCount = 1
+randomSeed = 9 (set by command line)
+scope = FILE (set by command line)
+faultLocalization = Ochiai
+mutationType = Simple
+crossoverType = Random
+firstVariantSelectionStrategy = Random
+secondVariantSelectionStrategy = Random
+isPatchOutput = true
+isHistoryRecord = false
+currentDirectory = /home/ubuntu/rtx/d4j/Math/72b
+version = 1.8.0
+================================================================
+2021-03-30 06:27:18 [main] [INFO]  KGenProgMain - initial failed tests (1/6)
+org.apache.commons.math.analysis.solvers.BrentSolverTest.testRootEndpoints: null
+2021-03-30 06:27:19 [main] [INFO]  KGenProgMain - GA started
+2021-03-30 06:27:19 [main] [INFO]  KGenProgMain - entered the era of 1st generation.
+2021-03-30 06:27:21 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 1 seconds
+Variants: generated 10, build-succeeded 3, build-failed 4, syntax-invalid 1, redundant 2
+Fitness: max 0.833(1), min 0.167(1), ave 0.556
+----------------------------------------------------------------
+
+2021-03-30 06:27:21 [main] [INFO]  KGenProgMain - entered the era of 2nd generation.
+2021-03-30 06:27:22 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 3 seconds
+Variants: generated 10, build-succeeded 1, build-failed 8, syntax-invalid 0, redundant 1
+Fitness: max 0.833(1), min 0.833(1), ave 0.833
+----------------------------------------------------------------
+
+2021-03-30 06:27:22 [main] [INFO]  KGenProgMain - entered the era of 3rd generation.
+2021-03-30 06:27:23 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 4 seconds
+Variants: generated 10, build-succeeded 1, build-failed 7, syntax-invalid 1, redundant 1
+Fitness: max 0.167(1), min 0.167(1), ave 0.167
+----------------------------------------------------------------
+
+2021-03-30 06:27:23 [main] [INFO]  KGenProgMain - entered the era of 4th generation.
+2021-03-30 06:27:25 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 5 seconds
+Variants: generated 10, build-succeeded 3, build-failed 6, syntax-invalid 0, redundant 1
+Fitness: max 0.833(1), min 0.167(2), ave 0.389
+----------------------------------------------------------------
+
+2021-03-30 06:27:25 [main] [INFO]  KGenProgMain - entered the era of 5th generation.
+2021-03-30 06:27:26 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 7 seconds
+Variants: generated 20, build-succeeded 3, build-failed 5, syntax-invalid 5, redundant 7
+Fitness: max 0.833(1), min 0.167(1), ave 0.5
+----------------------------------------------------------------
+
+2021-03-30 06:27:26 [main] [INFO]  KGenProgMain - entered the era of 6th generation.
+2021-03-30 06:27:29 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 10 seconds
+Variants: generated 20, build-succeeded 11, build-failed 1, syntax-invalid 2, redundant 6
+Fitness: max 0.833(4), min 0.167(2), ave 0.606
+----------------------------------------------------------------
+
+2021-03-30 06:27:29 [main] [INFO]  KGenProgMain - entered the era of 7th generation.
+2021-03-30 06:27:32 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 13 seconds
+Variants: generated 20, build-succeeded 8, build-failed 4, syntax-invalid 2, redundant 6
+Fitness: max 0.833(5), min 0.167(1), ave 0.708
+----------------------------------------------------------------
+
+2021-03-30 06:27:32 [main] [INFO]  KGenProgMain - entered the era of 8th generation.
+2021-03-30 06:27:34 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 15 seconds
+Variants: generated 20, build-succeeded 4, build-failed 6, syntax-invalid 6, redundant 4
+Fitness: max 0.833(4), min 0.833(4), ave 0.833
+----------------------------------------------------------------
+
+2021-03-30 06:27:34 [main] [INFO]  KGenProgMain - entered the era of 9th generation.
+2021-03-30 06:27:35 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 16 seconds
+Variants: generated 20, build-succeeded 4, build-failed 8, syntax-invalid 3, redundant 5
+Fitness: max 0.833(4), min 0.833(4), ave 0.833
+----------------------------------------------------------------
+
+2021-03-30 06:27:35 [main] [INFO]  KGenProgMain - entered the era of 10th generation.
+2021-03-30 06:27:38 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 19 seconds
+Variants: generated 20, build-succeeded 5, build-failed 8, syntax-invalid 0, redundant 7
+Fitness: max 0.833(5), min 0.833(5), ave 0.833
+----------------------------------------------------------------
+
+2021-03-30 06:27:38 [main] [INFO]  KGenProgMain - GA stopped
+2021-03-30 06:27:38 [main] [INFO]  KGenProgMain - Summary
+Reached generation = 10
+Generated variants = 160
+Syntax valid variants = 140
+Build succeeded variants = 43
+Time elapsed = 19 seconds
+Exit status = FAILURE (maximum generation)

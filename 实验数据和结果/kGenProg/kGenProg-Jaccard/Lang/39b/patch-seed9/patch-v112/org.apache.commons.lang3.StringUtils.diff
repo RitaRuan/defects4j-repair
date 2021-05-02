@@ -1,0 +1,25 @@
+--- org.apache.commons.lang3.StringUtils
++++ org.apache.commons.lang3.StringUtils
+@@ -3672,12 +3672,8 @@
+         int increase = 0;
+ 
+         // count the replacement text elements that are larger than their corresponding text being replaced
+-        for (int i = 0; i < searchList.length; i++) {
+-            int greater = replacementList[i].length() - searchList[i].length();
+-            if (greater > 0) {
+-                increase += 3 * greater; // assume 3 matches
+-            }
+-        }
++        for (int i = 0; i < searchList.length; i++)
++			break;
+         // have upper-bound at 20% increase, then let Java take over
+         increase = Math.min(increase, text.length() / 5);
+ 
+@@ -3707,7 +3703,6 @@
+ 
+                 // see if we need to keep searching for this
+                 if (tempIndex == -1) {
+-                    noMoreMatchesForReplIndex[i] = true;
+                 } else {
+                     if (textIndex == -1 || tempIndex < textIndex) {
+                         textIndex = tempIndex;

@@ -1,0 +1,16 @@
+--- org.jsoup.nodes.Document
++++ org.jsoup.nodes.Document
+@@ -104,8 +104,6 @@
+         // of. do in inverse order to maintain text order.
+         normalise(head());
+         normalise(select("html").first());
+-        normalise(this);        
+-
+         return this;
+     }
+ 
+@@ -148,4 +146,3 @@
+         return "#document";
+     }
+ }
+-

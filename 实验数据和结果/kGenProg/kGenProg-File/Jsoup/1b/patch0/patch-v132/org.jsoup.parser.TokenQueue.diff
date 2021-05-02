@@ -1,0 +1,11 @@
+--- org.jsoup.parser.TokenQueue
++++ org.jsoup.parser.TokenQueue
+@@ -18,8 +18,6 @@
+      @param data string of data to back queue.
+      */
+     public TokenQueue(String data) {
+-        Validate.notNull(data);
+-
+         queue = new LinkedList<Character>();
+         char[] chars = data.toCharArray();
+         for (char c : chars) {

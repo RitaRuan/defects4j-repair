@@ -1,0 +1,89 @@
+RUNNING THE BUG: Math 32, WITH THE SEED: 4
+2021-03-22 03:23:33 [main] [INFO]  KGenProgMain - 
+==================== kGenProg Configuration ====================
+configPath = kgenprog.toml
+rootDir = . (set by command line)
+productPaths = [src/main/java] (set by command line)
+testPaths = [src/test/java] (set by command line)
+classPaths = [/home/ubuntu/rtx/defects4j/framework/projects/lib/junit-4.11.jar, /home/ubuntu/rtx/defects4j/framework/projects/Lang/lib/easymock.jar, /home/ubuntu/rtx/defects4j/framework/projects/Lang/lib/commons-io.jar, /home/ubuntu/rtx/defects4j/framework/projects/Lang/lib/cglib.jar, /home/ubuntu/rtx/defects4j/framework/projects/Lang/lib/asm.jar, /home/ubuntu/rtx/defects4j/framework/projects/lib/junit-4.11.jar, /home/ubuntu/rtx/defects4j/framework/projects/Lang/lib/cglib.jar, /home/ubuntu/rtx/defects4j/framework/projects/Lang/lib/asm.jar, /home/ubuntu/rtx/defects4j/framework/projects/Lang/lib/easymock.jar, /home/ubuntu/rtx/defects4j/framework/projects/Lang/lib/commons-io.jar] (set by command line)
+executionTests = [org.apache.commons.math3.geometry.euclidean.threed.PolyhedronsSetTest] (set by command line)
+outDir = /home/ubuntu/rtx/d4j/Math/32b/kGenProg-Jaccard/patch-seed4 (set by command line)
+logLevel = INFO
+mutationGeneratingCount = 10
+crossoverGeneratingCount = 10
+headcount = 10
+maxGeneration = 10
+timeLimit = PT1M
+testTimeLimit = PT10S
+requiredSolutionsCount = 1
+randomSeed = 4 (set by command line)
+scope = PACKAGE
+faultLocalization = Jaccard (set by command line)
+mutationType = Simple
+crossoverType = Random
+firstVariantSelectionStrategy = Random
+secondVariantSelectionStrategy = Random
+isPatchOutput = true
+isHistoryRecord = false
+currentDirectory = /home/ubuntu/rtx/d4j/Math/32b
+version = 1.8.0
+================================================================
+2021-03-22 03:23:55 [main] [INFO]  KGenProgMain - initial failed tests (1/6)
+org.apache.commons.math3.geometry.euclidean.threed.PolyhedronsSetTest.testIssue780: class org.apache.commons.math3.geometry.partitioning.BoundaryAttribute cannot be cast to class java.lang.Boolean (org.apache.commons.math3.geometry.partitioning.BoundaryAttribute is in unnamed module of loader jp.kusumotolab.kgenprog.project.test.SkippingMemoryClassLoader @15d2dd19; java.lang.Boolean is in module java.base of loader 'bootstrap')
+2021-03-22 03:23:55 [main] [INFO]  KGenProgMain - GA started
+2021-03-22 03:23:55 [main] [INFO]  KGenProgMain - entered the era of 1st generation.
+2021-03-22 03:23:58 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 2 seconds
+Variants: generated 10, build-succeeded 1, build-failed 5, syntax-invalid 2, redundant 2
+Fitness: max 0.833(1), min 0.833(1), ave 0.833
+----------------------------------------------------------------
+
+2021-03-22 03:23:58 [main] [INFO]  KGenProgMain - entered the era of 2nd generation.
+2021-03-22 03:24:01 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 6 seconds
+Variants: generated 10, build-succeeded 1, build-failed 7, syntax-invalid 1, redundant 1
+Fitness: max 0.833(1), min 0.833(1), ave 0.833
+----------------------------------------------------------------
+
+2021-03-22 03:24:01 [main] [INFO]  KGenProgMain - entered the era of 3rd generation.
+2021-03-22 03:24:16 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 21 seconds
+Variants: generated 10, build-succeeded 3, build-failed 6, syntax-invalid 1, redundant 0
+Fitness: max 0.833(3), min 0.833(3), ave 0.833
+----------------------------------------------------------------
+
+2021-03-22 03:24:16 [main] [INFO]  KGenProgMain - entered the era of 4th generation.
+2021-03-22 03:24:24 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 28 seconds
+Variants: generated 20, build-succeeded 3, build-failed 9, syntax-invalid 3, redundant 5
+Fitness: max 0.833(3), min 0.833(3), ave 0.833
+----------------------------------------------------------------
+
+2021-03-22 03:24:24 [main] [INFO]  KGenProgMain - entered the era of 5th generation.
+2021-03-22 03:24:43 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 48 seconds
+Variants: generated 20, build-succeeded 4, build-failed 8, syntax-invalid 2, redundant 6
+Fitness: max 0.833(4), min 0.833(4), ave 0.833
+----------------------------------------------------------------
+
+2021-03-22 03:24:43 [main] [INFO]  KGenProgMain - entered the era of 6th generation.
+2021-03-22 03:25:25 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 1 minutes 29 seconds
+Variants: generated 20, build-succeeded 6, build-failed 7, syntax-invalid 3, redundant 4
+Fitness: max 0.833(6), min 0.833(6), ave 0.833
+----------------------------------------------------------------
+
+2021-03-22 03:25:25 [main] [INFO]  KGenProgMain - GA stopped
+2021-03-22 03:25:25 [main] [INFO]  KGenProgMain - Summary
+Reached generation = 6
+Generated variants = 90
+Syntax valid variants = 78
+Build succeeded variants = 18
+Time elapsed = 1 minutes 29 seconds
+Exit status = FAILURE (time limit)

@@ -1,0 +1,12 @@
+--- org.jsoup.select.NodeTraversor
++++ org.jsoup.select.NodeTraversor
+@@ -90,7 +90,8 @@
+             if (result == FilterResult.CONTINUE && node.childNodeSize() > 0) {
+                 node = node.childNode(0);
+                 ++depth;
+-                continue;
++                Node prev = node;
++				continue;
+             }
+             // No siblings, move upwards:
+             while (node.nextSibling() == null && depth > 0) {

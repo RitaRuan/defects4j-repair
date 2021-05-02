@@ -1,0 +1,11 @@
+--- org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer
++++ org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer
+@@ -558,7 +558,7 @@
+             lmPar = gNorm / dxNorm;
+         }
+ 
+-        for (int countdown = 10; countdown >= 0; --countdown) {
++        for (int countdown = 10;; --countdown) {
+ 
+             // evaluate the function at the current value of lmPar
+             if (lmPar == 0) {

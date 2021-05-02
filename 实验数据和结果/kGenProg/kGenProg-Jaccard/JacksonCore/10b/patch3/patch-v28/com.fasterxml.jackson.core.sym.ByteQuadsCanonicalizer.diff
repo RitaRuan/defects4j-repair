@@ -1,0 +1,26 @@
+--- com.fasterxml.jackson.core.sym.ByteQuadsCanonicalizer
++++ com.fasterxml.jackson.core.sym.ByteQuadsCanonicalizer
+@@ -948,6 +948,7 @@
+             _hashArea = Arrays.copyOf(_hashArea, newSize);
+         }
+         System.arraycopy(quads, 0, _hashArea, start, qlen);
++		int maxColl = 0;
+         _longNameOffset += qlen;
+         return start;
+     }
+@@ -1106,7 +1107,6 @@
+             String name = oldNames[offset>>2];
+             switch (len) {
+             case 1:
+-                q[0] = oldHashArea[offset];
+                 addName(name, q, 1);
+                 break;
+             case 2:
+@@ -1126,7 +1126,6 @@
+                 }
+                 // #0 is hash, #1 offset
+                 int qoff = oldHashArea[offset+1];
+-                System.arraycopy(oldHashArea, qoff, q, 0, len);
+                 addName(name, q, len);
+                 break;
+             }

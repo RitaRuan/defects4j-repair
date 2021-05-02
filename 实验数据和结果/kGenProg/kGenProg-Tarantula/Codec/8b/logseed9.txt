@@ -1,0 +1,180 @@
+RUNNING THE BUG: Codec 8, WITH THE SEED: 9
+2021-03-24 12:37:02 [main] [INFO]  KGenProgMain - 
+==================== kGenProg Configuration ====================
+configPath = kgenprog.toml
+rootDir = . (set by command line)
+productPaths = [src/java] (set by command line)
+testPaths = [src/test] (set by command line)
+classPaths = [/home/ubuntu/rtx/d4j/Chart/3b/lib/servlet.jar, /home/ubuntu/rtx/defects4j/framework/projects/lib/junit-4.11.jar] (set by command line)
+executionTests = [org.apache.commons.codec.binary.Base64InputStreamTest] (set by command line)
+outDir = /home/ubuntu/rtx/d4j/Codec/8b/kGenProg-Jaccard/patch-seed9 (set by command line)
+logLevel = INFO
+mutationGeneratingCount = 10
+crossoverGeneratingCount = 10
+headcount = 10
+maxGeneration = 10
+timeLimit = PT1M
+testTimeLimit = PT10S
+requiredSolutionsCount = 1
+randomSeed = 9 (set by command line)
+scope = PACKAGE
+faultLocalization = Tarantula (set by command line)
+mutationType = Simple
+crossoverType = Random
+firstVariantSelectionStrategy = Random
+secondVariantSelectionStrategy = Random
+isPatchOutput = true
+isHistoryRecord = false
+currentDirectory = /home/ubuntu/rtx/d4j/Codec/8b
+version = 1.8.0
+================================================================
+2021-03-24 12:37:09 [main] [INFO]  KGenProgMain - initial failed tests (1/12)
+org.apache.commons.codec.binary.Base64InputStreamTest.testCodec105: null
+2021-03-24 12:37:09 [main] [INFO]  KGenProgMain - GA started
+2021-03-24 12:37:09 [main] [INFO]  KGenProgMain - entered the era of 1st generation.
+2021-03-24 12:37:10 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 1 seconds
+Variants: generated 10, build-succeeded 1, build-failed 7, syntax-invalid 2, redundant 0
+Fitness: max 0.917(1), min 0.917(1), ave 0.917
+----------------------------------------------------------------
+
+2021-03-24 12:37:10 [main] [INFO]  KGenProgMain - entered the era of 2nd generation.
+2021-03-24 12:37:12 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 2 seconds
+Variants: generated 10, build-succeeded 1, build-failed 7, syntax-invalid 1, redundant 1
+Fitness: max 0.75(1), min 0.75(1), ave 0.75
+----------------------------------------------------------------
+
+2021-03-24 12:37:12 [main] [INFO]  KGenProgMain - entered the era of 3rd generation.
+2021-03-24 12:37:13 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 4 seconds
+Variants: generated 10, build-succeeded 2, build-failed 7, syntax-invalid 1, redundant 0
+Fitness: max 0.917(1), min 0.75(1), ave 0.833
+----------------------------------------------------------------
+
+2021-03-24 12:37:13 [main] [INFO]  KGenProgMain - entered the era of 4th generation.
+2021-03-24 12:37:14 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 5 seconds
+Variants: generated 10, build-succeeded 2, build-failed 6, syntax-invalid 1, redundant 1
+Fitness: max 0.917(1), min 0(1), ave 0.458
+----------------------------------------------------------------
+
+2021-03-24 12:37:14 [main] [INFO]  KGenProgMain - entered the era of 5th generation.
+2021-03-24 12:37:17 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 8 seconds
+Variants: generated 20, build-succeeded 5, build-failed 6, syntax-invalid 0, redundant 9
+Fitness: max 0.917(1), min 0(1), ave 0.65
+----------------------------------------------------------------
+
+2021-03-24 12:37:17 [main] [INFO]  KGenProgMain - entered the era of 6th generation.
+2021-03-24 12:37:18 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 9 seconds
+Variants: generated 20, build-succeeded 5, build-failed 7, syntax-invalid 1, redundant 7
+Fitness: max 0.75(5), min 0.75(5), ave 0.75
+----------------------------------------------------------------
+
+2021-03-24 12:37:18 [main] [INFO]  KGenProgMain - entered the era of 7th generation.
+2021-03-24 12:37:20 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 11 seconds
+Variants: generated 20, build-succeeded 6, build-failed 6, syntax-invalid 2, redundant 6
+Fitness: max 0.833(2), min 0.75(4), ave 0.778
+----------------------------------------------------------------
+
+2021-03-24 12:37:20 [main] [INFO]  KGenProgMain - entered the era of 8th generation.
+2021-03-24 12:37:21 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 12 seconds
+Variants: generated 20, build-succeeded 3, build-failed 8, syntax-invalid 1, redundant 8
+Fitness: max 0.833(3), min 0.833(3), ave 0.833
+----------------------------------------------------------------
+
+2021-03-24 12:37:21 [main] [INFO]  KGenProgMain - entered the era of 9th generation.
+2021-03-24 12:37:23 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 14 seconds
+Variants: generated 20, build-succeeded 3, build-failed 6, syntax-invalid 2, redundant 9
+Fitness: max 0.917(1), min 0.75(1), ave 0.833
+----------------------------------------------------------------
+
+2021-03-24 12:37:23 [main] [INFO]  KGenProgMain - entered the era of 10th generation.
+2021-03-24 12:37:24 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 15 seconds
+Variants: generated 5, build-succeeded 2, build-failed 1, syntax-invalid 0, redundant 2
+Fitness: max 1(1), min 0.833(1), ave 0.917
+----------------------------------------------------------------
+
+2021-03-24 12:37:24 [main] [INFO]  KGenProgMain - GA stopped
+2021-03-24 12:37:24 [main] [INFO]  PatchLogExporter - patch (v145)
+--- org.apache.commons.codec.Decoder
++++ org.apache.commons.codec.Decoder
+@@ -52,4 +52,3 @@
+      */
+     Object decode(Object pObject) throws DecoderException;
+ }  
+-
+2021-03-24 12:37:24 [main] [INFO]  PatchLogExporter - patch (v145)
+--- org.apache.commons.codec.BinaryDecoder
++++ org.apache.commons.codec.BinaryDecoder
+@@ -39,4 +39,3 @@
+      */
+     byte[] decode(byte[] pArray) throws DecoderException;
+ }  
+-
+2021-03-24 12:37:24 [main] [INFO]  PatchLogExporter - patch (v145)
+--- org.apache.commons.codec.StringDecoder
++++ org.apache.commons.codec.StringDecoder
+@@ -37,4 +37,3 @@
+      */
+     String decode(String pString) throws DecoderException;
+ }  
+-
+2021-03-24 12:37:24 [main] [INFO]  PatchLogExporter - patch (v145)
+--- org.apache.commons.codec.Encoder
++++ org.apache.commons.codec.Encoder
+@@ -43,4 +43,3 @@
+      */
+     Object encode(Object pObject) throws EncoderException;
+ }  
+-
+2021-03-24 12:37:24 [main] [INFO]  PatchLogExporter - patch (v145)
+--- org.apache.commons.codec.binary.Base64InputStream
++++ org.apache.commons.codec.binary.Base64InputStream
+@@ -167,7 +167,6 @@
+                     byte[] buf = new byte[doEncode ? 4096 : 8192];
+                     int c = in.read(buf);
+                     if (c > 0 && b.length == len) {
+-                        base64.setInitialBuffer(b, offset, len);
+                     }
+                     if (doEncode) {
+                         base64.encode(buf, 0, c);
+2021-03-24 12:37:24 [main] [INFO]  PatchLogExporter - patch (v145)
+--- org.apache.commons.codec.BinaryEncoder
++++ org.apache.commons.codec.BinaryEncoder
+@@ -39,4 +39,3 @@
+      */
+     byte[] encode(byte[] pArray) throws EncoderException;
+ }  
+-
+2021-03-24 12:37:24 [main] [INFO]  PatchLogExporter - patch (v145)
+--- org.apache.commons.codec.StringEncoder
++++ org.apache.commons.codec.StringEncoder
+@@ -37,4 +37,3 @@
+      */
+     String encode(String pString) throws EncoderException;
+ }  
+-
+2021-03-24 12:37:24 [main] [INFO]  KGenProgMain - Summary
+Reached generation = 10
+Generated variants = 145
+Syntax valid variants = 134
+Build succeeded variants = 30
+Time elapsed = 15 seconds
+Exit status = SUCCESS

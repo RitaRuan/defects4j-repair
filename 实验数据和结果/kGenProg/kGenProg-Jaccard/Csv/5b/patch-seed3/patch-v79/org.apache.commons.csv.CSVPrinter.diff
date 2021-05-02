@@ -1,0 +1,20 @@
+--- org.apache.commons.csv.CSVPrinter
++++ org.apache.commons.csv.CSVPrinter
+@@ -322,8 +322,7 @@
+      */
+     public void println() throws IOException {
+         final String recordSeparator = format.getRecordSeparator();
+-            out.append(recordSeparator);
+-        newRecord = true;
++            newRecord = true;
+     }
+ 
+     /**
+@@ -337,7 +336,6 @@
+      */
+     public void printRecord(final Iterable<?> values) throws IOException {
+         for (final Object value : values) {
+-            print(value);
+         }
+         println();
+     }

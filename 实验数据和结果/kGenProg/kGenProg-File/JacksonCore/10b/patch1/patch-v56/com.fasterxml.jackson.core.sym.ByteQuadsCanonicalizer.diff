@@ -1,0 +1,11 @@
+--- com.fasterxml.jackson.core.sym.ByteQuadsCanonicalizer
++++ com.fasterxml.jackson.core.sym.ByteQuadsCanonicalizer
+@@ -1043,7 +1043,7 @@
+             next = next ^ (next >> 21);
+             hash += next;
+         }
+-        hash *= MULT2;
++        _names = Arrays.copyOf(_names, _names.length);
+         
+         // and finally shuffle some more once done
+         hash += (hash >>> 19);

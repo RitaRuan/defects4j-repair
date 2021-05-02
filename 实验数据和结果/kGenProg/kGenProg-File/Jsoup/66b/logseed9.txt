@@ -1,0 +1,121 @@
+RUNNING THE BUG: Jsoup 66, WITH THE SEED: 9
+2021-03-28 13:36:33 [main] [INFO]  KGenProgMain - 
+==================== kGenProg Configuration ====================
+configPath = kgenprog.toml
+rootDir = . (set by command line)
+productPaths = [src/main/java] (set by command line)
+testPaths = [src/test/java] (set by command line)
+classPaths = [/home/ubuntu/rtx/defects4j/framework/projects/Jsoup/lib/junit/junit/4.5/junit-4.5.jar, /home/ubuntu/rtx/defects4j/framework/projects/Jsoup/lib/commons-lang/commons-lang/2.4/commons-lang-2.4.jar, /home/ubuntu/rtx/defects4j/framework/projects/lib/junit-4.11.jar, /home/ubuntu/rtx/defects4j/framework/projects/Jsoup/lib/com/google/code/gson/gson/2.7/gson-2.7.jar, /home/ubuntu/rtx/defects4j/framework/projects/Jsoup/lib/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar, /home/ubuntu/rtx/defects4j/framework/projects/Jsoup/lib/junit/junit/4.12/junit-4.12.jar, /home/ubuntu/rtx/defects4j/framework/projects/Jsoup/lib/lib/com/google/code/gson/gson/2.7/gson-2.7.jar, /home/ubuntu/rtx/defects4j/framework/projects/Jsoup/lib/lib/commons-lang/commons-lang/2.4/commons-lang-2.4.jar, /home/ubuntu/rtx/defects4j/framework/projects/Jsoup/lib/lib/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar, /home/ubuntu/rtx/defects4j/framework/projects/Jsoup/lib/lib/junit/junit/4.12/junit-4.12.jar, /home/ubuntu/rtx/defects4j/framework/projects/Jsoup/lib/lib/junit/junit/4.5/junit-4.5.jar, /home/ubuntu/rtx/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-http/9.2.22.v20170606/jetty-http-9.2.22.v20170606.jar, /home/ubuntu/rtx/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-http/9.2.26.v20180806/jetty-http-9.2.26.v20180806.jar, /home/ubuntu/rtx/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-http/9.2.28.v20190418/jetty-http-9.2.28.v20190418.jar, /home/ubuntu/rtx/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-io/9.2.22.v20170606/jetty-io-9.2.22.v20170606.jar, /home/ubuntu/rtx/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-io/9.2.26.v20180806/jetty-io-9.2.26.v20180806.jar, /home/ubuntu/rtx/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-io/9.2.28.v20190418/jetty-io-9.2.28.v20190418.jar, /home/ubuntu/rtx/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-security/9.2.22.v20170606/jetty-security-9.2.22.v20170606.jar, /home/ubuntu/rtx/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-security/9.2.26.v20180806/jetty-security-9.2.26.v20180806.jar, /home/ubuntu/rtx/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-security/9.2.28.v20190418/jetty-security-9.2.28.v20190418.jar, /home/ubuntu/rtx/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-server/9.2.22.v20170606/jetty-server-9.2.22.v20170606.jar, /home/ubuntu/rtx/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-server/9.2.26.v20180806/jetty-server-9.2.26.v20180806.jar, /home/ubuntu/rtx/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-server/9.2.28.v20190418/jetty-server-9.2.28.v20190418.jar, /home/ubuntu/rtx/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-servlet/9.2.22.v20170606/jetty-servlet-9.2.22.v20170606.jar, /home/ubuntu/rtx/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-servlet/9.2.26.v20180806/jetty-servlet-9.2.26.v20180806.jar, /home/ubuntu/rtx/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-servlet/9.2.28.v20190418/jetty-servlet-9.2.28.v20190418.jar, /home/ubuntu/rtx/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-util/9.2.22.v20170606/jetty-util-9.2.22.v20170606.jar, /home/ubuntu/rtx/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-util/9.2.26.v20180806/jetty-util-9.2.26.v20180806.jar, /home/ubuntu/rtx/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-util/9.2.28.v20190418/jetty-util-9.2.28.v20190418.jar, /home/ubuntu/rtx/defects4j/framework/projects/Jsoup/lib/lib/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar, /home/ubuntu/rtx/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-http/9.2.22.v20170606/jetty-http-9.2.22.v20170606.jar, /home/ubuntu/rtx/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-http/9.2.26.v20180806/jetty-http-9.2.26.v20180806.jar, /home/ubuntu/rtx/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-http/9.2.28.v20190418/jetty-http-9.2.28.v20190418.jar, /home/ubuntu/rtx/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-io/9.2.22.v20170606/jetty-io-9.2.22.v20170606.jar, /home/ubuntu/rtx/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-io/9.2.26.v20180806/jetty-io-9.2.26.v20180806.jar, /home/ubuntu/rtx/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-io/9.2.28.v20190418/jetty-io-9.2.28.v20190418.jar, /home/ubuntu/rtx/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-security/9.2.22.v20170606/jetty-security-9.2.22.v20170606.jar, /home/ubuntu/rtx/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-security/9.2.26.v20180806/jetty-security-9.2.26.v20180806.jar, /home/ubuntu/rtx/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-security/9.2.28.v20190418/jetty-security-9.2.28.v20190418.jar, /home/ubuntu/rtx/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-server/9.2.22.v20170606/jetty-server-9.2.22.v20170606.jar, /home/ubuntu/rtx/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-server/9.2.26.v20180806/jetty-server-9.2.26.v20180806.jar, /home/ubuntu/rtx/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-server/9.2.28.v20190418/jetty-server-9.2.28.v20190418.jar, /home/ubuntu/rtx/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-servlet/9.2.22.v20170606/jetty-servlet-9.2.22.v20170606.jar, /home/ubuntu/rtx/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-servlet/9.2.26.v20180806/jetty-servlet-9.2.26.v20180806.jar, /home/ubuntu/rtx/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-servlet/9.2.28.v20190418/jetty-servlet-9.2.28.v20190418.jar, /home/ubuntu/rtx/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-util/9.2.22.v20170606/jetty-util-9.2.22.v20170606.jar, /home/ubuntu/rtx/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-util/9.2.26.v20180806/jetty-util-9.2.26.v20180806.jar, /home/ubuntu/rtx/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-util/9.2.28.v20190418/jetty-util-9.2.28.v20190418.jar, /home/ubuntu/rtx/defects4j/framework/projects/Jsoup/lib/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar] (set by command line)
+executionTests = [org.jsoup.nodes.ElementTest] (set by command line)
+outDir = /home/ubuntu/rtx/d4j/Jsoup/66b/kGenProg-FILE/patch-seed9 (set by command line)
+logLevel = INFO
+mutationGeneratingCount = 10
+crossoverGeneratingCount = 10
+headcount = 10
+maxGeneration = 10
+timeLimit = PT1M
+testTimeLimit = PT10S
+requiredSolutionsCount = 1
+randomSeed = 9 (set by command line)
+scope = FILE (set by command line)
+faultLocalization = Ochiai
+mutationType = Simple
+crossoverType = Random
+firstVariantSelectionStrategy = Random
+secondVariantSelectionStrategy = Random
+isPatchOutput = true
+isHistoryRecord = false
+currentDirectory = /home/ubuntu/rtx/d4j/Jsoup/66b
+version = 1.8.0
+================================================================
+2021-03-28 13:36:42 [main] [INFO]  KGenProgMain - initial failed tests (80/84)
+org.jsoup.nodes.ElementTest.appendMustCorrectlyMoveChildrenInsideOneParentElement: Could not initialize class org.jsoup.nodes.Entities$EscapeModeorg.jsoup.nodes.ElementTest.testChildThrowsIndexOutOfBoundsOnMissing: Could not initialize class org.jsoup.nodes.Entities$EscapeModeorg.jsoup.nodes.ElementTest.testAddBooleanAttribute: Could not initialize class org.jsoup.nodes.Entities$EscapeModeorg.jsoup.nodes.ElementTest.testAddNewHtml: Could not initialize class org.jsoup.nodes.Entities$EscapeModeorg.jsoup.nodes.ElementTest.testElementSiblingIndexSameContent: Could not initialize class org.jsoup.nodes.Entities$EscapeModeorg.jsoup.nodes.ElementTest.classNamesAndAttributeNameIsCaseInsensitive: Could not initialize class org.jsoup.nodes.Entities$EscapeModeorg.jsoup.nodes.ElementTest.testKeepsPreText: Could not initialize class org.jsoup.nodes.Entities$EscapeModeorg.jsoup.nodes.ElementTest.testLoopedRemoveAttributes: Could not initialize class org.jsoup.nodes.Entities$EscapeModeorg.jsoup.nodes.ElementTest.testKeepsPreTextInCode: Could not initialize class org.jsoup.nodes.Entities$EscapeModeorg.jsoup.nodes.ElementTest.testBrHasSpace: Could not initialize class org.jsoup.nodes.Entities$EscapeModeorg.jsoup.nodes.ElementTest.testAddNewText: Could not initialize class org.jsoup.nodes.Entities$EscapeModeorg.jsoup.nodes.ElementTest.testThrowsOnAddNullText: Unexpected exception, expected<java.lang.IllegalArgumentException> but was<java.lang.NoClassDefFoundError>org.jsoup.nodes.ElementTest.insertChildrenAtPosition: Could not initialize class org.jsoup.nodes.Entities$EscapeModeorg.jsoup.nodes.ElementTest.testPrependText: Could not initialize class org.jsoup.nodes.Entities$EscapeModeorg.jsoup.nodes.ElementTest.before: Could not initialize class org.jsoup.nodes.Entities$EscapeModeorg.jsoup.nodes.ElementTest.testWrapWithRemainder: Could not initialize class org.jsoup.nodes.Entities$EscapeModeorg.jsoup.nodes.ElementTest.testGetElementById: Could not initialize class org.jsoup.nodes.Entities$EscapeModeorg.jsoup.nodes.ElementTest.parentlessToString: Could not initialize class org.jsoup.nodes.Entities$EscapeModeorg.jsoup.nodes.ElementTest.after: Could not initialize class org.jsoup.nodes.Entities$EscapeModeorg.jsoup.nodes.ElementTest.testTagNameSet: Could not initialize class org.jsoup.nodes.Entities$EscapeModeorg.jsoup.nodes.ElementTest.testFormatHtml: Could not initialize class org.jsoup.nodes.Entities$EscapeModeorg.jsoup.nodes.ElementTest.testGetElementsWithAttributeValue: Could not initialize class org.jsoup.nodes.Entities$EscapeModeorg.jsoup.nodes.ElementTest.testPrependNewHtml: Could not initialize class org.jsoup.nodes.Entities$EscapeModeorg.jsoup.nodes.ElementTest.testRemoveAfterIndex: Could not initialize class org.jsoup.nodes.Entities$EscapeModeorg.jsoup.nodes.ElementTest.testGetSiblings: Could not initialize class org.jsoup.nodes.Entities$EscapeModeorg.jsoup.nodes.ElementTest.testPrependRowToTable: Could not initialize class org.jsoup.nodes.Entities$EscapeModeorg.jsoup.nodes.ElementTest.testElementSiblingIndex: Could not initialize class org.jsoup.nodes.Entities$EscapeModeorg.jsoup.nodes.ElementTest.moveByAppend: Could not initialize class org.jsoup.nodes.Entities$EscapeModeorg.jsoup.nodes.ElementTest.getElementsByTagName: Could not initialize class org.jsoup.nodes.Entities$EscapeModeorg.jsoup.nodes.ElementTest.testClone: Could not initialize class org.jsoup.nodes.Entities$EscapeModeorg.jsoup.nodes.ElementTest.testShadowElementsAreUpdated: Could not initialize class org.jsoup.nodes.Entities$EscapeModeorg.jsoup.nodes.ElementTest.testGetElementsWithAttributeDash: Could not initialize class org.jsoup.nodes.Entities$EscapeModeorg.jsoup.nodes.ElementTest.insertChildrenArgumentValidation: Could not initialize class org.jsoup.nodes.Entities$EscapeModeorg.jsoup.nodes.ElementTest.testPrependElement: Could not initialize class org.jsoup.nodes.Entities$EscapeModeorg.jsoup.nodes.ElementTest.testGetElementsWithAttribute: Could not initialize class org.jsoup.nodes.Entities$EscapeModeorg.jsoup.nodes.ElementTest.testNextElementSiblingAfterClone: Could not initialize class org.jsoup.nodes.Entities$EscapeModeorg.jsoup.nodes.ElementTest.testWrap: Could not initialize class org.jsoup.nodes.Entities$EscapeModeorg.jsoup.nodes.ElementTest.testIs: Could not initialize class org.jsoup.nodes.Entities$EscapeModeorg.jsoup.nodes.ElementTest.testAppendRowToTable: Could not initialize class org.jsoup.nodes.Entities$EscapeModeorg.jsoup.nodes.ElementTest.testClassUpdates: Could not initialize class org.jsoup.nodes.Entities$EscapeModeorg.jsoup.nodes.ElementTest.testRelativeUrls: Could not initialize class org.jsoup.nodes.Entities$EscapeModeorg.jsoup.nodes.ElementTest.testSetText: Could not initialize class org.jsoup.nodes.Entities$EscapeModeorg.jsoup.nodes.ElementTest.testHasText: Could not initialize class org.jsoup.nodes.Entities$EscapeModeorg.jsoup.nodes.ElementTest.testChildrenElements: Could not initialize class org.jsoup.nodes.Entities$EscapeModeorg.jsoup.nodes.ElementTest.testSetHtml: Could not initialize class org.jsoup.nodes.Entities$EscapeModeorg.jsoup.nodes.ElementTest.testNoIndentOnScriptAndStyle: Could not initialize class org.jsoup.nodes.Entities$EscapeModeorg.jsoup.nodes.ElementTest.testGetDataNodes: Could not initialize class org.jsoup.nodes.Entities$EscapeModeorg.jsoup.nodes.ElementTest.elementIsNotASiblingOfItself: Could not initialize class org.jsoup.nodes.Entities$EscapeModeorg.jsoup.nodes.ElementTest.testClassDomMethods: Could not initialize class org.jsoup.nodes.Entities$EscapeModeorg.jsoup.nodes.ElementTest.testEmptyElementFormatHtml: Could not initialize class org.jsoup.nodes.Entities$EscapeModeorg.jsoup.nodes.ElementTest.testInnerHtml: Could not initialize class org.jsoup.nodes.Entities$EscapeModeorg.jsoup.nodes.ElementTest.testAddNewElement: Could not initialize class org.jsoup.nodes.Entities$EscapeModeorg.jsoup.nodes.ElementTest.testNormalisesText: Could not initialize class org.jsoup.nodes.Entities$EscapeModeorg.jsoup.nodes.ElementTest.getNamespacedElementsByTag: Could not initialize class org.jsoup.nodes.Entities$EscapeModeorg.jsoup.nodes.ElementTest.testSetIndent: Could not initialize class org.jsoup.nodes.Entities$EscapeModeorg.jsoup.nodes.ElementTest.testChainedRemoveAttributes: Could not initialize class org.jsoup.nodes.Entities$EscapeModeorg.jsoup.nodes.ElementTest.testAppendTo: Could not initialize class org.jsoup.nodes.Entities$EscapeModeorg.jsoup.nodes.ElementTest.testNamespacedElements: Could not initialize class org.jsoup.nodes.Entities$EscapeModeorg.jsoup.nodes.ElementTest.testGetSiblingsWithDuplicateContent: Could not initialize class org.jsoup.nodes.Entities$EscapeModeorg.jsoup.nodes.ElementTest.testGetTextNodes: Could not initialize class org.jsoup.nodes.Entities$EscapeModeorg.jsoup.nodes.ElementTest.testOuterHtml: Could not initialize class org.jsoup.nodes.Entities$EscapeModeorg.jsoup.nodes.ElementTest.testContainerOutput: Could not initialize class org.jsoup.nodes.Entities$EscapeModeorg.jsoup.nodes.ElementTest.testGetChildText: Could not initialize class org.jsoup.nodes.Entities$EscapeModeorg.jsoup.nodes.ElementTest.dataset: Could not initialize class org.jsoup.nodes.Entities$EscapeModeorg.jsoup.nodes.ElementTest.testCssPath: Could not initialize class org.jsoup.nodes.Entities$EscapeModeorg.jsoup.nodes.ElementTest.testHashAndEqualsAndValue: Could not initialize class org.jsoup.nodes.Entities$EscapeModeorg.jsoup.nodes.ElementTest.testNormalizesNbspInText: Could not initialize class org.jsoup.nodes.Entities$EscapeModeorg.jsoup.nodes.ElementTest.testClassNames: Could not initialize class org.jsoup.nodes.Entities$EscapeModeorg.jsoup.nodes.ElementTest.testManipulateTextNodes: Could not initialize class org.jsoup.nodes.Entities$EscapeModeorg.jsoup.nodes.ElementTest.testThrowsOnPrependNullText: Unexpected exception, expected<java.lang.IllegalArgumentException> but was<java.lang.NoClassDefFoundError>org.jsoup.nodes.ElementTest.testClonesClassnames: Could not initialize class org.jsoup.nodes.Entities$EscapeModeorg.jsoup.nodes.ElementTest.testHtmlContainsOuter: Could not initialize class org.jsoup.nodes.Entities$EscapeModeorg.jsoup.nodes.ElementTest.testGetText: Could not initialize class org.jsoup.nodes.Entities$EscapeModeorg.jsoup.nodes.ElementTest.testNotPretty: Could not initialize class org.jsoup.nodes.Entities$EscapeModeorg.jsoup.nodes.ElementTest.testRemoveBeforeIndex: Could not initialize class org.jsoup.nodes.Entities$EscapeModeorg.jsoup.nodes.ElementTest.testGetElementsWithClass: Could not initialize class org.jsoup.nodes.Entities$EscapeModeorg.jsoup.nodes.ElementTest.insertChildrenAsCopy: Could not initialize class org.jsoup.nodes.Entities$EscapeModeorg.jsoup.nodes.ElementTest.testGetParents: Could not initialize class org.jsoup.nodes.Entities$EscapeModeorg.jsoup.nodes.ElementTest.testSetHtmlTitle: Could not initialize class org.jsoup.nodes.Entities$EscapeModeorg.jsoup.nodes.ElementTest.testFormatOutline: null
+2021-03-28 13:36:42 [main] [INFO]  KGenProgMain - GA started
+2021-03-28 13:36:42 [main] [INFO]  KGenProgMain - entered the era of 1st generation.
+2021-03-28 13:36:47 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 5 seconds
+Variants: generated 10, build-succeeded 4, build-failed 6, syntax-invalid 0, redundant 0
+Fitness: max 0.048(2), min 0.024(1), ave 0.039
+----------------------------------------------------------------
+
+2021-03-28 13:36:47 [main] [INFO]  KGenProgMain - entered the era of 2nd generation.
+2021-03-28 13:36:49 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 7 seconds
+Variants: generated 10, build-succeeded 1, build-failed 7, syntax-invalid 2, redundant 0
+Fitness: max 0.048(1), min 0.048(1), ave 0.048
+----------------------------------------------------------------
+
+2021-03-28 13:36:49 [main] [INFO]  KGenProgMain - entered the era of 3rd generation.
+2021-03-28 13:36:53 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 10 seconds
+Variants: generated 10, build-succeeded 3, build-failed 5, syntax-invalid 1, redundant 1
+Fitness: max 0.048(2), min 0.036(1), ave 0.044
+----------------------------------------------------------------
+
+2021-03-28 13:36:53 [main] [INFO]  KGenProgMain - entered the era of 4th generation.
+2021-03-28 13:37:00 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 17 seconds
+Variants: generated 20, build-succeeded 8, build-failed 5, syntax-invalid 0, redundant 7
+Fitness: max 0.048(8), min 0.048(8), ave 0.048
+----------------------------------------------------------------
+
+2021-03-28 13:37:00 [main] [INFO]  KGenProgMain - entered the era of 5th generation.
+2021-03-28 13:37:05 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 23 seconds
+Variants: generated 20, build-succeeded 6, build-failed 5, syntax-invalid 1, redundant 8
+Fitness: max 0.048(5), min 0.024(1), ave 0.044
+----------------------------------------------------------------
+
+2021-03-28 13:37:05 [main] [INFO]  KGenProgMain - entered the era of 6th generation.
+2021-03-28 13:37:13 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 31 seconds
+Variants: generated 20, build-succeeded 10, build-failed 5, syntax-invalid 0, redundant 5
+Fitness: max 0.048(9), min 0.036(1), ave 0.046
+----------------------------------------------------------------
+
+2021-03-28 13:37:13 [main] [INFO]  KGenProgMain - entered the era of 7th generation.
+2021-03-28 13:37:22 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 40 seconds
+Variants: generated 20, build-succeeded 12, build-failed 3, syntax-invalid 1, redundant 4
+Fitness: max 0.048(12), min 0.048(12), ave 0.048
+----------------------------------------------------------------
+
+2021-03-28 13:37:22 [main] [INFO]  KGenProgMain - entered the era of 8th generation.
+2021-03-28 13:37:30 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 48 seconds
+Variants: generated 20, build-succeeded 11, build-failed 3, syntax-invalid 3, redundant 3
+Fitness: max 0.048(9), min 0.024(1), ave 0.044
+----------------------------------------------------------------
+
+2021-03-28 13:37:30 [main] [INFO]  KGenProgMain - entered the era of 9th generation.
+2021-03-28 13:37:37 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 55 seconds
+Variants: generated 20, build-succeeded 10, build-failed 5, syntax-invalid 4, redundant 1
+Fitness: max 0.048(10), min 0.048(10), ave 0.048
+----------------------------------------------------------------
+
+2021-03-28 13:37:37 [main] [INFO]  KGenProgMain - entered the era of 10th generation.
+2021-03-28 13:37:42 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 1 minutes 0 seconds
+Variants: generated 20, build-succeeded 7, build-failed 7, syntax-invalid 4, redundant 2
+Fitness: max 0.048(7), min 0.048(7), ave 0.048
+----------------------------------------------------------------
+
+2021-03-28 13:37:42 [main] [INFO]  KGenProgMain - GA stopped
+2021-03-28 13:37:42 [main] [INFO]  KGenProgMain - Summary
+Reached generation = 10
+Generated variants = 170
+Syntax valid variants = 154
+Build succeeded variants = 72
+Time elapsed = 1 minutes 0 seconds
+Exit status = FAILURE (maximum generation)

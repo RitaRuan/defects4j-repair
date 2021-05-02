@@ -1,0 +1,12 @@
+--- org.jsoup.parser.TreeBuilderState
++++ org.jsoup.parser.TreeBuilderState
+@@ -248,8 +248,7 @@
+                 case Character: {
+                     Token.Character c = t.asCharacter();
+                     if (c.getData().equals(nullString)) {
+-                        // todo confirm that check
+-                        tb.error(this);
++                        tb.insert(c);
+                         return false;
+                     } else if (isWhitespace(c)) {
+                         tb.reconstructFormattingElements();

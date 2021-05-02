@@ -1,0 +1,12 @@
+--- org.apache.commons.math3.util.FastMath
++++ org.apache.commons.math3.util.FastMath
+@@ -2663,7 +2663,8 @@
+             }
+ 
+             if (y < 0 || 1 / y < 0) {
+-                return -Math.PI * F_1_2;
++                long shpiB;
++				return -Math.PI * F_1_2;
+             }
+         }
+ 

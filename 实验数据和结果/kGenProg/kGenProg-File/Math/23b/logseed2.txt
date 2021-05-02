@@ -1,0 +1,125 @@
+RUNNING THE BUG: Math 23, WITH THE SEED: 2
+2021-03-29 16:53:38 [main] [INFO]  KGenProgMain - 
+==================== kGenProg Configuration ====================
+configPath = kgenprog.toml
+rootDir = . (set by command line)
+productPaths = [src/main/java] (set by command line)
+testPaths = [src/test/java] (set by command line)
+classPaths = [/home/ubuntu/rtx/defects4j/framework/projects/lib/junit-4.11.jar, /home/ubuntu/rtx/defects4j/framework/projects/Math/lib/commons-discovery-0.5.jar] (set by command line)
+executionTests = [org.apache.commons.math3.optimization.univariate.BrentOptimizerTest] (set by command line)
+outDir = /home/ubuntu/rtx/d4j/Math/23b/kGenProg-FILE/patch-seed2 (set by command line)
+logLevel = INFO
+mutationGeneratingCount = 10
+crossoverGeneratingCount = 10
+headcount = 10
+maxGeneration = 10
+timeLimit = PT1M
+testTimeLimit = PT10S
+requiredSolutionsCount = 1
+randomSeed = 2 (set by command line)
+scope = FILE (set by command line)
+faultLocalization = Ochiai
+mutationType = Simple
+crossoverType = Random
+firstVariantSelectionStrategy = Random
+secondVariantSelectionStrategy = Random
+isPatchOutput = true
+isHistoryRecord = false
+currentDirectory = /home/ubuntu/rtx/d4j/Math/23b
+version = 1.8.0
+================================================================
+2021-03-29 16:54:00 [main] [INFO]  KGenProgMain - initial failed tests (1/10)
+org.apache.commons.math3.optimization.univariate.BrentOptimizerTest.testKeepInitIfBest: Best point not reported
+2021-03-29 16:54:01 [main] [INFO]  KGenProgMain - GA started
+2021-03-29 16:54:01 [main] [INFO]  KGenProgMain - entered the era of 1st generation.
+2021-03-29 16:54:05 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 3 seconds
+Variants: generated 5, build-succeeded 2, build-failed 3, syntax-invalid 0, redundant 0
+Fitness: max 1(1), min 0.2(1), ave 0.6
+----------------------------------------------------------------
+
+2021-03-29 16:54:05 [main] [INFO]  KGenProgMain - GA stopped
+2021-03-29 16:54:05 [main] [INFO]  PatchLogExporter - patch (v5)
+--- org.apache.commons.math3.optimization.fitting.WeightedObservedPoint
++++ org.apache.commons.math3.optimization.fitting.WeightedObservedPoint
+@@ -72,4 +72,3 @@
+     }
+ 
+ }
+-
+2021-03-29 16:54:05 [main] [INFO]  PatchLogExporter - patch (v5)
+--- org.apache.commons.math3.ode.JacobianMatrices
++++ org.apache.commons.math3.ode.JacobianMatrices
+@@ -494,4 +494,3 @@
+     }
+ 
+ }
+-
+2021-03-29 16:54:05 [main] [INFO]  PatchLogExporter - patch (v5)
+--- org.apache.commons.math3.special.Erf
++++ org.apache.commons.math3.special.Erf
+@@ -127,4 +127,3 @@
+                 erf(x2) - erf(x1);
+     }
+ }
+-
+2021-03-29 16:54:05 [main] [INFO]  PatchLogExporter - patch (v5)
+--- org.apache.commons.math3.distribution.ZipfDistribution
++++ org.apache.commons.math3.distribution.ZipfDistribution
+@@ -243,4 +243,3 @@
+         return true;
+     }
+ }
+-
+2021-03-29 16:54:05 [main] [INFO]  PatchLogExporter - patch (v5)
+--- org.apache.commons.math3.stat.correlation.StorelessBivariateCovariance
++++ org.apache.commons.math3.stat.correlation.StorelessBivariateCovariance
+@@ -118,4 +118,3 @@
+         }
+     }
+ }
+-
+2021-03-29 16:54:05 [main] [INFO]  PatchLogExporter - patch (v5)
+--- org.apache.commons.math3.stat.descriptive.AbstractUnivariateStatistic
++++ org.apache.commons.math3.stat.descriptive.AbstractUnivariateStatistic
+@@ -286,4 +286,3 @@
+         return test(values, begin, length, allowEmpty);
+     }
+ }
+-
+2021-03-29 16:54:05 [main] [INFO]  PatchLogExporter - patch (v5)
+--- org.apache.commons.math3.analysis.FunctionUtils
++++ org.apache.commons.math3.analysis.FunctionUtils
+@@ -143,7 +143,7 @@
+             public double value(double x) {
+                 double r = f[0].value(x);
+                 for (int i = 1; i < f.length; i++) {
+-                    r += f[i].value(x);
++                    r = f[i].value(r);
+                 }
+                 return r;
+             }
+2021-03-29 16:54:05 [main] [INFO]  PatchLogExporter - patch (v5)
+--- org.apache.commons.math3.distribution.AbstractRealDistribution
++++ org.apache.commons.math3.distribution.AbstractRealDistribution
+@@ -280,4 +280,3 @@
+         return 0d;
+     }
+ }
+-
+2021-03-29 16:54:05 [main] [INFO]  PatchLogExporter - patch (v5)
+--- org.apache.commons.math3.distribution.WeibullDistribution
++++ org.apache.commons.math3.distribution.WeibullDistribution
+@@ -304,4 +304,3 @@
+         return true;
+     }
+ }
+-
+2021-03-29 16:54:05 [main] [INFO]  KGenProgMain - Summary
+Reached generation = 1
+Generated variants = 5
+Syntax valid variants = 5
+Build succeeded variants = 2
+Time elapsed = 3 seconds
+Exit status = SUCCESS

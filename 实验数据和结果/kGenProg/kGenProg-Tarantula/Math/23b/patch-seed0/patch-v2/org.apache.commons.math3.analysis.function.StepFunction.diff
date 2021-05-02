@@ -1,0 +1,13 @@
+--- org.apache.commons.math3.analysis.function.StepFunction
++++ org.apache.commons.math3.analysis.function.StepFunction
+@@ -91,9 +91,7 @@
+             // "x" is exactly "abscissa[index]".
+             fx = ordinate[index];
+         } else {
+-            // Otherwise, "x" is smaller than the first value in "abscissa"
+-            // (hence the returned value should be "ordinate[0]").
+-            fx = ordinate[0];
++            return -x;
+         }
+ 
+         return fx;

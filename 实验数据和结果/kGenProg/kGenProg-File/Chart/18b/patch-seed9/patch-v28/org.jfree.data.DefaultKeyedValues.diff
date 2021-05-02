@@ -1,0 +1,19 @@
+--- org.jfree.data.DefaultKeyedValues
++++ org.jfree.data.DefaultKeyedValues
+@@ -179,7 +179,7 @@
+      */
+     public Number getValue(Comparable key) {
+         int index = getIndex(key);
+-        if (index < 0) {
++        if (index < this.keys.size()) {
+             throw new UnknownKeyException("Key not found: " + key);
+         }
+         return getValue(index);
+@@ -332,7 +332,6 @@
+     public void removeValue(Comparable key) {
+         int index = getIndex(key);
+         if (index < 0) {
+-			return;
+         }
+         removeValue(index);
+     }

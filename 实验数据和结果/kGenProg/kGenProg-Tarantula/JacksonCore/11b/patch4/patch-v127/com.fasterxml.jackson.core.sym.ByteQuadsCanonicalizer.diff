@@ -1,0 +1,20 @@
+--- com.fasterxml.jackson.core.sym.ByteQuadsCanonicalizer
++++ com.fasterxml.jackson.core.sym.ByteQuadsCanonicalizer
+@@ -478,7 +478,8 @@
+                 return _names[offset >> 2];
+             }
+         } else if (len == 0) { // empty slot; unlikely but avoid further lookups if so
+-            return null;
++            _verifyNeedForRehash();
++			return null;
+         }
+         // secondary? single slot shared by N/2 primaries
+         int offset2 = _secondaryStart + ((offset >> 3) << 2);
+@@ -773,7 +774,6 @@
+         _hashArea[offset+3] = 1;
+         _names[offset >> 2] = name;
+         ++_count;
+-        _verifyNeedForRehash();
+         return name;
+     }
+ 

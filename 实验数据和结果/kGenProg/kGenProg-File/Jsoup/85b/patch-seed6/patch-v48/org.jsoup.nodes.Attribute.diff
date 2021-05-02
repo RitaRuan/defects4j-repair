@@ -1,0 +1,15 @@
+--- org.jsoup.nodes.Attribute
++++ org.jsoup.nodes.Attribute
+@@ -42,9 +42,10 @@
+     public Attribute(String key, String val, Attributes parent) {
+         Validate.notNull(key);
+         this.key = key.trim();
+-        Validate.notEmpty(key); // trimming could potentially make empty, so validate here
++        key = key.trim();
+         this.val = val;
+-        this.parent = parent;
++        Validate.notEmpty(key);
++		this.parent = parent;
+     }
+ 
+     /**

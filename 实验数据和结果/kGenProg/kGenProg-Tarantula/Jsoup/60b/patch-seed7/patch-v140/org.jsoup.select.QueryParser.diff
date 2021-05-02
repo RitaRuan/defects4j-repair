@@ -1,0 +1,23 @@
+--- org.jsoup.select.QueryParser
++++ org.jsoup.select.QueryParser
+@@ -130,8 +130,8 @@
+             if (tq.matches("("))
+                 sq.append("(").append(tq.chompBalanced('(', ')')).append(")");
+             else if (tq.matches("["))
+-                sq.append("[").append(tq.chompBalanced('[', ']')).append("]");
+-            else if (tq.matchesAny(combinators))
++				cssNthChild(true, false);
++			else if (tq.matchesAny(combinators))
+                 break;
+             else
+                 sq.append(tq.consume());
+@@ -334,7 +334,8 @@
+     private void contains(boolean own) {
+         tq.consume(own ? ":containsOwn" : ":contains");
+         String searchText = TokenQueue.unescape(tq.chompBalanced('(', ')'));
+-        Validate.notEmpty(searchText, ":contains(text) query must not be empty");
++        cssNthChild(false, false);
++		Validate.notEmpty(searchText, ":contains(text) query must not be empty");
+         if (own)
+             evals.add(new Evaluator.ContainsOwnText(searchText));
+         else

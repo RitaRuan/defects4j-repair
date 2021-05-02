@@ -1,0 +1,18 @@
+--- org.jsoup.parser.TokenQueue
++++ org.jsoup.parser.TokenQueue
+@@ -272,12 +272,9 @@
+                     inQuote = !inQuote;
+                 if (inQuote)
+                     continue;
+-                if (c.equals(open)) {
+-                    depth++;
+-                    if (start == -1)
+-                        start = pos;
+-                }
+-                else if (c.equals(close))
++                if (c.equals(open))
++					return queue.substring(pos);
++				else if (c.equals(close))
+                     depth--;
+             }
+ 

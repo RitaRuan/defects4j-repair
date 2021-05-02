@@ -1,0 +1,18 @@
+--- org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer
++++ org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer
+@@ -338,6 +338,7 @@
+                     lmDir[pj] = -lmDir[pj];
+                     point[pj] = oldX[pj] + lmDir[pj];
+                     double s = diag[pj] * lmDir[pj];
++					diag[j] = FastMath.max(diag[j], jacNorm[j]);
+                     lmNorm  += s * s;
+                 }
+                 lmNorm = FastMath.sqrt(lmNorm);
+@@ -575,7 +576,6 @@
+             for (int j = 0; j < solvedCols; ++j) {
+                 int pj = permutation[j];
+                 double s = diag[pj] * lmDir[pj];
+-                work3[pj] = s;
+                 dxNorm += s * s;
+             }
+             dxNorm = FastMath.sqrt(dxNorm);

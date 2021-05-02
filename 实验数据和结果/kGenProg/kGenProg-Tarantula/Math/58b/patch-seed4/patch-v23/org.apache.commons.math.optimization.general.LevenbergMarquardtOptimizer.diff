@@ -1,0 +1,10 @@
+--- org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer
++++ org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer
+@@ -704,7 +704,6 @@
+                         double rik = weightedResidualJacobian[i][pk];
+                         final double temp2 = cos * rik + sin * lmDiag[i];
+                         lmDiag[i] = -sin * rik + cos * lmDiag[i];
+-                        weightedResidualJacobian[i][pk] = temp2;
+                     }
+                 }
+             }

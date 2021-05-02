@@ -1,0 +1,121 @@
+RUNNING THE BUG: Codec 5, WITH THE SEED: 5
+2021-03-24 12:10:37 [main] [INFO]  KGenProgMain - 
+==================== kGenProg Configuration ====================
+configPath = kgenprog.toml
+rootDir = . (set by command line)
+productPaths = [src/java] (set by command line)
+testPaths = [src/test] (set by command line)
+classPaths = [/home/ubuntu/rtx/d4j/Chart/3b/lib/servlet.jar, /home/ubuntu/rtx/defects4j/framework/projects/lib/junit-4.11.jar] (set by command line)
+executionTests = [org.apache.commons.codec.binary.Base64InputStreamTest] (set by command line)
+outDir = /home/ubuntu/rtx/d4j/Codec/5b/kGenProg-Jaccard/patch-seed5 (set by command line)
+logLevel = INFO
+mutationGeneratingCount = 10
+crossoverGeneratingCount = 10
+headcount = 10
+maxGeneration = 10
+timeLimit = PT1M
+testTimeLimit = PT10S
+requiredSolutionsCount = 1
+randomSeed = 5 (set by command line)
+scope = PACKAGE
+faultLocalization = Tarantula (set by command line)
+mutationType = Simple
+crossoverType = Random
+firstVariantSelectionStrategy = Random
+secondVariantSelectionStrategy = Random
+isPatchOutput = true
+isHistoryRecord = false
+currentDirectory = /home/ubuntu/rtx/d4j/Codec/5b
+version = 1.8.0
+================================================================
+2021-03-24 12:10:43 [main] [INFO]  KGenProgMain - initial failed tests (1/9)
+org.apache.commons.codec.binary.Base64InputStreamTest.testCodec98NPE: null
+2021-03-24 12:10:44 [main] [INFO]  KGenProgMain - GA started
+2021-03-24 12:10:44 [main] [INFO]  KGenProgMain - entered the era of 1st generation.
+2021-03-24 12:10:46 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 2 seconds
+Variants: generated 10, build-succeeded 4, build-failed 5, syntax-invalid 0, redundant 1
+Fitness: max 0.889(1), min 0.667(1), ave 0.778
+----------------------------------------------------------------
+
+2021-03-24 12:10:46 [main] [INFO]  KGenProgMain - entered the era of 2nd generation.
+2021-03-24 12:10:47 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 3 seconds
+Variants: generated 10, build-succeeded 3, build-failed 2, syntax-invalid 2, redundant 3
+Fitness: max 0.667(3), min 0.667(3), ave 0.667
+----------------------------------------------------------------
+
+2021-03-24 12:10:47 [main] [INFO]  KGenProgMain - entered the era of 3rd generation.
+2021-03-24 12:10:49 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 5 seconds
+Variants: generated 20, build-succeeded 6, build-failed 8, syntax-invalid 0, redundant 6
+Fitness: max 0.778(1), min 0.667(5), ave 0.685
+----------------------------------------------------------------
+
+2021-03-24 12:10:49 [main] [INFO]  KGenProgMain - entered the era of 4th generation.
+2021-03-24 12:10:51 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 7 seconds
+Variants: generated 20, build-succeeded 7, build-failed 4, syntax-invalid 2, redundant 7
+Fitness: max 0.778(1), min 0.667(6), ave 0.683
+----------------------------------------------------------------
+
+2021-03-24 12:10:51 [main] [INFO]  KGenProgMain - entered the era of 5th generation.
+2021-03-24 12:10:53 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 9 seconds
+Variants: generated 20, build-succeeded 7, build-failed 4, syntax-invalid 3, redundant 6
+Fitness: max 0.889(1), min 0.667(5), ave 0.714
+----------------------------------------------------------------
+
+2021-03-24 12:10:53 [main] [INFO]  KGenProgMain - entered the era of 6th generation.
+2021-03-24 12:10:54 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 10 seconds
+Variants: generated 20, build-succeeded 3, build-failed 4, syntax-invalid 2, redundant 11
+Fitness: max 0.778(1), min 0.444(1), ave 0.63
+----------------------------------------------------------------
+
+2021-03-24 12:10:54 [main] [INFO]  KGenProgMain - entered the era of 7th generation.
+2021-03-24 12:10:56 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 12 seconds
+Variants: generated 20, build-succeeded 6, build-failed 4, syntax-invalid 3, redundant 7
+Fitness: max 0.889(1), min 0.667(1), ave 0.778
+----------------------------------------------------------------
+
+2021-03-24 12:10:56 [main] [INFO]  KGenProgMain - entered the era of 8th generation.
+2021-03-24 12:10:58 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 14 seconds
+Variants: generated 20, build-succeeded 4, build-failed 5, syntax-invalid 2, redundant 9
+Fitness: max 0.889(2), min 0.667(1), ave 0.806
+----------------------------------------------------------------
+
+2021-03-24 12:10:58 [main] [INFO]  KGenProgMain - entered the era of 9th generation.
+2021-03-24 12:11:01 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 17 seconds
+Variants: generated 20, build-succeeded 8, build-failed 3, syntax-invalid 3, redundant 6
+Fitness: max 0.889(3), min 0.667(4), ave 0.764
+----------------------------------------------------------------
+
+2021-03-24 12:11:01 [main] [INFO]  KGenProgMain - entered the era of 10th generation.
+2021-03-24 12:11:03 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 19 seconds
+Variants: generated 20, build-succeeded 4, build-failed 7, syntax-invalid 3, redundant 6
+Fitness: max 0.889(3), min 0.778(1), ave 0.861
+----------------------------------------------------------------
+
+2021-03-24 12:11:03 [main] [INFO]  KGenProgMain - GA stopped
+2021-03-24 12:11:03 [main] [INFO]  KGenProgMain - Summary
+Reached generation = 10
+Generated variants = 180
+Syntax valid variants = 160
+Build succeeded variants = 52
+Time elapsed = 19 seconds
+Exit status = FAILURE (maximum generation)

@@ -1,0 +1,12 @@
+--- org.jfree.data.DefaultKeyedValues
++++ org.jfree.data.DefaultKeyedValues
+@@ -313,8 +313,7 @@
+      *     the specified range.
+      */
+     public void removeValue(int index) {
+-        this.keys.remove(index);
+-        this.values.remove(index);
++        boolean dataRemoved = false;
+         if (index < this.keys.size()) {
+         rebuildIndex();
+         }

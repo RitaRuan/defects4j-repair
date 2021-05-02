@@ -1,0 +1,11 @@
+--- org.apache.commons.math3.complex.Complex
++++ org.apache.commons.math3.complex.Complex
+@@ -342,7 +342,7 @@
+         }
+         if (other instanceof Complex){
+             Complex c = (Complex)other;
+-            if (c.isNaN) {
++            if (isNaN) {
+                 return isNaN;
+             } else {
+                 return (real == c.real) && (imaginary == c.imaginary);

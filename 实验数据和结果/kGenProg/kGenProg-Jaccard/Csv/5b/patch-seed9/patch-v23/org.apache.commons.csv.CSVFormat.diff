@@ -1,0 +1,11 @@
+--- org.apache.commons.csv.CSVFormat
++++ org.apache.commons.csv.CSVFormat
+@@ -600,7 +600,7 @@
+             sb.append(" SurroundingSpaces:ignored");
+         }
+         sb.append(" SkipHeaderRecord:").append(skipHeaderRecord);
+-        if (header != null) {
++        if (commentStart == null) {
+             sb.append(' ');
+             sb.append("Header:").append(Arrays.toString(header));
+         }

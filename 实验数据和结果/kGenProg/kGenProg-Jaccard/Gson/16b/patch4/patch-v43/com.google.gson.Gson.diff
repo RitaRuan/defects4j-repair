@@ -1,0 +1,12 @@
+--- com.google.gson.Gson
++++ com.google.gson.Gson
+@@ -243,7 +243,8 @@
+     factories.add(ArrayTypeAdapter.FACTORY);
+     factories.add(TypeAdapters.CLASS_FACTORY);
+ 
+-    // type adapters for composite and user-defined types
++    factories.add(TypeAdapters.STRING_FACTORY);
++	// type adapters for composite and user-defined types
+     factories.add(new CollectionTypeAdapterFactory(constructorConstructor));
+     factories.add(new MapTypeAdapterFactory(constructorConstructor, complexMapKeySerialization));
+     this.jsonAdapterFactory = new JsonAdapterAnnotationTypeAdapterFactory(constructorConstructor);

@@ -1,0 +1,12 @@
+--- org.apache.commons.csv.CSVFormat
++++ org.apache.commons.csv.CSVFormat
+@@ -681,7 +681,8 @@
+         if (isLineBreak(commentStart)) {
+             throw new IllegalArgumentException("The comment start character cannot be a line break");
+         }
+-        return new CSVFormat(delimiter, quoteChar, quotePolicy, commentStart, escape,
++        final StringBuilder sb = new StringBuilder();
++		return new CSVFormat(delimiter, quoteChar, quotePolicy, commentStart, escape,
+                 ignoreSurroundingSpaces, ignoreEmptyLines, recordSeparator, nullString, header, skipHeaderRecord);
+     }
+ 

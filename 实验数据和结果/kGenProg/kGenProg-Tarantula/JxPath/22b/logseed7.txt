@@ -1,0 +1,42 @@
+RUNNING THE BUG: JxPath 22, WITH THE SEED: 7
+2021-03-25 19:22:22 [main] [INFO]  KGenProgMain - 
+==================== kGenProg Configuration ====================
+configPath = kgenprog.toml
+rootDir = . (set by command line)
+productPaths = []
+testPaths = []
+classPaths = [/home/ubuntu/rtx/d4j/JxPath/2b/src/java, /home/ubuntu/rtx/d4j/JxPath/2b/target/lib/ant-1.5.jar, /home/ubuntu/rtx/d4j/JxPath/2b/target/lib/ant-optional-1.5.1.jar, /home/ubuntu/rtx/d4j/JxPath/2b/target/lib/ant-optional-1.5.jar, /home/ubuntu/rtx/d4j/JxPath/2b/target/lib/commons-beanutils-1.4.jar, /home/ubuntu/rtx/d4j/JxPath/2b/target/lib/commons-collections-2.0.jar, /home/ubuntu/rtx/d4j/JxPath/2b/target/lib/commons-logging-1.0.4.jar, /home/ubuntu/rtx/d4j/JxPath/2b/target/lib/jdom-1.0.jar, /home/ubuntu/rtx/d4j/JxPath/2b/target/lib/junit-3.8.1.jar, /home/ubuntu/rtx/d4j/JxPath/2b/target/lib/junit-3.8.jar, /home/ubuntu/rtx/d4j/JxPath/2b/target/lib/mockrunner-0.4.1.jar, /home/ubuntu/rtx/d4j/JxPath/2b/target/lib/servletapi-2.2.jar, /home/ubuntu/rtx/d4j/JxPath/2b/target/lib/xerces-1.2.3.jar, /home/ubuntu/rtx/d4j/JxPath/2b/target/lib/xml-apis-2.0.2.jar] (set by command line)
+executionTests = []
+outDir = /home/ubuntu/rtx/d4j/JxPath/22b/kGenProg-Tarantula/patch-seed7 (set by command line)
+logLevel = INFO
+mutationGeneratingCount = 10
+crossoverGeneratingCount = 10
+headcount = 10
+maxGeneration = 10
+timeLimit = PT1M
+testTimeLimit = PT10S
+requiredSolutionsCount = 1
+randomSeed = 7 (set by command line)
+scope = PACKAGE
+faultLocalization = Tarantula (set by command line)
+mutationType = Simple
+crossoverType = Random
+firstVariantSelectionStrategy = Random
+secondVariantSelectionStrategy = Random
+isPatchOutput = true
+isHistoryRecord = false
+currentDirectory = /home/ubuntu/rtx/d4j/JxPath/22b
+version = 1.8.0
+================================================================
+2021-03-25 19:22:23 [main] [INFO]  KGenProgMain - initial failed tests (0/0)
+
+2021-03-25 19:22:23 [main] [ERROR] CUILauncher - candidateList must have at least one element.
+java.lang.IllegalArgumentException: candidateList must have at least one element.
+	at jp.kusumotolab.kgenprog.ga.Roulette.<init>(Roulette.java:33)
+	at jp.kusumotolab.kgenprog.ga.mutation.selection.RouletteSelection.createRoulette(RouletteSelection.java:136)
+	at jp.kusumotolab.kgenprog.ga.mutation.selection.RouletteSelection.setCandidates(RouletteSelection.java:63)
+	at jp.kusumotolab.kgenprog.ga.mutation.selection.RouletteStatementAndConditionSelection.setCandidates(RouletteStatementAndConditionSelection.java:36)
+	at jp.kusumotolab.kgenprog.ga.mutation.Mutation.setInitialCandidates(Mutation.java:62)
+	at jp.kusumotolab.kgenprog.KGenProgMain.run(KGenProgMain.java:109)
+	at jp.kusumotolab.kgenprog.CUILauncher.launch(CUILauncher.java:70)
+	at jp.kusumotolab.kgenprog.CUILauncher.main(CUILauncher.java:32)

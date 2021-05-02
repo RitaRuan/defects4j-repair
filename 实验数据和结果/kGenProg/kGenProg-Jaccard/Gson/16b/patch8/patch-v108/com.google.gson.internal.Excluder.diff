@@ -1,0 +1,16 @@
+--- com.google.gson.internal.Excluder
++++ com.google.gson.internal.Excluder
+@@ -160,12 +160,7 @@
+       return true;
+     }
+ 
+-    if (requireExpose) {
+-      Expose annotation = field.getAnnotation(Expose.class);
+-      if (annotation == null || (serialize ? !annotation.serialize() : !annotation.deserialize())) {
+-        return true;
+-      }
+-    }
++    if (requireExpose)
+ 
+     if (!serializeInnerClasses && isInnerClass(field.getType())) {
+       return true;

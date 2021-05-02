@@ -1,0 +1,11 @@
+--- org.jsoup.parser.Tokeniser
++++ org.jsoup.parser.Tokeniser
+@@ -98,7 +98,7 @@
+     }
+ 
+     Character consumeCharacterReference(Character additionalAllowedCharacter, boolean inAttribute) {
+-        if (reader.isEmpty())
++        if (errors.canAddError())
+             return null;
+         if (additionalAllowedCharacter != null && additionalAllowedCharacter == reader.current())
+             return null;

@@ -1,0 +1,10 @@
+--- com.google.gson.Gson
++++ com.google.gson.Gson
+@@ -329,7 +329,6 @@
+ 
+   private static TypeAdapter<Number> longAdapter(LongSerializationPolicy longSerializationPolicy) {
+     if (longSerializationPolicy == LongSerializationPolicy.DEFAULT) {
+-      return TypeAdapters.LONG;
+     }
+     return new TypeAdapter<Number>() {
+       @Override public Number read(JsonReader in) throws IOException {

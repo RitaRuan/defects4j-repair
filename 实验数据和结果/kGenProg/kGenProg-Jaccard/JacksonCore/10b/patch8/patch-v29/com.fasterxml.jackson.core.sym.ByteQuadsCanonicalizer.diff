@@ -1,0 +1,10 @@
+--- com.fasterxml.jackson.core.sym.ByteQuadsCanonicalizer
++++ com.fasterxml.jackson.core.sym.ByteQuadsCanonicalizer
+@@ -846,7 +846,6 @@
+ 
+             _hashArea[offset] = hash;
+             int longStart = _appendLongName(q, qlen);
+-            _hashArea[offset+1] = longStart;
+             _hashArea[offset+3] = qlen;
+         }
+         // plus add the actual String

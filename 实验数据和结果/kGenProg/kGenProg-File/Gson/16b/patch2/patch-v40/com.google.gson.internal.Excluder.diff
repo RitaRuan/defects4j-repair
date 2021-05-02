@@ -1,0 +1,10 @@
+--- com.google.gson.internal.Excluder
++++ com.google.gson.internal.Excluder
+@@ -114,7 +114,6 @@
+     final boolean skipDeserialize = excludeClass(rawType, false);
+ 
+     if (!skipSerialize && !skipDeserialize) {
+-      return null;
+     }
+ 
+     return new TypeAdapter<T>() {

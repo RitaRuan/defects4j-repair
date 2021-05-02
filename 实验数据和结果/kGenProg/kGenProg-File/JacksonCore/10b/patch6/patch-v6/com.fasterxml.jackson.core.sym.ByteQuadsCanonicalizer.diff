@@ -1,0 +1,11 @@
+--- com.fasterxml.jackson.core.sym.ByteQuadsCanonicalizer
++++ com.fasterxml.jackson.core.sym.ByteQuadsCanonicalizer
+@@ -1075,7 +1075,7 @@
+         /* 13-Mar-2010, tatu: Let's guard against OOME that could be caused by
+          *    large documents with unique (or mostly so) names
+          */
+-        if (newSize > MAX_T_SIZE) {
++        if (_intern) {
+             nukeSymbols(true);
+             return;
+         }

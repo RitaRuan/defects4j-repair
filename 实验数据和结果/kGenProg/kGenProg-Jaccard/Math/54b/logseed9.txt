@@ -1,0 +1,50 @@
+RUNNING THE BUG: Math 54, WITH THE SEED: 9
+2021-03-22 16:00:39 [main] [INFO]  KGenProgMain - 
+==================== kGenProg Configuration ====================
+configPath = kgenprog.toml
+rootDir = . (set by command line)
+productPaths = [src/main/java] (set by command line)
+testPaths = [src/test/java] (set by command line)
+classPaths = [/home/ubuntu/rtx/defects4j/framework/projects/lib/junit-4.11.jar, /home/ubuntu/rtx/defects4j/framework/projects/Lang/lib/easymock.jar, /home/ubuntu/rtx/defects4j/framework/projects/Lang/lib/commons-io.jar, /home/ubuntu/rtx/defects4j/framework/projects/Lang/lib/cglib.jar, /home/ubuntu/rtx/defects4j/framework/projects/Lang/lib/asm.jar, /home/ubuntu/rtx/defects4j/framework/projects/lib/junit-4.11.jar, /home/ubuntu/rtx/defects4j/framework/projects/Lang/lib/cglib.jar, /home/ubuntu/rtx/defects4j/framework/projects/Lang/lib/asm.jar, /home/ubuntu/rtx/defects4j/framework/projects/Lang/lib/easymock.jar, /home/ubuntu/rtx/defects4j/framework/projects/Lang/lib/commons-io.jar] (set by command line)
+executionTests = [org.apache.commons.math.dfp.DfpTest] (set by command line)
+outDir = /home/ubuntu/rtx/d4j/Math/54b/kGenProg-Jaccard/patch-seed9 (set by command line)
+logLevel = INFO
+mutationGeneratingCount = 10
+crossoverGeneratingCount = 10
+headcount = 10
+maxGeneration = 10
+timeLimit = PT1M
+testTimeLimit = PT10S
+requiredSolutionsCount = 1
+randomSeed = 9 (set by command line)
+scope = PACKAGE
+faultLocalization = Jaccard (set by command line)
+mutationType = Simple
+crossoverType = Random
+firstVariantSelectionStrategy = Random
+secondVariantSelectionStrategy = Random
+isPatchOutput = true
+isHistoryRecord = false
+currentDirectory = /home/ubuntu/rtx/d4j/Math/54b
+version = 1.8.0
+================================================================
+2021-03-22 16:00:58 [main] [INFO]  KGenProgMain - initial failed tests (1/23)
+org.apache.commons.math.dfp.DfpTest.testIssue567: expected:<0.0> but was:<-Infinity>
+2021-03-22 16:00:59 [main] [INFO]  KGenProgMain - GA started
+2021-03-22 16:00:59 [main] [INFO]  KGenProgMain - entered the era of 1st generation.
+2021-03-22 16:01:08 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 8 seconds
+Variants: generated 10, build-succeeded 4, build-failed 6, syntax-invalid 0, redundant 0
+Fitness: max 0.957(4), min 0.957(4), ave 0.957
+----------------------------------------------------------------
+
+2021-03-22 16:01:08 [main] [INFO]  KGenProgMain - entered the era of 2nd generation.
+2021-03-22 16:01:17 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 17 seconds
+Variants: generated 10, build-succeeded 3, build-failed 7, syntax-invalid 0, redundant 0
+Fitness: max 0.957(1), min 0(1), ave 0.377
+----------------------------------------------------------------
+
+2021-03-22 16:01:17 [main] [INFO]  KGenProgMain - entered the era of 3rd generation.

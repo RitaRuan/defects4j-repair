@@ -1,0 +1,10 @@
+--- org.apache.commons.math.util.ContinuedFraction
++++ org.apache.commons.math.util.ContinuedFraction
+@@ -133,7 +133,6 @@
+         int n = 0;
+         double relativeError = Double.MAX_VALUE;
+         while (n < maxIterations && relativeError > epsilon) {
+-            ++n;
+             double a = getA(n, x);
+             double b = getB(n, x);
+             double p2 = a * p1 + b * p0;

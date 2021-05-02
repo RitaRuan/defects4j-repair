@@ -1,0 +1,121 @@
+RUNNING THE BUG: Jsoup 4, WITH THE SEED: 4
+2021-03-25 00:37:59 [main] [INFO]  KGenProgMain - 
+==================== kGenProg Configuration ====================
+configPath = kgenprog.toml
+rootDir = . (set by command line)
+productPaths = [src/main/java] (set by command line)
+testPaths = [src/test/java] (set by command line)
+classPaths = [/home/ubuntu/rtx/defects4j/framework/projects/Jsoup/lib/junit/junit/4.5/junit-4.5.jar, /home/ubuntu/rtx/defects4j/framework/projects/Jsoup/lib/commons-lang/commons-lang/2.4/commons-lang-2.4.jar, /home/ubuntu/rtx/defects4j/framework/projects/lib/junit-4.11.jar, /home/ubuntu/rtx/defects4j/framework/projects/Jsoup/lib/com/google/code/gson/gson/2.7/gson-2.7.jar, /home/ubuntu/rtx/defects4j/framework/projects/Jsoup/lib/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar, /home/ubuntu/rtx/defects4j/framework/projects/Jsoup/lib/junit/junit/4.12/junit-4.12.jar, /home/ubuntu/rtx/defects4j/framework/projects/Jsoup/lib/lib/com/google/code/gson/gson/2.7/gson-2.7.jar, /home/ubuntu/rtx/defects4j/framework/projects/Jsoup/lib/lib/commons-lang/commons-lang/2.4/commons-lang-2.4.jar, /home/ubuntu/rtx/defects4j/framework/projects/Jsoup/lib/lib/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar, /home/ubuntu/rtx/defects4j/framework/projects/Jsoup/lib/lib/junit/junit/4.12/junit-4.12.jar, /home/ubuntu/rtx/defects4j/framework/projects/Jsoup/lib/lib/junit/junit/4.5/junit-4.5.jar, /home/ubuntu/rtx/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-http/9.2.22.v20170606/jetty-http-9.2.22.v20170606.jar, /home/ubuntu/rtx/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-http/9.2.26.v20180806/jetty-http-9.2.26.v20180806.jar, /home/ubuntu/rtx/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-http/9.2.28.v20190418/jetty-http-9.2.28.v20190418.jar, /home/ubuntu/rtx/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-io/9.2.22.v20170606/jetty-io-9.2.22.v20170606.jar, /home/ubuntu/rtx/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-io/9.2.26.v20180806/jetty-io-9.2.26.v20180806.jar, /home/ubuntu/rtx/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-io/9.2.28.v20190418/jetty-io-9.2.28.v20190418.jar, /home/ubuntu/rtx/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-security/9.2.22.v20170606/jetty-security-9.2.22.v20170606.jar, /home/ubuntu/rtx/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-security/9.2.26.v20180806/jetty-security-9.2.26.v20180806.jar, /home/ubuntu/rtx/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-security/9.2.28.v20190418/jetty-security-9.2.28.v20190418.jar, /home/ubuntu/rtx/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-server/9.2.22.v20170606/jetty-server-9.2.22.v20170606.jar, /home/ubuntu/rtx/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-server/9.2.26.v20180806/jetty-server-9.2.26.v20180806.jar, /home/ubuntu/rtx/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-server/9.2.28.v20190418/jetty-server-9.2.28.v20190418.jar, /home/ubuntu/rtx/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-servlet/9.2.22.v20170606/jetty-servlet-9.2.22.v20170606.jar, /home/ubuntu/rtx/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-servlet/9.2.26.v20180806/jetty-servlet-9.2.26.v20180806.jar, /home/ubuntu/rtx/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-servlet/9.2.28.v20190418/jetty-servlet-9.2.28.v20190418.jar, /home/ubuntu/rtx/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-util/9.2.22.v20170606/jetty-util-9.2.22.v20170606.jar, /home/ubuntu/rtx/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-util/9.2.26.v20180806/jetty-util-9.2.26.v20180806.jar, /home/ubuntu/rtx/defects4j/framework/projects/Jsoup/lib/lib/org/eclipse/jetty/jetty-util/9.2.28.v20190418/jetty-util-9.2.28.v20190418.jar, /home/ubuntu/rtx/defects4j/framework/projects/Jsoup/lib/lib/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar, /home/ubuntu/rtx/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-http/9.2.22.v20170606/jetty-http-9.2.22.v20170606.jar, /home/ubuntu/rtx/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-http/9.2.26.v20180806/jetty-http-9.2.26.v20180806.jar, /home/ubuntu/rtx/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-http/9.2.28.v20190418/jetty-http-9.2.28.v20190418.jar, /home/ubuntu/rtx/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-io/9.2.22.v20170606/jetty-io-9.2.22.v20170606.jar, /home/ubuntu/rtx/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-io/9.2.26.v20180806/jetty-io-9.2.26.v20180806.jar, /home/ubuntu/rtx/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-io/9.2.28.v20190418/jetty-io-9.2.28.v20190418.jar, /home/ubuntu/rtx/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-security/9.2.22.v20170606/jetty-security-9.2.22.v20170606.jar, /home/ubuntu/rtx/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-security/9.2.26.v20180806/jetty-security-9.2.26.v20180806.jar, /home/ubuntu/rtx/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-security/9.2.28.v20190418/jetty-security-9.2.28.v20190418.jar, /home/ubuntu/rtx/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-server/9.2.22.v20170606/jetty-server-9.2.22.v20170606.jar, /home/ubuntu/rtx/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-server/9.2.26.v20180806/jetty-server-9.2.26.v20180806.jar, /home/ubuntu/rtx/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-server/9.2.28.v20190418/jetty-server-9.2.28.v20190418.jar, /home/ubuntu/rtx/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-servlet/9.2.22.v20170606/jetty-servlet-9.2.22.v20170606.jar, /home/ubuntu/rtx/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-servlet/9.2.26.v20180806/jetty-servlet-9.2.26.v20180806.jar, /home/ubuntu/rtx/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-servlet/9.2.28.v20190418/jetty-servlet-9.2.28.v20190418.jar, /home/ubuntu/rtx/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-util/9.2.22.v20170606/jetty-util-9.2.22.v20170606.jar, /home/ubuntu/rtx/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-util/9.2.26.v20180806/jetty-util-9.2.26.v20180806.jar, /home/ubuntu/rtx/defects4j/framework/projects/Jsoup/lib/org/eclipse/jetty/jetty-util/9.2.28.v20190418/jetty-util-9.2.28.v20190418.jar, /home/ubuntu/rtx/defects4j/framework/projects/Jsoup/lib/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar] (set by command line)
+executionTests = [org.jsoup.nodes.EntitiesTest] (set by command line)
+outDir = /home/ubuntu/rtx/d4j/Jsoup/4b/kGenProg-Tarantula/patch-seed4 (set by command line)
+logLevel = INFO
+mutationGeneratingCount = 10
+crossoverGeneratingCount = 10
+headcount = 10
+maxGeneration = 10
+timeLimit = PT1M
+testTimeLimit = PT10S
+requiredSolutionsCount = 1
+randomSeed = 4 (set by command line)
+scope = PACKAGE
+faultLocalization = Tarantula (set by command line)
+mutationType = Simple
+crossoverType = Random
+firstVariantSelectionStrategy = Random
+secondVariantSelectionStrategy = Random
+isPatchOutput = true
+isHistoryRecord = false
+currentDirectory = /home/ubuntu/rtx/d4j/Jsoup/4b
+version = 1.8.0
+================================================================
+2021-03-25 00:38:05 [main] [INFO]  KGenProgMain - initial failed tests (2/3)
+org.jsoup.nodes.EntitiesTest.escape: expected:<...ello &amp;&lt;&gt; &[A]ring; &aring; &#960;...> but was:<...ello &amp;&lt;&gt; &[a]ring; &aring; &#960;...>org.jsoup.nodes.EntitiesTest.caseSensitive: expected:<&[U]uml; &uuml; &amp; &a...> but was:<&[u]uml; &uuml; &amp; &a...>
+2021-03-25 00:38:05 [main] [INFO]  KGenProgMain - GA started
+2021-03-25 00:38:05 [main] [INFO]  KGenProgMain - entered the era of 1st generation.
+2021-03-25 00:38:07 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 2 seconds
+Variants: generated 10, build-succeeded 1, build-failed 6, syntax-invalid 2, redundant 1
+Fitness: max 0(1), min 0(1), ave 0
+----------------------------------------------------------------
+
+2021-03-25 00:38:07 [main] [INFO]  KGenProgMain - entered the era of 2nd generation.
+2021-03-25 00:38:09 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 4 seconds
+Variants: generated 10, build-succeeded 1, build-failed 9, syntax-invalid 0, redundant 0
+Fitness: max 0.333(1), min 0.333(1), ave 0.333
+----------------------------------------------------------------
+
+2021-03-25 00:38:09 [main] [INFO]  KGenProgMain - entered the era of 3rd generation.
+2021-03-25 00:38:10 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 5 seconds
+Variants: generated 10, build-succeeded 0, build-failed 7, syntax-invalid 0, redundant 3
+Fitness: max --, min --, ave NaN
+----------------------------------------------------------------
+
+2021-03-25 00:38:10 [main] [INFO]  KGenProgMain - entered the era of 4th generation.
+2021-03-25 00:38:12 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 7 seconds
+Variants: generated 10, build-succeeded 3, build-failed 5, syntax-invalid 1, redundant 1
+Fitness: max 0.333(2), min 0(1), ave 0.222
+----------------------------------------------------------------
+
+2021-03-25 00:38:12 [main] [INFO]  KGenProgMain - entered the era of 5th generation.
+2021-03-25 00:38:14 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 8 seconds
+Variants: generated 20, build-succeeded 1, build-failed 10, syntax-invalid 2, redundant 7
+Fitness: max 0(1), min 0(1), ave 0
+----------------------------------------------------------------
+
+2021-03-25 00:38:14 [main] [INFO]  KGenProgMain - entered the era of 6th generation.
+2021-03-25 00:38:16 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 10 seconds
+Variants: generated 20, build-succeeded 1, build-failed 10, syntax-invalid 1, redundant 8
+Fitness: max 0.333(1), min 0.333(1), ave 0.333
+----------------------------------------------------------------
+
+2021-03-25 00:38:16 [main] [INFO]  KGenProgMain - entered the era of 7th generation.
+2021-03-25 00:38:17 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 12 seconds
+Variants: generated 20, build-succeeded 1, build-failed 7, syntax-invalid 4, redundant 8
+Fitness: max 0(1), min 0(1), ave 0
+----------------------------------------------------------------
+
+2021-03-25 00:38:17 [main] [INFO]  KGenProgMain - entered the era of 8th generation.
+2021-03-25 00:38:19 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 14 seconds
+Variants: generated 20, build-succeeded 2, build-failed 8, syntax-invalid 2, redundant 8
+Fitness: max 0.333(1), min 0(1), ave 0.167
+----------------------------------------------------------------
+
+2021-03-25 00:38:19 [main] [INFO]  KGenProgMain - entered the era of 9th generation.
+2021-03-25 00:38:20 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 15 seconds
+Variants: generated 20, build-succeeded 0, build-failed 7, syntax-invalid 5, redundant 8
+Fitness: max --, min --, ave NaN
+----------------------------------------------------------------
+
+2021-03-25 00:38:20 [main] [INFO]  KGenProgMain - entered the era of 10th generation.
+2021-03-25 00:38:22 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 17 seconds
+Variants: generated 20, build-succeeded 1, build-failed 8, syntax-invalid 3, redundant 8
+Fitness: max 0.333(1), min 0.333(1), ave 0.333
+----------------------------------------------------------------
+
+2021-03-25 00:38:22 [main] [INFO]  KGenProgMain - GA stopped
+2021-03-25 00:38:22 [main] [INFO]  KGenProgMain - Summary
+Reached generation = 10
+Generated variants = 160
+Syntax valid variants = 140
+Build succeeded variants = 11
+Time elapsed = 17 seconds
+Exit status = FAILURE (maximum generation)

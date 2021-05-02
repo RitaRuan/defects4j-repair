@@ -1,0 +1,18 @@
+--- com.fasterxml.jackson.core.sym.ByteQuadsCanonicalizer
++++ com.fasterxml.jackson.core.sym.ByteQuadsCanonicalizer
+@@ -846,7 +846,6 @@
+ 
+             _hashArea[offset] = hash;
+             int longStart = _appendLongName(q, qlen);
+-            _hashArea[offset+1] = longStart;
+             _hashArea[offset+3] = qlen;
+         }
+         // plus add the actual String
+@@ -991,7 +990,6 @@
+         // things up (can do bit more processing anyway)
+         int hash = q1;
+ 
+-        hash += (hash >>> 15); // try mixing first and second byte pairs first
+         hash ^= (hash >>> 9); // as well as lowest 2 bytes
+         hash += (q2 * MULT); // then add second quad
+         hash ^= _seed;

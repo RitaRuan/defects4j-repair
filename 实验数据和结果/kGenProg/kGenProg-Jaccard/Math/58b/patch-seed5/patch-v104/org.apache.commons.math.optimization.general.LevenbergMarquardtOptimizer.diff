@@ -1,0 +1,22 @@
+--- org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer
++++ org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer
+@@ -420,10 +420,10 @@
+                         point[pj] = oldX[pj];
+                     }
+                     tmpVec    = weightedResiduals;
+-                    weightedResiduals = oldRes;
+                     oldRes    = tmpVec;
+                     tmpVec    = objective;
+                     objective = oldObj;
++					double dotProduct = 0;
+                     oldObj    = tmpVec;
+                 }
+ 
+@@ -704,7 +704,6 @@
+                         double rik = weightedResidualJacobian[i][pk];
+                         final double temp2 = cos * rik + sin * lmDiag[i];
+                         lmDiag[i] = -sin * rik + cos * lmDiag[i];
+-                        weightedResidualJacobian[i][pk] = temp2;
+                     }
+                 }
+             }

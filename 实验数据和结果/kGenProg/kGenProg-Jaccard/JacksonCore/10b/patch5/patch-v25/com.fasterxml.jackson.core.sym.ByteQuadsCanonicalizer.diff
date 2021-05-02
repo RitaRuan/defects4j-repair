@@ -1,0 +1,19 @@
+--- com.fasterxml.jackson.core.sym.ByteQuadsCanonicalizer
++++ com.fasterxml.jackson.core.sym.ByteQuadsCanonicalizer
+@@ -1035,7 +1035,6 @@
+         hash += q[1];
+         hash += (hash >>> 15);
+         hash *= MULT;
+-        hash ^= q[2];
+         hash += (hash >>> 4);
+ 
+         for (int i = 3; i < qlen; ++i) {
+@@ -1147,8 +1146,6 @@
+         _count = 0;
+         // reset spill-over to empty (starting at 7/8 of hash area)
+         _spilloverEnd = _spilloverStart();
+-        // and long name area to empty, starting immediately after hash area
+-        _longNameOffset = _hashSize << 3;
+         if (fill) {
+             Arrays.fill(_hashArea, 0);
+             Arrays.fill(_names, null);

@@ -1,0 +1,132 @@
+RUNNING THE BUG: Math 86, WITH THE SEED: 8
+2021-03-30 08:48:58 [main] [INFO]  KGenProgMain - 
+==================== kGenProg Configuration ====================
+configPath = kgenprog.toml
+rootDir = . (set by command line)
+productPaths = [src/java] (set by command line)
+testPaths = [src/test] (set by command line)
+classPaths = [/home/ubuntu/rtx/defects4j/framework/projects/lib/junit-4.11.jar, /home/ubuntu/rtx/defects4j/framework/projects/Math/lib/commons-discovery-0.5.jar] (set by command line)
+executionTests = [org.apache.commons.math.linear.CholeskyDecompositionImplTest] (set by command line)
+outDir = /home/ubuntu/rtx/d4j/Math/86b/kGenProg-FILE/patch-seed8 (set by command line)
+logLevel = INFO
+mutationGeneratingCount = 10
+crossoverGeneratingCount = 10
+headcount = 10
+maxGeneration = 10
+timeLimit = PT1M
+testTimeLimit = PT10S
+requiredSolutionsCount = 1
+randomSeed = 8 (set by command line)
+scope = FILE (set by command line)
+faultLocalization = Ochiai
+mutationType = Simple
+crossoverType = Random
+firstVariantSelectionStrategy = Random
+secondVariantSelectionStrategy = Random
+isPatchOutput = true
+isHistoryRecord = false
+currentDirectory = /home/ubuntu/rtx/d4j/Math/86b
+version = 1.8.0
+================================================================
+DenseRealMatrix{{14.0,11.0,13.0,15.0,NaN},{11.0,34.0,13.0,8.0,NaN},{13.0,13.0,13.999999999999998,15.0,NaN},{15.0,8.0,15.0,18.000000000000004,NaN},{NaN,NaN,NaN,NaN,NaN}}
+2021-03-30 08:49:14 [main] [INFO]  KGenProgMain - initial failed tests (2/9)
+org.apache.commons.math.linear.CholeskyDecompositionImplTest.testNotPositiveDefinite: Expected exception: org.apache.commons.math.linear.NotPositiveDefiniteMatrixExceptionorg.apache.commons.math.linear.CholeskyDecompositionImplTest.testMath274: Expected exception: org.apache.commons.math.linear.NotPositiveDefiniteMatrixException
+2021-03-30 08:49:15 [main] [INFO]  KGenProgMain - GA started
+2021-03-30 08:49:15 [main] [INFO]  KGenProgMain - entered the era of 1st generation.
+2021-03-30 08:49:17 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 1 seconds
+Variants: generated 10, build-succeeded 0, build-failed 10, syntax-invalid 0, redundant 0
+Fitness: max --, min --, ave NaN
+----------------------------------------------------------------
+
+2021-03-30 08:49:17 [main] [INFO]  KGenProgMain - entered the era of 2nd generation.
+DenseRealMatrix{{0.0,0.0,0.0,0.0,NaN},{0.0,0.0,0.0,0.0,NaN},{0.0,0.0,0.0,0.0,NaN},{0.0,0.0,0.0,0.0,NaN},{NaN,NaN,NaN,NaN,NaN}}
+2021-03-30 08:49:19 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 3 seconds
+Variants: generated 10, build-succeeded 1, build-failed 8, syntax-invalid 0, redundant 1
+Fitness: max 0.667(1), min 0.667(1), ave 0.667
+----------------------------------------------------------------
+
+2021-03-30 08:49:19 [main] [INFO]  KGenProgMain - entered the era of 3rd generation.
+2021-03-30 08:49:20 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 5 seconds
+Variants: generated 10, build-succeeded 0, build-failed 8, syntax-invalid 1, redundant 1
+Fitness: max --, min --, ave NaN
+----------------------------------------------------------------
+
+2021-03-30 08:49:20 [main] [INFO]  KGenProgMain - entered the era of 4th generation.
+DenseRealMatrix{{14.0,11.0,13.0,15.0,NaN},{11.0,34.0,13.0,8.0,NaN},{13.0,13.0,13.999999999999998,15.0,NaN},{15.0,8.0,15.0,18.000000000000004,NaN},{NaN,NaN,NaN,NaN,NaN}}
+DenseRealMatrix{{1105.0,955.3914640149029,764.6445000709386,573.9095931359582,NaN},{955.3914640149029,892.0,674.5592406439494,598.1793043189928,NaN},{764.6445000709386,674.5592406439494,680.0,498.0000007413234,NaN},{573.9095931359582,598.1793043189928,498.0000007413234,547.0,NaN},{NaN,NaN,NaN,NaN,NaN}}
+2021-03-30 08:49:22 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 6 seconds
+Variants: generated 10, build-succeeded 2, build-failed 5, syntax-invalid 1, redundant 2
+Fitness: max 0.778(1), min 0.333(1), ave 0.556
+----------------------------------------------------------------
+
+2021-03-30 08:49:22 [main] [INFO]  KGenProgMain - entered the era of 5th generation.
+2021-03-30 08:49:23 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 8 seconds
+Variants: generated 10, build-succeeded 0, build-failed 8, syntax-invalid 1, redundant 1
+Fitness: max --, min --, ave NaN
+----------------------------------------------------------------
+
+2021-03-30 08:49:23 [main] [INFO]  KGenProgMain - entered the era of 6th generation.
+DenseRealMatrix{{0.0,0.0,0.0,0.0,0.0},{0.0,0.0,0.0,0.0,0.0},{0.0,0.0,0.0,0.0,0.0},{0.0,0.0,0.0,0.0,0.0},{0.0,0.0,0.0,0.0,0.0}}
+2021-03-30 08:49:25 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 9 seconds
+Variants: generated 10, build-succeeded 1, build-failed 6, syntax-invalid 1, redundant 2
+Fitness: max 0.667(1), min 0.667(1), ave 0.667
+----------------------------------------------------------------
+
+2021-03-30 08:49:25 [main] [INFO]  KGenProgMain - entered the era of 7th generation.
+2021-03-30 08:49:27 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 11 seconds
+Variants: generated 10, build-succeeded 1, build-failed 6, syntax-invalid 2, redundant 1
+Fitness: max 0(1), min 0(1), ave 0
+----------------------------------------------------------------
+
+2021-03-30 08:49:27 [main] [INFO]  KGenProgMain - entered the era of 8th generation.
+DenseRealMatrix{{0.0,0.0,0.0,0.0,0.0},{0.0,0.0,0.0,0.0,0.0},{0.0,0.0,0.0,0.0,0.0},{0.0,0.0,0.0,0.0,0.0},{0.0,0.0,0.0,0.0,0.0}}
+2021-03-30 08:49:28 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 13 seconds
+Variants: generated 10, build-succeeded 2, build-failed 5, syntax-invalid 3, redundant 0
+Fitness: max 0.667(1), min 0.222(1), ave 0.444
+----------------------------------------------------------------
+
+2021-03-30 08:49:28 [main] [INFO]  KGenProgMain - entered the era of 9th generation.
+DenseRealMatrix{14.0,11.0,13.0,15.0,NaN},11.0,34.0,13.0,8.0,NaN},13.0,13.0,13.999999999999998,15.0,NaN},15.0,8.0,15.0,18.000000000000004,NaN},NaN,NaN,NaN,NaN,NaN}}
+DenseRealMatrix{{798.0,494.4941852602047,NaN,NaN,NaN},{494.4941852602047,374.0,NaN,NaN,NaN},{NaN,NaN,NaN,NaN,NaN},{NaN,NaN,NaN,NaN,NaN},{NaN,NaN,NaN,NaN,NaN}}
+DenseRealMatrix{{14.0,11.0,13.0,15.0,NaN},{11.0,34.0,13.0,8.0,NaN},{13.0,13.0,13.999999999999998,15.0,NaN},{15.0,8.0,15.0,18.000000000000004,NaN},{NaN,NaN,NaN,NaN,NaN}}
+2021-03-30 08:49:32 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 16 seconds
+Variants: generated 20, build-succeeded 5, build-failed 7, syntax-invalid 1, redundant 7
+Fitness: max 0.778(2), min 0(1), ave 0.422
+----------------------------------------------------------------
+
+2021-03-30 08:49:32 [main] [INFO]  KGenProgMain - entered the era of 10th generation.
+DenseRealMatrix{{0.0,0.0,0.0,0.0,0.0},{0.0,0.0,0.0,0.0,0.0},{0.0,0.0,0.0,0.0,0.0},{0.0,0.0,0.0,0.0,0.0},{0.0,0.0,0.0,0.0,0.0}}
+DenseRealMatrix{{0.0,0.0,0.0,0.0,0.0},{0.0,0.0,0.0,0.0,0.0},{0.0,0.0,0.0,0.0,0.0},{0.0,0.0,0.0,0.0,0.0},{0.0,0.0,0.0,0.0,0.0}}
+2021-03-30 08:49:35 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 20 seconds
+Variants: generated 20, build-succeeded 5, build-failed 7, syntax-invalid 1, redundant 7
+Fitness: max 0.667(1), min 0.222(3), ave 0.333
+----------------------------------------------------------------
+
+2021-03-30 08:49:35 [main] [INFO]  KGenProgMain - GA stopped
+2021-03-30 08:49:35 [main] [INFO]  KGenProgMain - Summary
+Reached generation = 10
+Generated variants = 120
+Syntax valid variants = 109
+Build succeeded variants = 17
+Time elapsed = 20 seconds
+Exit status = FAILURE (maximum generation)

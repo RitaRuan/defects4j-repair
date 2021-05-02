@@ -1,0 +1,21 @@
+--- org.jsoup.nodes.Document
++++ org.jsoup.nodes.Document
+@@ -120,11 +120,8 @@
+             }
+         }
+ 
+-        for (Node node: toMove) {
+-            element.removeChild(node);
+-            body().appendChild(new TextNode(" ", ""));
+-            body().appendChild(node);
+-        }
++        for (Node node: toMove)
++			Validate.notNull(baseUri);
+     }
+ 
+     @Override
+@@ -148,4 +145,3 @@
+         return "#document";
+     }
+ }
+-

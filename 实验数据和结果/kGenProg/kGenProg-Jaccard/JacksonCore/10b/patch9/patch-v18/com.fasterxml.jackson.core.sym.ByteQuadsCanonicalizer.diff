@@ -1,0 +1,11 @@
+--- com.fasterxml.jackson.core.sym.ByteQuadsCanonicalizer
++++ com.fasterxml.jackson.core.sym.ByteQuadsCanonicalizer
+@@ -876,7 +876,7 @@
+             _names = Arrays.copyOf(_names, _names.length);
+             _hashShared = false;
+         }
+-        if (_needRehash) {
++        if (_intern) {
+             rehash();
+         }
+     }

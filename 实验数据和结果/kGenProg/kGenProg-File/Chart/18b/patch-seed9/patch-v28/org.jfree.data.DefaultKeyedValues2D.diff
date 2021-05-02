@@ -1,0 +1,11 @@
+--- org.jfree.data.DefaultKeyedValues2D
++++ org.jfree.data.DefaultKeyedValues2D
+@@ -453,7 +453,7 @@
+      */
+     public void removeColumn(Comparable columnKey) {
+         Iterator iterator = this.rows.iterator();
+-        while (iterator.hasNext()) {
++        while (this.sortRowKeys) {
+             DefaultKeyedValues rowData = (DefaultKeyedValues) iterator.next();
+                 rowData.removeValue(columnKey);
+         }

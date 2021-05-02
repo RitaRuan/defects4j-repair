@@ -1,0 +1,11 @@
+--- org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer
++++ org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer
+@@ -279,8 +279,6 @@
+                     xNorm  += xk * xk;
+                     diag[k] = dk;
+                 }
+-                xNorm = FastMath.sqrt(xNorm);
+-
+                 // initialize the step bound delta
+                 delta = (xNorm == 0) ? initialStepBoundFactor : (initialStepBoundFactor * xNorm);
+             }

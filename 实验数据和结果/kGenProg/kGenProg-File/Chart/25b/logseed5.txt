@@ -1,0 +1,113 @@
+RUNNING THE BUG: Chart 25, WITH THE SEED: 5
+2021-03-27 16:56:13 [main] [INFO]  KGenProgMain - 
+==================== kGenProg Configuration ====================
+configPath = kgenprog.toml
+rootDir = . (set by command line)
+productPaths = [source] (set by command line)
+testPaths = [tests] (set by command line)
+classPaths = [/home/ubuntu/rtx/d4j/Chart/3b/lib/servlet.jar, /home/ubuntu/rtx/defects4j/framework/projects/lib/junit-4.11.jar] (set by command line)
+executionTests = [org.jfree.chart.renderer.category.junit.StatisticalBarRendererTests] (set by command line)
+outDir = /home/ubuntu/rtx/d4j/Chart/25b/kGenProg-FILE/patch-seed5 (set by command line)
+logLevel = INFO
+mutationGeneratingCount = 10
+crossoverGeneratingCount = 10
+headcount = 10
+maxGeneration = 10
+timeLimit = PT1M
+testTimeLimit = PT10S
+requiredSolutionsCount = 1
+randomSeed = 5 (set by command line)
+scope = FILE (set by command line)
+faultLocalization = Ochiai
+mutationType = Simple
+crossoverType = Random
+firstVariantSelectionStrategy = Random
+secondVariantSelectionStrategy = Random
+isPatchOutput = true
+isHistoryRecord = false
+currentDirectory = /home/ubuntu/rtx/d4j/Chart/25b
+version = 1.8.0
+================================================================
+2021-03-27 16:56:33 [main] [INFO]  KGenProgMain - initial failed tests (5/9)
+org.jfree.chart.renderer.category.junit.StatisticalBarRendererTests.testDrawWithNullMeanVertical: nullorg.jfree.chart.renderer.category.junit.StatisticalBarRendererTests.testDrawWithNullInfo: nullorg.jfree.chart.renderer.category.junit.StatisticalBarRendererTests.testDrawWithNullMeanHorizontal: nullorg.jfree.chart.renderer.category.junit.StatisticalBarRendererTests.testDrawWithNullDeviationVertical: nullorg.jfree.chart.renderer.category.junit.StatisticalBarRendererTests.testDrawWithNullDeviationHorizontal: null
+2021-03-27 16:56:34 [main] [INFO]  KGenProgMain - GA started
+2021-03-27 16:56:34 [main] [INFO]  KGenProgMain - entered the era of 1st generation.
+2021-03-27 16:56:37 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 3 seconds
+Variants: generated 10, build-succeeded 2, build-failed 7, syntax-invalid 0, redundant 1
+Fitness: max 0.444(2), min 0.444(2), ave 0.444
+----------------------------------------------------------------
+
+2021-03-27 16:56:37 [main] [INFO]  KGenProgMain - entered the era of 2nd generation.
+2021-03-27 16:56:40 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 6 seconds
+Variants: generated 10, build-succeeded 5, build-failed 5, syntax-invalid 0, redundant 0
+Fitness: max 0.444(5), min 0.444(5), ave 0.444
+----------------------------------------------------------------
+
+2021-03-27 16:56:40 [main] [INFO]  KGenProgMain - entered the era of 3rd generation.
+2021-03-27 16:56:45 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 11 seconds
+Variants: generated 20, build-succeeded 5, build-failed 7, syntax-invalid 2, redundant 6
+Fitness: max 0.444(5), min 0.444(5), ave 0.444
+----------------------------------------------------------------
+
+2021-03-27 16:56:45 [main] [INFO]  KGenProgMain - entered the era of 4th generation.
+2021-03-27 16:56:50 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 15 seconds
+Variants: generated 20, build-succeeded 5, build-failed 6, syntax-invalid 2, redundant 7
+Fitness: max 0.444(5), min 0.444(5), ave 0.444
+----------------------------------------------------------------
+
+2021-03-27 16:56:50 [main] [INFO]  KGenProgMain - entered the era of 5th generation.
+2021-03-27 16:56:58 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 23 seconds
+Variants: generated 20, build-succeeded 8, build-failed 7, syntax-invalid 2, redundant 3
+Fitness: max 0.444(8), min 0.444(8), ave 0.444
+----------------------------------------------------------------
+
+2021-03-27 16:56:58 [main] [INFO]  KGenProgMain - entered the era of 6th generation.
+2021-03-27 16:57:04 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 30 seconds
+Variants: generated 20, build-succeeded 5, build-failed 6, syntax-invalid 3, redundant 6
+Fitness: max 0.444(5), min 0.444(5), ave 0.444
+----------------------------------------------------------------
+
+2021-03-27 16:57:04 [main] [INFO]  KGenProgMain - entered the era of 7th generation.
+2021-03-27 16:57:11 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 37 seconds
+Variants: generated 20, build-succeeded 4, build-failed 7, syntax-invalid 1, redundant 8
+Fitness: max 0.444(4), min 0.444(4), ave 0.444
+----------------------------------------------------------------
+
+2021-03-27 16:57:11 [main] [INFO]  KGenProgMain - entered the era of 8th generation.
+2021-03-27 16:57:25 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 51 seconds
+Variants: generated 20, build-succeeded 8, build-failed 5, syntax-invalid 2, redundant 5
+Fitness: max 0.444(8), min 0.444(8), ave 0.444
+----------------------------------------------------------------
+
+2021-03-27 16:57:25 [main] [INFO]  KGenProgMain - entered the era of 9th generation.
+2021-03-27 16:57:40 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 1 minutes 5 seconds
+Variants: generated 20, build-succeeded 8, build-failed 7, syntax-invalid 3, redundant 2
+Fitness: max 0.444(8), min 0.444(8), ave 0.444
+----------------------------------------------------------------
+
+2021-03-27 16:57:40 [main] [INFO]  KGenProgMain - GA stopped
+2021-03-27 16:57:40 [main] [INFO]  KGenProgMain - Summary
+Reached generation = 9
+Generated variants = 160
+Syntax valid variants = 145
+Build succeeded variants = 50
+Time elapsed = 1 minutes 5 seconds
+Exit status = FAILURE (time limit)

@@ -1,0 +1,116 @@
+RUNNING THE BUG: Math 81, WITH THE SEED: 8
+2021-03-23 00:17:23 [main] [INFO]  KGenProgMain - 
+==================== kGenProg Configuration ====================
+configPath = kgenprog.toml
+rootDir = . (set by command line)
+productPaths = [src/main/java] (set by command line)
+testPaths = [src/test/java] (set by command line)
+classPaths = [/home/ubuntu/rtx/defects4j/framework/projects/lib/junit-4.11.jar, /home/ubuntu/rtx/defects4j/framework/projects/Lang/lib/easymock.jar, /home/ubuntu/rtx/defects4j/framework/projects/Lang/lib/commons-io.jar, /home/ubuntu/rtx/defects4j/framework/projects/Lang/lib/cglib.jar, /home/ubuntu/rtx/defects4j/framework/projects/Lang/lib/asm.jar, /home/ubuntu/rtx/defects4j/framework/projects/lib/junit-4.11.jar, /home/ubuntu/rtx/defects4j/framework/projects/Lang/lib/cglib.jar, /home/ubuntu/rtx/defects4j/framework/projects/Lang/lib/asm.jar, /home/ubuntu/rtx/defects4j/framework/projects/Lang/lib/easymock.jar, /home/ubuntu/rtx/defects4j/framework/projects/Lang/lib/commons-io.jar] (set by command line)
+executionTests = [org.apache.commons.math.linear.EigenDecompositionImplTest] (set by command line)
+outDir = /home/ubuntu/rtx/d4j/Math/81b/kGenProg-Jaccard/patch-seed8 (set by command line)
+logLevel = INFO
+mutationGeneratingCount = 10
+crossoverGeneratingCount = 10
+headcount = 10
+maxGeneration = 10
+timeLimit = PT1M
+testTimeLimit = PT10S
+requiredSolutionsCount = 1
+randomSeed = 8 (set by command line)
+scope = PACKAGE
+faultLocalization = Jaccard (set by command line)
+mutationType = Simple
+crossoverType = Random
+firstVariantSelectionStrategy = Random
+secondVariantSelectionStrategy = Random
+isPatchOutput = true
+isHistoryRecord = false
+currentDirectory = /home/ubuntu/rtx/d4j/Math/81b
+version = 1.8.0
+================================================================
+2021-03-23 00:17:40 [main] [INFO]  KGenProgMain - initial failed tests (1/17)
+org.apache.commons.math.linear.EigenDecompositionImplTest.testMath308: null
+2021-03-23 00:17:40 [main] [INFO]  KGenProgMain - GA started
+2021-03-23 00:17:40 [main] [INFO]  KGenProgMain - entered the era of 1st generation.
+2021-03-23 00:17:43 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 2 seconds
+Variants: generated 10, build-succeeded 1, build-failed 8, syntax-invalid 0, redundant 1
+Fitness: max 0.941(1), min 0.941(1), ave 0.941
+----------------------------------------------------------------
+
+2021-03-23 00:17:43 [main] [INFO]  KGenProgMain - entered the era of 2nd generation.
+2021-03-23 00:17:46 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 5 seconds
+Variants: generated 10, build-succeeded 1, build-failed 3, syntax-invalid 2, redundant 4
+Fitness: max 0.471(1), min 0.471(1), ave 0.471
+----------------------------------------------------------------
+
+2021-03-23 00:17:46 [main] [INFO]  KGenProgMain - entered the era of 3rd generation.
+2021-03-23 00:17:49 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 8 seconds
+Variants: generated 10, build-succeeded 2, build-failed 6, syntax-invalid 2, redundant 0
+Fitness: max 0.941(1), min 0.882(1), ave 0.912
+----------------------------------------------------------------
+
+2021-03-23 00:17:49 [main] [INFO]  KGenProgMain - entered the era of 4th generation.
+2021-03-23 00:17:50 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 9 seconds
+Variants: generated 4, build-succeeded 1, build-failed 2, syntax-invalid 0, redundant 1
+Fitness: max 1(1), min 1(1), ave 1
+----------------------------------------------------------------
+
+2021-03-23 00:17:50 [main] [INFO]  KGenProgMain - GA stopped
+2021-03-23 00:17:51 [main] [INFO]  PatchLogExporter - patch (v34)
+--- org.apache.commons.math.linear.BigMatrix
++++ org.apache.commons.math.linear.BigMatrix
+@@ -328,4 +328,3 @@
+      */
+     BigMatrix solve(BigMatrix b) throws IllegalArgumentException, InvalidMatrixException;
+ }
+-
+2021-03-23 00:17:51 [main] [INFO]  PatchLogExporter - patch (v34)
+--- org.apache.commons.math.stat.descriptive.AbstractUnivariateStatistic
++++ org.apache.commons.math.stat.descriptive.AbstractUnivariateStatistic
+@@ -173,4 +173,3 @@
+         return test(values, begin, length);
+     }
+ }
+-
+2021-03-23 00:17:51 [main] [INFO]  PatchLogExporter - patch (v34)
+--- org.apache.commons.math.linear.EigenDecompositionImpl
++++ org.apache.commons.math.linear.EigenDecompositionImpl
+@@ -1270,7 +1270,6 @@
+      */
+     private void dqds(final int start, final int end) {
+ 
+-        eMin = work[4 * start + pingPong + 4];
+         double d = work[4 * start + pingPong] - tau;
+         dMin = d;
+         dMin1 = -work[4 * start + pingPong];
+@@ -1477,7 +1476,6 @@
+                     int np;
+                     if (dMin == dN) {
+                         gam = dN;
+-                        a2 = 0.0;
+                         if (work[nn - 5]  >  work[nn - 7]) {
+                             return;
+                         }
+2021-03-23 00:17:51 [main] [INFO]  PatchLogExporter - patch (v34)
+--- org.apache.commons.math.optimization.fitting.WeightedObservedPoint
++++ org.apache.commons.math.optimization.fitting.WeightedObservedPoint
+@@ -72,4 +72,3 @@
+     }
+ 
+ }
+-
+2021-03-23 00:17:51 [main] [INFO]  KGenProgMain - Summary
+Reached generation = 4
+Generated variants = 34
+Syntax valid variants = 30
+Build succeeded variants = 5
+Time elapsed = 10 seconds
+Exit status = SUCCESS

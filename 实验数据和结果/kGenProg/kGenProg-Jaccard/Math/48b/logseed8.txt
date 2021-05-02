@@ -1,0 +1,97 @@
+RUNNING THE BUG: Math 48, WITH THE SEED: 8
+2021-03-22 12:52:57 [main] [INFO]  KGenProgMain - 
+==================== kGenProg Configuration ====================
+configPath = kgenprog.toml
+rootDir = . (set by command line)
+productPaths = [src/main/java] (set by command line)
+testPaths = [src/test/java] (set by command line)
+classPaths = [/home/ubuntu/rtx/defects4j/framework/projects/lib/junit-4.11.jar, /home/ubuntu/rtx/defects4j/framework/projects/Lang/lib/easymock.jar, /home/ubuntu/rtx/defects4j/framework/projects/Lang/lib/commons-io.jar, /home/ubuntu/rtx/defects4j/framework/projects/Lang/lib/cglib.jar, /home/ubuntu/rtx/defects4j/framework/projects/Lang/lib/asm.jar, /home/ubuntu/rtx/defects4j/framework/projects/lib/junit-4.11.jar, /home/ubuntu/rtx/defects4j/framework/projects/Lang/lib/cglib.jar, /home/ubuntu/rtx/defects4j/framework/projects/Lang/lib/asm.jar, /home/ubuntu/rtx/defects4j/framework/projects/Lang/lib/easymock.jar, /home/ubuntu/rtx/defects4j/framework/projects/Lang/lib/commons-io.jar] (set by command line)
+executionTests = [org.apache.commons.math.analysis.solvers.RegulaFalsiSolverTest] (set by command line)
+outDir = /home/ubuntu/rtx/d4j/Math/48b/kGenProg-Jaccard/patch-seed8 (set by command line)
+logLevel = INFO
+mutationGeneratingCount = 10
+crossoverGeneratingCount = 10
+headcount = 10
+maxGeneration = 10
+timeLimit = PT1M
+testTimeLimit = PT10S
+requiredSolutionsCount = 1
+randomSeed = 8 (set by command line)
+scope = PACKAGE
+faultLocalization = Jaccard (set by command line)
+mutationType = Simple
+crossoverType = Random
+firstVariantSelectionStrategy = Random
+secondVariantSelectionStrategy = Random
+isPatchOutput = true
+isHistoryRecord = false
+currentDirectory = /home/ubuntu/rtx/d4j/Math/48b
+version = 1.8.0
+================================================================
+2021-03-22 12:53:18 [main] [INFO]  KGenProgMain - initial failed tests (1/9)
+org.apache.commons.math.analysis.solvers.RegulaFalsiSolverTest.testIssue631: Unexpected exception, expected<org.apache.commons.math.exception.ConvergenceException> but was<org.apache.commons.math.exception.TooManyEvaluationsException>
+2021-03-22 12:53:19 [main] [INFO]  KGenProgMain - GA started
+2021-03-22 12:53:19 [main] [INFO]  KGenProgMain - entered the era of 1st generation.
+2021-03-22 12:53:26 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 6 seconds
+Variants: generated 10, build-succeeded 3, build-failed 7, syntax-invalid 0, redundant 0
+Fitness: max 0.889(3), min 0.889(3), ave 0.889
+----------------------------------------------------------------
+
+2021-03-22 12:53:26 [main] [INFO]  KGenProgMain - entered the era of 2nd generation.
+2021-03-22 12:53:32 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 12 seconds
+Variants: generated 10, build-succeeded 2, build-failed 7, syntax-invalid 0, redundant 1
+Fitness: max 0.889(2), min 0.889(2), ave 0.889
+----------------------------------------------------------------
+
+2021-03-22 12:53:32 [main] [INFO]  KGenProgMain - entered the era of 3rd generation.
+2021-03-22 12:53:36 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 17 seconds
+Variants: generated 10, build-succeeded 2, build-failed 7, syntax-invalid 1, redundant 0
+Fitness: max 0.889(2), min 0.889(2), ave 0.889
+----------------------------------------------------------------
+
+2021-03-22 12:53:36 [main] [INFO]  KGenProgMain - entered the era of 4th generation.
+2021-03-22 12:53:48 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 29 seconds
+Variants: generated 20, build-succeeded 9, build-failed 4, syntax-invalid 1, redundant 6
+Fitness: max 0.889(8), min 0.222(1), ave 0.815
+----------------------------------------------------------------
+
+2021-03-22 12:53:48 [main] [INFO]  KGenProgMain - entered the era of 5th generation.
+2021-03-22 12:54:02 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 42 seconds
+Variants: generated 20, build-succeeded 9, build-failed 6, syntax-invalid 0, redundant 5
+Fitness: max 0.889(9), min 0.889(9), ave 0.889
+----------------------------------------------------------------
+
+2021-03-22 12:54:02 [main] [INFO]  KGenProgMain - entered the era of 6th generation.
+2021-03-22 12:54:16 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 56 seconds
+Variants: generated 20, build-succeeded 9, build-failed 6, syntax-invalid 0, redundant 5
+Fitness: max 0.889(7), min 0.444(1), ave 0.815
+----------------------------------------------------------------
+
+2021-03-22 12:54:16 [main] [INFO]  KGenProgMain - entered the era of 7th generation.
+2021-03-22 12:54:22 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 1 minutes 2 seconds
+Variants: generated 20, build-succeeded 2, build-failed 9, syntax-invalid 1, redundant 8
+Fitness: max 0.889(2), min 0.889(2), ave 0.889
+----------------------------------------------------------------
+
+2021-03-22 12:54:22 [main] [INFO]  KGenProgMain - GA stopped
+2021-03-22 12:54:22 [main] [INFO]  KGenProgMain - Summary
+Reached generation = 7
+Generated variants = 110
+Syntax valid variants = 107
+Build succeeded variants = 36
+Time elapsed = 1 minutes 2 seconds
+Exit status = FAILURE (time limit)

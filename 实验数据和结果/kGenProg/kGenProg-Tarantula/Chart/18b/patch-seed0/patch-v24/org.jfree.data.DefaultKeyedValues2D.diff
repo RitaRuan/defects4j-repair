@@ -1,0 +1,18 @@
+--- org.jfree.data.DefaultKeyedValues2D
++++ org.jfree.data.DefaultKeyedValues2D
+@@ -104,7 +104,6 @@
+         this.rowKeys = new java.util.ArrayList();
+         this.columnKeys = new java.util.ArrayList();
+         this.rows = new java.util.ArrayList();
+-        this.sortRowKeys = sortRowKeys;
+     }
+ 
+     /**
+@@ -455,7 +454,6 @@
+         Iterator iterator = this.rows.iterator();
+         while (iterator.hasNext()) {
+             DefaultKeyedValues rowData = (DefaultKeyedValues) iterator.next();
+-                rowData.removeValue(columnKey);
+         }
+         this.columnKeys.remove(columnKey);
+     }

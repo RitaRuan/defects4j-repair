@@ -1,0 +1,119 @@
+RUNNING THE BUG: Math 46, WITH THE SEED: 5
+2021-03-29 21:12:01 [main] [INFO]  KGenProgMain - 
+==================== kGenProg Configuration ====================
+configPath = kgenprog.toml
+rootDir = . (set by command line)
+productPaths = [src/main/java] (set by command line)
+testPaths = [src/test/java] (set by command line)
+classPaths = [/home/ubuntu/rtx/defects4j/framework/projects/lib/junit-4.11.jar, /home/ubuntu/rtx/defects4j/framework/projects/Math/lib/commons-discovery-0.5.jar] (set by command line)
+executionTests = [org.apache.commons.math.complex.ComplexTest] (set by command line)
+outDir = /home/ubuntu/rtx/d4j/Math/46b/kGenProg-FILE/patch-seed5 (set by command line)
+logLevel = INFO
+mutationGeneratingCount = 10
+crossoverGeneratingCount = 10
+headcount = 10
+maxGeneration = 10
+timeLimit = PT1M
+testTimeLimit = PT10S
+requiredSolutionsCount = 1
+randomSeed = 5 (set by command line)
+scope = FILE (set by command line)
+faultLocalization = Ochiai
+mutationType = Simple
+crossoverType = Random
+firstVariantSelectionStrategy = Random
+secondVariantSelectionStrategy = Random
+isPatchOutput = true
+isHistoryRecord = false
+currentDirectory = /home/ubuntu/rtx/d4j/Math/46b
+version = 1.8.0
+================================================================
+2021-03-29 21:12:22 [main] [INFO]  KGenProgMain - initial failed tests (2/116)
+org.apache.commons.math.complex.ComplexTest.testDivideZero: expected:<(Infinity, Infinity)> but was:<(NaN, NaN)>org.apache.commons.math.complex.ComplexTest.testAtanI: null
+2021-03-29 21:12:23 [main] [INFO]  KGenProgMain - GA started
+2021-03-29 21:12:23 [main] [INFO]  KGenProgMain - entered the era of 1st generation.
+2021-03-29 21:12:30 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 6 seconds
+Variants: generated 10, build-succeeded 2, build-failed 6, syntax-invalid 0, redundant 2
+Fitness: max 0.991(1), min 0.983(1), ave 0.987
+----------------------------------------------------------------
+
+2021-03-29 21:12:30 [main] [INFO]  KGenProgMain - entered the era of 2nd generation.
+2021-03-29 21:12:32 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 8 seconds
+Variants: generated 3, build-succeeded 1, build-failed 1, syntax-invalid 1, redundant 0
+Fitness: max 1(1), min 1(1), ave 1
+----------------------------------------------------------------
+
+2021-03-29 21:12:32 [main] [INFO]  KGenProgMain - GA stopped
+2021-03-29 21:12:33 [main] [INFO]  PatchLogExporter - patch (v13)
+--- org.apache.commons.math.complex.Complex
++++ org.apache.commons.math.complex.Complex
+@@ -256,8 +256,6 @@
+         }
+ 
+         if (divisor.isZero) {
+-            // return isZero ? NaN : INF; // See MATH-657
+-            return isZero ? NaN : INF;
+         }
+ 
+         if (divisor.isInfinite() && !isInfinite()) {
+@@ -293,8 +291,7 @@
+             return NaN;
+         }
+         if (divisor == 0d) {
+-            // return isZero ? NaN : INF; // See MATH-657
+-            return isZero ? NaN : INF;
++            return NaN;
+         }
+         if (Double.isInfinite(divisor)) {
+             return !isInfinite() ? ZERO : NaN;
+2021-03-29 21:12:33 [main] [INFO]  PatchLogExporter - patch (v13)
+--- org.apache.commons.math.special.Erf
++++ org.apache.commons.math.special.Erf
+@@ -127,4 +127,3 @@
+                 erf(x2) - erf(x1);
+     }
+ }
+-
+2021-03-29 21:12:33 [main] [INFO]  PatchLogExporter - patch (v13)
+--- org.apache.commons.math.optimization.direct.CMAESOptimizer
++++ org.apache.commons.math.optimization.direct.CMAESOptimizer
+@@ -1394,4 +1394,3 @@
+         return new Array2DRowRealMatrix(d, false);
+     }
+ }
+-
+2021-03-29 21:12:33 [main] [INFO]  PatchLogExporter - patch (v13)
+--- org.apache.commons.math.stat.descriptive.AbstractUnivariateStatistic
++++ org.apache.commons.math.stat.descriptive.AbstractUnivariateStatistic
+@@ -286,4 +286,3 @@
+         return test(values, begin, length, allowEmpty);
+     }
+ }
+-
+2021-03-29 21:12:33 [main] [INFO]  PatchLogExporter - patch (v13)
+--- org.apache.commons.math.stat.correlation.StorelessBivariateCovariance
++++ org.apache.commons.math.stat.correlation.StorelessBivariateCovariance
+@@ -73,4 +73,3 @@
+     }
+ 
+ }
+-
+2021-03-29 21:12:33 [main] [INFO]  PatchLogExporter - patch (v13)
+--- org.apache.commons.math.optimization.fitting.WeightedObservedPoint
++++ org.apache.commons.math.optimization.fitting.WeightedObservedPoint
+@@ -72,4 +72,3 @@
+     }
+ 
+ }
+-
+2021-03-29 21:12:33 [main] [INFO]  KGenProgMain - Summary
+Reached generation = 2
+Generated variants = 13
+Syntax valid variants = 12
+Build succeeded variants = 3
+Time elapsed = 9 seconds
+Exit status = SUCCESS

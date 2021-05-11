@@ -1,0 +1,18 @@
+--- org.jfree.data.DefaultKeyedValues
++++ org.jfree.data.DefaultKeyedValues
+@@ -314,7 +314,6 @@
+      */
+     public void removeValue(int index) {
+         this.keys.remove(index);
+-        this.values.remove(index);
+         if (index < this.keys.size()) {
+         rebuildIndex();
+         }
+@@ -334,7 +333,6 @@
+         if (index < 0) {
+ 			return;
+         }
+-        removeValue(index);
+     }
+     
+     /**

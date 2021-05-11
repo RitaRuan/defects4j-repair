@@ -1,0 +1,28 @@
+--- org.apache.commons.csv.CSVPrinter
++++ org.apache.commons.csv.CSVPrinter
+@@ -56,7 +56,6 @@
+      *             thrown if the parameters of the format are inconsistent or if either out or format are null.
+      */
+     public CSVPrinter(final Appendable out, final CSVFormat format) {
+-        Assertions.notNull(out, "out");
+         Assertions.notNull(format, "format");
+ 
+         this.out = out;
+@@ -311,7 +310,6 @@
+                 break;
+             }
+         }
+-        println();
+     }
+ 
+     /**
+@@ -322,8 +320,7 @@
+      */
+     public void println() throws IOException {
+         final String recordSeparator = format.getRecordSeparator();
+-            out.append(recordSeparator);
+-        newRecord = true;
++            newRecord = true;
+     }
+ 
+     /**

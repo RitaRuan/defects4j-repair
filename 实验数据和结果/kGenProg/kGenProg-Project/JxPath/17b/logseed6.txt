@@ -1,0 +1,108 @@
+RUNNING THE BUG: JxPath 17, WITH THE SEED: 6
+2021-05-09 17:02:21 [main] [INFO]  KGenProgMain - 
+==================== kGenProg Configuration ====================
+configPath = kgenprog.toml
+rootDir = . (set by command line)
+productPaths = [src/java] (set by command line)
+testPaths = [src/test] (set by command line)
+classPaths = [/home/ubuntu/rtx/d4j/JxPath/2b/src/java, /home/ubuntu/rtx/d4j/JxPath/2b/target/lib/ant-1.5.jar, /home/ubuntu/rtx/d4j/JxPath/2b/target/lib/ant-optional-1.5.1.jar, /home/ubuntu/rtx/d4j/JxPath/2b/target/lib/ant-optional-1.5.jar, /home/ubuntu/rtx/d4j/JxPath/2b/target/lib/commons-beanutils-1.4.jar, /home/ubuntu/rtx/d4j/JxPath/2b/target/lib/commons-collections-2.0.jar, /home/ubuntu/rtx/d4j/JxPath/2b/target/lib/commons-logging-1.0.4.jar, /home/ubuntu/rtx/d4j/JxPath/2b/target/lib/jdom-1.0.jar, /home/ubuntu/rtx/d4j/JxPath/2b/target/lib/junit-3.8.1.jar, /home/ubuntu/rtx/d4j/JxPath/2b/target/lib/junit-3.8.jar, /home/ubuntu/rtx/d4j/JxPath/2b/target/lib/mockrunner-0.4.1.jar, /home/ubuntu/rtx/d4j/JxPath/2b/target/lib/servletapi-2.2.jar, /home/ubuntu/rtx/d4j/JxPath/2b/target/lib/xerces-1.2.3.jar, /home/ubuntu/rtx/d4j/JxPath/2b/target/lib/xml-apis-2.0.2.jar, /home/ubuntu/rtx/d4j/JxPath/2b/src/test, /home/ubuntu/rtx/defects4j/framework/projects/lib/junit-4.11.jar] (set by command line)
+executionTests = [org.apache.commons.jxpath.ri.model.dom.DOMModelTest] (set by command line)
+outDir = /home/ubuntu/rtx/d4j/JxPath/17b/kGenProg-Project/patch-seed6 (set by command line)
+logLevel = INFO
+mutationGeneratingCount = 10
+crossoverGeneratingCount = 10
+headcount = 10
+maxGeneration = 10
+timeLimit = PT1M
+testTimeLimit = PT10S
+requiredSolutionsCount = 1
+randomSeed = 6 (set by command line)
+scope = PROJECT (set by command line)
+faultLocalization = Ochiai (set by command line)
+mutationType = Simple
+crossoverType = Random
+firstVariantSelectionStrategy = Random
+secondVariantSelectionStrategy = Random
+isPatchOutput = true
+isHistoryRecord = false
+currentDirectory = /home/ubuntu/rtx/d4j/JxPath/17b
+version = 1.8.0
+================================================================
+2021-05-09 17:02:35 [main] [INFO]  KGenProgMain - initial failed tests (1/33)
+org.apache.commons.jxpath.ri.model.dom.DOMModelTest.testAxisAttribute: null
+2021-05-09 17:02:36 [main] [INFO]  KGenProgMain - GA started
+2021-05-09 17:02:36 [main] [INFO]  KGenProgMain - entered the era of 1st generation.
+2021-05-09 17:02:44 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 8 seconds
+Variants: generated 10, build-succeeded 2, build-failed 8, syntax-invalid 0, redundant 0
+Fitness: max 0.97(2), min 0.97(2), ave 0.97
+----------------------------------------------------------------
+
+2021-05-09 17:02:44 [main] [INFO]  KGenProgMain - entered the era of 2nd generation.
+2021-05-09 17:02:49 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 13 seconds
+Variants: generated 10, build-succeeded 0, build-failed 8, syntax-invalid 1, redundant 1
+Fitness: max --, min --, ave NaN
+----------------------------------------------------------------
+
+2021-05-09 17:02:49 [main] [INFO]  KGenProgMain - entered the era of 3rd generation.
+2021-05-09 17:03:04 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 28 seconds
+Variants: generated 10, build-succeeded 2, build-failed 4, syntax-invalid 2, redundant 2
+Fitness: max 0.97(1), min 0.909(1), ave 0.939
+----------------------------------------------------------------
+
+2021-05-09 17:03:04 [main] [INFO]  KGenProgMain - entered the era of 4th generation.
+2021-05-09 17:03:11 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 34 seconds
+Variants: generated 5, build-succeeded 2, build-failed 3, syntax-invalid 0, redundant 0
+Fitness: max 1(1), min 0.909(1), ave 0.955
+----------------------------------------------------------------
+
+2021-05-09 17:03:11 [main] [INFO]  KGenProgMain - GA stopped
+2021-05-09 17:03:11 [main] [INFO]  PatchLogExporter - patch (v35)
+--- org.apache.commons.jxpath.ri.parser.XPathParser
++++ org.apache.commons.jxpath.ri.parser.XPathParser
+@@ -1109,8 +1109,7 @@
+           ;
+           break;
+         default:
+-          jj_la1[18] = jj_gen;
+-          break label_4;
++			break label_4;
+         }
+         jj_consume_token(87);
+         arg = Argument();
+2021-05-09 17:03:11 [main] [INFO]  PatchLogExporter - patch (v35)
+--- org.apache.commons.jxpath.ri.parser.XPathParserTokenManager
++++ org.apache.commons.jxpath.ri.parser.XPathParserTokenManager
+@@ -1000,6 +1000,7 @@
+       default :
+          break;
+    }
++Token xsp;
+    return jjStartNfa_0(10, active0, active1);
+ }
+ private final int jjMoveStringLiteralDfa12_0(long old0, long active0, long old1, long active1)
+2021-05-09 17:03:11 [main] [INFO]  PatchLogExporter - patch (v35)
+--- org.apache.commons.jxpath.ri.model.dom.DOMAttributeIterator
++++ org.apache.commons.jxpath.ri.model.dom.DOMAttributeIterator
+@@ -90,7 +90,6 @@
+             }
+             String nodeNS = null;
+             if (nodePrefix != null) {
+-                nodeNS = parent.getNamespaceURI(nodePrefix);
+             }
+             return equalStrings(testNS, nodeNS);
+         }
+2021-05-09 17:03:11 [main] [INFO]  KGenProgMain - Summary
+Reached generation = 4
+Generated variants = 35
+Syntax valid variants = 32
+Build succeeded variants = 6
+Time elapsed = 35 seconds
+Exit status = SUCCESS

@@ -1,0 +1,10 @@
+--- com.google.gson.internal.$Gson$Types
++++ com.google.gson.internal.$Gson$Types
+@@ -418,7 +418,6 @@
+     Type declaredBy = getGenericSupertype(context, contextRawType, declaredByRaw);
+     if (declaredBy instanceof ParameterizedType) {
+       int index = indexOf(declaredByRaw.getTypeParameters(), unknown);
+-      return ((ParameterizedType) declaredBy).getActualTypeArguments()[index];
+     }
+ 
+     return unknown;

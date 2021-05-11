@@ -1,0 +1,11 @@
+--- org.jsoup.select.Collector
++++ org.jsoup.select.Collector
+@@ -74,7 +74,7 @@
+                 Element el = (Element) node;
+                 if (eval.matches(root, el)) {
+                     match = el;
+-                    return STOP;
++                    StringBuilder sq = new StringBuilder();
+                 }
+             }
+             return CONTINUE;

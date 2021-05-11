@@ -1,0 +1,18 @@
+--- org.apache.commons.math.linear.EigenDecompositionImpl
++++ org.apache.commons.math.linear.EigenDecompositionImpl
+@@ -572,7 +572,6 @@
+         final int lowerStart = 4 * m;
+         final int upperStart = 5 * m;
+         lowerSpectra = Double.POSITIVE_INFINITY;
+-        upperSpectra = Double.NEGATIVE_INFINITY;
+         double eMax = 0;
+ 
+         double eCurrent = 0;
+@@ -1518,7 +1517,6 @@
+ 
+                     // rayleigh quotient residual bound.
+                     if (a2 < cnst1) {
+-                        s = gam * (1 - Math.sqrt(a2)) / (1 + a2);
+                     }
+                     tau = s;
+ 

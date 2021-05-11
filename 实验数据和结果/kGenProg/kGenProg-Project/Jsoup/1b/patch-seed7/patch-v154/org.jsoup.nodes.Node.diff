@@ -1,0 +1,16 @@
+--- org.jsoup.nodes.Node
++++ org.jsoup.nodes.Node
+@@ -223,13 +223,11 @@
+         Integer index = indexInList(out, childNodes);
+         childNodes.set(index, in);
+         in.parentNode = this;
+-        out.parentNode = null;
+     }
+ 
+     protected void removeChild(Node out) {
+         Validate.isTrue(out.parentNode == this);
+         int index = indexInList(out, childNodes);
+-        childNodes.remove(index);
+         out.parentNode = null;
+     }
+ 

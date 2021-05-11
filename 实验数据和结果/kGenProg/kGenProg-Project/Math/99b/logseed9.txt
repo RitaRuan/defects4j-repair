@@ -1,0 +1,81 @@
+RUNNING THE BUG: Math 99, WITH THE SEED: 9
+2021-05-09 01:15:21 [main] [INFO]  KGenProgMain - 
+==================== kGenProg Configuration ====================
+configPath = kgenprog.toml
+rootDir = . (set by command line)
+productPaths = [src/java] (set by command line)
+testPaths = [src/test] (set by command line)
+classPaths = [/home/ubuntu/rtx/defects4j/framework/projects/Math/lib/commons-discovery-0.5.jar, /home/ubuntu/rtx/defects4j/framework/projects/lib/junit-4.11.jar] (set by command line)
+executionTests = [org.apache.commons.math.util.MathUtilsTest] (set by command line)
+outDir = /home/ubuntu/rtx/d4j/Math/99b/kGenProg-Project/patch-seed9 (set by command line)
+logLevel = INFO
+mutationGeneratingCount = 10
+crossoverGeneratingCount = 10
+headcount = 10
+maxGeneration = 10
+timeLimit = PT1M
+testTimeLimit = PT10S
+requiredSolutionsCount = 1
+randomSeed = 9 (set by command line)
+scope = PROJECT (set by command line)
+faultLocalization = Ochiai (set by command line)
+mutationType = Simple
+crossoverType = Random
+firstVariantSelectionStrategy = Random
+secondVariantSelectionStrategy = Random
+isPatchOutput = true
+isHistoryRecord = false
+currentDirectory = /home/ubuntu/rtx/d4j/Math/99b
+version = 1.8.0
+================================================================
+2021-05-09 01:15:41 [main] [INFO]  KGenProgMain - initial failed tests (2/44)
+org.apache.commons.math.util.MathUtilsTest.testLcm: nullorg.apache.commons.math.util.MathUtilsTest.testGcd: null
+2021-05-09 01:15:42 [main] [INFO]  KGenProgMain - GA started
+2021-05-09 01:15:42 [main] [INFO]  KGenProgMain - entered the era of 1st generation.
+2021-05-09 01:15:44 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 2 seconds
+Variants: generated 10, build-succeeded 1, build-failed 5, syntax-invalid 2, redundant 2
+Fitness: max 0.886(1), min 0.886(1), ave 0.886
+----------------------------------------------------------------
+
+2021-05-09 01:15:44 [main] [INFO]  KGenProgMain - entered the era of 2nd generation.
+2021-05-09 01:15:46 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 4 seconds
+Variants: generated 10, build-succeeded 1, build-failed 7, syntax-invalid 1, redundant 1
+Fitness: max 0.909(1), min 0.909(1), ave 0.909
+----------------------------------------------------------------
+
+2021-05-09 01:15:46 [main] [INFO]  KGenProgMain - entered the era of 3rd generation.
+2021-05-09 01:15:48 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 5 seconds
+Variants: generated 10, build-succeeded 0, build-failed 6, syntax-invalid 3, redundant 1
+Fitness: max --, min --, ave NaN
+----------------------------------------------------------------
+
+2021-05-09 01:15:48 [main] [INFO]  KGenProgMain - entered the era of 4th generation.
+2021-05-09 01:16:40 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 58 seconds
+Variants: generated 10, build-succeeded 1, build-failed 7, syntax-invalid 1, redundant 1
+Fitness: max 0.886(1), min 0.886(1), ave 0.886
+----------------------------------------------------------------
+
+2021-05-09 01:16:40 [main] [INFO]  KGenProgMain - entered the era of 5th generation.
+2021-05-09 01:17:33 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 1 minutes 50 seconds
+Variants: generated 10, build-succeeded 2, build-failed 4, syntax-invalid 1, redundant 3
+Fitness: max 0.955(1), min 0.886(1), ave 0.92
+----------------------------------------------------------------
+
+2021-05-09 01:17:33 [main] [INFO]  KGenProgMain - GA stopped
+2021-05-09 01:17:33 [main] [INFO]  KGenProgMain - Summary
+Reached generation = 5
+Generated variants = 50
+Syntax valid variants = 42
+Build succeeded variants = 5
+Time elapsed = 1 minutes 50 seconds
+Exit status = FAILURE (time limit)

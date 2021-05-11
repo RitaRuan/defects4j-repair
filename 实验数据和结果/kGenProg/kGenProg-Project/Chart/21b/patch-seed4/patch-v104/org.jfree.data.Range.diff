@@ -1,0 +1,18 @@
+--- org.jfree.data.Range
++++ org.jfree.data.Range
+@@ -88,7 +88,6 @@
+                 + ") <= upper (" + upper + ").";
+             throw new IllegalArgumentException(msg);
+         }
+-        this.lower = lower;
+         this.upper = upper;
+     }
+ 
+@@ -328,7 +327,6 @@
+      */
+     public boolean equals(Object obj) {
+         if (!(obj instanceof Range)) {
+-            return false;
+         }
+         Range range = (Range) obj;
+         if (!(this.lower == range.lower)) {

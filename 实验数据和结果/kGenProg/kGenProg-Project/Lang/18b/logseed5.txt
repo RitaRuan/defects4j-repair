@@ -1,0 +1,49 @@
+RUNNING THE BUG: Lang 18, WITH THE SEED: 5
+2021-05-08 22:48:09 [main] [INFO]  KGenProgMain - 
+==================== kGenProg Configuration ====================
+configPath = kgenprog.toml
+rootDir = . (set by command line)
+productPaths = [src/main/java] (set by command line)
+testPaths = [src/test/java] (set by command line)
+classPaths = [/home/rtx/repair/defects4j/framework/projects/lib/junit-4.11.jar, /home/rtx/repair/defects4j/framework/projects/Lang/lib/easymock.jar, /home/rtx/repair/defects4j/framework/projects/Lang/lib/commons-io.jar, /home/rtx/repair/defects4j/framework/projects/Lang/lib/cglib.jar, /home/rtx/repair/defects4j/framework/projects/Lang/lib/asm.jar] (set by command line)
+executionTests = [org.apache.commons.lang3.time.FastDateFormatTest] (set by command line)
+outDir = /home/rtx/repair/d4j/Lang/18b/kGenProg-Project/patch-seed5 (set by command line)
+logLevel = INFO
+mutationGeneratingCount = 10
+crossoverGeneratingCount = 10
+headcount = 10
+maxGeneration = 10
+timeLimit = PT1M
+testTimeLimit = PT10S
+requiredSolutionsCount = 1
+randomSeed = 5 (set by command line)
+scope = PROJECT (set by command line)
+faultLocalization = Ochiai (set by command line)
+mutationType = Simple
+crossoverType = Random
+firstVariantSelectionStrategy = Random
+secondVariantSelectionStrategy = Random
+isPatchOutput = true
+isHistoryRecord = false
+currentDirectory = /home/rtx/repair/d4j/Lang/18b
+version = 1.8.0
+================================================================
+2021-05-08 22:48:20 [main] [INFO]  KGenProgMain - initial failed tests (2/15)
+org.apache.commons.lang3.time.FastDateFormatTest.testFormat: nullorg.apache.commons.lang3.time.FastDateFormatTest.testShortDateStyleWithLocales: null
+2021-05-08 22:48:21 [main] [INFO]  KGenProgMain - GA started
+2021-05-08 22:48:21 [main] [INFO]  KGenProgMain - entered the era of 1st generation.
+2021-05-08 22:50:56 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 2 minutes 35 seconds
+Variants: generated 10, build-succeeded 3, build-failed 5, syntax-invalid 1, redundant 1
+Fitness: max 0.867(1), min 0(1), ave 0.511
+----------------------------------------------------------------
+
+2021-05-08 22:50:56 [main] [INFO]  KGenProgMain - GA stopped
+2021-05-08 22:50:56 [main] [INFO]  KGenProgMain - Summary
+Reached generation = 1
+Generated variants = 10
+Syntax valid variants = 9
+Build succeeded variants = 3
+Time elapsed = 2 minutes 35 seconds
+Exit status = FAILURE (time limit)

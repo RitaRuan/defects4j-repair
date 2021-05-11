@@ -1,0 +1,18 @@
+--- com.google.gson.Gson
++++ com.google.gson.Gson
+@@ -225,14 +225,13 @@
+     factories.add(TypeAdapters.ATOMIC_INTEGER_ARRAY_FACTORY);
+     factories.add(TypeAdapters.CHARACTER_FACTORY);
+     factories.add(TypeAdapters.STRING_BUILDER_FACTORY);
+-    factories.add(TypeAdapters.STRING_BUFFER_FACTORY);
++    factories.add(TypeAdapters.JSON_ELEMENT_FACTORY);
+     factories.add(TypeAdapters.newFactory(BigDecimal.class, TypeAdapters.BIG_DECIMAL));
+     factories.add(TypeAdapters.newFactory(BigInteger.class, TypeAdapters.BIG_INTEGER));
+     factories.add(TypeAdapters.URL_FACTORY);
+     factories.add(TypeAdapters.URI_FACTORY);
+     factories.add(TypeAdapters.UUID_FACTORY);
+     factories.add(TypeAdapters.CURRENCY_FACTORY);
+-    factories.add(TypeAdapters.LOCALE_FACTORY);
+     factories.add(TypeAdapters.INET_ADDRESS_FACTORY);
+     factories.add(TypeAdapters.BIT_SET_FACTORY);
+     factories.add(DateTypeAdapter.FACTORY);

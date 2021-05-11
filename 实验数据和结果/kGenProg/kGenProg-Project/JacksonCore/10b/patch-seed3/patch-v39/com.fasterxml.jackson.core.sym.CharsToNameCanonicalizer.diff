@@ -1,0 +1,10 @@
+--- com.fasterxml.jackson.core.sym.CharsToNameCanonicalizer
++++ com.fasterxml.jackson.core.sym.CharsToNameCanonicalizer
+@@ -275,7 +275,6 @@
+         // Hard-coded fill factor, 75%
+         int arrayLen = (symbols.length);
+         _sizeThreshold = _thresholdSize(arrayLen);
+-        _indexMask =  (arrayLen - 1);
+         _longestCollisionList = longestColl;
+ 
+         // Need to make copies of arrays, if/when adding new entries

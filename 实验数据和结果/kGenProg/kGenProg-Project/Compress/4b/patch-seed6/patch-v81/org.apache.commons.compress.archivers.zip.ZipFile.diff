@@ -1,0 +1,10 @@
+--- org.apache.commons.compress.archivers.zip.ZipFile
++++ org.apache.commons.compress.archivers.zip.ZipFile
+@@ -443,7 +443,6 @@
+         long off = archive.length() - MIN_EOCD_SIZE;
+         long stopSearching = Math.max(0L, archive.length() - MAX_EOCD_SIZE);
+         if (off >= 0) {
+-            archive.seek(off);
+             byte[] sig = ZipArchiveOutputStream.EOCD_SIG;
+             int curr = archive.read();
+             while (off >= stopSearching && curr != -1) {

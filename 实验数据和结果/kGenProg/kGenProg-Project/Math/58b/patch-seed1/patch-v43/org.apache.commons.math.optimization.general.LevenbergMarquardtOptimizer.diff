@@ -1,0 +1,10 @@
+--- org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer
++++ org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer
+@@ -592,7 +592,6 @@
+             // compute the Newton correction
+             for (int j = 0; j < solvedCols; ++j) {
+                 int pj = permutation[j];
+-                work1[pj] = work3[pj] * diag[pj] / dxNorm;
+             }
+             for (int j = 0; j < solvedCols; ++j) {
+                 int pj = permutation[j];

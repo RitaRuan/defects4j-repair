@@ -1,5 +1,5 @@
 RUNNING THE BUG: Codec 16, WITH THE SEED: 9
-2021-01-31 20:42:47 [main] [INFO]  KGenProgMain - 
+2021-05-09 21:42:38 [main] [INFO]  KGenProgMain - 
 ==================== kGenProg Configuration ====================
 configPath = kgenprog.toml
 rootDir = . (set by command line)
@@ -7,7 +7,7 @@ productPaths = [src/main/java] (set by command line)
 testPaths = [src/test/java] (set by command line)
 classPaths = [/home/ubuntu/rtx/defects4j/framework/projects/lib/junit-4.11.jar, /home/ubuntu/rtx/defects4j/framework/projects/Codec/lib/junit/junit/4.12/junit-4.12.jar, /home/ubuntu/rtx/defects4j/framework/projects/Codec/lib/lib/junit/junit/4.12/junit-4.12.jar, /home/ubuntu/rtx/defects4j/framework/projects/Codec/lib/lib/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.jar, /home/ubuntu/rtx/defects4j/framework/projects/Codec/lib/lib/org/apache/commons/commons-lang3/3.8.1/commons-lang3-3.8.1.jar, /home/ubuntu/rtx/defects4j/framework/projects/Codec/lib/lib/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar, /home/ubuntu/rtx/defects4j/framework/projects/Codec/lib/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.jar, /home/ubuntu/rtx/defects4j/framework/projects/Codec/lib/org/apache/commons/commons-lang3/3.8.1/commons-lang3-3.8.1.jar, /home/ubuntu/rtx/defects4j/framework/projects/Codec/lib/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar] (set by command line)
 executionTests = [org.apache.commons.codec.binary.Base32Test] (set by command line)
-outDir = ./patch-9 (set by command line)
+outDir = /home/ubuntu/rtx/d4j/Codec/16b/kGenProg-Package/patch-seed9 (set by command line)
 logLevel = INFO
 mutationGeneratingCount = 10
 crossoverGeneratingCount = 10
@@ -17,8 +17,8 @@ timeLimit = PT1M
 testTimeLimit = PT10S
 requiredSolutionsCount = 1
 randomSeed = 9 (set by command line)
-scope = PACKAGE
-faultLocalization = Ochiai
+scope = PACKAGE (set by command line)
+faultLocalization = Ochiai (set by command line)
 mutationType = Simple
 crossoverType = Random
 firstVariantSelectionStrategy = Random
@@ -28,19 +28,19 @@ isHistoryRecord = false
 currentDirectory = /home/ubuntu/rtx/d4j/Codec/16b
 version = 1.8.0
 ================================================================
-2021-01-31 20:43:49 [main] [INFO]  KGenProgMain - initial failed tests (1/9)
+2021-05-09 21:42:49 [main] [INFO]  KGenProgMain - initial failed tests (1/9)
 org.apache.commons.codec.binary.Base32Test.testCodec200: pad must not be in alphabet or whitespace
-2021-01-31 20:43:50 [main] [INFO]  KGenProgMain - GA started
-2021-01-31 20:43:50 [main] [INFO]  KGenProgMain - entered the era of 1st generation.
-2021-01-31 20:44:03 [main] [INFO]  KGenProgMain - 
+2021-05-09 21:42:49 [main] [INFO]  KGenProgMain - GA started
+2021-05-09 21:42:49 [main] [INFO]  KGenProgMain - entered the era of 1st generation.
+2021-05-09 21:42:51 [main] [INFO]  KGenProgMain - 
 ----------------------------------------------------------------
-Elapsed time: 12 seconds
+Elapsed time: 2 seconds
 Variants: generated 10, build-succeeded 1, build-failed 8, syntax-invalid 0, redundant 1
 Fitness: max 1(1), min 1(1), ave 1
 ----------------------------------------------------------------
 
-2021-01-31 20:44:03 [main] [INFO]  KGenProgMain - GA stopped
-2021-01-31 20:44:04 [main] [INFO]  PatchLogExporter - patch (v10)
+2021-05-09 21:42:51 [main] [INFO]  KGenProgMain - GA stopped
+2021-05-09 21:42:51 [main] [INFO]  PatchLogExporter - patch (v10)
 --- org.apache.commons.codec.Decoder
 +++ org.apache.commons.codec.Decoder
 @@ -44,4 +44,3 @@
@@ -48,7 +48,7 @@ Fitness: max 1(1), min 1(1), ave 1
      Object decode(Object source) throws DecoderException;
  }
 -
-2021-01-31 20:44:04 [main] [INFO]  PatchLogExporter - patch (v10)
+2021-05-09 21:42:51 [main] [INFO]  PatchLogExporter - patch (v10)
 --- org.apache.commons.codec.Encoder
 +++ org.apache.commons.codec.Encoder
 @@ -41,4 +41,3 @@
@@ -56,7 +56,7 @@ Fitness: max 1(1), min 1(1), ave 1
      Object encode(Object source) throws EncoderException;
  }
 -
-2021-01-31 20:44:04 [main] [INFO]  PatchLogExporter - patch (v10)
+2021-05-09 21:42:51 [main] [INFO]  PatchLogExporter - patch (v10)
 --- org.apache.commons.codec.BinaryEncoder
 +++ org.apache.commons.codec.BinaryEncoder
 @@ -35,4 +35,3 @@
@@ -64,7 +64,7 @@ Fitness: max 1(1), min 1(1), ave 1
      byte[] encode(byte[] source) throws EncoderException;
  }
 -
-2021-01-31 20:44:04 [main] [INFO]  PatchLogExporter - patch (v10)
+2021-05-09 21:42:51 [main] [INFO]  PatchLogExporter - patch (v10)
 --- org.apache.commons.codec.StringEncoder
 +++ org.apache.commons.codec.StringEncoder
 @@ -35,4 +35,3 @@
@@ -72,7 +72,7 @@ Fitness: max 1(1), min 1(1), ave 1
      String encode(String source) throws EncoderException;
  }
 -
-2021-01-31 20:44:04 [main] [INFO]  PatchLogExporter - patch (v10)
+2021-05-09 21:42:51 [main] [INFO]  PatchLogExporter - patch (v10)
 --- org.apache.commons.codec.binary.Base32
 +++ org.apache.commons.codec.binary.Base32
 @@ -306,7 +306,6 @@
@@ -83,7 +83,7 @@ Fitness: max 1(1), min 1(1), ave 1
          }
      }
  
-2021-01-31 20:44:04 [main] [INFO]  PatchLogExporter - patch (v10)
+2021-05-09 21:42:51 [main] [INFO]  PatchLogExporter - patch (v10)
 --- org.apache.commons.codec.BinaryDecoder
 +++ org.apache.commons.codec.BinaryDecoder
 @@ -35,4 +35,3 @@
@@ -91,7 +91,7 @@ Fitness: max 1(1), min 1(1), ave 1
      byte[] decode(byte[] source) throws DecoderException;
  }
 -
-2021-01-31 20:44:04 [main] [INFO]  PatchLogExporter - patch (v10)
+2021-05-09 21:42:51 [main] [INFO]  PatchLogExporter - patch (v10)
 --- org.apache.commons.codec.StringDecoder
 +++ org.apache.commons.codec.StringDecoder
 @@ -35,4 +35,3 @@
@@ -99,10 +99,10 @@ Fitness: max 1(1), min 1(1), ave 1
      String decode(String source) throws DecoderException;
  }
 -
-2021-01-31 20:44:04 [main] [INFO]  KGenProgMain - Summary
+2021-05-09 21:42:51 [main] [INFO]  KGenProgMain - Summary
 Reached generation = 1
 Generated variants = 10
 Syntax valid variants = 10
 Build succeeded variants = 1
-Time elapsed = 14 seconds
+Time elapsed = 2 seconds
 Exit status = SUCCESS

@@ -1,0 +1,10 @@
+--- com.fasterxml.jackson.core.sym.ByteQuadsCanonicalizer
++++ com.fasterxml.jackson.core.sym.ByteQuadsCanonicalizer
+@@ -1041,7 +1041,6 @@
+         for (int i = 3; i < qlen; ++i) {
+             int next = q[i];
+             next = next ^ (next >> 21);
+-            hash += next;
+         }
+         hash *= MULT2;
+         

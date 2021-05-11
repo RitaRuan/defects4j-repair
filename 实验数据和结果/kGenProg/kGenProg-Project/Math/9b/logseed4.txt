@@ -1,0 +1,121 @@
+RUNNING THE BUG: Math 9, WITH THE SEED: 4
+2021-05-08 02:40:14 [main] [INFO]  KGenProgMain - 
+==================== kGenProg Configuration ====================
+configPath = kgenprog.toml
+rootDir = . (set by command line)
+productPaths = [src/main/java] (set by command line)
+testPaths = [src/test/java] (set by command line)
+classPaths = [/home/ubuntu/rtx/defects4j/framework/projects/Math/lib/commons-discovery-0.5.jar, /home/ubuntu/rtx/defects4j/framework/projects/lib/junit-4.11.jar] (set by command line)
+executionTests = [org.apache.commons.math3.geometry.euclidean.threed.LineTest] (set by command line)
+outDir = /home/ubuntu/rtx/d4j/Math/9b/kGenProg-Project/patch-seed4 (set by command line)
+logLevel = INFO
+mutationGeneratingCount = 10
+crossoverGeneratingCount = 10
+headcount = 10
+maxGeneration = 10
+timeLimit = PT1M
+testTimeLimit = PT10S
+requiredSolutionsCount = 1
+randomSeed = 4 (set by command line)
+scope = PROJECT (set by command line)
+faultLocalization = Ochiai (set by command line)
+mutationType = Simple
+crossoverType = Random
+firstVariantSelectionStrategy = Random
+secondVariantSelectionStrategy = Random
+isPatchOutput = true
+isHistoryRecord = false
+currentDirectory = /home/ubuntu/rtx/d4j/Math/9b
+version = 1.8.0
+================================================================
+2021-05-08 02:40:53 [main] [INFO]  KGenProgMain - initial failed tests (1/7)
+org.apache.commons.math3.geometry.euclidean.threed.LineTest.testRevert: arrays first differed at element [0]; expected:<0.028581782127907646> but was:<0.028581782243293483>
+2021-05-08 02:40:54 [main] [INFO]  KGenProgMain - GA started
+2021-05-08 02:40:54 [main] [INFO]  KGenProgMain - entered the era of 1st generation.
+2021-05-08 02:41:00 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 5 seconds
+Variants: generated 10, build-succeeded 0, build-failed 10, syntax-invalid 0, redundant 0
+Fitness: max --, min --, ave NaN
+----------------------------------------------------------------
+
+2021-05-08 02:41:00 [main] [INFO]  KGenProgMain - entered the era of 2nd generation.
+2021-05-08 02:41:07 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 12 seconds
+Variants: generated 10, build-succeeded 0, build-failed 10, syntax-invalid 0, redundant 0
+Fitness: max --, min --, ave NaN
+----------------------------------------------------------------
+
+2021-05-08 02:41:07 [main] [INFO]  KGenProgMain - entered the era of 3rd generation.
+2021-05-08 02:41:13 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 19 seconds
+Variants: generated 10, build-succeeded 0, build-failed 10, syntax-invalid 0, redundant 0
+Fitness: max --, min --, ave NaN
+----------------------------------------------------------------
+
+2021-05-08 02:41:13 [main] [INFO]  KGenProgMain - entered the era of 4th generation.
+2021-05-08 02:41:19 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 24 seconds
+Variants: generated 10, build-succeeded 0, build-failed 10, syntax-invalid 0, redundant 0
+Fitness: max --, min --, ave NaN
+----------------------------------------------------------------
+
+2021-05-08 02:41:19 [main] [INFO]  KGenProgMain - entered the era of 5th generation.
+2021-05-08 02:41:26 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 31 seconds
+Variants: generated 10, build-succeeded 1, build-failed 7, syntax-invalid 0, redundant 2
+Fitness: max 0.857(1), min 0.857(1), ave 0.857
+----------------------------------------------------------------
+
+2021-05-08 02:41:26 [main] [INFO]  KGenProgMain - entered the era of 6th generation.
+2021-05-08 02:41:34 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 39 seconds
+Variants: generated 10, build-succeeded 0, build-failed 10, syntax-invalid 0, redundant 0
+Fitness: max --, min --, ave NaN
+----------------------------------------------------------------
+
+2021-05-08 02:41:34 [main] [INFO]  KGenProgMain - entered the era of 7th generation.
+2021-05-08 02:41:40 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 46 seconds
+Variants: generated 10, build-succeeded 0, build-failed 10, syntax-invalid 0, redundant 0
+Fitness: max --, min --, ave NaN
+----------------------------------------------------------------
+
+2021-05-08 02:41:40 [main] [INFO]  KGenProgMain - entered the era of 8th generation.
+2021-05-08 02:41:46 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 51 seconds
+Variants: generated 10, build-succeeded 2, build-failed 6, syntax-invalid 0, redundant 2
+Fitness: max 0.857(1), min 0(1), ave 0.429
+----------------------------------------------------------------
+
+2021-05-08 02:41:46 [main] [INFO]  KGenProgMain - entered the era of 9th generation.
+2021-05-08 02:41:54 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 1 minutes 0 seconds
+Variants: generated 10, build-succeeded 1, build-failed 8, syntax-invalid 0, redundant 1
+Fitness: max 0(1), min 0(1), ave 0
+----------------------------------------------------------------
+
+2021-05-08 02:41:54 [main] [INFO]  KGenProgMain - entered the era of 10th generation.
+2021-05-08 02:41:59 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 1 minutes 5 seconds
+Variants: generated 10, build-succeeded 0, build-failed 8, syntax-invalid 0, redundant 2
+Fitness: max --, min --, ave NaN
+----------------------------------------------------------------
+
+2021-05-08 02:41:59 [main] [INFO]  KGenProgMain - GA stopped
+2021-05-08 02:41:59 [main] [INFO]  KGenProgMain - Summary
+Reached generation = 10
+Generated variants = 100
+Syntax valid variants = 100
+Build succeeded variants = 4
+Time elapsed = 1 minutes 5 seconds
+Exit status = FAILURE (time limit)

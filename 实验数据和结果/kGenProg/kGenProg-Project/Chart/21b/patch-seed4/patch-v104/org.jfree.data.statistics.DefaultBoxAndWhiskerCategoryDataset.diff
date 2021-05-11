@@ -1,0 +1,16 @@
+--- org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset
++++ org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset
+@@ -166,13 +166,11 @@
+         
+             if (Double.isNaN(this.maximumRangeValue)) {
+                 this.maximumRangeValue = maxval;
+-                this.maximumRangeValueRow = r;
+                 this.maximumRangeValueColumn = c;
+             }
+             else if (maxval > this.maximumRangeValue) {
+                 this.maximumRangeValue = maxval;
+                 this.maximumRangeValueRow = r;
+-                this.maximumRangeValueColumn = c;
+             }
+         
+             if (Double.isNaN(this.minimumRangeValue)) {

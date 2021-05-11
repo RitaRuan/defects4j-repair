@@ -1,0 +1,73 @@
+RUNNING THE BUG: Lang 32, WITH THE SEED: 5
+2021-05-08 23:28:35 [main] [INFO]  KGenProgMain - 
+==================== kGenProg Configuration ====================
+configPath = kgenprog.toml
+rootDir = . (set by command line)
+productPaths = [src/main/java] (set by command line)
+testPaths = [src/test/java] (set by command line)
+classPaths = [/home/rtx/repair/defects4j/framework/projects/lib/junit-4.11.jar, /home/rtx/repair/defects4j/framework/projects/Lang/lib/easymock.jar, /home/rtx/repair/defects4j/framework/projects/Lang/lib/commons-io.jar, /home/rtx/repair/defects4j/framework/projects/Lang/lib/cglib.jar, /home/rtx/repair/defects4j/framework/projects/Lang/lib/asm.jar] (set by command line)
+executionTests = [org.apache.commons.lang3.builder.HashCodeBuilderTest] (set by command line)
+outDir = /home/rtx/repair/d4j/Lang/32b/kGenProg-Project/patch-seed5 (set by command line)
+logLevel = INFO
+mutationGeneratingCount = 10
+crossoverGeneratingCount = 10
+headcount = 10
+maxGeneration = 10
+timeLimit = PT1M
+testTimeLimit = PT10S
+requiredSolutionsCount = 1
+randomSeed = 5 (set by command line)
+scope = PROJECT (set by command line)
+faultLocalization = Ochiai (set by command line)
+mutationType = Simple
+crossoverType = Random
+firstVariantSelectionStrategy = Random
+secondVariantSelectionStrategy = Random
+isPatchOutput = true
+isHistoryRecord = false
+currentDirectory = /home/rtx/repair/d4j/Lang/32b
+version = 1.8.0
+================================================================
+2021-05-08 23:28:46 [main] [INFO]  KGenProgMain - initial failed tests (1/41)
+org.apache.commons.lang3.builder.HashCodeBuilderTest.testReflectionObjectCycle: null
+2021-05-08 23:28:46 [main] [INFO]  KGenProgMain - GA started
+2021-05-08 23:28:46 [main] [INFO]  KGenProgMain - entered the era of 1st generation.
+2021-05-08 23:28:47 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 1 seconds
+Variants: generated 10, build-succeeded 1, build-failed 6, syntax-invalid 1, redundant 2
+Fitness: max 0.951(1), min 0.951(1), ave 0.951
+----------------------------------------------------------------
+
+2021-05-08 23:28:47 [main] [INFO]  KGenProgMain - entered the era of 2nd generation.
+2021-05-08 23:29:28 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 41 seconds
+Variants: generated 10, build-succeeded 1, build-failed 7, syntax-invalid 1, redundant 1
+Fitness: max 0.902(1), min 0.902(1), ave 0.902
+----------------------------------------------------------------
+
+2021-05-08 23:29:28 [main] [INFO]  KGenProgMain - entered the era of 3rd generation.
+2021-05-08 23:29:29 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 42 seconds
+Variants: generated 10, build-succeeded 1, build-failed 7, syntax-invalid 0, redundant 2
+Fitness: max 0.951(1), min 0.951(1), ave 0.951
+----------------------------------------------------------------
+
+2021-05-08 23:29:29 [main] [INFO]  KGenProgMain - entered the era of 4th generation.
+2021-05-08 23:30:00 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 1 minutes 13 seconds
+Variants: generated 20, build-succeeded 2, build-failed 6, syntax-invalid 2, redundant 10
+Fitness: max 0.951(1), min 0.902(1), ave 0.927
+----------------------------------------------------------------
+
+2021-05-08 23:30:00 [main] [INFO]  KGenProgMain - GA stopped
+2021-05-08 23:30:00 [main] [INFO]  KGenProgMain - Summary
+Reached generation = 4
+Generated variants = 50
+Syntax valid variants = 46
+Build succeeded variants = 5
+Time elapsed = 1 minutes 13 seconds
+Exit status = FAILURE (time limit)

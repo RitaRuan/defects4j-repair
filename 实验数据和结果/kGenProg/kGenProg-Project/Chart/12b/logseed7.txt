@@ -1,0 +1,113 @@
+RUNNING THE BUG: Chart 12, WITH THE SEED: 7
+2021-05-07 22:29:04 [main] [INFO]  KGenProgMain - 
+==================== kGenProg Configuration ====================
+configPath = kgenprog.toml
+rootDir = . (set by command line)
+productPaths = [source] (set by command line)
+testPaths = [tests] (set by command line)
+classPaths = [/home/ubuntu/rtx/d4j/Chart/26b/lib/servlet.jar, /home/ubuntu/rtx/defects4j/framework/projects/lib/junit-4.11.jar] (set by command line)
+executionTests = [org.jfree.chart.plot.junit.MultiplePiePlotTests] (set by command line)
+outDir = /home/ubuntu/rtx/d4j/Chart/12b/kGenProg-Project/patch-seed7 (set by command line)
+logLevel = INFO
+mutationGeneratingCount = 10
+crossoverGeneratingCount = 10
+headcount = 10
+maxGeneration = 10
+timeLimit = PT1M
+testTimeLimit = PT10S
+requiredSolutionsCount = 1
+randomSeed = 7 (set by command line)
+scope = PROJECT (set by command line)
+faultLocalization = Ochiai (set by command line)
+mutationType = Simple
+crossoverType = Random
+firstVariantSelectionStrategy = Random
+secondVariantSelectionStrategy = Random
+isPatchOutput = true
+isHistoryRecord = false
+currentDirectory = /home/ubuntu/rtx/d4j/Chart/12b
+version = 1.8.0
+================================================================
+2021-05-07 22:29:38 [main] [INFO]  KGenProgMain - initial failed tests (4/4)
+org.jfree.chart.plot.junit.MultiplePiePlotTests.testSerialization: nullorg.jfree.chart.plot.junit.MultiplePiePlotTests.testConstructor: nullorg.jfree.chart.plot.junit.MultiplePiePlotTests.testEquals: nullorg.jfree.chart.plot.junit.MultiplePiePlotTests.testCloning: null
+2021-05-07 22:29:40 [main] [INFO]  KGenProgMain - GA started
+2021-05-07 22:29:40 [main] [INFO]  KGenProgMain - entered the era of 1st generation.
+2021-05-07 22:29:46 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 5 seconds
+Variants: generated 10, build-succeeded 4, build-failed 6, syntax-invalid 0, redundant 0
+Fitness: max 0(4), min 0(4), ave 0
+----------------------------------------------------------------
+
+2021-05-07 22:29:46 [main] [INFO]  KGenProgMain - entered the era of 2nd generation.
+2021-05-07 22:29:50 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 9 seconds
+Variants: generated 10, build-succeeded 3, build-failed 7, syntax-invalid 0, redundant 0
+Fitness: max 0(3), min 0(3), ave 0
+----------------------------------------------------------------
+
+2021-05-07 22:29:50 [main] [INFO]  KGenProgMain - entered the era of 3rd generation.
+2021-05-07 22:29:55 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 15 seconds
+Variants: generated 10, build-succeeded 5, build-failed 5, syntax-invalid 0, redundant 0
+Fitness: max 0(5), min 0(5), ave 0
+----------------------------------------------------------------
+
+2021-05-07 22:29:55 [main] [INFO]  KGenProgMain - entered the era of 4th generation.
+2021-05-07 22:30:01 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 20 seconds
+Variants: generated 20, build-succeeded 5, build-failed 6, syntax-invalid 1, redundant 8
+Fitness: max 0(5), min 0(5), ave 0
+----------------------------------------------------------------
+
+2021-05-07 22:30:01 [main] [INFO]  KGenProgMain - entered the era of 5th generation.
+2021-05-07 22:30:08 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 27 seconds
+Variants: generated 20, build-succeeded 6, build-failed 5, syntax-invalid 0, redundant 9
+Fitness: max 0(6), min 0(6), ave 0
+----------------------------------------------------------------
+
+2021-05-07 22:30:08 [main] [INFO]  KGenProgMain - entered the era of 6th generation.
+2021-05-07 22:30:15 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 35 seconds
+Variants: generated 20, build-succeeded 9, build-failed 7, syntax-invalid 1, redundant 3
+Fitness: max 0(9), min 0(9), ave 0
+----------------------------------------------------------------
+
+2021-05-07 22:30:15 [main] [INFO]  KGenProgMain - entered the era of 7th generation.
+2021-05-07 22:30:23 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 42 seconds
+Variants: generated 20, build-succeeded 7, build-failed 7, syntax-invalid 0, redundant 6
+Fitness: max 0(7), min 0(7), ave 0
+----------------------------------------------------------------
+
+2021-05-07 22:30:23 [main] [INFO]  KGenProgMain - entered the era of 8th generation.
+2021-05-07 22:30:38 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 57 seconds
+Variants: generated 20, build-succeeded 8, build-failed 7, syntax-invalid 0, redundant 5
+Fitness: max 0(8), min 0(8), ave 0
+----------------------------------------------------------------
+
+2021-05-07 22:30:38 [main] [INFO]  KGenProgMain - entered the era of 9th generation.
+2021-05-07 22:30:50 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 1 minutes 9 seconds
+Variants: generated 20, build-succeeded 10, build-failed 7, syntax-invalid 1, redundant 2
+Fitness: max 0(10), min 0(10), ave 0
+----------------------------------------------------------------
+
+2021-05-07 22:30:50 [main] [INFO]  KGenProgMain - GA stopped
+2021-05-07 22:30:50 [main] [INFO]  KGenProgMain - Summary
+Reached generation = 9
+Generated variants = 150
+Syntax valid variants = 147
+Build succeeded variants = 57
+Time elapsed = 1 minutes 9 seconds
+Exit status = FAILURE (time limit)

@@ -1,0 +1,10 @@
+--- com.google.gson.internal.bind.TypeAdapters
++++ com.google.gson.internal.bind.TypeAdapters
+@@ -882,7 +882,6 @@
+       @Override public <T2> TypeAdapter<T2> create(Gson gson, TypeToken<T2> typeToken) {
+         final Class<? super T2> requestedType = typeToken.getRawType();
+         if (!clazz.isAssignableFrom(requestedType)) {
+-          return null;
+         }
+         return (TypeAdapter<T2>) new TypeAdapter<T1>() {
+           @Override public void write(JsonWriter out, T1 value) throws IOException {

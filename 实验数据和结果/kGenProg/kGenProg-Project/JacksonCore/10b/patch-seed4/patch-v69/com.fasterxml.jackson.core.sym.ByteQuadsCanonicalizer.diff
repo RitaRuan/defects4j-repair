@@ -1,0 +1,21 @@
+--- com.fasterxml.jackson.core.sym.ByteQuadsCanonicalizer
++++ com.fasterxml.jackson.core.sym.ByteQuadsCanonicalizer
+@@ -1011,9 +1011,6 @@
+         hash *= MULT;
+         hash += (hash >>> 15);
+         hash ^= q3;
+-        // 26-Mar-2015, tatu: As per two-quad case, a short shift seems to help more here
+-        hash += (hash >>> 4);
+-
+         hash += (hash >>> 15);
+         hash ^= (hash << 9);
+ 
+@@ -1036,8 +1033,6 @@
+         hash += (hash >>> 15);
+         hash *= MULT;
+         hash ^= q[2];
+-        hash += (hash >>> 4);
+-
+         for (int i = 3; i < qlen; ++i) {
+             int next = q[i];
+             next = next ^ (next >> 21);

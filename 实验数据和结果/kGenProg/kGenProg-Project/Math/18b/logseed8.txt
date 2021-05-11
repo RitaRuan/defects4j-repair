@@ -1,0 +1,49 @@
+RUNNING THE BUG: Math 18, WITH THE SEED: 8
+2021-05-08 07:41:57 [main] [INFO]  KGenProgMain - 
+==================== kGenProg Configuration ====================
+configPath = kgenprog.toml
+rootDir = . (set by command line)
+productPaths = [src/main/java] (set by command line)
+testPaths = [src/test/java] (set by command line)
+classPaths = [/home/ubuntu/rtx/defects4j/framework/projects/Math/lib/commons-discovery-0.5.jar, /home/ubuntu/rtx/defects4j/framework/projects/lib/junit-4.11.jar] (set by command line)
+executionTests = [org.apache.commons.math3.optimization.direct.CMAESOptimizerTest] (set by command line)
+outDir = /home/ubuntu/rtx/d4j/Math/18b/kGenProg-Project/patch-seed8 (set by command line)
+logLevel = INFO
+mutationGeneratingCount = 10
+crossoverGeneratingCount = 10
+headcount = 10
+maxGeneration = 10
+timeLimit = PT1M
+testTimeLimit = PT10S
+requiredSolutionsCount = 1
+randomSeed = 8 (set by command line)
+scope = PROJECT (set by command line)
+faultLocalization = Ochiai (set by command line)
+mutationType = Simple
+crossoverType = Random
+firstVariantSelectionStrategy = Random
+secondVariantSelectionStrategy = Random
+isPatchOutput = true
+isHistoryRecord = false
+currentDirectory = /home/ubuntu/rtx/d4j/Math/18b
+version = 1.8.0
+================================================================
+2021-05-08 07:42:46 [main] [INFO]  KGenProgMain - initial failed tests (1/26)
+org.apache.commons.math3.optimization.direct.CMAESOptimizerTest.testFitAccuracyDependsOnBoundary: expected:<11.100000000084645> but was:<8.0>
+2021-05-08 07:42:48 [main] [INFO]  KGenProgMain - GA started
+2021-05-08 07:42:48 [main] [INFO]  KGenProgMain - entered the era of 1st generation.
+2021-05-08 07:44:46 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 1 minutes 58 seconds
+Variants: generated 10, build-succeeded 4, build-failed 5, syntax-invalid 1, redundant 0
+Fitness: max 0.923(4), min 0.923(4), ave 0.923
+----------------------------------------------------------------
+
+2021-05-08 07:44:46 [main] [INFO]  KGenProgMain - GA stopped
+2021-05-08 07:44:46 [main] [INFO]  KGenProgMain - Summary
+Reached generation = 1
+Generated variants = 10
+Syntax valid variants = 9
+Build succeeded variants = 4
+Time elapsed = 1 minutes 58 seconds
+Exit status = FAILURE (time limit)

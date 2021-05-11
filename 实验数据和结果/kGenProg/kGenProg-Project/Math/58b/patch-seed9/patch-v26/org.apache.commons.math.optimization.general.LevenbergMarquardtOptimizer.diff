@@ -1,0 +1,21 @@
+--- org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer
++++ org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer
+@@ -279,8 +279,6 @@
+                     xNorm  += xk * xk;
+                     diag[k] = dk;
+                 }
+-                xNorm = FastMath.sqrt(xNorm);
+-
+                 // initialize the step bound delta
+                 delta = (xNorm == 0) ? initialStepBoundFactor : (initialStepBoundFactor * xNorm);
+             }
+@@ -652,7 +650,8 @@
+             for (int i = j + 1; i < solvedCols; ++i) {
+                 weightedResidualJacobian[i][pj] = weightedResidualJacobian[j][permutation[i]];
+             }
+-            lmDir[j] = diagR[pj];
++            double sum = 0d;
++			lmDir[j] = diagR[pj];
+             work[j]  = qy[j];
+         }
+ 

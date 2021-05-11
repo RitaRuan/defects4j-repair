@@ -1,0 +1,42 @@
+RUNNING THE BUG: Math 59, WITH THE SEED: 3
+2021-05-08 20:06:35 [main] [INFO]  KGenProgMain - 
+==================== kGenProg Configuration ====================
+configPath = kgenprog.toml
+rootDir = . (set by command line)
+productPaths = [src/main/java] (set by command line)
+testPaths = [src/test/java] (set by command line)
+classPaths = [/home/ubuntu/rtx/defects4j/framework/projects/Math/lib/commons-discovery-0.5.jar, /home/ubuntu/rtx/defects4j/framework/projects/lib/junit-4.11.jar] (set by command line)
+executionTests = [org.apache.commons.math.util.FastMathTest] (set by command line)
+outDir = /home/ubuntu/rtx/d4j/Math/59b/kGenProg-Project/patch-seed3 (set by command line)
+logLevel = INFO
+mutationGeneratingCount = 10
+crossoverGeneratingCount = 10
+headcount = 10
+maxGeneration = 10
+timeLimit = PT1M
+testTimeLimit = PT10S
+requiredSolutionsCount = 1
+randomSeed = 3 (set by command line)
+scope = PROJECT (set by command line)
+faultLocalization = Ochiai (set by command line)
+mutationType = Simple
+crossoverType = Random
+firstVariantSelectionStrategy = Random
+secondVariantSelectionStrategy = Random
+isPatchOutput = true
+isHistoryRecord = false
+currentDirectory = /home/ubuntu/rtx/d4j/Math/59b
+version = 1.8.0
+================================================================
+2021-05-08 20:07:24 [main] [INFO]  KGenProgMain - initial failed tests (1/29)
+org.apache.commons.math.util.FastMathTest.testMinMaxFloat: max(50.0, -50.0) expected:<50.0> but was:<-50.0>
+2021-05-08 20:07:24 [main] [INFO]  KGenProgMain - GA started
+2021-05-08 20:07:24 [main] [INFO]  KGenProgMain - entered the era of 1st generation.
+2021-05-08 20:07:27 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 2 seconds
+Variants: generated 10, build-succeeded 0, build-failed 7, syntax-invalid 1, redundant 2
+Fitness: max --, min --, ave NaN
+----------------------------------------------------------------
+
+2021-05-08 20:07:27 [main] [INFO]  KGenProgMain - entered the era of 2nd generation.

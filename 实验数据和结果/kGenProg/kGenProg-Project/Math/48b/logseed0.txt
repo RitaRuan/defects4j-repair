@@ -1,0 +1,81 @@
+RUNNING THE BUG: Math 48, WITH THE SEED: 0
+2021-05-08 14:23:12 [main] [INFO]  KGenProgMain - 
+==================== kGenProg Configuration ====================
+configPath = kgenprog.toml
+rootDir = . (set by command line)
+productPaths = [src/main/java] (set by command line)
+testPaths = [src/test/java] (set by command line)
+classPaths = [/home/ubuntu/rtx/defects4j/framework/projects/Math/lib/commons-discovery-0.5.jar, /home/ubuntu/rtx/defects4j/framework/projects/lib/junit-4.11.jar] (set by command line)
+executionTests = [org.apache.commons.math.analysis.solvers.RegulaFalsiSolverTest] (set by command line)
+outDir = /home/ubuntu/rtx/d4j/Math/48b/kGenProg-Project/patch-seed0 (set by command line)
+logLevel = INFO
+mutationGeneratingCount = 10
+crossoverGeneratingCount = 10
+headcount = 10
+maxGeneration = 10
+timeLimit = PT1M
+testTimeLimit = PT10S
+requiredSolutionsCount = 1
+randomSeed = 0 (set by command line)
+scope = PROJECT (set by command line)
+faultLocalization = Ochiai (set by command line)
+mutationType = Simple
+crossoverType = Random
+firstVariantSelectionStrategy = Random
+secondVariantSelectionStrategy = Random
+isPatchOutput = true
+isHistoryRecord = false
+currentDirectory = /home/ubuntu/rtx/d4j/Math/48b
+version = 1.8.0
+================================================================
+2021-05-08 14:23:44 [main] [INFO]  KGenProgMain - initial failed tests (1/9)
+org.apache.commons.math.analysis.solvers.RegulaFalsiSolverTest.testIssue631: Unexpected exception, expected<org.apache.commons.math.exception.ConvergenceException> but was<org.apache.commons.math.exception.TooManyEvaluationsException>
+2021-05-08 14:23:45 [main] [INFO]  KGenProgMain - GA started
+2021-05-08 14:23:45 [main] [INFO]  KGenProgMain - entered the era of 1st generation.
+2021-05-08 14:23:54 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 8 seconds
+Variants: generated 10, build-succeeded 2, build-failed 7, syntax-invalid 0, redundant 1
+Fitness: max 0.889(1), min 0.444(1), ave 0.667
+----------------------------------------------------------------
+
+2021-05-08 14:23:54 [main] [INFO]  KGenProgMain - entered the era of 2nd generation.
+2021-05-08 14:24:01 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 16 seconds
+Variants: generated 10, build-succeeded 1, build-failed 9, syntax-invalid 0, redundant 0
+Fitness: max 0.889(1), min 0.889(1), ave 0.889
+----------------------------------------------------------------
+
+2021-05-08 14:24:01 [main] [INFO]  KGenProgMain - entered the era of 3rd generation.
+2021-05-08 14:24:11 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 26 seconds
+Variants: generated 10, build-succeeded 3, build-failed 7, syntax-invalid 0, redundant 0
+Fitness: max 0.889(2), min 0.444(1), ave 0.741
+----------------------------------------------------------------
+
+2021-05-08 14:24:11 [main] [INFO]  KGenProgMain - entered the era of 4th generation.
+2021-05-08 14:24:41 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 55 seconds
+Variants: generated 20, build-succeeded 8, build-failed 5, syntax-invalid 1, redundant 6
+Fitness: max 0.889(6), min 0.111(1), ave 0.736
+----------------------------------------------------------------
+
+2021-05-08 14:24:41 [main] [INFO]  KGenProgMain - entered the era of 5th generation.
+2021-05-08 14:25:04 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 1 minutes 18 seconds
+Variants: generated 20, build-succeeded 7, build-failed 8, syntax-invalid 1, redundant 4
+Fitness: max 0.889(6), min 0.222(1), ave 0.794
+----------------------------------------------------------------
+
+2021-05-08 14:25:04 [main] [INFO]  KGenProgMain - GA stopped
+2021-05-08 14:25:04 [main] [INFO]  KGenProgMain - Summary
+Reached generation = 5
+Generated variants = 70
+Syntax valid variants = 68
+Build succeeded variants = 21
+Time elapsed = 1 minutes 18 seconds
+Exit status = FAILURE (time limit)

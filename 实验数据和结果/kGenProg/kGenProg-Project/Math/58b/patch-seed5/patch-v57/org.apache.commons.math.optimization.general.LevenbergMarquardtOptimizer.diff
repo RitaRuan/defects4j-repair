@@ -1,0 +1,26 @@
+--- org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer
++++ org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer
+@@ -530,7 +530,6 @@
+                 work1[pj] = s;
+                 sum2 += s * s;
+             }
+-            parl = fp / (delta * sum2);
+         }
+ 
+         // calculate an upper bound, paru, for the zero of the function
+@@ -562,7 +561,6 @@
+ 
+             // evaluate the function at the current value of lmPar
+             if (lmPar == 0) {
+-                lmPar = FastMath.max(2.2251e-308, 0.001 * paru);
+             }
+             double sPar = FastMath.sqrt(lmPar);
+             for (int j = 0; j < solvedCols; ++j) {
+@@ -586,7 +584,6 @@
+             // of lmPar, also test for the exceptional cases where parl is zero
+             if ((FastMath.abs(fp) <= 0.1 * delta) ||
+                     ((parl == 0) && (fp <= previousFP) && (previousFP < 0))) {
+-                return;
+             }
+ 
+             // compute the Newton correction

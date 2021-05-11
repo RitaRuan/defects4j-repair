@@ -1,0 +1,190 @@
+RUNNING THE BUG: Math 4, WITH THE SEED: 0
+2021-05-08 00:49:39 [main] [INFO]  KGenProgMain - 
+==================== kGenProg Configuration ====================
+configPath = kgenprog.toml
+rootDir = . (set by command line)
+productPaths = [src/main/java] (set by command line)
+testPaths = [src/test/java] (set by command line)
+classPaths = [/home/ubuntu/rtx/defects4j/framework/projects/Math/lib/commons-discovery-0.5.jar, /home/ubuntu/rtx/defects4j/framework/projects/lib/junit-4.11.jar] (set by command line)
+executionTests = [org.apache.commons.math3.geometry.euclidean.threed.SubLineTest] (set by command line)
+outDir = /home/ubuntu/rtx/d4j/Math/4b/kGenProg-Project/patch-seed0 (set by command line)
+logLevel = INFO
+mutationGeneratingCount = 10
+crossoverGeneratingCount = 10
+headcount = 10
+maxGeneration = 10
+timeLimit = PT1M
+testTimeLimit = PT10S
+requiredSolutionsCount = 1
+randomSeed = 0 (set by command line)
+scope = PROJECT (set by command line)
+faultLocalization = Ochiai (set by command line)
+mutationType = Simple
+crossoverType = Random
+firstVariantSelectionStrategy = Random
+secondVariantSelectionStrategy = Random
+isPatchOutput = true
+isHistoryRecord = false
+currentDirectory = /home/ubuntu/rtx/d4j/Math/4b
+version = 1.8.0
+================================================================
+2021-05-08 00:50:24 [main] [INFO]  KGenProgMain - initial failed tests (1/13)
+org.apache.commons.math3.geometry.euclidean.threed.SubLineTest.testIntersectionNotIntersecting: null
+2021-05-08 00:50:26 [main] [INFO]  KGenProgMain - GA started
+2021-05-08 00:50:26 [main] [INFO]  KGenProgMain - entered the era of 1st generation.
+2021-05-08 00:50:38 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 11 seconds
+Variants: generated 10, build-succeeded 1, build-failed 9, syntax-invalid 0, redundant 0
+Fitness: max 0.154(1), min 0.154(1), ave 0.154
+----------------------------------------------------------------
+
+2021-05-08 00:50:38 [main] [INFO]  KGenProgMain - entered the era of 2nd generation.
+2021-05-08 00:50:46 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 19 seconds
+Variants: generated 10, build-succeeded 0, build-failed 9, syntax-invalid 0, redundant 1
+Fitness: max --, min --, ave NaN
+----------------------------------------------------------------
+
+2021-05-08 00:50:46 [main] [INFO]  KGenProgMain - entered the era of 3rd generation.
+2021-05-08 00:50:53 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 27 seconds
+Variants: generated 10, build-succeeded 0, build-failed 10, syntax-invalid 0, redundant 0
+Fitness: max --, min --, ave NaN
+----------------------------------------------------------------
+
+2021-05-08 00:50:53 [main] [INFO]  KGenProgMain - entered the era of 4th generation.
+2021-05-08 00:51:02 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 36 seconds
+Variants: generated 10, build-succeeded 1, build-failed 9, syntax-invalid 0, redundant 0
+Fitness: max 0.923(1), min 0.923(1), ave 0.923
+----------------------------------------------------------------
+
+2021-05-08 00:51:02 [main] [INFO]  KGenProgMain - entered the era of 5th generation.
+2021-05-08 00:51:13 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 47 seconds
+Variants: generated 10, build-succeeded 1, build-failed 9, syntax-invalid 0, redundant 0
+Fitness: max 0.923(1), min 0.923(1), ave 0.923
+----------------------------------------------------------------
+
+2021-05-08 00:51:13 [main] [INFO]  KGenProgMain - entered the era of 6th generation.
+2021-05-08 00:51:18 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 52 seconds
+Variants: generated 4, build-succeeded 1, build-failed 3, syntax-invalid 0, redundant 0
+Fitness: max 1(1), min 1(1), ave 1
+----------------------------------------------------------------
+
+2021-05-08 00:51:18 [main] [INFO]  KGenProgMain - GA stopped
+2021-05-08 00:51:20 [main] [INFO]  PatchLogExporter - patch (v54)
+--- org.apache.commons.math3.optimization.fitting.WeightedObservedPoint
++++ org.apache.commons.math3.optimization.fitting.WeightedObservedPoint
+@@ -74,4 +74,3 @@
+     }
+ 
+ }
+-
+2021-05-08 00:51:20 [main] [INFO]  PatchLogExporter - patch (v54)
+--- org.apache.commons.math3.distribution.fitting.MultivariateNormalMixtureExpectationMaximization
++++ org.apache.commons.math3.distribution.fitting.MultivariateNormalMixtureExpectationMaximization
+@@ -450,4 +450,3 @@
+         }
+     }
+ }
+-
+2021-05-08 00:51:20 [main] [INFO]  PatchLogExporter - patch (v54)
+--- org.apache.commons.math3.primes.SmallPrimes
++++ org.apache.commons.math3.primes.SmallPrimes
+@@ -186,4 +186,3 @@
+         return true; // definitely prime
+     }
+ }
+-
+2021-05-08 00:51:20 [main] [INFO]  PatchLogExporter - patch (v54)
+--- org.apache.commons.math3.special.Erf
++++ org.apache.commons.math3.special.Erf
+@@ -241,4 +241,3 @@
+     }
+ 
+ }
+-
+2021-05-08 00:51:20 [main] [INFO]  PatchLogExporter - patch (v54)
+--- org.apache.commons.math3.distribution.ZipfDistribution
++++ org.apache.commons.math3.distribution.ZipfDistribution
+@@ -243,4 +243,3 @@
+         return true;
+     }
+ }
+-
+2021-05-08 00:51:20 [main] [INFO]  PatchLogExporter - patch (v54)
+--- org.apache.commons.math3.stat.correlation.StorelessBivariateCovariance
++++ org.apache.commons.math3.stat.correlation.StorelessBivariateCovariance
+@@ -136,4 +136,3 @@
+         }
+     }
+ }
+-
+2021-05-08 00:51:20 [main] [INFO]  PatchLogExporter - patch (v54)
+--- org.apache.commons.math3.geometry.euclidean.threed.Vector3D
++++ org.apache.commons.math3.geometry.euclidean.threed.Vector3D
+@@ -239,8 +239,7 @@
+ 
+     /** {@inheritDoc} */
+     public double getNorm() {
+-        // there are no cancellation problems here, so we use the straightforward formula
+-        return FastMath.sqrt (x * x + y * y + z * z);
++        return 0;
+     }
+ 
+     /** {@inheritDoc} */
+2021-05-08 00:51:20 [main] [INFO]  PatchLogExporter - patch (v54)
+--- org.apache.commons.math3.stat.descriptive.AbstractUnivariateStatistic
++++ org.apache.commons.math3.stat.descriptive.AbstractUnivariateStatistic
+@@ -312,4 +312,3 @@
+         return test(values, begin, length, allowEmpty);
+     }
+ }
+-
+2021-05-08 00:51:20 [main] [INFO]  PatchLogExporter - patch (v54)
+--- org.apache.commons.math3.fitting.WeightedObservedPoint
++++ org.apache.commons.math3.fitting.WeightedObservedPoint
+@@ -76,4 +76,3 @@
+     }
+ 
+ }
+-
+2021-05-08 00:51:20 [main] [INFO]  PatchLogExporter - patch (v54)
+--- org.apache.commons.math3.ode.JacobianMatrices
++++ org.apache.commons.math3.ode.JacobianMatrices
+@@ -491,4 +491,3 @@
+     }
+ 
+ }
+-
+2021-05-08 00:51:20 [main] [INFO]  PatchLogExporter - patch (v54)
+--- org.apache.commons.math3.distribution.AbstractRealDistribution
++++ org.apache.commons.math3.distribution.AbstractRealDistribution
+@@ -287,4 +287,3 @@
+         return 0d;
+     }
+ }
+-
+2021-05-08 00:51:20 [main] [INFO]  PatchLogExporter - patch (v54)
+--- org.apache.commons.math3.distribution.WeibullDistribution
++++ org.apache.commons.math3.distribution.WeibullDistribution
+@@ -304,4 +304,3 @@
+         return true;
+     }
+ }
+-
+2021-05-08 00:51:22 [main] [INFO]  KGenProgMain - Summary
+Reached generation = 6
+Generated variants = 54
+Syntax valid variants = 54
+Build succeeded variants = 4
+Time elapsed = 56 seconds
+Exit status = SUCCESS

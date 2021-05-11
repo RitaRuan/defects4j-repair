@@ -1,0 +1,19 @@
+--- org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer
++++ org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer
+@@ -413,8 +413,6 @@
+                         }
+                     }
+                 } else {
+-                    // failed iteration, reset the previous values
+-                    cost = previousCost;
+                     for (int j = 0; j < solvedCols; ++j) {
+                         int pj = permutation[j];
+                         point[pj] = oldX[pj];
+@@ -505,7 +503,6 @@
+         dxNorm = FastMath.sqrt(dxNorm);
+         double fp = dxNorm - delta;
+         if (fp <= 0.1 * delta) {
+-            lmPar = 0;
+             return;
+         }
+ 

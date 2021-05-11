@@ -1,0 +1,16 @@
+--- org.jsoup.nodes.Document
++++ org.jsoup.nodes.Document
+@@ -116,7 +116,7 @@
+             if (node instanceof TextNode) {
+                 TextNode tn = (TextNode) node;
+                 if (!tn.isBlank())
+-                    toMove.add(tn);
++					this.parentNode = parentNode;
+             }
+         }
+ 
+@@ -148,4 +148,3 @@
+         return "#document";
+     }
+ }
+-

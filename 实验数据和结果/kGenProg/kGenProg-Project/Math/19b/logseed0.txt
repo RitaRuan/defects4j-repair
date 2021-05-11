@@ -1,0 +1,57 @@
+RUNNING THE BUG: Math 19, WITH THE SEED: 0
+2021-05-08 07:47:21 [main] [INFO]  KGenProgMain - 
+==================== kGenProg Configuration ====================
+configPath = kgenprog.toml
+rootDir = . (set by command line)
+productPaths = [src/main/java] (set by command line)
+testPaths = [src/test/java] (set by command line)
+classPaths = [/home/ubuntu/rtx/defects4j/framework/projects/Math/lib/commons-discovery-0.5.jar, /home/ubuntu/rtx/defects4j/framework/projects/lib/junit-4.11.jar] (set by command line)
+executionTests = [org.apache.commons.math3.optimization.direct.CMAESOptimizerTest] (set by command line)
+outDir = /home/ubuntu/rtx/d4j/Math/19b/kGenProg-Project/patch-seed0 (set by command line)
+logLevel = INFO
+mutationGeneratingCount = 10
+crossoverGeneratingCount = 10
+headcount = 10
+maxGeneration = 10
+timeLimit = PT1M
+testTimeLimit = PT10S
+requiredSolutionsCount = 1
+randomSeed = 0 (set by command line)
+scope = PROJECT (set by command line)
+faultLocalization = Ochiai (set by command line)
+mutationType = Simple
+crossoverType = Random
+firstVariantSelectionStrategy = Random
+secondVariantSelectionStrategy = Random
+isPatchOutput = true
+isHistoryRecord = false
+currentDirectory = /home/ubuntu/rtx/d4j/Math/19b
+version = 1.8.0
+================================================================
+2021-05-08 07:48:28 [main] [INFO]  KGenProgMain - initial failed tests (2/25)
+org.apache.commons.math3.optimization.direct.CMAESOptimizerTest.testBoundaryRangeTooLarge: Unexpected exception, expected<org.apache.commons.math3.exception.NumberIsTooLargeException> but was<org.apache.commons.math3.exception.MathIllegalStateException>org.apache.commons.math3.optimization.direct.CMAESOptimizerTest.testRastrigin: test timed out after 10 seconds
+2021-05-08 07:48:29 [main] [INFO]  KGenProgMain - GA started
+2021-05-08 07:48:29 [main] [INFO]  KGenProgMain - entered the era of 1st generation.
+2021-05-08 07:49:15 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 46 seconds
+Variants: generated 10, build-succeeded 1, build-failed 8, syntax-invalid 0, redundant 1
+Fitness: max 0.92(1), min 0.92(1), ave 0.92
+----------------------------------------------------------------
+
+2021-05-08 07:49:15 [main] [INFO]  KGenProgMain - entered the era of 2nd generation.
+2021-05-08 07:49:50 [main] [INFO]  KGenProgMain - 
+----------------------------------------------------------------
+Elapsed time: 1 minutes 21 seconds
+Variants: generated 10, build-succeeded 2, build-failed 7, syntax-invalid 1, redundant 0
+Fitness: max 0.92(1), min 0.44(1), ave 0.68
+----------------------------------------------------------------
+
+2021-05-08 07:49:50 [main] [INFO]  KGenProgMain - GA stopped
+2021-05-08 07:49:50 [main] [INFO]  KGenProgMain - Summary
+Reached generation = 2
+Generated variants = 20
+Syntax valid variants = 19
+Build succeeded variants = 3
+Time elapsed = 1 minutes 21 seconds
+Exit status = FAILURE (time limit)

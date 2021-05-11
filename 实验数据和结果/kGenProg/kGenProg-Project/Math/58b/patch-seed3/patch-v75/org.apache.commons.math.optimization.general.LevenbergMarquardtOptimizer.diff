@@ -1,0 +1,18 @@
+--- org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer
++++ org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer
+@@ -592,7 +592,6 @@
+             // compute the Newton correction
+             for (int j = 0; j < solvedCols; ++j) {
+                 int pj = permutation[j];
+-                work1[pj] = work3[pj] * diag[pj] / dxNorm;
+             }
+             for (int j = 0; j < solvedCols; ++j) {
+                 int pj = permutation[j];
+@@ -611,7 +610,6 @@
+ 
+             // depending on the sign of the function, update parl or paru.
+             if (fp > 0) {
+-                parl = FastMath.max(parl, lmPar);
+             } else if (fp < 0) {
+                 paru = FastMath.min(paru, lmPar);
+             }
